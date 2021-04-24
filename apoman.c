@@ -20,6 +20,14 @@
 #include "mzapo_parlcd.h"
 #include "mzapo_phys.h"
 #include "mzapo_regs.h"
+#include "data_structures.h"
+#include "font_types.h"
+#include "map_template.h"
+#include "map_from_template.h"
+#include "map_to_fb.h"
+#include "update_peripherals.h"
+#include "text_fb.h"
+#include "draw_shapes.h"
 
 
 #define LED_MAX_VAL 6

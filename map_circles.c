@@ -26,7 +26,7 @@ static char board_data[] = {
 };
 
 
-map_template map_apo_of_doom = {
+map_template map_circles = {
     .name = "Concentric_circles",
     .pacman_spawn_x = 1, /*spawning location of pacman*/
     .pacman_spawn_y = 9, /*spawning location of pacman*/
