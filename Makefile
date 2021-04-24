@@ -9,7 +9,7 @@ LDFLAGS = -lrt -lpthread
 SOURCES = apoman.c mzapo_phys.c mzapo_parlcd.c update_peripherals.c text_fb.c map_from_template.c map_to_fb.c draw_shapes.c
 SOURCES += font_prop14x16.c font_rom8x16.c
 SOURCES += map_circles.c
-TARGET_EXE = nejezsem
+TARGET_EXE = apoman
 TARGET_IP ?= 192.168.202.207
 ifeq ($(TARGET_IP),)
 ifneq ($(filter debug run,$(MAKECMDGOALS)),)
