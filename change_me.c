@@ -1,16 +1,12 @@
 /*******************************************************************
-  Project main function template for MicroZed based MZ_APO board
+  Main function for project apoman for MicroZed based MZ_APO board
   designed by Petr Porazil at PiKRON
 
-  change_me.c      - main file
+  apoman.c      - main file
 
-  include your name there and license for distribution.
-
-  Remove next text: This line should not appear in submitted
-  work and project name should be change to match real application.
-  If this text is there I want 10 points subtracted from final
-  evaluation.
-
+(C) Copyright 2021 by Petr Kucera and Lukas Nejezchleb
+      e-mails:   kucerp28@fel.cvut.cz , nejezluk@fel.cvut.cz
+      license:  any combination of GPL, LGPL, MPL or BSD licenses
  *******************************************************************/
 
 #define _POSIX_C_SOURCE 200112L
