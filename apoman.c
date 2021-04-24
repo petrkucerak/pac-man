@@ -29,7 +29,7 @@
 #include "text_fb.h"
 #include "draw_shapes.h"
 
-
+// define global variables
 #define LED_MAX_VAL 6
 #define SCREEN_WIDTH 480
 #define SCREEN_HEIGHT 320
