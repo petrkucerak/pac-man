@@ -15,15 +15,23 @@
 #include <stdint.h>
 #include "data_structures.h"
 
-//function that updates the LCD from frame buffer. LCD has to be initialised
+/**
+ * function that updates the LCD from frame buffer. LCD has to be initialised
+ */
 void lcd_from_fb(const fb_data* frame_buff, unsigned char *parlcd_mem_base);
 
-//function that shows nr on the ledstrip
+/**
+ * function that shows nr on the ledstrip
+ */
 void led_strip_number(unsigned char *led_mem_base, int max_nr, int nr);
 
-//sets left RGB to particular color
+/**
+ * sets left RGB to particular color
+ */
 void set_left_RGB(unsigned char *led_mem_base, uint8_t r, uint8_t g, uint8_t b);
 
-//sets right RGB to particular color
+/**
+ * sets right RGB to particular color
+ */
 void set_right_RGB(unsigned char *led_mem_base, uint8_t r, uint8_t g, uint8_t b);
 #endif

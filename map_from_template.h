@@ -14,9 +14,13 @@
 #include "data_structures.h"
 #include "map_template.h"
 
-//given map template returns dynamically allocated map for the whole screen
+/**
+ * given map template returns dynamically allocated map for the whole screen
+ */
 map_data *create_map_data(int screen_w, int screen_h, map_template *template);
 
-//fiven coords in template returns coords on the actual map
+/**
+ * fiven coords in template returns coords on the actual map
+ */
 coords get_coords_from_template(int row, int col, map_template *template, int screen_w, int screen_h);
 #endif

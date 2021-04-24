@@ -15,7 +15,10 @@
 #include <stdbool.h>
 #define WALL_COLOR 0x1f
 #define PATH_COLOR 0
-//given map_data draws the map to frame buffer
+
+/**
+ * given map_data draws the map to frame buffer
+ */
 bool render_map(map_data *data, fb_data *frame_buff);
 
 

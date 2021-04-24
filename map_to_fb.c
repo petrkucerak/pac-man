@@ -13,6 +13,7 @@
 #include "map_from_template.h"
 #include "text_fb.h"
 #include "draw_shapes.h"
+
 bool render_map(map_data *data, fb_data *frame_buff){
     set_background(frame_buff, 0);
     for(int i=0; i<frame_buff->width*frame_buff->height; ++i){

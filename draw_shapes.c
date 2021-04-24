@@ -13,6 +13,7 @@
 
 
 #include "draw_shapes.h"
+
 int pixel_dist_squared(int x1, int y1, int x2, int y2){
     return ((x1-x2)*(x1-x2)+(y1-y2)*(y1-y2));
 }
@@ -42,7 +43,7 @@ void draw_rectangle(fb_data *frame, int x, int y, int width, int height, uint16_
             {
                 if ((y + j >= 0) && (y + j < frame->height))
                 {
-                    //place on the screen
+                    // place on the screen
                     frame->fb[(y + j) * frame->width + x + i] = color;
                 }
             }
