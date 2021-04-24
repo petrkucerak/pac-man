@@ -36,7 +36,7 @@
 
 int main(int argc, char *argv[])
 {
-   //initialisation
+  // initialisation
   printf("Hello world\n");
   unsigned char *led_mem_base;
   led_mem_base = map_phys_address(SPILED_REG_BASE_PHYS, SPILED_REG_SIZE, 0);
@@ -50,10 +50,11 @@ int main(int argc, char *argv[])
   {
     exit(1);
   }
-  //frame buffer
+
+  // frame buffer
   fb_data fb;
   fb.fb = malloc(sizeof(uint16_t) * SCREEN_WIDTH * SCREEN_HEIGHT);
-  fb.width= SCREEN_WIDTH;
+  fb.width = SCREEN_WIDTH;
   fb.height = SCREEN_HEIGHT;
   if (fb.fb == NULL)
   {
@@ -67,7 +68,7 @@ int main(int argc, char *argv[])
                                            map_circles.pacman_spawn_x, &map_circles,
                                            SCREEN_WIDTH, SCREEN_HEIGHT);
   bool can_move = true;
-  
+
   while (can_move)
   {
     if (map->board_arr[pacman.x + (pacman.y - 1) * SCREEN_WIDTH] != BLOCKED)
@@ -78,16 +79,17 @@ int main(int argc, char *argv[])
     {
       can_move = false;
     }
-    
+
     render_map(map, &fb);
     //draw pacman
     draw_circle(&fb, pacman.x, pacman.y, 8, 0xffe0);
     lcd_from_fb(&fb, lcd_mem_base);
-
   }
-  draw_text_center(&fb, "KONEC", SCREEN_WIDTH/2, SCREEN_HEIGHT/2, 10, font, 0xffff);
+  draw_text_center(&fb, "KONEC", SCREEN_WIDTH / 2, SCREEN_HEIGHT / 2, 10, font, 0xffff);
   printf("Goodbye world\n");
 
-  return 0;
+  free(fb.fb);
+  fb.fb = NULL;
+
   return 0;
 }
