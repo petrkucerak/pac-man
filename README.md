@@ -1,2 +1,0 @@
-# APO_semestralka
-
