@@ -21,13 +21,65 @@
 #include "mzapo_phys.h"
 #include "mzapo_regs.h"
 
+
+#define LED_MAX_VAL 6
+#define SCREEN_WIDTH 480
+#define SCREEN_HEIGHT 320
+
 int main(int argc, char *argv[])
 {
+   //initialisation
   printf("Hello world\n");
+  unsigned char *led_mem_base;
+  led_mem_base = map_phys_address(SPILED_REG_BASE_PHYS, SPILED_REG_SIZE, 0);
+  if (led_mem_base == NULL)
+  {
+    exit(1);
+  }
+  unsigned char *lcd_mem_base;
+  lcd_mem_base = map_phys_address(PARLCD_REG_BASE_PHYS, PARLCD_REG_SIZE, 0);
+  if (lcd_mem_base == NULL)
+  {
+    exit(1);
+  }
+  //frame buffer
+  fb_data fb;
+  fb.fb = malloc(sizeof(uint16_t) * SCREEN_WIDTH * SCREEN_HEIGHT);
+  fb.width= SCREEN_WIDTH;
+  fb.height = SCREEN_HEIGHT;
+  if (fb.fb == NULL)
+  {
+    exit(1);
+  }
+  parlcd_hx8357_init(lcd_mem_base);
+  font_descriptor_t *font = &font_winFreeSystem14x16;
+  map_data *map = create_map_data(SCREEN_WIDTH, SCREEN_HEIGHT, &map_circles);
+  //get starting coords for pacman
+  coords pacman = get_coords_from_template(map_circles.pacman_spawn_y,
+                                           map_circles.pacman_spawn_x, &map_circles,
+                                           SCREEN_WIDTH, SCREEN_HEIGHT);
+  bool can_move = true;
+  
+  while (can_move)
+  {
+    if (map->board_arr[pacman.x + (pacman.y - 1) * SCREEN_WIDTH] != BLOCKED)
+    {
+      pacman.y--;
+    }
+    else
+    {
+      can_move = false;
+    }
+    
+    render_map(map, &fb);
+    //draw pacman
+    draw_circle(&fb, pacman.x, pacman.y, 8, 0xffe0);
+    lcd_from_fb(&fb, lcd_mem_base);
 
-  sleep(4);
-
+  }
+  draw_text_center(&fb, "KONEC", SCREEN_WIDTH/2, SCREEN_HEIGHT/2, 10, font, 0xffff);
   printf("Goodbye world\n");
 
+  return 0;
   return 0;
 }

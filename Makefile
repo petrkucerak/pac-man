@@ -5,26 +5,25 @@ CPPFLAGS = -I .
 CFLAGS =-g -std=gnu99 -O1 -Wall
 CXXFLAGS = -g -std=gnu++11 -O1 -Wall
 LDFLAGS = -lrt -lpthread
-#LDLIBS = -lm
 
-SOURCES = change_me.c mzapo_phys.c mzapo_parlcd.c
-#SOURCES += font_prop14x16.c font_rom8x16.c
-TARGET_EXE = change_me
-#TARGET_IP ?= 192.168.202.127
+SOURCES = apoman.c mzapo_phys.c mzapo_parlcd.c update_peripherals.c text_fb.c map_from_template.c map_to_fb.c draw_shapes.c
+SOURCES += font_prop14x16.c font_rom8x16.c
+SOURCES += map_circles.c
+TARGET_EXE = nejezsem
+TARGET_IP ?= 192.168.202.207
 ifeq ($(TARGET_IP),)
 ifneq ($(filter debug run,$(MAKECMDGOALS)),)
 $(warning The target IP address is not set)
 $(warning Run as "TARGET_IP=192.168.202.xxx make run" or modify Makefile)
-TARGET_IP ?= 192.168.202.xxx
+#TARGET_IP ?= 192.168.202.207
 endif
 endif
 TARGET_DIR ?= /tmp/$(shell whoami)
 TARGET_USER ?= root
 # for use from Eduroam network use TARGET_IP=localhost and enable next line
 #SSH_OPTIONS=-o "UserKnownHostsFile=/dev/null" -o "StrictHostKeyChecking=no" -o "Port=2222"
-#SSH_GDB_TUNNEL_REQUIRED=y
 #SSH_OPTIONS=-i /opt/zynq/ssh-connect/mzapo-root-key
-#SSH_OPTIONS=-o 'ProxyJump=ctu_login@postel.felk.cvut.cz'
+SSH_OPTIONS= -i ~/.ssh/mzapo-root-key -o 'ProxyJump=nejezluk@postel.felk.cvut.cz'
 
 OBJECTS += $(filter %.o,$(SOURCES:%.c=%.o))
 OBJECTS += $(filter %.o,$(SOURCES:%.cpp=%.o))
@@ -40,10 +39,10 @@ LDFLAGS += $(CXXFLAGS) $(CPPFLAGS)
 endif
 
 %.o:%.c
-	$(CC) $(CFLAGS) $(CPPFLAGS) -o $@ -c $<
+	$(CC) $(CFLAGS) $(CPPFLAGS) -c $<
 
 %.o:%.cpp
-	$(CXX) $(CXXFLAGS) $(CPPFLAGS) -o $@ -c $<
+	$(CXX) $(CXXFLAGS) $(CPPFLAGS) -c $<
 
 all: $(TARGET_EXE)
 
@@ -76,7 +75,7 @@ copy-executable: $(TARGET_EXE)
 run: copy-executable $(TARGET_EXE)
 	ssh $(SSH_OPTIONS) -t $(TARGET_USER)@$(TARGET_IP) $(TARGET_DIR)/$(TARGET_EXE)
 
-ifneq ($(filter -o ProxyJump=,$(SSH_OPTIONS))$(SSH_GDB_TUNNEL_REQUIRED),)
+ifneq ($(filter -o ProxyJump=,$(SSH_OPTIONS)),)
 SSH_GDB_PORT_FORWARD=-L 12345:127.0.0.1:12345
 TARGET_GDB_PORT=127.0.0.1:12345
 else
