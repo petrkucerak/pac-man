@@ -36,7 +36,7 @@
 
 int main(int argc, char *argv[])
 {
-  // initialisation
+  // init a periphery
   printf("Hello world\n");
   unsigned char *led_mem_base;
   led_mem_base = map_phys_address(SPILED_REG_BASE_PHYS, SPILED_REG_SIZE, 0);
@@ -60,10 +60,13 @@ int main(int argc, char *argv[])
   {
     exit(1);
   }
+
+  // init display
   parlcd_hx8357_init(lcd_mem_base);
   font_descriptor_t *font = &font_winFreeSystem14x16;
   map_data *map = create_map_data(SCREEN_WIDTH, SCREEN_HEIGHT, &map_circles);
-  //get starting coords for pacman
+  
+  // get starting coords for pacman
   coords pacman = get_coords_from_template(map_circles.pacman_spawn_y,
                                            map_circles.pacman_spawn_x, &map_circles,
                                            SCREEN_WIDTH, SCREEN_HEIGHT);
@@ -85,9 +88,12 @@ int main(int argc, char *argv[])
     draw_circle(&fb, pacman.x, pacman.y, 8, 0xffe0);
     lcd_from_fb(&fb, lcd_mem_base);
   }
+
+  // program termination
   draw_text_center(&fb, "KONEC", SCREEN_WIDTH / 2, SCREEN_HEIGHT / 2, 10, font, 0xffff);
   printf("Goodbye world\n");
 
+  // free allocated memory
   free(fb.fb);
   fb.fb = NULL;
 
