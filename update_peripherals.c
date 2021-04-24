@@ -4,7 +4,7 @@
 
   update_peripherals.c      - simple program to update peripherals
 
-  (C) Copyright 2017 by Lukas Nejezchleb
+  (C) Copyright 2021 by Lukas Nejezchleb
       e-mail:   nejezluk@fel.cvut.cz
       license:  any combination of GPL, LGPL, MPL or BSD licenses
 
