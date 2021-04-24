@@ -49,3 +49,11 @@ void draw_rectangle(fb_data *frame, int x, int y, int width, int height, uint16_
         }
     }
 }
+
+void set_background(fb_data *frame, uint16_t color)
+{
+    for (int i = 0; i < frame->width * frame->height; ++i)
+    {
+        frame->fb[i] = color;
+    }
+}

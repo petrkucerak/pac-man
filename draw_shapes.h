@@ -19,4 +19,7 @@ void draw_circle(fb_data *frame, int x, int y,  int radius, uint16_t color);
 
 //function to draw rectangle to fb_data frame at x,y with width and height and color
 void draw_rectangle(fb_data *frame, int x, int y, int width, int height, uint16_t color);
+
+//sets background to certain color
+void set_background(fb_data *frame, uint16_t color);
 #endif
