@@ -28,6 +28,7 @@
 #include "update_peripherals.h"
 #include "text_fb.h"
 #include "draw_shapes.h"
+#include "menu_utilities.h"
 
 #define LED_MAX_VAL 6
 #define SCREEN_WIDTH 480
@@ -37,6 +38,7 @@ int main(int argc, char *argv[])
 {
   // init a periphery
   printf("Hello world\n");
+  printf("testing functions: %d\n", testing_function(LED_MAX_VAL));
   unsigned char *led_mem_base;
   led_mem_base = map_phys_address(SPILED_REG_BASE_PHYS, SPILED_REG_SIZE, 0);
   if (led_mem_base == NULL)

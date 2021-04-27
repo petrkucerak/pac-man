@@ -1,5 +1,6 @@
 *.o
 depend
-change_me
+apoman
 connect.gdb
-Makefile
+makefile
+mzapo-root-key

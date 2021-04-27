@@ -1,6 +1,7 @@
 {
    "files.associations": {
       "draw_shapes.h": "c",
-      "data_structures.h": "c"
+      "data_structures.h": "c",
+      "map_template.h": "c"
    }
 }
