@@ -10,3 +10,15 @@
 
  *******************************************************************/
 #include "ghost.h"
+#include "data_structures.h"
+#include <stdbool.h>
+//internal functions
+bool can_move(ghost_type *ghost, int dirx, int diry, map_data *map);
+// end of internal functions
+
+
+bool can_move(ghost_type *ghost, int dirx, int diry, map_data *map)
+{
+    int pixel = map->board_arr[map->width * (ghost->location.y + diry) + ghost->location.x + dirx];
+    return (pixel != BLOCKED);
+}
