@@ -51,7 +51,7 @@ typedef struct
     int maxlives;
 }pacman_type;
 
-
+extern read_thread_data_type read_thread_data;
 extern pthread_mutex_t mtx;
 
 /**

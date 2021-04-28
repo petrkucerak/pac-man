@@ -12,7 +12,16 @@
 
 #include "pacman.h"
 #include "map_from_template.h"
+#include "config.h"
+#include <stdbool.h>
 
+//internal functions
+bool can_move(pacman_type *pacman, int dirx, int diry, map_data *map);
+// end of internal functions
+
+/*
+Given map data creates pacman
+*/
 pacman_type create_pacman(map_template *map, int screen_w, int screen_h, int lives)
 {
     pacman_type pacman;
@@ -24,4 +33,46 @@ pacman_type create_pacman(map_template *map, int screen_w, int screen_h, int liv
     pacman.direction = direction;
     pacman.score = 0;
     return pacman;
+}
+
+/*
+Moves pacman if possible and changes direction if key has been pressed
+*/
+void pacman_move(pacman_type *pacman, map_data *map)
+{
+    //find out if some important key has been pressed
+    char pressed;
+    pthread_mutex_lock(&mtx);
+    pressed = read_thread_data.last_read;
+    pthread_mutex_unlock(&mtx);
+    if ((pressed == KEY_UP) && (can_move(pacman, 0, -1, map)))
+    {
+        pacman->direction.x = 0;
+        pacman->direction.y = -1;
+    }
+    if ((pressed == KEY_DWN) && (can_move(pacman, 0, 1, map)))
+    {
+        pacman->direction.x = 0;
+        pacman->direction.y = 1;
+    }
+    if ((pressed == KEY_LEFT) && (can_move(pacman, -1, 0, map)))
+    {
+        pacman->direction.x = -1;
+        pacman->direction.y = 0;
+    }
+    if ((pressed == KEY_RIGHT) && (can_move(pacman, 1, 0, map)))
+    {
+        pacman->direction.x = 1;
+        pacman->direction.y = 0;
+    }
+    if(can_move(pacman, pacman->direction.x, pacman->direction.y, map)){
+        pacman->location.x = pacman->location.x+pacman->direction.x;
+        pacman->location.y = pacman->location.y+pacman->direction.y;
+    }
+}
+
+bool can_move(pacman_type *pacman, int dirx, int diry, map_data *map)
+{
+    int pixel = map->board_arr[map->width * (pacman->location.y + diry) + pacman->location.x + dirx];
+    return (pixel != BLOCKED);
 }
