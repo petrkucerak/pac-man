@@ -29,3 +29,8 @@ Hra může být ukončena 3 způsoby:
 - Výhrou Pacmana. V takovém případě se vypíše skóre hry na terminál a otevře se menu nastavení
 - Prohrou Pacmana. Ta vyvolá stejný proces jako výhra.
 - Přerušením hry pomocí stisknutí klávesy q. To hráče odkáže do spouštěcího menu.
+
+## Kompilace
+``` bash
+make TARGET_IP=192.168.202.xx run
+```
