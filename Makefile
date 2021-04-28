@@ -7,7 +7,7 @@ CXXFLAGS = -g -std=gnu++11 -O1 -Wall
 LDFLAGS = -lrt -lpthread -pthread
 
 SOURCES = apoman.c mzapo_phys.c mzapo_parlcd.c update_peripherals.c text_fb.c map_from_template.c map_to_fb.c draw_shapes.c
-SOURCES += terminal_read.c
+SOURCES += terminal_read.c pacman.c
 SOURCES += font_prop14x16.c font_rom8x16.c
 SOURCES += map_circles.c
 SOURCES += menu_utilities.c

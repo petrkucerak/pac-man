@@ -89,7 +89,7 @@ int main(int argc, char *argv[])
     free(fb.fb);
     exit(1);
   }
-  run_init_game_menu();
+  //run_init_game_menu();
 
   // get starting coords for pacman
   coords pacman = get_coords_from_template(map_circles.pacman_spawn_y,

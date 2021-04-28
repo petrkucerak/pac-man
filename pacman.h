@@ -11,5 +11,9 @@
  *******************************************************************/
 #ifndef PACMAN_H
 #define PACMAN_H
+#include "data_structures.h"
+#include "map_template.h"
+pacman_type create_pacman(map_template* map, int screen_w, int screen_h, int lives);
+
 
 #endif
