@@ -26,6 +26,7 @@ map_data *create_map_data(int screen_w, int screen_h, map_template *template)
         if (map_array == NULL)
         {
             free(map);
+            map = NULL;
         }
         else
         {

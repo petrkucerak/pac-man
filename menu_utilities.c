@@ -17,5 +17,5 @@ void run_init_game_menu()
 {
   printf("run init game menu\n");
 
-  set_background( , 0);
+  //set_background( , 0);
 }

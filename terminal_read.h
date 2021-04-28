@@ -39,4 +39,5 @@ to terminate thread:
     read_thread_data.quit = true; 
     pthread_mutex_unlock(&mtx);
     pthread_join(read_thread, NULL); //wait for thread to join
+    pthread_mutex_destroy(&mtx);
 */
