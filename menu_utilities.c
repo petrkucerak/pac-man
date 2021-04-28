@@ -10,12 +10,32 @@
 
  *******************************************************************/
 
-#include "menu_utilities.h"
 #include <stdio.h>
+#include "menu_utilities.h"
+#include "data_structures.h"
+#include "draw_shapes.h"
+#include "update_peripherals.h"
+#include "text_fb.h"
 
-void run_init_game_menu()
+bool run_init_game_menu(fb_data *frame_buff, unsigned char *lcd_mem_base, font_descriptor_t *font)
 {
   printf("run init game menu\n");
 
-  //set_background( , 0);
+  welcome_screen(frame_buff);
+  lcd_from_fb(frame_buff, lcd_mem_base);
+  printf("background set\n");
+
+  char text[] = "HLAVNI MENU";
+  draw_text_center(frame_buff, text, 0, 0, 10, font, 0x1f);
+
+  return true;
+
+}
+
+void welcome_screen(fb_data *frame_buff)
+{
+  set_background(frame_buff, 0);
+  for(int i=0; i<frame_buff->width*frame_buff->height; ++i){
+    if(i%30<15) frame_buff->fb[i] = 0x1f;
+  }
 }

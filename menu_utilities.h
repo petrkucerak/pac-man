@@ -9,10 +9,15 @@
       license:  any combination of GPL, LGPL, MPL or BSD licenses
 
  *******************************************************************/
+#include <stdbool.h>
+#include "data_structures.h"
+#include "font_types.h"
 
 #ifndef MENU_UTILITIES_H
 #define MENU_UTILITIES_H
 
-void run_init_game_menu();
+bool run_init_game_menu(fb_data *frame_buff, unsigned char *lcd_mem_base, font_descriptor_t *font);
+
+void welcome_screen(fb_data *frame_buff);
 
 #endif

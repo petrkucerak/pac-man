@@ -76,6 +76,13 @@ int main(int argc, char *argv[])
   // init display
   parlcd_hx8357_init(lcd_mem_base);
   font_descriptor_t *font = &font_winFreeSystem14x16;
+
+  // text menu
+  // run_init_game_menu(&fb, lcd_mem_base, font);
+
+  // exit for debug
+  // exit(-1);
+  
   map_data *map = create_map_data(SCREEN_WIDTH, SCREEN_HEIGHT, &map_circles);
   if (map == NULL)
   {
