@@ -18,22 +18,42 @@
 #include "text_fb.h"
 #include <unistd.h>
 
+#define HEIGHT_M frame_buff->height
+
 bool run_init_game_menu(fb_data *frame_buff, unsigned char *lcd_mem_base, font_descriptor_t *font)
 {
   // init game menu
   set_background(frame_buff, 0);
-  draw_text_center(frame_buff, "HLAVNI MENU", frame_buff->width/2, frame_buff->height/2, 5, font, 0xffff);
+  draw_text_center(frame_buff, "HLAVNI MENU", frame_buff->width / 2, HEIGHT_M / 2, 5, font, 0xffff);
   lcd_from_fb(frame_buff, lcd_mem_base);
 
   sleep(4);
 
   // menu with context
-  set_background(frame_buff, 0);
-  draw_text_center(frame_buff, "HLAVNI MENU", frame_buff->width/2, frame_buff->height/100, 2, font, 0xffff);
-  draw_text_center(frame_buff, "pocet zivotu ... 4 [L]\nmapa ... 1 [M]\npocet duchu ... 8 [G]", frame_buff->width/2, frame_buff->height/2, 1, font, 0xffff);
-  draw_text_center(frame_buff, "SPUSIT HRU ... ENTER", frame_buff->width/2, frame_buff->height - frame_buff->height/100, 1, font, 0xffff);
-
+  game_init_data_t game = {.pacman_lives = 5, .ghost_nr = 3, .map = &map_circles};
+  draw_menu(frame_buff, font, game);
   lcd_from_fb(frame_buff, lcd_mem_base);
 
+  // listen symbol
+  char read = ' ';
+  while (read != 'S')
+  {
+    pthread_mutex_lock(&mtx);
+    read = read_thread_data.last_read;
+    pthread_mutex_unlock(&mtx);
+  }
+
   return true;
+}
+
+void draw_menu(fb_data *frame_buff, font_descriptor_t *font, game_init_data_t game_data)
+{
+  // menu with context
+  set_background(frame_buff, 0);
+  draw_text_center(frame_buff, "HLAVNI MENU", frame_buff->width / 2, HEIGHT_M / 10, 3, font, 0xffff);
+  draw_text_center(frame_buff, "pocet zivotu ... 4 [L]", frame_buff->width / 2, HEIGHT_M / 2 - HEIGHT_M / 7, 2, font, 0xffff);
+  draw_text_center(frame_buff, "mapa ... 1 [M]", frame_buff->width / 2, HEIGHT_M / 2, 2, font, 0xffff);
+  draw_text_center(frame_buff, "pocet duchu ... 8 [G]", frame_buff->width / 2, HEIGHT_M / 2 + HEIGHT_M / 7, 2, font, 0xffff);
+  draw_text_center(frame_buff, "SPUSIT HRU ... S", frame_buff->width / 2, HEIGHT_M - HEIGHT_M / 10, 2, font, 0xffff);
+
 }

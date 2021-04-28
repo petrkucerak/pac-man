@@ -18,6 +18,10 @@
 
 bool run_init_game_menu(fb_data *frame_buff, unsigned char *lcd_mem_base, font_descriptor_t *font);
 
-void welcome_screen(fb_data *frame_buff);
+/**
+ * function to drow menu with settings to fb_data
+ * (for propagate changes need to render data from buffer)
+ */
+void draw_menu(fb_data *frame_buff, font_descriptor_t *font, game_init_data_t game_data);
 
 #endif
