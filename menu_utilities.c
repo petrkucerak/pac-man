@@ -12,4 +12,4 @@
 
 #include "menu_utilities.h"
 
-
+void run_init_game_menu();

@@ -15,7 +15,7 @@
 
 void run_init_game_menu()
 {
-  
+  run_init_game_menu();
 }
 
 #endif
