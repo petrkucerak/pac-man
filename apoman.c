@@ -28,6 +28,7 @@
 #include "update_peripherals.h"
 #include "text_fb.h"
 #include "draw_shapes.h"
+#include "game.h"
 #include "menu_utilities.h"
 
 #define LED_MAX_VAL 6
@@ -38,8 +39,6 @@ int main(int argc, char *argv[])
 {
   // init a periphery
   printf("Hello world\n");
-
-  
 
   unsigned char *led_mem_base;
   led_mem_base = map_phys_address(SPILED_REG_BASE_PHYS, SPILED_REG_SIZE, 0);
@@ -69,6 +68,8 @@ int main(int argc, char *argv[])
   parlcd_hx8357_init(lcd_mem_base);
   font_descriptor_t *font = &font_winFreeSystem14x16;
   map_data *map = create_map_data(SCREEN_WIDTH, SCREEN_HEIGHT, &map_circles);
+
+  run_init_game_menu();
   
   // get starting coords for pacman
   coords pacman = get_coords_from_template(map_circles.pacman_spawn_y,

@@ -13,9 +13,6 @@
 #ifndef MENU_UTILITIES_H
 #define MENU_UTILITIES_H
 
-void run_init_game_menu()
-{
-  run_init_game_menu();
-}
+void run_init_game_menu();
 
 #endif

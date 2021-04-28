@@ -11,5 +11,11 @@
  *******************************************************************/
 
 #include "menu_utilities.h"
+#include <stdio.h>
 
-void run_init_game_menu();
+void run_init_game_menu()
+{
+  printf("run init game menu\n");
+
+  set_background( , 0);
+}
