@@ -42,6 +42,16 @@ typedef struct
     char last_read;
 } read_thread_data_type;
 
+typedef struct 
+{
+    coords location;
+    coords direction;
+    int score;
+    int lives;
+    int maxlives;
+}pacman_type;
+
+
 extern pthread_mutex_t mtx;
 
 /**
