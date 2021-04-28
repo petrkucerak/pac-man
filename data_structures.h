@@ -31,6 +31,10 @@ typedef struct {
     int y;
 } coords;
 
+typedef struct{
+    bool quit;
+    char last_read;
+}
 /**
  * place where is the coin drawn, pacman can walk accross it
  */
