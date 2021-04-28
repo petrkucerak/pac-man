@@ -13,9 +13,9 @@
 #include <stdlib.h>
 
 //functions used only inside map_from_template
-void create_cell(int row, int col, map_template *template, char *map_array, int screen_w, int screen_h);
-void create_cross(int row, int col, map_template *template, char *map_array, int screen_w, int screen_h, char center_val);
-//end of functions used only inside 
+void create_cell(int row, int col, map_template *template, map_data *map);
+void create_cross(int row, int col, map_template *template, map_data *map, char center_val);
+//end of functions used only inside
 
 map_data *create_map_data(int screen_w, int screen_h, map_template *template)
 {
@@ -36,28 +36,49 @@ map_data *create_map_data(int screen_w, int screen_h, map_template *template)
 
     if (map != NULL)
     {
+        int cell_width = screen_w / template->width;
+        cell_width = (cell_width % 2 == 0) ? (cell_width - 1) : cell_width;
+        int cell_height = screen_h / template->height;
+        cell_height = (cell_height % 2 == 0) ? (cell_height - 1) : cell_height;
+
+        if (cell_height > cell_width)
+        {
+            map->max_object_diameter = cell_width;
+        }
+        else
+        {
+            map->max_object_diameter = cell_height;
+        }
+
+        map->width = screen_w;
+        map->height = screen_h;
 
         for (int row = 0; row < template->height; row++)
         {
             for (int col = 0; col < template->width; col++)
             {
-                create_cell(row, col, template, map->board_arr, screen_w, screen_h);
+                //create map for each cell in template
+                create_cell(row, col, template, map);
             }
         }
     }
     return map;
 }
 
-void create_cell(int row, int col, map_template *template, char *map_array, int screen_w, int screen_h)
+void create_cell(int row, int col, map_template *template, map_data *map)
 {
+    char *map_array = map->board_arr;
+    int screen_w = map->width;
+    int screen_h = map->height;
     char cell_value = template->board[template->width * row + col];
+
     if (cell_value == template->coin)
     {
-        create_cross(row, col, template, map_array, screen_w, screen_h, COIN);
+        create_cross(row, col, template, map, COIN);
     }
     else if (cell_value == template->blank)
     {
-        create_cross(row, col, template, map_array, screen_w, screen_h, PASSAGE);
+        create_cross(row, col, template, map, PASSAGE);
     }
     else if (cell_value == template->wall)
     {
@@ -76,73 +97,56 @@ void create_cell(int row, int col, map_template *template, char *map_array, int 
     }
     else if (cell_value == template->special)
     {
-        create_cross(row, col, template, map_array, screen_w, screen_h, SUPERCOIN);
+        create_cross(row, col, template, map, SUPERCOIN);
     }
 }
 
-void create_cross(int row, int col, map_template *template, char *map_array, int screen_w, int screen_h, char center_val)
+void create_cross(int row, int col, map_template *template, map_data *map, char center_val)
 {
+    int screen_w = map->width;
+    int screen_h = map->height;
+    char *map_array = map->board_arr;
+
     int cell_width = screen_w / template->width;
     cell_width = (cell_width % 2 == 0) ? (cell_width - 1) : cell_width;
     int cell_height = screen_h / template->height;
     cell_height = (cell_height % 2 == 0) ? (cell_height - 1) : cell_height;
     int offset_x = col * cell_width;
     int offset_y = row * cell_height;
-    //fill in the centre point
+
+    //from top to bottom
+    int begin_index = offset_x + cell_width / 2 + screen_w * (offset_y + cell_height / 2);
+    if ((row > 0) && (template->board[(row - 1) * template->width + col] != template->wall))
+    {
+        begin_index = offset_x + cell_width / 2 + screen_w * offset_y;
+    }
+    int end_index = offset_x + cell_width / 2 + screen_w * (offset_y + cell_height / 2);
+    if ((row < template->height - 1) && (template->board[(row + 1) * template->width + col] != template->wall))
+    {
+        end_index = offset_x + cell_width / 2 + screen_w * (offset_y + cell_height);
+    }
+    for (int index = begin_index; index < end_index; index = index + screen_w)
+    {
+        map_array[index] = PASSAGE;
+    }
+
+    //from left to right
+    begin_index = offset_x + cell_width / 2 + screen_w * (offset_y + cell_height / 2);
+    if ((col > 0) && (template->board[(row) * template->width + col - 1] != template->wall))
+    {
+        begin_index = offset_x + screen_w * (offset_y + cell_height / 2);
+    }
+    end_index = offset_x + cell_width / 2 + screen_w * (offset_y + cell_height / 2);
+    if ((col < template->width - 1) && (template->board[(row) * template->width + col + 1] != template->wall))
+    {
+        end_index = offset_x + cell_width + screen_w * (offset_y + cell_height / 2);
+    }
+    for (int index = begin_index; index < end_index; index = index + 1)
+    {
+        map_array[index] = PASSAGE;
+    }
+    //fill in the centre val
     map_array[offset_x + cell_width / 2 + screen_w * (offset_y + cell_height / 2)] = center_val;
-    //check if should fill passage to the top
-    if (row > 0)
-    {
-        char template_value = template->board[(row - 1) * template->width + col];
-        if ((template_value == template->coin) || (template_value == template->special) ||
-            (template_value == template->blank))
-        {
-            //there is something to connect to at the top
-            for (int i = 0; i < cell_height / 2; ++i)
-            {
-                map_array[offset_x + cell_width / 2 + screen_w * (offset_y + i)] = PASSAGE;
-            }
-        }
-    }
-    if (row < template->height - 1)
-    {
-        char template_value = template->board[(row + 1) * template->width + col];
-        if ((template_value == template->coin) || (template_value == template->special) ||
-            (template_value == template->blank))
-        {
-            //there is something to connect to at the bottom
-            for (int i = cell_height / 2 + 1; i < cell_height; ++i)
-            {
-                map_array[offset_x + cell_width / 2 + screen_w * (offset_y + i)] = PASSAGE;
-            }
-        }
-    }
-    if (col > 0)
-    {
-        char template_value = template->board[row * template->width + col - 1];
-        if ((template_value == template->coin) || (template_value == template->special) ||
-            (template_value == template->blank))
-        {
-            //there is something to connect to at the left
-            for (int i = 0; i < cell_width / 2; ++i)
-            {
-                map_array[offset_x + i + screen_w * (offset_y + cell_height / 2)] = PASSAGE;
-            }
-        }
-    }
-    if (col < template->width - 1)
-    {
-        char template_value = template->board[row * template->width + col + 1];
-        if ((template_value == template->coin) || (template_value == template->special) ||
-            (template_value == template->blank))
-        {
-            //there is something to connect to at the left
-            for (int i = cell_width / 2 + 1; i < cell_width; ++i)
-            {
-                map_array[offset_x + i + screen_w * (offset_y + cell_height / 2)] = PASSAGE;
-            }
-        }
-    }
 }
 
 coords get_coords_from_template(int row, int col, map_template *template, int screen_w, int screen_h)
@@ -152,8 +156,8 @@ coords get_coords_from_template(int row, int col, map_template *template, int sc
     int cell_height = screen_h / template->height;
     cell_height = (cell_height % 2 == 0) ? (cell_height - 1) : cell_height;
     coords coords = {
-        .x = col*cell_width+cell_width/2,
-        .y = row*cell_height+cell_height/2,
+        .x = col * cell_width + cell_width / 2,
+        .y = row * cell_height + cell_height / 2,
     };
     return coords;
 }

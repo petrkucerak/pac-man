@@ -63,7 +63,6 @@ int main(int argc, char *argv[])
   read_thread_data_type read_thread_data = {.quit = false, .last_read = ' '};
   pthread_t threads[1];
   pthread_create(&threads[0], NULL, input_thread, &read_thread_data);
-  printf("here\n");
   // frame buffer
   fb_data fb;
   fb.fb = malloc(sizeof(uint16_t) * SCREEN_WIDTH * SCREEN_HEIGHT);
@@ -110,6 +109,7 @@ int main(int argc, char *argv[])
 
   // program termination
   draw_text_center(&fb, "KONEC", SCREEN_WIDTH / 2, SCREEN_HEIGHT / 2, 10, font, 0xffff);
+  lcd_from_fb(&fb, lcd_mem_base);
   printf("Goodbye world\n");
 
   char read = ' ';
