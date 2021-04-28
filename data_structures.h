@@ -13,6 +13,7 @@
 #define DATA_STRUCTURES_H
 #include <stdint.h>
 #include <stdbool.h>
+#include <pthread.h>
 
 typedef struct {
     int width;
@@ -35,7 +36,11 @@ typedef struct {
 typedef struct{
     bool quit;
     char last_read;
-}
+} read_thread_data_type;
+
+extern pthread_mutex_t mtx;
+
+
 /**
  * place where is the coin drawn, pacman can walk accross it
  */
