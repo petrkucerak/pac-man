@@ -16,26 +16,24 @@
 #include "draw_shapes.h"
 #include "update_peripherals.h"
 #include "text_fb.h"
+#include <unistd.h>
 
 bool run_init_game_menu(fb_data *frame_buff, unsigned char *lcd_mem_base, font_descriptor_t *font)
 {
-  printf("run init game menu\n");
-
-  welcome_screen(frame_buff);
+  // init game menu
+  set_background(frame_buff, 0);
+  draw_text_center(frame_buff, "HLAVNI MENU", frame_buff->width/2, frame_buff->height/2, 5, font, 0xffff);
   lcd_from_fb(frame_buff, lcd_mem_base);
-  printf("background set\n");
 
-  char text[] = "HLAVNI MENU";
-  draw_text_center(frame_buff, text, 0, 0, 10, font, 0x1f);
+  sleep(4);
+
+  // menu with context
+  set_background(frame_buff, 0);
+  draw_text_center(frame_buff, "HLAVNI MENU", frame_buff->width/2, frame_buff->height/100, 2, font, 0xffff);
+  draw_text_center(frame_buff, "pocet zivotu ... 4 [L]\nmapa ... 1 [M]\npocet duchu ... 8 [G]", frame_buff->width/2, frame_buff->height/2, 1, font, 0xffff);
+  draw_text_center(frame_buff, "SPUSIT HRU ... ENTER", frame_buff->width/2, frame_buff->height - frame_buff->height/100, 1, font, 0xffff);
+
+  lcd_from_fb(frame_buff, lcd_mem_base);
 
   return true;
-
-}
-
-void welcome_screen(fb_data *frame_buff)
-{
-  set_background(frame_buff, 0);
-  for(int i=0; i<frame_buff->width*frame_buff->height; ++i){
-    if(i%30<15) frame_buff->fb[i] = 0x1f;
-  }
 }
