@@ -70,6 +70,15 @@ typedef struct
     map_template *map;
 }game_init_data_t;
 
+typedef struct
+{
+    bool moving_randomly;
+    bool scared;
+    coords location;
+    coords direction;
+}ghost_type;
+
+
 
 /**
  * place where is the coin drawn, pacman can walk accross it
