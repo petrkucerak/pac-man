@@ -12,7 +12,9 @@
 
 #ifndef GAME_H
 #define GAME_H
+#include "data_structures.h"
+#include "pacman.h"
 
-void run_game(void);
+int run_game(game_init_data_t* game_data, peripherals_data_t* peripherals);
 
 #endif

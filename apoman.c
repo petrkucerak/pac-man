@@ -83,33 +83,16 @@ int main(int argc, char *argv[])
   // text menu
   // run_init_game_menu(&fb, lcd_mem_base, font);
 
-  // exit for debug
-  // exit(-1);
-
-  map_data *map = create_map_data(SCREEN_WIDTH, SCREEN_HEIGHT, &map_circles);
-  if (map == NULL)
-  {
-    free(fb.fb);
-    exit(1);
-  }
   //run_init_game_menu();
 
-  // get starting coords for pacman
-  pacman_type pacman = create_pacman(&map_circles, SCREEN_WIDTH, SCREEN_HEIGHT, 5);
-  char read = ' ';
-  while (read != 'q')
-  {
-    pacman_move(&pacman, map);
-    render_map(map, &fb);
-    //draw pacman
-    draw_circle(&fb, pacman.location.x, pacman.location.y, 8, 0xffe0);
-    lcd_from_fb(&fb, lcd_mem_base);
-    pthread_mutex_lock(&mtx);
-    read = read_thread_data.last_read;
-    pthread_mutex_unlock(&mtx);
-  }
+  //run game
+  peripherals_data_t peripherals = {.led_mem_base = led_mem_base, .lcd_mem_base = lcd_mem_base, 
+                          .lcd_h = SCREEN_HEIGHT, .lcd_w = SCREEN_WIDTH};
+  game_init_data_t game = {.pacman_lives = 5, .ghost_nr = 3, .map = &map_circles};
+  run_game(&game, &peripherals);
 
   // program termination
+  set_background(&fb, 0);
   draw_text_center(&fb, "KONEC", SCREEN_WIDTH / 2, SCREEN_HEIGHT / 2, 10, font, 0xffff);
   lcd_from_fb(&fb, lcd_mem_base);
   printf("Goodbye world\n");
@@ -117,8 +100,6 @@ int main(int argc, char *argv[])
   // free allocated memory
   free(fb.fb);
   fb.fb = NULL;
-  free(map->board_arr);
-  free(map);
 
   pthread_mutex_lock(&mtx);
   read_thread_data.quit = true;

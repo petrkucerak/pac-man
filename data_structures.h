@@ -14,6 +14,7 @@
 #include <stdint.h>
 #include <stdbool.h>
 #include <pthread.h>
+#include "map_template.h"
 
 typedef struct
 {
@@ -42,17 +43,33 @@ typedef struct
     char last_read;
 } read_thread_data_type;
 
-typedef struct 
+typedef struct
 {
     coords location;
     coords direction;
     int score;
     int lives;
     int maxlives;
-}pacman_type;
+} pacman_type;
 
 extern read_thread_data_type read_thread_data;
 extern pthread_mutex_t mtx;
+
+typedef struct
+{
+    unsigned char *lcd_mem_base;
+    unsigned char *led_mem_base;
+    int lcd_w;
+    int lcd_h;
+} peripherals_data_t;
+
+typedef struct 
+{
+    int pacman_lives;
+    int ghost_nr;
+    map_template *map;
+}game_init_data_t;
+
 
 /**
  * place where is the coin drawn, pacman can walk accross it

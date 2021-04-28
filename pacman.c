@@ -69,6 +69,14 @@ void pacman_move(pacman_type *pacman, map_data *map)
         pacman->location.x = pacman->location.x+pacman->direction.x;
         pacman->location.y = pacman->location.y+pacman->direction.y;
     }
+    if(map->board_arr[map->width * (pacman->location.y) + pacman->location.x]== COIN){
+        map->board_arr[map->width * (pacman->location.y) + pacman->location.x] = PASSAGE;
+        pacman->score++;
+    }
+    if(map->board_arr[map->width * (pacman->location.y) + pacman->location.x]== SUPERCOIN){
+        map->board_arr[map->width * (pacman->location.y) + pacman->location.x] = PASSAGE;
+        pacman->lives--;
+    }
 }
 
 bool can_move(pacman_type *pacman, int dirx, int diry, map_data *map)

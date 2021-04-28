@@ -17,4 +17,5 @@
 #define KEY_RIGHT 'd'
 #define KEY_QUIT 'q'
 
+#define COIN_SCORE_INCECREASE 100
 #endif

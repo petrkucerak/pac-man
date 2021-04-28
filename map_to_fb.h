@@ -14,7 +14,7 @@
 #include "data_structures.h"
 #include <stdbool.h>
 #define WALL_COLOR 0x1f
-#define PATH_COLOR 0xffff
+#define PATH_COLOR 0
 
 /**
  * given map_data draws the map to frame buffer
