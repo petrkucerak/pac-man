@@ -13,6 +13,9 @@
 #ifndef MENU_UTILITIES_H
 #define MENU_UTILITIES_H
 
-int testing_function(int val);
+void run_init_game_menu()
+{
+  
+}
 
 #endif
