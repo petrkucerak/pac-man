@@ -12,24 +12,47 @@
 #ifndef DATA_STRUCTURES_H
 #define DATA_STRUCTURES_H
 #include <stdint.h>
+#include <stdbool.h>
+#include <pthread.h>
 
-typedef struct {
+typedef struct
+{
     int width;
     int height;
     uint16_t *fb;
 } fb_data;
 
-typedef struct {
+typedef struct
+{
     int width;
     int height;
     char *board_arr;
     int max_object_diameter; // maximum dimensions of ghosts, pacman and coins
 } map_data;
 
-typedef struct {
+typedef struct
+{
     int x;
     int y;
 } coords;
+
+typedef struct
+{
+    bool quit;
+    char last_read;
+} read_thread_data_type;
+
+typedef struct 
+{
+    coords location;
+    coords direction;
+    int score;
+    int lives;
+    int maxlives;
+}pacman_type;
+
+
+extern pthread_mutex_t mtx;
 
 /**
  * place where is the coin drawn, pacman can walk accross it
