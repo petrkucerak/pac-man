@@ -14,6 +14,7 @@
 #define GAME_H
 #include "data_structures.h"
 #include "pacman.h"
+#include "ghost.h"
 
 int run_game(game_init_data_t* game_data, peripherals_data_t* peripherals);
 
