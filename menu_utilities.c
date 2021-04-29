@@ -35,13 +35,27 @@ bool run_init_game_menu(fb_data *frame_buff, unsigned char *lcd_mem_base, font_d
   lcd_from_fb(frame_buff, lcd_mem_base);
 
   // listen symbol
-  char read = ' ';
-  while (read != 's')
+  char read;
+  while (true)
   {
-    pthread_mutex_lock(&mtx);
-    read = read_thread_data.last_read;
-    pthread_mutex_unlock(&mtx);
+    read = getchar();
+    if (read == 's')
+      break;
+    if (read == 'l')
+    {
+      game = sub_menu_lives(frame_buff, lcd_mem_base, font, game);
+    }
+    if (read == 'm')
+    {
+      game = sub_menu_map(frame_buff, lcd_mem_base, font, game);
+    }
+    if (read == 'g')
+    {
+      game = sub_menu_ghosts(frame_buff, lcd_mem_base, font, game);
+    }
 
+    draw_menu(frame_buff, font, game);
+    lcd_from_fb(frame_buff, lcd_mem_base);
   }
 
   return true;
@@ -64,5 +78,45 @@ void draw_menu(fb_data *frame_buff, font_descriptor_t *font, game_init_data_t ga
   draw_text_center(frame_buff, string_tmp, frame_buff->width / 2, HEIGHT_M / 2 + HEIGHT_M / 7, 2, font, 0xffff);
 
   draw_text_center(frame_buff, "SPUSIT HRU: [s]", frame_buff->width / 2, HEIGHT_M - HEIGHT_M / 10, 2, font, 0xffff);
+}
 
+game_init_data_t sub_menu_lives(fb_data *frame_buff, unsigned char *lcd_mem_base, font_descriptor_t *font, game_init_data_t game_data)
+{
+  char c;
+  while (true)
+  {
+    // set buffer
+    set_background(frame_buff, 0);
+    draw_text_center(frame_buff, "NASTAVENI ZIVOTU", frame_buff->width / 2, HEIGHT_M / 10, 3, font, 0xffff);
+    draw_text_center(frame_buff, "aktualni pocet zivotu", frame_buff->width / 2, HEIGHT_M / 2 - HEIGHT_M / 7, 2, font, 0xffff);
+
+    char string_tmp[40];
+    sprintf(string_tmp, "%d", game_data.pacman_lives);
+    draw_text_center(frame_buff, string_tmp, frame_buff->width / 2, HEIGHT_M / 2, 3, font, 0xffff);
+
+    draw_text_center(frame_buff, "zmackni cislo (max 4)", frame_buff->width / 2, HEIGHT_M / 2 + HEIGHT_M / 7, 2, font, 0xffff);
+    draw_text_center(frame_buff, "POTVRDIT: [s]", frame_buff->width / 2, HEIGHT_M - HEIGHT_M / 10, 2, font, 0xffff);
+    
+    // update display
+    lcd_from_fb(frame_buff, lcd_mem_base);
+
+    // listen orders
+    c = getchar();
+    if(c == 's') return game_data;
+    if(c > 48 && c < 53){
+      game_data.pacman_lives = c - 48;
+    }
+  }
+}
+
+game_init_data_t sub_menu_map(fb_data *frame_buff, unsigned char *lcd_mem_base, font_descriptor_t *font, game_init_data_t game_data)
+{
+
+  return game_data;
+}
+
+game_init_data_t sub_menu_ghosts(fb_data *frame_buff, unsigned char *lcd_mem_base, font_descriptor_t *font, game_init_data_t game_data)
+{
+
+  return game_data;
 }
