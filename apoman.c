@@ -81,9 +81,9 @@ int main(int argc, char *argv[])
   font_descriptor_t *font = &font_winFreeSystem14x16;
 
   // text menu
-  // run_init_game_menu(&fb, lcd_mem_base, font);
+  run_init_game_menu(&fb, lcd_mem_base, font);
 
-  //run_init_game_menu();
+  // exit(-1);
 
   //run game
   peripherals_data_t peripherals = {.led_mem_base = led_mem_base, .lcd_mem_base = lcd_mem_base, 
