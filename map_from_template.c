@@ -33,7 +33,6 @@ map_data *create_map_data(int screen_w, int screen_h, map_template *template)
             map->board_arr = map_array;
         }
     }
-
     if (map != NULL)
     {
         int cell_width = screen_w / template->width;
@@ -61,6 +60,8 @@ map_data *create_map_data(int screen_w, int screen_h, map_template *template)
                 create_cell(row, col, template, map);
             }
         }
+        map->ghost_spawn = get_coords_from_template(template->ghost_spawn_y, template->ghost_spawn_x, template,
+                            screen_w, screen_h);
     }
     return map;
 }

@@ -25,17 +25,18 @@ typedef struct
 
 typedef struct
 {
+    int x;
+    int y;
+} coords;
+
+typedef struct
+{
     int width;
     int height;
     char *board_arr;
     int max_object_diameter; // maximum dimensions of ghosts, pacman and coins
+    coords ghost_spawn;
 } map_data;
-
-typedef struct
-{
-    int x;
-    int y;
-} coords;
 
 typedef struct
 {

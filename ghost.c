@@ -13,6 +13,7 @@
 #include "data_structures.h"
 #include "draw_shapes.h"
 #include "map_from_template.h"
+#include "config.h"
 #include <stdbool.h>
 #include <stdlib.h>
 #include <stdio.h>
@@ -34,7 +35,9 @@ bool ghost_move(ghost_type *ghost, map_data *map, pacman_type *pacman)
     {
         if (ghost->scared)
         {
-            //move to original location
+            ghost->location = map->ghost_spawn;
+            ghost->scared = false;
+            pacman->score += GHOST_SCORE_INCECREASE;
         }
         else
         {
@@ -42,9 +45,10 @@ bool ghost_move(ghost_type *ghost, map_data *map, pacman_type *pacman)
         }
     }
 
-    if(ghost->scared == false){
-        if(rand()%400==0){
-            printf("changing\n");
+    if (ghost->scared == false)
+    {
+        if (rand() % 400 == 0)
+        {
             ghost->moving_randomly = !ghost->moving_randomly;
         }
     }
@@ -57,7 +61,9 @@ bool ghost_move(ghost_type *ghost, map_data *map, pacman_type *pacman)
     {
         if (ghost->scared)
         {
-            //move to original location
+            ghost->location = map->ghost_spawn;
+            ghost->scared = false;
+            pacman->score += GHOST_SCORE_INCECREASE;
         }
         else
         {
@@ -102,10 +108,11 @@ void draw_ghost(fb_data *fb, ghost_type *ghost, map_data *map)
 {
     if (ghost->scared)
     {
-         draw_circle(fb, ghost->location.x, ghost->location.y, map->max_object_diameter / 3, 0x1f);
+        draw_circle(fb, ghost->location.x, ghost->location.y, map->max_object_diameter / 3, 0x1f);
     }
-    else if(ghost->moving_randomly){
-         draw_circle(fb, ghost->location.x, ghost->location.y, map->max_object_diameter / 3, 0x7e0);
+    else if (ghost->moving_randomly)
+    {
+        draw_circle(fb, ghost->location.x, ghost->location.y, map->max_object_diameter / 3, 0x7e0);
     }
     else
     {
@@ -115,7 +122,6 @@ void draw_ghost(fb_data *fb, ghost_type *ghost, map_data *map)
 
 ghost_type create_ghost(map_template *map, int screen_w, int screen_h, int ghost_nr)
 {
-    printf("vytvoren\n");
     ghost_type ghost;
     ghost.moving_randomly = true;
     ghost.scared = false;
