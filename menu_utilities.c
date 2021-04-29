@@ -27,7 +27,7 @@ bool run_init_game_menu(fb_data *frame_buff, unsigned char *lcd_mem_base, font_d
   draw_text_center(frame_buff, "HLAVNI MENU", frame_buff->width / 2, HEIGHT_M / 2, 5, font, 0xffff);
   lcd_from_fb(frame_buff, lcd_mem_base);
 
-  sleep(4);
+  sleep(2);
 
   // menu with context
   game_init_data_t game = {.pacman_lives = 3, .ghost_nr = 3, .map = &map_circles};
@@ -96,14 +96,16 @@ game_init_data_t sub_menu_lives(fb_data *frame_buff, unsigned char *lcd_mem_base
 
     draw_text_center(frame_buff, "zmackni cislo (max 4)", frame_buff->width / 2, HEIGHT_M / 2 + HEIGHT_M / 7, 2, font, 0xffff);
     draw_text_center(frame_buff, "POTVRDIT: [s]", frame_buff->width / 2, HEIGHT_M - HEIGHT_M / 10, 2, font, 0xffff);
-    
+
     // update display
     lcd_from_fb(frame_buff, lcd_mem_base);
 
     // listen orders
     c = getchar();
-    if(c == 's') return game_data;
-    if(c > 48 && c < 53){
+    if (c == 's')
+      return game_data;
+    if (c > 48 && c < 53)
+    {
       game_data.pacman_lives = c - 48;
     }
   }
@@ -117,6 +119,31 @@ game_init_data_t sub_menu_map(fb_data *frame_buff, unsigned char *lcd_mem_base, 
 
 game_init_data_t sub_menu_ghosts(fb_data *frame_buff, unsigned char *lcd_mem_base, font_descriptor_t *font, game_init_data_t game_data)
 {
+  char c;
+  while (true)
+  {
+    // set buffer
+    set_background(frame_buff, 0);
+    draw_text_center(frame_buff, "NASTAVENI DUCHU", frame_buff->width / 2, HEIGHT_M / 10, 3, font, 0xffff);
+    draw_text_center(frame_buff, "aktualni pocet duchu", frame_buff->width / 2, HEIGHT_M / 2 - HEIGHT_M / 7, 2, font, 0xffff);
 
-  return game_data;
+    char string_tmp[40];
+    sprintf(string_tmp, "%d", game_data.ghost_nr);
+    draw_text_center(frame_buff, string_tmp, frame_buff->width / 2, HEIGHT_M / 2, 3, font, 0xffff);
+
+    draw_text_center(frame_buff, "zmackni cislo (max 4)", frame_buff->width / 2, HEIGHT_M / 2 + HEIGHT_M / 7, 2, font, 0xffff);
+    draw_text_center(frame_buff, "POTVRDIT: [s]", frame_buff->width / 2, HEIGHT_M - HEIGHT_M / 10, 2, font, 0xffff);
+
+    // update display
+    lcd_from_fb(frame_buff, lcd_mem_base);
+
+    // listen orders
+    c = getchar();
+    if (c == 's')
+      return game_data;
+    if (c > 48 && c < 53)
+    {
+      game_data.ghost_nr = c - 48;
+    }
+  }
 }

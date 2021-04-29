@@ -25,11 +25,14 @@ bool run_init_game_menu(fb_data *frame_buff, unsigned char *lcd_mem_base, font_d
 void draw_menu(fb_data *frame_buff, font_descriptor_t *font, game_init_data_t game_data);
 
 /**
- * function drow sub menu and count of lives
- * @return update game init data with update lives
+ * function draw sub menu and update count of lives
  */
 game_init_data_t sub_menu_lives(fb_data *frame_buff, unsigned char *lcd_mem_base, font_descriptor_t *font, game_init_data_t game_data);
 game_init_data_t sub_menu_map(fb_data *frame_buff, unsigned char *lcd_mem_base, font_descriptor_t *font, game_init_data_t game_data);
+
+/**
+ * function draw sub menu and update count of ghosts
+ */
 game_init_data_t sub_menu_ghosts(fb_data *frame_buff, unsigned char *lcd_mem_base, font_descriptor_t *font, game_init_data_t game_data);
 
 #endif
