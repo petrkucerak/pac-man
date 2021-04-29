@@ -37,10 +37,11 @@ pacman_type create_pacman(map_template *map, int screen_w, int screen_h, int liv
 }
 
 /*
-Moves pacman if possible and changes direction if key has been pressed
+Moves pacman if possible and changes direction if key has been pressed, returns true if pacman ate supercoin
 */
-void pacman_move(pacman_type *pacman, map_data *map)
+bool pacman_move(pacman_type *pacman, map_data *map)
 {
+    bool ret = false;
     //find out if some important key has been pressed
     char pressed;
     pthread_mutex_lock(&mtx);
@@ -72,12 +73,13 @@ void pacman_move(pacman_type *pacman, map_data *map)
     }
     if(map->board_arr[map->width * (pacman->location.y) + pacman->location.x]== COIN){
         map->board_arr[map->width * (pacman->location.y) + pacman->location.x] = PASSAGE;
-        pacman->score++;
+        pacman->score = pacman->score + COIN_SCORE_INCECREASE;
     }
     if(map->board_arr[map->width * (pacman->location.y) + pacman->location.x]== SUPERCOIN){
         map->board_arr[map->width * (pacman->location.y) + pacman->location.x] = PASSAGE;
-        pacman->lives--;
+        ret = true;
     }
+    return ret;
 }
 
 bool pacman_can_move(pacman_type *pacman, int dirx, int diry, map_data *map)

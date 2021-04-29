@@ -92,7 +92,14 @@ int create_moves(moves_costs_t *moves_arr, ghost_type *ghost, map_data *map, pac
 
 void draw_ghost(fb_data *fb, ghost_type *ghost, map_data *map)
 {
-    draw_circle(fb, ghost->location.x, ghost->location.y, map->max_object_diameter / 3, ghost->color);
+    if (ghost->scared)
+    {
+         draw_circle(fb, ghost->location.x, ghost->location.y, map->max_object_diameter / 3, 0x1f);
+    }
+    else
+    {
+        draw_circle(fb, ghost->location.x, ghost->location.y, map->max_object_diameter / 3, ghost->color);
+    }
 }
 
 ghost_type create_ghost(map_template *map, int screen_w, int screen_h, int ghost_nr)

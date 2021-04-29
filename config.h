@@ -18,4 +18,5 @@
 #define KEY_QUIT 'q'
 
 #define COIN_SCORE_INCECREASE 100
+#define GHOST_SCORE_INCECREASE 200
 #endif

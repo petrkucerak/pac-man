@@ -18,7 +18,7 @@
 
 pacman_type create_pacman(map_template* map, int screen_w, int screen_h, int lives);
 
-void pacman_move(pacman_type* pacman, map_data* map);
+bool pacman_move(pacman_type* pacman, map_data* map);
 
 void draw_pacman(pacman_type *pacman, fb_data * fb, map_data* map);
 #endif
