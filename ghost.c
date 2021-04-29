@@ -40,6 +40,12 @@ bool ghost_move(ghost_type *ghost, map_data *map, pacman_type *pacman)
             return true;
         }
     }
+
+    if(ghost->scared == false){
+        if(rand()%200==199){
+            ghost->moving_randomly = !ghost->moving_randomly;
+        }
+    }
     moves_costs_t possible_moves[4];
     int possibilities = create_moves(possible_moves, ghost, map, pacman);
     change_direction(ghost, possibilities, possible_moves);
@@ -96,6 +102,9 @@ void draw_ghost(fb_data *fb, ghost_type *ghost, map_data *map)
     {
          draw_circle(fb, ghost->location.x, ghost->location.y, map->max_object_diameter / 3, 0x1f);
     }
+    else if(ghost->moving_randomly){
+         draw_circle(fb, ghost->location.x, ghost->location.y, map->max_object_diameter / 3, 0x7e0);
+    }
     else
     {
         draw_circle(fb, ghost->location.x, ghost->location.y, map->max_object_diameter / 3, ghost->color);
@@ -105,7 +114,7 @@ void draw_ghost(fb_data *fb, ghost_type *ghost, map_data *map)
 ghost_type create_ghost(map_template *map, int screen_w, int screen_h, int ghost_nr)
 {
     ghost_type ghost;
-    ghost.moving_randomly = false;
+    ghost.moving_randomly = true;
     ghost.scared = false;
     ghost.location = get_coords_from_template(map->ghost_spawn_x, map->ghost_spawn_y,
                                               map, screen_w, screen_h);
