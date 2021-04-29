@@ -54,6 +54,7 @@ typedef struct
 
 extern read_thread_data_type read_thread_data;
 extern pthread_mutex_t mtx;
+extern pthread_cond_t character_has_been_read;
 
 typedef struct
 {

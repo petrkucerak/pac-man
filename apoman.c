@@ -39,6 +39,7 @@
 #define SCREEN_HEIGHT 320
 
 pthread_mutex_t mtx;
+pthread_cond_t character_has_been_read;
 read_thread_data_type read_thread_data;
 
 int main(int argc, char *argv[])
@@ -62,6 +63,7 @@ int main(int argc, char *argv[])
   //terminal read
 
   pthread_mutex_init(&mtx, NULL); // initialize mutex with default attributes
+  pthread_cond_init(&character_has_been_read, NULL);
   read_thread_data.quit = false;
   read_thread_data.last_read = ' ';
   pthread_t threads[1];

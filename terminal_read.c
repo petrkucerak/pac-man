@@ -18,7 +18,6 @@
 #include <poll.h>
 #include <fcntl.h>
 
-pthread_mutex_t mtx;
 #define TERMINAL_TIMEOUT_MS 100
 
 //inside function to read terminal in nonblocking regime
@@ -46,6 +45,7 @@ void *input_thread(void *d)
             pthread_mutex_lock(&mtx);
             data->last_read = c;
             pthread_mutex_unlock(&mtx);
+            pthread_cond_broadcast(&character_has_been_read);
         }
         else if (r < 0)
         {
