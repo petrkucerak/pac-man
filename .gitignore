@@ -2,5 +2,5 @@
 depend
 apoman
 connect.gdb
-makefile
+Makefile
 mzapo-root-key
