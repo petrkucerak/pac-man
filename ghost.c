@@ -31,7 +31,7 @@ void ghost_move(ghost_type *ghost, map_data *map, pacman_type *pacman)
 {
     moves_costs_t possible_moves[4];
     int possibilities = create_moves(possible_moves, ghost, map, pacman);
-    
+    change_direction(ghost, possibilities, possible_moves);
     ghost->location.x = ghost->location.x+ghost->direction.x;
     ghost->location.y = ghost->location.y+ghost->direction.y;
 }
