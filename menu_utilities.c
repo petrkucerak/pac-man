@@ -35,12 +35,20 @@ bool run_init_game_menu(fb_data *frame_buff, unsigned char *lcd_mem_base, font_d
   lcd_from_fb(frame_buff, lcd_mem_base);
 
   // listen symbol
-  char read;
-  while (true)
+  char read = ' ';
+  while (read != 's')
   {
-    read = getchar();
-    if (read == 's')
-      break;
+    // anulate 
+    pthread_mutex_lock(&mtx);
+    read_thread_data.last_read = ' ';
+    pthread_mutex_unlock(&mtx);
+
+    // scan input
+    pthread_mutex_lock(&mtx);
+    pthread_cond_wait(&character_has_been_read, &mtx);
+    read = read_thread_data.last_read;
+    pthread_mutex_unlock(&mtx);
+    
     if (read == 'l')
     {
       game = sub_menu_lives(frame_buff, lcd_mem_base, font, game);
@@ -54,6 +62,7 @@ bool run_init_game_menu(fb_data *frame_buff, unsigned char *lcd_mem_base, font_d
       game = sub_menu_ghosts(frame_buff, lcd_mem_base, font, game);
     }
 
+    // redraw menu
     draw_menu(frame_buff, font, game);
     lcd_from_fb(frame_buff, lcd_mem_base);
   }
@@ -82,8 +91,8 @@ void draw_menu(fb_data *frame_buff, font_descriptor_t *font, game_init_data_t ga
 
 game_init_data_t sub_menu_lives(fb_data *frame_buff, unsigned char *lcd_mem_base, font_descriptor_t *font, game_init_data_t game_data)
 {
-  char c;
-  while (true)
+  char c = ' ';
+  while (c != 's')
   {
     // set buffer
     set_background(frame_buff, 0);
@@ -100,15 +109,24 @@ game_init_data_t sub_menu_lives(fb_data *frame_buff, unsigned char *lcd_mem_base
     // update display
     lcd_from_fb(frame_buff, lcd_mem_base);
 
+    // anulate 
+    pthread_mutex_lock(&mtx);
+    read_thread_data.last_read = ' ';
+    pthread_mutex_unlock(&mtx);
+
+    // scan input
+    pthread_mutex_lock(&mtx);
+    pthread_cond_wait(&character_has_been_read, &mtx);
+    c = read_thread_data.last_read;
+    pthread_mutex_unlock(&mtx);
+
     // listen orders
-    c = getchar();
-    if (c == 's')
-      return game_data;
     if (c > 48 && c < 53)
     {
       game_data.pacman_lives = c - 48;
     }
   }
+  return game_data;
 }
 
 game_init_data_t sub_menu_map(fb_data *frame_buff, unsigned char *lcd_mem_base, font_descriptor_t *font, game_init_data_t game_data)
@@ -119,8 +137,8 @@ game_init_data_t sub_menu_map(fb_data *frame_buff, unsigned char *lcd_mem_base, 
 
 game_init_data_t sub_menu_ghosts(fb_data *frame_buff, unsigned char *lcd_mem_base, font_descriptor_t *font, game_init_data_t game_data)
 {
-  char c;
-  while (true)
+  char c = ' ';
+  while (c != 's')
   {
     // set buffer
     set_background(frame_buff, 0);
@@ -137,13 +155,22 @@ game_init_data_t sub_menu_ghosts(fb_data *frame_buff, unsigned char *lcd_mem_bas
     // update display
     lcd_from_fb(frame_buff, lcd_mem_base);
 
+    // anulate 
+    pthread_mutex_lock(&mtx);
+    read_thread_data.last_read = ' ';
+    pthread_mutex_unlock(&mtx);
+
+    // scan input
+    pthread_mutex_lock(&mtx);
+    pthread_cond_wait(&character_has_been_read, &mtx);
+    c = read_thread_data.last_read;
+    pthread_mutex_unlock(&mtx);
+    
     // listen orders
-    c = getchar();
-    if (c == 's')
-      return game_data;
     if (c > 48 && c < 53)
     {
       game_data.ghost_nr = c - 48;
     }
   }
+  return game_data;
 }
