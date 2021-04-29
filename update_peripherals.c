@@ -83,3 +83,11 @@ void set_right_RGB(unsigned char *led_mem_base, uint8_t r, uint8_t g, uint8_t b)
     uint32_t color = (r<<16)|(g<<8)|b;
     *(volatile uint32_t *)(led_mem_base + SPILED_REG_LED_RGB2_o) = color;
 }
+
+void sel_leds_color(unsigned char *led_mem_base, uint32_t color){
+     if(led_mem_base == NULL){
+        return;
+    }
+    *(volatile uint32_t *)(led_mem_base + SPILED_REG_LED_RGB1_o) = color;
+    *(volatile uint32_t *)(led_mem_base + SPILED_REG_LED_RGB2_o) = color;
+}

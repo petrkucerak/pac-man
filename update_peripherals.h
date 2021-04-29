@@ -18,7 +18,7 @@
 /**
  * function that updates the LCD from frame buffer. LCD has to be initialised
  */
-void lcd_from_fb(const fb_data* frame_buff, unsigned char *parlcd_mem_base);
+void lcd_from_fb(const fb_data *frame_buff, unsigned char *parlcd_mem_base);
 
 /**
  * function that shows nr on the ledstrip
@@ -34,4 +34,8 @@ void set_left_RGB(unsigned char *led_mem_base, uint8_t r, uint8_t g, uint8_t b);
  * sets right RGB to particular color
  */
 void set_right_RGB(unsigned char *led_mem_base, uint8_t r, uint8_t g, uint8_t b);
+/**
+* sets both leds to color
+*/
+void sel_leds_color(unsigned char *led_mem_base, uint32_t color)
 #endif
