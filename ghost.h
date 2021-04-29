@@ -12,4 +12,12 @@
 #ifndef GHOST_H
 #define GHOST_H
 
+#include "data_structures.h"
+//internal data structure
+typedef struct
+{
+    coords dir;
+    int cost;
+} moves_costs_t;
+
 #endif

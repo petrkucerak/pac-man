@@ -17,7 +17,7 @@
 #include <stdbool.h>
 
 //internal functions
-bool can_move(pacman_type *pacman, int dirx, int diry, map_data *map);
+bool pacman_can_move(pacman_type *pacman, int dirx, int diry, map_data *map);
 // end of internal functions
 
 /*
@@ -46,27 +46,27 @@ void pacman_move(pacman_type *pacman, map_data *map)
     pthread_mutex_lock(&mtx);
     pressed = read_thread_data.last_read;
     pthread_mutex_unlock(&mtx);
-    if ((pressed == KEY_UP) && (can_move(pacman, 0, -1, map)))
+    if ((pressed == KEY_UP) && (pacman_can_move(pacman, 0, -1, map)))
     {
         pacman->direction.x = 0;
         pacman->direction.y = -1;
     }
-    if ((pressed == KEY_DWN) && (can_move(pacman, 0, 1, map)))
+    if ((pressed == KEY_DWN) && (pacman_can_move(pacman, 0, 1, map)))
     {
         pacman->direction.x = 0;
         pacman->direction.y = 1;
     }
-    if ((pressed == KEY_LEFT) && (can_move(pacman, -1, 0, map)))
+    if ((pressed == KEY_LEFT) && (pacman_can_move(pacman, -1, 0, map)))
     {
         pacman->direction.x = -1;
         pacman->direction.y = 0;
     }
-    if ((pressed == KEY_RIGHT) && (can_move(pacman, 1, 0, map)))
+    if ((pressed == KEY_RIGHT) && (pacman_can_move(pacman, 1, 0, map)))
     {
         pacman->direction.x = 1;
         pacman->direction.y = 0;
     }
-    if(can_move(pacman, pacman->direction.x, pacman->direction.y, map)){
+    if(pacman_can_move(pacman, pacman->direction.x, pacman->direction.y, map)){
         pacman->location.x = pacman->location.x+pacman->direction.x;
         pacman->location.y = pacman->location.y+pacman->direction.y;
     }
@@ -80,7 +80,7 @@ void pacman_move(pacman_type *pacman, map_data *map)
     }
 }
 
-bool can_move(pacman_type *pacman, int dirx, int diry, map_data *map)
+bool pacman_can_move(pacman_type *pacman, int dirx, int diry, map_data *map)
 {
     int pixel = map->board_arr[map->width * (pacman->location.y + diry) + pacman->location.x + dirx];
     return (pixel != BLOCKED);

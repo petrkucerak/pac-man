@@ -14,19 +14,13 @@
 #include <stdbool.h>
 #include <stdlib.h>
 
-//internal functions and structure
+//internal functions
 //returns true if pacman can move in given direction
-bool can_move(ghost_type *ghost, int dirx, int diry, map_data *map);
+bool ghost_can_move(ghost_type *ghost, int dirx, int diry, map_data *map);
 
 //returns ammount of directions added to moves_arr
 int create_moves(moves_costs_t *moves_arr, ghost_type *ghost, map_data *map, pacman_type *pacman);
-
-typedef struct
-{
-    coords dir;
-    int cost;
-} moves_costs_t;
-// end of internal functions and structure
+// end of internal functions
 
 void move(ghost_type *ghost, map_data *map, pacman_type *pacman)
 {
@@ -56,15 +50,15 @@ void move(ghost_type *ghost, map_data *map, pacman_type *pacman)
         {
             if (lowest_cost > possible_moves[i].cost)
             {
-                int lowest_cost = possible_moves[i].cost;
-                int lowest_index = i;
+                lowest_cost = possible_moves[i].cost;
+                lowest_index = i;
             }
         }
         ghost->direction = possible_moves[lowest_index].dir;
     }
 }
 
-bool can_move(ghost_type *ghost, int dirx, int diry, map_data *map)
+bool ghost_can_move(ghost_type *ghost, int dirx, int diry, map_data *map)
 {
     int pixel = map->board_arr[map->width * (ghost->location.y + diry) + ghost->location.x + dirx];
     return (pixel != BLOCKED);
@@ -77,7 +71,7 @@ int create_moves(moves_costs_t *moves_arr, ghost_type *ghost, map_data *map, pac
     int ret = 0;
     for (int i = 0; i < 4; ++i)
     {
-        if (can_move(ghost, dirs[i].x, dirs[i].y, map))
+        if (ghost_can_move(ghost, dirs[i].x, dirs[i].y, map))
         {
             if ((dirs[i].x != -ghost->direction.x) || (dirs[i].y != -ghost->direction.y))
             {
