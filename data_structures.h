@@ -76,6 +76,7 @@ typedef struct
     bool scared;
     coords location;
     coords direction;
+    uint16_t color;
 }ghost_type;
 
 

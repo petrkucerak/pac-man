@@ -37,14 +37,16 @@ int run_game(game_init_data_t *game_data, peripherals_data_t *peripherals)
   }
   pacman_type pacman = create_pacman(game_data->map, peripherals->lcd_w, peripherals->lcd_h, 
                                                       game_data->pacman_lives);
-
+  ghost_type ghost = create_ghost(game_data->map,  peripherals->lcd_w, peripherals->lcd_h, 0);
   //actual game
   char read = ' ';
   while (read != 'q')
   {
     pacman_move(&pacman, map);
+    ghost_move(&ghost, map, &pacman);
     render_map(map, &fb);
     draw_pacman(&pacman, &fb, map);
+    draw_ghost(&fb, &ghost, map);
     led_strip_number(peripherals->led_mem_base, game_data->pacman_lives, pacman.lives);
     lcd_from_fb(&fb, peripherals->lcd_mem_base);
     pthread_mutex_lock(&mtx);

@@ -16,8 +16,22 @@
 //internal data structure
 typedef struct
 {
-    coords dir;
-    int cost;
+  coords dir;
+  int cost;
 } moves_costs_t;
+/*
+returns ghost structure
+*/
+ghost_type create_ghost(map_template *map, int screen_w, int screen_h, int ghost_nr);
+
+/*
+draws the ghost
+*/
+void draw_ghost(fb_data *fb, ghost_type *ghost, map_data *map);
+
+/*
+moves the ghost
+*/
+void ghost_move(ghost_type *ghost, map_data *map, pacman_type *pacman);
 
 #endif
