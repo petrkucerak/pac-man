@@ -37,5 +37,5 @@ void set_right_RGB(unsigned char *led_mem_base, uint8_t r, uint8_t g, uint8_t b)
 /**
 * sets both leds to color
 */
-void sel_leds_color(unsigned char *led_mem_base, uint32_t color)
+void sel_leds_color(unsigned char *led_mem_base, uint32_t color);
 #endif
