@@ -36,11 +36,12 @@ bool run_init_game_menu(fb_data *frame_buff, unsigned char *lcd_mem_base, font_d
 
   // listen symbol
   char read = ' ';
-  while (read != 'S')
+  while (read != 's')
   {
     pthread_mutex_lock(&mtx);
     read = read_thread_data.last_read;
     pthread_mutex_unlock(&mtx);
+
   }
 
   return true;
@@ -51,9 +52,17 @@ void draw_menu(fb_data *frame_buff, font_descriptor_t *font, game_init_data_t ga
   // menu with context
   set_background(frame_buff, 0);
   draw_text_center(frame_buff, "HLAVNI MENU", frame_buff->width / 2, HEIGHT_M / 10, 3, font, 0xffff);
-  draw_text_center(frame_buff, "pocet zivotu ... 4 [L]", frame_buff->width / 2, HEIGHT_M / 2 - HEIGHT_M / 7, 2, font, 0xffff);
-  draw_text_center(frame_buff, "mapa ... 1 [M]", frame_buff->width / 2, HEIGHT_M / 2, 2, font, 0xffff);
-  draw_text_center(frame_buff, "pocet duchu ... 8 [G]", frame_buff->width / 2, HEIGHT_M / 2 + HEIGHT_M / 7, 2, font, 0xffff);
-  draw_text_center(frame_buff, "SPUSIT HRU ... S", frame_buff->width / 2, HEIGHT_M - HEIGHT_M / 10, 2, font, 0xffff);
+
+  char string_tmp[40];
+  sprintf(string_tmp, "pocet zivotu: %d [l]", game_data.pacman_lives);
+  draw_text_center(frame_buff, string_tmp, frame_buff->width / 2, HEIGHT_M / 2 - HEIGHT_M / 7, 2, font, 0xffff);
+
+  sprintf(string_tmp, "mapa: %s [m]", game_data.map->name);
+  draw_text_center(frame_buff, string_tmp, frame_buff->width / 2, HEIGHT_M / 2, 2, font, 0xffff);
+
+  sprintf(string_tmp, "pocet duchu: %d [g]", game_data.ghost_nr);
+  draw_text_center(frame_buff, string_tmp, frame_buff->width / 2, HEIGHT_M / 2 + HEIGHT_M / 7, 2, font, 0xffff);
+
+  draw_text_center(frame_buff, "SPUSIT HRU: [s]", frame_buff->width / 2, HEIGHT_M - HEIGHT_M / 10, 2, font, 0xffff);
 
 }
