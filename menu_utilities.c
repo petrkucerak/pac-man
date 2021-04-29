@@ -24,11 +24,11 @@ bool run_init_game_menu(fb_data *frame_buff, unsigned char *lcd_mem_base, font_d
 {
   // init game menu
   set_background(frame_buff, 0);
-  draw_text_center(frame_buff, "HLAVNI MENU", frame_buff->width / 2, HEIGHT_M / 2, 5, font, 0xffff);
+  draw_text_center(frame_buff, "PAC-MAN", frame_buff->width / 2, HEIGHT_M / 2, 5, font, 0xffff);
   lcd_from_fb(frame_buff, lcd_mem_base);
 
   sleep(2);
-
+  
   // menu with context
   game_init_data_t game = {.pacman_lives = 3, .ghost_nr = 3, .map = &map_circles};
   draw_menu(frame_buff, font, game);
@@ -38,7 +38,7 @@ bool run_init_game_menu(fb_data *frame_buff, unsigned char *lcd_mem_base, font_d
   char read = ' ';
   while (read != 's')
   {
-    // anulate 
+    // anulate
     pthread_mutex_lock(&mtx);
     read_thread_data.last_read = ' ';
     pthread_mutex_unlock(&mtx);
@@ -48,7 +48,7 @@ bool run_init_game_menu(fb_data *frame_buff, unsigned char *lcd_mem_base, font_d
     pthread_cond_wait(&character_has_been_read, &mtx);
     read = read_thread_data.last_read;
     pthread_mutex_unlock(&mtx);
-    
+
     if (read == 'l')
     {
       game = sub_menu_lives(frame_buff, lcd_mem_base, font, game);
@@ -109,7 +109,7 @@ game_init_data_t sub_menu_lives(fb_data *frame_buff, unsigned char *lcd_mem_base
     // update display
     lcd_from_fb(frame_buff, lcd_mem_base);
 
-    // anulate 
+    // anulate
     pthread_mutex_lock(&mtx);
     read_thread_data.last_read = ' ';
     pthread_mutex_unlock(&mtx);
@@ -155,7 +155,7 @@ game_init_data_t sub_menu_ghosts(fb_data *frame_buff, unsigned char *lcd_mem_bas
     // update display
     lcd_from_fb(frame_buff, lcd_mem_base);
 
-    // anulate 
+    // anulate
     pthread_mutex_lock(&mtx);
     read_thread_data.last_read = ' ';
     pthread_mutex_unlock(&mtx);
@@ -165,7 +165,7 @@ game_init_data_t sub_menu_ghosts(fb_data *frame_buff, unsigned char *lcd_mem_bas
     pthread_cond_wait(&character_has_been_read, &mtx);
     c = read_thread_data.last_read;
     pthread_mutex_unlock(&mtx);
-    
+
     // listen orders
     if (c > 48 && c < 53)
     {
