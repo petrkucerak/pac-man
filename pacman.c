@@ -11,6 +11,7 @@
  *******************************************************************/
 
 #include "pacman.h"
+#include "draw_shapes.h"
 #include "map_from_template.h"
 #include "config.h"
 #include <stdbool.h>
@@ -83,4 +84,9 @@ bool can_move(pacman_type *pacman, int dirx, int diry, map_data *map)
 {
     int pixel = map->board_arr[map->width * (pacman->location.y + diry) + pacman->location.x + dirx];
     return (pixel != BLOCKED);
+}
+
+void draw_pacman(pacman_type *pacman, fb_data * fb, map_data* map){
+     //draw pacman
+    draw_circle(fb, pacman->location.x, pacman->location.y, map->max_object_diameter/2, PACMAN_COLOR);
 }
