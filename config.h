@@ -19,4 +19,5 @@
 
 #define COIN_SCORE_INCECREASE 100
 #define GHOST_SCORE_INCECREASE 200
+#define SCARE_REGIME_DURATION 300 //in game tics
 #endif

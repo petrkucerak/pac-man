@@ -17,6 +17,7 @@
 #include "draw_shapes.h"
 #include "map_to_fb.h"
 #include "map_from_template.h"
+#include "config.h"
 
 int run_game(game_init_data_t *game_data, peripherals_data_t *peripherals)
 {
@@ -46,27 +47,34 @@ int run_game(game_init_data_t *game_data, peripherals_data_t *peripherals)
   //actual game
   char read = ' ';
   bool coins_to_eat = true;
-  int scare_countdown = 0;
+  int scare_countdown = -1;
+
   while ((read != 'q') && (pacman.lives > 0) && (coins_to_eat))
   {
-    if(scare_countdown ==0){
+    if (scare_countdown == 0)
+    {
       for (int j = 0; j < game_data->ghost_nr; ++j)
-        {
-          ghost[j].scared = false;
-          ghost[j].moving_randomly = true;
-        }
-    }else{
+      {
+        ghost[j].scared = false;
+        ghost[j].moving_randomly = true;
+        scare_countdown = -1;
+      }
+    }
+    else if (scare_countdown > 0)
+    {
       scare_countdown--;
     }
+
     if (pacman_move(&pacman, map)) //eaten supercoin
     {
-      scare_countdown = 100;
+      scare_countdown = SCARE_REGIME_DURATION;
       for (int j = 0; j < game_data->ghost_nr; ++j)
-        {
-          ghost[j].scared = true;
-          ghost[j].moving_randomly = true;
-        }
+      {
+        ghost[j].scared = true;
+        ghost[j].moving_randomly = true;
+      }
     }
+    bool scare_regime = false;
     for (int i = 0; i < game_data->ghost_nr; ++i)
     {
       //move every ghost and check if pacman has not been eaten
@@ -78,8 +86,10 @@ int run_game(game_init_data_t *game_data, peripherals_data_t *peripherals)
         {
           ghost[j] = create_ghost(game_data->map, peripherals->lcd_w, peripherals->lcd_h, j);
         }
+        scare_regime = false;
         break;
       }
+      scare_regime = scare_regime || ghost[i].scared;
     }
     coins_to_eat = render_map(map, &fb);
     draw_pacman(&pacman, &fb, map);
@@ -99,4 +109,4 @@ int run_game(game_init_data_t *game_data, peripherals_data_t *peripherals)
   free(map->board_arr);
   free(map);
   return 0;
-};
+}

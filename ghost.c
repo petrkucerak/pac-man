@@ -15,6 +15,7 @@
 #include "map_from_template.h"
 #include <stdbool.h>
 #include <stdlib.h>
+#include <stdio.h>
 
 //internal functions
 //returns true if pacman can move in given direction
@@ -42,7 +43,8 @@ bool ghost_move(ghost_type *ghost, map_data *map, pacman_type *pacman)
     }
 
     if(ghost->scared == false){
-        if(rand()%200==199){
+        if(rand()%400==0){
+            printf("changing\n");
             ghost->moving_randomly = !ghost->moving_randomly;
         }
     }
@@ -113,6 +115,7 @@ void draw_ghost(fb_data *fb, ghost_type *ghost, map_data *map)
 
 ghost_type create_ghost(map_template *map, int screen_w, int screen_h, int ghost_nr)
 {
+    printf("vytvoren\n");
     ghost_type ghost;
     ghost.moving_randomly = true;
     ghost.scared = false;
