@@ -27,13 +27,36 @@ int create_moves(moves_costs_t *moves_arr, ghost_type *ghost, map_data *map, pac
 void change_direction(ghost_type *ghost, int possibilities, moves_costs_t *moves_options);
 // end of internal functions
 
-void ghost_move(ghost_type *ghost, map_data *map, pacman_type *pacman)
+bool ghost_move(ghost_type *ghost, map_data *map, pacman_type *pacman)
 {
+    if ((pacman->location.x == ghost->location.x) && (pacman->location.y == ghost->location.y))
+    {
+        if (ghost->scared)
+        {
+            //move to original location
+        }
+        else
+        {
+            return true;
+        }
+    }
     moves_costs_t possible_moves[4];
     int possibilities = create_moves(possible_moves, ghost, map, pacman);
     change_direction(ghost, possibilities, possible_moves);
-    ghost->location.x = ghost->location.x+ghost->direction.x;
-    ghost->location.y = ghost->location.y+ghost->direction.y;
+    ghost->location.x = ghost->location.x + ghost->direction.x;
+    ghost->location.y = ghost->location.y + ghost->direction.y;
+    if ((pacman->location.x == ghost->location.x) && (pacman->location.y == ghost->location.y))
+    {
+        if (ghost->scared)
+        {
+            //move to original location
+        }
+        else
+        {
+            return true;
+        }
+    }
+    return false;
 }
 
 bool ghost_can_move(ghost_type *ghost, int dirx, int diry, map_data *map)
@@ -78,14 +101,15 @@ ghost_type create_ghost(map_template *map, int screen_w, int screen_h, int ghost
     ghost.moving_randomly = false;
     ghost.scared = false;
     ghost.location = get_coords_from_template(map->ghost_spawn_x, map->ghost_spawn_y,
-                                               map, screen_w, screen_h);
+                                              map, screen_w, screen_h);
     coords direction = {0, 0};
     ghost.direction = direction;
     ghost.color = 0xf000;
     return ghost;
 }
 
-void change_direction(ghost_type *ghost, int possibilities, moves_costs_t *moves_options){
+void change_direction(ghost_type *ghost, int possibilities, moves_costs_t *moves_options)
+{
     if (possibilities == 0)
     {
         //host reached dead_end

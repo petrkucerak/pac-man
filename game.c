@@ -13,6 +13,7 @@
 #include "game.h"
 #include "update_peripherals.h"
 #include <stdlib.h>
+#include <stdio.h>
 #include "draw_shapes.h"
 #include "map_to_fb.h"
 #include "map_from_template.h"
@@ -43,7 +44,9 @@ int run_game(game_init_data_t *game_data, peripherals_data_t *peripherals)
   while (read != 'q')
   {
     pacman_move(&pacman, map);
-    ghost_move(&ghost, map, &pacman);
+    if(ghost_move(&ghost, map, &pacman)){
+      printf("hit\n");
+    }
     render_map(map, &fb);
     draw_pacman(&pacman, &fb, map);
     draw_ghost(&fb, &ghost, map);

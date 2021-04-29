@@ -30,8 +30,8 @@ draws the ghost
 void draw_ghost(fb_data *fb, ghost_type *ghost, map_data *map);
 
 /*
-moves the ghost
+moves the ghost, returns true if pacman was eaten by the ghost
 */
-void ghost_move(ghost_type *ghost, map_data *map, pacman_type *pacman);
+bool ghost_move(ghost_type *ghost, map_data *map, pacman_type *pacman);
 
 #endif
