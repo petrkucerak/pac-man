@@ -12,6 +12,7 @@
 
 #include <stdio.h>
 #include "menu_utilities.h"
+#include "map_template.h"
 #include "data_structures.h"
 #include "draw_shapes.h"
 #include "update_peripherals.h"
@@ -28,9 +29,9 @@ bool run_init_game_menu(fb_data *frame_buff, unsigned char *lcd_mem_base, font_d
   lcd_from_fb(frame_buff, lcd_mem_base);
 
   sleep(2);
-  
+
   // menu with context
-  game_init_data_t game = {.pacman_lives = 3, .ghost_nr = 3, .map = &map_circles};
+  game_init_data_t game = {.pacman_lives = 3, .ghost_nr = 3, .map = &map_star};
   draw_menu(frame_buff, font, game);
   lcd_from_fb(frame_buff, lcd_mem_base);
 
@@ -131,7 +132,53 @@ game_init_data_t sub_menu_lives(fb_data *frame_buff, unsigned char *lcd_mem_base
 
 game_init_data_t sub_menu_map(fb_data *frame_buff, unsigned char *lcd_mem_base, font_descriptor_t *font, game_init_data_t game_data)
 {
+  int i = 0;
+  map_template *map_templates[] = {&map_circles, &map_star, &map_conch};
+  while(map_templates[i]->name != game_data.map->name)
+  {
+    ++i;
+  }
 
+  char c = ' ';
+  while (c != 's')
+  {
+    // set buffer
+    set_background(frame_buff, 0);
+    draw_text_center(frame_buff, "VOLBA MAPY", frame_buff->width / 2, HEIGHT_M / 10, 3, font, 0xffff);
+    draw_text_center(frame_buff, "aktualni mapa", frame_buff->width / 2, HEIGHT_M / 2 - HEIGHT_M / 7, 2, font, 0xffff);
+
+    char string_tmp[40];
+    sprintf(string_tmp, "<  %s  >", game_data.map->name);
+    draw_text_center(frame_buff, string_tmp, frame_buff->width / 2, HEIGHT_M / 2, 3, font, 0xffff);
+
+    draw_text_center(frame_buff, "vybirej klavesamy [a] [d]", frame_buff->width / 2, HEIGHT_M / 2 + HEIGHT_M / 7, 2, font, 0xffff);
+    draw_text_center(frame_buff, "POTVRDIT: [s]", frame_buff->width / 2, HEIGHT_M - HEIGHT_M / 10, 2, font, 0xffff);
+
+    // update display
+    lcd_from_fb(frame_buff, lcd_mem_base);
+
+    // anulate
+    pthread_mutex_lock(&mtx);
+    read_thread_data.last_read = ' ';
+    pthread_mutex_unlock(&mtx);
+
+    // scan input
+    pthread_mutex_lock(&mtx);
+    pthread_cond_wait(&character_has_been_read, &mtx);
+    c = read_thread_data.last_read;
+    pthread_mutex_unlock(&mtx);
+
+    // listen orders
+    if(c == 'a')
+    {
+      --i;
+    }
+    if(c == 'd')
+    {
+      ++i;
+    }
+    game_data.map = map_templates[i];
+  }
   return game_data;
 }
 

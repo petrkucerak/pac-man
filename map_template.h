@@ -32,4 +32,10 @@ typedef struct
 // first map
 extern map_template map_circles;
 
+// star map
+extern map_template map_star;
+
+// conch map
+extern map_template map_conch;
+
 #endif

@@ -69,7 +69,7 @@ typedef struct
     int pacman_lives;
     int ghost_nr;
     map_template *map;
-}game_init_data_t;
+} game_init_data_t;
 
 typedef struct
 {
