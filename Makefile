@@ -11,6 +11,7 @@ SOURCES += terminal_read.c pacman.c ghost.c
 SOURCES += font_prop14x16.c font_rom8x16.c
 SOURCES += map_circles.c map_conch.c map_star.c
 SOURCES += menu_utilities.c
+SOURCES += final_score.c
 SOURCES += game.c
 TARGET_EXE = apoman
 TARGET_IP ?= 192.168.202.203
