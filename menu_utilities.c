@@ -21,7 +21,7 @@
 
 #define HEIGHT_M frame_buff->height
 
-bool run_init_game_menu(fb_data *frame_buff, unsigned char *lcd_mem_base, font_descriptor_t *font)
+game_init_data_t run_init_game_menu(fb_data *frame_buff, unsigned char *lcd_mem_base, font_descriptor_t *font)
 {
   // init game menu
   set_background(frame_buff, 0);
@@ -68,7 +68,7 @@ bool run_init_game_menu(fb_data *frame_buff, unsigned char *lcd_mem_base, font_d
     lcd_from_fb(frame_buff, lcd_mem_base);
   }
 
-  return true;
+  return game;
 }
 
 void draw_menu(fb_data *frame_buff, font_descriptor_t *font, game_init_data_t game_data)

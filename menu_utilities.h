@@ -16,7 +16,11 @@
 #ifndef MENU_UTILITIES_H
 #define MENU_UTILITIES_H
 
-bool run_init_game_menu(fb_data *frame_buff, unsigned char *lcd_mem_base, font_descriptor_t *font);
+/**
+ * function run menu for setting game paramaters
+ * @return game_init_data
+ */
+game_init_data_t run_init_game_menu(fb_data *frame_buff, unsigned char *lcd_mem_base, font_descriptor_t *font);
 
 /**
  * function to drow menu with settings to fb_data
@@ -28,6 +32,10 @@ void draw_menu(fb_data *frame_buff, font_descriptor_t *font, game_init_data_t ga
  * function draw sub menu and update count of lives
  */
 game_init_data_t sub_menu_lives(fb_data *frame_buff, unsigned char *lcd_mem_base, font_descriptor_t *font, game_init_data_t game_data);
+
+/**
+ * function draw sub menu and update name of game map
+ */
 game_init_data_t sub_menu_map(fb_data *frame_buff, unsigned char *lcd_mem_base, font_descriptor_t *font, game_init_data_t game_data);
 
 /**
