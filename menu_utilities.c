@@ -134,9 +134,9 @@ game_init_data_t sub_menu_map(fb_data *frame_buff, unsigned char *lcd_mem_base, 
 {
   int i = 0;
   map_template *map_templates[] = {&map_circles, &map_star, &map_conch};
-  size_t map_templates_len = sizeof(map_templates)/sizeof(map_templates[0]);
+  size_t map_templates_len = sizeof(map_templates) / sizeof(map_templates[0]);
 
-  while(map_templates[i]->name != game_data.map->name)
+  while (map_templates[i]->name != game_data.map->name)
   {
     ++i;
   }
@@ -171,15 +171,17 @@ game_init_data_t sub_menu_map(fb_data *frame_buff, unsigned char *lcd_mem_base, 
     pthread_mutex_unlock(&mtx);
 
     // listen orders
-    if(c == 'a')
+    if (c == 'a')
     {
       --i;
-      if(i==-1) i = map_templates_len - 1;
+      if (i == -1)
+        i = map_templates_len - 1;
     }
-    if(c == 'd')
+    if (c == 'd')
     {
       ++i;
-      if(i==3) i = 0;
+      if (i == 3)
+        i = 0;
     }
     game_data.map = map_templates[i];
   }
