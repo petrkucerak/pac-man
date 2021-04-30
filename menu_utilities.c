@@ -36,10 +36,8 @@ game_init_data_t run_init_game_menu(fb_data *frame_buff, unsigned char *lcd_mem_
   char read = ' ';
   while (read != 's')
   {
-    // anulate
-    pthread_mutex_lock(&mtx);
-    read_thread_data.last_read = ' ';
     // scan input
+    pthread_mutex_lock(&mtx);
     pthread_cond_wait(&character_has_been_read, &mtx);
     read = read_thread_data.last_read;
     pthread_mutex_unlock(&mtx);
@@ -101,10 +99,8 @@ game_init_data_t sub_menu_lives(fb_data *frame_buff, unsigned char *lcd_mem_base
     draw_text_center(frame_buff, "POTVRDIT: [s]", frame_buff->width / 2, HEIGHT_M - HEIGHT_M / 10, 2, font, 0xffff);
     // update display
     lcd_from_fb(frame_buff, lcd_mem_base);
-    // anulate
-    pthread_mutex_lock(&mtx);
-    read_thread_data.last_read = ' ';
     // scan input
+    pthread_mutex_lock(&mtx);
     pthread_cond_wait(&character_has_been_read, &mtx);
     c = read_thread_data.last_read;
     pthread_mutex_unlock(&mtx);
@@ -144,10 +140,8 @@ game_init_data_t sub_menu_map(fb_data *frame_buff, unsigned char *lcd_mem_base, 
     draw_text_center(frame_buff, "POTVRDIT: [s]", frame_buff->width / 2, HEIGHT_M - HEIGHT_M / 10, 2, font, 0xffff);
     // update display
     lcd_from_fb(frame_buff, lcd_mem_base);
-    // anulate
-    pthread_mutex_lock(&mtx);
-    read_thread_data.last_read = ' ';
     // scan input
+    pthread_mutex_lock(&mtx);
     pthread_cond_wait(&character_has_been_read, &mtx);
     c = read_thread_data.last_read;
     pthread_mutex_unlock(&mtx);
@@ -187,10 +181,8 @@ game_init_data_t sub_menu_ghosts(fb_data *frame_buff, unsigned char *lcd_mem_bas
     draw_text_center(frame_buff, "POTVRDIT: [s]", frame_buff->width / 2, HEIGHT_M - HEIGHT_M / 10, 2, font, 0xffff);
     // update display
     lcd_from_fb(frame_buff, lcd_mem_base);
-    // anulate
-    pthread_mutex_lock(&mtx);
-    read_thread_data.last_read = ' ';
     // scan input
+    pthread_mutex_lock(&mtx);
     pthread_cond_wait(&character_has_been_read, &mtx);
     c = read_thread_data.last_read;
     pthread_mutex_unlock(&mtx);
