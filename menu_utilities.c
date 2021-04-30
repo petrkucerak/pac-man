@@ -71,13 +71,13 @@ void draw_menu(fb_data *frame_buff, font_descriptor_t *font, game_init_data_t ga
   draw_text_center(frame_buff, "HLAVNI MENU", frame_buff->width / 2, HEIGHT_M / 10, 3, font, 0xffff);
 
   char string_tmp[40];
-  sprintf(string_tmp, "pocet zivotu: %d [l]", game_data.pacman_lives);
+  snprintf(string_tmp, 40, "pocet zivotu: %d [l]", game_data.pacman_lives);
   draw_text_center(frame_buff, string_tmp, frame_buff->width / 2, HEIGHT_M / 2 - HEIGHT_M / 7, 2, font, 0xffff);
 
-  sprintf(string_tmp, "mapa: %s [m]", game_data.map->name);
+  snprintf(string_tmp, 40, "mapa: %s [m]", game_data.map->name);
   draw_text_center(frame_buff, string_tmp, frame_buff->width / 2, HEIGHT_M / 2, 2, font, 0xffff);
 
-  sprintf(string_tmp, "pocet duchu: %d [g]", game_data.ghost_nr);
+  snprintf(string_tmp, 40, "pocet duchu: %d [g]", game_data.ghost_nr);
   draw_text_center(frame_buff, string_tmp, frame_buff->width / 2, HEIGHT_M / 2 + HEIGHT_M / 7, 2, font, 0xffff);
 
   draw_text_center(frame_buff, "SPUSIT HRU: [s]", frame_buff->width / 2, HEIGHT_M - HEIGHT_M / 10, 2, font, 0xffff);
@@ -94,7 +94,7 @@ game_init_data_t sub_menu_lives(fb_data *frame_buff, unsigned char *lcd_mem_base
     draw_text_center(frame_buff, "aktualni pocet zivotu", frame_buff->width / 2, HEIGHT_M / 2 - HEIGHT_M / 7, 2, font, 0xffff);
 
     char string_tmp[40];
-    sprintf(string_tmp, "%d", game_data.pacman_lives);
+    snprintf(string_tmp, 40, "%d", game_data.pacman_lives);
     draw_text_center(frame_buff, string_tmp, frame_buff->width / 2, HEIGHT_M / 2, 3, font, 0xffff);
 
     draw_text_center(frame_buff, "zmackni cislo (max 4)", frame_buff->width / 2, HEIGHT_M / 2 + HEIGHT_M / 7, 2, font, 0xffff);
@@ -137,7 +137,7 @@ game_init_data_t sub_menu_map(fb_data *frame_buff, unsigned char *lcd_mem_base, 
     draw_text_center(frame_buff, "aktualni mapa", frame_buff->width / 2, HEIGHT_M / 2 - HEIGHT_M / 7, 2, font, 0xffff);
 
     char string_tmp[40];
-    sprintf(string_tmp, "<  %s  >", game_data.map->name);
+    snprintf(string_tmp, 40, "<  %s  >", game_data.map->name);
     draw_text_center(frame_buff, string_tmp, frame_buff->width / 2, HEIGHT_M / 2, 3, font, 0xffff);
 
     draw_text_center(frame_buff, "vybirej klavesamy [a] [d]", frame_buff->width / 2, HEIGHT_M / 2 + HEIGHT_M / 7, 2, font, 0xffff);
@@ -180,7 +180,7 @@ game_init_data_t sub_menu_ghosts(fb_data *frame_buff, unsigned char *lcd_mem_bas
     draw_text_center(frame_buff, "aktualni pocet duchu", frame_buff->width / 2, HEIGHT_M / 2 - HEIGHT_M / 7, 2, font, 0xffff);
 
     char string_tmp[40];
-    sprintf(string_tmp, "%d", game_data.ghost_nr);
+    snprintf(string_tmp, 40, "%d", game_data.ghost_nr);
     draw_text_center(frame_buff, string_tmp, frame_buff->width / 2, HEIGHT_M / 2, 3, font, 0xffff);
 
     draw_text_center(frame_buff, "zmackni cislo (max 4)", frame_buff->width / 2, HEIGHT_M / 2 + HEIGHT_M / 7, 2, font, 0xffff);
