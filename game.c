@@ -17,6 +17,7 @@
 #include "draw_shapes.h"
 #include "map_to_fb.h"
 #include "map_from_template.h"
+#include "config.h"
 
 int run_game(game_init_data_t *game_data, peripherals_data_t *peripherals)
 {
@@ -36,20 +37,86 @@ int run_game(game_init_data_t *game_data, peripherals_data_t *peripherals)
     free(map);
     return -1;
   }
-  pacman_type pacman = create_pacman(game_data->map, peripherals->lcd_w, peripherals->lcd_h, 
-                                                      game_data->pacman_lives);
-  ghost_type ghost = create_ghost(game_data->map,  peripherals->lcd_w, peripherals->lcd_h, 0);
+  pacman_type pacman = create_pacman(game_data->map, peripherals->lcd_w, peripherals->lcd_h,
+                                     game_data->pacman_lives);
+  ghost_type ghost[game_data->ghost_nr];
+  for (int i = 0; i < game_data->ghost_nr; ++i)
+  {
+    ghost[i] = create_ghost(game_data->map, peripherals->lcd_w, peripherals->lcd_h, i);
+  }
   //actual game
   char read = ' ';
-  while (read != 'q')
+  bool coins_to_eat = true;
+  int scare_countdown = -1;
+  uint32_t rgb_color = 0;
+  while ((read != 'q') && (pacman.lives > 0) && (coins_to_eat))
   {
-    pacman_move(&pacman, map);
-    if(ghost_move(&ghost, map, &pacman)){
-      printf("hit\n");
+    if (scare_countdown == 0)
+    {
+      for (int j = 0; j < game_data->ghost_nr; ++j)
+      {
+        ghost[j].scared = false;
+        ghost[j].moving_randomly = true;
+        scare_countdown = -1;
+      }
     }
-    render_map(map, &fb);
+    else if (scare_countdown > 0)
+    {
+      scare_countdown--;
+    }
+
+    if (pacman_move(&pacman, map)) //eaten supercoin
+    {
+      scare_countdown = SCARE_REGIME_DURATION;
+      rgb_color = 0xf;
+      for (int j = 0; j < game_data->ghost_nr; ++j)
+      {
+        ghost[j].scared = true;
+        ghost[j].moving_randomly = true;
+      }
+    }
+    bool scare_regime = false;
+    for (int i = 0; i < game_data->ghost_nr; ++i)
+    {
+      //move every ghost and check if pacman has not been eaten
+      if (ghost_move(&ghost[i], map, &pacman))
+      {
+        pacman = create_pacman(game_data->map, peripherals->lcd_w, peripherals->lcd_h,
+                               pacman.lives - 1);
+        for (int j = 0; j < game_data->ghost_nr; ++j)
+        {
+          ghost[j] = create_ghost(game_data->map, peripherals->lcd_w, peripherals->lcd_h, j);
+        }
+        scare_regime = false;
+        break;
+      }
+      scare_regime = scare_regime || (ghost[i].scared);
+    }
+    if (scare_regime)
+    {
+      if (scare_countdown % (scare_countdown/30+1)== 0)
+      {
+        if (rgb_color == 0)
+        {
+          rgb_color = 0xf;
+        }
+        else
+        {
+          rgb_color = 0;
+        }
+      }
+    }
+    else
+    {
+      rgb_color = 0xf00;
+    }
+    sel_leds_color(peripherals->led_mem_base, rgb_color);
+    coins_to_eat = render_map(map, &fb);
     draw_pacman(&pacman, &fb, map);
-    draw_ghost(&fb, &ghost, map);
+    for (int i = 0; i < game_data->ghost_nr; ++i)
+    {
+      draw_ghost(&fb, &ghost[i], map);
+    }
     led_strip_number(peripherals->led_mem_base, game_data->pacman_lives, pacman.lives);
     lcd_from_fb(&fb, peripherals->lcd_mem_base);
     pthread_mutex_lock(&mtx);
@@ -62,4 +129,4 @@ int run_game(game_init_data_t *game_data, peripherals_data_t *peripherals)
   free(map->board_arr);
   free(map);
   return 0;
-};
+}

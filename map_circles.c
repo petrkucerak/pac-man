@@ -30,7 +30,7 @@ static char board_data[] = {
 
 map_template map_circles = {
     .name = "Concentric_circles",
-    .pacman_spawn_x = 1, /* spawning location of pacman */
+    .pacman_spawn_x = 7, /* spawning location of pacman */
     .pacman_spawn_y = 9, /* spawning location of pacman */
     .ghost_spawn_x = 7,  /* spawning location of ghost */
     .ghost_spawn_y = 3,  /* spawning location of ghost */
