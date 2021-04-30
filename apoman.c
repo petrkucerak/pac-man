@@ -60,8 +60,7 @@ int main(int argc, char *argv[])
   {
     exit(1);
   }
-  //terminal read
-
+  // terminal read
   pthread_mutex_init(&mtx, NULL); // initialize mutex with default attributes
   pthread_cond_init(&character_has_been_read, NULL);
   read_thread_data.quit = false;
@@ -83,14 +82,11 @@ int main(int argc, char *argv[])
   font_descriptor_t *font = &font_winFreeSystem14x16;
 
   // text menu
-  run_init_game_menu(&fb, lcd_mem_base, font);
-
-  // exit(-1);
+  game_init_data_t game = run_init_game_menu(&fb, lcd_mem_base, font);
 
   //run game
   peripherals_data_t peripherals = {.led_mem_base = led_mem_base, .lcd_mem_base = lcd_mem_base, 
                           .lcd_h = SCREEN_HEIGHT, .lcd_w = SCREEN_WIDTH};
-  game_init_data_t game = {.pacman_lives = 5, .ghost_nr = 3, .map = &map_circles};
   run_game(&game, &peripherals);
 
   // program termination
