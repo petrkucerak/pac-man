@@ -21,9 +21,9 @@ static char board_data[] = {
 1,2,1,2,1,1,1,1,1,1,1,2,1,2,1,
 1,2,2,2,2,2,2,2,2,2,2,2,2,2,1,
 1,2,1,2,1,1,1,1,1,1,1,2,1,2,1,
-1,2,1,2,2,2,2,2,2,2,2,2,1,2,1,
-1,2,1,1,1,1,1,1,1,1,1,1,1,2,1,
-1,3,2,2,2,2,2,2,2,2,2,2,2,3,1,
+1,2,1,2,2,2,2,2,2,2,2,2,3,2,1,
+1,2,1,1,1,1,1,1,1,1,1,3,1,1,1,
+1,3,2,2,2,2,2,2,2,2,2,2,0,0,1,
 1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
 };
 
@@ -32,8 +32,8 @@ map_template map_circles = {
     .name = "Concentric_circles",
     .pacman_spawn_x = 7, /* spawning location of pacman */
     .pacman_spawn_y = 9, /* spawning location of pacman */
-    .ghost_spawn_x = 7,  /* spawning location of ghost */
-    .ghost_spawn_y = 3,  /* spawning location of ghost */
+    .ghost_spawn_x = 13,  /* spawning location of ghost */
+    .ghost_spawn_y = 9,  /* spawning location of ghost */
     .width = 15,         /* width of the map */
     .height = 11,        /* height of the map */
     .board = board_data, /* actual data about the content of map */
