@@ -125,7 +125,7 @@ ghost_type create_ghost(map_template *map, int screen_w, int screen_h, int ghost
     ghost_type ghost;
     ghost.moving_randomly = true;
     ghost.scared = false;
-    ghost.location = get_coords_from_template(map->ghost_spawn_x, map->ghost_spawn_y,
+    ghost.location = get_coords_from_template(map->ghost_spawn_y, map->ghost_spawn_x,
                                               map, screen_w, screen_h);
     coords direction = {0, 0};
     ghost.direction = direction;
