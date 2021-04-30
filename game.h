@@ -16,6 +16,9 @@
 #include "pacman.h"
 #include "ghost.h"
 
+/**
+ * @return packman score
+ */
 int run_game(game_init_data_t* game_data, peripherals_data_t* peripherals);
 
 #endif

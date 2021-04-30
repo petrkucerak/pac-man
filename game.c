@@ -128,5 +128,5 @@ int run_game(game_init_data_t *game_data, peripherals_data_t *peripherals)
   free(fb.fb);
   free(map->board_arr);
   free(map);
-  return 0;
+  return pacman.score;
 }
