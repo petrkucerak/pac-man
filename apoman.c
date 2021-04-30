@@ -33,6 +33,7 @@
 #include "menu_utilities.h"
 #include "terminal_read.h"
 #include "pacman.h"
+#include "final_score.h"
 
 #define LED_MAX_VAL 6
 #define SCREEN_WIDTH 480
@@ -87,7 +88,10 @@ int main(int argc, char *argv[])
   //run game
   peripherals_data_t peripherals = {.led_mem_base = led_mem_base, .lcd_mem_base = lcd_mem_base, 
                           .lcd_h = SCREEN_HEIGHT, .lcd_w = SCREEN_WIDTH};
-  run_game(&game, &peripherals);
+  int game_score = run_game(&game, &peripherals);
+
+  // draw packman score
+  draw_final_score(game_score, &fb, lcd_mem_base, font);
 
   // program termination
   set_background(&fb, 0);
