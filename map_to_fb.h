@@ -13,8 +13,7 @@
 #define MAT_TO_FB_H
 #include "data_structures.h"
 #include <stdbool.h>
-#define WALL_COLOR 0xf
-#define PATH_COLOR 0
+
 
 /**
  * given map_data draws the map to frame buffer, returns if there are any coins to be eaten

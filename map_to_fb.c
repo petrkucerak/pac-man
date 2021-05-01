@@ -13,6 +13,7 @@
 #include "map_from_template.h"
 #include "text_fb.h"
 #include "draw_shapes.h"
+#include "config.h"
 
 bool render_map(map_data *data, fb_data *frame_buff){
     bool ret = false;
@@ -28,13 +29,13 @@ bool render_map(map_data *data, fb_data *frame_buff){
             ret= true;
             int x= i%frame_buff->width;
             int y= i/frame_buff->width;
-            draw_circle(frame_buff, x,y,5, 0xd000);
+            draw_circle(frame_buff, x,y,5, COIN_COLOR);
         }
         if(data->board_arr[i]==SUPERCOIN){
             ret = true;
              int x= i%frame_buff->width;
             int y= i/frame_buff->width;
-            draw_circle(frame_buff, x,y,5, 0xf91f);
+            draw_circle(frame_buff, x,y,5, SUPERCOIN_COLOR);
         }
     }
     return ret;

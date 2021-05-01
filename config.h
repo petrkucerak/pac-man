@@ -19,7 +19,7 @@
 
 #define COIN_SCORE_INCECREASE 100
 #define GHOST_SCORE_INCECREASE 200
-#define SCARE_REGIME_DURATION 300 //in game tics
+#define SCARE_REGIME_DURATION 300 //in game ticks
 #define GAME_SPEED 2 //ammount of ticks in one frame
 
 #define UP 1
@@ -30,6 +30,12 @@
 #define LED_SCARE_COLOR1 0
 #define LED_SCARE_COLOR2 0xf
 #define LED_NORMAL_COLOR 0xf00
+
+//map colors
+#define WALL_COLOR 0x9
+#define PATH_COLOR 0
+#define COIN_COLOR 0xd000
+#define SUPERCOIN_COLOR 0xf91f
 
 
 #endif
