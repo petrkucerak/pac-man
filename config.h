@@ -27,4 +27,9 @@
 #define DWN 3
 #define LEFT 4
 
+#define LED_SCARE_COLOR1 0
+#define LED_SCARE_COLOR2 0xf
+#define LED_NORMAL_COLOR 0xf00
+
+
 #endif

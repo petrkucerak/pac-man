@@ -91,12 +91,12 @@ void led_blink(unsigned char *led_mem_base, int scare_countdown)
 {
   static int period = 0;
   static int time = 0;
-  static uint32_t color = 0;
+  static uint32_t color = LED_NORMAL_COLOR;
   if ((scare_countdown > 0) && (period == 0))
   { //scared regime began
     period = scare_countdown / 30 + 1;
     time = 0;
-    color = 0xf;
+    color = LED_SCARE_COLOR2;
   }
   else if (scare_countdown > 0)
   {
@@ -106,13 +106,13 @@ void led_blink(unsigned char *led_mem_base, int scare_countdown)
       period = scare_countdown / 30 + 1;
       time = 0;
       //change color
-      color = (color == 0) ? 0xf : 0;
+      color = (color == LED_SCARE_COLOR1) ? LED_SCARE_COLOR2 : LED_SCARE_COLOR1;
     }
   }
   else
   {
     //no scare regime
-    color = 0xf00;
+    color = LED_NORMAL_COLOR;
   }
   sel_leds_color(led_mem_base, color);
 }
