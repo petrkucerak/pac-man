@@ -28,4 +28,10 @@ void draw_rectangle(fb_data *frame, int x, int y, int width, int height, uint16_
  * sets background to certain color
  */
 void set_background(fb_data *frame, uint16_t color);
+
+/**
+ * draws the ghost shape to fb 
+ */
+void draw_ghost_shape(fb_data *frame, int x, int y, int scale, uint16_t color);
+
 #endif

@@ -108,15 +108,15 @@ void draw_ghost(fb_data *fb, ghost_type *ghost, map_data *map)
 {
     if (ghost->scared)
     {
-        draw_circle(fb, ghost->location.x, ghost->location.y, map->max_object_diameter / 3, 0x1f);
+        draw_ghost_shape(fb, ghost->location.x, ghost->location.y, map->max_object_diameter/8 , 0x1f);
     }
     else if (ghost->moving_randomly)
     {
-        draw_circle(fb, ghost->location.x, ghost->location.y, map->max_object_diameter / 3, 0x7e0);
+        draw_ghost_shape(fb, ghost->location.x, ghost->location.y, map->max_object_diameter/8 , 0x7e0);
     }
     else
     {
-        draw_circle(fb, ghost->location.x, ghost->location.y, map->max_object_diameter / 3, ghost->color);
+        draw_ghost_shape(fb, ghost->location.x, ghost->location.y, map->max_object_diameter/8 , ghost->color);
     }
 }
 
