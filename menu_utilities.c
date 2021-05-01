@@ -133,7 +133,7 @@ game_init_data_t sub_menu_map(fb_data *frame_buff, unsigned char *lcd_mem_base, 
     snprintf(string_tmp, 40, "<  %s  >", game_data.map->name);
     draw_text_center(frame_buff, string_tmp, frame_buff->width / 2, HEIGHT_M / 2, 3, font, 0xffff);
 
-    draw_text_center(frame_buff, "vybirej klavesamy [a] [d]", frame_buff->width / 2, HEIGHT_M / 2 + HEIGHT_M / 7, 2, font, 0xffff);
+    draw_text_center(frame_buff, "vybirej klavesami [a] [d]", frame_buff->width / 2, HEIGHT_M / 2 + HEIGHT_M / 7, 2, font, 0xffff);
     draw_text_center(frame_buff, "POTVRDIT: [s]", frame_buff->width / 2, HEIGHT_M - HEIGHT_M / 10, 2, font, 0xffff);
     // update display
     lcd_from_fb(frame_buff, lcd_mem_base);
