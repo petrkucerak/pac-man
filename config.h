@@ -22,11 +22,7 @@
 #define SCARE_REGIME_DURATION 300 //in game ticks
 #define GAME_SPEED 2 //ammount of ticks in one frame
 
-#define UP 1
-#define RIGHT 2
-#define DWN 3
-#define LEFT 4
-
+//led colors
 #define LED_SCARE_COLOR1 0
 #define LED_SCARE_COLOR2 0xf
 #define LED_NORMAL_COLOR 0xf00
@@ -37,5 +33,21 @@
 #define COIN_COLOR 0xd000
 #define SUPERCOIN_COLOR 0xf91f
 
+//ghost colors
+// green pink  azure red
+#define GHOST_COLORS 0x07C0, 0xF01F, 0x07DC, 0xF800
+#define GHOST_COLORS_AMMOUNT 4
+
+#define PACMAN_COLOR 0xffe0
+
+//chance for ghosts to switch modes (higher means more unlikely)
+#define GHOST_SWITCH_TO_RANDOM 2000
+#define GHOST_SWITCH_TO_TARGET 900
+
+
+#define UP 1
+#define RIGHT 2
+#define DWN 3
+#define LEFT 4
 
 #endif

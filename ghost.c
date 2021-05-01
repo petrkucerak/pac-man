@@ -47,9 +47,13 @@ bool ghost_move(ghost_type *ghost, map_data *map, pacman_type *pacman)
 
     if (ghost->scared == false)
     {
-        if (rand() % 400 == 0)
+        if ((rand() % GHOST_SWITCH_TO_RANDOM == 0) && (ghost->moving_randomly == false))
         {
-            ghost->moving_randomly = !ghost->moving_randomly;
+            ghost->moving_randomly = true;
+        }
+        else if ((rand() % GHOST_SWITCH_TO_TARGET == 0) && (ghost->moving_randomly == true))
+        {
+            ghost->moving_randomly = false;
         }
     }
     moves_costs_t possible_moves[4];
@@ -108,15 +112,11 @@ void draw_ghost(fb_data *fb, ghost_type *ghost, map_data *map)
 {
     if (ghost->scared)
     {
-        draw_ghost_shape(fb, ghost->location.x, ghost->location.y, map->max_object_diameter/8 , 0x1f);
-    }
-    else if (ghost->moving_randomly)
-    {
-        draw_ghost_shape(fb, ghost->location.x, ghost->location.y, map->max_object_diameter/8 , 0x7e0);
+        draw_ghost_shape(fb, ghost->location.x, ghost->location.y, map->max_object_diameter / 8, 0x1f);
     }
     else
     {
-        draw_ghost_shape(fb, ghost->location.x, ghost->location.y, map->max_object_diameter/8 , ghost->color);
+        draw_ghost_shape(fb, ghost->location.x, ghost->location.y, map->max_object_diameter / 8, ghost->color);
     }
 }
 
@@ -128,7 +128,8 @@ ghost_type create_ghost(map_data *map, int ghost_nr)
     ghost.location = map->ghost_spawn;
     coords direction = {0, 0};
     ghost.direction = direction;
-    ghost.color = 0xf000;
+    uint16_t color_pallete[] = {GHOST_COLORS};
+    ghost.color = color_pallete[ghost_nr % (GHOST_COLORS_AMMOUNT)];
     return ghost;
 }
 
