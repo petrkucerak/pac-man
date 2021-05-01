@@ -34,4 +34,6 @@ void set_background(fb_data *frame, uint16_t color);
  */
 void draw_ghost_shape(fb_data *frame, int x, int y, int scale, uint16_t color);
 
+
+void draw_pacman_dir(fb_data *frame, int x, int y, int radius, uint16_t color, int direction);
 #endif

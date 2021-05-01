@@ -11,6 +11,8 @@
  *******************************************************************/
 
 #include "draw_shapes.h"
+#include <stdlib.h>
+#include "config.h"
 
 int pixel_dist_squared(int x1, int y1, int x2, int y2)
 {
@@ -70,11 +72,11 @@ void draw_ghost_shape(fb_data *frame, int x, int y, int scale, uint16_t color)
       xxxx   
      xxxxxx 
      xxxxxx
-     x xx x
-     xxxxxx
-     xxxxxx
-     xxxxxx
-     x xx x
+    xx xx xx
+    xxxxxxxx
+    xxxxxxxx
+    xxxxxxxx
+    xx xx xx
     */
     for (int i = 0; i < 8; ++i)
     { //for every row int ghost bitmap
@@ -82,9 +84,42 @@ void draw_ghost_shape(fb_data *frame, int x, int y, int scale, uint16_t color)
         for (int j = 0; j < 8; ++j)
         { //for every bit in uint8_t ghost bitmap
 
-            if ((ghost_bitmap[i] & (1 << (8 - j-1))) != 0)
+            if ((ghost_bitmap[i] & (1 << (8 - j - 1))) != 0)
             {
                 draw_rectangle(frame, x + j * scale, y + i * scale, scale, scale, color);
+            }
+        }
+    }
+}
+
+void draw_pacman_dir(fb_data *frame, int x, int y, int radius, uint16_t color, int direction)
+{
+    for (int row = y - radius; row < y + radius; row++)
+    {
+        for (int col = x - radius; col < x + radius; col++)
+        {
+            if (row > 0 && col > 0 && row < frame->height && col < frame->width)
+            {
+                if ((pixel_dist_squared(col, row, x, y) <= (radius * radius)) && 
+                        (abs(x - col) > (y - row)) && direction == UP)
+                {
+                    frame->fb[row * frame->width + col] = color; //drawing pacman facing up
+                }
+                else if ((pixel_dist_squared(col, row, x, y) <= (radius * radius)) &&
+                         (abs(x - col) > (row - y)) && direction == DWN)
+                {
+                    frame->fb[row * frame->width + col] = color; //drawing pacman facing down
+                }
+                else if ((pixel_dist_squared(col, row, x, y) <= (radius * radius)) &&
+                         (abs(row - y) > (col-x)) && direction == RIGHT)
+                {
+                    frame->fb[row * frame->width + col] = color; //drawing pacman facing right
+                }
+                else if ((pixel_dist_squared(col, row, x, y) <= (radius * radius)) &&
+                         (abs(row - y) > (x-col)) && direction == LEFT)
+                {
+                    frame->fb[row * frame->width + col] = color; //drawing pacman facing left
+                }
             }
         }
     }

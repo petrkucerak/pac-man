@@ -20,4 +20,9 @@
 #define COIN_SCORE_INCECREASE 100
 #define GHOST_SCORE_INCECREASE 200
 #define SCARE_REGIME_DURATION 300 //in game tics
+
+#define UP 1
+#define RIGHT 2
+#define DWN 3
+#define LEFT 4
 #endif

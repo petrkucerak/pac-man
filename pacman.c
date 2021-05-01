@@ -67,15 +67,18 @@ bool pacman_move(pacman_type *pacman, map_data *map)
         pacman->direction.x = 1;
         pacman->direction.y = 0;
     }
-    if(pacman_can_move(pacman, pacman->direction.x, pacman->direction.y, map)){
-        pacman->location.x = pacman->location.x+pacman->direction.x;
-        pacman->location.y = pacman->location.y+pacman->direction.y;
+    if (pacman_can_move(pacman, pacman->direction.x, pacman->direction.y, map))
+    {
+        pacman->location.x = pacman->location.x + pacman->direction.x;
+        pacman->location.y = pacman->location.y + pacman->direction.y;
     }
-    if(map->board_arr[map->width * (pacman->location.y) + pacman->location.x]== COIN){
+    if (map->board_arr[map->width * (pacman->location.y) + pacman->location.x] == COIN)
+    {
         map->board_arr[map->width * (pacman->location.y) + pacman->location.x] = PASSAGE;
         pacman->score = pacman->score + COIN_SCORE_INCECREASE;
     }
-    if(map->board_arr[map->width * (pacman->location.y) + pacman->location.x]== SUPERCOIN){
+    if (map->board_arr[map->width * (pacman->location.y) + pacman->location.x] == SUPERCOIN)
+    {
         map->board_arr[map->width * (pacman->location.y) + pacman->location.x] = PASSAGE;
         ret = true;
     }
@@ -88,7 +91,26 @@ bool pacman_can_move(pacman_type *pacman, int dirx, int diry, map_data *map)
     return (pixel != BLOCKED);
 }
 
-void draw_pacman(pacman_type *pacman, fb_data * fb, map_data* map){
-     //draw pacman
-    draw_circle(fb, pacman->location.x, pacman->location.y, map->max_object_diameter/2, PACMAN_COLOR);
+void draw_pacman(pacman_type *pacman, fb_data *fb, map_data *map)
+{
+    //draw pacman
+    coords location = pacman->location;
+    if ((pacman->direction.x == -1) && (pacman->direction.y == 0))
+    {
+        draw_pacman_dir(fb, location.x, location.y, map->max_object_diameter / 2, PACMAN_COLOR, LEFT);
+    }
+    else if ((pacman->direction.x == 1) && (pacman->direction.y == 0))
+    {
+        draw_pacman_dir(fb, location.x, location.y, map->max_object_diameter / 2, PACMAN_COLOR, RIGHT);
+    }
+    else if ((pacman->direction.x == 0) && (pacman->direction.y == 1))
+    {
+        draw_pacman_dir(fb, location.x, location.y, map->max_object_diameter / 2, PACMAN_COLOR, DWN);
+    }
+    else if ((pacman->direction.x == 0) && (pacman->direction.y == -1))
+    {
+        draw_pacman_dir(fb, location.x, location.y, map->max_object_diameter / 2, PACMAN_COLOR, UP);
+    }else{
+         draw_circle(fb, location.x, location.y, map->max_object_diameter / 2, PACMAN_COLOR);
+    }
 }
