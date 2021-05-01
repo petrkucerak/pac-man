@@ -88,21 +88,20 @@ int main(int argc, char *argv[])
   //run game
   peripherals_data_t peripherals = {.led_mem_base = led_mem_base, .lcd_mem_base = lcd_mem_base, 
                           .lcd_h = SCREEN_HEIGHT, .lcd_w = SCREEN_WIDTH};
-  int game_score = run_game(&game, &peripherals);
+  run_game(&game, &peripherals);
+  //int game_score = 
 
   // draw packman score
-  draw_final_score(game_score, &fb, lcd_mem_base, font);
+  //draw_final_score(game_score, &fb, lcd_mem_base, font);
 
   // program termination
   set_background(&fb, 0);
   draw_text_center(&fb, "KONEC", SCREEN_WIDTH / 2, SCREEN_HEIGHT / 2, 10, font, 0xffff);
   lcd_from_fb(&fb, lcd_mem_base);
-  printf("Goodbye world\n");
 
   // free allocated memory
   free(fb.fb);
   fb.fb = NULL;
-
   pthread_mutex_lock(&mtx);
   read_thread_data.quit = true;
   pthread_mutex_unlock(&mtx);
