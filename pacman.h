@@ -14,7 +14,6 @@
 #include "data_structures.h"
 #include "map_template.h"
 
-#define PACMAN_COLOR 0xffe0
 
 pacman_type create_pacman(map_data *map, int lives);
 
