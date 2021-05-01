@@ -23,13 +23,12 @@ bool pacman_can_move(pacman_type *pacman, int dirx, int diry, map_data *map);
 /*
 Given map data creates pacman
 */
-pacman_type create_pacman(map_template *map, int screen_w, int screen_h, int lives)
+pacman_type create_pacman(map_data *map, int lives)
 {
     pacman_type pacman;
     pacman.lives = lives;
     pacman.maxlives = lives;
-    pacman.location = get_coords_from_template(map->pacman_spawn_y, map->pacman_spawn_x,
-                                               map, screen_w, screen_h);
+    pacman.location = map->pacman_spawn;
     coords direction = {0, 0};
     pacman.direction = direction;
     pacman.score = 0;

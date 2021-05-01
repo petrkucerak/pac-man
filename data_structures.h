@@ -36,6 +36,7 @@ typedef struct
     char *board_arr;
     int max_object_diameter; // maximum dimensions of ghosts, pacman and coins
     coords ghost_spawn;
+    coords pacman_spawn;
 } map_data;
 
 typedef struct

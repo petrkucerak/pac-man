@@ -21,7 +21,10 @@
 
 //internal function
 void led_blink(unsigned char *led_mem_base, int scare_countdown);
-//
+
+//returns true if the game should be rendered imedeatly
+bool game_tick(map_data *map, pacman_type *pacman, ghost_type *ghost_arr, int num_ghosts, int *scare);
+//end of internal functions
 
 int run_game(game_init_data_t *game_data, peripherals_data_t *peripherals)
 {
@@ -41,8 +44,7 @@ int run_game(game_init_data_t *game_data, peripherals_data_t *peripherals)
     free(map);
     return -1;
   }
-  pacman_type pacman = create_pacman(game_data->map, peripherals->lcd_w, peripherals->lcd_h,
-                                     game_data->pacman_lives);
+  pacman_type pacman = create_pacman(map, game_data->pacman_lives);
   ghost_type ghost[game_data->ghost_nr];
   for (int i = 0; i < game_data->ghost_nr; ++i)
   {
@@ -54,48 +56,12 @@ int run_game(game_init_data_t *game_data, peripherals_data_t *peripherals)
   int scare_countdown = -1;
   while ((read != 'q') && (pacman.lives > 0) && (coins_to_eat))
   {
-    if (scare_countdown == 0)
-    {
-      for (int j = 0; j < game_data->ghost_nr; ++j)
-      {
-        ghost[j].scared = false;
-        ghost[j].moving_randomly = true;
-      }
-    }
-    else if (scare_countdown > 0)
-    {
-      scare_countdown--;
-    }
-
-    if (pacman_move(&pacman, map)) // eaten supercoin
-    {
-      scare_countdown = SCARE_REGIME_DURATION;
-      for (int j = 0; j < game_data->ghost_nr; ++j)
-      {
-        ghost[j].scared = true;
-        ghost[j].moving_randomly = true;
-      }
-    }
-    bool scare_regime = false; //find out if by chance all ghost have not been eaten
-    for (int i = 0; i < game_data->ghost_nr; ++i)
-    {
-      // move every ghost and check if pacman has not been eaten
-      if (ghost_move(&ghost[i], map, &pacman))
-      {
-        pacman = create_pacman(game_data->map, peripherals->lcd_w, peripherals->lcd_h,
-                               pacman.lives - 1);
-        for (int j = 0; j < game_data->ghost_nr; ++j)
-        {
-          ghost[j] = create_ghost(map, j);
-        }
+    for(int i=0; i<GAME_SPEED; ++i){
+      if(game_tick(map, &pacman, ghost, game_data->ghost_nr, &scare_countdown)){
         break;
       }
-      scare_regime = scare_regime || (ghost[i].scared);
     }
-    if (!scare_regime)
-    {
-      scare_countdown = -1;
-    }
+    //do the rendering
     led_blink(peripherals->led_mem_base, scare_countdown);
     coins_to_eat = render_map(map, &fb);
     draw_pacman(&pacman, &fb, map);
@@ -124,7 +90,7 @@ void led_blink(unsigned char *led_mem_base, int scare_countdown)
   static uint32_t color = 0;
   if ((scare_countdown > 0) && (period == 0))
   { //scared regime began
-    period = scare_countdown / 30+1;
+    period = scare_countdown / 30 + 1;
     time = 0;
     color = 0xf;
   }
@@ -133,7 +99,7 @@ void led_blink(unsigned char *led_mem_base, int scare_countdown)
     time++;
     if (time >= period)
     {
-      period = scare_countdown / 30+1;
+      period = scare_countdown / 30 + 1;
       time = 0;
       //change color
       color = (color == 0) ? 0xf : 0;
@@ -145,4 +111,54 @@ void led_blink(unsigned char *led_mem_base, int scare_countdown)
     color = 0xf00;
   }
   sel_leds_color(led_mem_base, color);
+}
+
+bool game_tick(map_data *map, pacman_type *pacman, ghost_type *ghost_arr, int num_ghosts, int *scare)
+{
+  bool ret = false;
+  if (*scare == 0)
+  {
+    for (int j = 0; j < num_ghosts; ++j)
+    {
+      ghost_arr[j].scared = false;
+      ghost_arr[j].moving_randomly = true;
+    }
+    ret = true;
+  }
+  else if (*scare > 0)
+  {
+    (*scare)--;
+  }
+
+  if (pacman_move(pacman, map)) // eaten supercoin
+  {
+    *scare = SCARE_REGIME_DURATION;
+    for (int j = 0; j < num_ghosts; ++j)
+    {
+      ghost_arr[j].scared = true;
+      ghost_arr[j].moving_randomly = true;
+    }
+    ret = true;
+  }
+  bool scare_regime = false; //find out if by chance all ghost have not been eaten
+  for (int i = 0; i < num_ghosts; ++i)
+  {
+    // move every ghost and check if pacman has not been eaten
+    if (ghost_move(&ghost_arr[i], map, pacman))
+    {
+      *pacman = create_pacman(map, pacman->lives - 1);
+      for (int j = 0; j < num_ghosts; ++j)
+      {
+        ghost_arr[j] = create_ghost(map, j);
+      }
+      ret= true;
+      break;
+    }
+    scare_regime = scare_regime || (ghost_arr[i].scared);
+  }
+  if (!scare_regime)
+  {
+    (*scare) = -1;
+  }
+  return ret;
 }

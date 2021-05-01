@@ -16,7 +16,7 @@
 
 #define PACMAN_COLOR 0xffe0
 
-pacman_type create_pacman(map_template* map, int screen_w, int screen_h, int lives);
+pacman_type create_pacman(map_data *map, int lives);
 
 bool pacman_move(pacman_type* pacman, map_data* map);
 

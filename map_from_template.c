@@ -62,6 +62,8 @@ map_data *create_map_data(int screen_w, int screen_h, map_template *template)
         }
         map->ghost_spawn = get_coords_from_template(template->ghost_spawn_y, template->ghost_spawn_x, template,
                             screen_w, screen_h);
+        map->pacman_spawn = get_coords_from_template(template->pacman_spawn_y, template->pacman_spawn_x, template,
+                            screen_w, screen_h);
     }
     return map;
 }
