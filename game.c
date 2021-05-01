@@ -19,6 +19,10 @@
 #include "map_from_template.h"
 #include "config.h"
 
+//internal function
+void led_blink(unsigned char *led_mem_base, int scare_countdown);
+//
+
 int run_game(game_init_data_t *game_data, peripherals_data_t *peripherals)
 {
   map_data *map = create_map_data(peripherals->lcd_w, peripherals->lcd_h, game_data->map);
@@ -48,7 +52,6 @@ int run_game(game_init_data_t *game_data, peripherals_data_t *peripherals)
   char read = ' ';
   bool coins_to_eat = true;
   int scare_countdown = -1;
-  uint32_t rgb_color = 0;
   while ((read != 'q') && (pacman.lives > 0) && (coins_to_eat))
   {
     if (scare_countdown == 0)
@@ -57,7 +60,6 @@ int run_game(game_init_data_t *game_data, peripherals_data_t *peripherals)
       {
         ghost[j].scared = false;
         ghost[j].moving_randomly = true;
-        scare_countdown = -1;
       }
     }
     else if (scare_countdown > 0)
@@ -68,14 +70,13 @@ int run_game(game_init_data_t *game_data, peripherals_data_t *peripherals)
     if (pacman_move(&pacman, map)) // eaten supercoin
     {
       scare_countdown = SCARE_REGIME_DURATION;
-      rgb_color = 0xf;
       for (int j = 0; j < game_data->ghost_nr; ++j)
       {
         ghost[j].scared = true;
         ghost[j].moving_randomly = true;
       }
     }
-    bool scare_regime = false;
+    bool scare_regime = false; //find out if by chance all ghost have not been eaten
     for (int i = 0; i < game_data->ghost_nr; ++i)
     {
       // move every ghost and check if pacman has not been eaten
@@ -87,30 +88,15 @@ int run_game(game_init_data_t *game_data, peripherals_data_t *peripherals)
         {
           ghost[j] = create_ghost(game_data->map, peripherals->lcd_w, peripherals->lcd_h, j);
         }
-        scare_regime = false;
         break;
       }
       scare_regime = scare_regime || (ghost[i].scared);
     }
-    if (scare_regime)
+    if (!scare_regime)
     {
-      if (scare_countdown % (scare_countdown/30+1)== 0)
-      {
-        if (rgb_color == 0)
-        {
-          rgb_color = 0xf;
-        }
-        else
-        {
-          rgb_color = 0;
-        }
-      }
+      scare_countdown = -1;
     }
-    else
-    {
-      rgb_color = 0xf00;
-    }
-    sel_leds_color(peripherals->led_mem_base, rgb_color);
+    led_blink(peripherals->led_mem_base, scare_countdown);
     coins_to_eat = render_map(map, &fb);
     draw_pacman(&pacman, &fb, map);
     for (int i = 0; i < game_data->ghost_nr; ++i)
@@ -129,4 +115,34 @@ int run_game(game_init_data_t *game_data, peripherals_data_t *peripherals)
   free(map->board_arr);
   free(map);
   return pacman.score;
+}
+
+void led_blink(unsigned char *led_mem_base, int scare_countdown)
+{
+  static int period = 0;
+  static int time = 0;
+  static uint32_t color = 0;
+  if ((scare_countdown > 0) && (period == 0))
+  { //scared regime began
+    period = scare_countdown / 30+1;
+    time = 0;
+    color = 0xf;
+  }
+  else if (scare_countdown > 0)
+  {
+    time++;
+    if (time >= period)
+    {
+      period = scare_countdown / 30+1;
+      time = 0;
+      //change color
+      color = (color == 0) ? 0xf : 0;
+    }
+  }
+  else
+  {
+    //no scare regime
+    color = 0xf00;
+  }
+  sel_leds_color(led_mem_base, color);
 }
