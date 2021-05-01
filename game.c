@@ -46,7 +46,7 @@ int run_game(game_init_data_t *game_data, peripherals_data_t *peripherals)
   ghost_type ghost[game_data->ghost_nr];
   for (int i = 0; i < game_data->ghost_nr; ++i)
   {
-    ghost[i] = create_ghost(game_data->map, peripherals->lcd_w, peripherals->lcd_h, i);
+    ghost[i] = create_ghost(map, i);
   }
   // actual game
   char read = ' ';
@@ -86,7 +86,7 @@ int run_game(game_init_data_t *game_data, peripherals_data_t *peripherals)
                                pacman.lives - 1);
         for (int j = 0; j < game_data->ghost_nr; ++j)
         {
-          ghost[j] = create_ghost(game_data->map, peripherals->lcd_w, peripherals->lcd_h, j);
+          ghost[j] = create_ghost(map, j);
         }
         break;
       }

@@ -22,7 +22,7 @@ typedef struct
 /*
 returns ghost structure
 */
-ghost_type create_ghost(map_template *map, int screen_w, int screen_h, int ghost_nr);
+ghost_type create_ghost(map_data *map, int ghost_nr);
 
 /*
 draws the ghost

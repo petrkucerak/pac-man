@@ -120,13 +120,12 @@ void draw_ghost(fb_data *fb, ghost_type *ghost, map_data *map)
     }
 }
 
-ghost_type create_ghost(map_template *map, int screen_w, int screen_h, int ghost_nr)
+ghost_type create_ghost(map_data *map, int ghost_nr)
 {
     ghost_type ghost;
     ghost.moving_randomly = true;
     ghost.scared = false;
-    ghost.location = get_coords_from_template(map->ghost_spawn_y, map->ghost_spawn_x,
-                                              map, screen_w, screen_h);
+    ghost.location = map->ghost_spawn;
     coords direction = {0, 0};
     ghost.direction = direction;
     ghost.color = 0xf000;
