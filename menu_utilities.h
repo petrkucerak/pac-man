@@ -18,9 +18,8 @@
 
 /**
  * function run menu for setting game paramaters
- * @return game_init_data
  */
-game_init_data_t run_init_game_menu(fb_data *frame_buff, unsigned char *lcd_mem_base, font_descriptor_t *font);
+void run_init_game_menu(fb_data *frame_buff, unsigned char *lcd_mem_base, font_descriptor_t *font, peripherals_data_t peripherals);
 
 /**
  * function to drow menu with settings to fb_data

@@ -13,8 +13,13 @@
 #include "data_structures.h"
 #include "font_types.h"
 
-#ifndef MENU_UTILITIES_H
-#define MENU_UTILITIES_H
+#ifndef FINAL_SCORE_H
+#define FINAL_SCORE_H
 
+/**
+ * function draw final score
+ * @return false - quit game; true - play game again
+ */
+bool draw_final_score(int score, fb_data *frame_buff, unsigned char *lcd_mem_base, font_descriptor_t *font);
 
 #endif

@@ -17,48 +17,59 @@
 #include "draw_shapes.h"
 #include "update_peripherals.h"
 #include "text_fb.h"
+#include "game.h"
+#include "final_score.h"
 #include <unistd.h>
 
 #define HEIGHT_M frame_buff->height
 
-game_init_data_t run_init_game_menu(fb_data *frame_buff, unsigned char *lcd_mem_base, font_descriptor_t *font)
+void run_init_game_menu(fb_data *frame_buff, unsigned char *lcd_mem_base,
+                        font_descriptor_t *font, peripherals_data_t peripherals)
 {
   // init game menu
   set_background(frame_buff, 0);
   draw_text_center(frame_buff, "PAC-MAN", frame_buff->width / 2, HEIGHT_M / 2, 5, font, 0xffff);
   lcd_from_fb(frame_buff, lcd_mem_base);
   sleep(2);
-  // menu with context
-  game_init_data_t game = {.pacman_lives = 3, .ghost_nr = 3, .map = &map_circles};
-  draw_menu(frame_buff, font, game);
-  lcd_from_fb(frame_buff, lcd_mem_base);
-  // listen symbol
-  char read = ' ';
-  while (read != 's')
+  bool play_game_again = true;
+  while (play_game_again)
   {
-    // scan input
-    pthread_mutex_lock(&mtx);
-    pthread_cond_wait(&character_has_been_read, &mtx);
-    read = read_thread_data.last_read;
-    pthread_mutex_unlock(&mtx);
-
-    if (read == 'l')
-    {
-      game = sub_menu_lives(frame_buff, lcd_mem_base, font, game);
-    }
-    if (read == 'm')
-    {
-      game = sub_menu_map(frame_buff, lcd_mem_base, font, game);
-    }
-    if (read == 'g')
-    {
-      game = sub_menu_ghosts(frame_buff, lcd_mem_base, font, game);
-    }
-    // redraw menu
+    // menu with context
+    game_init_data_t game = {.pacman_lives = 3, .ghost_nr = 3, .map = &map_circles};
     draw_menu(frame_buff, font, game);
     lcd_from_fb(frame_buff, lcd_mem_base);
+    // listen symbol
+    char read = ' ';
+    while (read != 's')
+    {
+      // scan input
+      pthread_mutex_lock(&mtx);
+      pthread_cond_wait(&character_has_been_read, &mtx);
+      read = read_thread_data.last_read;
+      pthread_mutex_unlock(&mtx);
+
+      if (read == 'l')
+      {
+        game = sub_menu_lives(frame_buff, lcd_mem_base, font, game);
+      }
+      if (read == 'm')
+      {
+        game = sub_menu_map(frame_buff, lcd_mem_base, font, game);
+      }
+      if (read == 'g')
+      {
+        game = sub_menu_ghosts(frame_buff, lcd_mem_base, font, game);
+      }
+      // redraw menu
+      draw_menu(frame_buff, font, game);
+      lcd_from_fb(frame_buff, lcd_mem_base);
+    }
+
+    // run game
+    int game_score = run_game(&game, &peripherals);
+    // draw packman score
+    play_game_again = draw_final_score(game_score, frame_buff, lcd_mem_base, font);
   }
-  return game;
 }
 
 void draw_menu(fb_data *frame_buff, font_descriptor_t *font, game_init_data_t game_data)
@@ -66,17 +77,13 @@ void draw_menu(fb_data *frame_buff, font_descriptor_t *font, game_init_data_t ga
   // menu with context
   set_background(frame_buff, 0);
   draw_text_center(frame_buff, "HLAVNI MENU", frame_buff->width / 2, HEIGHT_M / 10, 3, font, 0xffff);
-
   char string_tmp[40];
   snprintf(string_tmp, 40, "pocet zivotu: %d [l]", game_data.pacman_lives);
   draw_text_center(frame_buff, string_tmp, frame_buff->width / 2, HEIGHT_M / 2 - HEIGHT_M / 7, 2, font, 0xffff);
-
   snprintf(string_tmp, 40, "mapa: %s [m]", game_data.map->name);
   draw_text_center(frame_buff, string_tmp, frame_buff->width / 2, HEIGHT_M / 2, 2, font, 0xffff);
-
   snprintf(string_tmp, 40, "pocet duchu: %d [g]", game_data.ghost_nr);
   draw_text_center(frame_buff, string_tmp, frame_buff->width / 2, HEIGHT_M / 2 + HEIGHT_M / 7, 2, font, 0xffff);
-
   draw_text_center(frame_buff, "SPUSIT HRU: [s]", frame_buff->width / 2, HEIGHT_M - HEIGHT_M / 10, 2, font, 0xffff);
 }
 
@@ -85,15 +92,12 @@ game_init_data_t sub_menu_lives(fb_data *frame_buff, unsigned char *lcd_mem_base
   char c = ' ';
   while (c != 's')
   {
-    // set buffer
     set_background(frame_buff, 0);
     draw_text_center(frame_buff, "NASTAVENI ZIVOTU", frame_buff->width / 2, HEIGHT_M / 10, 3, font, 0xffff);
     draw_text_center(frame_buff, "aktualni pocet zivotu", frame_buff->width / 2, HEIGHT_M / 2 - HEIGHT_M / 7, 2, font, 0xffff);
-
     char string_tmp[40];
     snprintf(string_tmp, 40, "%d", game_data.pacman_lives);
     draw_text_center(frame_buff, string_tmp, frame_buff->width / 2, HEIGHT_M / 2, 3, font, 0xffff);
-
     draw_text_center(frame_buff, "zmackni cislo (max 4)", frame_buff->width / 2, HEIGHT_M / 2 + HEIGHT_M / 7, 2, font, 0xffff);
     draw_text_center(frame_buff, "POTVRDIT: [s]", frame_buff->width / 2, HEIGHT_M - HEIGHT_M / 10, 2, font, 0xffff);
     // update display
@@ -124,15 +128,12 @@ game_init_data_t sub_menu_map(fb_data *frame_buff, unsigned char *lcd_mem_base, 
   char c = ' ';
   while (c != 's')
   {
-    // set buffer
     set_background(frame_buff, 0);
     draw_text_center(frame_buff, "VOLBA MAPY", frame_buff->width / 2, HEIGHT_M / 10, 3, font, 0xffff);
     draw_text_center(frame_buff, "aktualni mapa", frame_buff->width / 2, HEIGHT_M / 2 - HEIGHT_M / 7, 2, font, 0xffff);
-
     char string_tmp[40];
     snprintf(string_tmp, 40, "<  %s  >", game_data.map->name);
     draw_text_center(frame_buff, string_tmp, frame_buff->width / 2, HEIGHT_M / 2, 3, font, 0xffff);
-
     draw_text_center(frame_buff, "vybirej klavesami [a] [d]", frame_buff->width / 2, HEIGHT_M / 2 + HEIGHT_M / 7, 2, font, 0xffff);
     draw_text_center(frame_buff, "POTVRDIT: [s]", frame_buff->width / 2, HEIGHT_M - HEIGHT_M / 10, 2, font, 0xffff);
     // update display
@@ -169,11 +170,9 @@ game_init_data_t sub_menu_ghosts(fb_data *frame_buff, unsigned char *lcd_mem_bas
     set_background(frame_buff, 0);
     draw_text_center(frame_buff, "NASTAVENI DUCHU", frame_buff->width / 2, HEIGHT_M / 10, 3, font, 0xffff);
     draw_text_center(frame_buff, "aktualni pocet duchu", frame_buff->width / 2, HEIGHT_M / 2 - HEIGHT_M / 7, 2, font, 0xffff);
-
     char string_tmp[40];
     snprintf(string_tmp, 40, "%d", game_data.ghost_nr);
     draw_text_center(frame_buff, string_tmp, frame_buff->width / 2, HEIGHT_M / 2, 3, font, 0xffff);
-
     draw_text_center(frame_buff, "zmackni cislo (max 4)", frame_buff->width / 2, HEIGHT_M / 2 + HEIGHT_M / 7, 2, font, 0xffff);
     draw_text_center(frame_buff, "POTVRDIT: [s]", frame_buff->width / 2, HEIGHT_M - HEIGHT_M / 10, 2, font, 0xffff);
     // update display

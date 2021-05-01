@@ -68,6 +68,7 @@ int main(int argc, char *argv[])
   read_thread_data.last_read = ' ';
   pthread_t threads[1];
   pthread_create(&threads[0], NULL, input_thread, &read_thread_data);
+
   // frame buffer
   fb_data fb;
   fb.fb = malloc(sizeof(uint16_t) * SCREEN_WIDTH * SCREEN_HEIGHT);
@@ -82,17 +83,11 @@ int main(int argc, char *argv[])
   parlcd_hx8357_init(lcd_mem_base);
   font_descriptor_t *font = &font_winFreeSystem14x16;
 
-  // text menu
-  game_init_data_t game = run_init_game_menu(&fb, lcd_mem_base, font);
-
-  //run game
   peripherals_data_t peripherals = {.led_mem_base = led_mem_base, .lcd_mem_base = lcd_mem_base, 
                           .lcd_h = SCREEN_HEIGHT, .lcd_w = SCREEN_WIDTH};
-  run_game(&game, &peripherals);
-  //int game_score = 
 
-  // draw packman score
-  //draw_final_score(game_score, &fb, lcd_mem_base, font);
+  // call game method                          
+  run_init_game_menu(&fb, lcd_mem_base, font, peripherals);
 
   // program termination
   set_background(&fb, 0);
