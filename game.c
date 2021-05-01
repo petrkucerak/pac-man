@@ -56,8 +56,10 @@ int run_game(game_init_data_t *game_data, peripherals_data_t *peripherals)
   int scare_countdown = -1;
   while ((read != 'q') && (pacman.lives > 0) && (coins_to_eat))
   {
-    for(int i=0; i<GAME_SPEED; ++i){
-      if(game_tick(map, &pacman, ghost, game_data->ghost_nr, &scare_countdown)){
+    for (int i = 0; i < GAME_SPEED; ++i)
+    {
+      if (game_tick(map, &pacman, ghost, game_data->ghost_nr, &scare_countdown))
+      {
         break;
       }
     }
@@ -75,7 +77,9 @@ int run_game(game_init_data_t *game_data, peripherals_data_t *peripherals)
     read = read_thread_data.last_read;
     pthread_mutex_unlock(&mtx);
   }
-
+  pthread_mutex_lock(&mtx);
+  read_thread_data.last_read = ' ';
+  pthread_mutex_unlock(&mtx);
   // termination
   free(fb.fb);
   free(map->board_arr);
@@ -151,7 +155,7 @@ bool game_tick(map_data *map, pacman_type *pacman, ghost_type *ghost_arr, int nu
       {
         ghost_arr[j] = create_ghost(map, j);
       }
-      ret= true;
+      ret = true;
       break;
     }
     scare_regime = scare_regime || (ghost_arr[i].scared);
