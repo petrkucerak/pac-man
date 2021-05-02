@@ -45,16 +45,12 @@ read_thread_data_type read_thread_data;
 
 int main(int argc, char *argv[])
 {
-  // init a periphery
-  printf("Hello world\n");
-
   unsigned char *led_mem_base;
   led_mem_base = map_phys_address(SPILED_REG_BASE_PHYS, SPILED_REG_SIZE, 0);
   if (led_mem_base == NULL)
   {
     exit(1);
   }
-
   unsigned char *lcd_mem_base;
   lcd_mem_base = map_phys_address(PARLCD_REG_BASE_PHYS, PARLCD_REG_SIZE, 0);
   if (lcd_mem_base == NULL)

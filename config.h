@@ -33,6 +33,8 @@
 #define SCARE_REGIME_DURATION 300 //in game ticks
 #define GAME_SPEED 2 //ammount of ticks in one frame
 
+#define GAME_END_TERMINAL "Game has ended with pacman getting score %d and having %d lives\n"
+
 //led colors
 #define LED_SCARE_COLOR1 0
 #define LED_SCARE_COLOR2 0xf

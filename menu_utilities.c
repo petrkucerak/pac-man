@@ -32,10 +32,10 @@ void run_init_game_menu(fb_data *frame_buff, unsigned char *lcd_mem_base,
   lcd_from_fb(frame_buff, lcd_mem_base);
   sleep(2);
   bool play_game_again = true;
+  game_init_data_t game = {.pacman_lives = 3, .ghost_nr = 3, .map = &map_circles};
   while (play_game_again)
   {
     // menu with context
-    game_init_data_t game = {.pacman_lives = 3, .ghost_nr = 3, .map = &map_circles};
     draw_menu(frame_buff, font, game);
     lcd_from_fb(frame_buff, lcd_mem_base);
     // listen symbol

@@ -76,6 +76,7 @@ int run_game(game_init_data_t *game_data, peripherals_data_t *peripherals)
     }
     led_strip_number(peripherals->led_mem_base, game_data->pacman_lives, pacman.lives);
     lcd_from_fb(&fb, peripherals->lcd_mem_base);
+    //get new key
     pthread_mutex_lock(&mtx);
     read = read_thread_data.last_read;
     pthread_mutex_unlock(&mtx);
@@ -87,6 +88,7 @@ int run_game(game_init_data_t *game_data, peripherals_data_t *peripherals)
   pthread_mutex_lock(&mtx);
   read_thread_data.last_read = ' ';
   pthread_mutex_unlock(&mtx);
+  printf(GAME_END_TERMINAL, pacman.score, pacman.lives);
   // termination
   free(fb.fb);
   free(map->board_arr);
