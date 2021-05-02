@@ -40,14 +40,13 @@ void run_init_game_menu(fb_data *frame_buff, unsigned char *lcd_mem_base,
     lcd_from_fb(frame_buff, lcd_mem_base);
     // listen symbol
     char read = ' ';
-    while (read != 's')
+    while (read != 's' && read !='q')
     {
       // scan input
       pthread_mutex_lock(&mtx);
       pthread_cond_wait(&character_has_been_read, &mtx);
       read = read_thread_data.last_read;
       pthread_mutex_unlock(&mtx);
-
       if (read == 'l')
       {
         game = sub_menu_lives(frame_buff, lcd_mem_base, font, game);
@@ -64,11 +63,15 @@ void run_init_game_menu(fb_data *frame_buff, unsigned char *lcd_mem_base,
       draw_menu(frame_buff, font, game);
       lcd_from_fb(frame_buff, lcd_mem_base);
     }
-
-    // run game
-    int game_score = run_game(&game, &peripherals);
-    // draw packman score
-    play_game_again = draw_final_score(game_score, frame_buff, lcd_mem_base, font);
+    if (read != 'q')
+    {
+      // run game
+      int game_score = run_game(&game, &peripherals);
+      // draw packman score
+      play_game_again = draw_final_score(game_score, frame_buff, lcd_mem_base, font);
+    }else{
+      play_game_again = false;
+    }
   }
 }
 
