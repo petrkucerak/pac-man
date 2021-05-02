@@ -22,7 +22,7 @@
 #include "font_types.h"
 
 //internal function
-void led_blink(unsigned char *led_mem_base, int scare_countdown);
+void led_blink(unsigned char *led_mem_base, int scare_countdown, int pacman_score);
 void pause(fb_data *fb, peripherals_data_t *peripherals);
 
 //returns true if the game should be rendered imedeatly
@@ -67,7 +67,7 @@ int run_game(game_init_data_t *game_data, peripherals_data_t *peripherals)
       }
     }
     //do the rendering
-    led_blink(peripherals->led_mem_base, scare_countdown);
+    led_blink(peripherals->led_mem_base, scare_countdown, pacman.score);
     coins_to_eat = render_map(map, &fb);
     draw_pacman(&pacman, &fb, map);
     for (int i = 0; i < game_data->ghost_nr; ++i)
@@ -94,7 +94,7 @@ int run_game(game_init_data_t *game_data, peripherals_data_t *peripherals)
   return pacman.score;
 }
 
-void led_blink(unsigned char *led_mem_base, int scare_countdown)
+void led_blink(unsigned char *led_mem_base, int scare_countdown, int pacman_score)
 {
   static int period = 0;
   static int time = 0;
@@ -119,7 +119,7 @@ void led_blink(unsigned char *led_mem_base, int scare_countdown)
   else
   {
     //no scare regime
-    color = LED_NORMAL_COLOR;
+    color = (((uint8_t)(255*(pacman_score/(float)MAX_SCORE)))<<8);
   }
   sel_leds_color(led_mem_base, color);
 }

@@ -28,7 +28,7 @@
 #define COIN_SCORE_INCECREASE 100
 #define GHOST_SCORE_INCECREASE 200
 #define SCORE_DEATH_PENALTY 0
-#define MAX_SCORE 10000 //percentage of this will affect RGB led intensity
+#define MAX_SCORE 20000 //percentage of this will affect RGB led intensity
 
 #define SCARE_REGIME_DURATION 300 //in game ticks
 #define GAME_SPEED 2 //ammount of ticks in one frame
