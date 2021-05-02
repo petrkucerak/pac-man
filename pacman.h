@@ -15,7 +15,7 @@
 #include "map_template.h"
 
 
-pacman_type create_pacman(map_data *map, int lives);
+pacman_type create_pacman(map_data *map, int lives, int score);
 
 bool pacman_move(pacman_type* pacman, map_data* map);
 

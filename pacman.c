@@ -23,7 +23,7 @@ bool pacman_can_move(pacman_type *pacman, int dirx, int diry, map_data *map);
 /*
 Given map data creates pacman
 */
-pacman_type create_pacman(map_data *map, int lives)
+pacman_type create_pacman(map_data *map, int lives, int score)
 {
     pacman_type pacman;
     pacman.lives = lives;
@@ -31,7 +31,7 @@ pacman_type create_pacman(map_data *map, int lives)
     pacman.location = map->pacman_spawn;
     coords direction = {0, 0};
     pacman.direction = direction;
-    pacman.score = 0;
+    pacman.score = score;
     return pacman;
 }
 

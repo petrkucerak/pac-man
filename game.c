@@ -44,7 +44,7 @@ int run_game(game_init_data_t *game_data, peripherals_data_t *peripherals)
     free(map);
     return -1;
   }
-  pacman_type pacman = create_pacman(map, game_data->pacman_lives);
+  pacman_type pacman = create_pacman(map, game_data->pacman_lives,0);
   ghost_type ghost[game_data->ghost_nr];
   for (int i = 0; i < game_data->ghost_nr; ++i)
   {
@@ -150,7 +150,7 @@ bool game_tick(map_data *map, pacman_type *pacman, ghost_type *ghost_arr, int nu
     // move every ghost and check if pacman has not been eaten
     if (ghost_move(&ghost_arr[i], map, pacman))
     {
-      *pacman = create_pacman(map, pacman->lives - 1);
+      *pacman = create_pacman(map, pacman->lives - 1, pacman->score-SCORE_DEATH_PENALTY);
       for (int j = 0; j < num_ghosts; ++j)
       {
         ghost_arr[j] = create_ghost(map, j);

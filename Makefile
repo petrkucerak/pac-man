@@ -27,8 +27,8 @@ TARGET_USER ?= root
 # for use from Eduroam network use TARGET_IP=localhost and enable next line
 #SSH_OPTIONS=-o "UserKnownHostsFile=/dev/null" -o "StrictHostKeyChecking=no" -o "Port=2222"
 #SSH_OPTIONS=-i /opt/zynq/ssh-connect/mzapo-root-key
-# SSH_OPTIONS= -i ~/.ssh/mzapo-root-key -o 'ProxyJump=nejezluk@postel.felk.cvut.cz'
-SSH_OPTIONS= -i ~/.ssh/mzapo-root-key -o 'ProxyJump=kucerp28@postel.felk.cvut.cz'
+SSH_OPTIONS= -i ~/.ssh/mzapo-root-key -o 'ProxyJump=nejezluk@postel.felk.cvut.cz'
+# SSH_OPTIONS= -i ~/.ssh/mzapo-root-key -o 'ProxyJump=kucerp28@postel.felk.cvut.cz'
 
 OBJECTS += $(filter %.o,$(SOURCES:%.c=%.o))
 OBJECTS += $(filter %.o,$(SOURCES:%.cpp=%.o))
