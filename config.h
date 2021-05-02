@@ -16,10 +16,19 @@
 #define KEY_LEFT 'a'
 #define KEY_RIGHT 'd'
 #define KEY_QUIT 'q'
+#define PAUSE_KEY 'p'
+#define PAUSE_TEXT "GAME IS PAUSED"
+#define PAUSE_TEXT_SIZE 4
+#define PAUSE_SUBTEXT "press %c to resume or %c to quit"
+#define PAUSE_SUBTEXT_SIZE 2
+#define PAUSE_SUBTEXT_OFFSET 50
+#define PAUSE_FONT font_winFreeSystem14x16
+#define PAUSE_COLOR 0xffff
 
 #define COIN_SCORE_INCECREASE 100
 #define GHOST_SCORE_INCECREASE 200
 #define SCORE_DEATH_PENALTY 0
+#define MAX_SCORE 10000 //percentage of this will affect RGB led intensity
 
 #define SCARE_REGIME_DURATION 300 //in game ticks
 #define GAME_SPEED 2 //ammount of ticks in one frame

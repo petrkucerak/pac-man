@@ -18,9 +18,12 @@
 #include "map_to_fb.h"
 #include "map_from_template.h"
 #include "config.h"
+#include "text_fb.h"
+#include "font_types.h"
 
 //internal function
 void led_blink(unsigned char *led_mem_base, int scare_countdown);
+void pause(fb_data *fb, peripherals_data_t *peripherals);
 
 //returns true if the game should be rendered imedeatly
 bool game_tick(map_data *map, pacman_type *pacman, ghost_type *ghost_arr, int num_ghosts, int *scare);
@@ -44,7 +47,7 @@ int run_game(game_init_data_t *game_data, peripherals_data_t *peripherals)
     free(map);
     return -1;
   }
-  pacman_type pacman = create_pacman(map, game_data->pacman_lives,0);
+  pacman_type pacman = create_pacman(map, game_data->pacman_lives, 0);
   ghost_type ghost[game_data->ghost_nr];
   for (int i = 0; i < game_data->ghost_nr; ++i)
   {
@@ -76,6 +79,10 @@ int run_game(game_init_data_t *game_data, peripherals_data_t *peripherals)
     pthread_mutex_lock(&mtx);
     read = read_thread_data.last_read;
     pthread_mutex_unlock(&mtx);
+    if (read == PAUSE_KEY)
+    {
+      pause(&fb, peripherals);
+    }
   }
   pthread_mutex_lock(&mtx);
   read_thread_data.last_read = ' ';
@@ -150,7 +157,7 @@ bool game_tick(map_data *map, pacman_type *pacman, ghost_type *ghost_arr, int nu
     // move every ghost and check if pacman has not been eaten
     if (ghost_move(&ghost_arr[i], map, pacman))
     {
-      *pacman = create_pacman(map, pacman->lives - 1, pacman->score-SCORE_DEATH_PENALTY);
+      *pacman = create_pacman(map, pacman->lives - 1, pacman->score - SCORE_DEATH_PENALTY);
       for (int j = 0; j < num_ghosts; ++j)
       {
         ghost_arr[j] = create_ghost(map, j);
@@ -165,4 +172,31 @@ bool game_tick(map_data *map, pacman_type *pacman, ghost_type *ghost_arr, int nu
     (*scare) = -1;
   }
   return ret;
+}
+
+void pause(fb_data *fb, peripherals_data_t *peripherals)
+{
+  char read = ' ';
+  draw_text_center(fb, PAUSE_TEXT, peripherals->lcd_w / 2, peripherals->lcd_h / 2,
+                   PAUSE_TEXT_SIZE, &PAUSE_FONT, PAUSE_COLOR);
+  char subtext[sizeof(PAUSE_SUBTEXT) + 10];
+  snprintf(subtext, sizeof(PAUSE_SUBTEXT) + 10, PAUSE_SUBTEXT, PAUSE_KEY, KEY_QUIT);
+  draw_text_center(fb, subtext, peripherals->lcd_w / 2, peripherals->lcd_h / 2 + PAUSE_SUBTEXT_OFFSET,
+                   PAUSE_SUBTEXT_SIZE, &PAUSE_FONT, PAUSE_COLOR);
+  lcd_from_fb(fb, peripherals->lcd_mem_base);
+
+  while (read != PAUSE_KEY && read != KEY_QUIT)
+  {
+    pthread_mutex_lock(&mtx);
+    pthread_cond_wait(&character_has_been_read, &mtx);
+    read = read_thread_data.last_read;
+    pthread_mutex_unlock(&mtx);
+  }
+  if (read == PAUSE_KEY)
+  {
+    read = ' ';
+    pthread_mutex_lock(&mtx);
+    read_thread_data.last_read = ' ';
+    pthread_mutex_unlock(&mtx);
+  }
 }
