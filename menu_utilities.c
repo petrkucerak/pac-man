@@ -113,7 +113,7 @@ game_init_data_t sub_menu_lives(fb_data *frame_buff, unsigned char *lcd_mem_base
     c = read_thread_data.last_read;
     pthread_mutex_unlock(&mtx);
     // listen orders
-    if (c > '0' && c < MAX_LIVES)
+    if (c > '0' && c <= MAX_LIVES)
     {
       game_data.pacman_lives = c - '0';
     }
@@ -123,7 +123,7 @@ game_init_data_t sub_menu_lives(fb_data *frame_buff, unsigned char *lcd_mem_base
 
 game_init_data_t sub_menu_map(fb_data *frame_buff, unsigned char *lcd_mem_base, font_descriptor_t *font, game_init_data_t game_data)
 {
-  static int map_index = 0;
+  static int i = 0;
   map_template *map_templates[] = {&map_circles, &map_star, &map_conch};
   size_t map_templates_len = sizeof(map_templates) / sizeof(map_templates[0]);
   while (map_templates[i]->name != game_data.map->name)
@@ -151,15 +151,11 @@ game_init_data_t sub_menu_map(fb_data *frame_buff, unsigned char *lcd_mem_base, 
     // listen orders
     if (c == 'a')
     {
-      --i;
-      if (i == -1)
-        i = map_templates_len - 1;
+      i = (i-1+map_templates_len)%map_templates_len;
     }
     if (c == 'd')
     {
-      ++i;
-      if (i == 3)
-        i = 0;
+      i = (i+1+map_templates_len)%map_templates_len;    
     }
     game_data.map = map_templates[i];
   }
@@ -178,7 +174,8 @@ game_init_data_t sub_menu_ghosts(fb_data *frame_buff, unsigned char *lcd_mem_bas
     char string_tmp[40];
     snprintf(string_tmp, 40, "%d", game_data.ghost_nr);
     draw_text_center(frame_buff, string_tmp, frame_buff->width / 2, HEIGHT_M / 2, 3, font, 0xffff);
-    draw_text_center(frame_buff, "zmackni cislo (max 4)", frame_buff->width / 2, HEIGHT_M / 2 + HEIGHT_M / 7, 2, font, 0xffff);
+     snprintf(string_tmp, 40, "zmackni cislo (max %c)", MAX_GHOSTS);
+    draw_text_center(frame_buff, string_tmp, frame_buff->width / 2, HEIGHT_M / 2 + HEIGHT_M / 7, 2, font, 0xffff);
     draw_text_center(frame_buff, "POTVRDIT: [s]", frame_buff->width / 2, HEIGHT_M - HEIGHT_M / 10, 2, font, 0xffff);
     // update display
     lcd_from_fb(frame_buff, lcd_mem_base);
@@ -188,9 +185,9 @@ game_init_data_t sub_menu_ghosts(fb_data *frame_buff, unsigned char *lcd_mem_bas
     c = read_thread_data.last_read;
     pthread_mutex_unlock(&mtx);
     // listen orders
-    if (c > 48 && c < 53)
+    if (c > '0' && c <=MAX_GHOSTS)
     {
-      game_data.ghost_nr = c - 48;
+      game_data.ghost_nr = c - '0';
     }
   }
   return game_data;
