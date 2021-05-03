@@ -30,6 +30,9 @@
 #define SCORE_DEATH_PENALTY 0
 #define MAX_SCORE 20000 //percentage of this will affect RGB led intensity
 
+#define MAX_GHOSTS '4'
+#define MAX_LIVES '4'
+
 #define SCARE_REGIME_DURATION 300 //in game ticks
 #define GAME_SPEED 2 //ammount of ticks in one frame
 

@@ -19,6 +19,7 @@
 #include "text_fb.h"
 #include "game.h"
 #include "final_score.h"
+#include "config.h"
 #include <unistd.h>
 
 #define HEIGHT_M frame_buff->height
@@ -101,7 +102,8 @@ game_init_data_t sub_menu_lives(fb_data *frame_buff, unsigned char *lcd_mem_base
     char string_tmp[40];
     snprintf(string_tmp, 40, "%d", game_data.pacman_lives);
     draw_text_center(frame_buff, string_tmp, frame_buff->width / 2, HEIGHT_M / 2, 3, font, 0xffff);
-    draw_text_center(frame_buff, "zmackni cislo (max 4)", frame_buff->width / 2, HEIGHT_M / 2 + HEIGHT_M / 7, 2, font, 0xffff);
+    snprintf(string_tmp, 40, "zmackni cislo (max %c)", MAX_LIVES);
+    draw_text_center(frame_buff,string_tmp , frame_buff->width / 2, HEIGHT_M / 2 + HEIGHT_M / 7, 2, font, 0xffff);
     draw_text_center(frame_buff, "POTVRDIT: [s]", frame_buff->width / 2, HEIGHT_M - HEIGHT_M / 10, 2, font, 0xffff);
     // update display
     lcd_from_fb(frame_buff, lcd_mem_base);
@@ -111,9 +113,9 @@ game_init_data_t sub_menu_lives(fb_data *frame_buff, unsigned char *lcd_mem_base
     c = read_thread_data.last_read;
     pthread_mutex_unlock(&mtx);
     // listen orders
-    if (c > 48 && c < 53)
+    if (c > '0' && c < MAX_LIVES)
     {
-      game_data.pacman_lives = c - 48;
+      game_data.pacman_lives = c - '0';
     }
   }
   return game_data;
@@ -121,7 +123,7 @@ game_init_data_t sub_menu_lives(fb_data *frame_buff, unsigned char *lcd_mem_base
 
 game_init_data_t sub_menu_map(fb_data *frame_buff, unsigned char *lcd_mem_base, font_descriptor_t *font, game_init_data_t game_data)
 {
-  int i = 0;
+  static int map_index = 0;
   map_template *map_templates[] = {&map_circles, &map_star, &map_conch};
   size_t map_templates_len = sizeof(map_templates) / sizeof(map_templates[0]);
   while (map_templates[i]->name != game_data.map->name)
