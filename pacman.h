@@ -15,9 +15,20 @@
 #include "map_template.h"
 
 
+/*
+* @returns Pacman at spawning point of map
+*/
 pacman_type create_pacman(map_data *map, int lives, int score);
 
-bool pacman_move(pacman_type* pacman, map_data* map);
+/*
+* reads key from terminal, changes direction if moving this direction is possible
+* moves the pacman in the direction if possible
+* @returns true if pacman has eaten supercoin
+*/
+bool pacman_move(pacman_type *pacman, map_data *map);
 
-void draw_pacman(pacman_type *pacman, fb_data * fb, map_data* map);
+/*
+* draws pacman to the frame buffer
+*/
+void draw_pacman(pacman_type *pacman, fb_data *fb, map_data *map);
 #endif

@@ -47,7 +47,9 @@
 #define WALL_COLOR 0x9
 #define PATH_COLOR 0
 #define COIN_COLOR 0xd000
+#define COIN_RADIUS 5
 #define SUPERCOIN_COLOR 0xf91f
+#define SUPERCOIN_RADIUS 5
 
 //ghost colors
 // green pink  azure red

@@ -16,7 +16,8 @@
 
 
 /**
- * given map_data draws the map to frame buffer, returns if there are any coins to be eaten
+ * given map_data draws the map to frame buffer, 
+ * @returns true if there are any coins to be eaten
  */
 bool render_map(map_data *data, fb_data *frame_buff);
 
