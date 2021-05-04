@@ -1,13 +1,14 @@
-/*******************************************************************
-  Config file for project apoman for MicroZed based MZ_APO board
-  designed by Petr Porazil at PiKRON
+/**
+ * @file config.h
+ * @author Lukas Nejezchleb (nejezluk@fel.cvut.cz), Petr Kucera (kucerp28@fel.cvut.cz)
+ * @brief File, where user preferences can be set. For example maximum cap for lives, score gained by eating ghosts/coins can be set here.
+ * @version 0.1
+ * @date 2021-05-04
+ * 
+ * @copyright Copyright (c) 2021
+ * 
+ */
 
-  config.h      - config file
-
-(C) Copyright 2021 by Petr Kucera and Lukas Nejezchleb
-      e-mails:   kucerp28@fel.cvut.cz , nejezluk@fel.cvut.cz
-      license:  any combination of GPL, LGPL, MPL or BSD licenses
- *******************************************************************/
 #ifndef CONFIG_H
 #define CONFIG_H
 
