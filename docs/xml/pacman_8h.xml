@@ -99,12 +99,41 @@
           <declname>score</declname>
         </param>
         <briefdescription>
+<para>Returns pacman with initial score and lives at the spawning coords of the map. </para>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>map</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>lives</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>score</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="structpacman__type" kindref="compound">pacman_type</ref> </para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Petr/Documents/apo_semestralka/pacman.h" line="21" column="13" bodyfile="C:/Users/Petr/Documents/apo_semestralka/pacman.c" bodystart="26" bodyend="36" declfile="C:/Users/Petr/Documents/apo_semestralka/pacman.h" declline="21" declcolumn="13"/>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/pacman.h" line="25" column="13" bodyfile="C:/Users/Petr/Documents/apo_semestralka/pacman.c" bodystart="18" bodyend="28" declfile="C:/Users/Petr/Documents/apo_semestralka/pacman.h" declline="25" declcolumn="13"/>
       </memberdef>
       <memberdef kind="function" id="pacman_8h_1ae1b36e370a9b73a0eed9ad43e53db1f0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -120,12 +149,35 @@
           <declname>map</declname>
         </param>
         <briefdescription>
+<para>Returns pacman with initial score and lives at the spawning coords of the map. </para>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pacman</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>map</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true </para>
+</simplesect>
+<simplesect kind="return"><para>false </para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Petr/Documents/apo_semestralka/pacman.h" line="28" column="6" bodyfile="C:/Users/Petr/Documents/apo_semestralka/pacman.c" bodystart="41" bodyend="85" declfile="C:/Users/Petr/Documents/apo_semestralka/pacman.h" declline="28" declcolumn="6"/>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/pacman.h" line="35" column="6" bodyfile="C:/Users/Petr/Documents/apo_semestralka/pacman.c" bodystart="30" bodyend="74" declfile="C:/Users/Petr/Documents/apo_semestralka/pacman.h" declline="35" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="pacman_8h_1a9b14d2c075ef0768af01d694a839cd38" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -145,53 +197,138 @@
           <declname>map</declname>
         </param>
         <briefdescription>
+<para>draws circle if pacman is not facing any direction or the ”pie” shape to symbolise the heading </para>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pacman</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>fb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>map</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Petr/Documents/apo_semestralka/pacman.h" line="33" column="6" bodyfile="C:/Users/Petr/Documents/apo_semestralka/pacman.c" bodystart="93" bodyend="115" declfile="C:/Users/Petr/Documents/apo_semestralka/pacman.h" declline="33" declcolumn="6"/>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/pacman.h" line="44" column="6" bodyfile="C:/Users/Petr/Documents/apo_semestralka/pacman.c" bodystart="82" bodyend="106" declfile="C:/Users/Petr/Documents/apo_semestralka/pacman.h" declline="44" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="pacman_8h_1a3c07103dca2f3a04c80872d8603b5d45" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool pacman_can_move</definition>
+        <argsstring>(pacman_type *pacman, int dirx, int diry, map_data *map)</argsstring>
+        <name>pacman_can_move</name>
+        <param>
+          <type><ref refid="structpacman__type" kindref="compound">pacman_type</ref> *</type>
+          <declname>pacman</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>dirx</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>diry</declname>
+        </param>
+        <param>
+          <type><ref refid="structmap__data" kindref="compound">map_data</ref> *</type>
+          <declname>map</declname>
+        </param>
+        <briefdescription>
+<para>returns true if pacman can move in given direction </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pacman</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dirx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>diry</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>map</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true </para>
+</simplesect>
+<simplesect kind="return"><para>false </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/pacman.h" line="56" column="6" bodyfile="C:/Users/Petr/Documents/apo_semestralka/pacman.c" bodystart="76" bodyend="80" declfile="C:/Users/Petr/Documents/apo_semestralka/pacman.h" declline="56" declcolumn="6"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
+<para>Module for the controls and rendering of pacman. </para>
     </briefdescription>
     <detaileddescription>
+<para><simplesect kind="author"><para>Lukas Nejezchleb (<ulink url="mailto:nejezluk@fel.cvut.cz">nejezluk@fel.cvut.cz</ulink>) </para>
+</simplesect>
+<simplesect kind="version"><para>0.1 </para>
+</simplesect>
+<simplesect kind="date"><para>2021-05-04</para>
+</simplesect>
+<simplesect kind="copyright"><para>Copyright (c) 2021 </para>
+</simplesect>
+</para>
     </detaileddescription>
     <programlisting>
-<codeline lineno="1"><highlight class="comment">/*******************************************************************</highlight></codeline>
-<codeline lineno="2"><highlight class="comment"><sp/><sp/>All<sp/>inportant<sp/>functions<sp/>for<sp/>pacman<sp/>on<sp/>MicroZed</highlight></codeline>
-<codeline lineno="3"><highlight class="comment"><sp/><sp/>based<sp/>MZ_APO<sp/>board<sp/>designed<sp/>by<sp/>Petr<sp/>Porazil<sp/>at<sp/>PiKRON</highlight></codeline>
-<codeline lineno="4"><highlight class="comment"></highlight></codeline>
-<codeline lineno="5"><highlight class="comment"><sp/><sp/>pacman.h<sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>all<sp/>important<sp/>functions<sp/>for<sp/>pacman</highlight></codeline>
-<codeline lineno="6"><highlight class="comment"></highlight></codeline>
-<codeline lineno="7"><highlight class="comment"><sp/><sp/>(C)<sp/>Copyright<sp/>2021<sp/>by<sp/>Lukas<sp/>Nejezchleb</highlight></codeline>
-<codeline lineno="8"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>e-mail:<sp/><sp/><sp/>nejezluk@fel.cvut.cz</highlight></codeline>
-<codeline lineno="9"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>license:<sp/><sp/>any<sp/>combination<sp/>of<sp/>GPL,<sp/>LGPL,<sp/>MPL<sp/>or<sp/>BSD<sp/>licenses</highlight></codeline>
-<codeline lineno="10"><highlight class="comment"></highlight></codeline>
-<codeline lineno="11"><highlight class="comment"><sp/>*******************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
 <codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>PACMAN_H</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PACMAN_H</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="data__structures_8h" kindref="compound">data_structures.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="map__template_8h" kindref="compound">map_template.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="16"><highlight class="normal"></highlight></codeline>
-<codeline lineno="17"><highlight class="normal"></highlight></codeline>
-<codeline lineno="18"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
-<codeline lineno="19"><highlight class="comment">*<sp/>@returns<sp/>Pacman<sp/>at<sp/>spawning<sp/>point<sp/>of<sp/>map</highlight></codeline>
-<codeline lineno="20"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="21"><highlight class="normal"><ref refid="structpacman__type" kindref="compound">pacman_type</ref><sp/><ref refid="pacman_8h_1a6049d528917cb950659f2972d92cb432" kindref="member">create_pacman</ref>(<ref refid="structmap__data" kindref="compound">map_data</ref><sp/>*map,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>lives,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>score);</highlight></codeline>
-<codeline lineno="22"><highlight class="normal"></highlight></codeline>
-<codeline lineno="23"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
-<codeline lineno="24"><highlight class="comment">*<sp/>reads<sp/>key<sp/>from<sp/>terminal,<sp/>changes<sp/>direction<sp/>if<sp/>moving<sp/>this<sp/>direction<sp/>is<sp/>possible</highlight></codeline>
-<codeline lineno="25"><highlight class="comment">*<sp/>moves<sp/>the<sp/>pacman<sp/>in<sp/>the<sp/>direction<sp/>if<sp/>possible</highlight></codeline>
-<codeline lineno="26"><highlight class="comment">*<sp/>@returns<sp/>true<sp/>if<sp/>pacman<sp/>has<sp/>eaten<sp/>supercoin</highlight></codeline>
-<codeline lineno="27"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="pacman_8h_1ae1b36e370a9b73a0eed9ad43e53db1f0" kindref="member">pacman_move</ref>(<ref refid="structpacman__type" kindref="compound">pacman_type</ref><sp/>*pacman,<sp/><ref refid="structmap__data" kindref="compound">map_data</ref><sp/>*map);</highlight></codeline>
-<codeline lineno="29"><highlight class="normal"></highlight></codeline>
-<codeline lineno="30"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
-<codeline lineno="31"><highlight class="comment">*<sp/>draws<sp/>pacman<sp/>to<sp/>the<sp/>frame<sp/>buffer</highlight></codeline>
-<codeline lineno="32"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="33"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="pacman_8h_1a9b14d2c075ef0768af01d694a839cd38" kindref="member">draw_pacman</ref>(<ref refid="structpacman__type" kindref="compound">pacman_type</ref><sp/>*pacman,<sp/><ref refid="structfb__data" kindref="compound">fb_data</ref><sp/>*fb,<sp/><ref refid="structmap__data" kindref="compound">map_data</ref><sp/>*map);</highlight></codeline>
-<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><ref refid="structpacman__type" kindref="compound">pacman_type</ref><sp/><ref refid="pacman_8h_1a6049d528917cb950659f2972d92cb432" kindref="member">create_pacman</ref>(<ref refid="structmap__data" kindref="compound">map_data</ref><sp/>*map,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>lives,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>score);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="pacman_8h_1ae1b36e370a9b73a0eed9ad43e53db1f0" kindref="member">pacman_move</ref>(<ref refid="structpacman__type" kindref="compound">pacman_type</ref><sp/>*pacman,<sp/><ref refid="structmap__data" kindref="compound">map_data</ref><sp/>*map);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="pacman_8h_1a9b14d2c075ef0768af01d694a839cd38" kindref="member">draw_pacman</ref>(<ref refid="structpacman__type" kindref="compound">pacman_type</ref><sp/>*pacman,<sp/><ref refid="structfb__data" kindref="compound">fb_data</ref><sp/>*fb,<sp/><ref refid="structmap__data" kindref="compound">map_data</ref><sp/>*map);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="pacman_8h_1a3c07103dca2f3a04c80872d8603b5d45" kindref="member">pacman_can_move</ref>(<ref refid="structpacman__type" kindref="compound">pacman_type</ref><sp/>*pacman,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>dirx,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>diry,<sp/><ref refid="structmap__data" kindref="compound">map_data</ref><sp/>*map);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
     </programlisting>
     <location file="C:/Users/Petr/Documents/apo_semestralka/pacman.h"/>
   </compounddef>

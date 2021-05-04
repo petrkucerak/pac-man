@@ -2,7 +2,8 @@
 .ad l
 .nh
 .SH NAME
-C:/Users/Petr/Documents/apo_semestralka/menu_utilities.c
+C:/Users/Petr/Documents/apo_semestralka/menu_utilities.c \- Module for drawing menu, setting game settings and starting the game\&.  
+
 .SH SYNOPSIS
 .br
 .PP
@@ -42,19 +43,51 @@ C:/Users/Petr/Documents/apo_semestralka/menu_utilities.c
 .ti -1c
 .RI "void \fBrun_init_game_menu\fP (\fBfb_data\fP *frame_buff, unsigned char *lcd_mem_base, \fBfont_descriptor_t\fP *font, \fBperipherals_data_t\fP peripherals)"
 .br
+.RI "Calls other menu functions which set the game parameters or runs the game if user pressed the s key\&. Quits program if user pressed the q key\&. "
 .ti -1c
 .RI "void \fBdraw_menu\fP (\fBfb_data\fP *frame_buff, \fBfont_descriptor_t\fP *font, \fBgame_init_data_t\fP game_data)"
 .br
+.RI "Function to drow menu with settings to \fBfb_data\fP\&. "
 .ti -1c
 .RI "\fBgame_init_data_t\fP \fBsub_menu_lives\fP (\fBfb_data\fP *frame_buff, unsigned char *lcd_mem_base, \fBfont_descriptor_t\fP *font, \fBgame_init_data_t\fP game_data)"
 .br
+.RI "Displays current amount of lives and lets the user change\&. "
 .ti -1c
 .RI "\fBgame_init_data_t\fP \fBsub_menu_map\fP (\fBfb_data\fP *frame_buff, unsigned char *lcd_mem_base, \fBfont_descriptor_t\fP *font, \fBgame_init_data_t\fP game_data)"
 .br
+.RI "Displays current map and lets the user change it\&. "
 .ti -1c
 .RI "\fBgame_init_data_t\fP \fBsub_menu_ghosts\fP (\fBfb_data\fP *frame_buff, unsigned char *lcd_mem_base, \fBfont_descriptor_t\fP *font, \fBgame_init_data_t\fP game_data)"
 .br
+.RI "Displays current amount of ghosts and lets the user change\&. "
 .in -1c
+.SH "Detailed Description"
+.PP 
+Module for drawing menu, setting game settings and starting the game\&. 
+
+
+.PP
+\fBAuthor\fP
+.RS 4
+Petr Kucera (kucerp28@fel.cvut.cz) 
+.RE
+.PP
+\fBVersion\fP
+.RS 4
+0\&.1 
+.RE
+.PP
+\fBDate\fP
+.RS 4
+2021-05-04
+.RE
+.PP
+\fBCopyright\fP
+.RS 4
+Copyright (c) 2021 
+.RE
+.PP
+
 .SH "Macro Definition Documentation"
 .PP 
 .SS "#define HEIGHT_M   frame_buff\->height"
@@ -62,15 +95,103 @@ C:/Users/Petr/Documents/apo_semestralka/menu_utilities.c
 .SH "Function Documentation"
 .PP 
 .SS "void draw_menu (\fBfb_data\fP * frame_buff, \fBfont_descriptor_t\fP * font, \fBgame_init_data_t\fP game_data)"
-function to drow menu with settings to \fBfb_data\fP (for propagate changes need to render data from buffer) 
+
+.PP
+Function to drow menu with settings to \fBfb_data\fP\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIframe_buff\fP 
+.br
+\fIfont\fP 
+.br
+\fIgame_data\fP 
+.RE
+.PP
+
 .SS "void run_init_game_menu (\fBfb_data\fP * frame_buff, unsigned char * lcd_mem_base, \fBfont_descriptor_t\fP * font, \fBperipherals_data_t\fP peripherals)"
-function run menu for setting game paramaters 
+
+.PP
+Calls other menu functions which set the game parameters or runs the game if user pressed the s key\&. Quits program if user pressed the q key\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIframe_buff\fP 
+.br
+\fIlcd_mem_base\fP 
+.br
+\fIfont\fP 
+.br
+\fIperipherals\fP 
+.RE
+.PP
+
 .SS "\fBgame_init_data_t\fP sub_menu_ghosts (\fBfb_data\fP * frame_buff, unsigned char * lcd_mem_base, \fBfont_descriptor_t\fP * font, \fBgame_init_data_t\fP game_data)"
-function draw sub menu and update count of ghosts 
+
+.PP
+Displays current amount of ghosts and lets the user change\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIframe_buff\fP 
+.br
+\fIlcd_mem_base\fP 
+.br
+\fIfont\fP 
+.br
+\fIgame_data\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+\fBgame_init_data_t\fP 
+.RE
+.PP
+
 .SS "\fBgame_init_data_t\fP sub_menu_lives (\fBfb_data\fP * frame_buff, unsigned char * lcd_mem_base, \fBfont_descriptor_t\fP * font, \fBgame_init_data_t\fP game_data)"
-function draw sub menu and update count of lives 
+
+.PP
+Displays current amount of lives and lets the user change\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIframe_buff\fP 
+.br
+\fIlcd_mem_base\fP 
+.br
+\fIfont\fP 
+.br
+\fIgame_data\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+\fBgame_init_data_t\fP 
+.RE
+.PP
+
 .SS "\fBgame_init_data_t\fP sub_menu_map (\fBfb_data\fP * frame_buff, unsigned char * lcd_mem_base, \fBfont_descriptor_t\fP * font, \fBgame_init_data_t\fP game_data)"
-function draw sub menu and update name of game map 
+
+.PP
+Displays current map and lets the user change it\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIframe_buff\fP 
+.br
+\fIlcd_mem_base\fP 
+.br
+\fIfont\fP 
+.br
+\fIgame_data\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+\fBgame_init_data_t\fP 
+.RE
+.PP
+
 .SH "Author"
 .PP 
 Generated automatically by Doxygen for Pac-Man from the source code\&.

@@ -89,21 +89,34 @@ $(document).ready(function(){initNavTree('map__from__template_8c.html',''); init
 <div class="title">map_from_template.c File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Module for creating map for the screen from the templates in the form described in the map template.h.  
+<a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="map__from__template_8h_source.html">map_from_template.h</a>&quot;</code><br />
 <code>#include &lt;stdlib.h&gt;</code><br />
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
+<tr class="memitem:a901a095e25461784eabdda1071e872c8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structmap__data.html">map_data</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="map__from__template_8c.html#a901a095e25461784eabdda1071e872c8">create_map_data</a> (int screen_w, int screen_h, <a class="el" href="structmap__template.html">map_template</a> *template)</td></tr>
+<tr class="memdesc:a901a095e25461784eabdda1071e872c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns dynamically allocated memory with the data created from the map template given.  <a href="map__from__template_8c.html#a901a095e25461784eabdda1071e872c8">More...</a><br /></td></tr>
+<tr class="separator:a901a095e25461784eabdda1071e872c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5e80f2160adaa7e5d60bb07f3944c64d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="map__from__template_8c.html#a5e80f2160adaa7e5d60bb07f3944c64d">create_cell</a> (int row, int col, <a class="el" href="structmap__template.html">map_template</a> *template, <a class="el" href="structmap__data.html">map_data</a> *map)</td></tr>
+<tr class="memdesc:a5e80f2160adaa7e5d60bb07f3944c64d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a cell (only internal function)  <a href="map__from__template_8c.html#a5e80f2160adaa7e5d60bb07f3944c64d">More...</a><br /></td></tr>
 <tr class="separator:a5e80f2160adaa7e5d60bb07f3944c64d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a44624d542105803282c463099d42c825"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="map__from__template_8c.html#a44624d542105803282c463099d42c825">create_cross</a> (int row, int col, <a class="el" href="structmap__template.html">map_template</a> *template, <a class="el" href="structmap__data.html">map_data</a> *map, char center_val)</td></tr>
+<tr class="memdesc:a44624d542105803282c463099d42c825"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a cross (only internal function)  <a href="map__from__template_8c.html#a44624d542105803282c463099d42c825">More...</a><br /></td></tr>
 <tr class="separator:a44624d542105803282c463099d42c825"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a901a095e25461784eabdda1071e872c8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structmap__data.html">map_data</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="map__from__template_8c.html#a901a095e25461784eabdda1071e872c8">create_map_data</a> (int screen_w, int screen_h, <a class="el" href="structmap__template.html">map_template</a> *template)</td></tr>
-<tr class="separator:a901a095e25461784eabdda1071e872c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa8473ad0b0fb98071c071d3389f3c810"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structcoords.html">coords</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="map__from__template_8c.html#aa8473ad0b0fb98071c071d3389f3c810">get_coords_from_template</a> (int row, int col, <a class="el" href="structmap__template.html">map_template</a> *template, int screen_w, int screen_h)</td></tr>
+<tr class="memdesc:aa8473ad0b0fb98071c071d3389f3c810"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns coords in the map given coords in the template.  <a href="map__from__template_8c.html#aa8473ad0b0fb98071c071d3389f3c810">More...</a><br /></td></tr>
 <tr class="separator:aa8473ad0b0fb98071c071d3389f3c810"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Module for creating map for the screen from the templates in the form described in the map template.h. </p>
+<dl class="section author"><dt>Author</dt><dd>Lukas Nejezchleb (<a href="#" onclick="location.href='mai'+'lto:'+'nej'+'ez'+'luk'+'@f'+'el.'+'cv'+'ut.'+'cz'; return false;">nejez<span style="display: none;">.nosp@m.</span>luk@<span style="display: none;">.nosp@m.</span>fel.c<span style="display: none;">.nosp@m.</span>vut.<span style="display: none;">.nosp@m.</span>cz</a>) </dd></dl>
+<dl class="section version"><dt>Version</dt><dd>0.1 </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2021-05-04</dd></dl>
+<dl class="section copyright"><dt>Copyright</dt><dd>Copyright (c) 2021 </dd></dl>
+</div><h2 class="groupheader">Function Documentation</h2>
 <a id="a5e80f2160adaa7e5d60bb07f3944c64d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5e80f2160adaa7e5d60bb07f3944c64d">&#9670;&nbsp;</a></span>create_cell()</h2>
 
@@ -141,6 +154,17 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Create a cell (only internal function) </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">row</td><td></td></tr>
+    <tr><td class="paramname">col</td><td></td></tr>
+    <tr><td class="paramname">template</td><td></td></tr>
+    <tr><td class="paramname">map</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -188,6 +212,18 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Create a cross (only internal function) </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">row</td><td></td></tr>
+    <tr><td class="paramname">col</td><td></td></tr>
+    <tr><td class="paramname">template</td><td></td></tr>
+    <tr><td class="paramname">map</td><td></td></tr>
+    <tr><td class="paramname">center_val</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="a901a095e25461784eabdda1071e872c8"></a>
@@ -221,7 +257,17 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>given map template returns dynamically allocated map for the whole screen </p>
+
+<p>Returns dynamically allocated memory with the data created from the map template given. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">screen_w</td><td></td></tr>
+    <tr><td class="paramname">screen_h</td><td></td></tr>
+    <tr><td class="paramname">template</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>map_data* </dd></dl>
 
 </div>
 </div>
@@ -268,7 +314,19 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>fiven coords in template returns coords on the actual map </p>
+
+<p>Returns coords in the map given coords in the template. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">row</td><td></td></tr>
+    <tr><td class="paramname">col</td><td></td></tr>
+    <tr><td class="paramname">template</td><td></td></tr>
+    <tr><td class="paramname">screen_w</td><td></td></tr>
+    <tr><td class="paramname">screen_h</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>coords </dd></dl>
 
 </div>
 </div>

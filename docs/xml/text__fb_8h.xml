@@ -128,13 +128,71 @@
           <declname>color</declname>
         </param>
         <briefdescription>
+<para>Draws the character to the frame buffer. Left upper corner is at x,y and the char is scale times bigger than the bitmap in font. </para>
         </briefdescription>
         <detaileddescription>
-<para>function to draw char, left upper edge is at x, y </para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>frame</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>letter</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>scale</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>font</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Petr/Documents/apo_semestralka/text_fb.h" line="20" column="6" bodyfile="C:/Users/Petr/Documents/apo_semestralka/text_fb.c" bodystart="16" bodyend="36" declfile="C:/Users/Petr/Documents/apo_semestralka/text_fb.h" declline="20" declcolumn="6"/>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/text_fb.h" line="28" column="6" bodyfile="C:/Users/Petr/Documents/apo_semestralka/text_fb.c" bodystart="16" bodyend="36" declfile="C:/Users/Petr/Documents/apo_semestralka/text_fb.h" declline="28" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="text__fb_8h_1ad3a4c863813fb8a6d93380bc7e1826ff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
@@ -150,13 +208,33 @@
           <declname>letter</declname>
         </param>
         <briefdescription>
+<para>Returns the lenght of given char. </para>
         </briefdescription>
         <detaileddescription>
-<para>returns width of character </para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fdes</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>letter</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>int </para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Petr/Documents/apo_semestralka/text_fb.h" line="25" column="5" bodyfile="C:/Users/Petr/Documents/apo_semestralka/text_fb.c" bodystart="38" bodyend="51" declfile="C:/Users/Petr/Documents/apo_semestralka/text_fb.h" declline="25" declcolumn="5"/>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/text_fb.h" line="37" column="5" bodyfile="C:/Users/Petr/Documents/apo_semestralka/text_fb.c" bodystart="38" bodyend="51" declfile="C:/Users/Petr/Documents/apo_semestralka/text_fb.h" declline="37" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="text__fb_8h_1a7873327914ec2b5b79833f8aa0ffd5ac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>uint32_t</type>
@@ -172,13 +250,33 @@
           <declname>letter</declname>
         </param>
         <briefdescription>
+<para>Returns offset of given char in bitmap data. </para>
         </briefdescription>
         <detaileddescription>
-<para>returns offset in font bitmap data </para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fdes</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>letter</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>uint32_t </para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Petr/Documents/apo_semestralka/text_fb.h" line="30" column="10" bodyfile="C:/Users/Petr/Documents/apo_semestralka/text_fb.c" bodystart="53" bodyend="65" declfile="C:/Users/Petr/Documents/apo_semestralka/text_fb.h" declline="30" declcolumn="10"/>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/text_fb.h" line="46" column="10" bodyfile="C:/Users/Petr/Documents/apo_semestralka/text_fb.c" bodystart="53" bodyend="65" declfile="C:/Users/Petr/Documents/apo_semestralka/text_fb.h" declline="46" declcolumn="10"/>
       </memberdef>
       <memberdef kind="function" id="text__fb_8h_1a273e67041b3e82dbfdd989f64e876732" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -214,13 +312,71 @@
           <declname>color</declname>
         </param>
         <briefdescription>
+<para>Draws text to the frame buffer, x,y are the coordinates of the left upper edge. </para>
         </briefdescription>
         <detaileddescription>
-<para>draws text to frame buffer, left upper edge is at x, y </para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>frame</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>text</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>scale</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>font</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Petr/Documents/apo_semestralka/text_fb.h" line="35" column="6" bodyfile="C:/Users/Petr/Documents/apo_semestralka/text_fb.c" bodystart="67" bodyend="74" declfile="C:/Users/Petr/Documents/apo_semestralka/text_fb.h" declline="35" declcolumn="6"/>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/text_fb.h" line="59" column="6" bodyfile="C:/Users/Petr/Documents/apo_semestralka/text_fb.c" bodystart="67" bodyend="74" declfile="C:/Users/Petr/Documents/apo_semestralka/text_fb.h" declline="59" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="text__fb_8h_1a6c9c3fce44e83e9b6076cdc74ba11464" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -256,46 +412,104 @@
           <declname>color</declname>
         </param>
         <briefdescription>
+<para>Draws the text centered around x,y. </para>
         </briefdescription>
         <detaileddescription>
-<para>draws text to frame buffer, centre of text is at x, y </para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>frame</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>text</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>scale</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>font</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Petr/Documents/apo_semestralka/text_fb.h" line="40" column="6" bodyfile="C:/Users/Petr/Documents/apo_semestralka/text_fb.c" bodystart="76" bodyend="91" declfile="C:/Users/Petr/Documents/apo_semestralka/text_fb.h" declline="40" declcolumn="6"/>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/text_fb.h" line="72" column="6" bodyfile="C:/Users/Petr/Documents/apo_semestralka/text_fb.c" bodystart="76" bodyend="91" declfile="C:/Users/Petr/Documents/apo_semestralka/text_fb.h" declline="72" declcolumn="6"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
+<para>Module for drawing text to frame buffer. </para>
     </briefdescription>
     <detaileddescription>
+<para><simplesect kind="author"><para>Lukas Nejezchleb (<ulink url="mailto:nejezluk@fel.cvut.cz">nejezluk@fel.cvut.cz</ulink>) </para>
+</simplesect>
+<simplesect kind="version"><para>0.1 </para>
+</simplesect>
+<simplesect kind="date"><para>2021-05-04</para>
+</simplesect>
+<simplesect kind="copyright"><para>Copyright (c) 2021 </para>
+</simplesect>
+</para>
     </detaileddescription>
     <programlisting>
-<codeline lineno="1"><highlight class="comment">/*******************************************************************</highlight></codeline>
-<codeline lineno="2"><highlight class="comment"><sp/><sp/>Program<sp/>to<sp/>draw<sp/>text<sp/>to<sp/>frame<sp/>buffer<sp/>on<sp/>MicroZed</highlight></codeline>
-<codeline lineno="3"><highlight class="comment"><sp/><sp/>based<sp/>MZ_APO<sp/>board<sp/>designed<sp/>by<sp/>Petr<sp/>Porazil<sp/>at<sp/>PiKRON</highlight></codeline>
-<codeline lineno="4"><highlight class="comment"></highlight></codeline>
-<codeline lineno="5"><highlight class="comment"><sp/><sp/>text_fb.c<sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>simple<sp/>program<sp/>to<sp/>draw<sp/>text</highlight></codeline>
-<codeline lineno="6"><highlight class="comment"></highlight></codeline>
-<codeline lineno="7"><highlight class="comment"><sp/><sp/>(C)<sp/>Copyright<sp/>2021<sp/>by<sp/>Lukas<sp/>Nejezchleb</highlight></codeline>
-<codeline lineno="8"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>e-mail:<sp/><sp/><sp/>nejezluk@fel.cvut.cz</highlight></codeline>
-<codeline lineno="9"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>license:<sp/><sp/>any<sp/>combination<sp/>of<sp/>GPL,<sp/>LGPL,<sp/>MPL<sp/>or<sp/>BSD<sp/>licenses</highlight></codeline>
-<codeline lineno="10"><highlight class="comment"></highlight></codeline>
-<codeline lineno="11"><highlight class="comment"><sp/>*******************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
 <codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>TEXT_FB_H</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TEXT_FB_H</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="data__structures_8h" kindref="compound">data_structures.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="font__types_8h" kindref="compound">font_types.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="16"><highlight class="normal"></highlight></codeline>
-<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="text__fb_8h_1a21645f17c98617a8bd7342f9fdb78899" kindref="member">draw_char</ref>(<ref refid="structfb__data" kindref="compound">fb_data</ref><sp/>*frame,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>letter,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>scale,<sp/><ref refid="structfont__descriptor__t" kindref="compound">font_descriptor_t</ref><sp/>*font,<sp/>uint16_t<sp/>color);</highlight></codeline>
-<codeline lineno="21"><highlight class="normal"></highlight></codeline>
-<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="text__fb_8h_1ad3a4c863813fb8a6d93380bc7e1826ff" kindref="member">char_width</ref>(<ref refid="structfont__descriptor__t" kindref="compound">font_descriptor_t</ref><sp/>*fdes,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>letter);</highlight></codeline>
-<codeline lineno="26"><highlight class="normal"></highlight></codeline>
-<codeline lineno="30"><highlight class="normal">uint32_t<sp/><ref refid="text__fb_8h_1a7873327914ec2b5b79833f8aa0ffd5ac" kindref="member">char_offset</ref>(<ref refid="structfont__descriptor__t" kindref="compound">font_descriptor_t</ref><sp/>*fdes,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>letter);</highlight></codeline>
-<codeline lineno="31"><highlight class="normal"></highlight></codeline>
-<codeline lineno="35"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="text__fb_8h_1a273e67041b3e82dbfdd989f64e876732" kindref="member">draw_text</ref>(<ref refid="structfb__data" kindref="compound">fb_data</ref><sp/>*frame,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>text,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>scale,<sp/><ref refid="structfont__descriptor__t" kindref="compound">font_descriptor_t</ref><sp/>*font,<sp/>uint16_t<sp/>color);</highlight></codeline>
-<codeline lineno="36"><highlight class="normal"></highlight></codeline>
-<codeline lineno="40"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="text__fb_8h_1a6c9c3fce44e83e9b6076cdc74ba11464" kindref="member">draw_text_center</ref>(<ref refid="structfb__data" kindref="compound">fb_data</ref><sp/>*frame,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*text,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>scale,<sp/><ref refid="structfont__descriptor__t" kindref="compound">font_descriptor_t</ref><sp/>*font,<sp/>uint16_t<sp/>color);</highlight></codeline>
-<codeline lineno="41"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="text__fb_8h_1a21645f17c98617a8bd7342f9fdb78899" kindref="member">draw_char</ref>(<ref refid="structfb__data" kindref="compound">fb_data</ref><sp/>*frame,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>letter,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>scale,<sp/><ref refid="structfont__descriptor__t" kindref="compound">font_descriptor_t</ref><sp/>*font,<sp/>uint16_t<sp/>color);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="text__fb_8h_1ad3a4c863813fb8a6d93380bc7e1826ff" kindref="member">char_width</ref>(<ref refid="structfont__descriptor__t" kindref="compound">font_descriptor_t</ref><sp/>*fdes,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>letter);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal">uint32_t<sp/><ref refid="text__fb_8h_1a7873327914ec2b5b79833f8aa0ffd5ac" kindref="member">char_offset</ref>(<ref refid="structfont__descriptor__t" kindref="compound">font_descriptor_t</ref><sp/>*fdes,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>letter);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="text__fb_8h_1a273e67041b3e82dbfdd989f64e876732" kindref="member">draw_text</ref>(<ref refid="structfb__data" kindref="compound">fb_data</ref><sp/>*frame,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*text,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>scale,<sp/><ref refid="structfont__descriptor__t" kindref="compound">font_descriptor_t</ref><sp/>*font,<sp/>uint16_t<sp/>color);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="text__fb_8h_1a6c9c3fce44e83e9b6076cdc74ba11464" kindref="member">draw_text_center</ref>(<ref refid="structfb__data" kindref="compound">fb_data</ref><sp/>*frame,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*text,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>scale,<sp/><ref refid="structfont__descriptor__t" kindref="compound">font_descriptor_t</ref><sp/>*font,<sp/>uint16_t<sp/>color);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
     </programlisting>
     <location file="C:/Users/Petr/Documents/apo_semestralka/text_fb.h"/>
   </compounddef>

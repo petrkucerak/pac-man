@@ -351,7 +351,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Petr/Documents/apo_semestralka/apoman.c" line="52" column="5" bodyfile="C:/Users/Petr/Documents/apo_semestralka/apoman.c" bodystart="52" bodyend="108"/>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/apoman.c" line="52" column="5" bodyfile="C:/Users/Petr/Documents/apo_semestralka/apoman.c" bodystart="52" bodyend="107"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -440,27 +440,26 @@
 <codeline lineno="85"><highlight class="normal"><sp/><sp/><ref refid="mzapo__parlcd_8c_1a37a4ee10b3cd7f3b1282d944f70c591b" kindref="member">parlcd_hx8357_init</ref>(lcd_mem_base);</highlight></codeline>
 <codeline lineno="86"><highlight class="normal"><sp/><sp/><ref refid="structfont__descriptor__t" kindref="compound">font_descriptor_t</ref><sp/>*font<sp/>=<sp/>&amp;<ref refid="font__prop14x16_8c_1a4b3e2b838f5b62937b97e1562e34793b" kindref="member">font_winFreeSystem14x16</ref>;</highlight></codeline>
 <codeline lineno="87"><highlight class="normal"></highlight></codeline>
-<codeline lineno="88"><highlight class="normal"><sp/><sp/><ref refid="structperipherals__data__t" kindref="compound">peripherals_data_t</ref><sp/>peripherals<sp/>=<sp/>{.<ref refid="structperipherals__data__t_1a50905c9b00b3aa4d07fb32429550c7c0" kindref="member">led_mem_base</ref><sp/>=<sp/>led_mem_base,<sp/>.lcd_mem_base<sp/>=<sp/>lcd_mem_base,<sp/></highlight></codeline>
-<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.lcd_h<sp/>=<sp/><ref refid="apoman_8c_1a6974d08a74da681b3957b2fead2608b8" kindref="member">SCREEN_HEIGHT</ref>,<sp/>.lcd_w<sp/>=<sp/><ref refid="apoman_8c_1a2cd109632a6dcccaa80b43561b1ab700" kindref="member">SCREEN_WIDTH</ref>};</highlight></codeline>
-<codeline lineno="90"><highlight class="normal"></highlight></codeline>
-<codeline lineno="91"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>call<sp/>game<sp/>method<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="92"><highlight class="normal"><sp/><sp/><ref refid="menu__utilities_8c_1a2313600342d821e8af28af3e2a1d3847" kindref="member">run_init_game_menu</ref>(&amp;fb,<sp/>lcd_mem_base,<sp/>font,<sp/>peripherals);</highlight></codeline>
-<codeline lineno="93"><highlight class="normal"></highlight></codeline>
-<codeline lineno="94"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>program<sp/>termination</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="95"><highlight class="normal"><sp/><sp/><ref refid="draw__shapes_8c_1a6d5b7bfa9cee0ff7724230c622354531" kindref="member">set_background</ref>(&amp;fb,<sp/>0);</highlight></codeline>
-<codeline lineno="96"><highlight class="normal"><sp/><sp/><ref refid="text__fb_8c_1a6c9c3fce44e83e9b6076cdc74ba11464" kindref="member">draw_text_center</ref>(&amp;fb,<sp/></highlight><highlight class="stringliteral">&quot;KONEC&quot;</highlight><highlight class="normal">,<sp/><ref refid="apoman_8c_1a2cd109632a6dcccaa80b43561b1ab700" kindref="member">SCREEN_WIDTH</ref><sp/>/<sp/>2,<sp/><ref refid="apoman_8c_1a6974d08a74da681b3957b2fead2608b8" kindref="member">SCREEN_HEIGHT</ref><sp/>/<sp/>2,<sp/>10,<sp/>font,<sp/>0xffff);</highlight></codeline>
-<codeline lineno="97"><highlight class="normal"><sp/><sp/><ref refid="update__peripherals_8c_1aa30de0dfddc51283d5b5e429fdb6f030" kindref="member">lcd_from_fb</ref>(&amp;fb,<sp/>lcd_mem_base);</highlight></codeline>
-<codeline lineno="98"><highlight class="normal"></highlight></codeline>
-<codeline lineno="99"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>free<sp/>allocated<sp/>memory</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="100"><highlight class="normal"><sp/><sp/>free(fb.<ref refid="structfb__data_1a377cdea530281d6fa239a9e14c1a7286" kindref="member">fb</ref>);</highlight></codeline>
-<codeline lineno="101"><highlight class="normal"><sp/><sp/>fb.<ref refid="structfb__data_1a377cdea530281d6fa239a9e14c1a7286" kindref="member">fb</ref><sp/>=<sp/>NULL;</highlight></codeline>
-<codeline lineno="102"><highlight class="normal"><sp/><sp/>pthread_mutex_lock(&amp;<ref refid="apoman_8c_1a2680f9fe5653a596c7e779b838180fdc" kindref="member">mtx</ref>);</highlight></codeline>
-<codeline lineno="103"><highlight class="normal"><sp/><sp/><ref refid="apoman_8c_1a6cf0bd745eade6d2d8304b9b72930ab4" kindref="member">read_thread_data</ref>.<ref refid="structread__thread__data__type_1ac746fa6ad48d19984a159f14bec028a3" kindref="member">quit</ref><sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="104"><highlight class="normal"><sp/><sp/>pthread_mutex_unlock(&amp;<ref refid="apoman_8c_1a2680f9fe5653a596c7e779b838180fdc" kindref="member">mtx</ref>);</highlight></codeline>
-<codeline lineno="105"><highlight class="normal"><sp/><sp/>pthread_join(threads[0],<sp/>NULL);<sp/></highlight><highlight class="comment">//wait<sp/>for<sp/>thread<sp/>to<sp/>join</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="106"><highlight class="normal"><sp/><sp/>pthread_mutex_destroy(&amp;<ref refid="apoman_8c_1a2680f9fe5653a596c7e779b838180fdc" kindref="member">mtx</ref>);</highlight></codeline>
-<codeline lineno="107"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
-<codeline lineno="108"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><ref refid="structperipherals__data__t" kindref="compound">peripherals_data_t</ref><sp/>peripherals<sp/>=<sp/>{.<ref refid="structperipherals__data__t_1a50905c9b00b3aa4d07fb32429550c7c0" kindref="member">led_mem_base</ref><sp/>=<sp/>led_mem_base,<sp/>.lcd_mem_base<sp/>=<sp/>lcd_mem_base,<sp/>.lcd_h<sp/>=<sp/><ref refid="apoman_8c_1a6974d08a74da681b3957b2fead2608b8" kindref="member">SCREEN_HEIGHT</ref>,<sp/>.lcd_w<sp/>=<sp/><ref refid="apoman_8c_1a2cd109632a6dcccaa80b43561b1ab700" kindref="member">SCREEN_WIDTH</ref>};</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>call<sp/>game<sp/>method</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><ref refid="menu__utilities_8c_1a2313600342d821e8af28af3e2a1d3847" kindref="member">run_init_game_menu</ref>(&amp;fb,<sp/>lcd_mem_base,<sp/>font,<sp/>peripherals);</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>program<sp/>termination</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><ref refid="draw__shapes_8c_1a6d5b7bfa9cee0ff7724230c622354531" kindref="member">set_background</ref>(&amp;fb,<sp/>0);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><ref refid="text__fb_8c_1a6c9c3fce44e83e9b6076cdc74ba11464" kindref="member">draw_text_center</ref>(&amp;fb,<sp/></highlight><highlight class="stringliteral">&quot;KONEC&quot;</highlight><highlight class="normal">,<sp/><ref refid="apoman_8c_1a2cd109632a6dcccaa80b43561b1ab700" kindref="member">SCREEN_WIDTH</ref><sp/>/<sp/>2,<sp/><ref refid="apoman_8c_1a6974d08a74da681b3957b2fead2608b8" kindref="member">SCREEN_HEIGHT</ref><sp/>/<sp/>2,<sp/>10,<sp/>font,<sp/>0xffff);</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><ref refid="update__peripherals_8c_1aa30de0dfddc51283d5b5e429fdb6f030" kindref="member">lcd_from_fb</ref>(&amp;fb,<sp/>lcd_mem_base);</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>free<sp/>allocated<sp/>memory</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/>free(fb.<ref refid="structfb__data_1a377cdea530281d6fa239a9e14c1a7286" kindref="member">fb</ref>);</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/>fb.<ref refid="structfb__data_1a377cdea530281d6fa239a9e14c1a7286" kindref="member">fb</ref><sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/>pthread_mutex_lock(&amp;<ref refid="apoman_8c_1a2680f9fe5653a596c7e779b838180fdc" kindref="member">mtx</ref>);</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><ref refid="apoman_8c_1a6cf0bd745eade6d2d8304b9b72930ab4" kindref="member">read_thread_data</ref>.<ref refid="structread__thread__data__type_1ac746fa6ad48d19984a159f14bec028a3" kindref="member">quit</ref><sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/>pthread_mutex_unlock(&amp;<ref refid="apoman_8c_1a2680f9fe5653a596c7e779b838180fdc" kindref="member">mtx</ref>);</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/>pthread_join(threads[0],<sp/>NULL);<sp/></highlight><highlight class="comment">//wait<sp/>for<sp/>thread<sp/>to<sp/>join</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/>pthread_mutex_destroy(&amp;<ref refid="apoman_8c_1a2680f9fe5653a596c7e779b838180fdc" kindref="member">mtx</ref>);</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="107"><highlight class="normal">}</highlight></codeline>
     </programlisting>
     <location file="C:/Users/Petr/Documents/apo_semestralka/apoman.c"/>
   </compounddef>

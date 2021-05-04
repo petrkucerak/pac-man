@@ -89,6 +89,9 @@ $(document).ready(function(){initNavTree('draw__shapes_8h.html',''); initResizab
 <div class="title">draw_shapes.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Module with functions to draw shapes to the frame buffer.  
+<a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="data__structures_8h_source.html">data_structures.h</a>&quot;</code><br />
 </div>
 <p><a href="draw__shapes_8h_source.html">Go to the source code of this file.</a></p>
@@ -96,17 +99,28 @@ $(document).ready(function(){initNavTree('draw__shapes_8h.html',''); initResizab
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a44ae4e3d2c0aa9c951284b6414ae6527"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="draw__shapes_8h.html#a44ae4e3d2c0aa9c951284b6414ae6527">draw_circle</a> (<a class="el" href="structfb__data.html">fb_data</a> *frame, int x, int y, int radius, uint16_t color)</td></tr>
+<tr class="memdesc:a44ae4e3d2c0aa9c951284b6414ae6527"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws the circle with center at x,y with given radius.  <a href="draw__shapes_8h.html#a44ae4e3d2c0aa9c951284b6414ae6527">More...</a><br /></td></tr>
 <tr class="separator:a44ae4e3d2c0aa9c951284b6414ae6527"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a559a33154244f0ee1523958f44421c48"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="draw__shapes_8h.html#a559a33154244f0ee1523958f44421c48">draw_rectangle</a> (<a class="el" href="structfb__data.html">fb_data</a> *frame, int x, int y, int width, int height, uint16_t color)</td></tr>
+<tr class="memdesc:a559a33154244f0ee1523958f44421c48"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws rectangle with left upper corner at x,y.  <a href="draw__shapes_8h.html#a559a33154244f0ee1523958f44421c48">More...</a><br /></td></tr>
 <tr class="separator:a559a33154244f0ee1523958f44421c48"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6d5b7bfa9cee0ff7724230c622354531"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="draw__shapes_8h.html#a6d5b7bfa9cee0ff7724230c622354531">set_background</a> (<a class="el" href="structfb__data.html">fb_data</a> *frame, uint16_t color)</td></tr>
+<tr class="memdesc:a6d5b7bfa9cee0ff7724230c622354531"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws given colour across the whole frame buffer.  <a href="draw__shapes_8h.html#a6d5b7bfa9cee0ff7724230c622354531">More...</a><br /></td></tr>
 <tr class="separator:a6d5b7bfa9cee0ff7724230c622354531"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a93686d02b452d0aa3a5b050bf1f92c82"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="draw__shapes_8h.html#a93686d02b452d0aa3a5b050bf1f92c82">draw_ghost_shape</a> (<a class="el" href="structfb__data.html">fb_data</a> *frame, int x, int y, int scale, uint16_t color)</td></tr>
+<tr class="memdesc:a93686d02b452d0aa3a5b050bf1f92c82"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws an ghost at x,y, bitmap of ghost is also in this function.  <a href="draw__shapes_8h.html#a93686d02b452d0aa3a5b050bf1f92c82">More...</a><br /></td></tr>
 <tr class="separator:a93686d02b452d0aa3a5b050bf1f92c82"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a530d11a612c21d12b57752d57d91a3ff"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="draw__shapes_8h.html#a530d11a612c21d12b57752d57d91a3ff">draw_pacman_dir</a> (<a class="el" href="structfb__data.html">fb_data</a> *frame, int x, int y, int radius, uint16_t color, int direction)</td></tr>
+<tr class="memdesc:a530d11a612c21d12b57752d57d91a3ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pacman facing given direction with his mouth.  <a href="draw__shapes_8h.html#a530d11a612c21d12b57752d57d91a3ff">More...</a><br /></td></tr>
 <tr class="separator:a530d11a612c21d12b57752d57d91a3ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Module with functions to draw shapes to the frame buffer. </p>
+<dl class="section author"><dt>Author</dt><dd>Lukas Nejezchleb (<a href="#" onclick="location.href='mai'+'lto:'+'nej'+'ez'+'luk'+'@f'+'el.'+'cv'+'ut.'+'cz'; return false;">nejez<span style="display: none;">.nosp@m.</span>luk@<span style="display: none;">.nosp@m.</span>fel.c<span style="display: none;">.nosp@m.</span>vut.<span style="display: none;">.nosp@m.</span>cz</a>) </dd></dl>
+<dl class="section version"><dt>Version</dt><dd>0.1 </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2021-05-04</dd></dl>
+<dl class="section copyright"><dt>Copyright</dt><dd>Copyright (c) 2021 </dd></dl>
+</div><h2 class="groupheader">Function Documentation</h2>
 <a id="a44ae4e3d2c0aa9c951284b6414ae6527"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a44ae4e3d2c0aa9c951284b6414ae6527">&#9670;&nbsp;</a></span>draw_circle()</h2>
 
@@ -150,7 +164,18 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>function to draw circle to <a class="el" href="structfb__data.html" title="the buffer structure">fb_data</a> frame at x,y with radius and color </p>
+
+<p>Draws the circle with center at x,y with given radius. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">frame</td><td></td></tr>
+    <tr><td class="paramname">x</td><td></td></tr>
+    <tr><td class="paramname">y</td><td></td></tr>
+    <tr><td class="paramname">radius</td><td></td></tr>
+    <tr><td class="paramname">color</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -197,7 +222,18 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>draws the ghost shape to fb </p>
+
+<p>Draws an ghost at x,y, bitmap of ghost is also in this function. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">frame</td><td></td></tr>
+    <tr><td class="paramname">x</td><td></td></tr>
+    <tr><td class="paramname">y</td><td></td></tr>
+    <tr><td class="paramname">scale</td><td></td></tr>
+    <tr><td class="paramname">color</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -251,6 +287,19 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Pacman facing given direction with his mouth. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">frame</td><td></td></tr>
+    <tr><td class="paramname">x</td><td></td></tr>
+    <tr><td class="paramname">y</td><td></td></tr>
+    <tr><td class="paramname">radius</td><td></td></tr>
+    <tr><td class="paramname">color</td><td></td></tr>
+    <tr><td class="paramname">direction</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
 </div>
 </div>
 <a id="a559a33154244f0ee1523958f44421c48"></a>
@@ -302,7 +351,19 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>function to draw rectangle to <a class="el" href="structfb__data.html" title="the buffer structure">fb_data</a> frame at x,y with width and height and color </p>
+
+<p>Draws rectangle with left upper corner at x,y. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">frame</td><td></td></tr>
+    <tr><td class="paramname">x</td><td></td></tr>
+    <tr><td class="paramname">y</td><td></td></tr>
+    <tr><td class="paramname">width</td><td></td></tr>
+    <tr><td class="paramname">height</td><td></td></tr>
+    <tr><td class="paramname">color</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -331,7 +392,15 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>sets background to certain color </p>
+
+<p>Draws given colour across the whole frame buffer. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">frame</td><td></td></tr>
+    <tr><td class="paramname">color</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

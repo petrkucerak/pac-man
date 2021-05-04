@@ -2,7 +2,8 @@
 .ad l
 .nh
 .SH NAME
-C:/Users/Petr/Documents/apo_semestralka/map_to_fb.c
+C:/Users/Petr/Documents/apo_semestralka/map_to_fb.c \- Module for rendering the map to the frame buffer\&. Houses function render map\&.  
+
 .SH SYNOPSIS
 .br
 .PP
@@ -23,15 +24,54 @@ C:/Users/Petr/Documents/apo_semestralka/map_to_fb.c
 .ti -1c
 .RI "bool \fBrender_map\fP (\fBmap_data\fP *data, \fBfb_data\fP *frame_buff)"
 .br
+.RI "given \fBmap_data\fP draws the map to frame buffer "
 .in -1c
+.SH "Detailed Description"
+.PP 
+Module for rendering the map to the frame buffer\&. Houses function render map\&. 
+
+
+.PP
+\fBAuthor\fP
+.RS 4
+Lukas Nejezchleb (nejezluk@fel.cvut.cz) 
+.RE
+.PP
+\fBVersion\fP
+.RS 4
+0\&.1 
+.RE
+.PP
+\fBDate\fP
+.RS 4
+2021-05-04
+.RE
+.PP
+\fBCopyright\fP
+.RS 4
+Copyright (c) 2021 
+.RE
+.PP
+
 .SH "Function Documentation"
 .PP 
 .SS "bool render_map (\fBmap_data\fP * data, \fBfb_data\fP * frame_buff)"
-given \fBmap_data\fP draws the map to frame buffer, 
+
+.PP
+given \fBmap_data\fP draws the map to frame buffer 
+.PP
+\fBParameters\fP
+.RS 4
+\fIdata\fP 
+.br
+\fIframe_buff\fP 
+.RE
 .PP
 \fBReturns\fP
 .RS 4
 true if there are any coins to be eaten 
+.PP
+false 
 .RE
 .PP
 

@@ -106,13 +106,41 @@
           <declname>template</declname>
         </param>
         <briefdescription>
+<para>Returns dynamically allocated memory with the data created from the map template given. </para>
         </briefdescription>
         <detaileddescription>
-<para>given map template returns dynamically allocated map for the whole screen </para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>screen_w</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>screen_h</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>template</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>map_data* </para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Petr/Documents/apo_semestralka/map_from_template.h" line="20" column="10" bodyfile="C:/Users/Petr/Documents/apo_semestralka/map_from_template.c" bodystart="20" bodyend="69" declfile="C:/Users/Petr/Documents/apo_semestralka/map_from_template.h" declline="20" declcolumn="10"/>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/map_from_template.h" line="25" column="10" bodyfile="C:/Users/Petr/Documents/apo_semestralka/map_from_template.c" bodystart="14" bodyend="63" declfile="C:/Users/Petr/Documents/apo_semestralka/map_from_template.h" declline="25" declcolumn="10"/>
       </memberdef>
       <memberdef kind="function" id="map__from__template_8h_1aa8473ad0b0fb98071c071d3389f3c810" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structcoords" kindref="compound">coords</ref></type>
@@ -140,13 +168,197 @@
           <declname>screen_h</declname>
         </param>
         <briefdescription>
+<para>Returns coords in the map given coords in the template. </para>
         </briefdescription>
         <detaileddescription>
-<para>fiven coords in template returns coords on the actual map </para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>row</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>col</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>template</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>screen_w</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>screen_h</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>coords </para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Petr/Documents/apo_semestralka/map_from_template.h" line="25" column="8" bodyfile="C:/Users/Petr/Documents/apo_semestralka/map_from_template.c" bodystart="155" bodyend="166" declfile="C:/Users/Petr/Documents/apo_semestralka/map_from_template.h" declline="25" declcolumn="8"/>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/map_from_template.h" line="37" column="8" bodyfile="C:/Users/Petr/Documents/apo_semestralka/map_from_template.c" bodystart="149" bodyend="160" declfile="C:/Users/Petr/Documents/apo_semestralka/map_from_template.h" declline="37" declcolumn="8"/>
+      </memberdef>
+      <memberdef kind="function" id="map__from__template_8h_1a5e80f2160adaa7e5d60bb07f3944c64d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void create_cell</definition>
+        <argsstring>(int row, int col, map_template *template, map_data *map)</argsstring>
+        <name>create_cell</name>
+        <param>
+          <type>int</type>
+          <declname>row</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>col</declname>
+        </param>
+        <param>
+          <type><ref refid="structmap__template" kindref="compound">map_template</ref> *</type>
+          <declname>template</declname>
+        </param>
+        <param>
+          <type><ref refid="structmap__data" kindref="compound">map_data</ref> *</type>
+          <declname>map</declname>
+        </param>
+        <briefdescription>
+<para>Create a cell (only internal function) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>row</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>col</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>template</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>map</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/map_from_template.h" line="47" column="6" bodyfile="C:/Users/Petr/Documents/apo_semestralka/map_from_template.c" bodystart="65" bodyend="99" declfile="C:/Users/Petr/Documents/apo_semestralka/map_from_template.h" declline="47" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="map__from__template_8h_1a44624d542105803282c463099d42c825" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void create_cross</definition>
+        <argsstring>(int row, int col, map_template *template, map_data *map, char center_val)</argsstring>
+        <name>create_cross</name>
+        <param>
+          <type>int</type>
+          <declname>row</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>col</declname>
+        </param>
+        <param>
+          <type><ref refid="structmap__template" kindref="compound">map_template</ref> *</type>
+          <declname>template</declname>
+        </param>
+        <param>
+          <type><ref refid="structmap__data" kindref="compound">map_data</ref> *</type>
+          <declname>map</declname>
+        </param>
+        <param>
+          <type>char</type>
+          <declname>center_val</declname>
+        </param>
+        <briefdescription>
+<para>Create a cross (only internal function) </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>row</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>col</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>template</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>map</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>center_val</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/map_from_template.h" line="58" column="6" bodyfile="C:/Users/Petr/Documents/apo_semestralka/map_from_template.c" bodystart="101" bodyend="147" declfile="C:/Users/Petr/Documents/apo_semestralka/map_from_template.h" declline="58" declcolumn="6"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -170,10 +382,14 @@
 <codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="data__structures_8h" kindref="compound">data_structures.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="map__template_8h" kindref="compound">map_template.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="16"><highlight class="normal"></highlight></codeline>
-<codeline lineno="20"><highlight class="normal"><ref refid="structmap__data" kindref="compound">map_data</ref><sp/>*<ref refid="map__from__template_8h_1a901a095e25461784eabdda1071e872c8" kindref="member">create_map_data</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>screen_w,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>screen_h,<sp/><ref refid="structmap__template" kindref="compound">map_template</ref><sp/>*</highlight><highlight class="keyword">template</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="21"><highlight class="normal"></highlight></codeline>
-<codeline lineno="25"><highlight class="normal"><ref refid="structcoords" kindref="compound">coords</ref><sp/><ref refid="map__from__template_8h_1aa8473ad0b0fb98071c071d3389f3c810" kindref="member">get_coords_from_template</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>row,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>col,<sp/><ref refid="structmap__template" kindref="compound">map_template</ref><sp/>*</highlight><highlight class="keyword">template</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>screen_w,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>screen_h);</highlight></codeline>
-<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><ref refid="structmap__data" kindref="compound">map_data</ref><sp/>*<ref refid="map__from__template_8h_1a901a095e25461784eabdda1071e872c8" kindref="member">create_map_data</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>screen_w,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>screen_h,<sp/><ref refid="structmap__template" kindref="compound">map_template</ref><sp/>*</highlight><highlight class="keyword">template</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><ref refid="structcoords" kindref="compound">coords</ref><sp/><ref refid="map__from__template_8h_1aa8473ad0b0fb98071c071d3389f3c810" kindref="member">get_coords_from_template</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>row,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>col,<sp/><ref refid="structmap__template" kindref="compound">map_template</ref><sp/>*</highlight><highlight class="keyword">template</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>screen_w,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>screen_h);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="map__from__template_8h_1a5e80f2160adaa7e5d60bb07f3944c64d" kindref="member">create_cell</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>row,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>col,<sp/><ref refid="structmap__template" kindref="compound">map_template</ref><sp/>*</highlight><highlight class="keyword">template</highlight><highlight class="normal">,<sp/><ref refid="structmap__data" kindref="compound">map_data</ref><sp/>*map);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="map__from__template_8h_1a44624d542105803282c463099d42c825" kindref="member">create_cross</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>row,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>col,<sp/><ref refid="structmap__template" kindref="compound">map_template</ref><sp/>*</highlight><highlight class="keyword">template</highlight><highlight class="normal">,<sp/><ref refid="structmap__data" kindref="compound">map_data</ref><sp/>*map,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>center_val);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
     </programlisting>
     <location file="C:/Users/Petr/Documents/apo_semestralka/map_from_template.h"/>
   </compounddef>

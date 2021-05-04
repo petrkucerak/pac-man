@@ -8,7 +8,7 @@ var searchData=
   ['screen_5fwidth_210',['SCREEN_WIDTH',['../apoman_8c.html#a2cd109632a6dcccaa80b43561b1ab700',1,'apoman.c']]],
   ['sel_5fleds_5fcolor_211',['sel_leds_color',['../update__peripherals_8c.html#afdba9f1f14e9a81789f87d33a36bda35',1,'sel_leds_color(unsigned char *led_mem_base, uint32_t color):&#160;update_peripherals.c'],['../update__peripherals_8h.html#afdba9f1f14e9a81789f87d33a36bda35',1,'sel_leds_color(unsigned char *led_mem_base, uint32_t color):&#160;update_peripherals.c']]],
   ['semestrální_20práce_20na_20apo_212',['Semestrální práce na APO',['../md__c___users__petr__documents_apo_semestralka__r_e_a_d_m_e.html',1,'']]],
-  ['serial_5fgetc_5ftimeout_213',['serial_getc_timeout',['../terminal__read_8c.html#a4d4ef2b89a0190b7e5ebb1edf4d1cee3',1,'terminal_read.c']]],
+  ['serial_5fgetc_5ftimeout_213',['serial_getc_timeout',['../terminal__read_8c.html#a4d4ef2b89a0190b7e5ebb1edf4d1cee3',1,'serial_getc_timeout(int fd, int timeout_ms, unsigned char *c):&#160;terminal_read.c'],['../terminal__read_8h.html#a4d4ef2b89a0190b7e5ebb1edf4d1cee3',1,'serial_getc_timeout(int fd, int timeout_ms, unsigned char *c):&#160;terminal_read.c']]],
   ['servops2_5freg_5fbase_5fphys_214',['SERVOPS2_REG_BASE_PHYS',['../mzapo__regs_8h.html#ae67577b74c64969ccc7fa22d53e8cb39',1,'mzapo_regs.h']]],
   ['servops2_5freg_5fcr_5fo_215',['SERVOPS2_REG_CR_o',['../mzapo__regs_8h.html#afb8c1282ebc34ccbe316b1119f07581a',1,'mzapo_regs.h']]],
   ['servops2_5freg_5fpwm1_5fo_216',['SERVOPS2_REG_PWM1_o',['../mzapo__regs_8h.html#a4b6eb6d360055d5f91e1cef44ebb3942',1,'mzapo_regs.h']]],

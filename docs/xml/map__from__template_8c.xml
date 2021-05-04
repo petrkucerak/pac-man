@@ -51,6 +51,60 @@
       </node>
     </incdepgraph>
       <sectiondef kind="func">
+      <memberdef kind="function" id="map__from__template_8c_1a901a095e25461784eabdda1071e872c8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structmap__data" kindref="compound">map_data</ref> *</type>
+        <definition>map_data* create_map_data</definition>
+        <argsstring>(int screen_w, int screen_h, map_template *template)</argsstring>
+        <name>create_map_data</name>
+        <param>
+          <type>int</type>
+          <declname>screen_w</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>screen_h</declname>
+        </param>
+        <param>
+          <type><ref refid="structmap__template" kindref="compound">map_template</ref> *</type>
+          <declname>template</declname>
+        </param>
+        <briefdescription>
+<para>Returns dynamically allocated memory with the data created from the map template given. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>screen_w</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>screen_h</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>template</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>map_data* </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/map_from_template.c" line="14" column="10" bodyfile="C:/Users/Petr/Documents/apo_semestralka/map_from_template.c" bodystart="14" bodyend="63"/>
+      </memberdef>
       <memberdef kind="function" id="map__from__template_8c_1a5e80f2160adaa7e5d60bb07f3944c64d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
         <definition>void create_cell</definition>
@@ -73,12 +127,47 @@
           <declname>map</declname>
         </param>
         <briefdescription>
+<para>Create a cell (only internal function) </para>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>row</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>col</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>template</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>map</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Petr/Documents/apo_semestralka/map_from_template.c" line="71" column="6" bodyfile="C:/Users/Petr/Documents/apo_semestralka/map_from_template.c" bodystart="71" bodyend="105" declfile="C:/Users/Petr/Documents/apo_semestralka/map_from_template.c" declline="16" declcolumn="6"/>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/map_from_template.c" line="65" column="6" bodyfile="C:/Users/Petr/Documents/apo_semestralka/map_from_template.c" bodystart="65" bodyend="99"/>
       </memberdef>
       <memberdef kind="function" id="map__from__template_8c_1a44624d542105803282c463099d42c825" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -106,38 +195,55 @@
           <declname>center_val</declname>
         </param>
         <briefdescription>
+<para>Create a cross (only internal function) </para>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>row</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>col</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>template</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>map</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>center_val</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Petr/Documents/apo_semestralka/map_from_template.c" line="107" column="6" bodyfile="C:/Users/Petr/Documents/apo_semestralka/map_from_template.c" bodystart="107" bodyend="153" declfile="C:/Users/Petr/Documents/apo_semestralka/map_from_template.c" declline="17" declcolumn="6"/>
-      </memberdef>
-      <memberdef kind="function" id="map__from__template_8c_1a901a095e25461784eabdda1071e872c8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="structmap__data" kindref="compound">map_data</ref> *</type>
-        <definition>map_data* create_map_data</definition>
-        <argsstring>(int screen_w, int screen_h, map_template *template)</argsstring>
-        <name>create_map_data</name>
-        <param>
-          <type>int</type>
-          <declname>screen_w</declname>
-        </param>
-        <param>
-          <type>int</type>
-          <declname>screen_h</declname>
-        </param>
-        <param>
-          <type><ref refid="structmap__template" kindref="compound">map_template</ref> *</type>
-          <declname>template</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-<para>given map template returns dynamically allocated map for the whole screen </para>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/Petr/Documents/apo_semestralka/map_from_template.c" line="20" column="10" bodyfile="C:/Users/Petr/Documents/apo_semestralka/map_from_template.c" bodystart="20" bodyend="69"/>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/map_from_template.c" line="101" column="6" bodyfile="C:/Users/Petr/Documents/apo_semestralka/map_from_template.c" bodystart="101" bodyend="147"/>
       </memberdef>
       <memberdef kind="function" id="map__from__template_8c_1aa8473ad0b0fb98071c071d3389f3c810" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structcoords" kindref="compound">coords</ref></type>
@@ -165,186 +271,225 @@
           <declname>screen_h</declname>
         </param>
         <briefdescription>
+<para>Returns coords in the map given coords in the template. </para>
         </briefdescription>
         <detaileddescription>
-<para>fiven coords in template returns coords on the actual map </para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>row</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>col</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>template</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>screen_w</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>screen_h</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>coords </para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Petr/Documents/apo_semestralka/map_from_template.c" line="155" column="8" bodyfile="C:/Users/Petr/Documents/apo_semestralka/map_from_template.c" bodystart="155" bodyend="166"/>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/map_from_template.c" line="149" column="8" bodyfile="C:/Users/Petr/Documents/apo_semestralka/map_from_template.c" bodystart="149" bodyend="160"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
+<para>Module for creating map for the screen from the templates in the form described in the map template.h. </para>
     </briefdescription>
     <detaileddescription>
+<para><simplesect kind="author"><para>Lukas Nejezchleb (<ulink url="mailto:nejezluk@fel.cvut.cz">nejezluk@fel.cvut.cz</ulink>) </para>
+</simplesect>
+<simplesect kind="version"><para>0.1 </para>
+</simplesect>
+<simplesect kind="date"><para>2021-05-04</para>
+</simplesect>
+<simplesect kind="copyright"><para>Copyright (c) 2021 </para>
+</simplesect>
+</para>
     </detaileddescription>
     <programlisting>
-<codeline lineno="1"><highlight class="comment">/*******************************************************************</highlight></codeline>
-<codeline lineno="2"><highlight class="comment"><sp/><sp/>Program<sp/>to<sp/>create<sp/>map<sp/>from<sp/>template<sp/>on<sp/>MicroZed</highlight></codeline>
-<codeline lineno="3"><highlight class="comment"><sp/><sp/>based<sp/>MZ_APO<sp/>board<sp/>designed<sp/>by<sp/>Petr<sp/>Porazil<sp/>at<sp/>PiKRON</highlight></codeline>
-<codeline lineno="4"><highlight class="comment"></highlight></codeline>
-<codeline lineno="5"><highlight class="comment"><sp/><sp/>map_from_template.c<sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>creates<sp/>map<sp/>from<sp/>template</highlight></codeline>
-<codeline lineno="6"><highlight class="comment"></highlight></codeline>
-<codeline lineno="7"><highlight class="comment"><sp/><sp/>(C)<sp/>Copyright<sp/>2021<sp/>by<sp/>Lukas<sp/>Nejezchleb</highlight></codeline>
-<codeline lineno="8"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>e-mail:<sp/><sp/><sp/>nejezluk@fel.cvut.cz</highlight></codeline>
-<codeline lineno="9"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>license:<sp/><sp/>any<sp/>combination<sp/>of<sp/>GPL,<sp/>LGPL,<sp/>MPL<sp/>or<sp/>BSD<sp/>licenses</highlight></codeline>
-<codeline lineno="10"><highlight class="comment"></highlight></codeline>
-<codeline lineno="11"><highlight class="comment"><sp/>*******************************************************************/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="map__from__template_8h" kindref="compound">map_from_template.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="14"><highlight class="normal"></highlight></codeline>
-<codeline lineno="15"><highlight class="normal"></highlight><highlight class="comment">//functions<sp/>used<sp/>only<sp/>inside<sp/>map_from_template</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="map__from__template_8c_1a5e80f2160adaa7e5d60bb07f3944c64d" kindref="member">create_cell</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>row,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>col,<sp/><ref refid="structmap__template" kindref="compound">map_template</ref><sp/>*</highlight><highlight class="keyword">template</highlight><highlight class="normal">,<sp/><ref refid="structmap__data" kindref="compound">map_data</ref><sp/>*map);</highlight></codeline>
-<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="map__from__template_8c_1a44624d542105803282c463099d42c825" kindref="member">create_cross</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>row,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>col,<sp/><ref refid="structmap__template" kindref="compound">map_template</ref><sp/>*</highlight><highlight class="keyword">template</highlight><highlight class="normal">,<sp/><ref refid="structmap__data" kindref="compound">map_data</ref><sp/>*map,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>center_val);</highlight></codeline>
-<codeline lineno="18"><highlight class="normal"></highlight><highlight class="comment">//end<sp/>of<sp/>functions<sp/>used<sp/>only<sp/>inside</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="19"><highlight class="normal"></highlight></codeline>
-<codeline lineno="20"><highlight class="normal"><ref refid="structmap__data" kindref="compound">map_data</ref><sp/>*<ref refid="map__from__template_8c_1a901a095e25461784eabdda1071e872c8" kindref="member">create_map_data</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>screen_w,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>screen_h,<sp/><ref refid="structmap__template" kindref="compound">map_template</ref><sp/>*</highlight><highlight class="keyword">template</highlight><highlight class="normal">)</highlight></codeline>
-<codeline lineno="21"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structmap__data" kindref="compound">map_data</ref><sp/>*map<sp/>=<sp/>malloc(</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="structmap__data" kindref="compound">map_data</ref>));</highlight></codeline>
-<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(map<sp/>!=<sp/>NULL)</highlight></codeline>
-<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*map_array<sp/>=<sp/>calloc(screen_h<sp/>*<sp/>screen_w,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">));</highlight></codeline>
-<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(map_array<sp/>==<sp/>NULL)</highlight></codeline>
-<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>free(map);</highlight></codeline>
-<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>map<sp/>=<sp/>NULL;</highlight></codeline>
-<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>map-&gt;<ref refid="structmap__data_1a9818b17c7d2a7b36901aa275b76c39d0" kindref="member">board_arr</ref><sp/>=<sp/>map_array;</highlight></codeline>
-<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(map<sp/>!=<sp/>NULL)</highlight></codeline>
-<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>cell_width<sp/>=<sp/>screen_w<sp/>/<sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">-&gt;width;</highlight></codeline>
-<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cell_width<sp/>=<sp/>(cell_width<sp/>%<sp/>2<sp/>==<sp/>0)<sp/>?<sp/>(cell_width<sp/>-<sp/>1)<sp/>:<sp/>cell_width;</highlight></codeline>
-<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>cell_height<sp/>=<sp/>screen_h<sp/>/<sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">-&gt;height;</highlight></codeline>
-<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cell_height<sp/>=<sp/>(cell_height<sp/>%<sp/>2<sp/>==<sp/>0)<sp/>?<sp/>(cell_height<sp/>-<sp/>1)<sp/>:<sp/>cell_height;</highlight></codeline>
-<codeline lineno="42"><highlight class="normal"></highlight></codeline>
-<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(cell_height<sp/>&gt;<sp/>cell_width)</highlight></codeline>
-<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>map-&gt;<ref refid="structmap__data_1aa357cd36ef175f727e27f1da960dddaf" kindref="member">max_object_diameter</ref><sp/>=<sp/>cell_width;</highlight></codeline>
-<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>map-&gt;<ref refid="structmap__data_1aa357cd36ef175f727e27f1da960dddaf" kindref="member">max_object_diameter</ref><sp/>=<sp/>cell_height;</highlight></codeline>
-<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="51"><highlight class="normal"></highlight></codeline>
-<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>map-&gt;<ref refid="structmap__data_1a2474a5474cbff19523a51eb1de01cda4" kindref="member">width</ref><sp/>=<sp/>screen_w;</highlight></codeline>
-<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>map-&gt;<ref refid="structmap__data_1ad12fc34ce789bce6c8a05d8a17138534" kindref="member">height</ref><sp/>=<sp/>screen_h;</highlight></codeline>
-<codeline lineno="54"><highlight class="normal"></highlight></codeline>
-<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>row<sp/>=<sp/>0;<sp/>row<sp/>&lt;<sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">-&gt;height;<sp/>row++)</highlight></codeline>
-<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>col<sp/>=<sp/>0;<sp/>col<sp/>&lt;<sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">-&gt;width;<sp/>col++)</highlight></codeline>
-<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//create<sp/>map<sp/>for<sp/>each<sp/>cell<sp/>in<sp/>template</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="map__from__template_8c_1a5e80f2160adaa7e5d60bb07f3944c64d" kindref="member">create_cell</ref>(row,<sp/>col,<sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">,<sp/>map);</highlight></codeline>
-<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>map-&gt;<ref refid="structmap__data_1a231a72e20c10785d4a461a464a58f970" kindref="member">ghost_spawn</ref><sp/>=<sp/><ref refid="map__from__template_8c_1aa8473ad0b0fb98071c071d3389f3c810" kindref="member">get_coords_from_template</ref>(template-&gt;ghost_spawn_y,<sp/>template-&gt;ghost_spawn_x,<sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">,</highlight></codeline>
-<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>screen_w,<sp/>screen_h);</highlight></codeline>
-<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>map-&gt;<ref refid="structmap__data_1a726c15baf3d3606bf35bba9e5e32b2bc" kindref="member">pacman_spawn</ref><sp/>=<sp/><ref refid="map__from__template_8c_1aa8473ad0b0fb98071c071d3389f3c810" kindref="member">get_coords_from_template</ref>(template-&gt;pacman_spawn_y,<sp/>template-&gt;pacman_spawn_x,<sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">,</highlight></codeline>
-<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>screen_w,<sp/>screen_h);</highlight></codeline>
-<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>map;</highlight></codeline>
-<codeline lineno="69"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="70"><highlight class="normal"></highlight></codeline>
-<codeline lineno="71"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="map__from__template_8c_1a5e80f2160adaa7e5d60bb07f3944c64d" kindref="member">create_cell</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>row,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>col,<sp/><ref refid="structmap__template" kindref="compound">map_template</ref><sp/>*</highlight><highlight class="keyword">template</highlight><highlight class="normal">,<sp/><ref refid="structmap__data" kindref="compound">map_data</ref><sp/>*map)</highlight></codeline>
-<codeline lineno="72"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*map_array<sp/>=<sp/>map-&gt;<ref refid="structmap__data_1a9818b17c7d2a7b36901aa275b76c39d0" kindref="member">board_arr</ref>;</highlight></codeline>
-<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>screen_w<sp/>=<sp/>map-&gt;<ref refid="structmap__data_1a2474a5474cbff19523a51eb1de01cda4" kindref="member">width</ref>;</highlight></codeline>
-<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>screen_h<sp/>=<sp/>map-&gt;<ref refid="structmap__data_1ad12fc34ce789bce6c8a05d8a17138534" kindref="member">height</ref>;</highlight></codeline>
-<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>cell_value<sp/>=<sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">-&gt;board[</highlight><highlight class="keyword">template</highlight><highlight class="normal">-&gt;width<sp/>*<sp/>row<sp/>+<sp/>col];</highlight></codeline>
-<codeline lineno="77"><highlight class="normal"></highlight></codeline>
-<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(cell_value<sp/>==<sp/>template-&gt;coin)</highlight></codeline>
-<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="map__from__template_8c_1a44624d542105803282c463099d42c825" kindref="member">create_cross</ref>(row,<sp/>col,<sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">,<sp/>map,<sp/><ref refid="data__structures_8h_1a520ca3e8e98573e7774965b2c69d2843" kindref="member">COIN</ref>);</highlight></codeline>
-<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(cell_value<sp/>==<sp/>template-&gt;blank)</highlight></codeline>
-<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="map__from__template_8c_1a44624d542105803282c463099d42c825" kindref="member">create_cross</ref>(row,<sp/>col,<sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">,<sp/>map,<sp/><ref refid="data__structures_8h_1adf6a8131152ce4fd04f96338c00f548b" kindref="member">PASSAGE</ref>);</highlight></codeline>
-<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(cell_value<sp/>==<sp/>template-&gt;wall)</highlight></codeline>
-<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>cell_width<sp/>=<sp/>screen_w<sp/>/<sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">-&gt;width;</highlight></codeline>
-<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cell_width<sp/>=<sp/>(cell_width<sp/>%<sp/>2<sp/>==<sp/>0)<sp/>?<sp/>(cell_width<sp/>-<sp/>1)<sp/>:<sp/>cell_width;</highlight></codeline>
-<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>cell_height<sp/>=<sp/>screen_h<sp/>/<sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">-&gt;height;</highlight></codeline>
-<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cell_height<sp/>=<sp/>(cell_height<sp/>%<sp/>2<sp/>==<sp/>0)<sp/>?<sp/>(cell_height<sp/>-<sp/>1)<sp/>:<sp/>cell_height;</highlight></codeline>
-<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//fill<sp/>every<sp/>pixel<sp/>with<sp/>wall</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>cell_width;<sp/>++i)</highlight></codeline>
-<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>j<sp/>=<sp/>0;<sp/>j<sp/>&lt;<sp/>cell_height;<sp/>++j)</highlight></codeline>
-<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>map_array[(row<sp/>*<sp/>cell_height<sp/>+<sp/>j)<sp/>*<sp/>screen_w<sp/>+<sp/>col<sp/>*<sp/>cell_width<sp/>+<sp/>i]<sp/>=<sp/><ref refid="data__structures_8h_1ac749b87dd5d843e4add3eb8e8a130f62" kindref="member">WALL</ref>;</highlight></codeline>
-<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(cell_value<sp/>==<sp/>template-&gt;special)</highlight></codeline>
-<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="map__from__template_8c_1a44624d542105803282c463099d42c825" kindref="member">create_cross</ref>(row,<sp/>col,<sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">,<sp/>map,<sp/><ref refid="data__structures_8h_1a7082fba706496a93330c168643a1ef30" kindref="member">SUPERCOIN</ref>);</highlight></codeline>
-<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="105"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="map__from__template_8h" kindref="compound">map_from_template.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><ref refid="structmap__data" kindref="compound">map_data</ref><sp/>*<ref refid="map__from__template_8c_1a901a095e25461784eabdda1071e872c8" kindref="member">create_map_data</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>screen_w,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>screen_h,<sp/><ref refid="structmap__template" kindref="compound">map_template</ref><sp/>*</highlight><highlight class="keyword">template</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="15"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structmap__data" kindref="compound">map_data</ref><sp/>*map<sp/>=<sp/>malloc(</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(<ref refid="structmap__data" kindref="compound">map_data</ref>));</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(map<sp/>!=<sp/>NULL)</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*map_array<sp/>=<sp/>calloc(screen_h<sp/>*<sp/>screen_w,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(map_array<sp/>==<sp/>NULL)</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>free(map);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>map<sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>map-&gt;<ref refid="structmap__data_1a9818b17c7d2a7b36901aa275b76c39d0" kindref="member">board_arr</ref><sp/>=<sp/>map_array;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(map<sp/>!=<sp/>NULL)</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>cell_width<sp/>=<sp/>screen_w<sp/>/<sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">-&gt;width;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cell_width<sp/>=<sp/>(cell_width<sp/>%<sp/>2<sp/>==<sp/>0)<sp/>?<sp/>(cell_width<sp/>-<sp/>1)<sp/>:<sp/>cell_width;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>cell_height<sp/>=<sp/>screen_h<sp/>/<sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">-&gt;height;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cell_height<sp/>=<sp/>(cell_height<sp/>%<sp/>2<sp/>==<sp/>0)<sp/>?<sp/>(cell_height<sp/>-<sp/>1)<sp/>:<sp/>cell_height;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(cell_height<sp/>&gt;<sp/>cell_width)</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>map-&gt;<ref refid="structmap__data_1aa357cd36ef175f727e27f1da960dddaf" kindref="member">max_object_diameter</ref><sp/>=<sp/>cell_width;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>map-&gt;<ref refid="structmap__data_1aa357cd36ef175f727e27f1da960dddaf" kindref="member">max_object_diameter</ref><sp/>=<sp/>cell_height;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>map-&gt;<ref refid="structmap__data_1a2474a5474cbff19523a51eb1de01cda4" kindref="member">width</ref><sp/>=<sp/>screen_w;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>map-&gt;<ref refid="structmap__data_1ad12fc34ce789bce6c8a05d8a17138534" kindref="member">height</ref><sp/>=<sp/>screen_h;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>row<sp/>=<sp/>0;<sp/>row<sp/>&lt;<sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">-&gt;height;<sp/>row++)</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>col<sp/>=<sp/>0;<sp/>col<sp/>&lt;<sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">-&gt;width;<sp/>col++)</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>create<sp/>map<sp/>for<sp/>each<sp/>cell<sp/>in<sp/>template</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="map__from__template_8c_1a5e80f2160adaa7e5d60bb07f3944c64d" kindref="member">create_cell</ref>(row,<sp/>col,<sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">,<sp/>map);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>map-&gt;<ref refid="structmap__data_1a231a72e20c10785d4a461a464a58f970" kindref="member">ghost_spawn</ref><sp/>=<sp/><ref refid="map__from__template_8c_1aa8473ad0b0fb98071c071d3389f3c810" kindref="member">get_coords_from_template</ref>(template-&gt;ghost_spawn_y,<sp/>template-&gt;ghost_spawn_x,<sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>screen_w,<sp/>screen_h);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>map-&gt;<ref refid="structmap__data_1a726c15baf3d3606bf35bba9e5e32b2bc" kindref="member">pacman_spawn</ref><sp/>=<sp/><ref refid="map__from__template_8c_1aa8473ad0b0fb98071c071d3389f3c810" kindref="member">get_coords_from_template</ref>(template-&gt;pacman_spawn_y,<sp/>template-&gt;pacman_spawn_x,<sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>screen_w,<sp/>screen_h);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>map;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="map__from__template_8c_1a5e80f2160adaa7e5d60bb07f3944c64d" kindref="member">create_cell</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>row,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>col,<sp/><ref refid="structmap__template" kindref="compound">map_template</ref><sp/>*</highlight><highlight class="keyword">template</highlight><highlight class="normal">,<sp/><ref refid="structmap__data" kindref="compound">map_data</ref><sp/>*map)</highlight></codeline>
+<codeline lineno="66"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*map_array<sp/>=<sp/>map-&gt;<ref refid="structmap__data_1a9818b17c7d2a7b36901aa275b76c39d0" kindref="member">board_arr</ref>;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>screen_w<sp/>=<sp/>map-&gt;<ref refid="structmap__data_1a2474a5474cbff19523a51eb1de01cda4" kindref="member">width</ref>;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>screen_h<sp/>=<sp/>map-&gt;<ref refid="structmap__data_1ad12fc34ce789bce6c8a05d8a17138534" kindref="member">height</ref>;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>cell_value<sp/>=<sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">-&gt;board[</highlight><highlight class="keyword">template</highlight><highlight class="normal">-&gt;width<sp/>*<sp/>row<sp/>+<sp/>col];</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(cell_value<sp/>==<sp/>template-&gt;coin)</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="map__from__template_8c_1a44624d542105803282c463099d42c825" kindref="member">create_cross</ref>(row,<sp/>col,<sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">,<sp/>map,<sp/><ref refid="data__structures_8h_1a520ca3e8e98573e7774965b2c69d2843" kindref="member">COIN</ref>);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(cell_value<sp/>==<sp/>template-&gt;blank)</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="map__from__template_8c_1a44624d542105803282c463099d42c825" kindref="member">create_cross</ref>(row,<sp/>col,<sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">,<sp/>map,<sp/><ref refid="data__structures_8h_1adf6a8131152ce4fd04f96338c00f548b" kindref="member">PASSAGE</ref>);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(cell_value<sp/>==<sp/>template-&gt;wall)</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>cell_width<sp/>=<sp/>screen_w<sp/>/<sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">-&gt;width;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cell_width<sp/>=<sp/>(cell_width<sp/>%<sp/>2<sp/>==<sp/>0)<sp/>?<sp/>(cell_width<sp/>-<sp/>1)<sp/>:<sp/>cell_width;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>cell_height<sp/>=<sp/>screen_h<sp/>/<sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">-&gt;height;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cell_height<sp/>=<sp/>(cell_height<sp/>%<sp/>2<sp/>==<sp/>0)<sp/>?<sp/>(cell_height<sp/>-<sp/>1)<sp/>:<sp/>cell_height;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>fill<sp/>every<sp/>pixel<sp/>with<sp/>wall</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>cell_width;<sp/>++i)</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>j<sp/>=<sp/>0;<sp/>j<sp/>&lt;<sp/>cell_height;<sp/>++j)</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>map_array[(row<sp/>*<sp/>cell_height<sp/>+<sp/>j)<sp/>*<sp/>screen_w<sp/>+<sp/>col<sp/>*<sp/>cell_width<sp/>+<sp/>i]<sp/>=<sp/><ref refid="data__structures_8h_1ac749b87dd5d843e4add3eb8e8a130f62" kindref="member">WALL</ref>;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(cell_value<sp/>==<sp/>template-&gt;special)</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="map__from__template_8c_1a44624d542105803282c463099d42c825" kindref="member">create_cross</ref>(row,<sp/>col,<sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">,<sp/>map,<sp/><ref refid="data__structures_8h_1a7082fba706496a93330c168643a1ef30" kindref="member">SUPERCOIN</ref>);</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="99"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="map__from__template_8c_1a44624d542105803282c463099d42c825" kindref="member">create_cross</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>row,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>col,<sp/><ref refid="structmap__template" kindref="compound">map_template</ref><sp/>*</highlight><highlight class="keyword">template</highlight><highlight class="normal">,<sp/><ref refid="structmap__data" kindref="compound">map_data</ref><sp/>*map,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>center_val)</highlight></codeline>
+<codeline lineno="102"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>screen_w<sp/>=<sp/>map-&gt;<ref refid="structmap__data_1a2474a5474cbff19523a51eb1de01cda4" kindref="member">width</ref>;</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>screen_h<sp/>=<sp/>map-&gt;<ref refid="structmap__data_1ad12fc34ce789bce6c8a05d8a17138534" kindref="member">height</ref>;</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*map_array<sp/>=<sp/>map-&gt;<ref refid="structmap__data_1a9818b17c7d2a7b36901aa275b76c39d0" kindref="member">board_arr</ref>;</highlight></codeline>
 <codeline lineno="106"><highlight class="normal"></highlight></codeline>
-<codeline lineno="107"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="map__from__template_8c_1a44624d542105803282c463099d42c825" kindref="member">create_cross</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>row,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>col,<sp/><ref refid="structmap__template" kindref="compound">map_template</ref><sp/>*</highlight><highlight class="keyword">template</highlight><highlight class="normal">,<sp/><ref refid="structmap__data" kindref="compound">map_data</ref><sp/>*map,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>center_val)</highlight></codeline>
-<codeline lineno="108"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>screen_w<sp/>=<sp/>map-&gt;<ref refid="structmap__data_1a2474a5474cbff19523a51eb1de01cda4" kindref="member">width</ref>;</highlight></codeline>
-<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>screen_h<sp/>=<sp/>map-&gt;<ref refid="structmap__data_1ad12fc34ce789bce6c8a05d8a17138534" kindref="member">height</ref>;</highlight></codeline>
-<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*map_array<sp/>=<sp/>map-&gt;<ref refid="structmap__data_1a9818b17c7d2a7b36901aa275b76c39d0" kindref="member">board_arr</ref>;</highlight></codeline>
-<codeline lineno="112"><highlight class="normal"></highlight></codeline>
-<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>cell_width<sp/>=<sp/>screen_w<sp/>/<sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">-&gt;width;</highlight></codeline>
-<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/>cell_width<sp/>=<sp/>(cell_width<sp/>%<sp/>2<sp/>==<sp/>0)<sp/>?<sp/>(cell_width<sp/>-<sp/>1)<sp/>:<sp/>cell_width;</highlight></codeline>
-<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>cell_height<sp/>=<sp/>screen_h<sp/>/<sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">-&gt;height;</highlight></codeline>
-<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/>cell_height<sp/>=<sp/>(cell_height<sp/>%<sp/>2<sp/>==<sp/>0)<sp/>?<sp/>(cell_height<sp/>-<sp/>1)<sp/>:<sp/>cell_height;</highlight></codeline>
-<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>offset_x<sp/>=<sp/>col<sp/>*<sp/>cell_width;</highlight></codeline>
-<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>offset_y<sp/>=<sp/>row<sp/>*<sp/>cell_height;</highlight></codeline>
-<codeline lineno="119"><highlight class="normal"></highlight></codeline>
-<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//from<sp/>top<sp/>to<sp/>bottom</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>begin_index<sp/>=<sp/>offset_x<sp/>+<sp/>cell_width<sp/>/<sp/>2<sp/>+<sp/>screen_w<sp/>*<sp/>(offset_y<sp/>+<sp/>cell_height<sp/>/<sp/>2);</highlight></codeline>
-<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((row<sp/>&gt;<sp/>0)<sp/>&amp;&amp;<sp/>(</highlight><highlight class="keyword">template</highlight><highlight class="normal">-&gt;board[(row<sp/>-<sp/>1)<sp/>*<sp/>template-&gt;width<sp/>+<sp/>col]<sp/>!=<sp/>template-&gt;wall))</highlight></codeline>
-<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>begin_index<sp/>=<sp/>offset_x<sp/>+<sp/>cell_width<sp/>/<sp/>2<sp/>+<sp/>screen_w<sp/>*<sp/>offset_y;</highlight></codeline>
-<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>end_index<sp/>=<sp/>offset_x<sp/>+<sp/>cell_width<sp/>/<sp/>2<sp/>+<sp/>screen_w<sp/>*<sp/>(offset_y<sp/>+<sp/>cell_height<sp/>/<sp/>2);</highlight></codeline>
-<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((row<sp/>&lt;<sp/>template-&gt;height<sp/>-<sp/>1)<sp/>&amp;&amp;<sp/>(</highlight><highlight class="keyword">template</highlight><highlight class="normal">-&gt;board[(row<sp/>+<sp/>1)<sp/>*<sp/>template-&gt;width<sp/>+<sp/>col]<sp/>!=<sp/>template-&gt;wall))</highlight></codeline>
-<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>end_index<sp/>=<sp/>offset_x<sp/>+<sp/>cell_width<sp/>/<sp/>2<sp/>+<sp/>screen_w<sp/>*<sp/>(offset_y<sp/>+<sp/>cell_height);</highlight></codeline>
-<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>index<sp/>=<sp/>begin_index;<sp/>index<sp/>&lt;<sp/>end_index;<sp/>index<sp/>=<sp/>index<sp/>+<sp/>screen_w)</highlight></codeline>
-<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>map_array[index]<sp/>=<sp/><ref refid="data__structures_8h_1adf6a8131152ce4fd04f96338c00f548b" kindref="member">PASSAGE</ref>;</highlight></codeline>
-<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="135"><highlight class="normal"></highlight></codeline>
-<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//from<sp/>left<sp/>to<sp/>right</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/>begin_index<sp/>=<sp/>offset_x<sp/>+<sp/>cell_width<sp/>/<sp/>2<sp/>+<sp/>screen_w<sp/>*<sp/>(offset_y<sp/>+<sp/>cell_height<sp/>/<sp/>2);</highlight></codeline>
-<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((col<sp/>&gt;<sp/>0)<sp/>&amp;&amp;<sp/>(</highlight><highlight class="keyword">template</highlight><highlight class="normal">-&gt;board[(row)<sp/>*<sp/>template-&gt;width<sp/>+<sp/>col<sp/>-<sp/>1]<sp/>!=<sp/>template-&gt;wall))</highlight></codeline>
-<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>begin_index<sp/>=<sp/>offset_x<sp/>+<sp/>screen_w<sp/>*<sp/>(offset_y<sp/>+<sp/>cell_height<sp/>/<sp/>2);</highlight></codeline>
-<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/>end_index<sp/>=<sp/>offset_x<sp/>+<sp/>cell_width<sp/>/<sp/>2<sp/>+<sp/>screen_w<sp/>*<sp/>(offset_y<sp/>+<sp/>cell_height<sp/>/<sp/>2);</highlight></codeline>
-<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((col<sp/>&lt;<sp/>template-&gt;width<sp/>-<sp/>1)<sp/>&amp;&amp;<sp/>(</highlight><highlight class="keyword">template</highlight><highlight class="normal">-&gt;board[(row)<sp/>*<sp/>template-&gt;width<sp/>+<sp/>col<sp/>+<sp/>1]<sp/>!=<sp/>template-&gt;wall))</highlight></codeline>
-<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>end_index<sp/>=<sp/>offset_x<sp/>+<sp/>cell_width<sp/>+<sp/>screen_w<sp/>*<sp/>(offset_y<sp/>+<sp/>cell_height<sp/>/<sp/>2);</highlight></codeline>
-<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>index<sp/>=<sp/>begin_index;<sp/>index<sp/>&lt;<sp/>end_index;<sp/>index<sp/>=<sp/>index<sp/>+<sp/>1)</highlight></codeline>
-<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>map_array[index]<sp/>=<sp/><ref refid="data__structures_8h_1adf6a8131152ce4fd04f96338c00f548b" kindref="member">PASSAGE</ref>;</highlight></codeline>
-<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//fill<sp/>in<sp/>the<sp/>centre<sp/>val</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/>map_array[offset_x<sp/>+<sp/>cell_width<sp/>/<sp/>2<sp/>+<sp/>screen_w<sp/>*<sp/>(offset_y<sp/>+<sp/>cell_height<sp/>/<sp/>2)]<sp/>=<sp/>center_val;</highlight></codeline>
-<codeline lineno="153"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="154"><highlight class="normal"></highlight></codeline>
-<codeline lineno="155"><highlight class="normal"><ref refid="structcoords" kindref="compound">coords</ref><sp/><ref refid="map__from__template_8c_1aa8473ad0b0fb98071c071d3389f3c810" kindref="member">get_coords_from_template</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>row,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>col,<sp/><ref refid="structmap__template" kindref="compound">map_template</ref><sp/>*</highlight><highlight class="keyword">template</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>screen_w,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>screen_h)</highlight></codeline>
-<codeline lineno="156"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>cell_width<sp/>=<sp/>screen_w<sp/>/<sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">-&gt;width;</highlight></codeline>
-<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/>cell_width<sp/>=<sp/>(cell_width<sp/>%<sp/>2<sp/>==<sp/>0)<sp/>?<sp/>(cell_width<sp/>-<sp/>1)<sp/>:<sp/>cell_width;</highlight></codeline>
-<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>cell_height<sp/>=<sp/>screen_h<sp/>/<sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">-&gt;height;</highlight></codeline>
-<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/>cell_height<sp/>=<sp/>(cell_height<sp/>%<sp/>2<sp/>==<sp/>0)<sp/>?<sp/>(cell_height<sp/>-<sp/>1)<sp/>:<sp/>cell_height;</highlight></codeline>
-<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structcoords" kindref="compound">coords</ref><sp/><ref refid="structcoords" kindref="compound">coords</ref><sp/>=<sp/>{</highlight></codeline>
-<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.<ref refid="structcoords_1a6150e0515f7202e2fb518f7206ed97dc" kindref="member">x</ref><sp/>=<sp/>col<sp/>*<sp/>cell_width<sp/>+<sp/>cell_width<sp/>/<sp/>2,</highlight></codeline>
-<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.y<sp/>=<sp/>row<sp/>*<sp/>cell_height<sp/>+<sp/>cell_height<sp/>/<sp/>2,</highlight></codeline>
-<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
-<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="structcoords" kindref="compound">coords</ref>;</highlight></codeline>
-<codeline lineno="166"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>cell_width<sp/>=<sp/>screen_w<sp/>/<sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">-&gt;width;</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/>cell_width<sp/>=<sp/>(cell_width<sp/>%<sp/>2<sp/>==<sp/>0)<sp/>?<sp/>(cell_width<sp/>-<sp/>1)<sp/>:<sp/>cell_width;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>cell_height<sp/>=<sp/>screen_h<sp/>/<sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">-&gt;height;</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/>cell_height<sp/>=<sp/>(cell_height<sp/>%<sp/>2<sp/>==<sp/>0)<sp/>?<sp/>(cell_height<sp/>-<sp/>1)<sp/>:<sp/>cell_height;</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>offset_x<sp/>=<sp/>col<sp/>*<sp/>cell_width;</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>offset_y<sp/>=<sp/>row<sp/>*<sp/>cell_height;</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>from<sp/>top<sp/>to<sp/>bottom</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>begin_index<sp/>=<sp/>offset_x<sp/>+<sp/>cell_width<sp/>/<sp/>2<sp/>+<sp/>screen_w<sp/>*<sp/>(offset_y<sp/>+<sp/>cell_height<sp/>/<sp/>2);</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((row<sp/>&gt;<sp/>0)<sp/>&amp;&amp;<sp/>(</highlight><highlight class="keyword">template</highlight><highlight class="normal">-&gt;board[(row<sp/>-<sp/>1)<sp/>*<sp/>template-&gt;width<sp/>+<sp/>col]<sp/>!=<sp/>template-&gt;wall))</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>begin_index<sp/>=<sp/>offset_x<sp/>+<sp/>cell_width<sp/>/<sp/>2<sp/>+<sp/>screen_w<sp/>*<sp/>offset_y;</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>end_index<sp/>=<sp/>offset_x<sp/>+<sp/>cell_width<sp/>/<sp/>2<sp/>+<sp/>screen_w<sp/>*<sp/>(offset_y<sp/>+<sp/>cell_height<sp/>/<sp/>2);</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((row<sp/>&lt;<sp/>template-&gt;height<sp/>-<sp/>1)<sp/>&amp;&amp;<sp/>(</highlight><highlight class="keyword">template</highlight><highlight class="normal">-&gt;board[(row<sp/>+<sp/>1)<sp/>*<sp/>template-&gt;width<sp/>+<sp/>col]<sp/>!=<sp/>template-&gt;wall))</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>end_index<sp/>=<sp/>offset_x<sp/>+<sp/>cell_width<sp/>/<sp/>2<sp/>+<sp/>screen_w<sp/>*<sp/>(offset_y<sp/>+<sp/>cell_height);</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>index<sp/>=<sp/>begin_index;<sp/>index<sp/>&lt;<sp/>end_index;<sp/>index<sp/>=<sp/>index<sp/>+<sp/>screen_w)</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>map_array[index]<sp/>=<sp/><ref refid="data__structures_8h_1adf6a8131152ce4fd04f96338c00f548b" kindref="member">PASSAGE</ref>;</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>from<sp/>left<sp/>to<sp/>right</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/>begin_index<sp/>=<sp/>offset_x<sp/>+<sp/>cell_width<sp/>/<sp/>2<sp/>+<sp/>screen_w<sp/>*<sp/>(offset_y<sp/>+<sp/>cell_height<sp/>/<sp/>2);</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((col<sp/>&gt;<sp/>0)<sp/>&amp;&amp;<sp/>(</highlight><highlight class="keyword">template</highlight><highlight class="normal">-&gt;board[(row)<sp/>*<sp/>template-&gt;width<sp/>+<sp/>col<sp/>-<sp/>1]<sp/>!=<sp/>template-&gt;wall))</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>begin_index<sp/>=<sp/>offset_x<sp/>+<sp/>screen_w<sp/>*<sp/>(offset_y<sp/>+<sp/>cell_height<sp/>/<sp/>2);</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/>end_index<sp/>=<sp/>offset_x<sp/>+<sp/>cell_width<sp/>/<sp/>2<sp/>+<sp/>screen_w<sp/>*<sp/>(offset_y<sp/>+<sp/>cell_height<sp/>/<sp/>2);</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((col<sp/>&lt;<sp/>template-&gt;width<sp/>-<sp/>1)<sp/>&amp;&amp;<sp/>(</highlight><highlight class="keyword">template</highlight><highlight class="normal">-&gt;board[(row)<sp/>*<sp/>template-&gt;width<sp/>+<sp/>col<sp/>+<sp/>1]<sp/>!=<sp/>template-&gt;wall))</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>end_index<sp/>=<sp/>offset_x<sp/>+<sp/>cell_width<sp/>+<sp/>screen_w<sp/>*<sp/>(offset_y<sp/>+<sp/>cell_height<sp/>/<sp/>2);</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>index<sp/>=<sp/>begin_index;<sp/>index<sp/>&lt;<sp/>end_index;<sp/>index<sp/>=<sp/>index<sp/>+<sp/>1)</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>map_array[index]<sp/>=<sp/><ref refid="data__structures_8h_1adf6a8131152ce4fd04f96338c00f548b" kindref="member">PASSAGE</ref>;</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>fill<sp/>in<sp/>the<sp/>centre<sp/>val</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/>map_array[offset_x<sp/>+<sp/>cell_width<sp/>/<sp/>2<sp/>+<sp/>screen_w<sp/>*<sp/>(offset_y<sp/>+<sp/>cell_height<sp/>/<sp/>2)]<sp/>=<sp/>center_val;</highlight></codeline>
+<codeline lineno="147"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><ref refid="structcoords" kindref="compound">coords</ref><sp/><ref refid="map__from__template_8c_1aa8473ad0b0fb98071c071d3389f3c810" kindref="member">get_coords_from_template</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>row,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>col,<sp/><ref refid="structmap__template" kindref="compound">map_template</ref><sp/>*</highlight><highlight class="keyword">template</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>screen_w,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>screen_h)</highlight></codeline>
+<codeline lineno="150"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>cell_width<sp/>=<sp/>screen_w<sp/>/<sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">-&gt;width;</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/>cell_width<sp/>=<sp/>(cell_width<sp/>%<sp/>2<sp/>==<sp/>0)<sp/>?<sp/>(cell_width<sp/>-<sp/>1)<sp/>:<sp/>cell_width;</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>cell_height<sp/>=<sp/>screen_h<sp/>/<sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">-&gt;height;</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/>cell_height<sp/>=<sp/>(cell_height<sp/>%<sp/>2<sp/>==<sp/>0)<sp/>?<sp/>(cell_height<sp/>-<sp/>1)<sp/>:<sp/>cell_height;</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structcoords" kindref="compound">coords</ref><sp/><ref refid="structcoords" kindref="compound">coords</ref><sp/>=<sp/>{</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.<ref refid="structcoords_1a6150e0515f7202e2fb518f7206ed97dc" kindref="member">x</ref><sp/>=<sp/>col<sp/>*<sp/>cell_width<sp/>+<sp/>cell_width<sp/>/<sp/>2,</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.y<sp/>=<sp/>row<sp/>*<sp/>cell_height<sp/>+<sp/>cell_height<sp/>/<sp/>2,</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="structcoords" kindref="compound">coords</ref>;</highlight></codeline>
+<codeline lineno="160"><highlight class="normal">}</highlight></codeline>
     </programlisting>
     <location file="C:/Users/Petr/Documents/apo_semestralka/map_from_template.c"/>
   </compounddef>

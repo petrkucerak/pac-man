@@ -2,55 +2,346 @@
 <section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_text__fb_8h" xml:lang="en-US">
 <title>C:/Users/Petr/Documents/apo_semestralka/text_fb.h File Reference</title>
 <indexterm><primary>C:/Users/Petr/Documents/apo_semestralka/text_fb.h</primary></indexterm>
+<para>
+
+<para>Module for drawing text to frame buffer. </para>
+ 
+</para>
 <programlisting>#include &quot;data_structures.h&quot;
 #include &quot;font_types.h&quot;
 </programlisting><simplesect>
     <title>Functions    </title>
         <itemizedlist>
             <listitem><para>void <link linkend="_text__fb_8h_1a21645f17c98617a8bd7342f9fdb78899">draw_char</link> (<link linkend="_structfb__data">fb_data</link> *frame, char letter, int x, int y, int scale, <link linkend="_structfont__descriptor__t">font_descriptor_t</link> *font, uint16_t color)</para>
+
+<para>Draws the character to the frame buffer. Left upper corner is at x,y and the char is scale times bigger than the bitmap in font. </para>
 </listitem>
             <listitem><para>int <link linkend="_text__fb_8h_1ad3a4c863813fb8a6d93380bc7e1826ff">char_width</link> (<link linkend="_structfont__descriptor__t">font_descriptor_t</link> *fdes, int letter)</para>
+
+<para>Returns the lenght of given char. </para>
 </listitem>
             <listitem><para>uint32_t <link linkend="_text__fb_8h_1a7873327914ec2b5b79833f8aa0ffd5ac">char_offset</link> (<link linkend="_structfont__descriptor__t">font_descriptor_t</link> *fdes, char letter)</para>
+
+<para>Returns offset of given char in bitmap data. </para>
 </listitem>
             <listitem><para>void <link linkend="_text__fb_8h_1a273e67041b3e82dbfdd989f64e876732">draw_text</link> (<link linkend="_structfb__data">fb_data</link> *frame, char *text, int x, int y, int scale, <link linkend="_structfont__descriptor__t">font_descriptor_t</link> *font, uint16_t color)</para>
+
+<para>Draws text to the frame buffer, x,y are the coordinates of the left upper edge. </para>
 </listitem>
             <listitem><para>void <link linkend="_text__fb_8h_1a6c9c3fce44e83e9b6076cdc74ba11464">draw_text_center</link> (<link linkend="_structfb__data">fb_data</link> *frame, char *text, int x, int y, int scale, <link linkend="_structfont__descriptor__t">font_descriptor_t</link> *font, uint16_t color)</para>
+
+<para>Draws the text centered around x,y. </para>
 </listitem>
         </itemizedlist>
 </simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Module for drawing text to frame buffer. </para>
+
+<para><formalpara><title>Author</title>
+
+<para>Lukas Nejezchleb (<link xlink:href="mailto:nejezluk@fel.cvut.cz">nejezluk@fel.cvut.cz</link>) </para>
+</formalpara>
+<formalpara><title>Version</title>
+
+<para>0.1 </para>
+</formalpara>
+<formalpara><title>Date</title>
+
+<para>2021-05-04</para>
+</formalpara>
+<formalpara><title>Copyright</title>
+
+<para>Copyright (c) 2021 </para>
+</formalpara>
+</para>
+</section>
 <section>
 <title>Function Documentation</title>
 <anchor xml:id="_text__fb_8h_1a7873327914ec2b5b79833f8aa0ffd5ac"/>    <section>
     <title>char_offset()</title>
 <indexterm><primary>char_offset</primary><secondary>text_fb.h</secondary></indexterm>
 <indexterm><primary>text_fb.h</primary><secondary>char_offset</secondary></indexterm>
-<para><computeroutput>uint32_t char_offset (<link linkend="_structfont__descriptor__t">font_descriptor_t</link> * fdes, char letter)</computeroutput></para>
-<para>returns offset in font bitmap data </para>
+<para><computeroutput>uint32_t char_offset (<link linkend="_structfont__descriptor__t">font_descriptor_t</link> * fdes, char letter)</computeroutput></para><para>
+
+<para>Returns offset of given char in bitmap data. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>fdes</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>letter</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>uint32_t </para>
+</formalpara>
+</para>
     </section><anchor xml:id="_text__fb_8h_1ad3a4c863813fb8a6d93380bc7e1826ff"/>    <section>
     <title>char_width()</title>
 <indexterm><primary>char_width</primary><secondary>text_fb.h</secondary></indexterm>
 <indexterm><primary>text_fb.h</primary><secondary>char_width</secondary></indexterm>
-<para><computeroutput>int char_width (<link linkend="_structfont__descriptor__t">font_descriptor_t</link> * fdes, int letter)</computeroutput></para>
-<para>returns width of character </para>
+<para><computeroutput>int char_width (<link linkend="_structfont__descriptor__t">font_descriptor_t</link> * fdes, int letter)</computeroutput></para><para>
+
+<para>Returns the lenght of given char. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>fdes</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>letter</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>int </para>
+</formalpara>
+</para>
     </section><anchor xml:id="_text__fb_8h_1a21645f17c98617a8bd7342f9fdb78899"/>    <section>
     <title>draw_char()</title>
 <indexterm><primary>draw_char</primary><secondary>text_fb.h</secondary></indexterm>
 <indexterm><primary>text_fb.h</primary><secondary>draw_char</secondary></indexterm>
-<para><computeroutput>void draw_char (<link linkend="_structfb__data">fb_data</link> * frame, char letter, int x, int y, int scale, <link linkend="_structfont__descriptor__t">font_descriptor_t</link> * font, uint16_t color)</computeroutput></para>
-<para>function to draw char, left upper edge is at x, y </para>
+<para><computeroutput>void draw_char (<link linkend="_structfb__data">fb_data</link> * frame, char letter, int x, int y, int scale, <link linkend="_structfont__descriptor__t">font_descriptor_t</link> * font, uint16_t color)</computeroutput></para><para>
+
+<para>Draws the character to the frame buffer. Left upper corner is at x,y and the char is scale times bigger than the bitmap in font. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>frame</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>letter</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>x</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>y</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>scale</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>font</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>color</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
     </section><anchor xml:id="_text__fb_8h_1a273e67041b3e82dbfdd989f64e876732"/>    <section>
     <title>draw_text()</title>
 <indexterm><primary>draw_text</primary><secondary>text_fb.h</secondary></indexterm>
 <indexterm><primary>text_fb.h</primary><secondary>draw_text</secondary></indexterm>
-<para><computeroutput>void draw_text (<link linkend="_structfb__data">fb_data</link> * frame, char * text, int x, int y, int scale, <link linkend="_structfont__descriptor__t">font_descriptor_t</link> * font, uint16_t color)</computeroutput></para>
-<para>draws text to frame buffer, left upper edge is at x, y </para>
+<para><computeroutput>void draw_text (<link linkend="_structfb__data">fb_data</link> * frame, char * text, int x, int y, int scale, <link linkend="_structfont__descriptor__t">font_descriptor_t</link> * font, uint16_t color)</computeroutput></para><para>
+
+<para>Draws text to the frame buffer, x,y are the coordinates of the left upper edge. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>frame</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>text</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>x</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>y</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>scale</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>font</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>color</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
     </section><anchor xml:id="_text__fb_8h_1a6c9c3fce44e83e9b6076cdc74ba11464"/>    <section>
     <title>draw_text_center()</title>
 <indexterm><primary>draw_text_center</primary><secondary>text_fb.h</secondary></indexterm>
 <indexterm><primary>text_fb.h</primary><secondary>draw_text_center</secondary></indexterm>
-<para><computeroutput>void draw_text_center (<link linkend="_structfb__data">fb_data</link> * frame, char * text, int x, int y, int scale, <link linkend="_structfont__descriptor__t">font_descriptor_t</link> * font, uint16_t color)</computeroutput></para>
-<para>draws text to frame buffer, centre of text is at x, y </para>
+<para><computeroutput>void draw_text_center (<link linkend="_structfb__data">fb_data</link> * frame, char * text, int x, int y, int scale, <link linkend="_structfont__descriptor__t">font_descriptor_t</link> * font, uint16_t color)</computeroutput></para><para>
+
+<para>Draws the text centered around x,y. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>frame</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>text</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>x</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>y</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>scale</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>font</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>color</entry>
+                                <entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
 </section>
 </section>
 </section>

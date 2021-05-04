@@ -1,14 +1,13 @@
-/*******************************************************************
-  All inportant functions for pacman on MicroZed
-  based MZ_APO board designed by Petr Porazil at PiKRON
-
-  pacman.h      - all important functions for pacman
-
-  (C) Copyright 2021 by Lukas Nejezchleb
-      e-mail:   nejezluk@fel.cvut.cz
-      license:  any combination of GPL, LGPL, MPL or BSD licenses
-
- *******************************************************************/
+/**
+ * @file pacman.c
+ * @author Lukas Nejezchleb (nejezluk@fel.cvut.cz)
+ * @brief Module for the controls and rendering of pacman
+ * @version 0.1
+ * @date 2021-05-04
+ * 
+ * @copyright Copyright (c) 2021
+ * 
+ */
 
 #include "pacman.h"
 #include "draw_shapes.h"
@@ -16,13 +15,6 @@
 #include "config.h"
 #include <stdbool.h>
 
-//internal functions
-bool pacman_can_move(pacman_type *pacman, int dirx, int diry, map_data *map);
-// end of internal functions
-
-/*
-Given map data creates pacman
-*/
 pacman_type create_pacman(map_data *map, int lives, int score)
 {
     pacman_type pacman;
@@ -35,13 +27,10 @@ pacman_type create_pacman(map_data *map, int lives, int score)
     return pacman;
 }
 
-/*
-Moves pacman if possible and changes direction if key has been pressed, returns true if pacman ate supercoin
-*/
 bool pacman_move(pacman_type *pacman, map_data *map)
 {
     bool ret = false;
-    //find out if some important key has been pressed
+    // find out if some important key has been pressed
     char pressed;
     pthread_mutex_lock(&mtx);
     pressed = read_thread_data.last_read;
@@ -92,7 +81,7 @@ bool pacman_can_move(pacman_type *pacman, int dirx, int diry, map_data *map)
 
 void draw_pacman(pacman_type *pacman, fb_data *fb, map_data *map)
 {
-    //draw pacman
+    // draw pacman
     coords location = pacman->location;
     if ((pacman->direction.x == -1) && (pacman->direction.y == 0))
     {
@@ -109,7 +98,9 @@ void draw_pacman(pacman_type *pacman, fb_data *fb, map_data *map)
     else if ((pacman->direction.x == 0) && (pacman->direction.y == -1))
     {
         draw_pacman_dir(fb, location.x, location.y, map->max_object_diameter / 2, PACMAN_COLOR, UP);
-    }else{
-         draw_circle(fb, location.x, location.y, map->max_object_diameter / 2, PACMAN_COLOR);
+    }
+    else
+    {
+        draw_circle(fb, location.x, location.y, map->max_object_diameter / 2, PACMAN_COLOR);
     }
 }

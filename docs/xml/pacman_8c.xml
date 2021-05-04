@@ -75,6 +75,104 @@
       </node>
     </incdepgraph>
       <sectiondef kind="func">
+      <memberdef kind="function" id="pacman_8c_1a6049d528917cb950659f2972d92cb432" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structpacman__type" kindref="compound">pacman_type</ref></type>
+        <definition>pacman_type create_pacman</definition>
+        <argsstring>(map_data *map, int lives, int score)</argsstring>
+        <name>create_pacman</name>
+        <param>
+          <type><ref refid="structmap__data" kindref="compound">map_data</ref> *</type>
+          <declname>map</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>lives</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>score</declname>
+        </param>
+        <briefdescription>
+<para>Returns pacman with initial score and lives at the spawning coords of the map. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>map</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>lives</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>score</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="structpacman__type" kindref="compound">pacman_type</ref> </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/pacman.c" line="18" column="13" bodyfile="C:/Users/Petr/Documents/apo_semestralka/pacman.c" bodystart="18" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="pacman_8c_1ae1b36e370a9b73a0eed9ad43e53db1f0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool pacman_move</definition>
+        <argsstring>(pacman_type *pacman, map_data *map)</argsstring>
+        <name>pacman_move</name>
+        <param>
+          <type><ref refid="structpacman__type" kindref="compound">pacman_type</ref> *</type>
+          <declname>pacman</declname>
+        </param>
+        <param>
+          <type><ref refid="structmap__data" kindref="compound">map_data</ref> *</type>
+          <declname>map</declname>
+        </param>
+        <briefdescription>
+<para>Returns pacman with initial score and lives at the spawning coords of the map. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pacman</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>map</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true </para>
+</simplesect>
+<simplesect kind="return"><para>false </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/pacman.c" line="30" column="6" bodyfile="C:/Users/Petr/Documents/apo_semestralka/pacman.c" bodystart="30" bodyend="74"/>
+      </memberdef>
       <memberdef kind="function" id="pacman_8c_1a3c07103dca2f3a04c80872d8603b5d45" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
         <definition>bool pacman_can_move</definition>
@@ -97,58 +195,51 @@
           <declname>map</declname>
         </param>
         <briefdescription>
+<para>returns true if pacman can move in given direction </para>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pacman</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dirx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>diry</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>map</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true </para>
+</simplesect>
+<simplesect kind="return"><para>false </para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Petr/Documents/apo_semestralka/pacman.c" line="87" column="6" bodyfile="C:/Users/Petr/Documents/apo_semestralka/pacman.c" bodystart="87" bodyend="91" declfile="C:/Users/Petr/Documents/apo_semestralka/pacman.c" declline="20" declcolumn="6"/>
-      </memberdef>
-      <memberdef kind="function" id="pacman_8c_1a6049d528917cb950659f2972d92cb432" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type><ref refid="structpacman__type" kindref="compound">pacman_type</ref></type>
-        <definition>pacman_type create_pacman</definition>
-        <argsstring>(map_data *map, int lives, int score)</argsstring>
-        <name>create_pacman</name>
-        <param>
-          <type><ref refid="structmap__data" kindref="compound">map_data</ref> *</type>
-          <declname>map</declname>
-        </param>
-        <param>
-          <type>int</type>
-          <declname>lives</declname>
-        </param>
-        <param>
-          <type>int</type>
-          <declname>score</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/Petr/Documents/apo_semestralka/pacman.c" line="26" column="13" bodyfile="C:/Users/Petr/Documents/apo_semestralka/pacman.c" bodystart="26" bodyend="36"/>
-      </memberdef>
-      <memberdef kind="function" id="pacman_8c_1ae1b36e370a9b73a0eed9ad43e53db1f0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type>bool</type>
-        <definition>bool pacman_move</definition>
-        <argsstring>(pacman_type *pacman, map_data *map)</argsstring>
-        <name>pacman_move</name>
-        <param>
-          <type><ref refid="structpacman__type" kindref="compound">pacman_type</ref> *</type>
-          <declname>pacman</declname>
-        </param>
-        <param>
-          <type><ref refid="structmap__data" kindref="compound">map_data</ref> *</type>
-          <declname>map</declname>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="C:/Users/Petr/Documents/apo_semestralka/pacman.c" line="41" column="6" bodyfile="C:/Users/Petr/Documents/apo_semestralka/pacman.c" bodystart="41" bodyend="85"/>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/pacman.c" line="76" column="6" bodyfile="C:/Users/Petr/Documents/apo_semestralka/pacman.c" bodystart="76" bodyend="80"/>
       </memberdef>
       <memberdef kind="function" id="pacman_8c_1a9b14d2c075ef0768af01d694a839cd38" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -168,134 +259,152 @@
           <declname>map</declname>
         </param>
         <briefdescription>
+<para>draws circle if pacman is not facing any direction or the ”pie” shape to symbolise the heading </para>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pacman</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>fb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>map</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Petr/Documents/apo_semestralka/pacman.c" line="93" column="6" bodyfile="C:/Users/Petr/Documents/apo_semestralka/pacman.c" bodystart="93" bodyend="115"/>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/pacman.c" line="82" column="6" bodyfile="C:/Users/Petr/Documents/apo_semestralka/pacman.c" bodystart="82" bodyend="106"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
+<para>Module for the controls and rendering of pacman. </para>
     </briefdescription>
     <detaileddescription>
+<para><simplesect kind="author"><para>Lukas Nejezchleb (<ulink url="mailto:nejezluk@fel.cvut.cz">nejezluk@fel.cvut.cz</ulink>) </para>
+</simplesect>
+<simplesect kind="version"><para>0.1 </para>
+</simplesect>
+<simplesect kind="date"><para>2021-05-04</para>
+</simplesect>
+<simplesect kind="copyright"><para>Copyright (c) 2021 </para>
+</simplesect>
+</para>
     </detaileddescription>
     <programlisting>
-<codeline lineno="1"><highlight class="comment">/*******************************************************************</highlight></codeline>
-<codeline lineno="2"><highlight class="comment"><sp/><sp/>All<sp/>inportant<sp/>functions<sp/>for<sp/>pacman<sp/>on<sp/>MicroZed</highlight></codeline>
-<codeline lineno="3"><highlight class="comment"><sp/><sp/>based<sp/>MZ_APO<sp/>board<sp/>designed<sp/>by<sp/>Petr<sp/>Porazil<sp/>at<sp/>PiKRON</highlight></codeline>
-<codeline lineno="4"><highlight class="comment"></highlight></codeline>
-<codeline lineno="5"><highlight class="comment"><sp/><sp/>pacman.h<sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>all<sp/>important<sp/>functions<sp/>for<sp/>pacman</highlight></codeline>
-<codeline lineno="6"><highlight class="comment"></highlight></codeline>
-<codeline lineno="7"><highlight class="comment"><sp/><sp/>(C)<sp/>Copyright<sp/>2021<sp/>by<sp/>Lukas<sp/>Nejezchleb</highlight></codeline>
-<codeline lineno="8"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>e-mail:<sp/><sp/><sp/>nejezluk@fel.cvut.cz</highlight></codeline>
-<codeline lineno="9"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>license:<sp/><sp/>any<sp/>combination<sp/>of<sp/>GPL,<sp/>LGPL,<sp/>MPL<sp/>or<sp/>BSD<sp/>licenses</highlight></codeline>
-<codeline lineno="10"><highlight class="comment"></highlight></codeline>
-<codeline lineno="11"><highlight class="comment"><sp/>*******************************************************************/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="12"><highlight class="normal"></highlight></codeline>
-<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="pacman_8h" kindref="compound">pacman.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="draw__shapes_8h" kindref="compound">draw_shapes.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="map__from__template_8h" kindref="compound">map_from_template.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="config_8h" kindref="compound">config.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdbool.h&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="18"><highlight class="normal"></highlight></codeline>
-<codeline lineno="19"><highlight class="normal"></highlight><highlight class="comment">//internal<sp/>functions</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="pacman_8c_1a3c07103dca2f3a04c80872d8603b5d45" kindref="member">pacman_can_move</ref>(<ref refid="structpacman__type" kindref="compound">pacman_type</ref><sp/>*pacman,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>dirx,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>diry,<sp/><ref refid="structmap__data" kindref="compound">map_data</ref><sp/>*map);</highlight></codeline>
-<codeline lineno="21"><highlight class="normal"></highlight><highlight class="comment">//<sp/>end<sp/>of<sp/>internal<sp/>functions</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="22"><highlight class="normal"></highlight></codeline>
-<codeline lineno="23"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
-<codeline lineno="24"><highlight class="comment">Given<sp/>map<sp/>data<sp/>creates<sp/>pacman</highlight></codeline>
-<codeline lineno="25"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="26"><highlight class="normal"><ref refid="structpacman__type" kindref="compound">pacman_type</ref><sp/><ref refid="pacman_8c_1a6049d528917cb950659f2972d92cb432" kindref="member">create_pacman</ref>(<ref refid="structmap__data" kindref="compound">map_data</ref><sp/>*map,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>lives,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>score)</highlight></codeline>
-<codeline lineno="27"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structpacman__type" kindref="compound">pacman_type</ref><sp/>pacman;</highlight></codeline>
-<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>pacman.<ref refid="structpacman__type_1ac1d68ef9a5dd304c5015e07af7f2bb19" kindref="member">lives</ref><sp/>=<sp/>lives;</highlight></codeline>
-<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>pacman.<ref refid="structpacman__type_1a3563efe256b8edd9b91e0d3d5dc58f7a" kindref="member">maxlives</ref><sp/>=<sp/>lives;</highlight></codeline>
-<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>pacman.<ref refid="structpacman__type_1a7db8b62e64ae0eb828ef80d8708d7243" kindref="member">location</ref><sp/>=<sp/>map-&gt;<ref refid="structmap__data_1a726c15baf3d3606bf35bba9e5e32b2bc" kindref="member">pacman_spawn</ref>;</highlight></codeline>
-<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structcoords" kindref="compound">coords</ref><sp/>direction<sp/>=<sp/>{0,<sp/>0};</highlight></codeline>
-<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>pacman.<ref refid="structpacman__type_1a1020ed5ecf8ec6fb9721615347ecd8a0" kindref="member">direction</ref><sp/>=<sp/>direction;</highlight></codeline>
-<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>pacman.<ref refid="structpacman__type_1aef160b7437d94056f1dc59646cd5b87d" kindref="member">score</ref><sp/>=<sp/>score;</highlight></codeline>
-<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>pacman;</highlight></codeline>
-<codeline lineno="36"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="37"><highlight class="normal"></highlight></codeline>
-<codeline lineno="38"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
-<codeline lineno="39"><highlight class="comment">Moves<sp/>pacman<sp/>if<sp/>possible<sp/>and<sp/>changes<sp/>direction<sp/>if<sp/>key<sp/>has<sp/>been<sp/>pressed,<sp/>returns<sp/>true<sp/>if<sp/>pacman<sp/>ate<sp/>supercoin</highlight></codeline>
-<codeline lineno="40"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="41"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="pacman_8c_1ae1b36e370a9b73a0eed9ad43e53db1f0" kindref="member">pacman_move</ref>(<ref refid="structpacman__type" kindref="compound">pacman_type</ref><sp/>*pacman,<sp/><ref refid="structmap__data" kindref="compound">map_data</ref><sp/>*map)</highlight></codeline>
-<codeline lineno="42"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>ret<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//find<sp/>out<sp/>if<sp/>some<sp/>important<sp/>key<sp/>has<sp/>been<sp/>pressed</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>pressed;</highlight></codeline>
-<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>pthread_mutex_lock(&amp;<ref refid="apoman_8c_1a2680f9fe5653a596c7e779b838180fdc" kindref="member">mtx</ref>);</highlight></codeline>
-<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>pressed<sp/>=<sp/><ref refid="apoman_8c_1a6cf0bd745eade6d2d8304b9b72930ab4" kindref="member">read_thread_data</ref>.<ref refid="structread__thread__data__type_1a41eafad1f226f50088de23256b17f4c7" kindref="member">last_read</ref>;</highlight></codeline>
-<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>pthread_mutex_unlock(&amp;<ref refid="apoman_8c_1a2680f9fe5653a596c7e779b838180fdc" kindref="member">mtx</ref>);</highlight></codeline>
-<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((pressed<sp/>==<sp/><ref refid="config_8h_1afa086fc916a81e7fd348ec00cf786916" kindref="member">KEY_UP</ref>)<sp/>&amp;&amp;<sp/>(<ref refid="pacman_8c_1a3c07103dca2f3a04c80872d8603b5d45" kindref="member">pacman_can_move</ref>(pacman,<sp/>0,<sp/>-1,<sp/>map)))</highlight></codeline>
-<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pacman-&gt;<ref refid="structpacman__type_1a1020ed5ecf8ec6fb9721615347ecd8a0" kindref="member">direction</ref>.<ref refid="structcoords_1a6150e0515f7202e2fb518f7206ed97dc" kindref="member">x</ref><sp/>=<sp/>0;</highlight></codeline>
-<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pacman-&gt;<ref refid="structpacman__type_1a1020ed5ecf8ec6fb9721615347ecd8a0" kindref="member">direction</ref>.<ref refid="structcoords_1a0a2f84ed7838f07779ae24c5a9086d33" kindref="member">y</ref><sp/>=<sp/>-1;</highlight></codeline>
-<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((pressed<sp/>==<sp/><ref refid="config_8h_1a0ed3c136fbc69d8a30e0006bd4f3d6db" kindref="member">KEY_DWN</ref>)<sp/>&amp;&amp;<sp/>(<ref refid="pacman_8c_1a3c07103dca2f3a04c80872d8603b5d45" kindref="member">pacman_can_move</ref>(pacman,<sp/>0,<sp/>1,<sp/>map)))</highlight></codeline>
-<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pacman-&gt;<ref refid="structpacman__type_1a1020ed5ecf8ec6fb9721615347ecd8a0" kindref="member">direction</ref>.<ref refid="structcoords_1a6150e0515f7202e2fb518f7206ed97dc" kindref="member">x</ref><sp/>=<sp/>0;</highlight></codeline>
-<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pacman-&gt;<ref refid="structpacman__type_1a1020ed5ecf8ec6fb9721615347ecd8a0" kindref="member">direction</ref>.<ref refid="structcoords_1a0a2f84ed7838f07779ae24c5a9086d33" kindref="member">y</ref><sp/>=<sp/>1;</highlight></codeline>
-<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((pressed<sp/>==<sp/><ref refid="config_8h_1af4d1b8a2912354646c74cf36c69f8223" kindref="member">KEY_LEFT</ref>)<sp/>&amp;&amp;<sp/>(<ref refid="pacman_8c_1a3c07103dca2f3a04c80872d8603b5d45" kindref="member">pacman_can_move</ref>(pacman,<sp/>-1,<sp/>0,<sp/>map)))</highlight></codeline>
-<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pacman-&gt;<ref refid="structpacman__type_1a1020ed5ecf8ec6fb9721615347ecd8a0" kindref="member">direction</ref>.<ref refid="structcoords_1a6150e0515f7202e2fb518f7206ed97dc" kindref="member">x</ref><sp/>=<sp/>-1;</highlight></codeline>
-<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pacman-&gt;<ref refid="structpacman__type_1a1020ed5ecf8ec6fb9721615347ecd8a0" kindref="member">direction</ref>.<ref refid="structcoords_1a0a2f84ed7838f07779ae24c5a9086d33" kindref="member">y</ref><sp/>=<sp/>0;</highlight></codeline>
-<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((pressed<sp/>==<sp/><ref refid="config_8h_1a004194639b9ad76cea01d9e93716d4d6" kindref="member">KEY_RIGHT</ref>)<sp/>&amp;&amp;<sp/>(<ref refid="pacman_8c_1a3c07103dca2f3a04c80872d8603b5d45" kindref="member">pacman_can_move</ref>(pacman,<sp/>1,<sp/>0,<sp/>map)))</highlight></codeline>
-<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pacman-&gt;<ref refid="structpacman__type_1a1020ed5ecf8ec6fb9721615347ecd8a0" kindref="member">direction</ref>.<ref refid="structcoords_1a6150e0515f7202e2fb518f7206ed97dc" kindref="member">x</ref><sp/>=<sp/>1;</highlight></codeline>
-<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pacman-&gt;<ref refid="structpacman__type_1a1020ed5ecf8ec6fb9721615347ecd8a0" kindref="member">direction</ref>.<ref refid="structcoords_1a0a2f84ed7838f07779ae24c5a9086d33" kindref="member">y</ref><sp/>=<sp/>0;</highlight></codeline>
-<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="pacman_8c_1a3c07103dca2f3a04c80872d8603b5d45" kindref="member">pacman_can_move</ref>(pacman,<sp/>pacman-&gt;<ref refid="structpacman__type_1a1020ed5ecf8ec6fb9721615347ecd8a0" kindref="member">direction</ref>.<ref refid="structcoords_1a6150e0515f7202e2fb518f7206ed97dc" kindref="member">x</ref>,<sp/>pacman-&gt;<ref refid="structpacman__type_1a1020ed5ecf8ec6fb9721615347ecd8a0" kindref="member">direction</ref>.<ref refid="structcoords_1a0a2f84ed7838f07779ae24c5a9086d33" kindref="member">y</ref>,<sp/>map))</highlight></codeline>
-<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pacman-&gt;<ref refid="structpacman__type_1a7db8b62e64ae0eb828ef80d8708d7243" kindref="member">location</ref>.<ref refid="structcoords_1a6150e0515f7202e2fb518f7206ed97dc" kindref="member">x</ref><sp/>=<sp/>pacman-&gt;<ref refid="structpacman__type_1a7db8b62e64ae0eb828ef80d8708d7243" kindref="member">location</ref>.<ref refid="structcoords_1a6150e0515f7202e2fb518f7206ed97dc" kindref="member">x</ref><sp/>+<sp/>pacman-&gt;<ref refid="structpacman__type_1a1020ed5ecf8ec6fb9721615347ecd8a0" kindref="member">direction</ref>.<ref refid="structcoords_1a6150e0515f7202e2fb518f7206ed97dc" kindref="member">x</ref>;</highlight></codeline>
-<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pacman-&gt;<ref refid="structpacman__type_1a7db8b62e64ae0eb828ef80d8708d7243" kindref="member">location</ref>.<ref refid="structcoords_1a0a2f84ed7838f07779ae24c5a9086d33" kindref="member">y</ref><sp/>=<sp/>pacman-&gt;<ref refid="structpacman__type_1a7db8b62e64ae0eb828ef80d8708d7243" kindref="member">location</ref>.<ref refid="structcoords_1a0a2f84ed7838f07779ae24c5a9086d33" kindref="member">y</ref><sp/>+<sp/>pacman-&gt;<ref refid="structpacman__type_1a1020ed5ecf8ec6fb9721615347ecd8a0" kindref="member">direction</ref>.<ref refid="structcoords_1a0a2f84ed7838f07779ae24c5a9086d33" kindref="member">y</ref>;</highlight></codeline>
-<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(map-&gt;<ref refid="structmap__data_1a9818b17c7d2a7b36901aa275b76c39d0" kindref="member">board_arr</ref>[map-&gt;<ref refid="structmap__data_1a2474a5474cbff19523a51eb1de01cda4" kindref="member">width</ref><sp/>*<sp/>(pacman-&gt;<ref refid="structpacman__type_1a7db8b62e64ae0eb828ef80d8708d7243" kindref="member">location</ref>.<ref refid="structcoords_1a0a2f84ed7838f07779ae24c5a9086d33" kindref="member">y</ref>)<sp/>+<sp/>pacman-&gt;<ref refid="structpacman__type_1a7db8b62e64ae0eb828ef80d8708d7243" kindref="member">location</ref>.<ref refid="structcoords_1a6150e0515f7202e2fb518f7206ed97dc" kindref="member">x</ref>]<sp/>==<sp/><ref refid="data__structures_8h_1a520ca3e8e98573e7774965b2c69d2843" kindref="member">COIN</ref>)</highlight></codeline>
-<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>map-&gt;<ref refid="structmap__data_1a9818b17c7d2a7b36901aa275b76c39d0" kindref="member">board_arr</ref>[map-&gt;<ref refid="structmap__data_1a2474a5474cbff19523a51eb1de01cda4" kindref="member">width</ref><sp/>*<sp/>(pacman-&gt;<ref refid="structpacman__type_1a7db8b62e64ae0eb828ef80d8708d7243" kindref="member">location</ref>.<ref refid="structcoords_1a0a2f84ed7838f07779ae24c5a9086d33" kindref="member">y</ref>)<sp/>+<sp/>pacman-&gt;<ref refid="structpacman__type_1a7db8b62e64ae0eb828ef80d8708d7243" kindref="member">location</ref>.<ref refid="structcoords_1a6150e0515f7202e2fb518f7206ed97dc" kindref="member">x</ref>]<sp/>=<sp/><ref refid="data__structures_8h_1adf6a8131152ce4fd04f96338c00f548b" kindref="member">PASSAGE</ref>;</highlight></codeline>
-<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pacman-&gt;<ref refid="structpacman__type_1aef160b7437d94056f1dc59646cd5b87d" kindref="member">score</ref><sp/>=<sp/>pacman-&gt;<ref refid="structpacman__type_1aef160b7437d94056f1dc59646cd5b87d" kindref="member">score</ref><sp/>+<sp/><ref refid="config_8h_1af4c1cef02adf693d8d3761f8b906ad3a" kindref="member">COIN_SCORE_INCECREASE</ref>;</highlight></codeline>
-<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(map-&gt;<ref refid="structmap__data_1a9818b17c7d2a7b36901aa275b76c39d0" kindref="member">board_arr</ref>[map-&gt;<ref refid="structmap__data_1a2474a5474cbff19523a51eb1de01cda4" kindref="member">width</ref><sp/>*<sp/>(pacman-&gt;<ref refid="structpacman__type_1a7db8b62e64ae0eb828ef80d8708d7243" kindref="member">location</ref>.<ref refid="structcoords_1a0a2f84ed7838f07779ae24c5a9086d33" kindref="member">y</ref>)<sp/>+<sp/>pacman-&gt;<ref refid="structpacman__type_1a7db8b62e64ae0eb828ef80d8708d7243" kindref="member">location</ref>.<ref refid="structcoords_1a6150e0515f7202e2fb518f7206ed97dc" kindref="member">x</ref>]<sp/>==<sp/><ref refid="data__structures_8h_1a7082fba706496a93330c168643a1ef30" kindref="member">SUPERCOIN</ref>)</highlight></codeline>
-<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>map-&gt;<ref refid="structmap__data_1a9818b17c7d2a7b36901aa275b76c39d0" kindref="member">board_arr</ref>[map-&gt;<ref refid="structmap__data_1a2474a5474cbff19523a51eb1de01cda4" kindref="member">width</ref><sp/>*<sp/>(pacman-&gt;<ref refid="structpacman__type_1a7db8b62e64ae0eb828ef80d8708d7243" kindref="member">location</ref>.<ref refid="structcoords_1a0a2f84ed7838f07779ae24c5a9086d33" kindref="member">y</ref>)<sp/>+<sp/>pacman-&gt;<ref refid="structpacman__type_1a7db8b62e64ae0eb828ef80d8708d7243" kindref="member">location</ref>.<ref refid="structcoords_1a6150e0515f7202e2fb518f7206ed97dc" kindref="member">x</ref>]<sp/>=<sp/><ref refid="data__structures_8h_1adf6a8131152ce4fd04f96338c00f548b" kindref="member">PASSAGE</ref>;</highlight></codeline>
-<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ret<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ret;</highlight></codeline>
-<codeline lineno="85"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="86"><highlight class="normal"></highlight></codeline>
-<codeline lineno="87"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="pacman_8c_1a3c07103dca2f3a04c80872d8603b5d45" kindref="member">pacman_can_move</ref>(<ref refid="structpacman__type" kindref="compound">pacman_type</ref><sp/>*pacman,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>dirx,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>diry,<sp/><ref refid="structmap__data" kindref="compound">map_data</ref><sp/>*map)</highlight></codeline>
-<codeline lineno="88"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>pixel<sp/>=<sp/>map-&gt;<ref refid="structmap__data_1a9818b17c7d2a7b36901aa275b76c39d0" kindref="member">board_arr</ref>[map-&gt;<ref refid="structmap__data_1a2474a5474cbff19523a51eb1de01cda4" kindref="member">width</ref><sp/>*<sp/>(pacman-&gt;<ref refid="structpacman__type_1a7db8b62e64ae0eb828ef80d8708d7243" kindref="member">location</ref>.<ref refid="structcoords_1a0a2f84ed7838f07779ae24c5a9086d33" kindref="member">y</ref><sp/>+<sp/>diry)<sp/>+<sp/>pacman-&gt;<ref refid="structpacman__type_1a7db8b62e64ae0eb828ef80d8708d7243" kindref="member">location</ref>.<ref refid="structcoords_1a6150e0515f7202e2fb518f7206ed97dc" kindref="member">x</ref><sp/>+<sp/>dirx];</highlight></codeline>
-<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/>return<sp/>(pixel<sp/>!=<sp/><ref refid="data__structures_8h_1a48f6457243719e7031768d4100741159" kindref="member">BLOCKED</ref>);</highlight></codeline>
-<codeline lineno="91"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="92"><highlight class="normal"></highlight></codeline>
-<codeline lineno="93"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="pacman_8c_1a9b14d2c075ef0768af01d694a839cd38" kindref="member">draw_pacman</ref>(<ref refid="structpacman__type" kindref="compound">pacman_type</ref><sp/>*pacman,<sp/><ref refid="structfb__data" kindref="compound">fb_data</ref><sp/>*fb,<sp/><ref refid="structmap__data" kindref="compound">map_data</ref><sp/>*map)</highlight></codeline>
-<codeline lineno="94"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//draw<sp/>pacman</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structcoords" kindref="compound">coords</ref><sp/>location<sp/>=<sp/>pacman-&gt;<ref refid="structpacman__type_1a7db8b62e64ae0eb828ef80d8708d7243" kindref="member">location</ref>;</highlight></codeline>
-<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((pacman-&gt;<ref refid="structpacman__type_1a1020ed5ecf8ec6fb9721615347ecd8a0" kindref="member">direction</ref>.<ref refid="structcoords_1a6150e0515f7202e2fb518f7206ed97dc" kindref="member">x</ref><sp/>==<sp/>-1)<sp/>&amp;&amp;<sp/>(pacman-&gt;<ref refid="structpacman__type_1a1020ed5ecf8ec6fb9721615347ecd8a0" kindref="member">direction</ref>.<ref refid="structcoords_1a0a2f84ed7838f07779ae24c5a9086d33" kindref="member">y</ref><sp/>==<sp/>0))</highlight></codeline>
-<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="draw__shapes_8c_1a530d11a612c21d12b57752d57d91a3ff" kindref="member">draw_pacman_dir</ref>(fb,<sp/>location.<ref refid="structcoords_1a6150e0515f7202e2fb518f7206ed97dc" kindref="member">x</ref>,<sp/>location.<ref refid="structcoords_1a0a2f84ed7838f07779ae24c5a9086d33" kindref="member">y</ref>,<sp/>map-&gt;<ref refid="structmap__data_1aa357cd36ef175f727e27f1da960dddaf" kindref="member">max_object_diameter</ref><sp/>/<sp/>2,<sp/><ref refid="config_8h_1aeb40fd013a03d54f103aa9feef0f35ac" kindref="member">PACMAN_COLOR</ref>,<sp/><ref refid="config_8h_1a437ef08681e7210d6678427030446a54" kindref="member">LEFT</ref>);</highlight></codeline>
-<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((pacman-&gt;<ref refid="structpacman__type_1a1020ed5ecf8ec6fb9721615347ecd8a0" kindref="member">direction</ref>.<ref refid="structcoords_1a6150e0515f7202e2fb518f7206ed97dc" kindref="member">x</ref><sp/>==<sp/>1)<sp/>&amp;&amp;<sp/>(pacman-&gt;<ref refid="structpacman__type_1a1020ed5ecf8ec6fb9721615347ecd8a0" kindref="member">direction</ref>.<ref refid="structcoords_1a0a2f84ed7838f07779ae24c5a9086d33" kindref="member">y</ref><sp/>==<sp/>0))</highlight></codeline>
-<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="draw__shapes_8c_1a530d11a612c21d12b57752d57d91a3ff" kindref="member">draw_pacman_dir</ref>(fb,<sp/>location.<ref refid="structcoords_1a6150e0515f7202e2fb518f7206ed97dc" kindref="member">x</ref>,<sp/>location.<ref refid="structcoords_1a0a2f84ed7838f07779ae24c5a9086d33" kindref="member">y</ref>,<sp/>map-&gt;<ref refid="structmap__data_1aa357cd36ef175f727e27f1da960dddaf" kindref="member">max_object_diameter</ref><sp/>/<sp/>2,<sp/><ref refid="config_8h_1aeb40fd013a03d54f103aa9feef0f35ac" kindref="member">PACMAN_COLOR</ref>,<sp/><ref refid="config_8h_1a80fb826a684cf3f0d306b22aa100ddac" kindref="member">RIGHT</ref>);</highlight></codeline>
-<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((pacman-&gt;<ref refid="structpacman__type_1a1020ed5ecf8ec6fb9721615347ecd8a0" kindref="member">direction</ref>.<ref refid="structcoords_1a6150e0515f7202e2fb518f7206ed97dc" kindref="member">x</ref><sp/>==<sp/>0)<sp/>&amp;&amp;<sp/>(pacman-&gt;<ref refid="structpacman__type_1a1020ed5ecf8ec6fb9721615347ecd8a0" kindref="member">direction</ref>.<ref refid="structcoords_1a0a2f84ed7838f07779ae24c5a9086d33" kindref="member">y</ref><sp/>==<sp/>1))</highlight></codeline>
-<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="draw__shapes_8c_1a530d11a612c21d12b57752d57d91a3ff" kindref="member">draw_pacman_dir</ref>(fb,<sp/>location.<ref refid="structcoords_1a6150e0515f7202e2fb518f7206ed97dc" kindref="member">x</ref>,<sp/>location.<ref refid="structcoords_1a0a2f84ed7838f07779ae24c5a9086d33" kindref="member">y</ref>,<sp/>map-&gt;<ref refid="structmap__data_1aa357cd36ef175f727e27f1da960dddaf" kindref="member">max_object_diameter</ref><sp/>/<sp/>2,<sp/><ref refid="config_8h_1aeb40fd013a03d54f103aa9feef0f35ac" kindref="member">PACMAN_COLOR</ref>,<sp/><ref refid="config_8h_1a74eac3295cbd6c353b8e0db8c37c8c6b" kindref="member">DWN</ref>);</highlight></codeline>
-<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((pacman-&gt;<ref refid="structpacman__type_1a1020ed5ecf8ec6fb9721615347ecd8a0" kindref="member">direction</ref>.<ref refid="structcoords_1a6150e0515f7202e2fb518f7206ed97dc" kindref="member">x</ref><sp/>==<sp/>0)<sp/>&amp;&amp;<sp/>(pacman-&gt;<ref refid="structpacman__type_1a1020ed5ecf8ec6fb9721615347ecd8a0" kindref="member">direction</ref>.<ref refid="structcoords_1a0a2f84ed7838f07779ae24c5a9086d33" kindref="member">y</ref><sp/>==<sp/>-1))</highlight></codeline>
-<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="draw__shapes_8c_1a530d11a612c21d12b57752d57d91a3ff" kindref="member">draw_pacman_dir</ref>(fb,<sp/>location.<ref refid="structcoords_1a6150e0515f7202e2fb518f7206ed97dc" kindref="member">x</ref>,<sp/>location.<ref refid="structcoords_1a0a2f84ed7838f07779ae24c5a9086d33" kindref="member">y</ref>,<sp/>map-&gt;<ref refid="structmap__data_1aa357cd36ef175f727e27f1da960dddaf" kindref="member">max_object_diameter</ref><sp/>/<sp/>2,<sp/><ref refid="config_8h_1aeb40fd013a03d54f103aa9feef0f35ac" kindref="member">PACMAN_COLOR</ref>,<sp/><ref refid="config_8h_1a1965eaca47dbf3f87acdafc2208f04eb" kindref="member">UP</ref>);</highlight></codeline>
-<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight><highlight class="keywordflow">else</highlight><highlight class="normal">{</highlight></codeline>
-<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="draw__shapes_8c_1a44ae4e3d2c0aa9c951284b6414ae6527" kindref="member">draw_circle</ref>(fb,<sp/>location.<ref refid="structcoords_1a6150e0515f7202e2fb518f7206ed97dc" kindref="member">x</ref>,<sp/>location.<ref refid="structcoords_1a0a2f84ed7838f07779ae24c5a9086d33" kindref="member">y</ref>,<sp/>map-&gt;<ref refid="structmap__data_1aa357cd36ef175f727e27f1da960dddaf" kindref="member">max_object_diameter</ref><sp/>/<sp/>2,<sp/><ref refid="config_8h_1aeb40fd013a03d54f103aa9feef0f35ac" kindref="member">PACMAN_COLOR</ref>);</highlight></codeline>
-<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="115"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="pacman_8h" kindref="compound">pacman.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="draw__shapes_8h" kindref="compound">draw_shapes.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="map__from__template_8h" kindref="compound">map_from_template.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="config_8h" kindref="compound">config.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdbool.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><ref refid="structpacman__type" kindref="compound">pacman_type</ref><sp/><ref refid="pacman_8c_1a6049d528917cb950659f2972d92cb432" kindref="member">create_pacman</ref>(<ref refid="structmap__data" kindref="compound">map_data</ref><sp/>*map,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>lives,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>score)</highlight></codeline>
+<codeline lineno="19"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structpacman__type" kindref="compound">pacman_type</ref><sp/>pacman;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>pacman.<ref refid="structpacman__type_1ac1d68ef9a5dd304c5015e07af7f2bb19" kindref="member">lives</ref><sp/>=<sp/>lives;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>pacman.<ref refid="structpacman__type_1a3563efe256b8edd9b91e0d3d5dc58f7a" kindref="member">maxlives</ref><sp/>=<sp/>lives;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>pacman.<ref refid="structpacman__type_1a7db8b62e64ae0eb828ef80d8708d7243" kindref="member">location</ref><sp/>=<sp/>map-&gt;<ref refid="structmap__data_1a726c15baf3d3606bf35bba9e5e32b2bc" kindref="member">pacman_spawn</ref>;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structcoords" kindref="compound">coords</ref><sp/>direction<sp/>=<sp/>{0,<sp/>0};</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>pacman.<ref refid="structpacman__type_1a1020ed5ecf8ec6fb9721615347ecd8a0" kindref="member">direction</ref><sp/>=<sp/>direction;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>pacman.<ref refid="structpacman__type_1aef160b7437d94056f1dc59646cd5b87d" kindref="member">score</ref><sp/>=<sp/>score;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>pacman;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="pacman_8c_1ae1b36e370a9b73a0eed9ad43e53db1f0" kindref="member">pacman_move</ref>(<ref refid="structpacman__type" kindref="compound">pacman_type</ref><sp/>*pacman,<sp/><ref refid="structmap__data" kindref="compound">map_data</ref><sp/>*map)</highlight></codeline>
+<codeline lineno="31"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>ret<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>find<sp/>out<sp/>if<sp/>some<sp/>important<sp/>key<sp/>has<sp/>been<sp/>pressed</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>pressed;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>pthread_mutex_lock(&amp;<ref refid="apoman_8c_1a2680f9fe5653a596c7e779b838180fdc" kindref="member">mtx</ref>);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>pressed<sp/>=<sp/><ref refid="apoman_8c_1a6cf0bd745eade6d2d8304b9b72930ab4" kindref="member">read_thread_data</ref>.<ref refid="structread__thread__data__type_1a41eafad1f226f50088de23256b17f4c7" kindref="member">last_read</ref>;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>pthread_mutex_unlock(&amp;<ref refid="apoman_8c_1a2680f9fe5653a596c7e779b838180fdc" kindref="member">mtx</ref>);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((pressed<sp/>==<sp/><ref refid="config_8h_1afa086fc916a81e7fd348ec00cf786916" kindref="member">KEY_UP</ref>)<sp/>&amp;&amp;<sp/>(<ref refid="pacman_8c_1a3c07103dca2f3a04c80872d8603b5d45" kindref="member">pacman_can_move</ref>(pacman,<sp/>0,<sp/>-1,<sp/>map)))</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pacman-&gt;<ref refid="structpacman__type_1a1020ed5ecf8ec6fb9721615347ecd8a0" kindref="member">direction</ref>.<ref refid="structcoords_1a6150e0515f7202e2fb518f7206ed97dc" kindref="member">x</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pacman-&gt;<ref refid="structpacman__type_1a1020ed5ecf8ec6fb9721615347ecd8a0" kindref="member">direction</ref>.<ref refid="structcoords_1a0a2f84ed7838f07779ae24c5a9086d33" kindref="member">y</ref><sp/>=<sp/>-1;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((pressed<sp/>==<sp/><ref refid="config_8h_1a0ed3c136fbc69d8a30e0006bd4f3d6db" kindref="member">KEY_DWN</ref>)<sp/>&amp;&amp;<sp/>(<ref refid="pacman_8c_1a3c07103dca2f3a04c80872d8603b5d45" kindref="member">pacman_can_move</ref>(pacman,<sp/>0,<sp/>1,<sp/>map)))</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pacman-&gt;<ref refid="structpacman__type_1a1020ed5ecf8ec6fb9721615347ecd8a0" kindref="member">direction</ref>.<ref refid="structcoords_1a6150e0515f7202e2fb518f7206ed97dc" kindref="member">x</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pacman-&gt;<ref refid="structpacman__type_1a1020ed5ecf8ec6fb9721615347ecd8a0" kindref="member">direction</ref>.<ref refid="structcoords_1a0a2f84ed7838f07779ae24c5a9086d33" kindref="member">y</ref><sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((pressed<sp/>==<sp/><ref refid="config_8h_1af4d1b8a2912354646c74cf36c69f8223" kindref="member">KEY_LEFT</ref>)<sp/>&amp;&amp;<sp/>(<ref refid="pacman_8c_1a3c07103dca2f3a04c80872d8603b5d45" kindref="member">pacman_can_move</ref>(pacman,<sp/>-1,<sp/>0,<sp/>map)))</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pacman-&gt;<ref refid="structpacman__type_1a1020ed5ecf8ec6fb9721615347ecd8a0" kindref="member">direction</ref>.<ref refid="structcoords_1a6150e0515f7202e2fb518f7206ed97dc" kindref="member">x</ref><sp/>=<sp/>-1;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pacman-&gt;<ref refid="structpacman__type_1a1020ed5ecf8ec6fb9721615347ecd8a0" kindref="member">direction</ref>.<ref refid="structcoords_1a0a2f84ed7838f07779ae24c5a9086d33" kindref="member">y</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((pressed<sp/>==<sp/><ref refid="config_8h_1a004194639b9ad76cea01d9e93716d4d6" kindref="member">KEY_RIGHT</ref>)<sp/>&amp;&amp;<sp/>(<ref refid="pacman_8c_1a3c07103dca2f3a04c80872d8603b5d45" kindref="member">pacman_can_move</ref>(pacman,<sp/>1,<sp/>0,<sp/>map)))</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pacman-&gt;<ref refid="structpacman__type_1a1020ed5ecf8ec6fb9721615347ecd8a0" kindref="member">direction</ref>.<ref refid="structcoords_1a6150e0515f7202e2fb518f7206ed97dc" kindref="member">x</ref><sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pacman-&gt;<ref refid="structpacman__type_1a1020ed5ecf8ec6fb9721615347ecd8a0" kindref="member">direction</ref>.<ref refid="structcoords_1a0a2f84ed7838f07779ae24c5a9086d33" kindref="member">y</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="pacman_8c_1a3c07103dca2f3a04c80872d8603b5d45" kindref="member">pacman_can_move</ref>(pacman,<sp/>pacman-&gt;<ref refid="structpacman__type_1a1020ed5ecf8ec6fb9721615347ecd8a0" kindref="member">direction</ref>.<ref refid="structcoords_1a6150e0515f7202e2fb518f7206ed97dc" kindref="member">x</ref>,<sp/>pacman-&gt;<ref refid="structpacman__type_1a1020ed5ecf8ec6fb9721615347ecd8a0" kindref="member">direction</ref>.<ref refid="structcoords_1a0a2f84ed7838f07779ae24c5a9086d33" kindref="member">y</ref>,<sp/>map))</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pacman-&gt;<ref refid="structpacman__type_1a7db8b62e64ae0eb828ef80d8708d7243" kindref="member">location</ref>.<ref refid="structcoords_1a6150e0515f7202e2fb518f7206ed97dc" kindref="member">x</ref><sp/>=<sp/>pacman-&gt;<ref refid="structpacman__type_1a7db8b62e64ae0eb828ef80d8708d7243" kindref="member">location</ref>.<ref refid="structcoords_1a6150e0515f7202e2fb518f7206ed97dc" kindref="member">x</ref><sp/>+<sp/>pacman-&gt;<ref refid="structpacman__type_1a1020ed5ecf8ec6fb9721615347ecd8a0" kindref="member">direction</ref>.<ref refid="structcoords_1a6150e0515f7202e2fb518f7206ed97dc" kindref="member">x</ref>;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pacman-&gt;<ref refid="structpacman__type_1a7db8b62e64ae0eb828ef80d8708d7243" kindref="member">location</ref>.<ref refid="structcoords_1a0a2f84ed7838f07779ae24c5a9086d33" kindref="member">y</ref><sp/>=<sp/>pacman-&gt;<ref refid="structpacman__type_1a7db8b62e64ae0eb828ef80d8708d7243" kindref="member">location</ref>.<ref refid="structcoords_1a0a2f84ed7838f07779ae24c5a9086d33" kindref="member">y</ref><sp/>+<sp/>pacman-&gt;<ref refid="structpacman__type_1a1020ed5ecf8ec6fb9721615347ecd8a0" kindref="member">direction</ref>.<ref refid="structcoords_1a0a2f84ed7838f07779ae24c5a9086d33" kindref="member">y</ref>;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(map-&gt;<ref refid="structmap__data_1a9818b17c7d2a7b36901aa275b76c39d0" kindref="member">board_arr</ref>[map-&gt;<ref refid="structmap__data_1a2474a5474cbff19523a51eb1de01cda4" kindref="member">width</ref><sp/>*<sp/>(pacman-&gt;<ref refid="structpacman__type_1a7db8b62e64ae0eb828ef80d8708d7243" kindref="member">location</ref>.<ref refid="structcoords_1a0a2f84ed7838f07779ae24c5a9086d33" kindref="member">y</ref>)<sp/>+<sp/>pacman-&gt;<ref refid="structpacman__type_1a7db8b62e64ae0eb828ef80d8708d7243" kindref="member">location</ref>.<ref refid="structcoords_1a6150e0515f7202e2fb518f7206ed97dc" kindref="member">x</ref>]<sp/>==<sp/><ref refid="data__structures_8h_1a520ca3e8e98573e7774965b2c69d2843" kindref="member">COIN</ref>)</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>map-&gt;<ref refid="structmap__data_1a9818b17c7d2a7b36901aa275b76c39d0" kindref="member">board_arr</ref>[map-&gt;<ref refid="structmap__data_1a2474a5474cbff19523a51eb1de01cda4" kindref="member">width</ref><sp/>*<sp/>(pacman-&gt;<ref refid="structpacman__type_1a7db8b62e64ae0eb828ef80d8708d7243" kindref="member">location</ref>.<ref refid="structcoords_1a0a2f84ed7838f07779ae24c5a9086d33" kindref="member">y</ref>)<sp/>+<sp/>pacman-&gt;<ref refid="structpacman__type_1a7db8b62e64ae0eb828ef80d8708d7243" kindref="member">location</ref>.<ref refid="structcoords_1a6150e0515f7202e2fb518f7206ed97dc" kindref="member">x</ref>]<sp/>=<sp/><ref refid="data__structures_8h_1adf6a8131152ce4fd04f96338c00f548b" kindref="member">PASSAGE</ref>;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pacman-&gt;<ref refid="structpacman__type_1aef160b7437d94056f1dc59646cd5b87d" kindref="member">score</ref><sp/>=<sp/>pacman-&gt;<ref refid="structpacman__type_1aef160b7437d94056f1dc59646cd5b87d" kindref="member">score</ref><sp/>+<sp/><ref refid="config_8h_1af4c1cef02adf693d8d3761f8b906ad3a" kindref="member">COIN_SCORE_INCECREASE</ref>;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(map-&gt;<ref refid="structmap__data_1a9818b17c7d2a7b36901aa275b76c39d0" kindref="member">board_arr</ref>[map-&gt;<ref refid="structmap__data_1a2474a5474cbff19523a51eb1de01cda4" kindref="member">width</ref><sp/>*<sp/>(pacman-&gt;<ref refid="structpacman__type_1a7db8b62e64ae0eb828ef80d8708d7243" kindref="member">location</ref>.<ref refid="structcoords_1a0a2f84ed7838f07779ae24c5a9086d33" kindref="member">y</ref>)<sp/>+<sp/>pacman-&gt;<ref refid="structpacman__type_1a7db8b62e64ae0eb828ef80d8708d7243" kindref="member">location</ref>.<ref refid="structcoords_1a6150e0515f7202e2fb518f7206ed97dc" kindref="member">x</ref>]<sp/>==<sp/><ref refid="data__structures_8h_1a7082fba706496a93330c168643a1ef30" kindref="member">SUPERCOIN</ref>)</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>map-&gt;<ref refid="structmap__data_1a9818b17c7d2a7b36901aa275b76c39d0" kindref="member">board_arr</ref>[map-&gt;<ref refid="structmap__data_1a2474a5474cbff19523a51eb1de01cda4" kindref="member">width</ref><sp/>*<sp/>(pacman-&gt;<ref refid="structpacman__type_1a7db8b62e64ae0eb828ef80d8708d7243" kindref="member">location</ref>.<ref refid="structcoords_1a0a2f84ed7838f07779ae24c5a9086d33" kindref="member">y</ref>)<sp/>+<sp/>pacman-&gt;<ref refid="structpacman__type_1a7db8b62e64ae0eb828ef80d8708d7243" kindref="member">location</ref>.<ref refid="structcoords_1a6150e0515f7202e2fb518f7206ed97dc" kindref="member">x</ref>]<sp/>=<sp/><ref refid="data__structures_8h_1adf6a8131152ce4fd04f96338c00f548b" kindref="member">PASSAGE</ref>;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ret<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ret;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="pacman_8c_1a3c07103dca2f3a04c80872d8603b5d45" kindref="member">pacman_can_move</ref>(<ref refid="structpacman__type" kindref="compound">pacman_type</ref><sp/>*pacman,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>dirx,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>diry,<sp/><ref refid="structmap__data" kindref="compound">map_data</ref><sp/>*map)</highlight></codeline>
+<codeline lineno="77"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>pixel<sp/>=<sp/>map-&gt;<ref refid="structmap__data_1a9818b17c7d2a7b36901aa275b76c39d0" kindref="member">board_arr</ref>[map-&gt;<ref refid="structmap__data_1a2474a5474cbff19523a51eb1de01cda4" kindref="member">width</ref><sp/>*<sp/>(pacman-&gt;<ref refid="structpacman__type_1a7db8b62e64ae0eb828ef80d8708d7243" kindref="member">location</ref>.<ref refid="structcoords_1a0a2f84ed7838f07779ae24c5a9086d33" kindref="member">y</ref><sp/>+<sp/>diry)<sp/>+<sp/>pacman-&gt;<ref refid="structpacman__type_1a7db8b62e64ae0eb828ef80d8708d7243" kindref="member">location</ref>.<ref refid="structcoords_1a6150e0515f7202e2fb518f7206ed97dc" kindref="member">x</ref><sp/>+<sp/>dirx];</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>return<sp/>(pixel<sp/>!=<sp/><ref refid="data__structures_8h_1a48f6457243719e7031768d4100741159" kindref="member">BLOCKED</ref>);</highlight></codeline>
+<codeline lineno="80"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="pacman_8c_1a9b14d2c075ef0768af01d694a839cd38" kindref="member">draw_pacman</ref>(<ref refid="structpacman__type" kindref="compound">pacman_type</ref><sp/>*pacman,<sp/><ref refid="structfb__data" kindref="compound">fb_data</ref><sp/>*fb,<sp/><ref refid="structmap__data" kindref="compound">map_data</ref><sp/>*map)</highlight></codeline>
+<codeline lineno="83"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>draw<sp/>pacman</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structcoords" kindref="compound">coords</ref><sp/>location<sp/>=<sp/>pacman-&gt;<ref refid="structpacman__type_1a7db8b62e64ae0eb828ef80d8708d7243" kindref="member">location</ref>;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((pacman-&gt;<ref refid="structpacman__type_1a1020ed5ecf8ec6fb9721615347ecd8a0" kindref="member">direction</ref>.<ref refid="structcoords_1a6150e0515f7202e2fb518f7206ed97dc" kindref="member">x</ref><sp/>==<sp/>-1)<sp/>&amp;&amp;<sp/>(pacman-&gt;<ref refid="structpacman__type_1a1020ed5ecf8ec6fb9721615347ecd8a0" kindref="member">direction</ref>.<ref refid="structcoords_1a0a2f84ed7838f07779ae24c5a9086d33" kindref="member">y</ref><sp/>==<sp/>0))</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="draw__shapes_8c_1a530d11a612c21d12b57752d57d91a3ff" kindref="member">draw_pacman_dir</ref>(fb,<sp/>location.<ref refid="structcoords_1a6150e0515f7202e2fb518f7206ed97dc" kindref="member">x</ref>,<sp/>location.<ref refid="structcoords_1a0a2f84ed7838f07779ae24c5a9086d33" kindref="member">y</ref>,<sp/>map-&gt;<ref refid="structmap__data_1aa357cd36ef175f727e27f1da960dddaf" kindref="member">max_object_diameter</ref><sp/>/<sp/>2,<sp/><ref refid="config_8h_1aeb40fd013a03d54f103aa9feef0f35ac" kindref="member">PACMAN_COLOR</ref>,<sp/><ref refid="config_8h_1a437ef08681e7210d6678427030446a54" kindref="member">LEFT</ref>);</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((pacman-&gt;<ref refid="structpacman__type_1a1020ed5ecf8ec6fb9721615347ecd8a0" kindref="member">direction</ref>.<ref refid="structcoords_1a6150e0515f7202e2fb518f7206ed97dc" kindref="member">x</ref><sp/>==<sp/>1)<sp/>&amp;&amp;<sp/>(pacman-&gt;<ref refid="structpacman__type_1a1020ed5ecf8ec6fb9721615347ecd8a0" kindref="member">direction</ref>.<ref refid="structcoords_1a0a2f84ed7838f07779ae24c5a9086d33" kindref="member">y</ref><sp/>==<sp/>0))</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="draw__shapes_8c_1a530d11a612c21d12b57752d57d91a3ff" kindref="member">draw_pacman_dir</ref>(fb,<sp/>location.<ref refid="structcoords_1a6150e0515f7202e2fb518f7206ed97dc" kindref="member">x</ref>,<sp/>location.<ref refid="structcoords_1a0a2f84ed7838f07779ae24c5a9086d33" kindref="member">y</ref>,<sp/>map-&gt;<ref refid="structmap__data_1aa357cd36ef175f727e27f1da960dddaf" kindref="member">max_object_diameter</ref><sp/>/<sp/>2,<sp/><ref refid="config_8h_1aeb40fd013a03d54f103aa9feef0f35ac" kindref="member">PACMAN_COLOR</ref>,<sp/><ref refid="config_8h_1a80fb826a684cf3f0d306b22aa100ddac" kindref="member">RIGHT</ref>);</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((pacman-&gt;<ref refid="structpacman__type_1a1020ed5ecf8ec6fb9721615347ecd8a0" kindref="member">direction</ref>.<ref refid="structcoords_1a6150e0515f7202e2fb518f7206ed97dc" kindref="member">x</ref><sp/>==<sp/>0)<sp/>&amp;&amp;<sp/>(pacman-&gt;<ref refid="structpacman__type_1a1020ed5ecf8ec6fb9721615347ecd8a0" kindref="member">direction</ref>.<ref refid="structcoords_1a0a2f84ed7838f07779ae24c5a9086d33" kindref="member">y</ref><sp/>==<sp/>1))</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="draw__shapes_8c_1a530d11a612c21d12b57752d57d91a3ff" kindref="member">draw_pacman_dir</ref>(fb,<sp/>location.<ref refid="structcoords_1a6150e0515f7202e2fb518f7206ed97dc" kindref="member">x</ref>,<sp/>location.<ref refid="structcoords_1a0a2f84ed7838f07779ae24c5a9086d33" kindref="member">y</ref>,<sp/>map-&gt;<ref refid="structmap__data_1aa357cd36ef175f727e27f1da960dddaf" kindref="member">max_object_diameter</ref><sp/>/<sp/>2,<sp/><ref refid="config_8h_1aeb40fd013a03d54f103aa9feef0f35ac" kindref="member">PACMAN_COLOR</ref>,<sp/><ref refid="config_8h_1a74eac3295cbd6c353b8e0db8c37c8c6b" kindref="member">DWN</ref>);</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((pacman-&gt;<ref refid="structpacman__type_1a1020ed5ecf8ec6fb9721615347ecd8a0" kindref="member">direction</ref>.<ref refid="structcoords_1a6150e0515f7202e2fb518f7206ed97dc" kindref="member">x</ref><sp/>==<sp/>0)<sp/>&amp;&amp;<sp/>(pacman-&gt;<ref refid="structpacman__type_1a1020ed5ecf8ec6fb9721615347ecd8a0" kindref="member">direction</ref>.<ref refid="structcoords_1a0a2f84ed7838f07779ae24c5a9086d33" kindref="member">y</ref><sp/>==<sp/>-1))</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="draw__shapes_8c_1a530d11a612c21d12b57752d57d91a3ff" kindref="member">draw_pacman_dir</ref>(fb,<sp/>location.<ref refid="structcoords_1a6150e0515f7202e2fb518f7206ed97dc" kindref="member">x</ref>,<sp/>location.<ref refid="structcoords_1a0a2f84ed7838f07779ae24c5a9086d33" kindref="member">y</ref>,<sp/>map-&gt;<ref refid="structmap__data_1aa357cd36ef175f727e27f1da960dddaf" kindref="member">max_object_diameter</ref><sp/>/<sp/>2,<sp/><ref refid="config_8h_1aeb40fd013a03d54f103aa9feef0f35ac" kindref="member">PACMAN_COLOR</ref>,<sp/><ref refid="config_8h_1a1965eaca47dbf3f87acdafc2208f04eb" kindref="member">UP</ref>);</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="draw__shapes_8c_1a44ae4e3d2c0aa9c951284b6414ae6527" kindref="member">draw_circle</ref>(fb,<sp/>location.<ref refid="structcoords_1a6150e0515f7202e2fb518f7206ed97dc" kindref="member">x</ref>,<sp/>location.<ref refid="structcoords_1a0a2f84ed7838f07779ae24c5a9086d33" kindref="member">y</ref>,<sp/>map-&gt;<ref refid="structmap__data_1aa357cd36ef175f727e27f1da960dddaf" kindref="member">max_object_diameter</ref><sp/>/<sp/>2,<sp/><ref refid="config_8h_1aeb40fd013a03d54f103aa9feef0f35ac" kindref="member">PACMAN_COLOR</ref>);</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="106"><highlight class="normal">}</highlight></codeline>
     </programlisting>
     <location file="C:/Users/Petr/Documents/apo_semestralka/pacman.c"/>
   </compounddef>

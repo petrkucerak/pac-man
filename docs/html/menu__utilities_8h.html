@@ -89,6 +89,9 @@ $(document).ready(function(){initNavTree('menu__utilities_8h.html',''); initResi
 <div class="title">menu_utilities.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Module for drawing menu, setting game settings and starting the game.  
+<a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;stdbool.h&gt;</code><br />
 <code>#include &quot;<a class="el" href="data__structures_8h_source.html">data_structures.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="font__types_8h_source.html">font_types.h</a>&quot;</code><br />
@@ -98,17 +101,28 @@ $(document).ready(function(){initNavTree('menu__utilities_8h.html',''); initResi
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a2313600342d821e8af28af3e2a1d3847"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="menu__utilities_8h.html#a2313600342d821e8af28af3e2a1d3847">run_init_game_menu</a> (<a class="el" href="structfb__data.html">fb_data</a> *frame_buff, unsigned char *lcd_mem_base, <a class="el" href="structfont__descriptor__t.html">font_descriptor_t</a> *font, <a class="el" href="structperipherals__data__t.html">peripherals_data_t</a> peripherals)</td></tr>
+<tr class="memdesc:a2313600342d821e8af28af3e2a1d3847"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calls other menu functions which set the game parameters or runs the game if user pressed the s key. Quits program if user pressed the q key.  <a href="menu__utilities_8h.html#a2313600342d821e8af28af3e2a1d3847">More...</a><br /></td></tr>
 <tr class="separator:a2313600342d821e8af28af3e2a1d3847"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adfcc20271b3b85b0dd0bdc09d93f564d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="menu__utilities_8h.html#adfcc20271b3b85b0dd0bdc09d93f564d">draw_menu</a> (<a class="el" href="structfb__data.html">fb_data</a> *frame_buff, <a class="el" href="structfont__descriptor__t.html">font_descriptor_t</a> *font, <a class="el" href="structgame__init__data__t.html">game_init_data_t</a> game_data)</td></tr>
+<tr class="memdesc:adfcc20271b3b85b0dd0bdc09d93f564d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function to drow menu with settings to <a class="el" href="structfb__data.html" title="the buffer structure">fb_data</a>.  <a href="menu__utilities_8h.html#adfcc20271b3b85b0dd0bdc09d93f564d">More...</a><br /></td></tr>
 <tr class="separator:adfcc20271b3b85b0dd0bdc09d93f564d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a01d0cde60304117e2bff9acf5d65eb3b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structgame__init__data__t.html">game_init_data_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="menu__utilities_8h.html#a01d0cde60304117e2bff9acf5d65eb3b">sub_menu_lives</a> (<a class="el" href="structfb__data.html">fb_data</a> *frame_buff, unsigned char *lcd_mem_base, <a class="el" href="structfont__descriptor__t.html">font_descriptor_t</a> *font, <a class="el" href="structgame__init__data__t.html">game_init_data_t</a> game_data)</td></tr>
+<tr class="memdesc:a01d0cde60304117e2bff9acf5d65eb3b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Displays current amount of lives and lets the user change.  <a href="menu__utilities_8h.html#a01d0cde60304117e2bff9acf5d65eb3b">More...</a><br /></td></tr>
 <tr class="separator:a01d0cde60304117e2bff9acf5d65eb3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7f17020b07cb4aa737c81d44893047ae"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structgame__init__data__t.html">game_init_data_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="menu__utilities_8h.html#a7f17020b07cb4aa737c81d44893047ae">sub_menu_map</a> (<a class="el" href="structfb__data.html">fb_data</a> *frame_buff, unsigned char *lcd_mem_base, <a class="el" href="structfont__descriptor__t.html">font_descriptor_t</a> *font, <a class="el" href="structgame__init__data__t.html">game_init_data_t</a> game_data)</td></tr>
+<tr class="memdesc:a7f17020b07cb4aa737c81d44893047ae"><td class="mdescLeft">&#160;</td><td class="mdescRight">Displays current map and lets the user change it.  <a href="menu__utilities_8h.html#a7f17020b07cb4aa737c81d44893047ae">More...</a><br /></td></tr>
 <tr class="separator:a7f17020b07cb4aa737c81d44893047ae"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac5815522d9b36c8dd08cbd65fb944d0c"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structgame__init__data__t.html">game_init_data_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="menu__utilities_8h.html#ac5815522d9b36c8dd08cbd65fb944d0c">sub_menu_ghosts</a> (<a class="el" href="structfb__data.html">fb_data</a> *frame_buff, unsigned char *lcd_mem_base, <a class="el" href="structfont__descriptor__t.html">font_descriptor_t</a> *font, <a class="el" href="structgame__init__data__t.html">game_init_data_t</a> game_data)</td></tr>
+<tr class="memdesc:ac5815522d9b36c8dd08cbd65fb944d0c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Displays current amount of ghosts and lets the user change.  <a href="menu__utilities_8h.html#ac5815522d9b36c8dd08cbd65fb944d0c">More...</a><br /></td></tr>
 <tr class="separator:ac5815522d9b36c8dd08cbd65fb944d0c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Module for drawing menu, setting game settings and starting the game. </p>
+<dl class="section author"><dt>Author</dt><dd>Petr Kucera (<a href="#" onclick="location.href='mai'+'lto:'+'kuc'+'er'+'p28'+'@f'+'el.'+'cv'+'ut.'+'cz'; return false;">kucer<span style="display: none;">.nosp@m.</span>p28@<span style="display: none;">.nosp@m.</span>fel.c<span style="display: none;">.nosp@m.</span>vut.<span style="display: none;">.nosp@m.</span>cz</a>) </dd></dl>
+<dl class="section version"><dt>Version</dt><dd>0.1 </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2021-05-04</dd></dl>
+<dl class="section copyright"><dt>Copyright</dt><dd>Copyright (c) 2021 </dd></dl>
+</div><h2 class="groupheader">Function Documentation</h2>
 <a id="adfcc20271b3b85b0dd0bdc09d93f564d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#adfcc20271b3b85b0dd0bdc09d93f564d">&#9670;&nbsp;</a></span>draw_menu()</h2>
 
@@ -140,7 +154,16 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>function to drow menu with settings to <a class="el" href="structfb__data.html" title="the buffer structure">fb_data</a> (for propagate changes need to render data from buffer) </p>
+
+<p>Function to drow menu with settings to <a class="el" href="structfb__data.html" title="the buffer structure">fb_data</a>. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">frame_buff</td><td></td></tr>
+    <tr><td class="paramname">font</td><td></td></tr>
+    <tr><td class="paramname">game_data</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -181,7 +204,17 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>function run menu for setting game paramaters </p>
+
+<p>Calls other menu functions which set the game parameters or runs the game if user pressed the s key. Quits program if user pressed the q key. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">frame_buff</td><td></td></tr>
+    <tr><td class="paramname">lcd_mem_base</td><td></td></tr>
+    <tr><td class="paramname">font</td><td></td></tr>
+    <tr><td class="paramname">peripherals</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -222,7 +255,18 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>function draw sub menu and update count of ghosts </p>
+
+<p>Displays current amount of ghosts and lets the user change. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">frame_buff</td><td></td></tr>
+    <tr><td class="paramname">lcd_mem_base</td><td></td></tr>
+    <tr><td class="paramname">font</td><td></td></tr>
+    <tr><td class="paramname">game_data</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="structgame__init__data__t.html" title="data necessary for game initialization">game_init_data_t</a> </dd></dl>
 
 </div>
 </div>
@@ -263,7 +307,18 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>function draw sub menu and update count of lives </p>
+
+<p>Displays current amount of lives and lets the user change. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">frame_buff</td><td></td></tr>
+    <tr><td class="paramname">lcd_mem_base</td><td></td></tr>
+    <tr><td class="paramname">font</td><td></td></tr>
+    <tr><td class="paramname">game_data</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="structgame__init__data__t.html" title="data necessary for game initialization">game_init_data_t</a> </dd></dl>
 
 </div>
 </div>
@@ -304,7 +359,18 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>function draw sub menu and update name of game map </p>
+
+<p>Displays current map and lets the user change it. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">frame_buff</td><td></td></tr>
+    <tr><td class="paramname">lcd_mem_base</td><td></td></tr>
+    <tr><td class="paramname">font</td><td></td></tr>
+    <tr><td class="paramname">game_data</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="structgame__init__data__t.html" title="data necessary for game initialization">game_init_data_t</a> </dd></dl>
 
 </div>
 </div>

@@ -1,5 +1,10 @@
 \hypertarget{game_8h}{}\doxysection{C\+:/\+Users/\+Petr/\+Documents/apo\+\_\+semestralka/game.h File Reference}
 \label{game_8h}\index{C:/Users/Petr/Documents/apo\_semestralka/game.h@{C:/Users/Petr/Documents/apo\_semestralka/game.h}}
+
+
+Module where the game is taking place.  
+
+
 {\ttfamily \#include \char`\"{}data\+\_\+structures.\+h\char`\"{}}\newline
 {\ttfamily \#include \char`\"{}pacman.\+h\char`\"{}}\newline
 {\ttfamily \#include \char`\"{}ghost.\+h\char`\"{}}\newline
@@ -7,16 +12,114 @@
 \begin{DoxyCompactItemize}
 \item 
 int \mbox{\hyperlink{game_8h_a72619e4d9b2b733c33327a53154c126b}{run\+\_\+game}} (\mbox{\hyperlink{structgame__init__data__t}{game\+\_\+init\+\_\+data\+\_\+t}} $\ast$game\+\_\+data, \mbox{\hyperlink{structperipherals__data__t}{peripherals\+\_\+data\+\_\+t}} $\ast$peripherals)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Initialises all necessary data structures and loops the game tick and refreshing screen while the player has not won, lost or pressed the q key. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{game_8h_af84e8ae88873f09731321e62e77a1d18}{led\+\_\+blink}} (unsigned char $\ast$led\+\_\+mem\+\_\+base, int scare\+\_\+countdown, int pacman\+\_\+score)
+\begin{DoxyCompactList}\small\item\em Internal functions for setting the color of RGB leds according to the game state. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{game_8h_ac1ff0112ff0bb8c1a4d67cd18dc3eb3c}{pause}} (\mbox{\hyperlink{structfb__data}{fb\+\_\+data}} $\ast$fb, \mbox{\hyperlink{structperipherals__data__t}{peripherals\+\_\+data\+\_\+t}} $\ast$peripherals)
+\begin{DoxyCompactList}\small\item\em displays the pause message and waits for user to press the pause of quit key \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{game_8h_ac055e6ae3ef32e12a7c56e62bae12db3}{game\+\_\+tick}} (\mbox{\hyperlink{structmap__data}{map\+\_\+data}} $\ast$map, \mbox{\hyperlink{structpacman__type}{pacman\+\_\+type}} $\ast$pacman, \mbox{\hyperlink{structghost__type}{ghost\+\_\+type}} $\ast$ghost\+\_\+arr, int num\+\_\+ghosts, int $\ast$scare)
+\begin{DoxyCompactList}\small\item\em moves pacman and each ghost one step, checking for collisions and user input \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Module where the game is taking place. 
+
+\begin{DoxyAuthor}{Author}
+Lukas Nejezchleb (\href{mailto:nejezluk@fel.cvut.cz}{\texttt{ nejezluk@fel.\+cvut.\+cz}}), Petr Kucera (\href{mailto:kucerp28@fel.cvut.cz}{\texttt{ kucerp28@fel.\+cvut.\+cz}}) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2021-\/05-\/04
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2021 
+\end{DoxyCopyright}
 
 
 \doxysubsection{Function Documentation}
+\mbox{\Hypertarget{game_8h_ac055e6ae3ef32e12a7c56e62bae12db3}\label{game_8h_ac055e6ae3ef32e12a7c56e62bae12db3}} 
+\index{game.h@{game.h}!game\_tick@{game\_tick}}
+\index{game\_tick@{game\_tick}!game.h@{game.h}}
+\doxysubsubsection{\texorpdfstring{game\_tick()}{game\_tick()}}
+{\footnotesize\ttfamily bool game\+\_\+tick (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structmap__data}{map\+\_\+data}} $\ast$}]{map,  }\item[{\mbox{\hyperlink{structpacman__type}{pacman\+\_\+type}} $\ast$}]{pacman,  }\item[{\mbox{\hyperlink{structghost__type}{ghost\+\_\+type}} $\ast$}]{ghost\+\_\+arr,  }\item[{int}]{num\+\_\+ghosts,  }\item[{int $\ast$}]{scare }\end{DoxyParamCaption})}
+
+
+
+moves pacman and each ghost one step, checking for collisions and user input 
+
+
+\begin{DoxyParams}{Parameters}
+{\em map} & \\
+\hline
+{\em pacman} & \\
+\hline
+{\em ghost\+\_\+arr} & \\
+\hline
+{\em num\+\_\+ghosts} & \\
+\hline
+{\em scare} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true 
+
+false 
+\end{DoxyReturn}
+\mbox{\Hypertarget{game_8h_af84e8ae88873f09731321e62e77a1d18}\label{game_8h_af84e8ae88873f09731321e62e77a1d18}} 
+\index{game.h@{game.h}!led\_blink@{led\_blink}}
+\index{led\_blink@{led\_blink}!game.h@{game.h}}
+\doxysubsubsection{\texorpdfstring{led\_blink()}{led\_blink()}}
+{\footnotesize\ttfamily void led\+\_\+blink (\begin{DoxyParamCaption}\item[{unsigned char $\ast$}]{led\+\_\+mem\+\_\+base,  }\item[{int}]{scare\+\_\+countdown,  }\item[{int}]{pacman\+\_\+score }\end{DoxyParamCaption})}
+
+
+
+Internal functions for setting the color of RGB leds according to the game state. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em led\+\_\+mem\+\_\+base} & \\
+\hline
+{\em scare\+\_\+countdown} & \\
+\hline
+{\em pacman\+\_\+score} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{game_8h_ac1ff0112ff0bb8c1a4d67cd18dc3eb3c}\label{game_8h_ac1ff0112ff0bb8c1a4d67cd18dc3eb3c}} 
+\index{game.h@{game.h}!pause@{pause}}
+\index{pause@{pause}!game.h@{game.h}}
+\doxysubsubsection{\texorpdfstring{pause()}{pause()}}
+{\footnotesize\ttfamily void pause (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structfb__data}{fb\+\_\+data}} $\ast$}]{fb,  }\item[{\mbox{\hyperlink{structperipherals__data__t}{peripherals\+\_\+data\+\_\+t}} $\ast$}]{peripherals }\end{DoxyParamCaption})}
+
+
+
+displays the pause message and waits for user to press the pause of quit key 
+
+
+\begin{DoxyParams}{Parameters}
+{\em fb} & \\
+\hline
+{\em peripherals} & \\
+\hline
+\end{DoxyParams}
 \mbox{\Hypertarget{game_8h_a72619e4d9b2b733c33327a53154c126b}\label{game_8h_a72619e4d9b2b733c33327a53154c126b}} 
 \index{game.h@{game.h}!run\_game@{run\_game}}
 \index{run\_game@{run\_game}!game.h@{game.h}}
 \doxysubsubsection{\texorpdfstring{run\_game()}{run\_game()}}
 {\footnotesize\ttfamily int run\+\_\+game (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgame__init__data__t}{game\+\_\+init\+\_\+data\+\_\+t}} $\ast$}]{game\+\_\+data,  }\item[{\mbox{\hyperlink{structperipherals__data__t}{peripherals\+\_\+data\+\_\+t}} $\ast$}]{peripherals }\end{DoxyParamCaption})}
 
+
+
+Initialises all necessary data structures and loops the game tick and refreshing screen while the player has not won, lost or pressed the q key. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em game\+\_\+data} & \\
+\hline
+{\em peripherals} & \\
+\hline
+\end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-packman score 
+int pac-\/man game score 
 \end{DoxyReturn}

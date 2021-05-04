@@ -11,7 +11,11 @@ Here are the data structures with brief descriptions:<link linkend="_structcoord
 <para>Ghost metadatas </para>
 <link linkend="_structmap__data">map_data</link>
 <para>Basic map metadatas </para>
-<link linkend="_structmap__template">map_template</link><link linkend="_structmoves__costs__t">moves_costs_t</link><link linkend="_structpacman__type">pacman_type</link>
+<link linkend="_structmap__template">map_template</link>
+<para>Definition of the template data structure </para>
+<link linkend="_structmoves__costs__t">moves_costs_t</link>
+<para>Price of movement </para>
+<link linkend="_structpacman__type">pacman_type</link>
 <para>Pac-man metadatas </para>
 <link linkend="_structperipherals__data__t">peripherals_data_t</link>
 <para>Peripherals config data </para>

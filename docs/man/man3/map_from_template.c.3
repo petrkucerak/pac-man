@@ -2,7 +2,8 @@
 .ad l
 .nh
 .SH NAME
-C:/Users/Petr/Documents/apo_semestralka/map_from_template.c
+C:/Users/Petr/Documents/apo_semestralka/map_from_template.c \- Module for creating map for the screen from the templates in the form described in the map template\&.h\&.  
+
 .SH SYNOPSIS
 .br
 .PP
@@ -15,28 +16,131 @@ C:/Users/Petr/Documents/apo_semestralka/map_from_template.c
 
 .in +1c
 .ti -1c
+.RI "\fBmap_data\fP * \fBcreate_map_data\fP (int screen_w, int screen_h, \fBmap_template\fP *template)"
+.br
+.RI "Returns dynamically allocated memory with the data created from the map template given\&. "
+.ti -1c
 .RI "void \fBcreate_cell\fP (int row, int col, \fBmap_template\fP *template, \fBmap_data\fP *map)"
 .br
+.RI "Create a cell (only internal function) "
 .ti -1c
 .RI "void \fBcreate_cross\fP (int row, int col, \fBmap_template\fP *template, \fBmap_data\fP *map, char center_val)"
 .br
-.ti -1c
-.RI "\fBmap_data\fP * \fBcreate_map_data\fP (int screen_w, int screen_h, \fBmap_template\fP *template)"
-.br
+.RI "Create a cross (only internal function) "
 .ti -1c
 .RI "\fBcoords\fP \fBget_coords_from_template\fP (int row, int col, \fBmap_template\fP *template, int screen_w, int screen_h)"
 .br
+.RI "Returns coords in the map given coords in the template\&. "
 .in -1c
+.SH "Detailed Description"
+.PP 
+Module for creating map for the screen from the templates in the form described in the map template\&.h\&. 
+
+
+.PP
+\fBAuthor\fP
+.RS 4
+Lukas Nejezchleb (nejezluk@fel.cvut.cz) 
+.RE
+.PP
+\fBVersion\fP
+.RS 4
+0\&.1 
+.RE
+.PP
+\fBDate\fP
+.RS 4
+2021-05-04
+.RE
+.PP
+\fBCopyright\fP
+.RS 4
+Copyright (c) 2021 
+.RE
+.PP
+
 .SH "Function Documentation"
 .PP 
 .SS "void create_cell (int row, int col, \fBmap_template\fP * template, \fBmap_data\fP * map)"
 
+.PP
+Create a cell (only internal function) 
+.PP
+\fBParameters\fP
+.RS 4
+\fIrow\fP 
+.br
+\fIcol\fP 
+.br
+\fItemplate\fP 
+.br
+\fImap\fP 
+.RE
+.PP
+
 .SS "void create_cross (int row, int col, \fBmap_template\fP * template, \fBmap_data\fP * map, char center_val)"
 
+.PP
+Create a cross (only internal function) 
+.PP
+\fBParameters\fP
+.RS 4
+\fIrow\fP 
+.br
+\fIcol\fP 
+.br
+\fItemplate\fP 
+.br
+\fImap\fP 
+.br
+\fIcenter_val\fP 
+.RE
+.PP
+
 .SS "\fBmap_data\fP* create_map_data (int screen_w, int screen_h, \fBmap_template\fP * template)"
-given map template returns dynamically allocated map for the whole screen 
+
+.PP
+Returns dynamically allocated memory with the data created from the map template given\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIscreen_w\fP 
+.br
+\fIscreen_h\fP 
+.br
+\fItemplate\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+map_data* 
+.RE
+.PP
+
 .SS "\fBcoords\fP get_coords_from_template (int row, int col, \fBmap_template\fP * template, int screen_w, int screen_h)"
-fiven coords in template returns coords on the actual map 
+
+.PP
+Returns coords in the map given coords in the template\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIrow\fP 
+.br
+\fIcol\fP 
+.br
+\fItemplate\fP 
+.br
+\fIscreen_w\fP 
+.br
+\fIscreen_h\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+coords 
+.RE
+.PP
+
 .SH "Author"
 .PP 
 Generated automatically by Doxygen for Pac-Man from the source code\&.

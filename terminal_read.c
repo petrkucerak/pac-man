@@ -1,14 +1,13 @@
-/*******************************************************************
-  Program to read terminal to frame buffer on MicroZed
-  based MZ_APO board designed by Petr Porazil at PiKRON
-
-  terminal_read.c      - simple program to read terminal in raw mode
-
-  (C) Copyright 2021 by Lukas Nejezchleb
-      e-mail:   nejezluk@fel.cvut.cz
-      license:  any combination of GPL, LGPL, MPL or BSD licenses
-
- *******************************************************************/
+/**
+ * @file terminal_read.c
+ * @author Lukas Nejezchleb (nejezluk@fel.cvut.cz)
+ * @brief Module housing the thread function for reading the terminal in nonblocking mode and setting the last key pressed variable
+ * @version 0.1
+ * @date 2021-05-04
+ * 
+ * @copyright Copyright (c) 2021
+ * 
+ */
 #include "terminal_read.h"
 #include "data_structures.h"
 #include <stdbool.h>
@@ -20,14 +19,11 @@
 
 #define TERMINAL_TIMEOUT_MS 100
 
-//inside function to read terminal in nonblocking regime
-int serial_getc_timeout(int fd, int timeout_ms, unsigned char *c);
-
 void *input_thread(void *d)
 {
     read_thread_data_type *data = (read_thread_data_type *)d;
     bool end = false;
-    //put terminal into raw mode
+    // put terminal into raw mode
     struct termios tio, tioOld;
     tcgetattr(STDIN_FILENO, &tio);
     tioOld = tio; // backup
@@ -35,7 +31,7 @@ void *input_thread(void *d)
     tio.c_oflag |= OPOST;
     tcsetattr(STDIN_FILENO, TCSANOW, &tio);
 
-    //start reading terminal
+    // start reading terminal
     unsigned char c;
     while (!end)
     {
@@ -49,7 +45,7 @@ void *input_thread(void *d)
         }
         else if (r < 0)
         {
-            //error reading from stdin
+            // error reading from stdin
             fprintf(stderr, "Error occured when trying to read from stdin\n");
             end = true;
         }
@@ -58,12 +54,12 @@ void *input_thread(void *d)
         pthread_mutex_unlock(&mtx);
     }
 
-    //reset terminal to original mode
+    // reset terminal to original mode
     tcsetattr(STDIN_FILENO, TCSANOW, &tioOld);
     return NULL;
 }
 
-//inside function to read terminal in nonblocking regime
+// inside function to read terminal in nonblocking regime
 int serial_getc_timeout(int fd, int timeout_ms, unsigned char *c)
 {
     struct pollfd ufdr[1];

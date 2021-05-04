@@ -2,6 +2,11 @@
 <section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_mzapo__parlcd_8c" xml:lang="en-US">
 <title>C:/Users/Petr/Documents/apo_semestralka/mzapo_parlcd.c File Reference</title>
 <indexterm><primary>C:/Users/Petr/Documents/apo_semestralka/mzapo_parlcd.c</primary></indexterm>
+<para>
+
+<para>Module for setting the LCD screen and writing data to it. </para>
+ 
+</para>
 <programlisting>#include &lt;stdint.h&gt;
 #include &lt;time.h&gt;
 #include &quot;mzapo_parlcd.h&quot;
@@ -30,6 +35,29 @@
 </listitem>
         </itemizedlist>
 </simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Module for setting the LCD screen and writing data to it. </para>
+
+<para><formalpara><title>Author</title>
+
+<para>Pavel Pisa (<link xlink:href="mailto:pisa@cmp.felk.cvut.cz">pisa@cmp.felk.cvut.cz</link>) </para>
+</formalpara>
+<formalpara><title>Version</title>
+
+<para>0.1 </para>
+</formalpara>
+<formalpara><title>Date</title>
+
+<para>2021-05-04</para>
+</formalpara>
+<formalpara><title>Copyright</title>
+
+<para>Copyright (c) 2021 </para>
+</formalpara>
+</para>
+</section>
 <section>
 <title>Macro Definition Documentation</title>
 <anchor xml:id="_mzapo__parlcd_8c_1a3024ccd4a9af5109d24e6c57565d74a1"/>    <section>

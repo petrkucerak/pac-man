@@ -1,14 +1,13 @@
-/*******************************************************************
-  Program to draw map to frame buffer on MicroZed
-  based MZ_APO board designed by Petr Porazil at PiKRON
-
-  map_to_fb.c      - program to draw map
-
-  (C) Copyright 2021 by Lukas Nejezchleb
-      e-mail:   nejezluk@fel.cvut.cz
-      license:  any combination of GPL, LGPL, MPL or BSD licenses
-
- *******************************************************************/
+/**
+ * @file map_to_fb.c
+ * @author Lukas Nejezchleb (nejezluk@fel.cvut.cz)
+ * @brief Module for rendering the map to the frame buffer. Houses function render map
+ * @version 0.1
+ * @date 2021-05-04
+ * 
+ * @copyright Copyright (c) 2021
+ * 
+ */
 #include "map_to_fb.h"
 #include "map_from_template.h"
 #include "text_fb.h"

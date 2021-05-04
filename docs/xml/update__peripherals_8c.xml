@@ -84,13 +84,31 @@
           <declname>parlcd_mem_base</declname>
         </param>
         <briefdescription>
+<para>Sets the lcd pixels to colors described in frame buffer. </para>
         </briefdescription>
         <detaileddescription>
-<para>function that updates the LCD from frame buffer. LCD has to be initialised </para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>frame_buff</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>parlcd_mem_base</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Petr/Documents/apo_semestralka/update_peripherals.c" line="19" column="6" bodyfile="C:/Users/Petr/Documents/apo_semestralka/update_peripherals.c" bodystart="19" bodyend="29"/>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/update_peripherals.c" line="18" column="6" bodyfile="C:/Users/Petr/Documents/apo_semestralka/update_peripherals.c" bodystart="18" bodyend="29"/>
       </memberdef>
       <memberdef kind="function" id="update__peripherals_8c_1a27f1db817fb1375b46affe1dc4d0dc9b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -110,9 +128,35 @@
           <declname>nr</declname>
         </param>
         <briefdescription>
+<para>Shows number as number of clusters on the led strip. </para>
         </briefdescription>
         <detaileddescription>
-<para>function that shows nr on the ledstrip </para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>led_mem_base</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>max_nr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>nr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
@@ -140,13 +184,47 @@
           <declname>b</declname>
         </param>
         <briefdescription>
+<para>Sets the left RGB led to particular rgb color. </para>
         </briefdescription>
         <detaileddescription>
-<para>sets left RGB to particular color </para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>led_mem_base</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>r</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>g</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Petr/Documents/apo_semestralka/update_peripherals.c" line="69" column="6" bodyfile="C:/Users/Petr/Documents/apo_semestralka/update_peripherals.c" bodystart="69" bodyend="76"/>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/update_peripherals.c" line="69" column="6" bodyfile="C:/Users/Petr/Documents/apo_semestralka/update_peripherals.c" bodystart="69" bodyend="77"/>
       </memberdef>
       <memberdef kind="function" id="update__peripherals_8c_1a55ba16e218e56e6112bea4cb48dd7017" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -170,13 +248,47 @@
           <declname>b</declname>
         </param>
         <briefdescription>
+<para>Sets the right RGB led to particular rgb color. </para>
         </briefdescription>
         <detaileddescription>
-<para>sets right RGB to particular color </para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>led_mem_base</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>r</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>g</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>b</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Petr/Documents/apo_semestralka/update_peripherals.c" line="78" column="6" bodyfile="C:/Users/Petr/Documents/apo_semestralka/update_peripherals.c" bodystart="78" bodyend="85"/>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/update_peripherals.c" line="79" column="6" bodyfile="C:/Users/Petr/Documents/apo_semestralka/update_peripherals.c" bodystart="79" bodyend="87"/>
       </memberdef>
       <memberdef kind="function" id="update__peripherals_8c_1afdba9f1f14e9a81789f87d33a36bda35" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -192,41 +304,59 @@
           <declname>color</declname>
         </param>
         <briefdescription>
+<para>Sets both to color. </para>
         </briefdescription>
         <detaileddescription>
-<para>sets both leds to color </para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>led_mem_base</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Petr/Documents/apo_semestralka/update_peripherals.c" line="87" column="6" bodyfile="C:/Users/Petr/Documents/apo_semestralka/update_peripherals.c" bodystart="87" bodyend="93"/>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/update_peripherals.c" line="89" column="6" bodyfile="C:/Users/Petr/Documents/apo_semestralka/update_peripherals.c" bodystart="89" bodyend="97"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
+<para>Module for setting the peripherals. </para>
     </briefdescription>
     <detaileddescription>
+<para><simplesect kind="author"><para>Lukas Nejezchleb (<ulink url="mailto:nejezluk@fel.cvut.cz">nejezluk@fel.cvut.cz</ulink>) </para>
+</simplesect>
+<simplesect kind="version"><para>0.1 </para>
+</simplesect>
+<simplesect kind="date"><para>2021-05-04</para>
+</simplesect>
+<simplesect kind="copyright"><para>Copyright (c) 2021 </para>
+</simplesect>
+</para>
     </detaileddescription>
     <programlisting>
-<codeline lineno="1"><highlight class="comment">/*******************************************************************</highlight></codeline>
-<codeline lineno="2"><highlight class="comment"><sp/><sp/>Simple<sp/>program<sp/>to<sp/>update<sp/>peripherals<sp/>on<sp/>MicroZed</highlight></codeline>
-<codeline lineno="3"><highlight class="comment"><sp/><sp/>based<sp/>MZ_APO<sp/>board<sp/>designed<sp/>by<sp/>Petr<sp/>Porazil<sp/>at<sp/>PiKRON</highlight></codeline>
-<codeline lineno="4"><highlight class="comment"></highlight></codeline>
-<codeline lineno="5"><highlight class="comment"><sp/><sp/>update_peripherals.c<sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>simple<sp/>program<sp/>to<sp/>update<sp/>peripherals</highlight></codeline>
-<codeline lineno="6"><highlight class="comment"></highlight></codeline>
-<codeline lineno="7"><highlight class="comment"><sp/><sp/>(C)<sp/>Copyright<sp/>2021<sp/>by<sp/>Lukas<sp/>Nejezchleb</highlight></codeline>
-<codeline lineno="8"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>e-mail:<sp/><sp/><sp/>nejezluk@fel.cvut.cz</highlight></codeline>
-<codeline lineno="9"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>license:<sp/><sp/>any<sp/>combination<sp/>of<sp/>GPL,<sp/>LGPL,<sp/>MPL<sp/>or<sp/>BSD<sp/>licenses</highlight></codeline>
-<codeline lineno="10"><highlight class="comment"></highlight></codeline>
-<codeline lineno="11"><highlight class="comment"><sp/>*******************************************************************/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="12"><highlight class="normal"></highlight></codeline>
-<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="update__peripherals_8h" kindref="compound">update_peripherals.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="mzapo__parlcd_8h" kindref="compound">mzapo_parlcd.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="mzapo__regs_8h" kindref="compound">mzapo_regs.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdbool.h&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="18"><highlight class="normal"></highlight></codeline>
-<codeline lineno="19"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="update__peripherals_8c_1aa30de0dfddc51283d5b5e429fdb6f030" kindref="member">lcd_from_fb</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structfb__data" kindref="compound">fb_data</ref><sp/>*frame_buff,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*parlcd_mem_base)</highlight></codeline>
-<codeline lineno="20"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(parlcd_mem_base<sp/>==<sp/>NULL){</highlight></codeline>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="update__peripherals_8h" kindref="compound">update_peripherals.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="mzapo__parlcd_8h" kindref="compound">mzapo_parlcd.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="mzapo__regs_8h" kindref="compound">mzapo_regs.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdbool.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="update__peripherals_8c_1aa30de0dfddc51283d5b5e429fdb6f030" kindref="member">lcd_from_fb</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structfb__data" kindref="compound">fb_data</ref><sp/>*frame_buff,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*parlcd_mem_base)</highlight></codeline>
+<codeline lineno="19"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(parlcd_mem_base<sp/>==<sp/>NULL)</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="mzapo__parlcd_8c_1ab30b1b616caf5991cd8e1a6a52ba23e7" kindref="member">parlcd_write_cmd</ref>(parlcd_mem_base,<sp/>0x2c);</highlight></codeline>
@@ -238,7 +368,7 @@
 <codeline lineno="30"><highlight class="normal"></highlight></codeline>
 <codeline lineno="31"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="update__peripherals_8c_1a27f1db817fb1375b46affe1dc4d0dc9b" kindref="member">led_strip_number</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*led_mem_base,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>max_nr,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nr)</highlight></codeline>
 <codeline lineno="32"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(max_nr<sp/>&lt;=<sp/>0<sp/>||<sp/>nr<sp/>&lt;<sp/>0||<sp/>led_mem_base<sp/>==<sp/>NULL)</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(max_nr<sp/>&lt;=<sp/>0<sp/>||<sp/>nr<sp/>&lt;<sp/>0<sp/>||<sp/>led_mem_base<sp/>==<sp/>NULL)</highlight></codeline>
 <codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
@@ -246,7 +376,7 @@
 <codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>output<sp/>=<sp/>0;</highlight></codeline>
 <codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>width<sp/>=<sp/>32<sp/>/<sp/>(float)divisions;</highlight></codeline>
 <codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>displayed<sp/>=<sp/>1;</highlight></codeline>
-<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>active<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;<sp/></highlight><highlight class="comment">//indicates<sp/>if<sp/>it<sp/>is<sp/>just<sp/>space<sp/>or<sp/>if<sp/>the<sp/>led<sp/>can<sp/>light<sp/>up</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>active<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;<sp/></highlight><highlight class="comment">//<sp/>indicates<sp/>if<sp/>it<sp/>is<sp/>just<sp/>space<sp/>or<sp/>if<sp/>the<sp/>led<sp/>can<sp/>light<sp/>up</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>current_limit<sp/>=<sp/>width;</highlight></codeline>
 <codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>32;<sp/>++i)</highlight></codeline>
 <codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
@@ -276,29 +406,33 @@
 <codeline lineno="68"><highlight class="normal"></highlight></codeline>
 <codeline lineno="69"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="update__peripherals_8c_1af830207334d68a6414d80117e98e7a84" kindref="member">set_left_RGB</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*led_mem_base,<sp/>uint8_t<sp/>r,<sp/>uint8_t<sp/>g,<sp/>uint8_t<sp/>b)</highlight></codeline>
 <codeline lineno="70"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(led_mem_base<sp/>==<sp/>NULL){</highlight></codeline>
-<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>color<sp/>=<sp/>(r&lt;&lt;16)|(g&lt;&lt;8)|b;</highlight></codeline>
-<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>*(</highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint32_t<sp/>*)(led_mem_base<sp/>+<sp/><ref refid="mzapo__regs_8h_1a471398ab797101dfd7a1a2d96e9a518a" kindref="member">SPILED_REG_LED_RGB1_o</ref>)<sp/>=<sp/>color;</highlight></codeline>
-<codeline lineno="76"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="77"><highlight class="normal"></highlight></codeline>
-<codeline lineno="78"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="update__peripherals_8c_1a55ba16e218e56e6112bea4cb48dd7017" kindref="member">set_right_RGB</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*led_mem_base,<sp/>uint8_t<sp/>r,<sp/>uint8_t<sp/>g,<sp/>uint8_t<sp/>b)</highlight></codeline>
-<codeline lineno="79"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(led_mem_base<sp/>==<sp/>NULL){</highlight></codeline>
-<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>color<sp/>=<sp/>(r&lt;&lt;16)|(g&lt;&lt;8)|b;</highlight></codeline>
-<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/>*(</highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint32_t<sp/>*)(led_mem_base<sp/>+<sp/><ref refid="mzapo__regs_8h_1a7b24a79dbfff0cab06021c259e967d6e" kindref="member">SPILED_REG_LED_RGB2_o</ref>)<sp/>=<sp/>color;</highlight></codeline>
-<codeline lineno="85"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="86"><highlight class="normal"></highlight></codeline>
-<codeline lineno="87"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="update__peripherals_8c_1afdba9f1f14e9a81789f87d33a36bda35" kindref="member">sel_leds_color</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*led_mem_base,<sp/>uint32_t<sp/>color){</highlight></codeline>
-<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(led_mem_base<sp/>==<sp/>NULL){</highlight></codeline>
-<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/>*(</highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint32_t<sp/>*)(led_mem_base<sp/>+<sp/><ref refid="mzapo__regs_8h_1a471398ab797101dfd7a1a2d96e9a518a" kindref="member">SPILED_REG_LED_RGB1_o</ref>)<sp/>=<sp/>color;</highlight></codeline>
-<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/>*(</highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint32_t<sp/>*)(led_mem_base<sp/>+<sp/><ref refid="mzapo__regs_8h_1a7b24a79dbfff0cab06021c259e967d6e" kindref="member">SPILED_REG_LED_RGB2_o</ref>)<sp/>=<sp/>color;</highlight></codeline>
-<codeline lineno="93"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(led_mem_base<sp/>==<sp/>NULL)</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>color<sp/>=<sp/>(r<sp/>&lt;&lt;<sp/>16)<sp/>|<sp/>(g<sp/>&lt;&lt;<sp/>8)<sp/>|<sp/>b;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/>*(</highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint32_t<sp/>*)(led_mem_base<sp/>+<sp/><ref refid="mzapo__regs_8h_1a471398ab797101dfd7a1a2d96e9a518a" kindref="member">SPILED_REG_LED_RGB1_o</ref>)<sp/>=<sp/>color;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="update__peripherals_8c_1a55ba16e218e56e6112bea4cb48dd7017" kindref="member">set_right_RGB</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*led_mem_base,<sp/>uint8_t<sp/>r,<sp/>uint8_t<sp/>g,<sp/>uint8_t<sp/>b)</highlight></codeline>
+<codeline lineno="80"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(led_mem_base<sp/>==<sp/>NULL)</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>color<sp/>=<sp/>(r<sp/>&lt;&lt;<sp/>16)<sp/>|<sp/>(g<sp/>&lt;&lt;<sp/>8)<sp/>|<sp/>b;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/>*(</highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint32_t<sp/>*)(led_mem_base<sp/>+<sp/><ref refid="mzapo__regs_8h_1a7b24a79dbfff0cab06021c259e967d6e" kindref="member">SPILED_REG_LED_RGB2_o</ref>)<sp/>=<sp/>color;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="update__peripherals_8c_1afdba9f1f14e9a81789f87d33a36bda35" kindref="member">sel_leds_color</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*led_mem_base,<sp/>uint32_t<sp/>color)</highlight></codeline>
+<codeline lineno="90"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(led_mem_base<sp/>==<sp/>NULL)</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/>*(</highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint32_t<sp/>*)(led_mem_base<sp/>+<sp/><ref refid="mzapo__regs_8h_1a471398ab797101dfd7a1a2d96e9a518a" kindref="member">SPILED_REG_LED_RGB1_o</ref>)<sp/>=<sp/>color;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/>*(</highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint32_t<sp/>*)(led_mem_base<sp/>+<sp/><ref refid="mzapo__regs_8h_1a7b24a79dbfff0cab06021c259e967d6e" kindref="member">SPILED_REG_LED_RGB2_o</ref>)<sp/>=<sp/>color;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal">}</highlight></codeline>
     </programlisting>
     <location file="C:/Users/Petr/Documents/apo_semestralka/update_peripherals.c"/>
   </compounddef>

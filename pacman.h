@@ -1,34 +1,57 @@
-/*******************************************************************
-  All inportant functions for pacman on MicroZed
-  based MZ_APO board designed by Petr Porazil at PiKRON
+/**
+ * @file pacman.h
+ * @author Lukas Nejezchleb (nejezluk@fel.cvut.cz)
+ * @brief Module for the controls and rendering of pacman
+ * @version 0.1
+ * @date 2021-05-04
+ * 
+ * @copyright Copyright (c) 2021
+ * 
+ */
 
-  pacman.h      - all important functions for pacman
-
-  (C) Copyright 2021 by Lukas Nejezchleb
-      e-mail:   nejezluk@fel.cvut.cz
-      license:  any combination of GPL, LGPL, MPL or BSD licenses
-
- *******************************************************************/
 #ifndef PACMAN_H
 #define PACMAN_H
 #include "data_structures.h"
 #include "map_template.h"
 
-
-/*
-* @returns Pacman at spawning point of map
-*/
+/**
+ * @brief Returns pacman with initial score and lives at the spawning coords of the map
+ * 
+ * @param map 
+ * @param lives 
+ * @param score 
+ * @return pacman_type 
+ */
 pacman_type create_pacman(map_data *map, int lives, int score);
 
-/*
-* reads key from terminal, changes direction if moving this direction is possible
-* moves the pacman in the direction if possible
-* @returns true if pacman has eaten supercoin
-*/
+/**
+ * @brief Returns pacman with initial score and lives at the spawning coords of the map
+ * 
+ * @param pacman 
+ * @param map 
+ * @return true 
+ * @return false 
+ */
 bool pacman_move(pacman_type *pacman, map_data *map);
 
-/*
-* draws pacman to the frame buffer
-*/
+/**
+ * @brief draws circle if pacman is not facing any direction or the ”pie” shape to symbolise the heading
+ * 
+ * @param pacman 
+ * @param fb 
+ * @param map 
+ */
 void draw_pacman(pacman_type *pacman, fb_data *fb, map_data *map);
+
+/**
+ * @brief  returns true if pacman can move in given direction
+ * 
+ * @param pacman 
+ * @param dirx 
+ * @param diry 
+ * @param map 
+ * @return true 
+ * @return false 
+ */
+bool pacman_can_move(pacman_type *pacman, int dirx, int diry, map_data *map);
 #endif

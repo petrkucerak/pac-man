@@ -15,7 +15,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Petr/Documents/apo_semestralka/map_template.h" line="18" column="10" bodyfile="C:/Users/Petr/Documents/apo_semestralka/map_template.h" bodystart="18" bodyend="-1"/>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/map_template.h" line="21" column="10" bodyfile="C:/Users/Petr/Documents/apo_semestralka/map_template.h" bodystart="21" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structmap__template_1a366d28d6d492923c3c23d2bacbc02f6e" prot="public" static="no" mutable="no">
         <type>int</type>
@@ -28,7 +28,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Petr/Documents/apo_semestralka/map_template.h" line="19" column="9" bodyfile="C:/Users/Petr/Documents/apo_semestralka/map_template.h" bodystart="19" bodyend="-1"/>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/map_template.h" line="22" column="9" bodyfile="C:/Users/Petr/Documents/apo_semestralka/map_template.h" bodystart="22" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structmap__template_1a803562e0a25b0ec731bf3ce3840eef0c" prot="public" static="no" mutable="no">
         <type>int</type>
@@ -41,7 +41,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Petr/Documents/apo_semestralka/map_template.h" line="20" column="9" bodyfile="C:/Users/Petr/Documents/apo_semestralka/map_template.h" bodystart="20" bodyend="-1"/>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/map_template.h" line="23" column="9" bodyfile="C:/Users/Petr/Documents/apo_semestralka/map_template.h" bodystart="23" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structmap__template_1a5f11e280b5d633f386e27588142b957e" prot="public" static="no" mutable="no">
         <type>int</type>
@@ -54,7 +54,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Petr/Documents/apo_semestralka/map_template.h" line="21" column="9" bodyfile="C:/Users/Petr/Documents/apo_semestralka/map_template.h" bodystart="21" bodyend="-1"/>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/map_template.h" line="24" column="9" bodyfile="C:/Users/Petr/Documents/apo_semestralka/map_template.h" bodystart="24" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structmap__template_1a4f324ecdf6aee863a7431c2a2696ea4b" prot="public" static="no" mutable="no">
         <type>int</type>
@@ -67,7 +67,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Petr/Documents/apo_semestralka/map_template.h" line="22" column="9" bodyfile="C:/Users/Petr/Documents/apo_semestralka/map_template.h" bodystart="22" bodyend="-1"/>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/map_template.h" line="25" column="9" bodyfile="C:/Users/Petr/Documents/apo_semestralka/map_template.h" bodystart="25" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structmap__template_1a2474a5474cbff19523a51eb1de01cda4" prot="public" static="no" mutable="no">
         <type>int</type>
@@ -80,7 +80,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Petr/Documents/apo_semestralka/map_template.h" line="23" column="9" bodyfile="C:/Users/Petr/Documents/apo_semestralka/map_template.h" bodystart="23" bodyend="-1"/>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/map_template.h" line="26" column="9" bodyfile="C:/Users/Petr/Documents/apo_semestralka/map_template.h" bodystart="26" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structmap__template_1ad12fc34ce789bce6c8a05d8a17138534" prot="public" static="no" mutable="no">
         <type>int</type>
@@ -93,7 +93,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Petr/Documents/apo_semestralka/map_template.h" line="24" column="9" bodyfile="C:/Users/Petr/Documents/apo_semestralka/map_template.h" bodystart="24" bodyend="-1"/>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/map_template.h" line="27" column="9" bodyfile="C:/Users/Petr/Documents/apo_semestralka/map_template.h" bodystart="27" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structmap__template_1a5bcf23c3429d81be2090fc9b00344c86" prot="public" static="no" mutable="no">
         <type>char *</type>
@@ -106,7 +106,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Petr/Documents/apo_semestralka/map_template.h" line="25" column="10" bodyfile="C:/Users/Petr/Documents/apo_semestralka/map_template.h" bodystart="25" bodyend="-1"/>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/map_template.h" line="28" column="10" bodyfile="C:/Users/Petr/Documents/apo_semestralka/map_template.h" bodystart="28" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structmap__template_1acf71181bb18d2ef81304b1069d9d39fd" prot="public" static="no" mutable="no">
         <type>const int</type>
@@ -119,7 +119,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Petr/Documents/apo_semestralka/map_template.h" line="26" column="15" bodyfile="C:/Users/Petr/Documents/apo_semestralka/map_template.h" bodystart="26" bodyend="-1"/>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/map_template.h" line="29" column="15" bodyfile="C:/Users/Petr/Documents/apo_semestralka/map_template.h" bodystart="29" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structmap__template_1ab457351d9453fc8187c59f5bb114beca" prot="public" static="no" mutable="no">
         <type>const int</type>
@@ -132,7 +132,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Petr/Documents/apo_semestralka/map_template.h" line="27" column="15" bodyfile="C:/Users/Petr/Documents/apo_semestralka/map_template.h" bodystart="27" bodyend="-1"/>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/map_template.h" line="30" column="15" bodyfile="C:/Users/Petr/Documents/apo_semestralka/map_template.h" bodystart="30" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structmap__template_1a9cbda17b7c571c2bbb83951b8349fdd5" prot="public" static="no" mutable="no">
         <type>const int</type>
@@ -145,7 +145,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Petr/Documents/apo_semestralka/map_template.h" line="28" column="15" bodyfile="C:/Users/Petr/Documents/apo_semestralka/map_template.h" bodystart="28" bodyend="-1"/>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/map_template.h" line="31" column="15" bodyfile="C:/Users/Petr/Documents/apo_semestralka/map_template.h" bodystart="31" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structmap__template_1ae86bf8cf5a666faea3334a9a5407e140" prot="public" static="no" mutable="no">
         <type>const int</type>
@@ -158,14 +158,15 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Petr/Documents/apo_semestralka/map_template.h" line="29" column="15" bodyfile="C:/Users/Petr/Documents/apo_semestralka/map_template.h" bodystart="29" bodyend="-1"/>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/map_template.h" line="32" column="15" bodyfile="C:/Users/Petr/Documents/apo_semestralka/map_template.h" bodystart="32" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
+<para>the definition of the template data structure </para>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="C:/Users/Petr/Documents/apo_semestralka/map_template.h" line="16" column="1" bodyfile="C:/Users/Petr/Documents/apo_semestralka/map_template.h" bodystart="17" bodyend="30"/>
+    <location file="C:/Users/Petr/Documents/apo_semestralka/map_template.h" line="19" column="1" bodyfile="C:/Users/Petr/Documents/apo_semestralka/map_template.h" bodystart="20" bodyend="33"/>
     <listofallmembers>
       <member refid="structmap__template_1ae86bf8cf5a666faea3334a9a5407e140" prot="public" virt="non-virtual"><scope>map_template</scope><name>blank</name></member>
       <member refid="structmap__template_1a5bcf23c3429d81be2090fc9b00344c86" prot="public" virt="non-virtual"><scope>map_template</scope><name>board</name></member>

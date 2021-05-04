@@ -90,12 +90,33 @@
           <declname>ghost_nr</declname>
         </param>
         <briefdescription>
+<para>Creates the ghost at spawning point at map. </para>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>map</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ghost_nr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para><ref refid="structghost__type" kindref="compound">ghost_type</ref> </para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Petr/Documents/apo_semestralka/ghost.h" line="25" column="12" bodyfile="C:/Users/Petr/Documents/apo_semestralka/ghost.c" bodystart="123" bodyend="134" declfile="C:/Users/Petr/Documents/apo_semestralka/ghost.h" declline="25" declcolumn="12"/>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/ghost.h" line="33" column="12" bodyfile="C:/Users/Petr/Documents/apo_semestralka/ghost.c" bodystart="111" bodyend="122" declfile="C:/Users/Petr/Documents/apo_semestralka/ghost.h" declline="33" declcolumn="12"/>
       </memberdef>
       <memberdef kind="function" id="ghost_8h_1a5a6a4ea7a54730dd11640485ca265353" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -115,12 +136,39 @@
           <declname>map</declname>
         </param>
         <briefdescription>
+<para>Draws the ghost to frame buffer with color indicating its state. </para>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>fb</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ghost</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>map</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Petr/Documents/apo_semestralka/ghost.h" line="30" column="6" bodyfile="C:/Users/Petr/Documents/apo_semestralka/ghost.c" bodystart="111" bodyend="121" declfile="C:/Users/Petr/Documents/apo_semestralka/ghost.h" declline="30" declcolumn="6"/>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/ghost.h" line="42" column="6" bodyfile="C:/Users/Petr/Documents/apo_semestralka/ghost.c" bodystart="99" bodyend="109" declfile="C:/Users/Petr/Documents/apo_semestralka/ghost.h" declline="42" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="ghost_8h_1ae10703308badbc547da248d1dddcd699" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -140,56 +188,271 @@
           <declname>pacman</declname>
         </param>
         <briefdescription>
+<para>Has small chance to change the ghost movement from random to targeting and vice versa. Changes the ghosts direction if there are more possibilities, moves the ghost in the resulting direction. </para>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ghost</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>map</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pacman</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true </para>
+</simplesect>
+<simplesect kind="return"><para>false </para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Petr/Documents/apo_semestralka/ghost.h" line="35" column="6" bodyfile="C:/Users/Petr/Documents/apo_semestralka/ghost.c" bodystart="32" bodyend="78" declfile="C:/Users/Petr/Documents/apo_semestralka/ghost.h" declline="35" declcolumn="6"/>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/ghost.h" line="53" column="6" bodyfile="C:/Users/Petr/Documents/apo_semestralka/ghost.c" bodystart="20" bodyend="66" declfile="C:/Users/Petr/Documents/apo_semestralka/ghost.h" declline="53" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="ghost_8h_1a25d891c687c3f7006638701ab4856d35" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ghost_can_move</definition>
+        <argsstring>(ghost_type *ghost, int dirx, int diry, map_data *map)</argsstring>
+        <name>ghost_can_move</name>
+        <param>
+          <type><ref refid="structghost__type" kindref="compound">ghost_type</ref> *</type>
+          <declname>ghost</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>dirx</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>diry</declname>
+        </param>
+        <param>
+          <type><ref refid="structmap__data" kindref="compound">map_data</ref> *</type>
+          <declname>map</declname>
+        </param>
+        <briefdescription>
+<para>Returns true if ghost can move in given direction. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ghost</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>dirx</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>diry</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>map</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true </para>
+</simplesect>
+<simplesect kind="return"><para>false </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/ghost.h" line="65" column="6" bodyfile="C:/Users/Petr/Documents/apo_semestralka/ghost.c" bodystart="68" bodyend="72" declfile="C:/Users/Petr/Documents/apo_semestralka/ghost.h" declline="65" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="ghost_8h_1aea3ea3ec6383019544b3e889015fc6d0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int create_moves</definition>
+        <argsstring>(moves_costs_t *moves_arr, ghost_type *ghost, map_data *map, pacman_type *pacman)</argsstring>
+        <name>create_moves</name>
+        <param>
+          <type><ref refid="structmoves__costs__t" kindref="compound">moves_costs_t</ref> *</type>
+          <declname>moves_arr</declname>
+        </param>
+        <param>
+          <type><ref refid="structghost__type" kindref="compound">ghost_type</ref> *</type>
+          <declname>ghost</declname>
+        </param>
+        <param>
+          <type><ref refid="structmap__data" kindref="compound">map_data</ref> *</type>
+          <declname>map</declname>
+        </param>
+        <param>
+          <type><ref refid="structpacman__type" kindref="compound">pacman_type</ref> *</type>
+          <declname>pacman</declname>
+        </param>
+        <briefdescription>
+<para>Returns number of possible moves, which it has put into the array along with their cost. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>moves_arr</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>ghost</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>map</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>pacman</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>returns number of possible moves, which it has put into the array along with their cost </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/ghost.h" line="76" column="5" bodyfile="C:/Users/Petr/Documents/apo_semestralka/ghost.c" bodystart="74" bodyend="97" declfile="C:/Users/Petr/Documents/apo_semestralka/ghost.h" declline="76" declcolumn="5"/>
+      </memberdef>
+      <memberdef kind="function" id="ghost_8h_1a5384f018ac62b15c7f5e61d662a0e51c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void change_direction</definition>
+        <argsstring>(ghost_type *ghost, int possibilities, moves_costs_t *moves_options)</argsstring>
+        <name>change_direction</name>
+        <param>
+          <type><ref refid="structghost__type" kindref="compound">ghost_type</ref> *</type>
+          <declname>ghost</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>possibilities</declname>
+        </param>
+        <param>
+          <type><ref refid="structmoves__costs__t" kindref="compound">moves_costs_t</ref> *</type>
+          <declname>moves_options</declname>
+        </param>
+        <briefdescription>
+<para>Changes the direction of ghost to the path that would lead the closest to pacman or random if ghost is moving randomly. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>ghost</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>possibilities</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>moves_options</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/ghost.h" line="85" column="6" bodyfile="C:/Users/Petr/Documents/apo_semestralka/ghost.c" bodystart="124" bodyend="156" declfile="C:/Users/Petr/Documents/apo_semestralka/ghost.h" declline="85" declcolumn="6"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
+<para>Module where all the logic and movement of ghost is placed. </para>
     </briefdescription>
     <detaileddescription>
+<para><simplesect kind="author"><para>Lukas Nejezchleb (<ulink url="mailto:nejezluk@fel.cvut.cz">nejezluk@fel.cvut.cz</ulink>) </para>
+</simplesect>
+<simplesect kind="version"><para>0.1 </para>
+</simplesect>
+<simplesect kind="date"><para>2021-05-04</para>
+</simplesect>
+<simplesect kind="copyright"><para>Copyright (c) 2021 </para>
+</simplesect>
+</para>
     </detaileddescription>
     <programlisting>
-<codeline lineno="1"><highlight class="comment">/*******************************************************************</highlight></codeline>
-<codeline lineno="2"><highlight class="comment"><sp/><sp/>All<sp/>inportant<sp/>functions<sp/>for<sp/>ghost<sp/>on<sp/>MicroZed</highlight></codeline>
-<codeline lineno="3"><highlight class="comment"><sp/><sp/>based<sp/>MZ_APO<sp/>board<sp/>designed<sp/>by<sp/>Petr<sp/>Porazil<sp/>at<sp/>PiKRON</highlight></codeline>
-<codeline lineno="4"><highlight class="comment"></highlight></codeline>
-<codeline lineno="5"><highlight class="comment"><sp/><sp/>ghost.h<sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>all<sp/>important<sp/>functions<sp/>for<sp/>ghost</highlight></codeline>
-<codeline lineno="6"><highlight class="comment"></highlight></codeline>
-<codeline lineno="7"><highlight class="comment"><sp/><sp/>(C)<sp/>Copyright<sp/>2021<sp/>by<sp/>Lukas<sp/>Nejezchleb</highlight></codeline>
-<codeline lineno="8"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>e-mail:<sp/><sp/><sp/>nejezluk@fel.cvut.cz</highlight></codeline>
-<codeline lineno="9"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>license:<sp/><sp/>any<sp/>combination<sp/>of<sp/>GPL,<sp/>LGPL,<sp/>MPL<sp/>or<sp/>BSD<sp/>licenses</highlight></codeline>
-<codeline lineno="10"><highlight class="comment"></highlight></codeline>
-<codeline lineno="11"><highlight class="comment"><sp/>*******************************************************************/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>GHOST_H</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GHOST_H</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="14"><highlight class="normal"></highlight></codeline>
-<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="data__structures_8h" kindref="compound">data_structures.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="16"><highlight class="normal"></highlight><highlight class="comment">//internal<sp/>data<sp/>structure</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="17" refid="structmoves__costs__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="18"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="19" refid="structmoves__costs__t_1a6f3eaf7f9f7ef92ed9e838cf68763444" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="structcoords" kindref="compound">coords</ref><sp/><ref refid="structmoves__costs__t_1a6f3eaf7f9f7ef92ed9e838cf68763444" kindref="member">dir</ref>;</highlight></codeline>
-<codeline lineno="20" refid="structmoves__costs__t_1a66700f11d42fee2413e58dbf49c43ee1" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structmoves__costs__t_1a66700f11d42fee2413e58dbf49c43ee1" kindref="member">cost</ref>;</highlight></codeline>
-<codeline lineno="21"><highlight class="normal">}<sp/><ref refid="structmoves__costs__t" kindref="compound">moves_costs_t</ref>;</highlight></codeline>
-<codeline lineno="22"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
-<codeline lineno="23"><highlight class="comment">returns<sp/>ghost<sp/>structure</highlight></codeline>
-<codeline lineno="24"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="25"><highlight class="normal"><ref refid="structghost__type" kindref="compound">ghost_type</ref><sp/><ref refid="ghost_8h_1a14b4ae2c797e212ae5255036c699676a" kindref="member">create_ghost</ref>(<ref refid="structmap__data" kindref="compound">map_data</ref><sp/>*map,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ghost_nr);</highlight></codeline>
-<codeline lineno="26"><highlight class="normal"></highlight></codeline>
-<codeline lineno="27"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
-<codeline lineno="28"><highlight class="comment">draws<sp/>the<sp/>ghost</highlight></codeline>
-<codeline lineno="29"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="ghost_8h_1a5a6a4ea7a54730dd11640485ca265353" kindref="member">draw_ghost</ref>(<ref refid="structfb__data" kindref="compound">fb_data</ref><sp/>*fb,<sp/><ref refid="structghost__type" kindref="compound">ghost_type</ref><sp/>*ghost,<sp/><ref refid="structmap__data" kindref="compound">map_data</ref><sp/>*map);</highlight></codeline>
-<codeline lineno="31"><highlight class="normal"></highlight></codeline>
-<codeline lineno="32"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
-<codeline lineno="33"><highlight class="comment">moves<sp/>the<sp/>ghost,<sp/>returns<sp/>true<sp/>if<sp/>pacman<sp/>was<sp/>eaten<sp/>by<sp/>the<sp/>ghost</highlight></codeline>
-<codeline lineno="34"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="35"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="ghost_8h_1ae10703308badbc547da248d1dddcd699" kindref="member">ghost_move</ref>(<ref refid="structghost__type" kindref="compound">ghost_type</ref><sp/>*ghost,<sp/><ref refid="structmap__data" kindref="compound">map_data</ref><sp/>*map,<sp/><ref refid="structpacman__type" kindref="compound">pacman_type</ref><sp/>*pacman);</highlight></codeline>
-<codeline lineno="36"><highlight class="normal"></highlight></codeline>
-<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>GHOST_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GHOST_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="data__structures_8h" kindref="compound">data_structures.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="structmoves__costs__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="22" refid="structmoves__costs__t_1a6f3eaf7f9f7ef92ed9e838cf68763444" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="structcoords" kindref="compound">coords</ref><sp/><ref refid="structmoves__costs__t_1a6f3eaf7f9f7ef92ed9e838cf68763444" kindref="member">dir</ref>;</highlight></codeline>
+<codeline lineno="23" refid="structmoves__costs__t_1a66700f11d42fee2413e58dbf49c43ee1" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structmoves__costs__t_1a66700f11d42fee2413e58dbf49c43ee1" kindref="member">cost</ref>;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal">}<sp/><ref refid="structmoves__costs__t" kindref="compound">moves_costs_t</ref>;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><ref refid="structghost__type" kindref="compound">ghost_type</ref><sp/><ref refid="ghost_8h_1a14b4ae2c797e212ae5255036c699676a" kindref="member">create_ghost</ref>(<ref refid="structmap__data" kindref="compound">map_data</ref><sp/>*map,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ghost_nr);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="ghost_8h_1a5a6a4ea7a54730dd11640485ca265353" kindref="member">draw_ghost</ref>(<ref refid="structfb__data" kindref="compound">fb_data</ref><sp/>*fb,<sp/><ref refid="structghost__type" kindref="compound">ghost_type</ref><sp/>*ghost,<sp/><ref refid="structmap__data" kindref="compound">map_data</ref><sp/>*map);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="ghost_8h_1ae10703308badbc547da248d1dddcd699" kindref="member">ghost_move</ref>(<ref refid="structghost__type" kindref="compound">ghost_type</ref><sp/>*ghost,<sp/><ref refid="structmap__data" kindref="compound">map_data</ref><sp/>*map,<sp/><ref refid="structpacman__type" kindref="compound">pacman_type</ref><sp/>*pacman);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="ghost_8h_1a25d891c687c3f7006638701ab4856d35" kindref="member">ghost_can_move</ref>(<ref refid="structghost__type" kindref="compound">ghost_type</ref><sp/>*ghost,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>dirx,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>diry,<sp/><ref refid="structmap__data" kindref="compound">map_data</ref><sp/>*map);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="ghost_8h_1aea3ea3ec6383019544b3e889015fc6d0" kindref="member">create_moves</ref>(<ref refid="structmoves__costs__t" kindref="compound">moves_costs_t</ref><sp/>*moves_arr,<sp/><ref refid="structghost__type" kindref="compound">ghost_type</ref><sp/>*ghost,<sp/><ref refid="structmap__data" kindref="compound">map_data</ref><sp/>*map,<sp/><ref refid="structpacman__type" kindref="compound">pacman_type</ref><sp/>*pacman);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="ghost_8h_1a5384f018ac62b15c7f5e61d662a0e51c" kindref="member">change_direction</ref>(<ref refid="structghost__type" kindref="compound">ghost_type</ref><sp/>*ghost,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>possibilities,<sp/><ref refid="structmoves__costs__t" kindref="compound">moves_costs_t</ref><sp/>*moves_options);</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
     </programlisting>
     <location file="C:/Users/Petr/Documents/apo_semestralka/ghost.h"/>
   </compounddef>

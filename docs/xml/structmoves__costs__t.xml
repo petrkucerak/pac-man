@@ -15,7 +15,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Petr/Documents/apo_semestralka/ghost.h" line="19" column="10" bodyfile="C:/Users/Petr/Documents/apo_semestralka/ghost.h" bodystart="19" bodyend="-1"/>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/ghost.h" line="22" column="10" bodyfile="C:/Users/Petr/Documents/apo_semestralka/ghost.h" bodystart="22" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structmoves__costs__t_1a66700f11d42fee2413e58dbf49c43ee1" prot="public" static="no" mutable="no">
         <type>int</type>
@@ -28,10 +28,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Petr/Documents/apo_semestralka/ghost.h" line="20" column="7" bodyfile="C:/Users/Petr/Documents/apo_semestralka/ghost.h" bodystart="20" bodyend="-1"/>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/ghost.h" line="23" column="7" bodyfile="C:/Users/Petr/Documents/apo_semestralka/ghost.h" bodystart="23" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
+<para>price of movement </para>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
@@ -48,7 +49,7 @@
         <link refid="structcoords"/>
       </node>
     </collaborationgraph>
-    <location file="C:/Users/Petr/Documents/apo_semestralka/ghost.h" line="17" column="1" bodyfile="C:/Users/Petr/Documents/apo_semestralka/ghost.h" bodystart="18" bodyend="21"/>
+    <location file="C:/Users/Petr/Documents/apo_semestralka/ghost.h" line="20" column="1" bodyfile="C:/Users/Petr/Documents/apo_semestralka/ghost.h" bodystart="21" bodyend="24"/>
     <listofallmembers>
       <member refid="structmoves__costs__t_1a66700f11d42fee2413e58dbf49c43ee1" prot="public" virt="non-virtual"><scope>moves_costs_t</scope><name>cost</name></member>
       <member refid="structmoves__costs__t_1a6f3eaf7f9f7ef92ed9e838cf68763444" prot="public" virt="non-virtual"><scope>moves_costs_t</scope><name>dir</name></member>

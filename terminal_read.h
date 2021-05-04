@@ -1,18 +1,32 @@
-/*******************************************************************
-  Program to read terminal to frame buffer on MicroZed
-  based MZ_APO board designed by Petr Porazil at PiKRON
-
-  terminal_read.h      - simple program to read terminal in raw mode
-
-  (C) Copyright 2021 by Lukas Nejezchleb
-      e-mail:   nejezluk@fel.cvut.cz
-      license:  any combination of GPL, LGPL, MPL or BSD licenses
-
- *******************************************************************/
+/**
+ * @file terminal_read.h
+ * @author Lukas Nejezchleb (nejezluk@fel.cvut.cz)
+ * @brief Module housing the thread function for reading the terminal in nonblocking mode and setting the last key pressed variable
+ * @version 0.1
+ * @date 2021-05-04
+ * 
+ * @copyright Copyright (c) 2021
+ * 
+ */
 #ifndef TERMINAL_READ_H
 #define TERMINAL_READ_H
 
+/**
+ * @brief 
+ * 
+ * @return void* 
+ */
 void *input_thread(void *);
+
+/**
+ * @brief 
+ * 
+ * @param fd 
+ * @param timeout_ms 
+ * @param c 
+ * @return int 
+ */
+int serial_getc_timeout(int fd, int timeout_ms, unsigned char *c);
 
 #endif
 

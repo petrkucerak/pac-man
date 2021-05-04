@@ -175,26 +175,32 @@
     <member refid="font__types_8h_1adc4e431c2709d14befcfe5b60bb47a19" kind="variable"><name>font_rom8x16</name></member>
   </compound>
   <compound refid="game_8c" kind="file"><name>game.c</name>
-    <member refid="game_8c_1af84e8ae88873f09731321e62e77a1d18" kind="function"><name>led_blink</name></member>
-    <member refid="game_8c_1ac1ff0112ff0bb8c1a4d67cd18dc3eb3c" kind="function"><name>pause</name></member>
-    <member refid="game_8c_1ac055e6ae3ef32e12a7c56e62bae12db3" kind="function"><name>game_tick</name></member>
     <member refid="game_8c_1a72619e4d9b2b733c33327a53154c126b" kind="function"><name>run_game</name></member>
+    <member refid="game_8c_1af84e8ae88873f09731321e62e77a1d18" kind="function"><name>led_blink</name></member>
+    <member refid="game_8c_1ac055e6ae3ef32e12a7c56e62bae12db3" kind="function"><name>game_tick</name></member>
+    <member refid="game_8c_1ac1ff0112ff0bb8c1a4d67cd18dc3eb3c" kind="function"><name>pause</name></member>
   </compound>
   <compound refid="game_8h" kind="file"><name>game.h</name>
     <member refid="game_8h_1a72619e4d9b2b733c33327a53154c126b" kind="function"><name>run_game</name></member>
+    <member refid="game_8h_1af84e8ae88873f09731321e62e77a1d18" kind="function"><name>led_blink</name></member>
+    <member refid="game_8h_1ac1ff0112ff0bb8c1a4d67cd18dc3eb3c" kind="function"><name>pause</name></member>
+    <member refid="game_8h_1ac055e6ae3ef32e12a7c56e62bae12db3" kind="function"><name>game_tick</name></member>
   </compound>
   <compound refid="ghost_8c" kind="file"><name>ghost.c</name>
+    <member refid="ghost_8c_1ae10703308badbc547da248d1dddcd699" kind="function"><name>ghost_move</name></member>
     <member refid="ghost_8c_1a25d891c687c3f7006638701ab4856d35" kind="function"><name>ghost_can_move</name></member>
     <member refid="ghost_8c_1aea3ea3ec6383019544b3e889015fc6d0" kind="function"><name>create_moves</name></member>
-    <member refid="ghost_8c_1a5384f018ac62b15c7f5e61d662a0e51c" kind="function"><name>change_direction</name></member>
-    <member refid="ghost_8c_1ae10703308badbc547da248d1dddcd699" kind="function"><name>ghost_move</name></member>
     <member refid="ghost_8c_1a5a6a4ea7a54730dd11640485ca265353" kind="function"><name>draw_ghost</name></member>
     <member refid="ghost_8c_1a14b4ae2c797e212ae5255036c699676a" kind="function"><name>create_ghost</name></member>
+    <member refid="ghost_8c_1a5384f018ac62b15c7f5e61d662a0e51c" kind="function"><name>change_direction</name></member>
   </compound>
   <compound refid="ghost_8h" kind="file"><name>ghost.h</name>
     <member refid="ghost_8h_1a14b4ae2c797e212ae5255036c699676a" kind="function"><name>create_ghost</name></member>
     <member refid="ghost_8h_1a5a6a4ea7a54730dd11640485ca265353" kind="function"><name>draw_ghost</name></member>
     <member refid="ghost_8h_1ae10703308badbc547da248d1dddcd699" kind="function"><name>ghost_move</name></member>
+    <member refid="ghost_8h_1a25d891c687c3f7006638701ab4856d35" kind="function"><name>ghost_can_move</name></member>
+    <member refid="ghost_8h_1aea3ea3ec6383019544b3e889015fc6d0" kind="function"><name>create_moves</name></member>
+    <member refid="ghost_8h_1a5384f018ac62b15c7f5e61d662a0e51c" kind="function"><name>change_direction</name></member>
   </compound>
   <compound refid="map__circles_8c" kind="file"><name>map_circles.c</name>
     <member refid="map__circles_8c_1a60fffee1af9e1ad4450f40ba3b496858" kind="variable"><name>board_data</name></member>
@@ -205,14 +211,16 @@
     <member refid="map__conch_8c_1ac8e34a11ace5eef5ece1898c25d42884" kind="variable"><name>map_conch</name></member>
   </compound>
   <compound refid="map__from__template_8c" kind="file"><name>map_from_template.c</name>
+    <member refid="map__from__template_8c_1a901a095e25461784eabdda1071e872c8" kind="function"><name>create_map_data</name></member>
     <member refid="map__from__template_8c_1a5e80f2160adaa7e5d60bb07f3944c64d" kind="function"><name>create_cell</name></member>
     <member refid="map__from__template_8c_1a44624d542105803282c463099d42c825" kind="function"><name>create_cross</name></member>
-    <member refid="map__from__template_8c_1a901a095e25461784eabdda1071e872c8" kind="function"><name>create_map_data</name></member>
     <member refid="map__from__template_8c_1aa8473ad0b0fb98071c071d3389f3c810" kind="function"><name>get_coords_from_template</name></member>
   </compound>
   <compound refid="map__from__template_8h" kind="file"><name>map_from_template.h</name>
     <member refid="map__from__template_8h_1a901a095e25461784eabdda1071e872c8" kind="function"><name>create_map_data</name></member>
     <member refid="map__from__template_8h_1aa8473ad0b0fb98071c071d3389f3c810" kind="function"><name>get_coords_from_template</name></member>
+    <member refid="map__from__template_8h_1a5e80f2160adaa7e5d60bb07f3944c64d" kind="function"><name>create_cell</name></member>
+    <member refid="map__from__template_8h_1a44624d542105803282c463099d42c825" kind="function"><name>create_cross</name></member>
   </compound>
   <compound refid="map__star_8c" kind="file"><name>map_star.c</name>
     <member refid="map__star_8c_1aa1ca23287dd0a3f708f013dba91f9e2e" kind="variable"><name>board_data_s</name></member>
@@ -319,25 +327,27 @@
     <member refid="mzapo__regs_8h_1a0639b06e1fb1de7f9ee5755b1d01939c" kind="define"><name>DCSPDRV_REG_IRC_o</name></member>
   </compound>
   <compound refid="pacman_8c" kind="file"><name>pacman.c</name>
-    <member refid="pacman_8c_1a3c07103dca2f3a04c80872d8603b5d45" kind="function"><name>pacman_can_move</name></member>
     <member refid="pacman_8c_1a6049d528917cb950659f2972d92cb432" kind="function"><name>create_pacman</name></member>
     <member refid="pacman_8c_1ae1b36e370a9b73a0eed9ad43e53db1f0" kind="function"><name>pacman_move</name></member>
+    <member refid="pacman_8c_1a3c07103dca2f3a04c80872d8603b5d45" kind="function"><name>pacman_can_move</name></member>
     <member refid="pacman_8c_1a9b14d2c075ef0768af01d694a839cd38" kind="function"><name>draw_pacman</name></member>
   </compound>
   <compound refid="pacman_8h" kind="file"><name>pacman.h</name>
     <member refid="pacman_8h_1a6049d528917cb950659f2972d92cb432" kind="function"><name>create_pacman</name></member>
     <member refid="pacman_8h_1ae1b36e370a9b73a0eed9ad43e53db1f0" kind="function"><name>pacman_move</name></member>
     <member refid="pacman_8h_1a9b14d2c075ef0768af01d694a839cd38" kind="function"><name>draw_pacman</name></member>
+    <member refid="pacman_8h_1a3c07103dca2f3a04c80872d8603b5d45" kind="function"><name>pacman_can_move</name></member>
   </compound>
   <compound refid="_r_e_a_d_m_e_8md" kind="file"><name>README.md</name>
   </compound>
   <compound refid="terminal__read_8c" kind="file"><name>terminal_read.c</name>
     <member refid="terminal__read_8c_1af20c817269948e133751a67b8e365443" kind="define"><name>TERMINAL_TIMEOUT_MS</name></member>
-    <member refid="terminal__read_8c_1a4d4ef2b89a0190b7e5ebb1edf4d1cee3" kind="function"><name>serial_getc_timeout</name></member>
     <member refid="terminal__read_8c_1ae7c22110d0df71d9a907263450bbafb8" kind="function"><name>input_thread</name></member>
+    <member refid="terminal__read_8c_1a4d4ef2b89a0190b7e5ebb1edf4d1cee3" kind="function"><name>serial_getc_timeout</name></member>
   </compound>
   <compound refid="terminal__read_8h" kind="file"><name>terminal_read.h</name>
     <member refid="terminal__read_8h_1a6e5f9cf7005e2874fa80bac20e2452b6" kind="function"><name>input_thread</name></member>
+    <member refid="terminal__read_8h_1a4d4ef2b89a0190b7e5ebb1edf4d1cee3" kind="function"><name>serial_getc_timeout</name></member>
   </compound>
   <compound refid="text__fb_8c" kind="file"><name>text_fb.c</name>
     <member refid="text__fb_8c_1a21645f17c98617a8bd7342f9fdb78899" kind="function"><name>draw_char</name></member>

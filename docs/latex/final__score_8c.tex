@@ -1,5 +1,10 @@
 \hypertarget{final__score_8c}{}\doxysection{C\+:/\+Users/\+Petr/\+Documents/apo\+\_\+semestralka/final\+\_\+score.c File Reference}
 \label{final__score_8c}\index{C:/Users/Petr/Documents/apo\_semestralka/final\_score.c@{C:/Users/Petr/Documents/apo\_semestralka/final\_score.c}}
+
+
+Module with function draw final score that draws the final score to the screen and waits for user input. Returns true if the user pressed the s key and therefor wants to continue playing or the q key indicating he wants to end the program.  
+
+
 {\ttfamily \#include $<$stdio.\+h$>$}\newline
 {\ttfamily \#include \char`\"{}final\+\_\+score.\+h\char`\"{}}\newline
 {\ttfamily \#include \char`\"{}data\+\_\+structures.\+h\char`\"{}}\newline
@@ -11,7 +16,24 @@
 \begin{DoxyCompactItemize}
 \item 
 bool \mbox{\hyperlink{final__score_8c_a781cab829dad372f9f55089f57a85df0}{draw\+\_\+final\+\_\+score}} (int score, \mbox{\hyperlink{structfb__data}{fb\+\_\+data}} $\ast$frame\+\_\+buff, unsigned char $\ast$lcd\+\_\+mem\+\_\+base, \mbox{\hyperlink{structfont__descriptor__t}{font\+\_\+descriptor\+\_\+t}} $\ast$font)
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Draws the final score to the screen and waits for user input. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Module with function draw final score that draws the final score to the screen and waits for user input. Returns true if the user pressed the s key and therefor wants to continue playing or the q key indicating he wants to end the program. 
+
+\begin{DoxyAuthor}{Author}
+Petr Kucera (\href{mailto:kucerp28@fel.cvut.cz}{\texttt{ kucerp28@fel.\+cvut.\+cz}}) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2021-\/05-\/04
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2021 
+\end{DoxyCopyright}
 
 
 \doxysubsection{Function Documentation}
@@ -21,6 +43,23 @@ bool \mbox{\hyperlink{final__score_8c_a781cab829dad372f9f55089f57a85df0}{draw\+\
 \doxysubsubsection{\texorpdfstring{draw\_final\_score()}{draw\_final\_score()}}
 {\footnotesize\ttfamily bool draw\+\_\+final\+\_\+score (\begin{DoxyParamCaption}\item[{int}]{score,  }\item[{\mbox{\hyperlink{structfb__data}{fb\+\_\+data}} $\ast$}]{frame\+\_\+buff,  }\item[{unsigned char $\ast$}]{lcd\+\_\+mem\+\_\+base,  }\item[{\mbox{\hyperlink{structfont__descriptor__t}{font\+\_\+descriptor\+\_\+t}} $\ast$}]{font }\end{DoxyParamCaption})}
 
-function draw final score \begin{DoxyReturn}{Returns}
-false -\/ quit game; true -\/ play game again 
+
+
+Draws the final score to the screen and waits for user input. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em score} & \\
+\hline
+{\em frame\+\_\+buff} & \\
+\hline
+{\em lcd\+\_\+mem\+\_\+base} & \\
+\hline
+{\em font} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the user pressed the s key and therefor wants to continue playing 
+
+false if the user pressed the q key indicating he wants to end the program 
 \end{DoxyReturn}

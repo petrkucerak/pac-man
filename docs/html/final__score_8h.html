@@ -89,6 +89,9 @@ $(document).ready(function(){initNavTree('final__score_8h.html',''); initResizab
 <div class="title">final_score.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Module with function draw final score that draws the final score to the screen and waits for user input. Returns true if the user pressed the s key and therefor wants to continue playing or the q key indicating he wants to end the program.  
+<a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;stdbool.h&gt;</code><br />
 <code>#include &quot;<a class="el" href="data__structures_8h_source.html">data_structures.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="font__types_8h_source.html">font_types.h</a>&quot;</code><br />
@@ -98,9 +101,16 @@ $(document).ready(function(){initNavTree('final__score_8h.html',''); initResizab
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a781cab829dad372f9f55089f57a85df0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="final__score_8h.html#a781cab829dad372f9f55089f57a85df0">draw_final_score</a> (int score, <a class="el" href="structfb__data.html">fb_data</a> *frame_buff, unsigned char *lcd_mem_base, <a class="el" href="structfont__descriptor__t.html">font_descriptor_t</a> *font)</td></tr>
+<tr class="memdesc:a781cab829dad372f9f55089f57a85df0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draws the final score to the screen and waits for user input.  <a href="final__score_8h.html#a781cab829dad372f9f55089f57a85df0">More...</a><br /></td></tr>
 <tr class="separator:a781cab829dad372f9f55089f57a85df0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Module with function draw final score that draws the final score to the screen and waits for user input. Returns true if the user pressed the s key and therefor wants to continue playing or the q key indicating he wants to end the program. </p>
+<dl class="section author"><dt>Author</dt><dd>Petr Kucera (<a href="#" onclick="location.href='mai'+'lto:'+'kuc'+'er'+'p28'+'@f'+'el.'+'cv'+'ut.'+'cz'; return false;">kucer<span style="display: none;">.nosp@m.</span>p28@<span style="display: none;">.nosp@m.</span>fel.c<span style="display: none;">.nosp@m.</span>vut.<span style="display: none;">.nosp@m.</span>cz</a>) </dd></dl>
+<dl class="section version"><dt>Version</dt><dd>0.1 </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2021-05-04</dd></dl>
+<dl class="section copyright"><dt>Copyright</dt><dd>Copyright (c) 2021 </dd></dl>
+</div><h2 class="groupheader">Function Documentation</h2>
 <a id="a781cab829dad372f9f55089f57a85df0"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a781cab829dad372f9f55089f57a85df0">&#9670;&nbsp;</a></span>draw_final_score()</h2>
 
@@ -138,7 +148,20 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>function draw final score </p><dl class="section return"><dt>Returns</dt><dd>false - quit game; true - play game again </dd></dl>
+
+<p>Draws the final score to the screen and waits for user input. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">score</td><td></td></tr>
+    <tr><td class="paramname">frame_buff</td><td></td></tr>
+    <tr><td class="paramname">lcd_mem_base</td><td></td></tr>
+    <tr><td class="paramname">font</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the user pressed the s key and therefor wants to continue playing </dd>
+<dd>
+false if the user pressed the q key indicating he wants to end the program </dd></dl>
 
 </div>
 </div>

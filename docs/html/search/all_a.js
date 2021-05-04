@@ -5,7 +5,7 @@ var searchData=
   ['lcd_5fh_113',['lcd_h',['../structperipherals__data__t.html#a5680649ae248685c18e72927444139ee',1,'peripherals_data_t']]],
   ['lcd_5fmem_5fbase_114',['lcd_mem_base',['../structperipherals__data__t.html#a7c4a56da1b7b5d790b55198486e9c322',1,'peripherals_data_t']]],
   ['lcd_5fw_115',['lcd_w',['../structperipherals__data__t.html#ab09267ea5cf5fa173a23a69dd5f1bb26',1,'peripherals_data_t']]],
-  ['led_5fblink_116',['led_blink',['../game_8c.html#af84e8ae88873f09731321e62e77a1d18',1,'game.c']]],
+  ['led_5fblink_116',['led_blink',['../game_8c.html#af84e8ae88873f09731321e62e77a1d18',1,'led_blink(unsigned char *led_mem_base, int scare_countdown, int pacman_score):&#160;game.c'],['../game_8h.html#af84e8ae88873f09731321e62e77a1d18',1,'led_blink(unsigned char *led_mem_base, int scare_countdown, int pacman_score):&#160;game.c']]],
   ['led_5fmax_5fval_117',['LED_MAX_VAL',['../apoman_8c.html#a4b53d3b2b31b863f63cc5582629ca8e3',1,'apoman.c']]],
   ['led_5fmem_5fbase_118',['led_mem_base',['../structperipherals__data__t.html#a50905c9b00b3aa4d07fb32429550c7c0',1,'peripherals_data_t']]],
   ['led_5fnormal_5fcolor_119',['LED_NORMAL_COLOR',['../config_8h.html#af6a54e35c04441964ee74f63733659e9',1,'config.h']]],

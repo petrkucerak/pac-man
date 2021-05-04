@@ -132,13 +132,55 @@
           <declname>color</declname>
         </param>
         <briefdescription>
+<para>Draws the circle with center at x,y with given radius. </para>
         </briefdescription>
         <detaileddescription>
-<para>function to draw circle to <ref refid="structfb__data" kindref="compound">fb_data</ref> frame at x,y with radius and color </para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>frame</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>radius</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Petr/Documents/apo_semestralka/draw_shapes.h" line="20" column="6" bodyfile="C:/Users/Petr/Documents/apo_semestralka/draw_shapes.c" bodystart="22" bodyend="37" declfile="C:/Users/Petr/Documents/apo_semestralka/draw_shapes.h" declline="20" declcolumn="6"/>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/draw_shapes.h" line="25" column="6" bodyfile="C:/Users/Petr/Documents/apo_semestralka/draw_shapes.c" bodystart="21" bodyend="36" declfile="C:/Users/Petr/Documents/apo_semestralka/draw_shapes.h" declline="25" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="draw__shapes_8h_1a559a33154244f0ee1523958f44421c48" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -170,13 +212,63 @@
           <declname>color</declname>
         </param>
         <briefdescription>
+<para>Draws rectangle with left upper corner at x,y. </para>
         </briefdescription>
         <detaileddescription>
-<para>function to draw rectangle to <ref refid="structfb__data" kindref="compound">fb_data</ref> frame at x,y with width and height and color </para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>frame</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>width</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>height</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Petr/Documents/apo_semestralka/draw_shapes.h" line="25" column="6" bodyfile="C:/Users/Petr/Documents/apo_semestralka/draw_shapes.c" bodystart="39" bodyend="55" declfile="C:/Users/Petr/Documents/apo_semestralka/draw_shapes.h" declline="25" declcolumn="6"/>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/draw_shapes.h" line="37" column="6" bodyfile="C:/Users/Petr/Documents/apo_semestralka/draw_shapes.c" bodystart="38" bodyend="54" declfile="C:/Users/Petr/Documents/apo_semestralka/draw_shapes.h" declline="37" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="draw__shapes_8h_1a6d5b7bfa9cee0ff7724230c622354531" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -192,13 +284,31 @@
           <declname>color</declname>
         </param>
         <briefdescription>
+<para>Draws given colour across the whole frame buffer. </para>
         </briefdescription>
         <detaileddescription>
-<para>sets background to certain color </para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>frame</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Petr/Documents/apo_semestralka/draw_shapes.h" line="30" column="6" bodyfile="C:/Users/Petr/Documents/apo_semestralka/draw_shapes.c" bodystart="57" bodyend="63" declfile="C:/Users/Petr/Documents/apo_semestralka/draw_shapes.h" declline="30" declcolumn="6"/>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/draw_shapes.h" line="45" column="6" bodyfile="C:/Users/Petr/Documents/apo_semestralka/draw_shapes.c" bodystart="56" bodyend="62" declfile="C:/Users/Petr/Documents/apo_semestralka/draw_shapes.h" declline="45" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="draw__shapes_8h_1a93686d02b452d0aa3a5b050bf1f92c82" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -226,13 +336,55 @@
           <declname>color</declname>
         </param>
         <briefdescription>
+<para>Draws an ghost at x,y, bitmap of ghost is also in this function. </para>
         </briefdescription>
         <detaileddescription>
-<para>draws the ghost shape to fb </para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>frame</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>scale</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Petr/Documents/apo_semestralka/draw_shapes.h" line="35" column="6" bodyfile="C:/Users/Petr/Documents/apo_semestralka/draw_shapes.c" bodystart="65" bodyend="93" declfile="C:/Users/Petr/Documents/apo_semestralka/draw_shapes.h" declline="35" declcolumn="6"/>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/draw_shapes.h" line="56" column="6" bodyfile="C:/Users/Petr/Documents/apo_semestralka/draw_shapes.c" bodystart="64" bodyend="92" declfile="C:/Users/Petr/Documents/apo_semestralka/draw_shapes.h" declline="56" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="draw__shapes_8h_1a530d11a612c21d12b57752d57d91a3ff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -264,46 +416,95 @@
           <declname>direction</declname>
         </param>
         <briefdescription>
+<para>Pacman facing given direction with his mouth. </para>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>frame</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>y</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>radius</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>color</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>direction</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Petr/Documents/apo_semestralka/draw_shapes.h" line="38" column="6" bodyfile="C:/Users/Petr/Documents/apo_semestralka/draw_shapes.c" bodystart="95" bodyend="126" declfile="C:/Users/Petr/Documents/apo_semestralka/draw_shapes.h" declline="38" declcolumn="6"/>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/draw_shapes.h" line="68" column="6" bodyfile="C:/Users/Petr/Documents/apo_semestralka/draw_shapes.c" bodystart="94" bodyend="125" declfile="C:/Users/Petr/Documents/apo_semestralka/draw_shapes.h" declline="68" declcolumn="6"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
+<para>Module with functions to draw shapes to the frame buffer. </para>
     </briefdescription>
     <detaileddescription>
+<para><simplesect kind="author"><para>Lukas Nejezchleb (<ulink url="mailto:nejezluk@fel.cvut.cz">nejezluk@fel.cvut.cz</ulink>) </para>
+</simplesect>
+<simplesect kind="version"><para>0.1 </para>
+</simplesect>
+<simplesect kind="date"><para>2021-05-04</para>
+</simplesect>
+<simplesect kind="copyright"><para>Copyright (c) 2021 </para>
+</simplesect>
+</para>
     </detaileddescription>
     <programlisting>
-<codeline lineno="1"><highlight class="comment">/*******************************************************************</highlight></codeline>
-<codeline lineno="2"><highlight class="comment"><sp/><sp/>Program<sp/>to<sp/>draw<sp/>simple<sp/>shapes<sp/>to<sp/>frame<sp/>buffer<sp/>on<sp/>MicroZed</highlight></codeline>
-<codeline lineno="3"><highlight class="comment"><sp/><sp/>based<sp/>MZ_APO<sp/>board<sp/>designed<sp/>by<sp/>Petr<sp/>Porazil<sp/>at<sp/>PiKRON</highlight></codeline>
-<codeline lineno="4"><highlight class="comment"></highlight></codeline>
-<codeline lineno="5"><highlight class="comment"><sp/><sp/>draw_shapes.h<sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>simple<sp/>program<sp/>to<sp/>draw<sp/>shapes</highlight></codeline>
-<codeline lineno="6"><highlight class="comment"></highlight></codeline>
-<codeline lineno="7"><highlight class="comment"><sp/><sp/>(C)<sp/>Copyright<sp/>2021<sp/>by<sp/>Lukas<sp/>Nejezchleb</highlight></codeline>
-<codeline lineno="8"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>e-mail:<sp/><sp/><sp/>nejezluk@fel.cvut.cz</highlight></codeline>
-<codeline lineno="9"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>license:<sp/><sp/>any<sp/>combination<sp/>of<sp/>GPL,<sp/>LGPL,<sp/>MPL<sp/>or<sp/>BSD<sp/>licenses</highlight></codeline>
-<codeline lineno="10"><highlight class="comment"></highlight></codeline>
-<codeline lineno="11"><highlight class="comment"><sp/>*******************************************************************/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="12"><highlight class="normal"></highlight></codeline>
-<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>DRAW_SHAPES_H</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DRAW_SHAPES_H</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="data__structures_8h" kindref="compound">data_structures.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="16"><highlight class="normal"></highlight></codeline>
-<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="draw__shapes_8h_1a44ae4e3d2c0aa9c951284b6414ae6527" kindref="member">draw_circle</ref>(<ref refid="structfb__data" kindref="compound">fb_data</ref><sp/>*frame,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>radius,<sp/>uint16_t<sp/>color);</highlight></codeline>
-<codeline lineno="21"><highlight class="normal"></highlight></codeline>
-<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="draw__shapes_8h_1a559a33154244f0ee1523958f44421c48" kindref="member">draw_rectangle</ref>(<ref refid="structfb__data" kindref="compound">fb_data</ref><sp/>*frame,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>width,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>height,<sp/>uint16_t<sp/>color);</highlight></codeline>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>DRAW_SHAPES_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DRAW_SHAPES_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="data__structures_8h" kindref="compound">data_structures.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="draw__shapes_8h_1a44ae4e3d2c0aa9c951284b6414ae6527" kindref="member">draw_circle</ref>(<ref refid="structfb__data" kindref="compound">fb_data</ref><sp/>*frame,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>radius,<sp/>uint16_t<sp/>color);</highlight></codeline>
 <codeline lineno="26"><highlight class="normal"></highlight></codeline>
-<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="draw__shapes_8h_1a6d5b7bfa9cee0ff7724230c622354531" kindref="member">set_background</ref>(<ref refid="structfb__data" kindref="compound">fb_data</ref><sp/>*frame,<sp/>uint16_t<sp/>color);</highlight></codeline>
-<codeline lineno="31"><highlight class="normal"></highlight></codeline>
-<codeline lineno="35"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="draw__shapes_8h_1a93686d02b452d0aa3a5b050bf1f92c82" kindref="member">draw_ghost_shape</ref>(<ref refid="structfb__data" kindref="compound">fb_data</ref><sp/>*frame,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>scale,<sp/>uint16_t<sp/>color);</highlight></codeline>
-<codeline lineno="36"><highlight class="normal"></highlight></codeline>
-<codeline lineno="37"><highlight class="normal"></highlight></codeline>
-<codeline lineno="38"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="draw__shapes_8h_1a530d11a612c21d12b57752d57d91a3ff" kindref="member">draw_pacman_dir</ref>(<ref refid="structfb__data" kindref="compound">fb_data</ref><sp/>*frame,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>radius,<sp/>uint16_t<sp/>color,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>direction);</highlight></codeline>
-<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="draw__shapes_8h_1a559a33154244f0ee1523958f44421c48" kindref="member">draw_rectangle</ref>(<ref refid="structfb__data" kindref="compound">fb_data</ref><sp/>*frame,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>width,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>height,<sp/>uint16_t<sp/>color);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="draw__shapes_8h_1a6d5b7bfa9cee0ff7724230c622354531" kindref="member">set_background</ref>(<ref refid="structfb__data" kindref="compound">fb_data</ref><sp/>*frame,<sp/>uint16_t<sp/>color);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="draw__shapes_8h_1a93686d02b452d0aa3a5b050bf1f92c82" kindref="member">draw_ghost_shape</ref>(<ref refid="structfb__data" kindref="compound">fb_data</ref><sp/>*frame,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>scale,<sp/>uint16_t<sp/>color);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="draw__shapes_8h_1a530d11a612c21d12b57752d57d91a3ff" kindref="member">draw_pacman_dir</ref>(<ref refid="structfb__data" kindref="compound">fb_data</ref><sp/>*frame,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>radius,<sp/>uint16_t<sp/>color,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>direction);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
     </programlisting>
     <location file="C:/Users/Petr/Documents/apo_semestralka/draw_shapes.h"/>
   </compounddef>

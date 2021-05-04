@@ -1,14 +1,13 @@
-/*******************************************************************
-  Program to draw text to frame buffer on MicroZed
-  based MZ_APO board designed by Petr Porazil at PiKRON
-
-  menu_utilites.c      - functions for settings game
-
-  (C) Copyright 2021 by Petr Kucera
-      e-mail:   kucerp28@fel.cvut.cz
-      license:  any combination of GPL, LGPL, MPL or BSD licenses
-
- *******************************************************************/
+/**
+ * @file menu_utilities.c
+ * @author Petr Kucera (kucerp28@fel.cvut.cz)
+ * @brief Module for drawing menu, setting game settings and starting the game
+ * @version 0.1
+ * @date 2021-05-04
+ * 
+ * @copyright Copyright (c) 2021
+ * 
+ */
 
 #include <stdio.h>
 #include "menu_utilities.h"
@@ -41,7 +40,7 @@ void run_init_game_menu(fb_data *frame_buff, unsigned char *lcd_mem_base,
     lcd_from_fb(frame_buff, lcd_mem_base);
     // listen symbol
     char read = ' ';
-    while (read != 's' && read !='q')
+    while (read != 's' && read != 'q')
     {
       // scan input
       pthread_mutex_lock(&mtx);
@@ -70,7 +69,9 @@ void run_init_game_menu(fb_data *frame_buff, unsigned char *lcd_mem_base,
       int game_score = run_game(&game, &peripherals);
       // draw packman score
       play_game_again = draw_final_score(game_score, frame_buff, lcd_mem_base, font);
-    }else{
+    }
+    else
+    {
       play_game_again = false;
     }
   }
@@ -103,7 +104,7 @@ game_init_data_t sub_menu_lives(fb_data *frame_buff, unsigned char *lcd_mem_base
     snprintf(string_tmp, 40, "%d", game_data.pacman_lives);
     draw_text_center(frame_buff, string_tmp, frame_buff->width / 2, HEIGHT_M / 2, 3, font, 0xffff);
     snprintf(string_tmp, 40, "zmackni cislo (max %c)", MAX_LIVES);
-    draw_text_center(frame_buff,string_tmp , frame_buff->width / 2, HEIGHT_M / 2 + HEIGHT_M / 7, 2, font, 0xffff);
+    draw_text_center(frame_buff, string_tmp, frame_buff->width / 2, HEIGHT_M / 2 + HEIGHT_M / 7, 2, font, 0xffff);
     draw_text_center(frame_buff, "POTVRDIT: [c]", frame_buff->width / 2, HEIGHT_M - HEIGHT_M / 10, 2, font, 0xffff);
     // update display
     lcd_from_fb(frame_buff, lcd_mem_base);
@@ -151,11 +152,11 @@ game_init_data_t sub_menu_map(fb_data *frame_buff, unsigned char *lcd_mem_base, 
     // listen orders
     if (c == 'a')
     {
-      i = (i-1+map_templates_len)%map_templates_len;
+      i = (i - 1 + map_templates_len) % map_templates_len;
     }
     if (c == 'd')
     {
-      i = (i+1+map_templates_len)%map_templates_len;    
+      i = (i + 1 + map_templates_len) % map_templates_len;
     }
     game_data.map = map_templates[i];
   }
@@ -174,7 +175,7 @@ game_init_data_t sub_menu_ghosts(fb_data *frame_buff, unsigned char *lcd_mem_bas
     char string_tmp[40];
     snprintf(string_tmp, 40, "%d", game_data.ghost_nr);
     draw_text_center(frame_buff, string_tmp, frame_buff->width / 2, HEIGHT_M / 2, 3, font, 0xffff);
-     snprintf(string_tmp, 40, "zmackni cislo (max %c)", MAX_GHOSTS);
+    snprintf(string_tmp, 40, "zmackni cislo (max %c)", MAX_GHOSTS);
     draw_text_center(frame_buff, string_tmp, frame_buff->width / 2, HEIGHT_M / 2 + HEIGHT_M / 7, 2, font, 0xffff);
     draw_text_center(frame_buff, "POTVRDIT: [c]", frame_buff->width / 2, HEIGHT_M - HEIGHT_M / 10, 2, font, 0xffff);
     // update display
@@ -185,7 +186,7 @@ game_init_data_t sub_menu_ghosts(fb_data *frame_buff, unsigned char *lcd_mem_bas
     c = read_thread_data.last_read;
     pthread_mutex_unlock(&mtx);
     // listen orders
-    if (c > '0' && c <=MAX_GHOSTS)
+    if (c > '0' && c <= MAX_GHOSTS)
     {
       game_data.ghost_nr = c - '0';
     }

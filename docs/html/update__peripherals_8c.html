@@ -89,6 +89,9 @@ $(document).ready(function(){initNavTree('update__peripherals_8c.html',''); init
 <div class="title">update_peripherals.c File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Module for setting the peripherals.  
+<a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="update__peripherals_8h_source.html">update_peripherals.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="mzapo__parlcd_8h_source.html">mzapo_parlcd.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="mzapo__regs_8h_source.html">mzapo_regs.h</a>&quot;</code><br />
@@ -98,17 +101,28 @@ $(document).ready(function(){initNavTree('update__peripherals_8c.html',''); init
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:aa30de0dfddc51283d5b5e429fdb6f030"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="update__peripherals_8c.html#aa30de0dfddc51283d5b5e429fdb6f030">lcd_from_fb</a> (const <a class="el" href="structfb__data.html">fb_data</a> *frame_buff, unsigned char *parlcd_mem_base)</td></tr>
+<tr class="memdesc:aa30de0dfddc51283d5b5e429fdb6f030"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the lcd pixels to colors described in frame buffer.  <a href="update__peripherals_8c.html#aa30de0dfddc51283d5b5e429fdb6f030">More...</a><br /></td></tr>
 <tr class="separator:aa30de0dfddc51283d5b5e429fdb6f030"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a27f1db817fb1375b46affe1dc4d0dc9b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="update__peripherals_8c.html#a27f1db817fb1375b46affe1dc4d0dc9b">led_strip_number</a> (unsigned char *led_mem_base, int max_nr, int nr)</td></tr>
+<tr class="memdesc:a27f1db817fb1375b46affe1dc4d0dc9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shows number as number of clusters on the led strip.  <a href="update__peripherals_8c.html#a27f1db817fb1375b46affe1dc4d0dc9b">More...</a><br /></td></tr>
 <tr class="separator:a27f1db817fb1375b46affe1dc4d0dc9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af830207334d68a6414d80117e98e7a84"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="update__peripherals_8c.html#af830207334d68a6414d80117e98e7a84">set_left_RGB</a> (unsigned char *led_mem_base, uint8_t r, uint8_t g, uint8_t b)</td></tr>
+<tr class="memdesc:af830207334d68a6414d80117e98e7a84"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the left RGB led to particular rgb color.  <a href="update__peripherals_8c.html#af830207334d68a6414d80117e98e7a84">More...</a><br /></td></tr>
 <tr class="separator:af830207334d68a6414d80117e98e7a84"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a55ba16e218e56e6112bea4cb48dd7017"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="update__peripherals_8c.html#a55ba16e218e56e6112bea4cb48dd7017">set_right_RGB</a> (unsigned char *led_mem_base, uint8_t r, uint8_t g, uint8_t b)</td></tr>
+<tr class="memdesc:a55ba16e218e56e6112bea4cb48dd7017"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the right RGB led to particular rgb color.  <a href="update__peripherals_8c.html#a55ba16e218e56e6112bea4cb48dd7017">More...</a><br /></td></tr>
 <tr class="separator:a55ba16e218e56e6112bea4cb48dd7017"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afdba9f1f14e9a81789f87d33a36bda35"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="update__peripherals_8c.html#afdba9f1f14e9a81789f87d33a36bda35">sel_leds_color</a> (unsigned char *led_mem_base, uint32_t color)</td></tr>
+<tr class="memdesc:afdba9f1f14e9a81789f87d33a36bda35"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets both to color.  <a href="update__peripherals_8c.html#afdba9f1f14e9a81789f87d33a36bda35">More...</a><br /></td></tr>
 <tr class="separator:afdba9f1f14e9a81789f87d33a36bda35"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Module for setting the peripherals. </p>
+<dl class="section author"><dt>Author</dt><dd>Lukas Nejezchleb (<a href="#" onclick="location.href='mai'+'lto:'+'nej'+'ez'+'luk'+'@f'+'el.'+'cv'+'ut.'+'cz'; return false;">nejez<span style="display: none;">.nosp@m.</span>luk@<span style="display: none;">.nosp@m.</span>fel.c<span style="display: none;">.nosp@m.</span>vut.<span style="display: none;">.nosp@m.</span>cz</a>) </dd></dl>
+<dl class="section version"><dt>Version</dt><dd>0.1 </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2021-05-04</dd></dl>
+<dl class="section copyright"><dt>Copyright</dt><dd>Copyright (c) 2021 </dd></dl>
+</div><h2 class="groupheader">Function Documentation</h2>
 <a id="aa30de0dfddc51283d5b5e429fdb6f030"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aa30de0dfddc51283d5b5e429fdb6f030">&#9670;&nbsp;</a></span>lcd_from_fb()</h2>
 
@@ -134,7 +148,15 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>function that updates the LCD from frame buffer. LCD has to be initialised </p>
+
+<p>Sets the lcd pixels to colors described in frame buffer. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">frame_buff</td><td></td></tr>
+    <tr><td class="paramname">parlcd_mem_base</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -169,7 +191,16 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>function that shows nr on the ledstrip </p>
+
+<p>Shows number as number of clusters on the led strip. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">led_mem_base</td><td></td></tr>
+    <tr><td class="paramname">max_nr</td><td></td></tr>
+    <tr><td class="paramname">nr</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -198,7 +229,15 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>sets both leds to color </p>
+
+<p>Sets both to color. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">led_mem_base</td><td></td></tr>
+    <tr><td class="paramname">color</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -239,7 +278,17 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>sets left RGB to particular color </p>
+
+<p>Sets the left RGB led to particular rgb color. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">led_mem_base</td><td></td></tr>
+    <tr><td class="paramname">r</td><td></td></tr>
+    <tr><td class="paramname">g</td><td></td></tr>
+    <tr><td class="paramname">b</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -280,7 +329,17 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<p>sets right RGB to particular color </p>
+
+<p>Sets the right RGB led to particular rgb color. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">led_mem_base</td><td></td></tr>
+    <tr><td class="paramname">r</td><td></td></tr>
+    <tr><td class="paramname">g</td><td></td></tr>
+    <tr><td class="paramname">b</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

@@ -2,7 +2,8 @@
 .ad l
 .nh
 .SH NAME
-C:/Users/Petr/Documents/apo_semestralka/game.h
+C:/Users/Petr/Documents/apo_semestralka/game.h \- Module where the game is taking place\&.  
+
 .SH SYNOPSIS
 .br
 .PP
@@ -19,15 +20,118 @@ C:/Users/Petr/Documents/apo_semestralka/game.h
 .ti -1c
 .RI "int \fBrun_game\fP (\fBgame_init_data_t\fP *game_data, \fBperipherals_data_t\fP *peripherals)"
 .br
+.RI "Initialises all necessary data structures and loops the game tick and refreshing screen while the player has not won, lost or pressed the q key\&. "
+.ti -1c
+.RI "void \fBled_blink\fP (unsigned char *led_mem_base, int scare_countdown, int pacman_score)"
+.br
+.RI "Internal functions for setting the color of RGB leds according to the game state\&. "
+.ti -1c
+.RI "void \fBpause\fP (\fBfb_data\fP *fb, \fBperipherals_data_t\fP *peripherals)"
+.br
+.RI "displays the pause message and waits for user to press the pause of quit key "
+.ti -1c
+.RI "bool \fBgame_tick\fP (\fBmap_data\fP *map, \fBpacman_type\fP *pacman, \fBghost_type\fP *ghost_arr, int num_ghosts, int *scare)"
+.br
+.RI "moves pacman and each ghost one step, checking for collisions and user input "
 .in -1c
+.SH "Detailed Description"
+.PP 
+Module where the game is taking place\&. 
+
+
+.PP
+\fBAuthor\fP
+.RS 4
+Lukas Nejezchleb (nejezluk@fel.cvut.cz), Petr Kucera (kucerp28@fel.cvut.cz) 
+.RE
+.PP
+\fBVersion\fP
+.RS 4
+0\&.1 
+.RE
+.PP
+\fBDate\fP
+.RS 4
+2021-05-04
+.RE
+.PP
+\fBCopyright\fP
+.RS 4
+Copyright (c) 2021 
+.RE
+.PP
+
 .SH "Function Documentation"
 .PP 
-.SS "int run_game (\fBgame_init_data_t\fP * game_data, \fBperipherals_data_t\fP * peripherals)"
+.SS "bool game_tick (\fBmap_data\fP * map, \fBpacman_type\fP * pacman, \fBghost_type\fP * ghost_arr, int num_ghosts, int * scare)"
 
+.PP
+moves pacman and each ghost one step, checking for collisions and user input 
+.PP
+\fBParameters\fP
+.RS 4
+\fImap\fP 
+.br
+\fIpacman\fP 
+.br
+\fIghost_arr\fP 
+.br
+\fInum_ghosts\fP 
+.br
+\fIscare\fP 
+.RE
 .PP
 \fBReturns\fP
 .RS 4
-packman score 
+true 
+.PP
+false 
+.RE
+.PP
+
+.SS "void led_blink (unsigned char * led_mem_base, int scare_countdown, int pacman_score)"
+
+.PP
+Internal functions for setting the color of RGB leds according to the game state\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIled_mem_base\fP 
+.br
+\fIscare_countdown\fP 
+.br
+\fIpacman_score\fP 
+.RE
+.PP
+
+.SS "void pause (\fBfb_data\fP * fb, \fBperipherals_data_t\fP * peripherals)"
+
+.PP
+displays the pause message and waits for user to press the pause of quit key 
+.PP
+\fBParameters\fP
+.RS 4
+\fIfb\fP 
+.br
+\fIperipherals\fP 
+.RE
+.PP
+
+.SS "int run_game (\fBgame_init_data_t\fP * game_data, \fBperipherals_data_t\fP * peripherals)"
+
+.PP
+Initialises all necessary data structures and loops the game tick and refreshing screen while the player has not won, lost or pressed the q key\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIgame_data\fP 
+.br
+\fIperipherals\fP 
+.RE
+.PP
+\fBReturns\fP
+.RS 4
+int pac-man game score 
 .RE
 .PP
 

@@ -2,7 +2,7 @@ var searchData=
 [
   ['pacman_2ec_162',['pacman.c',['../pacman_8c.html',1,'']]],
   ['pacman_2eh_163',['pacman.h',['../pacman_8h.html',1,'']]],
-  ['pacman_5fcan_5fmove_164',['pacman_can_move',['../pacman_8c.html#a3c07103dca2f3a04c80872d8603b5d45',1,'pacman.c']]],
+  ['pacman_5fcan_5fmove_164',['pacman_can_move',['../pacman_8c.html#a3c07103dca2f3a04c80872d8603b5d45',1,'pacman_can_move(pacman_type *pacman, int dirx, int diry, map_data *map):&#160;pacman.c'],['../pacman_8h.html#a3c07103dca2f3a04c80872d8603b5d45',1,'pacman_can_move(pacman_type *pacman, int dirx, int diry, map_data *map):&#160;pacman.c']]],
   ['pacman_5fcolor_165',['PACMAN_COLOR',['../config_8h.html#aeb40fd013a03d54f103aa9feef0f35ac',1,'config.h']]],
   ['pacman_5flives_166',['pacman_lives',['../structgame__init__data__t.html#a04be3af67b53e5039fb982da0fecae38',1,'game_init_data_t']]],
   ['pacman_5fmove_167',['pacman_move',['../pacman_8c.html#ae1b36e370a9b73a0eed9ad43e53db1f0',1,'pacman_move(pacman_type *pacman, map_data *map):&#160;pacman.c'],['../pacman_8h.html#ae1b36e370a9b73a0eed9ad43e53db1f0',1,'pacman_move(pacman_type *pacman, map_data *map):&#160;pacman.c']]],
@@ -24,7 +24,7 @@ var searchData=
   ['parlcd_5fwrite_5fdata2x_183',['parlcd_write_data2x',['../mzapo__parlcd_8c.html#a688f82186392823303897ee3f270718a',1,'parlcd_write_data2x(unsigned char *parlcd_mem_base, uint32_t data):&#160;mzapo_parlcd.c'],['../mzapo__parlcd_8h.html#a688f82186392823303897ee3f270718a',1,'parlcd_write_data2x(unsigned char *parlcd_mem_base, uint32_t data):&#160;mzapo_parlcd.c']]],
   ['passage_184',['PASSAGE',['../data__structures_8h.html#adf6a8131152ce4fd04f96338c00f548b',1,'data_structures.h']]],
   ['path_5fcolor_185',['PATH_COLOR',['../config_8h.html#a3aac54ffa4781528709d17a683e54fb5',1,'config.h']]],
-  ['pause_186',['pause',['../game_8c.html#ac1ff0112ff0bb8c1a4d67cd18dc3eb3c',1,'game.c']]],
+  ['pause_186',['pause',['../game_8c.html#ac1ff0112ff0bb8c1a4d67cd18dc3eb3c',1,'pause(fb_data *fb, peripherals_data_t *peripherals):&#160;game.c'],['../game_8h.html#ac1ff0112ff0bb8c1a4d67cd18dc3eb3c',1,'pause(fb_data *fb, peripherals_data_t *peripherals):&#160;game.c']]],
   ['pause_5fcolor_187',['PAUSE_COLOR',['../config_8h.html#a7bc224f294717d13a0a9e72a90d26727',1,'config.h']]],
   ['pause_5ffont_188',['PAUSE_FONT',['../config_8h.html#a5e903e9378d7c7004f51673ed0141fd7',1,'config.h']]],
   ['pause_5fkey_189',['PAUSE_KEY',['../config_8h.html#a37ac765069375d3727139ca59cb8557c',1,'config.h']]],

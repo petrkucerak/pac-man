@@ -2,10 +2,17 @@
 <section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_map__template_8h" xml:lang="en-US">
 <title>C:/Users/Petr/Documents/apo_semestralka/map_template.h File Reference</title>
 <indexterm><primary>C:/Users/Petr/Documents/apo_semestralka/map_template.h</primary></indexterm>
+<para>
+
+<para>File housing the definition of the template data structure Current maps: map star, map circles, map conch. </para>
+ 
+</para>
 <simplesect>
     <title>Data Structures    </title>
         <itemizedlist>
             <listitem><para>struct <link linkend="_structmap__template">map_template</link></para>
+
+<para>the definition of the template data structure </para>
 </listitem>
         </itemizedlist>
 </simplesect>
@@ -20,6 +27,29 @@
 </listitem>
         </itemizedlist>
 </simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>File housing the definition of the template data structure Current maps: map star, map circles, map conch. </para>
+
+<para><formalpara><title>Author</title>
+
+<para>Lukas Nejezchleb (<link xlink:href="mailto:nejezluk@fel.cvut.cz">nejezluk@fel.cvut.cz</link>) </para>
+</formalpara>
+<formalpara><title>Version</title>
+
+<para>0.1 </para>
+</formalpara>
+<formalpara><title>Date</title>
+
+<para>2021-05-04</para>
+</formalpara>
+<formalpara><title>Copyright</title>
+
+<para>Copyright (c) 2021 </para>
+</formalpara>
+</para>
+</section>
 <section>
 <title>Variable Documentation</title>
 <anchor xml:id="_map__template_8h_1a06480e547424d1036ee29aa373cd6590"/>    <section>

@@ -103,70 +103,90 @@
           <declname>frame_buff</declname>
         </param>
         <briefdescription>
+<para>given <ref refid="structmap__data" kindref="compound">map_data</ref> draws the map to frame buffer </para>
         </briefdescription>
         <detaileddescription>
-<para>given <ref refid="structmap__data" kindref="compound">map_data</ref> draws the map to frame buffer, <simplesect kind="return"><para>true if there are any coins to be eaten </para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>frame_buff</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if there are any coins to be eaten </para>
+</simplesect>
+<simplesect kind="return"><para>false </para>
 </simplesect>
 </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Petr/Documents/apo_semestralka/map_to_fb.c" line="18" column="6" bodyfile="C:/Users/Petr/Documents/apo_semestralka/map_to_fb.c" bodystart="18" bodyend="48"/>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/map_to_fb.c" line="17" column="6" bodyfile="C:/Users/Petr/Documents/apo_semestralka/map_to_fb.c" bodystart="17" bodyend="47"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
+<para>Module for rendering the map to the frame buffer. Houses function render map. </para>
     </briefdescription>
     <detaileddescription>
+<para><simplesect kind="author"><para>Lukas Nejezchleb (<ulink url="mailto:nejezluk@fel.cvut.cz">nejezluk@fel.cvut.cz</ulink>) </para>
+</simplesect>
+<simplesect kind="version"><para>0.1 </para>
+</simplesect>
+<simplesect kind="date"><para>2021-05-04</para>
+</simplesect>
+<simplesect kind="copyright"><para>Copyright (c) 2021 </para>
+</simplesect>
+</para>
     </detaileddescription>
     <programlisting>
-<codeline lineno="1"><highlight class="comment">/*******************************************************************</highlight></codeline>
-<codeline lineno="2"><highlight class="comment"><sp/><sp/>Program<sp/>to<sp/>draw<sp/>map<sp/>to<sp/>frame<sp/>buffer<sp/>on<sp/>MicroZed</highlight></codeline>
-<codeline lineno="3"><highlight class="comment"><sp/><sp/>based<sp/>MZ_APO<sp/>board<sp/>designed<sp/>by<sp/>Petr<sp/>Porazil<sp/>at<sp/>PiKRON</highlight></codeline>
-<codeline lineno="4"><highlight class="comment"></highlight></codeline>
-<codeline lineno="5"><highlight class="comment"><sp/><sp/>map_to_fb.c<sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>program<sp/>to<sp/>draw<sp/>map</highlight></codeline>
-<codeline lineno="6"><highlight class="comment"></highlight></codeline>
-<codeline lineno="7"><highlight class="comment"><sp/><sp/>(C)<sp/>Copyright<sp/>2021<sp/>by<sp/>Lukas<sp/>Nejezchleb</highlight></codeline>
-<codeline lineno="8"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>e-mail:<sp/><sp/><sp/>nejezluk@fel.cvut.cz</highlight></codeline>
-<codeline lineno="9"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>license:<sp/><sp/>any<sp/>combination<sp/>of<sp/>GPL,<sp/>LGPL,<sp/>MPL<sp/>or<sp/>BSD<sp/>licenses</highlight></codeline>
-<codeline lineno="10"><highlight class="comment"></highlight></codeline>
-<codeline lineno="11"><highlight class="comment"><sp/>*******************************************************************/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="map__to__fb_8h" kindref="compound">map_to_fb.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="map__from__template_8h" kindref="compound">map_from_template.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="text__fb_8h" kindref="compound">text_fb.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="draw__shapes_8h" kindref="compound">draw_shapes.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="config_8h" kindref="compound">config.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="17"><highlight class="normal"></highlight></codeline>
-<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="map__to__fb_8c_1a8c10c75361a49b8883775fc900adced6" kindref="member">render_map</ref>(<ref refid="structmap__data" kindref="compound">map_data</ref><sp/>*data,<sp/><ref refid="structfb__data" kindref="compound">fb_data</ref><sp/>*frame_buff)</highlight></codeline>
-<codeline lineno="19"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>ret<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="draw__shapes_8c_1a6d5b7bfa9cee0ff7724230c622354531" kindref="member">set_background</ref>(frame_buff,<sp/>0);</highlight></codeline>
-<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>frame_buff-&gt;<ref refid="structfb__data_1a2474a5474cbff19523a51eb1de01cda4" kindref="member">width</ref><sp/>*<sp/>frame_buff-&gt;<ref refid="structfb__data_1ad12fc34ce789bce6c8a05d8a17138534" kindref="member">height</ref>;<sp/>++i)</highlight></codeline>
-<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(data-&gt;<ref refid="structmap__data_1a9818b17c7d2a7b36901aa275b76c39d0" kindref="member">board_arr</ref>[i]<sp/>==<sp/><ref refid="data__structures_8h_1ac749b87dd5d843e4add3eb8e8a130f62" kindref="member">WALL</ref>)</highlight></codeline>
-<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>frame_buff-&gt;<ref refid="structfb__data_1a377cdea530281d6fa239a9e14c1a7286" kindref="member">fb</ref>[i]<sp/>=<sp/><ref refid="config_8h_1a47eb681b9f2c5a8f4f63891a58ab8e2d" kindref="member">WALL_COLOR</ref>;</highlight></codeline>
-<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(data-&gt;<ref refid="structmap__data_1a9818b17c7d2a7b36901aa275b76c39d0" kindref="member">board_arr</ref>[i]<sp/>==<sp/><ref refid="data__structures_8h_1adf6a8131152ce4fd04f96338c00f548b" kindref="member">PASSAGE</ref>)</highlight></codeline>
-<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>frame_buff-&gt;<ref refid="structfb__data_1a377cdea530281d6fa239a9e14c1a7286" kindref="member">fb</ref>[i]<sp/>=<sp/><ref refid="config_8h_1a3aac54ffa4781528709d17a683e54fb5" kindref="member">PATH_COLOR</ref>;</highlight></codeline>
-<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(data-&gt;<ref refid="structmap__data_1a9818b17c7d2a7b36901aa275b76c39d0" kindref="member">board_arr</ref>[i]<sp/>==<sp/><ref refid="data__structures_8h_1a520ca3e8e98573e7774965b2c69d2843" kindref="member">COIN</ref>)</highlight></codeline>
-<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ret<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x<sp/>=<sp/>i<sp/>%<sp/>frame_buff-&gt;<ref refid="structfb__data_1a2474a5474cbff19523a51eb1de01cda4" kindref="member">width</ref>;</highlight></codeline>
-<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y<sp/>=<sp/>i<sp/>/<sp/>frame_buff-&gt;<ref refid="structfb__data_1a2474a5474cbff19523a51eb1de01cda4" kindref="member">width</ref>;</highlight></codeline>
-<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="draw__shapes_8c_1a44ae4e3d2c0aa9c951284b6414ae6527" kindref="member">draw_circle</ref>(frame_buff,<sp/>x,<sp/>y,<sp/><ref refid="config_8h_1ab0c3bd5b77bc43a57f44c50fb05e7201" kindref="member">COIN_RADIUS</ref>,<sp/><ref refid="config_8h_1ada59e179a724bbf5b53baa541072df9a" kindref="member">COIN_COLOR</ref>);</highlight></codeline>
-<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(data-&gt;<ref refid="structmap__data_1a9818b17c7d2a7b36901aa275b76c39d0" kindref="member">board_arr</ref>[i]<sp/>==<sp/><ref refid="data__structures_8h_1a7082fba706496a93330c168643a1ef30" kindref="member">SUPERCOIN</ref>)</highlight></codeline>
-<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ret<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x<sp/>=<sp/>i<sp/>%<sp/>frame_buff-&gt;<ref refid="structfb__data_1a2474a5474cbff19523a51eb1de01cda4" kindref="member">width</ref>;</highlight></codeline>
-<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y<sp/>=<sp/>i<sp/>/<sp/>frame_buff-&gt;<ref refid="structfb__data_1a2474a5474cbff19523a51eb1de01cda4" kindref="member">width</ref>;</highlight></codeline>
-<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="draw__shapes_8c_1a44ae4e3d2c0aa9c951284b6414ae6527" kindref="member">draw_circle</ref>(frame_buff,<sp/>x,<sp/>y,<sp/><ref refid="config_8h_1a2c119bca6ce382c9467070223973441f" kindref="member">SUPERCOIN_RADIUS</ref>,<sp/><ref refid="config_8h_1aa24d0a8eebc152d8cc985828a1e8dd3c" kindref="member">SUPERCOIN_COLOR</ref>);</highlight></codeline>
-<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ret;</highlight></codeline>
-<codeline lineno="48"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="map__to__fb_8h" kindref="compound">map_to_fb.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="map__from__template_8h" kindref="compound">map_from_template.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="text__fb_8h" kindref="compound">text_fb.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="draw__shapes_8h" kindref="compound">draw_shapes.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="config_8h" kindref="compound">config.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="map__to__fb_8c_1a8c10c75361a49b8883775fc900adced6" kindref="member">render_map</ref>(<ref refid="structmap__data" kindref="compound">map_data</ref><sp/>*data,<sp/><ref refid="structfb__data" kindref="compound">fb_data</ref><sp/>*frame_buff)</highlight></codeline>
+<codeline lineno="18"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>ret<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="draw__shapes_8c_1a6d5b7bfa9cee0ff7724230c622354531" kindref="member">set_background</ref>(frame_buff,<sp/>0);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>frame_buff-&gt;<ref refid="structfb__data_1a2474a5474cbff19523a51eb1de01cda4" kindref="member">width</ref><sp/>*<sp/>frame_buff-&gt;<ref refid="structfb__data_1ad12fc34ce789bce6c8a05d8a17138534" kindref="member">height</ref>;<sp/>++i)</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(data-&gt;<ref refid="structmap__data_1a9818b17c7d2a7b36901aa275b76c39d0" kindref="member">board_arr</ref>[i]<sp/>==<sp/><ref refid="data__structures_8h_1ac749b87dd5d843e4add3eb8e8a130f62" kindref="member">WALL</ref>)</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>frame_buff-&gt;<ref refid="structfb__data_1a377cdea530281d6fa239a9e14c1a7286" kindref="member">fb</ref>[i]<sp/>=<sp/><ref refid="config_8h_1a47eb681b9f2c5a8f4f63891a58ab8e2d" kindref="member">WALL_COLOR</ref>;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(data-&gt;<ref refid="structmap__data_1a9818b17c7d2a7b36901aa275b76c39d0" kindref="member">board_arr</ref>[i]<sp/>==<sp/><ref refid="data__structures_8h_1adf6a8131152ce4fd04f96338c00f548b" kindref="member">PASSAGE</ref>)</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>frame_buff-&gt;<ref refid="structfb__data_1a377cdea530281d6fa239a9e14c1a7286" kindref="member">fb</ref>[i]<sp/>=<sp/><ref refid="config_8h_1a3aac54ffa4781528709d17a683e54fb5" kindref="member">PATH_COLOR</ref>;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(data-&gt;<ref refid="structmap__data_1a9818b17c7d2a7b36901aa275b76c39d0" kindref="member">board_arr</ref>[i]<sp/>==<sp/><ref refid="data__structures_8h_1a520ca3e8e98573e7774965b2c69d2843" kindref="member">COIN</ref>)</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ret<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x<sp/>=<sp/>i<sp/>%<sp/>frame_buff-&gt;<ref refid="structfb__data_1a2474a5474cbff19523a51eb1de01cda4" kindref="member">width</ref>;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y<sp/>=<sp/>i<sp/>/<sp/>frame_buff-&gt;<ref refid="structfb__data_1a2474a5474cbff19523a51eb1de01cda4" kindref="member">width</ref>;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="draw__shapes_8c_1a44ae4e3d2c0aa9c951284b6414ae6527" kindref="member">draw_circle</ref>(frame_buff,<sp/>x,<sp/>y,<sp/><ref refid="config_8h_1ab0c3bd5b77bc43a57f44c50fb05e7201" kindref="member">COIN_RADIUS</ref>,<sp/><ref refid="config_8h_1ada59e179a724bbf5b53baa541072df9a" kindref="member">COIN_COLOR</ref>);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(data-&gt;<ref refid="structmap__data_1a9818b17c7d2a7b36901aa275b76c39d0" kindref="member">board_arr</ref>[i]<sp/>==<sp/><ref refid="data__structures_8h_1a7082fba706496a93330c168643a1ef30" kindref="member">SUPERCOIN</ref>)</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ret<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x<sp/>=<sp/>i<sp/>%<sp/>frame_buff-&gt;<ref refid="structfb__data_1a2474a5474cbff19523a51eb1de01cda4" kindref="member">width</ref>;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y<sp/>=<sp/>i<sp/>/<sp/>frame_buff-&gt;<ref refid="structfb__data_1a2474a5474cbff19523a51eb1de01cda4" kindref="member">width</ref>;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="draw__shapes_8c_1a44ae4e3d2c0aa9c951284b6414ae6527" kindref="member">draw_circle</ref>(frame_buff,<sp/>x,<sp/>y,<sp/><ref refid="config_8h_1a2c119bca6ce382c9467070223973441f" kindref="member">SUPERCOIN_RADIUS</ref>,<sp/><ref refid="config_8h_1aa24d0a8eebc152d8cc985828a1e8dd3c" kindref="member">SUPERCOIN_COLOR</ref>);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ret;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal">}</highlight></codeline>
     </programlisting>
     <location file="C:/Users/Petr/Documents/apo_semestralka/map_to_fb.c"/>
   </compounddef>

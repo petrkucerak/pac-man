@@ -63,7 +63,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Petr/Documents/apo_semestralka/mzapo_phys.c" line="15" column="9" bodyfile="C:/Users/Petr/Documents/apo_semestralka/mzapo_phys.c" bodystart="15" bodyend="-1"/>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/mzapo_phys.c" line="12" column="9" bodyfile="C:/Users/Petr/Documents/apo_semestralka/mzapo_phys.c" bodystart="12" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="var">
@@ -72,14 +72,14 @@
         <definition>const char* map_phys_memdev</definition>
         <argsstring></argsstring>
         <name>map_phys_memdev</name>
-        <initializer>=&quot;/dev/mem&quot;</initializer>
+        <initializer>= &quot;/dev/mem&quot;</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Petr/Documents/apo_semestralka/mzapo_phys.c" line="26" column="12" bodyfile="C:/Users/Petr/Documents/apo_semestralka/mzapo_phys.c" bodystart="26" bodyend="-1"/>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/mzapo_phys.c" line="23" column="12" bodyfile="C:/Users/Petr/Documents/apo_semestralka/mzapo_phys.c" bodystart="23" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
@@ -106,70 +106,69 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Petr/Documents/apo_semestralka/mzapo_phys.c" line="28" column="6" bodyfile="C:/Users/Petr/Documents/apo_semestralka/mzapo_phys.c" bodystart="28" bodyend="56"/>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/mzapo_phys.c" line="25" column="6" bodyfile="C:/Users/Petr/Documents/apo_semestralka/mzapo_phys.c" bodystart="25" bodyend="55"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
+<para>Module for mapping the the peripheral adresses to the memory. </para>
     </briefdescription>
     <detaileddescription>
+<para><simplesect kind="author"><para>Pavel Pisa (<ulink url="mailto:pisa@cmp.felk.cvut.cz">pisa@cmp.felk.cvut.cz</ulink>) </para>
+</simplesect>
+<simplesect kind="version"><para>0.1 </para>
+</simplesect>
+<simplesect kind="date"><para>2021-05-04</para>
+</simplesect>
+<simplesect kind="copyright"><para>Copyright (c) 2021 </para>
+</simplesect>
+</para>
     </detaileddescription>
     <programlisting>
-<codeline lineno="1"><highlight class="comment">/*******************************************************************</highlight></codeline>
-<codeline lineno="2"><highlight class="comment"><sp/><sp/>Simple<sp/>program<sp/>to<sp/>check<sp/>LCD<sp/>functionality<sp/>on<sp/>MicroZed</highlight></codeline>
-<codeline lineno="3"><highlight class="comment"><sp/><sp/>based<sp/>MZ_APO<sp/>board<sp/>designed<sp/>by<sp/>Petr<sp/>Porazil<sp/>at<sp/>PiKRON</highlight></codeline>
-<codeline lineno="4"><highlight class="comment"></highlight></codeline>
-<codeline lineno="5"><highlight class="comment"><sp/><sp/>mzapo_phys.h<sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>mapping<sp/>of<sp/>the<sp/>physical<sp/>address<sp/>to<sp/>process</highlight></codeline>
-<codeline lineno="6"><highlight class="comment"></highlight></codeline>
-<codeline lineno="7"><highlight class="comment"><sp/><sp/>(C)<sp/>Copyright<sp/>2017<sp/>by<sp/>Pavel<sp/>Pisa</highlight></codeline>
-<codeline lineno="8"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>e-mail:<sp/><sp/><sp/>pisa@cmp.felk.cvut.cz</highlight></codeline>
-<codeline lineno="9"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>homepage:<sp/>http://cmp.felk.cvut.cz/~pisa</highlight></codeline>
-<codeline lineno="10"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>company:<sp/><sp/>http://www.pikron.com/</highlight></codeline>
-<codeline lineno="11"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>license:<sp/><sp/>any<sp/>combination<sp/>of<sp/>GPL,<sp/>LGPL,<sp/>MPL<sp/>or<sp/>BSD<sp/>licenses</highlight></codeline>
-<codeline lineno="12"><highlight class="comment"></highlight></codeline>
-<codeline lineno="13"><highlight class="comment"><sp/>*******************************************************************/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="14"><highlight class="normal"></highlight></codeline>
-<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_POSIX_C_SOURCE<sp/>200112L</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="16"><highlight class="normal"></highlight></codeline>
-<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;sys/types.h&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;sys/stat.h&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;sys/mman.h&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;fcntl.h&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;unistd.h&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="23"><highlight class="normal"></highlight></codeline>
-<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="mzapo__phys_8h" kindref="compound">mzapo_phys.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="25"><highlight class="normal"></highlight></codeline>
-<codeline lineno="26"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="mzapo__phys_8c_1a817f2c47e0b9290c9d64751b49354c83" kindref="member">map_phys_memdev</ref>=</highlight><highlight class="stringliteral">&quot;/dev/mem&quot;</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="27"><highlight class="normal"></highlight></codeline>
-<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<ref refid="mzapo__phys_8c_1a3925c5fab561521513a23e5f7ede0c9e" kindref="member">map_phys_address</ref>(off_t<sp/>region_base,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>region_size,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>opt_cached)</highlight></codeline>
-<codeline lineno="29"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="30"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>mem_window_size;</highlight></codeline>
-<codeline lineno="31"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>pagesize;</highlight></codeline>
-<codeline lineno="32"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*mm;</highlight></codeline>
-<codeline lineno="33"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*mem;</highlight></codeline>
-<codeline lineno="34"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>fd;</highlight></codeline>
-<codeline lineno="35"><highlight class="normal"></highlight></codeline>
-<codeline lineno="36"><highlight class="normal"><sp/><sp/>fd<sp/>=<sp/>open(<ref refid="mzapo__phys_8c_1a817f2c47e0b9290c9d64751b49354c83" kindref="member">map_phys_memdev</ref>,<sp/>O_RDWR<sp/>|<sp/>(!opt_cached?<sp/>O_SYNC:<sp/>0));</highlight></codeline>
-<codeline lineno="37"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(fd<sp/>&lt;<sp/>0)<sp/>{</highlight></codeline>
-<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>fprintf(stderr,<sp/></highlight><highlight class="stringliteral">&quot;cannot<sp/>open<sp/>%s\n&quot;</highlight><highlight class="normal">,<sp/><ref refid="mzapo__phys_8c_1a817f2c47e0b9290c9d64751b49354c83" kindref="member">map_phys_memdev</ref>);</highlight></codeline>
-<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>NULL;</highlight></codeline>
-<codeline lineno="40"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_POSIX_C_SOURCE<sp/>200112L</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;sys/types.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;sys/stat.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;sys/mman.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;fcntl.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;unistd.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="mzapo__phys_8h" kindref="compound">mzapo_phys.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="mzapo__phys_8c_1a817f2c47e0b9290c9d64751b49354c83" kindref="member">map_phys_memdev</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;/dev/mem&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<ref refid="mzapo__phys_8c_1a3925c5fab561521513a23e5f7ede0c9e" kindref="member">map_phys_address</ref>(off_t<sp/>region_base,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>region_size,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>opt_cached)</highlight></codeline>
+<codeline lineno="26"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>mem_window_size;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>pagesize;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*mm;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*mem;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>fd;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/>fd<sp/>=<sp/>open(<ref refid="mzapo__phys_8c_1a817f2c47e0b9290c9d64751b49354c83" kindref="member">map_phys_memdev</ref>,<sp/>O_RDWR<sp/>|<sp/>(!opt_cached<sp/>?<sp/>O_SYNC<sp/>:<sp/>0));</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(fd<sp/>&lt;<sp/>0)</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>fprintf(stderr,<sp/></highlight><highlight class="stringliteral">&quot;cannot<sp/>open<sp/>%s\n&quot;</highlight><highlight class="normal">,<sp/><ref refid="mzapo__phys_8c_1a817f2c47e0b9290c9d64751b49354c83" kindref="member">map_phys_memdev</ref>);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>NULL;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/>pagesize<sp/>=<sp/>sysconf(_SC_PAGESIZE);</highlight></codeline>
 <codeline lineno="41"><highlight class="normal"></highlight></codeline>
-<codeline lineno="42"><highlight class="normal"><sp/><sp/>pagesize=sysconf(_SC_PAGESIZE);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/>mem_window_size<sp/>=<sp/>((region_base<sp/>&amp;<sp/>(pagesize<sp/>-<sp/>1))<sp/>+<sp/>region_size<sp/>+<sp/>pagesize<sp/>-<sp/>1)<sp/>&amp;<sp/>~(pagesize<sp/>-<sp/>1);</highlight></codeline>
 <codeline lineno="43"><highlight class="normal"></highlight></codeline>
-<codeline lineno="44"><highlight class="normal"><sp/><sp/>mem_window_size<sp/>=<sp/>((region_base<sp/>&amp;<sp/>(pagesize-1))<sp/>+<sp/>region_size<sp/>+<sp/>pagesize-1)<sp/>&amp;<sp/>~(pagesize-1);</highlight></codeline>
-<codeline lineno="45"><highlight class="normal"></highlight></codeline>
-<codeline lineno="46"><highlight class="normal"><sp/><sp/>mm<sp/>=<sp/>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*)mmap(NULL,<sp/>mem_window_size,<sp/>PROT_WRITE|PROT_READ,</highlight></codeline>
-<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MAP_SHARED,<sp/>fd,<sp/>region_base<sp/>&amp;<sp/>~(pagesize-1));</highlight></codeline>
-<codeline lineno="48"><highlight class="normal"><sp/><sp/>mem<sp/>=<sp/>mm<sp/>+<sp/>(region_base<sp/>&amp;<sp/>(pagesize-1));</highlight></codeline>
-<codeline lineno="49"><highlight class="normal"></highlight></codeline>
-<codeline lineno="50"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(mm<sp/>==<sp/>MAP_FAILED)<sp/>{</highlight></codeline>
-<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>fprintf(stderr,</highlight><highlight class="stringliteral">&quot;mmap<sp/>error\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>NULL;</highlight></codeline>
-<codeline lineno="53"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
-<codeline lineno="54"><highlight class="normal"></highlight></codeline>
-<codeline lineno="55"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*)mem;</highlight></codeline>
-<codeline lineno="56"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/>mm<sp/>=<sp/>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*)mmap(NULL,<sp/>mem_window_size,<sp/>PROT_WRITE<sp/>|<sp/>PROT_READ,</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>MAP_SHARED,<sp/>fd,<sp/>region_base<sp/>&amp;<sp/>~(pagesize<sp/>-<sp/>1));</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/>mem<sp/>=<sp/>mm<sp/>+<sp/>(region_base<sp/>&amp;<sp/>(pagesize<sp/>-<sp/>1));</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(mm<sp/>==<sp/>MAP_FAILED)</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>fprintf(stderr,<sp/></highlight><highlight class="stringliteral">&quot;mmap<sp/>error\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>NULL;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*)mem;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal">}</highlight></codeline>
     </programlisting>
     <location file="C:/Users/Petr/Documents/apo_semestralka/mzapo_phys.c"/>
   </compounddef>

@@ -93,43 +93,61 @@
           <declname>frame_buff</declname>
         </param>
         <briefdescription>
+<para>given <ref refid="structmap__data" kindref="compound">map_data</ref> draws the map to frame buffer </para>
         </briefdescription>
         <detaileddescription>
-<para>given <ref refid="structmap__data" kindref="compound">map_data</ref> draws the map to frame buffer, <simplesect kind="return"><para>true if there are any coins to be eaten </para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>data</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>frame_buff</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>true if there are any coins to be eaten </para>
+</simplesect>
+<simplesect kind="return"><para>false </para>
 </simplesect>
 </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Petr/Documents/apo_semestralka/map_to_fb.h" line="22" column="6" bodyfile="C:/Users/Petr/Documents/apo_semestralka/map_to_fb.c" bodystart="18" bodyend="48" declfile="C:/Users/Petr/Documents/apo_semestralka/map_to_fb.h" declline="22" declcolumn="6"/>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/map_to_fb.h" line="25" column="6" bodyfile="C:/Users/Petr/Documents/apo_semestralka/map_to_fb.c" bodystart="17" bodyend="47" declfile="C:/Users/Petr/Documents/apo_semestralka/map_to_fb.h" declline="25" declcolumn="6"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
+<para>Module for rendering the map to the frame buffer. Houses function render map. </para>
     </briefdescription>
     <detaileddescription>
+<para><simplesect kind="author"><para>Lukas Nejezchleb (<ulink url="mailto:nejezluk@fel.cvut.cz">nejezluk@fel.cvut.cz</ulink>) </para>
+</simplesect>
+<simplesect kind="version"><para>0.1 </para>
+</simplesect>
+<simplesect kind="date"><para>2021-05-04</para>
+</simplesect>
+<simplesect kind="copyright"><para>Copyright (c) 2021 </para>
+</simplesect>
+</para>
     </detaileddescription>
     <programlisting>
-<codeline lineno="1"><highlight class="comment">/*******************************************************************</highlight></codeline>
-<codeline lineno="2"><highlight class="comment"><sp/><sp/>Program<sp/>to<sp/>draw<sp/>map<sp/>to<sp/>frame<sp/>buffer<sp/>on<sp/>MicroZed</highlight></codeline>
-<codeline lineno="3"><highlight class="comment"><sp/><sp/>based<sp/>MZ_APO<sp/>board<sp/>designed<sp/>by<sp/>Petr<sp/>Porazil<sp/>at<sp/>PiKRON</highlight></codeline>
-<codeline lineno="4"><highlight class="comment"></highlight></codeline>
-<codeline lineno="5"><highlight class="comment"><sp/><sp/>map_to_fb.h<sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>simple<sp/>program<sp/>to<sp/>draw<sp/>map</highlight></codeline>
-<codeline lineno="6"><highlight class="comment"></highlight></codeline>
-<codeline lineno="7"><highlight class="comment"><sp/><sp/>(C)<sp/>Copyright<sp/>2021<sp/>by<sp/>Lukas<sp/>Nejezchleb</highlight></codeline>
-<codeline lineno="8"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>e-mail:<sp/><sp/><sp/>nejezluk@fel.cvut.cz</highlight></codeline>
-<codeline lineno="9"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>license:<sp/><sp/>any<sp/>combination<sp/>of<sp/>GPL,<sp/>LGPL,<sp/>MPL<sp/>or<sp/>BSD<sp/>licenses</highlight></codeline>
-<codeline lineno="10"><highlight class="comment"></highlight></codeline>
-<codeline lineno="11"><highlight class="comment"><sp/>*******************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
 <codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>MAP_TO_FB_H</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="13" refid="map__to__fb_8h_1aa206b8fa618be527eef26ea4504ce7f8" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MAT_TO_FB_H</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="data__structures_8h" kindref="compound">data_structures.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdbool.h&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="16"><highlight class="normal"></highlight></codeline>
-<codeline lineno="17"><highlight class="normal"></highlight></codeline>
-<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="map__to__fb_8h_1a8c10c75361a49b8883775fc900adced6" kindref="member">render_map</ref>(<ref refid="structmap__data" kindref="compound">map_data</ref><sp/>*data,<sp/><ref refid="structfb__data" kindref="compound">fb_data</ref><sp/>*frame_buff);</highlight></codeline>
-<codeline lineno="23"><highlight class="normal"></highlight></codeline>
-<codeline lineno="24"><highlight class="normal"></highlight></codeline>
-<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="map__to__fb_8h_1a8c10c75361a49b8883775fc900adced6" kindref="member">render_map</ref>(<ref refid="structmap__data" kindref="compound">map_data</ref><sp/>*data,<sp/><ref refid="structfb__data" kindref="compound">fb_data</ref><sp/>*frame_buff);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
     </programlisting>
     <location file="C:/Users/Petr/Documents/apo_semestralka/map_to_fb.h"/>
   </compounddef>

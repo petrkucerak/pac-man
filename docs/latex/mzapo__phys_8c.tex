@@ -1,5 +1,10 @@
 \hypertarget{mzapo__phys_8c}{}\doxysection{C\+:/\+Users/\+Petr/\+Documents/apo\+\_\+semestralka/mzapo\+\_\+phys.c File Reference}
 \label{mzapo__phys_8c}\index{C:/Users/Petr/Documents/apo\_semestralka/mzapo\_phys.c@{C:/Users/Petr/Documents/apo\_semestralka/mzapo\_phys.c}}
+
+
+Module for mapping the the peripheral adresses to the memory.  
+
+
 {\ttfamily \#include $<$sys/types.\+h$>$}\newline
 {\ttfamily \#include $<$sys/stat.\+h$>$}\newline
 {\ttfamily \#include $<$sys/mman.\+h$>$}\newline
@@ -20,8 +25,25 @@ void $\ast$ \mbox{\hyperlink{mzapo__phys_8c_a3925c5fab561521513a23e5f7ede0c9e}{m
 \doxysubsection*{Variables}
 \begin{DoxyCompactItemize}
 \item 
-const char $\ast$ \mbox{\hyperlink{mzapo__phys_8c_a817f2c47e0b9290c9d64751b49354c83}{map\+\_\+phys\+\_\+memdev}} =\char`\"{}/dev/mem\char`\"{}
+const char $\ast$ \mbox{\hyperlink{mzapo__phys_8c_a817f2c47e0b9290c9d64751b49354c83}{map\+\_\+phys\+\_\+memdev}} = \char`\"{}/dev/mem\char`\"{}
 \end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Module for mapping the the peripheral adresses to the memory. 
+
+\begin{DoxyAuthor}{Author}
+Pavel Pisa (\href{mailto:pisa@cmp.felk.cvut.cz}{\texttt{ pisa@cmp.\+felk.\+cvut.\+cz}}) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2021-\/05-\/04
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2021 
+\end{DoxyCopyright}
 
 
 \doxysubsection{Macro Definition Documentation}
@@ -47,5 +69,5 @@ const char $\ast$ \mbox{\hyperlink{mzapo__phys_8c_a817f2c47e0b9290c9d64751b49354
 \index{mzapo\_phys.c@{mzapo\_phys.c}!map\_phys\_memdev@{map\_phys\_memdev}}
 \index{map\_phys\_memdev@{map\_phys\_memdev}!mzapo\_phys.c@{mzapo\_phys.c}}
 \doxysubsubsection{\texorpdfstring{map\_phys\_memdev}{map\_phys\_memdev}}
-{\footnotesize\ttfamily const char$\ast$ map\+\_\+phys\+\_\+memdev =\char`\"{}/dev/mem\char`\"{}}
+{\footnotesize\ttfamily const char$\ast$ map\+\_\+phys\+\_\+memdev = \char`\"{}/dev/mem\char`\"{}}
 

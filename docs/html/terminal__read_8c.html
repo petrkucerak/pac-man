@@ -90,6 +90,9 @@ $(document).ready(function(){initNavTree('terminal__read_8c.html',''); initResiz
 <div class="title">terminal_read.c File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Module housing the thread function for reading the terminal in nonblocking mode and setting the last key pressed variable.  
+<a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="terminal__read_8h_source.html">terminal_read.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="data__structures_8h_source.html">data_structures.h</a>&quot;</code><br />
 <code>#include &lt;stdbool.h&gt;</code><br />
@@ -106,12 +109,18 @@ Macros</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a4d4ef2b89a0190b7e5ebb1edf4d1cee3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="terminal__read_8c.html#a4d4ef2b89a0190b7e5ebb1edf4d1cee3">serial_getc_timeout</a> (int fd, int timeout_ms, unsigned char *c)</td></tr>
-<tr class="separator:a4d4ef2b89a0190b7e5ebb1edf4d1cee3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae7c22110d0df71d9a907263450bbafb8"><td class="memItemLeft" align="right" valign="top">void *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="terminal__read_8c.html#ae7c22110d0df71d9a907263450bbafb8">input_thread</a> (void *d)</td></tr>
 <tr class="separator:ae7c22110d0df71d9a907263450bbafb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d4ef2b89a0190b7e5ebb1edf4d1cee3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="terminal__read_8c.html#a4d4ef2b89a0190b7e5ebb1edf4d1cee3">serial_getc_timeout</a> (int fd, int timeout_ms, unsigned char *c)</td></tr>
+<tr class="separator:a4d4ef2b89a0190b7e5ebb1edf4d1cee3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Macro Definition Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Module housing the thread function for reading the terminal in nonblocking mode and setting the last key pressed variable. </p>
+<dl class="section author"><dt>Author</dt><dd>Lukas Nejezchleb (<a href="#" onclick="location.href='mai'+'lto:'+'nej'+'ez'+'luk'+'@f'+'el.'+'cv'+'ut.'+'cz'; return false;">nejez<span style="display: none;">.nosp@m.</span>luk@<span style="display: none;">.nosp@m.</span>fel.c<span style="display: none;">.nosp@m.</span>vut.<span style="display: none;">.nosp@m.</span>cz</a>) </dd></dl>
+<dl class="section version"><dt>Version</dt><dd>0.1 </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2021-05-04</dd></dl>
+<dl class="section copyright"><dt>Copyright</dt><dd>Copyright (c) 2021 </dd></dl>
+</div><h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="af20c817269948e133751a67b8e365443"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#af20c817269948e133751a67b8e365443">&#9670;&nbsp;</a></span>TERMINAL_TIMEOUT_MS</h2>
 
@@ -142,6 +151,7 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>void* </dd></dl>
 
 </div>
 </div>
@@ -176,6 +186,15 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fd</td><td></td></tr>
+    <tr><td class="paramname">timeout_ms</td><td></td></tr>
+    <tr><td class="paramname">c</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>int </dd></dl>
 
 </div>
 </div>

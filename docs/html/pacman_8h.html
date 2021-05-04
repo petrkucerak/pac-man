@@ -89,6 +89,9 @@ $(document).ready(function(){initNavTree('pacman_8h.html',''); initResizable(); 
 <div class="title">pacman.h File Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Module for the controls and rendering of pacman.  
+<a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="data__structures_8h_source.html">data_structures.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="map__template_8h_source.html">map_template.h</a>&quot;</code><br />
 </div>
@@ -97,13 +100,25 @@ $(document).ready(function(){initNavTree('pacman_8h.html',''); initResizable(); 
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a6049d528917cb950659f2972d92cb432"><td class="memItemLeft" align="right" valign="top"><a class="el" href="structpacman__type.html">pacman_type</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pacman_8h.html#a6049d528917cb950659f2972d92cb432">create_pacman</a> (<a class="el" href="structmap__data.html">map_data</a> *map, int lives, int score)</td></tr>
+<tr class="memdesc:a6049d528917cb950659f2972d92cb432"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns pacman with initial score and lives at the spawning coords of the map.  <a href="pacman_8h.html#a6049d528917cb950659f2972d92cb432">More...</a><br /></td></tr>
 <tr class="separator:a6049d528917cb950659f2972d92cb432"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae1b36e370a9b73a0eed9ad43e53db1f0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pacman_8h.html#ae1b36e370a9b73a0eed9ad43e53db1f0">pacman_move</a> (<a class="el" href="structpacman__type.html">pacman_type</a> *pacman, <a class="el" href="structmap__data.html">map_data</a> *map)</td></tr>
+<tr class="memdesc:ae1b36e370a9b73a0eed9ad43e53db1f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns pacman with initial score and lives at the spawning coords of the map.  <a href="pacman_8h.html#ae1b36e370a9b73a0eed9ad43e53db1f0">More...</a><br /></td></tr>
 <tr class="separator:ae1b36e370a9b73a0eed9ad43e53db1f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9b14d2c075ef0768af01d694a839cd38"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pacman_8h.html#a9b14d2c075ef0768af01d694a839cd38">draw_pacman</a> (<a class="el" href="structpacman__type.html">pacman_type</a> *pacman, <a class="el" href="structfb__data.html">fb_data</a> *fb, <a class="el" href="structmap__data.html">map_data</a> *map)</td></tr>
+<tr class="memdesc:a9b14d2c075ef0768af01d694a839cd38"><td class="mdescLeft">&#160;</td><td class="mdescRight">draws circle if pacman is not facing any direction or the ”pie” shape to symbolise the heading  <a href="pacman_8h.html#a9b14d2c075ef0768af01d694a839cd38">More...</a><br /></td></tr>
 <tr class="separator:a9b14d2c075ef0768af01d694a839cd38"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c07103dca2f3a04c80872d8603b5d45"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="pacman_8h.html#a3c07103dca2f3a04c80872d8603b5d45">pacman_can_move</a> (<a class="el" href="structpacman__type.html">pacman_type</a> *pacman, int dirx, int diry, <a class="el" href="structmap__data.html">map_data</a> *map)</td></tr>
+<tr class="memdesc:a3c07103dca2f3a04c80872d8603b5d45"><td class="mdescLeft">&#160;</td><td class="mdescRight">returns true if pacman can move in given direction  <a href="pacman_8h.html#a3c07103dca2f3a04c80872d8603b5d45">More...</a><br /></td></tr>
+<tr class="separator:a3c07103dca2f3a04c80872d8603b5d45"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Module for the controls and rendering of pacman. </p>
+<dl class="section author"><dt>Author</dt><dd>Lukas Nejezchleb (<a href="#" onclick="location.href='mai'+'lto:'+'nej'+'ez'+'luk'+'@f'+'el.'+'cv'+'ut.'+'cz'; return false;">nejez<span style="display: none;">.nosp@m.</span>luk@<span style="display: none;">.nosp@m.</span>fel.c<span style="display: none;">.nosp@m.</span>vut.<span style="display: none;">.nosp@m.</span>cz</a>) </dd></dl>
+<dl class="section version"><dt>Version</dt><dd>0.1 </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2021-05-04</dd></dl>
+<dl class="section copyright"><dt>Copyright</dt><dd>Copyright (c) 2021 </dd></dl>
+</div><h2 class="groupheader">Function Documentation</h2>
 <a id="a6049d528917cb950659f2972d92cb432"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6049d528917cb950659f2972d92cb432">&#9670;&nbsp;</a></span>create_pacman()</h2>
 
@@ -135,6 +150,17 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Returns pacman with initial score and lives at the spawning coords of the map. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">map</td><td></td></tr>
+    <tr><td class="paramname">lives</td><td></td></tr>
+    <tr><td class="paramname">score</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="structpacman__type.html" title="the pac-man metadatas">pacman_type</a> </dd></dl>
 
 </div>
 </div>
@@ -170,6 +196,70 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>draws circle if pacman is not facing any direction or the ”pie” shape to symbolise the heading </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pacman</td><td></td></tr>
+    <tr><td class="paramname">fb</td><td></td></tr>
+    <tr><td class="paramname">map</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a3c07103dca2f3a04c80872d8603b5d45"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c07103dca2f3a04c80872d8603b5d45">&#9670;&nbsp;</a></span>pacman_can_move()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool pacman_can_move </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="structpacman__type.html">pacman_type</a> *&#160;</td>
+          <td class="paramname"><em>pacman</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>dirx</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>diry</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="structmap__data.html">map_data</a> *&#160;</td>
+          <td class="paramname"><em>map</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>returns true if pacman can move in given direction </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pacman</td><td></td></tr>
+    <tr><td class="paramname">dirx</td><td></td></tr>
+    <tr><td class="paramname">diry</td><td></td></tr>
+    <tr><td class="paramname">map</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true </dd>
+<dd>
+false </dd></dl>
+
 </div>
 </div>
 <a id="ae1b36e370a9b73a0eed9ad43e53db1f0"></a>
@@ -197,6 +287,18 @@ Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Returns pacman with initial score and lives at the spawning coords of the map. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">pacman</td><td></td></tr>
+    <tr><td class="paramname">map</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true </dd>
+<dd>
+false </dd></dl>
 
 </div>
 </div>

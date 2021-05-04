@@ -1,5 +1,10 @@
 \hypertarget{terminal__read_8c}{}\doxysection{C\+:/\+Users/\+Petr/\+Documents/apo\+\_\+semestralka/terminal\+\_\+read.c File Reference}
 \label{terminal__read_8c}\index{C:/Users/Petr/Documents/apo\_semestralka/terminal\_read.c@{C:/Users/Petr/Documents/apo\_semestralka/terminal\_read.c}}
+
+
+Module housing the thread function for reading the terminal in nonblocking mode and setting the last key pressed variable.  
+
+
 {\ttfamily \#include \char`\"{}terminal\+\_\+read.\+h\char`\"{}}\newline
 {\ttfamily \#include \char`\"{}data\+\_\+structures.\+h\char`\"{}}\newline
 {\ttfamily \#include $<$stdbool.\+h$>$}\newline
@@ -16,10 +21,27 @@
 \doxysubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-int \mbox{\hyperlink{terminal__read_8c_a4d4ef2b89a0190b7e5ebb1edf4d1cee3}{serial\+\_\+getc\+\_\+timeout}} (int fd, int timeout\+\_\+ms, unsigned char $\ast$c)
-\item 
 void $\ast$ \mbox{\hyperlink{terminal__read_8c_ae7c22110d0df71d9a907263450bbafb8}{input\+\_\+thread}} (void $\ast$d)
+\item 
+int \mbox{\hyperlink{terminal__read_8c_a4d4ef2b89a0190b7e5ebb1edf4d1cee3}{serial\+\_\+getc\+\_\+timeout}} (int fd, int timeout\+\_\+ms, unsigned char $\ast$c)
 \end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Module housing the thread function for reading the terminal in nonblocking mode and setting the last key pressed variable. 
+
+\begin{DoxyAuthor}{Author}
+Lukas Nejezchleb (\href{mailto:nejezluk@fel.cvut.cz}{\texttt{ nejezluk@fel.\+cvut.\+cz}}) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2021-\/05-\/04
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2021 
+\end{DoxyCopyright}
 
 
 \doxysubsection{Macro Definition Documentation}
@@ -38,9 +60,24 @@ void $\ast$ \mbox{\hyperlink{terminal__read_8c_ae7c22110d0df71d9a907263450bbafb8
 \doxysubsubsection{\texorpdfstring{input\_thread()}{input\_thread()}}
 {\footnotesize\ttfamily void$\ast$ input\+\_\+thread (\begin{DoxyParamCaption}\item[{void $\ast$}]{d }\end{DoxyParamCaption})}
 
+\begin{DoxyReturn}{Returns}
+void$\ast$ 
+\end{DoxyReturn}
 \mbox{\Hypertarget{terminal__read_8c_a4d4ef2b89a0190b7e5ebb1edf4d1cee3}\label{terminal__read_8c_a4d4ef2b89a0190b7e5ebb1edf4d1cee3}} 
 \index{terminal\_read.c@{terminal\_read.c}!serial\_getc\_timeout@{serial\_getc\_timeout}}
 \index{serial\_getc\_timeout@{serial\_getc\_timeout}!terminal\_read.c@{terminal\_read.c}}
 \doxysubsubsection{\texorpdfstring{serial\_getc\_timeout()}{serial\_getc\_timeout()}}
 {\footnotesize\ttfamily int serial\+\_\+getc\+\_\+timeout (\begin{DoxyParamCaption}\item[{int}]{fd,  }\item[{int}]{timeout\+\_\+ms,  }\item[{unsigned char $\ast$}]{c }\end{DoxyParamCaption})}
 
+
+\begin{DoxyParams}{Parameters}
+{\em fd} & \\
+\hline
+{\em timeout\+\_\+ms} & \\
+\hline
+{\em c} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}

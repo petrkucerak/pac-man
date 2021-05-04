@@ -2,7 +2,8 @@
 .ad l
 .nh
 .SH NAME
-C:/Users/Petr/Documents/apo_semestralka/draw_shapes.c
+C:/Users/Petr/Documents/apo_semestralka/draw_shapes.c \- Module with functions to draw shapes to the frame buffer\&.  
+
 .SH SYNOPSIS
 .br
 .PP
@@ -22,33 +23,148 @@ C:/Users/Petr/Documents/apo_semestralka/draw_shapes.c
 .ti -1c
 .RI "void \fBdraw_circle\fP (\fBfb_data\fP *frame, int x, int y, int radius, uint16_t color)"
 .br
+.RI "Draws the circle with center at x,y with given radius\&. "
 .ti -1c
 .RI "void \fBdraw_rectangle\fP (\fBfb_data\fP *frame, int x, int y, int width, int height, uint16_t color)"
 .br
+.RI "Draws rectangle with left upper corner at x,y\&. "
 .ti -1c
 .RI "void \fBset_background\fP (\fBfb_data\fP *frame, uint16_t color)"
 .br
+.RI "Draws given colour across the whole frame buffer\&. "
 .ti -1c
 .RI "void \fBdraw_ghost_shape\fP (\fBfb_data\fP *frame, int x, int y, int scale, uint16_t color)"
 .br
+.RI "Draws an ghost at x,y, bitmap of ghost is also in this function\&. "
 .ti -1c
 .RI "void \fBdraw_pacman_dir\fP (\fBfb_data\fP *frame, int x, int y, int radius, uint16_t color, int direction)"
 .br
+.RI "Pacman facing given direction with his mouth\&. "
 .in -1c
+.SH "Detailed Description"
+.PP 
+Module with functions to draw shapes to the frame buffer\&. 
+
+
+.PP
+\fBAuthor\fP
+.RS 4
+Lukas Nejezchleb (nejezluk@fel.cvut.cz) 
+.RE
+.PP
+\fBVersion\fP
+.RS 4
+0\&.1 
+.RE
+.PP
+\fBDate\fP
+.RS 4
+2021-05-04
+.RE
+.PP
+\fBCopyright\fP
+.RS 4
+Copyright (c) 2021 
+.RE
+.PP
+
 .SH "Function Documentation"
 .PP 
 .SS "void draw_circle (\fBfb_data\fP * frame, int x, int y, int radius, uint16_t color)"
-function to draw circle to \fBfb_data\fP frame at x,y with radius and color 
+
+.PP
+Draws the circle with center at x,y with given radius\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIframe\fP 
+.br
+\fIx\fP 
+.br
+\fIy\fP 
+.br
+\fIradius\fP 
+.br
+\fIcolor\fP 
+.RE
+.PP
+
 .SS "void draw_ghost_shape (\fBfb_data\fP * frame, int x, int y, int scale, uint16_t color)"
-draws the ghost shape to fb 
+
+.PP
+Draws an ghost at x,y, bitmap of ghost is also in this function\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIframe\fP 
+.br
+\fIx\fP 
+.br
+\fIy\fP 
+.br
+\fIscale\fP 
+.br
+\fIcolor\fP 
+.RE
+.PP
+
 .SS "void draw_pacman_dir (\fBfb_data\fP * frame, int x, int y, int radius, uint16_t color, int direction)"
 
+.PP
+Pacman facing given direction with his mouth\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIframe\fP 
+.br
+\fIx\fP 
+.br
+\fIy\fP 
+.br
+\fIradius\fP 
+.br
+\fIcolor\fP 
+.br
+\fIdirection\fP 
+.RE
+.PP
+
 .SS "void draw_rectangle (\fBfb_data\fP * frame, int x, int y, int width, int height, uint16_t color)"
-function to draw rectangle to \fBfb_data\fP frame at x,y with width and height and color 
+
+.PP
+Draws rectangle with left upper corner at x,y\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIframe\fP 
+.br
+\fIx\fP 
+.br
+\fIy\fP 
+.br
+\fIwidth\fP 
+.br
+\fIheight\fP 
+.br
+\fIcolor\fP 
+.RE
+.PP
+
 .SS "int pixel_dist_squared (int x1, int y1, int x2, int y2)"
 
 .SS "void set_background (\fBfb_data\fP * frame, uint16_t color)"
-sets background to certain color 
+
+.PP
+Draws given colour across the whole frame buffer\&. 
+.PP
+\fBParameters\fP
+.RS 4
+\fIframe\fP 
+.br
+\fIcolor\fP 
+.RE
+.PP
+
 .SH "Author"
 .PP 
 Generated automatically by Doxygen for Pac-Man from the source code\&.

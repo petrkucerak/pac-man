@@ -112,7 +112,7 @@ void led_blink(unsigned char *led_mem_base, int scare_countdown, int pacman_scor
   else
   {
     // no scare regime
-    color = (((uint8_t)(255*(pacman_score/(float)MAX_SCORE)))<<8);
+    color = (((uint8_t)(255 * (pacman_score / (float)MAX_SCORE))) << 8);
   }
   sel_leds_color(led_mem_base, color);
 }

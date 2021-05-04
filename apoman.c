@@ -85,10 +85,9 @@ int main(int argc, char *argv[])
   parlcd_hx8357_init(lcd_mem_base);
   font_descriptor_t *font = &font_winFreeSystem14x16;
 
-  peripherals_data_t peripherals = {.led_mem_base = led_mem_base, .lcd_mem_base = lcd_mem_base, 
-                          .lcd_h = SCREEN_HEIGHT, .lcd_w = SCREEN_WIDTH};
+  peripherals_data_t peripherals = {.led_mem_base = led_mem_base, .lcd_mem_base = lcd_mem_base, .lcd_h = SCREEN_HEIGHT, .lcd_w = SCREEN_WIDTH};
 
-  // call game method                          
+  // call game method
   run_init_game_menu(&fb, lcd_mem_base, font, peripherals);
 
   // program termination

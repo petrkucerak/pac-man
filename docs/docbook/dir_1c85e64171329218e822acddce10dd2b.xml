@@ -18,12 +18,20 @@
 <para>File with definitions of data structures used across modules like fb data (data about next frame on the screeen), map data (data about currently played map) </para>
 </listitem>
             <listitem><para>file <link linkend="_draw__shapes_8c">draw_shapes.c</link></para>
+
+<para>Module with functions to draw shapes to the frame buffer. </para>
 </listitem>
             <listitem><para>file <link linkend="_draw__shapes_8h">draw_shapes.h</link></para>
+
+<para>Module with functions to draw shapes to the frame buffer. </para>
 </listitem>
             <listitem><para>file <link linkend="_final__score_8c">final_score.c</link></para>
+
+<para>Module with function draw final score that draws the final score to the screen and waits for user input. Returns true if the user pressed the s key and therefor wants to continue playing or the q key indicating he wants to end the program. </para>
 </listitem>
             <listitem><para>file <link linkend="_final__score_8h">final_score.h</link></para>
+
+<para>Module with function draw final score that draws the final score to the screen and waits for user input. Returns true if the user pressed the s key and therefor wants to continue playing or the q key indicating he wants to end the program. </para>
 </listitem>
             <listitem><para>file <link linkend="_font__prop14x16_8c">font_prop14x16.c</link></para>
 </listitem>
@@ -32,58 +40,102 @@
             <listitem><para>file <link linkend="_font__types_8h">font_types.h</link></para>
 </listitem>
             <listitem><para>file <link linkend="_game_8c">game.c</link></para>
+
+<para>Module where the game is taking place. </para>
 </listitem>
             <listitem><para>file <link linkend="_game_8h">game.h</link></para>
+
+<para>Module where the game is taking place. </para>
 </listitem>
             <listitem><para>file <link linkend="_ghost_8c">ghost.c</link></para>
+
+<para>Module where all the logic and movement of ghost is placed. </para>
 </listitem>
             <listitem><para>file <link linkend="_ghost_8h">ghost.h</link></para>
+
+<para>Module where all the logic and movement of ghost is placed. </para>
 </listitem>
             <listitem><para>file <link linkend="_map__circles_8c">map_circles.c</link></para>
 </listitem>
             <listitem><para>file <link linkend="_map__conch_8c">map_conch.c</link></para>
 </listitem>
             <listitem><para>file <link linkend="_map__from__template_8c">map_from_template.c</link></para>
+
+<para>Module for creating map for the screen from the templates in the form described in the map template.h. </para>
 </listitem>
             <listitem><para>file <link linkend="_map__from__template_8h">map_from_template.h</link></para>
 </listitem>
             <listitem><para>file <link linkend="_map__star_8c">map_star.c</link></para>
 </listitem>
             <listitem><para>file <link linkend="_map__template_8h">map_template.h</link></para>
+
+<para>File housing the definition of the template data structure Current maps: map star, map circles, map conch. </para>
 </listitem>
             <listitem><para>file <link linkend="_map__to__fb_8c">map_to_fb.c</link></para>
+
+<para>Module for rendering the map to the frame buffer. Houses function render map. </para>
 </listitem>
             <listitem><para>file <link linkend="_map__to__fb_8h">map_to_fb.h</link></para>
+
+<para>Module for rendering the map to the frame buffer. Houses function render map. </para>
 </listitem>
             <listitem><para>file <link linkend="_menu__utilities_8c">menu_utilities.c</link></para>
+
+<para>Module for drawing menu, setting game settings and starting the game. </para>
 </listitem>
             <listitem><para>file <link linkend="_menu__utilities_8h">menu_utilities.h</link></para>
+
+<para>Module for drawing menu, setting game settings and starting the game. </para>
 </listitem>
             <listitem><para>file <link linkend="_mzapo__parlcd_8c">mzapo_parlcd.c</link></para>
+
+<para>Module for setting the LCD screen and writing data to it. </para>
 </listitem>
             <listitem><para>file <link linkend="_mzapo__parlcd_8h">mzapo_parlcd.h</link></para>
+
+<para>Module for setting the LCD screen and writing data to it. </para>
 </listitem>
             <listitem><para>file <link linkend="_mzapo__phys_8c">mzapo_phys.c</link></para>
+
+<para>Module for mapping the the peripheral adresses to the memory. </para>
 </listitem>
             <listitem><para>file <link linkend="_mzapo__phys_8h">mzapo_phys.h</link></para>
+
+<para>Module for mapping the the peripheral adresses to the memory. </para>
 </listitem>
             <listitem><para>file <link linkend="_mzapo__regs_8h">mzapo_regs.h</link></para>
 </listitem>
             <listitem><para>file <link linkend="_pacman_8c">pacman.c</link></para>
+
+<para>Module for the controls and rendering of pacman. </para>
 </listitem>
             <listitem><para>file <link linkend="_pacman_8h">pacman.h</link></para>
+
+<para>Module for the controls and rendering of pacman. </para>
 </listitem>
             <listitem><para>file <link linkend="_terminal__read_8c">terminal_read.c</link></para>
+
+<para>Module housing the thread function for reading the terminal in nonblocking mode and setting the last key pressed variable. </para>
 </listitem>
             <listitem><para>file <link linkend="_terminal__read_8h">terminal_read.h</link></para>
+
+<para>Module housing the thread function for reading the terminal in nonblocking mode and setting the last key pressed variable. </para>
 </listitem>
             <listitem><para>file <link linkend="_text__fb_8c">text_fb.c</link></para>
+
+<para>Module for drawing text to frame buffer. </para>
 </listitem>
             <listitem><para>file <link linkend="_text__fb_8h">text_fb.h</link></para>
+
+<para>Module for drawing text to frame buffer. </para>
 </listitem>
             <listitem><para>file <link linkend="_update__peripherals_8c">update_peripherals.c</link></para>
+
+<para>Module for setting the peripherals. </para>
 </listitem>
             <listitem><para>file <link linkend="_update__peripherals_8h">update_peripherals.h</link></para>
+
+<para>Module for setting the peripherals. </para>
 </listitem>
         </itemizedlist>
 </simplesect>
