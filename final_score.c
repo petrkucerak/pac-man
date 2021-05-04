@@ -1,14 +1,13 @@
-/*******************************************************************
-  Program to draw text to frame buffer on MicroZed
-  based MZ_APO board designed by Petr Porazil at PiKRON
-
-   final_score.h      - functions for draw final score
-
-  (C) Copyright 2021 by Petr Kucera
-      e-mail:   kucerp28@fel.cvut.cz
-      license:  any combination of GPL, LGPL, MPL or BSD licenses
-
- *******************************************************************/
+/**
+ * @file final_score.c
+ * @author Petr Kucera (kucerp28@fel.cvut.cz)
+ * @brief Module with function draw final score that draws the final score to the screen and waits for user input. Returns true if the user pressed the s key and therefor wants to continue playing or the q key indicating he wants to end the program
+ * @version 0.1
+ * @date 2021-05-04
+ * 
+ * @copyright Copyright (c) 2021
+ * 
+ */
 
 #include <stdio.h>
 #include "final_score.h"

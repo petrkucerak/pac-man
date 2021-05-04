@@ -1,14 +1,13 @@
-/*******************************************************************
-  Program to draw text to frame buffer on MicroZed
-  based MZ_APO board designed by Petr Porazil at PiKRON
-
-  game.c      - file with game logic
-
-  (C) Copyright 2021 by Petr Kucera, Lukas Nejezchleb
-      e-mail:   kucerp28@fel.cvut.cz, nejezluk@fel.cvut.cz
-      license:  any combination of GPL, LGPL, MPL or BSD licenses
-
- *******************************************************************/
+/**
+ * @file game.c
+ * @author Lukas Nejezchleb (nejezluk@fel.cvut.cz), Petr Kucera (kucerp28@fel.cvut.cz)
+ * @brief Module where the game is taking place
+ * @version 0.1
+ * @date 2021-05-04
+ * 
+ * @copyright Copyright (c) 2021
+ * 
+ */
 
 #include "game.h"
 #include "update_peripherals.h"
@@ -20,14 +19,6 @@
 #include "config.h"
 #include "text_fb.h"
 #include "font_types.h"
-
-//internal function
-void led_blink(unsigned char *led_mem_base, int scare_countdown, int pacman_score);
-void pause(fb_data *fb, peripherals_data_t *peripherals);
-
-//returns true if the game should be rendered imedeatly
-bool game_tick(map_data *map, pacman_type *pacman, ghost_type *ghost_arr, int num_ghosts, int *scare);
-//end of internal functions
 
 int run_game(game_init_data_t *game_data, peripherals_data_t *peripherals)
 {
@@ -66,7 +57,7 @@ int run_game(game_init_data_t *game_data, peripherals_data_t *peripherals)
         break;
       }
     }
-    //do the rendering
+    // do the rendering
     led_blink(peripherals->led_mem_base, scare_countdown, pacman.score);
     coins_to_eat = render_map(map, &fb);
     draw_pacman(&pacman, &fb, map);
@@ -76,7 +67,7 @@ int run_game(game_init_data_t *game_data, peripherals_data_t *peripherals)
     }
     led_strip_number(peripherals->led_mem_base, game_data->pacman_lives, pacman.lives);
     lcd_from_fb(&fb, peripherals->lcd_mem_base);
-    //get new key
+    // get new key
     pthread_mutex_lock(&mtx);
     read = read_thread_data.last_read;
     pthread_mutex_unlock(&mtx);
@@ -102,7 +93,7 @@ void led_blink(unsigned char *led_mem_base, int scare_countdown, int pacman_scor
   static int time = 0;
   static uint32_t color = LED_NORMAL_COLOR;
   if ((scare_countdown > 0) && (period == 0))
-  { //scared regime began
+  { // scared regime began
     period = scare_countdown / 30 + 1;
     time = 0;
     color = LED_SCARE_COLOR2;
@@ -114,13 +105,13 @@ void led_blink(unsigned char *led_mem_base, int scare_countdown, int pacman_scor
     {
       period = scare_countdown / 30 + 1;
       time = 0;
-      //change color
+      // change color
       color = (color == LED_SCARE_COLOR1) ? LED_SCARE_COLOR2 : LED_SCARE_COLOR1;
     }
   }
   else
   {
-    //no scare regime
+    // no scare regime
     color = (((uint8_t)(255*(pacman_score/(float)MAX_SCORE)))<<8);
   }
   sel_leds_color(led_mem_base, color);
@@ -153,7 +144,7 @@ bool game_tick(map_data *map, pacman_type *pacman, ghost_type *ghost_arr, int nu
     }
     ret = true;
   }
-  bool scare_regime = false; //find out if by chance all ghost have not been eaten
+  bool scare_regime = false; // find out if by chance all ghost have not been eaten
   for (int i = 0; i < num_ghosts; ++i)
   {
     // move every ghost and check if pacman has not been eaten
