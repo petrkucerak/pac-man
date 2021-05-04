@@ -1,14 +1,13 @@
-/*******************************************************************
-  Program to draw simple shapes to frame buffer on MicroZed
-  based MZ_APO board designed by Petr Porazil at PiKRON
-
-  draw_shapes.c      - simple program to draw shapes
-
-  (C) Copyright 2021 by Lukas Nejezchleb
-      e-mail:   nejezluk@fel.cvut.cz
-      license:  any combination of GPL, LGPL, MPL or BSD licenses
-
- *******************************************************************/
+/**
+ * @file draw_shapes.c
+ * @author Lukas Nejezchleb (nejezluk@fel.cvut.cz)
+ * @brief Module with functions to draw shapes to the frame buffer
+ * @version 0.1
+ * @date 2021-05-04
+ * 
+ * @copyright Copyright (c) 2021
+ * 
+ */
 
 #include "draw_shapes.h"
 #include <stdlib.h>
@@ -64,9 +63,9 @@ void set_background(fb_data *frame, uint16_t color)
 
 void draw_ghost_shape(fb_data *frame, int x, int y, int scale, uint16_t color)
 {
-    //offset x and y so the ghost would be centered around
-    x = x - scale * 4; //4 is half of bitsize of uint8_t
-    y = y - scale * 4; //4 is half of height of ghost bitmap
+    // offset x and y so the ghost would be centered around
+    x = x - scale * 4; // 4 is half of bitsize of uint8_t
+    y = y - scale * 4; // 4 is half of height of ghost bitmap
     uint8_t ghost_bitmap[] = {0x3c, 0x7e, 0x7e, 0xdb, 0xff, 0xff, 0xff, 0xdb};
     /*
       xxxx   
