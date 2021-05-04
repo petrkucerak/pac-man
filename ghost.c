@@ -1,14 +1,13 @@
-/*******************************************************************
-  All inportant functions for ghost on MicroZed
-  based MZ_APO board designed by Petr Porazil at PiKRON
-
-  ghost.c      - all important functions for ghost
-
-  (C) Copyright 2021 by Lukas Nejezchleb
-      e-mail:   nejezluk@fel.cvut.cz
-      license:  any combination of GPL, LGPL, MPL or BSD licenses
-
- *******************************************************************/
+/**
+ * @file ghost.c
+ * @author Lukas Nejezchleb (nejezluk@fel.cvut.cz)
+ * @brief Module where all the logic and movement of ghost is placed
+ * @version 0.1
+ * @date 2021-05-04
+ * 
+ * @copyright Copyright (c) 2021
+ * 
+ */
 #include "ghost.h"
 #include "data_structures.h"
 #include "draw_shapes.h"
@@ -17,17 +16,6 @@
 #include <stdbool.h>
 #include <stdlib.h>
 #include <stdio.h>
-
-//internal functions
-//returns true if pacman can move in given direction
-bool ghost_can_move(ghost_type *ghost, int dirx, int diry, map_data *map);
-
-//returns ammount of directions added to moves_arr
-int create_moves(moves_costs_t *moves_arr, ghost_type *ghost, map_data *map, pacman_type *pacman);
-
-//changes ghosts direction
-void change_direction(ghost_type *ghost, int possibilities, moves_costs_t *moves_options);
-// end of internal functions
 
 bool ghost_move(ghost_type *ghost, map_data *map, pacman_type *pacman)
 {
@@ -85,7 +73,7 @@ bool ghost_can_move(ghost_type *ghost, int dirx, int diry, map_data *map)
 
 int create_moves(moves_costs_t *moves_arr, ghost_type *ghost, map_data *map, pacman_type *pacman)
 {
-    //both 4 on next lines is ammount of directions and should not be changed
+    // both 4 on next lines is ammount of directions and should not be changed
     coords dirs[4] = {{.x = 0, .y = -1}, {.x = 0, .y = 1}, {.x = 1, .y = 0}, {.x = -1, .y = 0}};
     int ret = 0;
     for (int i = 0; i < 4; ++i)
@@ -94,7 +82,7 @@ int create_moves(moves_costs_t *moves_arr, ghost_type *ghost, map_data *map, pac
         {
             if ((dirs[i].x != -ghost->direction.x) || (dirs[i].y != -ghost->direction.y))
             {
-                //add the direction
+                // add the direction
                 moves_arr[ret].dir = dirs[i];
                 int cost = (pacman->location.x - ghost->location.x - dirs[i].x) *
                                (pacman->location.x - ghost->location.x - dirs[i].x) +
@@ -105,7 +93,7 @@ int create_moves(moves_costs_t *moves_arr, ghost_type *ghost, map_data *map, pac
             }
         }
     }
-    return ret; //return ammount of valid options to move
+    return ret; // return ammount of valid options to move
 }
 
 void draw_ghost(fb_data *fb, ghost_type *ghost, map_data *map)
@@ -137,13 +125,13 @@ void change_direction(ghost_type *ghost, int possibilities, moves_costs_t *moves
 {
     if (possibilities == 0)
     {
-        //host reached dead_end
+        // host reached dead_end
         ghost->direction.x = -ghost->direction.x;
         ghost->direction.x = -ghost->direction.y;
     }
     else if (possibilities == 1)
     {
-        //only one way possible, pick that one
+        // only one way possible, pick that one
         ghost->direction = moves_options[0].dir;
     }
     else if (ghost->moving_randomly)
@@ -152,7 +140,7 @@ void change_direction(ghost_type *ghost, int possibilities, moves_costs_t *moves
     }
     else
     {
-        //pick direction with smallest cost
+        // pick direction with smallest cost
         int lowest_cost = moves_options[0].cost;
         int lowest_index = 0;
         for (int i = 1; i < possibilities; ++i)
