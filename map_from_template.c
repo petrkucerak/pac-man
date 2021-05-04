@@ -1,21 +1,15 @@
-/*******************************************************************
-  Program to create map from template on MicroZed
-  based MZ_APO board designed by Petr Porazil at PiKRON
-
-  map_from_template.c      - creates map from template
-
-  (C) Copyright 2021 by Lukas Nejezchleb
-      e-mail:   nejezluk@fel.cvut.cz
-      license:  any combination of GPL, LGPL, MPL or BSD licenses
-
- *******************************************************************/
+/**
+ * @file map_from_template.c
+ * @author Lukas Nejezchleb (nejezluk@fel.cvut.cz)
+ * @brief Module for creating map for the screen from the templates in the form described in the map template.h
+ * @version 0.1
+ * @date 2021-05-04
+ * 
+ * @copyright Copyright (c) 2021
+ * 
+ */
 #include "map_from_template.h"
 #include <stdlib.h>
-
-//functions used only inside map_from_template
-void create_cell(int row, int col, map_template *template, map_data *map);
-void create_cross(int row, int col, map_template *template, map_data *map, char center_val);
-//end of functions used only inside
 
 map_data *create_map_data(int screen_w, int screen_h, map_template *template)
 {
@@ -56,7 +50,7 @@ map_data *create_map_data(int screen_w, int screen_h, map_template *template)
         {
             for (int col = 0; col < template->width; col++)
             {
-                //create map for each cell in template
+                // create map for each cell in template
                 create_cell(row, col, template, map);
             }
         }
@@ -89,7 +83,7 @@ void create_cell(int row, int col, map_template *template, map_data *map)
         cell_width = (cell_width % 2 == 0) ? (cell_width - 1) : cell_width;
         int cell_height = screen_h / template->height;
         cell_height = (cell_height % 2 == 0) ? (cell_height - 1) : cell_height;
-        //fill every pixel with wall
+        // fill every pixel with wall
         for (int i = 0; i < cell_width; ++i)
         {
             for (int j = 0; j < cell_height; ++j)
@@ -117,7 +111,7 @@ void create_cross(int row, int col, map_template *template, map_data *map, char 
     int offset_x = col * cell_width;
     int offset_y = row * cell_height;
 
-    //from top to bottom
+    // from top to bottom
     int begin_index = offset_x + cell_width / 2 + screen_w * (offset_y + cell_height / 2);
     if ((row > 0) && (template->board[(row - 1) * template->width + col] != template->wall))
     {
@@ -133,7 +127,7 @@ void create_cross(int row, int col, map_template *template, map_data *map, char 
         map_array[index] = PASSAGE;
     }
 
-    //from left to right
+    // from left to right
     begin_index = offset_x + cell_width / 2 + screen_w * (offset_y + cell_height / 2);
     if ((col > 0) && (template->board[(row) * template->width + col - 1] != template->wall))
     {
@@ -148,7 +142,7 @@ void create_cross(int row, int col, map_template *template, map_data *map, char 
     {
         map_array[index] = PASSAGE;
     }
-    //fill in the centre val
+    // fill in the centre val
     map_array[offset_x + cell_width / 2 + screen_w * (offset_y + cell_height / 2)] = center_val;
 }
 
