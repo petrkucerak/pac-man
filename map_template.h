@@ -1,18 +1,21 @@
-/*******************************************************************
-  Maps for apoman on MicroZed
-  based MZ_APO board designed by Petr Porazil at PiKRON
-
-  map_template      - place with recepie for maps as well as all maps
-
-  (C) Copyright 2021 by Lukas Nejezchleb
-      e-mail:   nejezluk@fel.cvut.cz
-      license:  any combination of GPL, LGPL, MPL or BSD licenses
-
- *******************************************************************/
+/**
+ * @file map_template.h
+ * @author Lukas Nejezchleb (nejezluk@fel.cvut.cz)
+ * @brief File housing the definition of the template data structure Current maps: map star, map circles, map conch
+ * @version 0.1
+ * @date 2021-05-04
+ * 
+ * @copyright Copyright (c) 2021
+ * 
+ */
 
 #ifndef MAP_TEMPLATE_H
 #define MAP_TEMPLATE_H
 
+/**
+ * @brief the definition of the template data structure
+ * 
+ */
 typedef struct
 {
     char *name;         /* name of the map */
