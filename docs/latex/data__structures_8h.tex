@@ -1,5 +1,10 @@
 \hypertarget{data__structures_8h}{}\doxysection{C\+:/\+Users/\+Petr/\+Documents/apo\+\_\+semestralka/data\+\_\+structures.h File Reference}
 \label{data__structures_8h}\index{C:/Users/Petr/Documents/apo\_semestralka/data\_structures.h@{C:/Users/Petr/Documents/apo\_semestralka/data\_structures.h}}
+
+
+File with definitions of data structures used across modules like fb data (data about next frame on the screeen), map data (data about currently played map)  
+
+
 {\ttfamily \#include $<$stdint.\+h$>$}\newline
 {\ttfamily \#include $<$stdbool.\+h$>$}\newline
 {\ttfamily \#include $<$pthread.\+h$>$}\newline
@@ -8,34 +13,34 @@
 \begin{DoxyCompactItemize}
 \item 
 struct \mbox{\hyperlink{structfb__data}{fb\+\_\+data}}
-\item 
+\begin{DoxyCompactList}\small\item\em the buffer structure \end{DoxyCompactList}\item 
 struct \mbox{\hyperlink{structcoords}{coords}}
-\item 
+\begin{DoxyCompactList}\small\item\em the coords structure \end{DoxyCompactList}\item 
 struct \mbox{\hyperlink{structmap__data}{map\+\_\+data}}
-\item 
+\begin{DoxyCompactList}\small\item\em the basic map metadatas \end{DoxyCompactList}\item 
 struct \mbox{\hyperlink{structread__thread__data__type}{read\+\_\+thread\+\_\+data\+\_\+type}}
-\item 
+\begin{DoxyCompactList}\small\item\em thread data type \end{DoxyCompactList}\item 
 struct \mbox{\hyperlink{structpacman__type}{pacman\+\_\+type}}
-\item 
+\begin{DoxyCompactList}\small\item\em the pac-\/man metadatas \end{DoxyCompactList}\item 
 struct \mbox{\hyperlink{structperipherals__data__t}{peripherals\+\_\+data\+\_\+t}}
-\item 
+\begin{DoxyCompactList}\small\item\em peripherals config data \end{DoxyCompactList}\item 
 struct \mbox{\hyperlink{structgame__init__data__t}{game\+\_\+init\+\_\+data\+\_\+t}}
-\item 
+\begin{DoxyCompactList}\small\item\em data necessary for game initialization \end{DoxyCompactList}\item 
 struct \mbox{\hyperlink{structghost__type}{ghost\+\_\+type}}
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em the ghost metadatas \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Macros}
 \begin{DoxyCompactItemize}
 \item 
 \#define \mbox{\hyperlink{data__structures_8h_a520ca3e8e98573e7774965b2c69d2843}{COIN}}~3
-\item 
+\begin{DoxyCompactList}\small\item\em place where is the coin drawn, pacman can walk accross it \end{DoxyCompactList}\item 
 \#define \mbox{\hyperlink{data__structures_8h_adf6a8131152ce4fd04f96338c00f548b}{PASSAGE}}~1
-\item 
+\begin{DoxyCompactList}\small\item\em black place on the map, pacman is allowed to walk there \end{DoxyCompactList}\item 
 \#define \mbox{\hyperlink{data__structures_8h_ac749b87dd5d843e4add3eb8e8a130f62}{WALL}}~2
-\item 
+\begin{DoxyCompactList}\small\item\em place that will be drawn in color to show where the wall is \end{DoxyCompactList}\item 
 \#define \mbox{\hyperlink{data__structures_8h_a48f6457243719e7031768d4100741159}{BLOCKED}}~0
-\item 
+\begin{DoxyCompactList}\small\item\em black place on the map, pacman is not allowed there \end{DoxyCompactList}\item 
 \#define \mbox{\hyperlink{data__structures_8h_a7082fba706496a93330c168643a1ef30}{SUPERCOIN}}~4
-\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em place where is the supercoin drawn, pacman can walk accross it \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Variables}
 \begin{DoxyCompactItemize}
 \item 
@@ -47,6 +52,23 @@ pthread\+\_\+cond\+\_\+t \mbox{\hyperlink{data__structures_8h_a2d89e66b161e77ef3
 \end{DoxyCompactItemize}
 
 
+\doxysubsection{Detailed Description}
+File with definitions of data structures used across modules like fb data (data about next frame on the screeen), map data (data about currently played map) 
+
+\begin{DoxyAuthor}{Author}
+Lukas Nejezchleb (\href{mailto:nejezluk@fel.cvut.cz}{\texttt{ nejezluk@fel.\+cvut.\+cz}}), Petr Kucera (\href{mailto:kucerp28@fel.cvut.cz}{\texttt{ kucerp28@fel.\+cvut.\+cz}}) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+0.\+1 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2021-\/05-\/04
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2021 
+\end{DoxyCopyright}
+
+
 \doxysubsection{Macro Definition Documentation}
 \mbox{\Hypertarget{data__structures_8h_a48f6457243719e7031768d4100741159}\label{data__structures_8h_a48f6457243719e7031768d4100741159}} 
 \index{data\_structures.h@{data\_structures.h}!BLOCKED@{BLOCKED}}
@@ -54,31 +76,51 @@ pthread\+\_\+cond\+\_\+t \mbox{\hyperlink{data__structures_8h_a2d89e66b161e77ef3
 \doxysubsubsection{\texorpdfstring{BLOCKED}{BLOCKED}}
 {\footnotesize\ttfamily \#define BLOCKED~0}
 
-black place on the map, pacman is not allowed there \mbox{\Hypertarget{data__structures_8h_a520ca3e8e98573e7774965b2c69d2843}\label{data__structures_8h_a520ca3e8e98573e7774965b2c69d2843}} 
+
+
+black place on the map, pacman is not allowed there 
+
+\mbox{\Hypertarget{data__structures_8h_a520ca3e8e98573e7774965b2c69d2843}\label{data__structures_8h_a520ca3e8e98573e7774965b2c69d2843}} 
 \index{data\_structures.h@{data\_structures.h}!COIN@{COIN}}
 \index{COIN@{COIN}!data\_structures.h@{data\_structures.h}}
 \doxysubsubsection{\texorpdfstring{COIN}{COIN}}
 {\footnotesize\ttfamily \#define COIN~3}
 
-place where is the coin drawn, pacman can walk accross it \mbox{\Hypertarget{data__structures_8h_adf6a8131152ce4fd04f96338c00f548b}\label{data__structures_8h_adf6a8131152ce4fd04f96338c00f548b}} 
+
+
+place where is the coin drawn, pacman can walk accross it 
+
+\mbox{\Hypertarget{data__structures_8h_adf6a8131152ce4fd04f96338c00f548b}\label{data__structures_8h_adf6a8131152ce4fd04f96338c00f548b}} 
 \index{data\_structures.h@{data\_structures.h}!PASSAGE@{PASSAGE}}
 \index{PASSAGE@{PASSAGE}!data\_structures.h@{data\_structures.h}}
 \doxysubsubsection{\texorpdfstring{PASSAGE}{PASSAGE}}
 {\footnotesize\ttfamily \#define PASSAGE~1}
 
-black place on the map, pacman is allowed to walk there \mbox{\Hypertarget{data__structures_8h_a7082fba706496a93330c168643a1ef30}\label{data__structures_8h_a7082fba706496a93330c168643a1ef30}} 
+
+
+black place on the map, pacman is allowed to walk there 
+
+\mbox{\Hypertarget{data__structures_8h_a7082fba706496a93330c168643a1ef30}\label{data__structures_8h_a7082fba706496a93330c168643a1ef30}} 
 \index{data\_structures.h@{data\_structures.h}!SUPERCOIN@{SUPERCOIN}}
 \index{SUPERCOIN@{SUPERCOIN}!data\_structures.h@{data\_structures.h}}
 \doxysubsubsection{\texorpdfstring{SUPERCOIN}{SUPERCOIN}}
 {\footnotesize\ttfamily \#define SUPERCOIN~4}
 
-place where is the supercoin drawn, pacman can walk accross it \mbox{\Hypertarget{data__structures_8h_ac749b87dd5d843e4add3eb8e8a130f62}\label{data__structures_8h_ac749b87dd5d843e4add3eb8e8a130f62}} 
+
+
+place where is the supercoin drawn, pacman can walk accross it 
+
+\mbox{\Hypertarget{data__structures_8h_ac749b87dd5d843e4add3eb8e8a130f62}\label{data__structures_8h_ac749b87dd5d843e4add3eb8e8a130f62}} 
 \index{data\_structures.h@{data\_structures.h}!WALL@{WALL}}
 \index{WALL@{WALL}!data\_structures.h@{data\_structures.h}}
 \doxysubsubsection{\texorpdfstring{WALL}{WALL}}
 {\footnotesize\ttfamily \#define WALL~2}
 
+
+
 place that will be drawn in color to show where the wall is 
+
+
 
 \doxysubsection{Variable Documentation}
 \mbox{\Hypertarget{data__structures_8h_a2d89e66b161e77ef3ba860e0bcd80da1}\label{data__structures_8h_a2d89e66b161e77ef3ba860e0bcd80da1}} 

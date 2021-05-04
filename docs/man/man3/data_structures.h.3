@@ -2,7 +2,8 @@
 .ad l
 .nh
 .SH NAME
-C:/Users/Petr/Documents/apo_semestralka/data_structures.h
+C:/Users/Petr/Documents/apo_semestralka/data_structures.h \- File with definitions of data structures used across modules like fb data (data about next frame on the screeen), map data (data about currently played map)  
+
 .SH SYNOPSIS
 .br
 .PP
@@ -21,27 +22,35 @@ C:/Users/Petr/Documents/apo_semestralka/data_structures.h
 .ti -1c
 .RI "struct \fBfb_data\fP"
 .br
+.RI "the buffer structure "
 .ti -1c
 .RI "struct \fBcoords\fP"
 .br
+.RI "the coords structure "
 .ti -1c
 .RI "struct \fBmap_data\fP"
 .br
+.RI "the basic map metadatas "
 .ti -1c
 .RI "struct \fBread_thread_data_type\fP"
 .br
+.RI "thread data type "
 .ti -1c
 .RI "struct \fBpacman_type\fP"
 .br
+.RI "the pac-man metadatas "
 .ti -1c
 .RI "struct \fBperipherals_data_t\fP"
 .br
+.RI "peripherals config data "
 .ti -1c
 .RI "struct \fBgame_init_data_t\fP"
 .br
+.RI "data necessary for game initialization "
 .ti -1c
 .RI "struct \fBghost_type\fP"
 .br
+.RI "the ghost metadatas "
 .in -1c
 .SS "Macros"
 
@@ -49,18 +58,23 @@ C:/Users/Petr/Documents/apo_semestralka/data_structures.h
 .ti -1c
 .RI "#define \fBCOIN\fP   3"
 .br
+.RI "place where is the coin drawn, pacman can walk accross it "
 .ti -1c
 .RI "#define \fBPASSAGE\fP   1"
 .br
+.RI "black place on the map, pacman is allowed to walk there "
 .ti -1c
 .RI "#define \fBWALL\fP   2"
 .br
+.RI "place that will be drawn in color to show where the wall is "
 .ti -1c
 .RI "#define \fBBLOCKED\fP   0"
 .br
+.RI "black place on the map, pacman is not allowed there "
 .ti -1c
 .RI "#define \fBSUPERCOIN\fP   4"
 .br
+.RI "place where is the supercoin drawn, pacman can walk accross it "
 .in -1c
 .SS "Variables"
 
@@ -75,17 +89,54 @@ C:/Users/Petr/Documents/apo_semestralka/data_structures.h
 .RI "pthread_cond_t \fBcharacter_has_been_read\fP"
 .br
 .in -1c
+.SH "Detailed Description"
+.PP 
+File with definitions of data structures used across modules like fb data (data about next frame on the screeen), map data (data about currently played map) 
+
+
+.PP
+\fBAuthor\fP
+.RS 4
+Lukas Nejezchleb (nejezluk@fel.cvut.cz), Petr Kucera (kucerp28@fel.cvut.cz) 
+.RE
+.PP
+\fBVersion\fP
+.RS 4
+0\&.1 
+.RE
+.PP
+\fBDate\fP
+.RS 4
+2021-05-04
+.RE
+.PP
+\fBCopyright\fP
+.RS 4
+Copyright (c) 2021 
+.RE
+.PP
+
 .SH "Macro Definition Documentation"
 .PP 
 .SS "#define BLOCKED   0"
+
+.PP
 black place on the map, pacman is not allowed there 
 .SS "#define COIN   3"
+
+.PP
 place where is the coin drawn, pacman can walk accross it 
 .SS "#define PASSAGE   1"
+
+.PP
 black place on the map, pacman is allowed to walk there 
 .SS "#define SUPERCOIN   4"
+
+.PP
 place where is the supercoin drawn, pacman can walk accross it 
 .SS "#define WALL   2"
+
+.PP
 place that will be drawn in color to show where the wall is 
 .SH "Variable Documentation"
 .PP 

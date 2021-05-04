@@ -3,6 +3,11 @@
 <title>read_thread_data_type Struct Reference</title>
 <indexterm><primary>read_thread_data_type</primary></indexterm>
 <para>
+
+<para>thread data type </para>
+ 
+</para>
+<para>
 <computeroutput>#include &lt;data_structures.h&gt;</computeroutput>
 </para>
 <simplesect>
@@ -14,6 +19,11 @@
 </listitem>
         </itemizedlist>
 </simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>thread data type </para>
+</section>
 <section>
 <title>Field Documentation</title>
 <anchor xml:id="_structread__thread__data__type_1a41eafad1f226f50088de23256b17f4c7"/>    <section>

@@ -15,7 +15,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Petr/Documents/apo_semestralka/data_structures.h" line="71" column="9" bodyfile="C:/Users/Petr/Documents/apo_semestralka/data_structures.h" bodystart="71" bodyend="-1"/>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/data_structures.h" line="99" column="9" bodyfile="C:/Users/Petr/Documents/apo_semestralka/data_structures.h" bodystart="99" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structgame__init__data__t_1a71734b9ad1d4878eb9331cbed1ee5842" prot="public" static="no" mutable="no">
         <type>int</type>
@@ -28,7 +28,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Petr/Documents/apo_semestralka/data_structures.h" line="72" column="9" bodyfile="C:/Users/Petr/Documents/apo_semestralka/data_structures.h" bodystart="72" bodyend="-1"/>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/data_structures.h" line="100" column="9" bodyfile="C:/Users/Petr/Documents/apo_semestralka/data_structures.h" bodystart="100" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structgame__init__data__t_1a2048c656939c9a5b734d0db71092b6bf" prot="public" static="no" mutable="no">
         <type><ref refid="structmap__template" kindref="compound">map_template</ref> *</type>
@@ -41,10 +41,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Petr/Documents/apo_semestralka/data_structures.h" line="73" column="18" bodyfile="C:/Users/Petr/Documents/apo_semestralka/data_structures.h" bodystart="73" bodyend="-1"/>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/data_structures.h" line="101" column="18" bodyfile="C:/Users/Petr/Documents/apo_semestralka/data_structures.h" bodystart="101" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
+<para>data necessary for game initialization </para>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
@@ -61,7 +62,7 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="C:/Users/Petr/Documents/apo_semestralka/data_structures.h" line="69" column="1" bodyfile="C:/Users/Petr/Documents/apo_semestralka/data_structures.h" bodystart="70" bodyend="74"/>
+    <location file="C:/Users/Petr/Documents/apo_semestralka/data_structures.h" line="97" column="1" bodyfile="C:/Users/Petr/Documents/apo_semestralka/data_structures.h" bodystart="98" bodyend="102"/>
     <listofallmembers>
       <member refid="structgame__init__data__t_1a71734b9ad1d4878eb9331cbed1ee5842" prot="public" virt="non-virtual"><scope>game_init_data_t</scope><name>ghost_nr</name></member>
       <member refid="structgame__init__data__t_1a2048c656939c9a5b734d0db71092b6bf" prot="public" virt="non-virtual"><scope>game_init_data_t</scope><name>map</name></member>

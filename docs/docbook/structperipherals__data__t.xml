@@ -3,6 +3,11 @@
 <title>peripherals_data_t Struct Reference</title>
 <indexterm><primary>peripherals_data_t</primary></indexterm>
 <para>
+
+<para>peripherals config data </para>
+ 
+</para>
+<para>
 <computeroutput>#include &lt;data_structures.h&gt;</computeroutput>
 </para>
 <simplesect>
@@ -18,6 +23,11 @@
 </listitem>
         </itemizedlist>
 </simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>peripherals config data </para>
+</section>
 <section>
 <title>Field Documentation</title>
 <anchor xml:id="_structperipherals__data__t_1a5680649ae248685c18e72927444139ee"/>    <section>

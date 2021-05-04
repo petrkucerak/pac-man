@@ -269,61 +269,61 @@
         <name>COIN</name>
         <initializer>3</initializer>
         <briefdescription>
+<para>place where is the coin drawn, pacman can walk accross it </para>
         </briefdescription>
         <detaileddescription>
-<para>place where is the coin drawn, pacman can walk accross it </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Petr/Documents/apo_semestralka/data_structures.h" line="90" column="9" bodyfile="C:/Users/Petr/Documents/apo_semestralka/data_structures.h" bodystart="90" bodyend="-1"/>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/data_structures.h" line="121" column="9" bodyfile="C:/Users/Petr/Documents/apo_semestralka/data_structures.h" bodystart="121" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="data__structures_8h_1adf6a8131152ce4fd04f96338c00f548b" prot="public" static="no">
         <name>PASSAGE</name>
         <initializer>1</initializer>
         <briefdescription>
+<para>black place on the map, pacman is allowed to walk there </para>
         </briefdescription>
         <detaileddescription>
-<para>black place on the map, pacman is allowed to walk there </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Petr/Documents/apo_semestralka/data_structures.h" line="95" column="9" bodyfile="C:/Users/Petr/Documents/apo_semestralka/data_structures.h" bodystart="95" bodyend="-1"/>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/data_structures.h" line="127" column="9" bodyfile="C:/Users/Petr/Documents/apo_semestralka/data_structures.h" bodystart="127" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="data__structures_8h_1ac749b87dd5d843e4add3eb8e8a130f62" prot="public" static="no">
         <name>WALL</name>
         <initializer>2</initializer>
         <briefdescription>
+<para>place that will be drawn in color to show where the wall is </para>
         </briefdescription>
         <detaileddescription>
-<para>place that will be drawn in color to show where the wall is </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Petr/Documents/apo_semestralka/data_structures.h" line="100" column="9" bodyfile="C:/Users/Petr/Documents/apo_semestralka/data_structures.h" bodystart="100" bodyend="-1"/>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/data_structures.h" line="133" column="9" bodyfile="C:/Users/Petr/Documents/apo_semestralka/data_structures.h" bodystart="133" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="data__structures_8h_1a48f6457243719e7031768d4100741159" prot="public" static="no">
         <name>BLOCKED</name>
         <initializer>0</initializer>
         <briefdescription>
+<para>black place on the map, pacman is not allowed there </para>
         </briefdescription>
         <detaileddescription>
-<para>black place on the map, pacman is not allowed there </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Petr/Documents/apo_semestralka/data_structures.h" line="105" column="9" bodyfile="C:/Users/Petr/Documents/apo_semestralka/data_structures.h" bodystart="105" bodyend="-1"/>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/data_structures.h" line="139" column="9" bodyfile="C:/Users/Petr/Documents/apo_semestralka/data_structures.h" bodystart="139" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="data__structures_8h_1a7082fba706496a93330c168643a1ef30" prot="public" static="no">
         <name>SUPERCOIN</name>
         <initializer>4</initializer>
         <briefdescription>
+<para>place where is the supercoin drawn, pacman can walk accross it </para>
         </briefdescription>
         <detaileddescription>
-<para>place where is the supercoin drawn, pacman can walk accross it </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Petr/Documents/apo_semestralka/data_structures.h" line="110" column="9" bodyfile="C:/Users/Petr/Documents/apo_semestralka/data_structures.h" bodystart="110" bodyend="-1"/>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/data_structures.h" line="145" column="9" bodyfile="C:/Users/Petr/Documents/apo_semestralka/data_structures.h" bodystart="145" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="var">
@@ -338,7 +338,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Petr/Documents/apo_semestralka/data_structures.h" line="57" column="30" bodyfile="C:/Users/Petr/Documents/apo_semestralka/apoman.c" bodystart="44" bodyend="-1" declfile="C:/Users/Petr/Documents/apo_semestralka/data_structures.h" declline="57" declcolumn="30"/>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/data_structures.h" line="77" column="30" bodyfile="C:/Users/Petr/Documents/apo_semestralka/apoman.c" bodystart="43" bodyend="-1" declfile="C:/Users/Petr/Documents/apo_semestralka/data_structures.h" declline="77" declcolumn="30"/>
       </memberdef>
       <memberdef kind="variable" id="data__structures_8h_1a2680f9fe5653a596c7e779b838180fdc" prot="public" static="no" mutable="no">
         <type>pthread_mutex_t</type>
@@ -351,7 +351,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Petr/Documents/apo_semestralka/data_structures.h" line="58" column="24" bodyfile="C:/Users/Petr/Documents/apo_semestralka/apoman.c" bodystart="42" bodyend="-1" declfile="C:/Users/Petr/Documents/apo_semestralka/data_structures.h" declline="58" declcolumn="24"/>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/data_structures.h" line="78" column="24" bodyfile="C:/Users/Petr/Documents/apo_semestralka/apoman.c" bodystart="41" bodyend="-1" declfile="C:/Users/Petr/Documents/apo_semestralka/data_structures.h" declline="78" declcolumn="24"/>
       </memberdef>
       <memberdef kind="variable" id="data__structures_8h_1a2d89e66b161e77ef3ba860e0bcd80da1" prot="public" static="no" mutable="no">
         <type>pthread_cond_t</type>
@@ -364,25 +364,25 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Petr/Documents/apo_semestralka/data_structures.h" line="59" column="23" bodyfile="C:/Users/Petr/Documents/apo_semestralka/apoman.c" bodystart="43" bodyend="-1" declfile="C:/Users/Petr/Documents/apo_semestralka/data_structures.h" declline="59" declcolumn="23"/>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/data_structures.h" line="79" column="23" bodyfile="C:/Users/Petr/Documents/apo_semestralka/apoman.c" bodystart="42" bodyend="-1" declfile="C:/Users/Petr/Documents/apo_semestralka/data_structures.h" declline="79" declcolumn="23"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
+<para>File with definitions of data structures used across modules like fb data (data about next frame on the screeen), map data (data about currently played map) </para>
     </briefdescription>
     <detaileddescription>
+<para><simplesect kind="author"><para>Lukas Nejezchleb (<ulink url="mailto:nejezluk@fel.cvut.cz">nejezluk@fel.cvut.cz</ulink>), Petr Kucera (<ulink url="mailto:kucerp28@fel.cvut.cz">kucerp28@fel.cvut.cz</ulink>) </para>
+</simplesect>
+<simplesect kind="version"><para>0.1 </para>
+</simplesect>
+<simplesect kind="date"><para>2021-05-04</para>
+</simplesect>
+<simplesect kind="copyright"><para>Copyright (c) 2021 </para>
+</simplesect>
+</para>
     </detaileddescription>
     <programlisting>
-<codeline lineno="1"><highlight class="comment">/*******************************************************************</highlight></codeline>
-<codeline lineno="2"><highlight class="comment"><sp/><sp/>Data<sp/>structures<sp/>definitions<sp/>for<sp/>project<sp/>apoman<sp/>for<sp/>MicroZed<sp/>based<sp/>MZ_APO<sp/>board</highlight></codeline>
-<codeline lineno="3"><highlight class="comment"><sp/><sp/>designed<sp/>by<sp/>Petr<sp/>Porazil<sp/>at<sp/>PiKRON</highlight></codeline>
-<codeline lineno="4"><highlight class="comment"></highlight></codeline>
-<codeline lineno="5"><highlight class="comment"><sp/><sp/>data_structures.c<sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>file<sp/>with<sp/>definitions<sp/>of<sp/>used<sp/>data<sp/>structures</highlight></codeline>
-<codeline lineno="6"><highlight class="comment"></highlight></codeline>
-<codeline lineno="7"><highlight class="comment">(C)<sp/>Copyright<sp/>2021<sp/>by<sp/>Petr<sp/>Kucera<sp/>and<sp/>Lukas<sp/>Nejezchleb</highlight></codeline>
-<codeline lineno="8"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>e-mails:<sp/><sp/><sp/>kucerp28@fel.cvut.cz<sp/>,<sp/>nejezluk@fel.cvut.cz</highlight></codeline>
-<codeline lineno="9"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>license:<sp/><sp/>any<sp/>combination<sp/>of<sp/>GPL,<sp/>LGPL,<sp/>MPL<sp/>or<sp/>BSD<sp/>licenses</highlight></codeline>
-<codeline lineno="10"><highlight class="comment"><sp/>*******************************************************************/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
 <codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>DATA_STRUCTURES_H</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DATA_STRUCTURES_H</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdint.h&gt;</highlight><highlight class="normal"></highlight></codeline>
@@ -390,85 +390,83 @@
 <codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;pthread.h&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="map__template_8h" kindref="compound">map_template.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="18"><highlight class="normal"></highlight></codeline>
-<codeline lineno="19" refid="structfb__data" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="20"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="21" refid="structfb__data_1a2474a5474cbff19523a51eb1de01cda4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structfb__data_1a2474a5474cbff19523a51eb1de01cda4" kindref="member">width</ref>;</highlight></codeline>
-<codeline lineno="22" refid="structfb__data_1ad12fc34ce789bce6c8a05d8a17138534" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structfb__data_1ad12fc34ce789bce6c8a05d8a17138534" kindref="member">height</ref>;</highlight></codeline>
-<codeline lineno="23" refid="structfb__data_1a377cdea530281d6fa239a9e14c1a7286" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>*<ref refid="structfb__data_1a377cdea530281d6fa239a9e14c1a7286" kindref="member">fb</ref>;</highlight></codeline>
-<codeline lineno="24"><highlight class="normal">}<sp/><ref refid="structfb__data" kindref="compound">fb_data</ref>;</highlight></codeline>
-<codeline lineno="25"><highlight class="normal"></highlight></codeline>
-<codeline lineno="26" refid="structcoords" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="27"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="28" refid="structcoords_1a6150e0515f7202e2fb518f7206ed97dc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structcoords_1a6150e0515f7202e2fb518f7206ed97dc" kindref="member">x</ref>;</highlight></codeline>
-<codeline lineno="29" refid="structcoords_1a0a2f84ed7838f07779ae24c5a9086d33" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structcoords_1a0a2f84ed7838f07779ae24c5a9086d33" kindref="member">y</ref>;</highlight></codeline>
-<codeline lineno="30"><highlight class="normal">}<sp/><ref refid="structcoords" kindref="compound">coords</ref>;</highlight></codeline>
-<codeline lineno="31"><highlight class="normal"></highlight></codeline>
-<codeline lineno="32" refid="structmap__data" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="33"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="34" refid="structmap__data_1a2474a5474cbff19523a51eb1de01cda4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structmap__data_1a2474a5474cbff19523a51eb1de01cda4" kindref="member">width</ref>;</highlight></codeline>
-<codeline lineno="35" refid="structmap__data_1ad12fc34ce789bce6c8a05d8a17138534" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structmap__data_1ad12fc34ce789bce6c8a05d8a17138534" kindref="member">height</ref>;</highlight></codeline>
-<codeline lineno="36" refid="structmap__data_1a9818b17c7d2a7b36901aa275b76c39d0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="structmap__data_1a9818b17c7d2a7b36901aa275b76c39d0" kindref="member">board_arr</ref>;</highlight></codeline>
-<codeline lineno="37" refid="structmap__data_1aa357cd36ef175f727e27f1da960dddaf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structmap__data_1aa357cd36ef175f727e27f1da960dddaf" kindref="member">max_object_diameter</ref>;<sp/></highlight><highlight class="comment">//<sp/>maximum<sp/>dimensions<sp/>of<sp/>ghosts,<sp/>pacman<sp/>and<sp/>coins</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="38" refid="structmap__data_1a231a72e20c10785d4a461a464a58f970" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structcoords" kindref="compound">coords</ref><sp/><ref refid="structmap__data_1a231a72e20c10785d4a461a464a58f970" kindref="member">ghost_spawn</ref>;</highlight></codeline>
-<codeline lineno="39" refid="structmap__data_1a726c15baf3d3606bf35bba9e5e32b2bc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structcoords" kindref="compound">coords</ref><sp/><ref refid="structmap__data_1a726c15baf3d3606bf35bba9e5e32b2bc" kindref="member">pacman_spawn</ref>;</highlight></codeline>
-<codeline lineno="40"><highlight class="normal">}<sp/><ref refid="structmap__data" kindref="compound">map_data</ref>;</highlight></codeline>
-<codeline lineno="41"><highlight class="normal"></highlight></codeline>
-<codeline lineno="42" refid="structread__thread__data__type" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="43"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="44" refid="structread__thread__data__type_1ac746fa6ad48d19984a159f14bec028a3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structread__thread__data__type_1ac746fa6ad48d19984a159f14bec028a3" kindref="member">quit</ref>;</highlight></codeline>
-<codeline lineno="45" refid="structread__thread__data__type_1a41eafad1f226f50088de23256b17f4c7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="structread__thread__data__type_1a41eafad1f226f50088de23256b17f4c7" kindref="member">last_read</ref>;</highlight></codeline>
-<codeline lineno="46"><highlight class="normal">}<sp/><ref refid="structread__thread__data__type" kindref="compound">read_thread_data_type</ref>;</highlight></codeline>
-<codeline lineno="47"><highlight class="normal"></highlight></codeline>
-<codeline lineno="48" refid="structpacman__type" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="49"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="50" refid="structpacman__type_1a7db8b62e64ae0eb828ef80d8708d7243" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structcoords" kindref="compound">coords</ref><sp/><ref refid="structpacman__type_1a7db8b62e64ae0eb828ef80d8708d7243" kindref="member">location</ref>;</highlight></codeline>
-<codeline lineno="51" refid="structpacman__type_1a1020ed5ecf8ec6fb9721615347ecd8a0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structcoords" kindref="compound">coords</ref><sp/><ref refid="structpacman__type_1a1020ed5ecf8ec6fb9721615347ecd8a0" kindref="member">direction</ref>;</highlight></codeline>
-<codeline lineno="52" refid="structpacman__type_1aef160b7437d94056f1dc59646cd5b87d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structpacman__type_1aef160b7437d94056f1dc59646cd5b87d" kindref="member">score</ref>;</highlight></codeline>
-<codeline lineno="53" refid="structpacman__type_1ac1d68ef9a5dd304c5015e07af7f2bb19" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structpacman__type_1ac1d68ef9a5dd304c5015e07af7f2bb19" kindref="member">lives</ref>;</highlight></codeline>
-<codeline lineno="54" refid="structpacman__type_1a3563efe256b8edd9b91e0d3d5dc58f7a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structpacman__type_1a3563efe256b8edd9b91e0d3d5dc58f7a" kindref="member">maxlives</ref>;</highlight></codeline>
-<codeline lineno="55"><highlight class="normal">}<sp/><ref refid="structpacman__type" kindref="compound">pacman_type</ref>;</highlight></codeline>
-<codeline lineno="56"><highlight class="normal"></highlight></codeline>
-<codeline lineno="57"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="structread__thread__data__type" kindref="compound">read_thread_data_type</ref><sp/><ref refid="data__structures_8h_1a6cf0bd745eade6d2d8304b9b72930ab4" kindref="member">read_thread_data</ref>;</highlight></codeline>
-<codeline lineno="58"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>pthread_mutex_t<sp/><ref refid="data__structures_8h_1a2680f9fe5653a596c7e779b838180fdc" kindref="member">mtx</ref>;</highlight></codeline>
-<codeline lineno="59"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>pthread_cond_t<sp/><ref refid="data__structures_8h_1a2d89e66b161e77ef3ba860e0bcd80da1" kindref="member">character_has_been_read</ref>;</highlight></codeline>
-<codeline lineno="60"><highlight class="normal"></highlight></codeline>
-<codeline lineno="61" refid="structperipherals__data__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="62"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="63" refid="structperipherals__data__t_1a7c4a56da1b7b5d790b55198486e9c322" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="structperipherals__data__t_1a7c4a56da1b7b5d790b55198486e9c322" kindref="member">lcd_mem_base</ref>;</highlight></codeline>
-<codeline lineno="64" refid="structperipherals__data__t_1a50905c9b00b3aa4d07fb32429550c7c0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="structperipherals__data__t_1a50905c9b00b3aa4d07fb32429550c7c0" kindref="member">led_mem_base</ref>;</highlight></codeline>
-<codeline lineno="65" refid="structperipherals__data__t_1ab09267ea5cf5fa173a23a69dd5f1bb26" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structperipherals__data__t_1ab09267ea5cf5fa173a23a69dd5f1bb26" kindref="member">lcd_w</ref>;</highlight></codeline>
-<codeline lineno="66" refid="structperipherals__data__t_1a5680649ae248685c18e72927444139ee" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structperipherals__data__t_1a5680649ae248685c18e72927444139ee" kindref="member">lcd_h</ref>;</highlight></codeline>
-<codeline lineno="67"><highlight class="normal">}<sp/><ref refid="structperipherals__data__t" kindref="compound">peripherals_data_t</ref>;</highlight></codeline>
-<codeline lineno="68"><highlight class="normal"></highlight></codeline>
-<codeline lineno="69" refid="structgame__init__data__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="70"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="71" refid="structgame__init__data__t_1a04be3af67b53e5039fb982da0fecae38" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structgame__init__data__t_1a04be3af67b53e5039fb982da0fecae38" kindref="member">pacman_lives</ref>;</highlight></codeline>
-<codeline lineno="72" refid="structgame__init__data__t_1a71734b9ad1d4878eb9331cbed1ee5842" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structgame__init__data__t_1a71734b9ad1d4878eb9331cbed1ee5842" kindref="member">ghost_nr</ref>;</highlight></codeline>
-<codeline lineno="73" refid="structgame__init__data__t_1a2048c656939c9a5b734d0db71092b6bf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structmap__template" kindref="compound">map_template</ref><sp/>*<ref refid="structgame__init__data__t_1a2048c656939c9a5b734d0db71092b6bf" kindref="member">map</ref>;</highlight></codeline>
-<codeline lineno="74"><highlight class="normal">}<sp/><ref refid="structgame__init__data__t" kindref="compound">game_init_data_t</ref>;</highlight></codeline>
-<codeline lineno="75"><highlight class="normal"></highlight></codeline>
-<codeline lineno="76" refid="structghost__type" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="77"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="78" refid="structghost__type_1a4b700a8d1d6df04cafe936a0855ff004" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structghost__type_1a4b700a8d1d6df04cafe936a0855ff004" kindref="member">moving_randomly</ref>;</highlight></codeline>
-<codeline lineno="79" refid="structghost__type_1a9baade4c57be1fd2d7ad88f233bb5e7d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structghost__type_1a9baade4c57be1fd2d7ad88f233bb5e7d" kindref="member">scared</ref>;</highlight></codeline>
-<codeline lineno="80" refid="structghost__type_1a7db8b62e64ae0eb828ef80d8708d7243" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structcoords" kindref="compound">coords</ref><sp/><ref refid="structghost__type_1a7db8b62e64ae0eb828ef80d8708d7243" kindref="member">location</ref>;</highlight></codeline>
-<codeline lineno="81" refid="structghost__type_1a1020ed5ecf8ec6fb9721615347ecd8a0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structcoords" kindref="compound">coords</ref><sp/><ref refid="structghost__type_1a1020ed5ecf8ec6fb9721615347ecd8a0" kindref="member">direction</ref>;</highlight></codeline>
-<codeline lineno="82" refid="structghost__type_1a0b10c5b0fa8e65e009263b93ba2671ae" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><ref refid="structghost__type_1a0b10c5b0fa8e65e009263b93ba2671ae" kindref="member">color</ref>;</highlight></codeline>
-<codeline lineno="83"><highlight class="normal">}<ref refid="structghost__type" kindref="compound">ghost_type</ref>;</highlight></codeline>
-<codeline lineno="84"><highlight class="normal"></highlight></codeline>
-<codeline lineno="85"><highlight class="normal"></highlight></codeline>
-<codeline lineno="86"><highlight class="normal"></highlight></codeline>
-<codeline lineno="90" refid="data__structures_8h_1a520ca3e8e98573e7774965b2c69d2843" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>COIN<sp/>3</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="91"><highlight class="normal"></highlight></codeline>
-<codeline lineno="95" refid="data__structures_8h_1adf6a8131152ce4fd04f96338c00f548b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PASSAGE<sp/>1</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="96"><highlight class="normal"></highlight></codeline>
-<codeline lineno="100" refid="data__structures_8h_1ac749b87dd5d843e4add3eb8e8a130f62" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WALL<sp/>2</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="101"><highlight class="normal"></highlight></codeline>
-<codeline lineno="105" refid="data__structures_8h_1a48f6457243719e7031768d4100741159" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BLOCKED<sp/>0</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="106"><highlight class="normal"></highlight></codeline>
-<codeline lineno="110" refid="data__structures_8h_1a7082fba706496a93330c168643a1ef30" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SUPERCOIN<sp/>4</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="111"><highlight class="normal"></highlight></codeline>
-<codeline lineno="112"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="23" refid="structfb__data" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="25" refid="structfb__data_1a2474a5474cbff19523a51eb1de01cda4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structfb__data_1a2474a5474cbff19523a51eb1de01cda4" kindref="member">width</ref>;</highlight></codeline>
+<codeline lineno="26" refid="structfb__data_1ad12fc34ce789bce6c8a05d8a17138534" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structfb__data_1ad12fc34ce789bce6c8a05d8a17138534" kindref="member">height</ref>;</highlight></codeline>
+<codeline lineno="27" refid="structfb__data_1a377cdea530281d6fa239a9e14c1a7286" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>*<ref refid="structfb__data_1a377cdea530281d6fa239a9e14c1a7286" kindref="member">fb</ref>;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal">}<sp/><ref refid="structfb__data" kindref="compound">fb_data</ref>;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34" refid="structcoords" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="36" refid="structcoords_1a6150e0515f7202e2fb518f7206ed97dc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structcoords_1a6150e0515f7202e2fb518f7206ed97dc" kindref="member">x</ref>;</highlight></codeline>
+<codeline lineno="37" refid="structcoords_1a0a2f84ed7838f07779ae24c5a9086d33" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structcoords_1a0a2f84ed7838f07779ae24c5a9086d33" kindref="member">y</ref>;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal">}<sp/><ref refid="structcoords" kindref="compound">coords</ref>;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44" refid="structmap__data" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="46" refid="structmap__data_1a2474a5474cbff19523a51eb1de01cda4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structmap__data_1a2474a5474cbff19523a51eb1de01cda4" kindref="member">width</ref>;</highlight></codeline>
+<codeline lineno="47" refid="structmap__data_1ad12fc34ce789bce6c8a05d8a17138534" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structmap__data_1ad12fc34ce789bce6c8a05d8a17138534" kindref="member">height</ref>;</highlight></codeline>
+<codeline lineno="48" refid="structmap__data_1a9818b17c7d2a7b36901aa275b76c39d0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="structmap__data_1a9818b17c7d2a7b36901aa275b76c39d0" kindref="member">board_arr</ref>;</highlight></codeline>
+<codeline lineno="49" refid="structmap__data_1aa357cd36ef175f727e27f1da960dddaf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structmap__data_1aa357cd36ef175f727e27f1da960dddaf" kindref="member">max_object_diameter</ref>;<sp/></highlight><highlight class="comment">//<sp/>maximum<sp/>dimensions<sp/>of<sp/>ghosts,<sp/>pacman<sp/>and<sp/>coins</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50" refid="structmap__data_1a231a72e20c10785d4a461a464a58f970" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structcoords" kindref="compound">coords</ref><sp/><ref refid="structmap__data_1a231a72e20c10785d4a461a464a58f970" kindref="member">ghost_spawn</ref>;</highlight></codeline>
+<codeline lineno="51" refid="structmap__data_1a726c15baf3d3606bf35bba9e5e32b2bc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structcoords" kindref="compound">coords</ref><sp/><ref refid="structmap__data_1a726c15baf3d3606bf35bba9e5e32b2bc" kindref="member">pacman_spawn</ref>;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal">}<sp/><ref refid="structmap__data" kindref="compound">map_data</ref>;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58" refid="structread__thread__data__type" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="60" refid="structread__thread__data__type_1ac746fa6ad48d19984a159f14bec028a3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structread__thread__data__type_1ac746fa6ad48d19984a159f14bec028a3" kindref="member">quit</ref>;</highlight></codeline>
+<codeline lineno="61" refid="structread__thread__data__type_1a41eafad1f226f50088de23256b17f4c7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="structread__thread__data__type_1a41eafad1f226f50088de23256b17f4c7" kindref="member">last_read</ref>;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal">}<sp/><ref refid="structread__thread__data__type" kindref="compound">read_thread_data_type</ref>;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68" refid="structpacman__type" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="70" refid="structpacman__type_1a7db8b62e64ae0eb828ef80d8708d7243" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structcoords" kindref="compound">coords</ref><sp/><ref refid="structpacman__type_1a7db8b62e64ae0eb828ef80d8708d7243" kindref="member">location</ref>;</highlight></codeline>
+<codeline lineno="71" refid="structpacman__type_1a1020ed5ecf8ec6fb9721615347ecd8a0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structcoords" kindref="compound">coords</ref><sp/><ref refid="structpacman__type_1a1020ed5ecf8ec6fb9721615347ecd8a0" kindref="member">direction</ref>;</highlight></codeline>
+<codeline lineno="72" refid="structpacman__type_1aef160b7437d94056f1dc59646cd5b87d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structpacman__type_1aef160b7437d94056f1dc59646cd5b87d" kindref="member">score</ref>;</highlight></codeline>
+<codeline lineno="73" refid="structpacman__type_1ac1d68ef9a5dd304c5015e07af7f2bb19" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structpacman__type_1ac1d68ef9a5dd304c5015e07af7f2bb19" kindref="member">lives</ref>;</highlight></codeline>
+<codeline lineno="74" refid="structpacman__type_1a3563efe256b8edd9b91e0d3d5dc58f7a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structpacman__type_1a3563efe256b8edd9b91e0d3d5dc58f7a" kindref="member">maxlives</ref>;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal">}<sp/><ref refid="structpacman__type" kindref="compound">pacman_type</ref>;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="structread__thread__data__type" kindref="compound">read_thread_data_type</ref><sp/><ref refid="data__structures_8h_1a6cf0bd745eade6d2d8304b9b72930ab4" kindref="member">read_thread_data</ref>;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>pthread_mutex_t<sp/><ref refid="data__structures_8h_1a2680f9fe5653a596c7e779b838180fdc" kindref="member">mtx</ref>;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>pthread_cond_t<sp/><ref refid="data__structures_8h_1a2d89e66b161e77ef3ba860e0bcd80da1" kindref="member">character_has_been_read</ref>;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85" refid="structperipherals__data__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="87" refid="structperipherals__data__t_1a7c4a56da1b7b5d790b55198486e9c322" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="structperipherals__data__t_1a7c4a56da1b7b5d790b55198486e9c322" kindref="member">lcd_mem_base</ref>;</highlight></codeline>
+<codeline lineno="88" refid="structperipherals__data__t_1a50905c9b00b3aa4d07fb32429550c7c0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="structperipherals__data__t_1a50905c9b00b3aa4d07fb32429550c7c0" kindref="member">led_mem_base</ref>;</highlight></codeline>
+<codeline lineno="89" refid="structperipherals__data__t_1ab09267ea5cf5fa173a23a69dd5f1bb26" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structperipherals__data__t_1ab09267ea5cf5fa173a23a69dd5f1bb26" kindref="member">lcd_w</ref>;</highlight></codeline>
+<codeline lineno="90" refid="structperipherals__data__t_1a5680649ae248685c18e72927444139ee" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structperipherals__data__t_1a5680649ae248685c18e72927444139ee" kindref="member">lcd_h</ref>;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal">}<sp/><ref refid="structperipherals__data__t" kindref="compound">peripherals_data_t</ref>;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97" refid="structgame__init__data__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="99" refid="structgame__init__data__t_1a04be3af67b53e5039fb982da0fecae38" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structgame__init__data__t_1a04be3af67b53e5039fb982da0fecae38" kindref="member">pacman_lives</ref>;</highlight></codeline>
+<codeline lineno="100" refid="structgame__init__data__t_1a71734b9ad1d4878eb9331cbed1ee5842" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structgame__init__data__t_1a71734b9ad1d4878eb9331cbed1ee5842" kindref="member">ghost_nr</ref>;</highlight></codeline>
+<codeline lineno="101" refid="structgame__init__data__t_1a2048c656939c9a5b734d0db71092b6bf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structmap__template" kindref="compound">map_template</ref><sp/>*<ref refid="structgame__init__data__t_1a2048c656939c9a5b734d0db71092b6bf" kindref="member">map</ref>;</highlight></codeline>
+<codeline lineno="102"><highlight class="normal">}<sp/><ref refid="structgame__init__data__t" kindref="compound">game_init_data_t</ref>;</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108" refid="structghost__type" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="110" refid="structghost__type_1a4b700a8d1d6df04cafe936a0855ff004" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structghost__type_1a4b700a8d1d6df04cafe936a0855ff004" kindref="member">moving_randomly</ref>;</highlight></codeline>
+<codeline lineno="111" refid="structghost__type_1a9baade4c57be1fd2d7ad88f233bb5e7d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structghost__type_1a9baade4c57be1fd2d7ad88f233bb5e7d" kindref="member">scared</ref>;</highlight></codeline>
+<codeline lineno="112" refid="structghost__type_1a7db8b62e64ae0eb828ef80d8708d7243" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structcoords" kindref="compound">coords</ref><sp/><ref refid="structghost__type_1a7db8b62e64ae0eb828ef80d8708d7243" kindref="member">location</ref>;</highlight></codeline>
+<codeline lineno="113" refid="structghost__type_1a1020ed5ecf8ec6fb9721615347ecd8a0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structcoords" kindref="compound">coords</ref><sp/><ref refid="structghost__type_1a1020ed5ecf8ec6fb9721615347ecd8a0" kindref="member">direction</ref>;</highlight></codeline>
+<codeline lineno="114" refid="structghost__type_1a0b10c5b0fa8e65e009263b93ba2671ae" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><ref refid="structghost__type_1a0b10c5b0fa8e65e009263b93ba2671ae" kindref="member">color</ref>;</highlight></codeline>
+<codeline lineno="115"><highlight class="normal">}<sp/><ref refid="structghost__type" kindref="compound">ghost_type</ref>;</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121" refid="data__structures_8h_1a520ca3e8e98573e7774965b2c69d2843" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>COIN<sp/>3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127" refid="data__structures_8h_1adf6a8131152ce4fd04f96338c00f548b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PASSAGE<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="133" refid="data__structures_8h_1ac749b87dd5d843e4add3eb8e8a130f62" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WALL<sp/>2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight></codeline>
+<codeline lineno="139" refid="data__structures_8h_1a48f6457243719e7031768d4100741159" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BLOCKED<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight></codeline>
+<codeline lineno="145" refid="data__structures_8h_1a7082fba706496a93330c168643a1ef30" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SUPERCOIN<sp/>4</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
     </programlisting>
     <location file="C:/Users/Petr/Documents/apo_semestralka/data_structures.h"/>
   </compounddef>

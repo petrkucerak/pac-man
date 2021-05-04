@@ -3,6 +3,11 @@
 <title>ghost_type Struct Reference</title>
 <indexterm><primary>ghost_type</primary></indexterm>
 <para>
+
+<para>the ghost metadatas </para>
+ 
+</para>
+<para>
 <computeroutput>#include &lt;data_structures.h&gt;</computeroutput>
 </para>
 <simplesect>
@@ -20,6 +25,11 @@
 </listitem>
         </itemizedlist>
 </simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>the ghost metadatas </para>
+</section>
 <section>
 <title>Field Documentation</title>
 <anchor xml:id="_structghost__type_1a0b10c5b0fa8e65e009263b93ba2671ae"/>    <section>

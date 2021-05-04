@@ -232,7 +232,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Petr/Documents/apo_semestralka/apoman.c" line="12" column="9" bodyfile="C:/Users/Petr/Documents/apo_semestralka/apoman.c" bodystart="12" bodyend="-1"/>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/apoman.c" line="11" column="9" bodyfile="C:/Users/Petr/Documents/apo_semestralka/apoman.c" bodystart="11" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="apoman_8c_1a4b53d3b2b31b863f63cc5582629ca8e3" prot="public" static="no">
         <name>LED_MAX_VAL</name>
@@ -243,7 +243,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Petr/Documents/apo_semestralka/apoman.c" line="38" column="9" bodyfile="C:/Users/Petr/Documents/apo_semestralka/apoman.c" bodystart="38" bodyend="-1"/>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/apoman.c" line="37" column="9" bodyfile="C:/Users/Petr/Documents/apo_semestralka/apoman.c" bodystart="37" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="apoman_8c_1a2cd109632a6dcccaa80b43561b1ab700" prot="public" static="no">
         <name>SCREEN_WIDTH</name>
@@ -254,7 +254,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Petr/Documents/apo_semestralka/apoman.c" line="39" column="9" bodyfile="C:/Users/Petr/Documents/apo_semestralka/apoman.c" bodystart="39" bodyend="-1"/>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/apoman.c" line="38" column="9" bodyfile="C:/Users/Petr/Documents/apo_semestralka/apoman.c" bodystart="38" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="apoman_8c_1a6974d08a74da681b3957b2fead2608b8" prot="public" static="no">
         <name>SCREEN_HEIGHT</name>
@@ -265,7 +265,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Petr/Documents/apo_semestralka/apoman.c" line="40" column="9" bodyfile="C:/Users/Petr/Documents/apo_semestralka/apoman.c" bodystart="40" bodyend="-1"/>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/apoman.c" line="39" column="9" bodyfile="C:/Users/Petr/Documents/apo_semestralka/apoman.c" bodystart="39" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="var">
@@ -280,7 +280,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Petr/Documents/apo_semestralka/apoman.c" line="42" column="17" bodyfile="C:/Users/Petr/Documents/apo_semestralka/apoman.c" bodystart="42" bodyend="-1"/>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/apoman.c" line="41" column="17" bodyfile="C:/Users/Petr/Documents/apo_semestralka/apoman.c" bodystart="41" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="apoman_8c_1a2d89e66b161e77ef3ba860e0bcd80da1" prot="public" static="no" mutable="no">
         <type>pthread_cond_t</type>
@@ -293,7 +293,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Petr/Documents/apo_semestralka/apoman.c" line="43" column="16" bodyfile="C:/Users/Petr/Documents/apo_semestralka/apoman.c" bodystart="43" bodyend="-1"/>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/apoman.c" line="42" column="16" bodyfile="C:/Users/Petr/Documents/apo_semestralka/apoman.c" bodystart="42" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="apoman_8c_1a6cf0bd745eade6d2d8304b9b72930ab4" prot="public" static="no" mutable="no">
         <type><ref refid="structread__thread__data__type" kindref="compound">read_thread_data_type</ref></type>
@@ -306,7 +306,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Petr/Documents/apo_semestralka/apoman.c" line="44" column="23" bodyfile="C:/Users/Petr/Documents/apo_semestralka/apoman.c" bodystart="44" bodyend="-1"/>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/apoman.c" line="43" column="23" bodyfile="C:/Users/Petr/Documents/apo_semestralka/apoman.c" bodystart="43" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
@@ -325,7 +325,7 @@
           <array>[]</array>
         </param>
         <briefdescription>
-<para>The main program fucntion. </para>
+<para>The main program function. </para>
         </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
@@ -351,116 +351,116 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Petr/Documents/apo_semestralka/apoman.c" line="53" column="5" bodyfile="C:/Users/Petr/Documents/apo_semestralka/apoman.c" bodystart="53" bodyend="109"/>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/apoman.c" line="52" column="5" bodyfile="C:/Users/Petr/Documents/apo_semestralka/apoman.c" bodystart="52" bodyend="108"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
+<para>Module housing peripherals initialisation, necessary dynamic allocation of memory. Creates thread listening to the terminal input. Calls run init game menu(). </para>
     </briefdescription>
     <detaileddescription>
+<para><simplesect kind="author"><para>Lukas Nejezchleb (<ulink url="mailto:nejezluk@fel.cvut.cz">nejezluk@fel.cvut.cz</ulink>), Petr Kucera (<ulink url="mailto:kucerp28@fel.cvut.cz">kucerp28@fel.cvut.cz</ulink>) </para>
+</simplesect>
+<simplesect kind="version"><para>0.1 </para>
+</simplesect>
+<simplesect kind="date"><para>2021-05-04</para>
+</simplesect>
+<simplesect kind="copyright"><para>Copyright (c) 2021 </para>
+</simplesect>
+</para>
     </detaileddescription>
     <programlisting>
-<codeline lineno="1"><highlight class="comment">/*******************************************************************</highlight></codeline>
-<codeline lineno="2"><highlight class="comment"><sp/><sp/>Main<sp/>function<sp/>for<sp/>project<sp/>apoman<sp/>for<sp/>MicroZed<sp/>based<sp/>MZ_APO<sp/>board</highlight></codeline>
-<codeline lineno="3"><highlight class="comment"><sp/><sp/>designed<sp/>by<sp/>Petr<sp/>Porazil<sp/>at<sp/>PiKRON</highlight></codeline>
-<codeline lineno="4"><highlight class="comment"></highlight></codeline>
-<codeline lineno="5"><highlight class="comment"><sp/><sp/>apoman.c<sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>main<sp/>file</highlight></codeline>
-<codeline lineno="6"><highlight class="comment"></highlight></codeline>
-<codeline lineno="7"><highlight class="comment">(C)<sp/>Copyright<sp/>2021<sp/>by<sp/>Petr<sp/>Kucera<sp/>and<sp/>Lukas<sp/>Nejezchleb</highlight></codeline>
-<codeline lineno="8"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>e-mails:<sp/><sp/><sp/>kucerp28@fel.cvut.cz<sp/>,<sp/>nejezluk@fel.cvut.cz</highlight></codeline>
-<codeline lineno="9"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>license:<sp/><sp/>any<sp/>combination<sp/>of<sp/>GPL,<sp/>LGPL,<sp/>MPL<sp/>or<sp/>BSD<sp/>licenses</highlight></codeline>
-<codeline lineno="10"><highlight class="comment"><sp/>*******************************************************************/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="11"><highlight class="normal"></highlight></codeline>
-<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_POSIX_C_SOURCE<sp/>200112L</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="13"><highlight class="normal"></highlight></codeline>
-<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdint.h&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;time.h&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;unistd.h&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;pthread.h&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="20"><highlight class="normal"></highlight></codeline>
-<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="mzapo__parlcd_8h" kindref="compound">mzapo_parlcd.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="mzapo__phys_8h" kindref="compound">mzapo_phys.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="mzapo__regs_8h" kindref="compound">mzapo_regs.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="data__structures_8h" kindref="compound">data_structures.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="font__types_8h" kindref="compound">font_types.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="map__template_8h" kindref="compound">map_template.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="map__from__template_8h" kindref="compound">map_from_template.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="map__to__fb_8h" kindref="compound">map_to_fb.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="update__peripherals_8h" kindref="compound">update_peripherals.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="text__fb_8h" kindref="compound">text_fb.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="draw__shapes_8h" kindref="compound">draw_shapes.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="game_8h" kindref="compound">game.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="menu__utilities_8h" kindref="compound">menu_utilities.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="terminal__read_8h" kindref="compound">terminal_read.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="pacman_8h" kindref="compound">pacman.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="final__score_8h" kindref="compound">final_score.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="37"><highlight class="normal"></highlight></codeline>
-<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LED_MAX_VAL<sp/>6</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SCREEN_WIDTH<sp/>480</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="40"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SCREEN_HEIGHT<sp/>320</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="41"><highlight class="normal"></highlight></codeline>
-<codeline lineno="42"><highlight class="normal">pthread_mutex_t<sp/><ref refid="apoman_8c_1a2680f9fe5653a596c7e779b838180fdc" kindref="member">mtx</ref>;</highlight></codeline>
-<codeline lineno="43"><highlight class="normal">pthread_cond_t<sp/><ref refid="apoman_8c_1a2d89e66b161e77ef3ba860e0bcd80da1" kindref="member">character_has_been_read</ref>;</highlight></codeline>
-<codeline lineno="44"><highlight class="normal"><ref refid="structread__thread__data__type" kindref="compound">read_thread_data_type</ref><sp/><ref refid="apoman_8c_1a6cf0bd745eade6d2d8304b9b72930ab4" kindref="member">read_thread_data</ref>;</highlight></codeline>
-<codeline lineno="45"><highlight class="normal"></highlight></codeline>
-<codeline lineno="53"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="apoman_8c_1a0ddf1224851353fc92bfbff6f499fa97" kindref="member">main</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>argc,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*argv[])</highlight></codeline>
-<codeline lineno="54"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="55"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*led_mem_base;</highlight></codeline>
-<codeline lineno="56"><highlight class="normal"><sp/><sp/>led_mem_base<sp/>=<sp/><ref refid="mzapo__phys_8c_1a3925c5fab561521513a23e5f7ede0c9e" kindref="member">map_phys_address</ref>(<ref refid="mzapo__regs_8h_1afcfd8685e0ac231c4a5930526e9b311f" kindref="member">SPILED_REG_BASE_PHYS</ref>,<sp/><ref refid="mzapo__regs_8h_1a7bdc4010481bbecbb542c2df9a61a17b" kindref="member">SPILED_REG_SIZE</ref>,<sp/>0);</highlight></codeline>
-<codeline lineno="57"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(led_mem_base<sp/>==<sp/>NULL)</highlight></codeline>
-<codeline lineno="58"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
-<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>exit(1);</highlight></codeline>
-<codeline lineno="60"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
-<codeline lineno="61"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*lcd_mem_base;</highlight></codeline>
-<codeline lineno="62"><highlight class="normal"><sp/><sp/>lcd_mem_base<sp/>=<sp/><ref refid="mzapo__phys_8c_1a3925c5fab561521513a23e5f7ede0c9e" kindref="member">map_phys_address</ref>(<ref refid="mzapo__regs_8h_1ae34ff3f28093ee8dce3048aeecddeb37" kindref="member">PARLCD_REG_BASE_PHYS</ref>,<sp/><ref refid="mzapo__regs_8h_1a86f33c44ef575912f459a11807e0e06d" kindref="member">PARLCD_REG_SIZE</ref>,<sp/>0);</highlight></codeline>
-<codeline lineno="63"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(lcd_mem_base<sp/>==<sp/>NULL)</highlight></codeline>
-<codeline lineno="64"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
-<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/>exit(1);</highlight></codeline>
-<codeline lineno="66"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
-<codeline lineno="67"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>terminal<sp/>read</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="68"><highlight class="normal"><sp/><sp/>pthread_mutex_init(&amp;<ref refid="apoman_8c_1a2680f9fe5653a596c7e779b838180fdc" kindref="member">mtx</ref>,<sp/>NULL);<sp/></highlight><highlight class="comment">//<sp/>initialize<sp/>mutex<sp/>with<sp/>default<sp/>attributes</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="69"><highlight class="normal"><sp/><sp/>pthread_cond_init(&amp;<ref refid="apoman_8c_1a2d89e66b161e77ef3ba860e0bcd80da1" kindref="member">character_has_been_read</ref>,<sp/>NULL);</highlight></codeline>
-<codeline lineno="70"><highlight class="normal"><sp/><sp/><ref refid="apoman_8c_1a6cf0bd745eade6d2d8304b9b72930ab4" kindref="member">read_thread_data</ref>.<ref refid="structread__thread__data__type_1ac746fa6ad48d19984a159f14bec028a3" kindref="member">quit</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="71"><highlight class="normal"><sp/><sp/><ref refid="apoman_8c_1a6cf0bd745eade6d2d8304b9b72930ab4" kindref="member">read_thread_data</ref>.<ref refid="structread__thread__data__type_1a41eafad1f226f50088de23256b17f4c7" kindref="member">last_read</ref><sp/>=<sp/></highlight><highlight class="charliteral">&apos;<sp/>&apos;</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="72"><highlight class="normal"><sp/><sp/>pthread_t<sp/>threads[1];</highlight></codeline>
-<codeline lineno="73"><highlight class="normal"><sp/><sp/>pthread_create(&amp;threads[0],<sp/>NULL,<sp/><ref refid="terminal__read_8c_1ae7c22110d0df71d9a907263450bbafb8" kindref="member">input_thread</ref>,<sp/>&amp;<ref refid="apoman_8c_1a6cf0bd745eade6d2d8304b9b72930ab4" kindref="member">read_thread_data</ref>);</highlight></codeline>
-<codeline lineno="74"><highlight class="normal"></highlight></codeline>
-<codeline lineno="75"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>frame<sp/>buffer</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="76"><highlight class="normal"><sp/><sp/><ref refid="structfb__data" kindref="compound">fb_data</ref><sp/>fb;</highlight></codeline>
-<codeline lineno="77"><highlight class="normal"><sp/><sp/>fb.<ref refid="structfb__data_1a377cdea530281d6fa239a9e14c1a7286" kindref="member">fb</ref><sp/>=<sp/>malloc(</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(uint16_t)<sp/>*<sp/><ref refid="apoman_8c_1a2cd109632a6dcccaa80b43561b1ab700" kindref="member">SCREEN_WIDTH</ref><sp/>*<sp/><ref refid="apoman_8c_1a6974d08a74da681b3957b2fead2608b8" kindref="member">SCREEN_HEIGHT</ref>);</highlight></codeline>
-<codeline lineno="78"><highlight class="normal"><sp/><sp/>fb.<ref refid="structfb__data_1a2474a5474cbff19523a51eb1de01cda4" kindref="member">width</ref><sp/>=<sp/><ref refid="apoman_8c_1a2cd109632a6dcccaa80b43561b1ab700" kindref="member">SCREEN_WIDTH</ref>;</highlight></codeline>
-<codeline lineno="79"><highlight class="normal"><sp/><sp/>fb.<ref refid="structfb__data_1ad12fc34ce789bce6c8a05d8a17138534" kindref="member">height</ref><sp/>=<sp/><ref refid="apoman_8c_1a6974d08a74da681b3957b2fead2608b8" kindref="member">SCREEN_HEIGHT</ref>;</highlight></codeline>
-<codeline lineno="80"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(fb.<ref refid="structfb__data_1a377cdea530281d6fa239a9e14c1a7286" kindref="member">fb</ref><sp/>==<sp/>NULL)</highlight></codeline>
-<codeline lineno="81"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
-<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/>exit(1);</highlight></codeline>
-<codeline lineno="83"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
-<codeline lineno="84"><highlight class="normal"></highlight></codeline>
-<codeline lineno="85"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>init<sp/>display</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="86"><highlight class="normal"><sp/><sp/><ref refid="mzapo__parlcd_8c_1a37a4ee10b3cd7f3b1282d944f70c591b" kindref="member">parlcd_hx8357_init</ref>(lcd_mem_base);</highlight></codeline>
-<codeline lineno="87"><highlight class="normal"><sp/><sp/><ref refid="structfont__descriptor__t" kindref="compound">font_descriptor_t</ref><sp/>*font<sp/>=<sp/>&amp;<ref refid="font__prop14x16_8c_1a4b3e2b838f5b62937b97e1562e34793b" kindref="member">font_winFreeSystem14x16</ref>;</highlight></codeline>
-<codeline lineno="88"><highlight class="normal"></highlight></codeline>
-<codeline lineno="89"><highlight class="normal"><sp/><sp/><ref refid="structperipherals__data__t" kindref="compound">peripherals_data_t</ref><sp/>peripherals<sp/>=<sp/>{.<ref refid="structperipherals__data__t_1a50905c9b00b3aa4d07fb32429550c7c0" kindref="member">led_mem_base</ref><sp/>=<sp/>led_mem_base,<sp/>.lcd_mem_base<sp/>=<sp/>lcd_mem_base,<sp/></highlight></codeline>
-<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.lcd_h<sp/>=<sp/><ref refid="apoman_8c_1a6974d08a74da681b3957b2fead2608b8" kindref="member">SCREEN_HEIGHT</ref>,<sp/>.lcd_w<sp/>=<sp/><ref refid="apoman_8c_1a2cd109632a6dcccaa80b43561b1ab700" kindref="member">SCREEN_WIDTH</ref>};</highlight></codeline>
-<codeline lineno="91"><highlight class="normal"></highlight></codeline>
-<codeline lineno="92"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>call<sp/>game<sp/>method<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="93"><highlight class="normal"><sp/><sp/><ref refid="menu__utilities_8c_1a2313600342d821e8af28af3e2a1d3847" kindref="member">run_init_game_menu</ref>(&amp;fb,<sp/>lcd_mem_base,<sp/>font,<sp/>peripherals);</highlight></codeline>
-<codeline lineno="94"><highlight class="normal"></highlight></codeline>
-<codeline lineno="95"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>program<sp/>termination</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="96"><highlight class="normal"><sp/><sp/><ref refid="draw__shapes_8c_1a6d5b7bfa9cee0ff7724230c622354531" kindref="member">set_background</ref>(&amp;fb,<sp/>0);</highlight></codeline>
-<codeline lineno="97"><highlight class="normal"><sp/><sp/><ref refid="text__fb_8c_1a6c9c3fce44e83e9b6076cdc74ba11464" kindref="member">draw_text_center</ref>(&amp;fb,<sp/></highlight><highlight class="stringliteral">&quot;KONEC&quot;</highlight><highlight class="normal">,<sp/><ref refid="apoman_8c_1a2cd109632a6dcccaa80b43561b1ab700" kindref="member">SCREEN_WIDTH</ref><sp/>/<sp/>2,<sp/><ref refid="apoman_8c_1a6974d08a74da681b3957b2fead2608b8" kindref="member">SCREEN_HEIGHT</ref><sp/>/<sp/>2,<sp/>10,<sp/>font,<sp/>0xffff);</highlight></codeline>
-<codeline lineno="98"><highlight class="normal"><sp/><sp/><ref refid="update__peripherals_8c_1aa30de0dfddc51283d5b5e429fdb6f030" kindref="member">lcd_from_fb</ref>(&amp;fb,<sp/>lcd_mem_base);</highlight></codeline>
-<codeline lineno="99"><highlight class="normal"></highlight></codeline>
-<codeline lineno="100"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>free<sp/>allocated<sp/>memory</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="101"><highlight class="normal"><sp/><sp/>free(fb.<ref refid="structfb__data_1a377cdea530281d6fa239a9e14c1a7286" kindref="member">fb</ref>);</highlight></codeline>
-<codeline lineno="102"><highlight class="normal"><sp/><sp/>fb.<ref refid="structfb__data_1a377cdea530281d6fa239a9e14c1a7286" kindref="member">fb</ref><sp/>=<sp/>NULL;</highlight></codeline>
-<codeline lineno="103"><highlight class="normal"><sp/><sp/>pthread_mutex_lock(&amp;<ref refid="apoman_8c_1a2680f9fe5653a596c7e779b838180fdc" kindref="member">mtx</ref>);</highlight></codeline>
-<codeline lineno="104"><highlight class="normal"><sp/><sp/><ref refid="apoman_8c_1a6cf0bd745eade6d2d8304b9b72930ab4" kindref="member">read_thread_data</ref>.<ref refid="structread__thread__data__type_1ac746fa6ad48d19984a159f14bec028a3" kindref="member">quit</ref><sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="105"><highlight class="normal"><sp/><sp/>pthread_mutex_unlock(&amp;<ref refid="apoman_8c_1a2680f9fe5653a596c7e779b838180fdc" kindref="member">mtx</ref>);</highlight></codeline>
-<codeline lineno="106"><highlight class="normal"><sp/><sp/>pthread_join(threads[0],<sp/>NULL);<sp/></highlight><highlight class="comment">//wait<sp/>for<sp/>thread<sp/>to<sp/>join</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="107"><highlight class="normal"><sp/><sp/>pthread_mutex_destroy(&amp;<ref refid="apoman_8c_1a2680f9fe5653a596c7e779b838180fdc" kindref="member">mtx</ref>);</highlight></codeline>
-<codeline lineno="108"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
-<codeline lineno="109"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_POSIX_C_SOURCE<sp/>200112L</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdint.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;time.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;unistd.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;pthread.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="mzapo__parlcd_8h" kindref="compound">mzapo_parlcd.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="mzapo__phys_8h" kindref="compound">mzapo_phys.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="mzapo__regs_8h" kindref="compound">mzapo_regs.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="data__structures_8h" kindref="compound">data_structures.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="font__types_8h" kindref="compound">font_types.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="map__template_8h" kindref="compound">map_template.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="map__from__template_8h" kindref="compound">map_from_template.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="map__to__fb_8h" kindref="compound">map_to_fb.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="update__peripherals_8h" kindref="compound">update_peripherals.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="text__fb_8h" kindref="compound">text_fb.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="draw__shapes_8h" kindref="compound">draw_shapes.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="game_8h" kindref="compound">game.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="menu__utilities_8h" kindref="compound">menu_utilities.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="terminal__read_8h" kindref="compound">terminal_read.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="pacman_8h" kindref="compound">pacman.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="final__score_8h" kindref="compound">final_score.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LED_MAX_VAL<sp/>6</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SCREEN_WIDTH<sp/>480</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SCREEN_HEIGHT<sp/>320</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal">pthread_mutex_t<sp/><ref refid="apoman_8c_1a2680f9fe5653a596c7e779b838180fdc" kindref="member">mtx</ref>;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal">pthread_cond_t<sp/><ref refid="apoman_8c_1a2d89e66b161e77ef3ba860e0bcd80da1" kindref="member">character_has_been_read</ref>;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><ref refid="structread__thread__data__type" kindref="compound">read_thread_data_type</ref><sp/><ref refid="apoman_8c_1a6cf0bd745eade6d2d8304b9b72930ab4" kindref="member">read_thread_data</ref>;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="apoman_8c_1a0ddf1224851353fc92bfbff6f499fa97" kindref="member">main</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>argc,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*argv[])</highlight></codeline>
+<codeline lineno="53"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*led_mem_base;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/>led_mem_base<sp/>=<sp/><ref refid="mzapo__phys_8c_1a3925c5fab561521513a23e5f7ede0c9e" kindref="member">map_phys_address</ref>(<ref refid="mzapo__regs_8h_1afcfd8685e0ac231c4a5930526e9b311f" kindref="member">SPILED_REG_BASE_PHYS</ref>,<sp/><ref refid="mzapo__regs_8h_1a7bdc4010481bbecbb542c2df9a61a17b" kindref="member">SPILED_REG_SIZE</ref>,<sp/>0);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(led_mem_base<sp/>==<sp/>NULL)</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>exit(1);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*lcd_mem_base;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/>lcd_mem_base<sp/>=<sp/><ref refid="mzapo__phys_8c_1a3925c5fab561521513a23e5f7ede0c9e" kindref="member">map_phys_address</ref>(<ref refid="mzapo__regs_8h_1ae34ff3f28093ee8dce3048aeecddeb37" kindref="member">PARLCD_REG_BASE_PHYS</ref>,<sp/><ref refid="mzapo__regs_8h_1a86f33c44ef575912f459a11807e0e06d" kindref="member">PARLCD_REG_SIZE</ref>,<sp/>0);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(lcd_mem_base<sp/>==<sp/>NULL)</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>exit(1);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>terminal<sp/>read</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/>pthread_mutex_init(&amp;<ref refid="apoman_8c_1a2680f9fe5653a596c7e779b838180fdc" kindref="member">mtx</ref>,<sp/>NULL);<sp/></highlight><highlight class="comment">//<sp/>initialize<sp/>mutex<sp/>with<sp/>default<sp/>attributes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/>pthread_cond_init(&amp;<ref refid="apoman_8c_1a2d89e66b161e77ef3ba860e0bcd80da1" kindref="member">character_has_been_read</ref>,<sp/>NULL);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><ref refid="apoman_8c_1a6cf0bd745eade6d2d8304b9b72930ab4" kindref="member">read_thread_data</ref>.<ref refid="structread__thread__data__type_1ac746fa6ad48d19984a159f14bec028a3" kindref="member">quit</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><ref refid="apoman_8c_1a6cf0bd745eade6d2d8304b9b72930ab4" kindref="member">read_thread_data</ref>.<ref refid="structread__thread__data__type_1a41eafad1f226f50088de23256b17f4c7" kindref="member">last_read</ref><sp/>=<sp/></highlight><highlight class="charliteral">&apos;<sp/>&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/>pthread_t<sp/>threads[1];</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/>pthread_create(&amp;threads[0],<sp/>NULL,<sp/><ref refid="terminal__read_8c_1ae7c22110d0df71d9a907263450bbafb8" kindref="member">input_thread</ref>,<sp/>&amp;<ref refid="apoman_8c_1a6cf0bd745eade6d2d8304b9b72930ab4" kindref="member">read_thread_data</ref>);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>frame<sp/>buffer</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><ref refid="structfb__data" kindref="compound">fb_data</ref><sp/>fb;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/>fb.<ref refid="structfb__data_1a377cdea530281d6fa239a9e14c1a7286" kindref="member">fb</ref><sp/>=<sp/>malloc(</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(uint16_t)<sp/>*<sp/><ref refid="apoman_8c_1a2cd109632a6dcccaa80b43561b1ab700" kindref="member">SCREEN_WIDTH</ref><sp/>*<sp/><ref refid="apoman_8c_1a6974d08a74da681b3957b2fead2608b8" kindref="member">SCREEN_HEIGHT</ref>);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/>fb.<ref refid="structfb__data_1a2474a5474cbff19523a51eb1de01cda4" kindref="member">width</ref><sp/>=<sp/><ref refid="apoman_8c_1a2cd109632a6dcccaa80b43561b1ab700" kindref="member">SCREEN_WIDTH</ref>;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/>fb.<ref refid="structfb__data_1ad12fc34ce789bce6c8a05d8a17138534" kindref="member">height</ref><sp/>=<sp/><ref refid="apoman_8c_1a6974d08a74da681b3957b2fead2608b8" kindref="member">SCREEN_HEIGHT</ref>;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(fb.<ref refid="structfb__data_1a377cdea530281d6fa239a9e14c1a7286" kindref="member">fb</ref><sp/>==<sp/>NULL)</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/>exit(1);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>init<sp/>display</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><ref refid="mzapo__parlcd_8c_1a37a4ee10b3cd7f3b1282d944f70c591b" kindref="member">parlcd_hx8357_init</ref>(lcd_mem_base);</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><ref refid="structfont__descriptor__t" kindref="compound">font_descriptor_t</ref><sp/>*font<sp/>=<sp/>&amp;<ref refid="font__prop14x16_8c_1a4b3e2b838f5b62937b97e1562e34793b" kindref="member">font_winFreeSystem14x16</ref>;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><ref refid="structperipherals__data__t" kindref="compound">peripherals_data_t</ref><sp/>peripherals<sp/>=<sp/>{.<ref refid="structperipherals__data__t_1a50905c9b00b3aa4d07fb32429550c7c0" kindref="member">led_mem_base</ref><sp/>=<sp/>led_mem_base,<sp/>.lcd_mem_base<sp/>=<sp/>lcd_mem_base,<sp/></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>.lcd_h<sp/>=<sp/><ref refid="apoman_8c_1a6974d08a74da681b3957b2fead2608b8" kindref="member">SCREEN_HEIGHT</ref>,<sp/>.lcd_w<sp/>=<sp/><ref refid="apoman_8c_1a2cd109632a6dcccaa80b43561b1ab700" kindref="member">SCREEN_WIDTH</ref>};</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>call<sp/>game<sp/>method<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><ref refid="menu__utilities_8c_1a2313600342d821e8af28af3e2a1d3847" kindref="member">run_init_game_menu</ref>(&amp;fb,<sp/>lcd_mem_base,<sp/>font,<sp/>peripherals);</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>program<sp/>termination</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><ref refid="draw__shapes_8c_1a6d5b7bfa9cee0ff7724230c622354531" kindref="member">set_background</ref>(&amp;fb,<sp/>0);</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><ref refid="text__fb_8c_1a6c9c3fce44e83e9b6076cdc74ba11464" kindref="member">draw_text_center</ref>(&amp;fb,<sp/></highlight><highlight class="stringliteral">&quot;KONEC&quot;</highlight><highlight class="normal">,<sp/><ref refid="apoman_8c_1a2cd109632a6dcccaa80b43561b1ab700" kindref="member">SCREEN_WIDTH</ref><sp/>/<sp/>2,<sp/><ref refid="apoman_8c_1a6974d08a74da681b3957b2fead2608b8" kindref="member">SCREEN_HEIGHT</ref><sp/>/<sp/>2,<sp/>10,<sp/>font,<sp/>0xffff);</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><ref refid="update__peripherals_8c_1aa30de0dfddc51283d5b5e429fdb6f030" kindref="member">lcd_from_fb</ref>(&amp;fb,<sp/>lcd_mem_base);</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>free<sp/>allocated<sp/>memory</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/>free(fb.<ref refid="structfb__data_1a377cdea530281d6fa239a9e14c1a7286" kindref="member">fb</ref>);</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/>fb.<ref refid="structfb__data_1a377cdea530281d6fa239a9e14c1a7286" kindref="member">fb</ref><sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/>pthread_mutex_lock(&amp;<ref refid="apoman_8c_1a2680f9fe5653a596c7e779b838180fdc" kindref="member">mtx</ref>);</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><ref refid="apoman_8c_1a6cf0bd745eade6d2d8304b9b72930ab4" kindref="member">read_thread_data</ref>.<ref refid="structread__thread__data__type_1ac746fa6ad48d19984a159f14bec028a3" kindref="member">quit</ref><sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/>pthread_mutex_unlock(&amp;<ref refid="apoman_8c_1a2680f9fe5653a596c7e779b838180fdc" kindref="member">mtx</ref>);</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/>pthread_join(threads[0],<sp/>NULL);<sp/></highlight><highlight class="comment">//wait<sp/>for<sp/>thread<sp/>to<sp/>join</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/>pthread_mutex_destroy(&amp;<ref refid="apoman_8c_1a2680f9fe5653a596c7e779b838180fdc" kindref="member">mtx</ref>);</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="108"><highlight class="normal">}</highlight></codeline>
     </programlisting>
     <location file="C:/Users/Petr/Documents/apo_semestralka/apoman.c"/>
   </compounddef>

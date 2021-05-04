@@ -3,6 +3,11 @@
 <title>map_data Struct Reference</title>
 <indexterm><primary>map_data</primary></indexterm>
 <para>
+
+<para>the basic map metadatas </para>
+ 
+</para>
+<para>
 <computeroutput>#include &lt;data_structures.h&gt;</computeroutput>
 </para>
 <simplesect>
@@ -22,6 +27,11 @@
 </listitem>
         </itemizedlist>
 </simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>the basic map metadatas </para>
+</section>
 <section>
 <title>Field Documentation</title>
 <anchor xml:id="_structmap__data_1a9818b17c7d2a7b36901aa275b76c39d0"/>    <section>

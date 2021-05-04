@@ -15,7 +15,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Petr/Documents/apo_semestralka/data_structures.h" line="50" column="12" bodyfile="C:/Users/Petr/Documents/apo_semestralka/data_structures.h" bodystart="50" bodyend="-1"/>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/data_structures.h" line="70" column="12" bodyfile="C:/Users/Petr/Documents/apo_semestralka/data_structures.h" bodystart="70" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structpacman__type_1a1020ed5ecf8ec6fb9721615347ecd8a0" prot="public" static="no" mutable="no">
         <type><ref refid="structcoords" kindref="compound">coords</ref></type>
@@ -28,7 +28,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Petr/Documents/apo_semestralka/data_structures.h" line="51" column="12" bodyfile="C:/Users/Petr/Documents/apo_semestralka/data_structures.h" bodystart="51" bodyend="-1"/>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/data_structures.h" line="71" column="12" bodyfile="C:/Users/Petr/Documents/apo_semestralka/data_structures.h" bodystart="71" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structpacman__type_1aef160b7437d94056f1dc59646cd5b87d" prot="public" static="no" mutable="no">
         <type>int</type>
@@ -41,7 +41,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Petr/Documents/apo_semestralka/data_structures.h" line="52" column="9" bodyfile="C:/Users/Petr/Documents/apo_semestralka/data_structures.h" bodystart="52" bodyend="-1"/>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/data_structures.h" line="72" column="9" bodyfile="C:/Users/Petr/Documents/apo_semestralka/data_structures.h" bodystart="72" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structpacman__type_1ac1d68ef9a5dd304c5015e07af7f2bb19" prot="public" static="no" mutable="no">
         <type>int</type>
@@ -54,7 +54,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Petr/Documents/apo_semestralka/data_structures.h" line="53" column="9" bodyfile="C:/Users/Petr/Documents/apo_semestralka/data_structures.h" bodystart="53" bodyend="-1"/>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/data_structures.h" line="73" column="9" bodyfile="C:/Users/Petr/Documents/apo_semestralka/data_structures.h" bodystart="73" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structpacman__type_1a3563efe256b8edd9b91e0d3d5dc58f7a" prot="public" static="no" mutable="no">
         <type>int</type>
@@ -67,10 +67,11 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Petr/Documents/apo_semestralka/data_structures.h" line="54" column="9" bodyfile="C:/Users/Petr/Documents/apo_semestralka/data_structures.h" bodystart="54" bodyend="-1"/>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/data_structures.h" line="74" column="9" bodyfile="C:/Users/Petr/Documents/apo_semestralka/data_structures.h" bodystart="74" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
+<para>the pac-man metadatas </para>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
@@ -88,7 +89,7 @@
         <link refid="structcoords"/>
       </node>
     </collaborationgraph>
-    <location file="C:/Users/Petr/Documents/apo_semestralka/data_structures.h" line="48" column="1" bodyfile="C:/Users/Petr/Documents/apo_semestralka/data_structures.h" bodystart="49" bodyend="55"/>
+    <location file="C:/Users/Petr/Documents/apo_semestralka/data_structures.h" line="68" column="1" bodyfile="C:/Users/Petr/Documents/apo_semestralka/data_structures.h" bodystart="69" bodyend="75"/>
     <listofallmembers>
       <member refid="structpacman__type_1a1020ed5ecf8ec6fb9721615347ecd8a0" prot="public" virt="non-virtual"><scope>pacman_type</scope><name>direction</name></member>
       <member refid="structpacman__type_1ac1d68ef9a5dd304c5015e07af7f2bb19" prot="public" virt="non-virtual"><scope>pacman_type</scope><name>lives</name></member>

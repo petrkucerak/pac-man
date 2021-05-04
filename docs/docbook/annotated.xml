@@ -1,4 +1,20 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_annotated" xml:lang="en-US">
 <title>Data Structures</title>
-Here are the data structures with brief descriptions:<link linkend="_structcoords">coords</link><link linkend="_structfb__data">fb_data</link><link linkend="_structfont__descriptor__t">font_descriptor_t</link><link linkend="_structgame__init__data__t">game_init_data_t</link><link linkend="_structghost__type">ghost_type</link><link linkend="_structmap__data">map_data</link><link linkend="_structmap__template">map_template</link><link linkend="_structmoves__costs__t">moves_costs_t</link><link linkend="_structpacman__type">pacman_type</link><link linkend="_structperipherals__data__t">peripherals_data_t</link><link linkend="_structread__thread__data__type">read_thread_data_type</link></section>
+Here are the data structures with brief descriptions:<link linkend="_structcoords">coords</link>
+<para>Coords structure </para>
+<link linkend="_structfb__data">fb_data</link>
+<para>Buffer structure </para>
+<link linkend="_structfont__descriptor__t">font_descriptor_t</link><link linkend="_structgame__init__data__t">game_init_data_t</link>
+<para>Data necessary for game initialization </para>
+<link linkend="_structghost__type">ghost_type</link>
+<para>Ghost metadatas </para>
+<link linkend="_structmap__data">map_data</link>
+<para>Basic map metadatas </para>
+<link linkend="_structmap__template">map_template</link><link linkend="_structmoves__costs__t">moves_costs_t</link><link linkend="_structpacman__type">pacman_type</link>
+<para>Pac-man metadatas </para>
+<link linkend="_structperipherals__data__t">peripherals_data_t</link>
+<para>Peripherals config data </para>
+<link linkend="_structread__thread__data__type">read_thread_data_type</link>
+<para>Thread data type </para>
+</section>

@@ -15,7 +15,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Petr/Documents/apo_semestralka/data_structures.h" line="44" column="10" bodyfile="C:/Users/Petr/Documents/apo_semestralka/data_structures.h" bodystart="44" bodyend="-1"/>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/data_structures.h" line="60" column="10" bodyfile="C:/Users/Petr/Documents/apo_semestralka/data_structures.h" bodystart="60" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structread__thread__data__type_1a41eafad1f226f50088de23256b17f4c7" prot="public" static="no" mutable="no">
         <type>char</type>
@@ -28,14 +28,15 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Petr/Documents/apo_semestralka/data_structures.h" line="45" column="10" bodyfile="C:/Users/Petr/Documents/apo_semestralka/data_structures.h" bodystart="45" bodyend="-1"/>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/data_structures.h" line="61" column="10" bodyfile="C:/Users/Petr/Documents/apo_semestralka/data_structures.h" bodystart="61" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
+<para>thread data type </para>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="C:/Users/Petr/Documents/apo_semestralka/data_structures.h" line="42" column="1" bodyfile="C:/Users/Petr/Documents/apo_semestralka/data_structures.h" bodystart="43" bodyend="46"/>
+    <location file="C:/Users/Petr/Documents/apo_semestralka/data_structures.h" line="58" column="1" bodyfile="C:/Users/Petr/Documents/apo_semestralka/data_structures.h" bodystart="59" bodyend="62"/>
     <listofallmembers>
       <member refid="structread__thread__data__type_1a41eafad1f226f50088de23256b17f4c7" prot="public" virt="non-virtual"><scope>read_thread_data_type</scope><name>last_read</name></member>
       <member refid="structread__thread__data__type_1ac746fa6ad48d19984a159f14bec028a3" prot="public" virt="non-virtual"><scope>read_thread_data_type</scope><name>quit</name></member>

@@ -3,6 +3,11 @@
 <title>pacman_type Struct Reference</title>
 <indexterm><primary>pacman_type</primary></indexterm>
 <para>
+
+<para>the pac-man metadatas </para>
+ 
+</para>
+<para>
 <computeroutput>#include &lt;data_structures.h&gt;</computeroutput>
 </para>
 <simplesect>
@@ -20,6 +25,11 @@
 </listitem>
         </itemizedlist>
 </simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>the pac-man metadatas </para>
+</section>
 <section>
 <title>Field Documentation</title>
 <anchor xml:id="_structpacman__type_1a1020ed5ecf8ec6fb9721615347ecd8a0"/>    <section>

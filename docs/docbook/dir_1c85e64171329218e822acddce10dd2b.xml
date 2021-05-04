@@ -6,10 +6,16 @@
     <title>Files    </title>
         <itemizedlist>
             <listitem><para>file <link linkend="_apoman_8c">apoman.c</link></para>
+
+<para>Module housing peripherals initialisation, necessary dynamic allocation of memory. Creates thread listening to the terminal input. Calls run init game menu(). </para>
 </listitem>
             <listitem><para>file <link linkend="_config_8h">config.h</link></para>
+
+<para>File, where user preferences can be set. For example maximum cap for lives, score gained by eating ghosts/coins can be set here. </para>
 </listitem>
             <listitem><para>file <link linkend="_data__structures_8h">data_structures.h</link></para>
+
+<para>File with definitions of data structures used across modules like fb data (data about next frame on the screeen), map data (data about currently played map) </para>
 </listitem>
             <listitem><para>file <link linkend="_draw__shapes_8c">draw_shapes.c</link></para>
 </listitem>
