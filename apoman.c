@@ -43,6 +43,13 @@ pthread_mutex_t mtx;
 pthread_cond_t character_has_been_read;
 read_thread_data_type read_thread_data;
 
+/**
+ * @brief The main program fucntion
+ * 
+ * @param argc the count of arguments
+ * @param argv program arguments
+ * @return int program status
+ */
 int main(int argc, char *argv[])
 {
   unsigned char *led_mem_base;
