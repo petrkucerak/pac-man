@@ -1,0 +1,216 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="font__types_8h" kind="file" language="C++">
+    <compoundname>font_types.h</compoundname>
+    <includes local="no">stdint.h</includes>
+    <includedby refid="apoman_8c" local="yes">C:/Users/Petr/Documents/apo_semestralka/apoman.c</includedby>
+    <includedby refid="final__score_8h" local="yes">C:/Users/Petr/Documents/apo_semestralka/final_score.h</includedby>
+    <includedby refid="font__prop14x16_8c" local="yes">C:/Users/Petr/Documents/apo_semestralka/font_prop14x16.c</includedby>
+    <includedby refid="font__rom8x16_8c" local="yes">C:/Users/Petr/Documents/apo_semestralka/font_rom8x16.c</includedby>
+    <includedby refid="game_8c" local="yes">C:/Users/Petr/Documents/apo_semestralka/game.c</includedby>
+    <includedby refid="menu__utilities_8h" local="yes">C:/Users/Petr/Documents/apo_semestralka/menu_utilities.h</includedby>
+    <includedby refid="text__fb_8h" local="yes">C:/Users/Petr/Documents/apo_semestralka/text_fb.h</includedby>
+    <incdepgraph>
+      <node id="2">
+        <label>stdint.h</label>
+      </node>
+      <node id="1">
+        <label>C:/Users/Petr/Documents/apo_semestralka/font_types.h</label>
+        <link refid="font__types_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="8">
+        <label>C:/Users/Petr/Documents/apo_semestralka/game.c</label>
+        <link refid="game_8c"/>
+      </node>
+      <node id="6">
+        <label>C:/Users/Petr/Documents/apo_semestralka/font_prop14x16.c</label>
+        <link refid="font__prop14x16_8c"/>
+      </node>
+      <node id="1">
+        <label>C:/Users/Petr/Documents/apo_semestralka/font_types.h</label>
+        <link refid="font__types_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>C:/Users/Petr/Documents/apo_semestralka/text_fb.c</label>
+        <link refid="text__fb_8c"/>
+      </node>
+      <node id="10">
+        <label>C:/Users/Petr/Documents/apo_semestralka/text_fb.h</label>
+        <link refid="text__fb_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>C:/Users/Petr/Documents/apo_semestralka/font_rom8x16.c</label>
+        <link refid="font__rom8x16_8c"/>
+      </node>
+      <node id="4">
+        <label>C:/Users/Petr/Documents/apo_semestralka/final_score.c</label>
+        <link refid="final__score_8c"/>
+      </node>
+      <node id="3">
+        <label>C:/Users/Petr/Documents/apo_semestralka/final_score.h</label>
+        <link refid="final__score_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>C:/Users/Petr/Documents/apo_semestralka/map_to_fb.c</label>
+        <link refid="map__to__fb_8c"/>
+      </node>
+      <node id="5">
+        <label>C:/Users/Petr/Documents/apo_semestralka/menu_utilities.c</label>
+        <link refid="menu__utilities_8c"/>
+      </node>
+      <node id="9">
+        <label>C:/Users/Petr/Documents/apo_semestralka/menu_utilities.h</label>
+        <link refid="menu__utilities_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>C:/Users/Petr/Documents/apo_semestralka/apoman.c</label>
+        <link refid="apoman_8c"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structfont__descriptor__t" prot="public">font_descriptor_t</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="font__types_8h_1a9344049095dd1710da77496678b7b087" prot="public" static="no">
+        <type>uint16_t</type>
+        <definition>typedef uint16_t font_bits_t</definition>
+        <argsstring></argsstring>
+        <name>font_bits_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/font_types.h" line="28" column="20" bodyfile="C:/Users/Petr/Documents/apo_semestralka/font_types.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="font__types_8h_1a4b3e2b838f5b62937b97e1562e34793b" prot="public" static="no" mutable="no">
+        <type><ref refid="structfont__descriptor__t" kindref="compound">font_descriptor_t</ref></type>
+        <definition>font_descriptor_t font_winFreeSystem14x16</definition>
+        <argsstring></argsstring>
+        <name>font_winFreeSystem14x16</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/font_types.h" line="46" column="28" bodyfile="C:/Users/Petr/Documents/apo_semestralka/font_prop14x16.c" bodystart="8763" bodyend="-1" declfile="C:/Users/Petr/Documents/apo_semestralka/font_types.h" declline="46" declcolumn="28"/>
+      </memberdef>
+      <memberdef kind="variable" id="font__types_8h_1adc4e431c2709d14befcfe5b60bb47a19" prot="public" static="no" mutable="no">
+        <type><ref refid="structfont__descriptor__t" kindref="compound">font_descriptor_t</ref></type>
+        <definition>font_descriptor_t font_rom8x16</definition>
+        <argsstring></argsstring>
+        <name>font_rom8x16</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/font_types.h" line="48" column="28" bodyfile="C:/Users/Petr/Documents/apo_semestralka/font_rom8x16.c" bodystart="9484" bodyend="-1" declfile="C:/Users/Petr/Documents/apo_semestralka/font_types.h" declline="48" declcolumn="28"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*******************************************************************</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"></highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/><sp/>font_types.h<sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>simple<sp/>bitmap<sp/>fonts<sp/>type<sp/>definition</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"></highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/><sp/>Simplified<sp/>font<sp/>type<sp/>descriptor<sp/>based<sp/>on</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/><sp/>Microwindows/Nano-X<sp/>library<sp/>by<sp/>Greg<sp/>Haerr</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"></highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/><sp/><sp/><sp/>https://github.com/ghaerr/microwindows</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"></highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/><sp/>Copyright<sp/>(c)<sp/>1999,<sp/>2000,<sp/>2001,<sp/>2002,<sp/>2003,<sp/>2005,<sp/>2010,<sp/>2011<sp/>Greg<sp/>Haerr<sp/>&lt;greg@censoft.com&gt;</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/><sp/>Portions<sp/>Copyright<sp/>(c)<sp/>2002<sp/>by<sp/>Koninklijke<sp/>Philips<sp/>Electronics<sp/>N.V.</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"></highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/><sp/>Simplification<sp/>by<sp/>Pavel<sp/>Pisa<sp/>for<sp/>Czech<sp/>Technical<sp/>University</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/><sp/>Computer<sp/>Architectures<sp/>course</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"></highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*******************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>FONT_TYPES_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FONT_TYPES_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdint.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28" refid="font__types_8h_1a9344049095dd1710da77496678b7b087" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>uint16_t<sp/><ref refid="font__types_8h_1a9344049095dd1710da77496678b7b087" kindref="member">font_bits_t</ref>;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>builtin<sp/>C-based<sp/>proportional/fixed<sp/>font<sp/>structure*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31" refid="structfont__descriptor__t" refkind="compound"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="33" refid="structfont__descriptor__t_1a5ac083a645d964373f022d03df4849c8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="structfont__descriptor__t_1a5ac083a645d964373f022d03df4849c8" kindref="member">name</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>font<sp/>name*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34" refid="structfont__descriptor__t_1a2f9abcdad559315008d44bd60a0fedbd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structfont__descriptor__t_1a2f9abcdad559315008d44bd60a0fedbd" kindref="member">maxwidth</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>max<sp/>width<sp/>in<sp/>pixels*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35" refid="structfont__descriptor__t_1ab2e78c61905b4419fcc7b4cfc500fe85" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structfont__descriptor__t_1ab2e78c61905b4419fcc7b4cfc500fe85" kindref="member">height</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>height<sp/>in<sp/>pixels*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36" refid="structfont__descriptor__t_1a8acec3a84854cc108ffe29265be2fec8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structfont__descriptor__t_1a8acec3a84854cc108ffe29265be2fec8" kindref="member">ascent</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>ascent<sp/>(baseline)<sp/>height*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37" refid="structfont__descriptor__t_1adacf1efa49d5b0cbbc652414055846ab" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structfont__descriptor__t_1adacf1efa49d5b0cbbc652414055846ab" kindref="member">firstchar</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>first<sp/>character<sp/>in<sp/>bitmap*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38" refid="structfont__descriptor__t_1a439227feff9d7f55384e8780cfc2eb82" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structfont__descriptor__t_1a439227feff9d7f55384e8780cfc2eb82" kindref="member">size</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>font<sp/>size<sp/>in<sp/>characters*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39" refid="structfont__descriptor__t_1a238010ff83cf2434a2f03dd87604c765" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="font__types_8h_1a9344049095dd1710da77496678b7b087" kindref="member">font_bits_t</ref><sp/>*<ref refid="structfont__descriptor__t_1a238010ff83cf2434a2f03dd87604c765" kindref="member">bits</ref>;<sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>16-bit<sp/>right-padded<sp/>bitmap<sp/>data*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40" refid="structfont__descriptor__t_1a4a3a027c87630ca2e0425b84012e668d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint32_t<sp/>*<ref refid="structfont__descriptor__t_1a4a3a027c87630ca2e0425b84012e668d" kindref="member">offset</ref>;<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>offsets<sp/>into<sp/>bitmap<sp/>data*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41" refid="structfont__descriptor__t_1aac3ead8529c84d32e1553c8ed4f7d3fb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="structfont__descriptor__t_1aac3ead8529c84d32e1553c8ed4f7d3fb" kindref="member">width</ref>;<sp/></highlight><highlight class="comment">/*<sp/>character<sp/>widths<sp/>or<sp/>0<sp/>if<sp/>fixed*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42" refid="structfont__descriptor__t_1a478a75e73cde1f582ffa6b8d8267daaa" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structfont__descriptor__t_1a478a75e73cde1f582ffa6b8d8267daaa" kindref="member">defaultchar</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>default<sp/>char<sp/>(not<sp/>glyph<sp/>index)*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43" refid="structfont__descriptor__t_1aa9cbae1ff53396f262635930f1cc8080" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>int32_t<sp/><ref refid="structfont__descriptor__t_1aa9cbae1ff53396f262635930f1cc8080" kindref="member">bits_size</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>#<sp/>words<sp/>of<sp/>MWIMAGEBITS<sp/>bits*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/>}<sp/><ref refid="structfont__descriptor__t" kindref="compound">font_descriptor_t</ref>;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="structfont__descriptor__t" kindref="compound">font_descriptor_t</ref><sp/><ref refid="font__types_8h_1a4b3e2b838f5b62937b97e1562e34793b" kindref="member">font_winFreeSystem14x16</ref>;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="structfont__descriptor__t" kindref="compound">font_descriptor_t</ref><sp/><ref refid="font__types_8h_1adc4e431c2709d14befcfe5b60bb47a19" kindref="member">font_rom8x16</ref>;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal">}<sp/></highlight><highlight class="comment">/*<sp/>extern<sp/>&quot;C&quot;*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*FONT_TYPES_H*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/Petr/Documents/apo_semestralka/font_types.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,46 @@
+\hypertarget{terminal__read_8c}{}\doxysection{C\+:/\+Users/\+Petr/\+Documents/apo\+\_\+semestralka/terminal\+\_\+read.c File Reference}
+\label{terminal__read_8c}\index{C:/Users/Petr/Documents/apo\_semestralka/terminal\_read.c@{C:/Users/Petr/Documents/apo\_semestralka/terminal\_read.c}}
+{\ttfamily \#include \char`\"{}terminal\+\_\+read.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}data\+\_\+structures.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$stdbool.\+h$>$}\newline
+{\ttfamily \#include $<$termios.\+h$>$}\newline
+{\ttfamily \#include $<$unistd.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$poll.\+h$>$}\newline
+{\ttfamily \#include $<$fcntl.\+h$>$}\newline
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{terminal__read_8c_af20c817269948e133751a67b8e365443}{TERMINAL\+\_\+\+TIMEOUT\+\_\+\+MS}}~100
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{terminal__read_8c_a4d4ef2b89a0190b7e5ebb1edf4d1cee3}{serial\+\_\+getc\+\_\+timeout}} (int fd, int timeout\+\_\+ms, unsigned char $\ast$c)
+\item 
+void $\ast$ \mbox{\hyperlink{terminal__read_8c_ae7c22110d0df71d9a907263450bbafb8}{input\+\_\+thread}} (void $\ast$d)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{terminal__read_8c_af20c817269948e133751a67b8e365443}\label{terminal__read_8c_af20c817269948e133751a67b8e365443}} 
+\index{terminal\_read.c@{terminal\_read.c}!TERMINAL\_TIMEOUT\_MS@{TERMINAL\_TIMEOUT\_MS}}
+\index{TERMINAL\_TIMEOUT\_MS@{TERMINAL\_TIMEOUT\_MS}!terminal\_read.c@{terminal\_read.c}}
+\doxysubsubsection{\texorpdfstring{TERMINAL\_TIMEOUT\_MS}{TERMINAL\_TIMEOUT\_MS}}
+{\footnotesize\ttfamily \#define TERMINAL\+\_\+\+TIMEOUT\+\_\+\+MS~100}
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{terminal__read_8c_ae7c22110d0df71d9a907263450bbafb8}\label{terminal__read_8c_ae7c22110d0df71d9a907263450bbafb8}} 
+\index{terminal\_read.c@{terminal\_read.c}!input\_thread@{input\_thread}}
+\index{input\_thread@{input\_thread}!terminal\_read.c@{terminal\_read.c}}
+\doxysubsubsection{\texorpdfstring{input\_thread()}{input\_thread()}}
+{\footnotesize\ttfamily void$\ast$ input\+\_\+thread (\begin{DoxyParamCaption}\item[{void $\ast$}]{d }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{terminal__read_8c_a4d4ef2b89a0190b7e5ebb1edf4d1cee3}\label{terminal__read_8c_a4d4ef2b89a0190b7e5ebb1edf4d1cee3}} 
+\index{terminal\_read.c@{terminal\_read.c}!serial\_getc\_timeout@{serial\_getc\_timeout}}
+\index{serial\_getc\_timeout@{serial\_getc\_timeout}!terminal\_read.c@{terminal\_read.c}}
+\doxysubsubsection{\texorpdfstring{serial\_getc\_timeout()}{serial\_getc\_timeout()}}
+{\footnotesize\ttfamily int serial\+\_\+getc\+\_\+timeout (\begin{DoxyParamCaption}\item[{int}]{fd,  }\item[{int}]{timeout\+\_\+ms,  }\item[{unsigned char $\ast$}]{c }\end{DoxyParamCaption})}
+

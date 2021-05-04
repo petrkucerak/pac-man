@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_terminal__read_8c" xml:lang="en-US">
+<title>C:/Users/Petr/Documents/apo_semestralka/terminal_read.c File Reference</title>
+<indexterm><primary>C:/Users/Petr/Documents/apo_semestralka/terminal_read.c</primary></indexterm>
+<programlisting>#include &quot;terminal_read.h&quot;
+#include &quot;data_structures.h&quot;
+#include &lt;stdbool.h&gt;
+#include &lt;termios.h&gt;
+#include &lt;unistd.h&gt;
+#include &lt;stdio.h&gt;
+#include &lt;poll.h&gt;
+#include &lt;fcntl.h&gt;
+</programlisting><simplesect>
+    <title>Macros    </title>
+        <itemizedlist>
+            <listitem><para>#define <link linkend="_terminal__read_8c_1af20c817269948e133751a67b8e365443">TERMINAL_TIMEOUT_MS</link>   100</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para>int <link linkend="_terminal__read_8c_1a4d4ef2b89a0190b7e5ebb1edf4d1cee3">serial_getc_timeout</link> (int fd, int timeout_ms, unsigned char *c)</para>
+</listitem>
+            <listitem><para>void * <link linkend="_terminal__read_8c_1ae7c22110d0df71d9a907263450bbafb8">input_thread</link> (void *d)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Macro Definition Documentation</title>
+<anchor xml:id="_terminal__read_8c_1af20c817269948e133751a67b8e365443"/>    <section>
+    <title>TERMINAL_TIMEOUT_MS</title>
+<indexterm><primary>TERMINAL_TIMEOUT_MS</primary><secondary>terminal_read.c</secondary></indexterm>
+<indexterm><primary>terminal_read.c</primary><secondary>TERMINAL_TIMEOUT_MS</secondary></indexterm>
+<para><computeroutput>#define TERMINAL_TIMEOUT_MS   100</computeroutput></para></section>
+</section>
+<section>
+<title>Function Documentation</title>
+<anchor xml:id="_terminal__read_8c_1ae7c22110d0df71d9a907263450bbafb8"/>    <section>
+    <title>input_thread()</title>
+<indexterm><primary>input_thread</primary><secondary>terminal_read.c</secondary></indexterm>
+<indexterm><primary>terminal_read.c</primary><secondary>input_thread</secondary></indexterm>
+<para><computeroutput>void* input_thread (void * d)</computeroutput></para>    </section><anchor xml:id="_terminal__read_8c_1a4d4ef2b89a0190b7e5ebb1edf4d1cee3"/>    <section>
+    <title>serial_getc_timeout()</title>
+<indexterm><primary>serial_getc_timeout</primary><secondary>terminal_read.c</secondary></indexterm>
+<indexterm><primary>terminal_read.c</primary><secondary>serial_getc_timeout</secondary></indexterm>
+<para><computeroutput>int serial_getc_timeout (int fd, int timeout_ms, unsigned char * c)</computeroutput></para></section>
+</section>
+</section>

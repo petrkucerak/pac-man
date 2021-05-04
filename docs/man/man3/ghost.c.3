@@ -1,0 +1,64 @@
+.TH "C:/Users/Petr/Documents/apo_semestralka/ghost.c" 3 "Tue May 4 2021" "Version 1.0.0" "Pac-Man" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+C:/Users/Petr/Documents/apo_semestralka/ghost.c
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'ghost\&.h'\fP
+.br
+\fC#include 'data_structures\&.h'\fP
+.br
+\fC#include 'draw_shapes\&.h'\fP
+.br
+\fC#include 'map_from_template\&.h'\fP
+.br
+\fC#include 'config\&.h'\fP
+.br
+\fC#include <stdbool\&.h>\fP
+.br
+\fC#include <stdlib\&.h>\fP
+.br
+\fC#include <stdio\&.h>\fP
+.br
+
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "bool \fBghost_can_move\fP (\fBghost_type\fP *ghost, int dirx, int diry, \fBmap_data\fP *map)"
+.br
+.ti -1c
+.RI "int \fBcreate_moves\fP (\fBmoves_costs_t\fP *moves_arr, \fBghost_type\fP *ghost, \fBmap_data\fP *map, \fBpacman_type\fP *pacman)"
+.br
+.ti -1c
+.RI "void \fBchange_direction\fP (\fBghost_type\fP *ghost, int possibilities, \fBmoves_costs_t\fP *moves_options)"
+.br
+.ti -1c
+.RI "bool \fBghost_move\fP (\fBghost_type\fP *ghost, \fBmap_data\fP *map, \fBpacman_type\fP *pacman)"
+.br
+.ti -1c
+.RI "void \fBdraw_ghost\fP (\fBfb_data\fP *fb, \fBghost_type\fP *ghost, \fBmap_data\fP *map)"
+.br
+.ti -1c
+.RI "\fBghost_type\fP \fBcreate_ghost\fP (\fBmap_data\fP *map, int ghost_nr)"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "void change_direction (\fBghost_type\fP * ghost, int possibilities, \fBmoves_costs_t\fP * moves_options)"
+
+.SS "\fBghost_type\fP create_ghost (\fBmap_data\fP * map, int ghost_nr)"
+
+.SS "int create_moves (\fBmoves_costs_t\fP * moves_arr, \fBghost_type\fP * ghost, \fBmap_data\fP * map, \fBpacman_type\fP * pacman)"
+
+.SS "void draw_ghost (\fBfb_data\fP * fb, \fBghost_type\fP * ghost, \fBmap_data\fP * map)"
+
+.SS "bool ghost_can_move (\fBghost_type\fP * ghost, int dirx, int diry, \fBmap_data\fP * map)"
+
+.SS "bool ghost_move (\fBghost_type\fP * ghost, \fBmap_data\fP * map, \fBpacman_type\fP * pacman)"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Pac-Man from the source code\&.

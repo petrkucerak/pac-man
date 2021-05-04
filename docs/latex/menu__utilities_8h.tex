@@ -1,0 +1,52 @@
+\hypertarget{menu__utilities_8h}{}\doxysection{C\+:/\+Users/\+Petr/\+Documents/apo\+\_\+semestralka/menu\+\_\+utilities.h File Reference}
+\label{menu__utilities_8h}\index{C:/Users/Petr/Documents/apo\_semestralka/menu\_utilities.h@{C:/Users/Petr/Documents/apo\_semestralka/menu\_utilities.h}}
+{\ttfamily \#include $<$stdbool.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}data\+\_\+structures.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}font\+\_\+types.\+h\char`\"{}}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{menu__utilities_8h_a2313600342d821e8af28af3e2a1d3847}{run\+\_\+init\+\_\+game\+\_\+menu}} (\mbox{\hyperlink{structfb__data}{fb\+\_\+data}} $\ast$frame\+\_\+buff, unsigned char $\ast$lcd\+\_\+mem\+\_\+base, \mbox{\hyperlink{structfont__descriptor__t}{font\+\_\+descriptor\+\_\+t}} $\ast$font, \mbox{\hyperlink{structperipherals__data__t}{peripherals\+\_\+data\+\_\+t}} peripherals)
+\item 
+void \mbox{\hyperlink{menu__utilities_8h_adfcc20271b3b85b0dd0bdc09d93f564d}{draw\+\_\+menu}} (\mbox{\hyperlink{structfb__data}{fb\+\_\+data}} $\ast$frame\+\_\+buff, \mbox{\hyperlink{structfont__descriptor__t}{font\+\_\+descriptor\+\_\+t}} $\ast$font, \mbox{\hyperlink{structgame__init__data__t}{game\+\_\+init\+\_\+data\+\_\+t}} game\+\_\+data)
+\item 
+\mbox{\hyperlink{structgame__init__data__t}{game\+\_\+init\+\_\+data\+\_\+t}} \mbox{\hyperlink{menu__utilities_8h_a01d0cde60304117e2bff9acf5d65eb3b}{sub\+\_\+menu\+\_\+lives}} (\mbox{\hyperlink{structfb__data}{fb\+\_\+data}} $\ast$frame\+\_\+buff, unsigned char $\ast$lcd\+\_\+mem\+\_\+base, \mbox{\hyperlink{structfont__descriptor__t}{font\+\_\+descriptor\+\_\+t}} $\ast$font, \mbox{\hyperlink{structgame__init__data__t}{game\+\_\+init\+\_\+data\+\_\+t}} game\+\_\+data)
+\item 
+\mbox{\hyperlink{structgame__init__data__t}{game\+\_\+init\+\_\+data\+\_\+t}} \mbox{\hyperlink{menu__utilities_8h_a7f17020b07cb4aa737c81d44893047ae}{sub\+\_\+menu\+\_\+map}} (\mbox{\hyperlink{structfb__data}{fb\+\_\+data}} $\ast$frame\+\_\+buff, unsigned char $\ast$lcd\+\_\+mem\+\_\+base, \mbox{\hyperlink{structfont__descriptor__t}{font\+\_\+descriptor\+\_\+t}} $\ast$font, \mbox{\hyperlink{structgame__init__data__t}{game\+\_\+init\+\_\+data\+\_\+t}} game\+\_\+data)
+\item 
+\mbox{\hyperlink{structgame__init__data__t}{game\+\_\+init\+\_\+data\+\_\+t}} \mbox{\hyperlink{menu__utilities_8h_ac5815522d9b36c8dd08cbd65fb944d0c}{sub\+\_\+menu\+\_\+ghosts}} (\mbox{\hyperlink{structfb__data}{fb\+\_\+data}} $\ast$frame\+\_\+buff, unsigned char $\ast$lcd\+\_\+mem\+\_\+base, \mbox{\hyperlink{structfont__descriptor__t}{font\+\_\+descriptor\+\_\+t}} $\ast$font, \mbox{\hyperlink{structgame__init__data__t}{game\+\_\+init\+\_\+data\+\_\+t}} game\+\_\+data)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{menu__utilities_8h_adfcc20271b3b85b0dd0bdc09d93f564d}\label{menu__utilities_8h_adfcc20271b3b85b0dd0bdc09d93f564d}} 
+\index{menu\_utilities.h@{menu\_utilities.h}!draw\_menu@{draw\_menu}}
+\index{draw\_menu@{draw\_menu}!menu\_utilities.h@{menu\_utilities.h}}
+\doxysubsubsection{\texorpdfstring{draw\_menu()}{draw\_menu()}}
+{\footnotesize\ttfamily void draw\+\_\+menu (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structfb__data}{fb\+\_\+data}} $\ast$}]{frame\+\_\+buff,  }\item[{\mbox{\hyperlink{structfont__descriptor__t}{font\+\_\+descriptor\+\_\+t}} $\ast$}]{font,  }\item[{\mbox{\hyperlink{structgame__init__data__t}{game\+\_\+init\+\_\+data\+\_\+t}}}]{game\+\_\+data }\end{DoxyParamCaption})}
+
+function to drow menu with settings to \mbox{\hyperlink{structfb__data}{fb\+\_\+data}} (for propagate changes need to render data from buffer) \mbox{\Hypertarget{menu__utilities_8h_a2313600342d821e8af28af3e2a1d3847}\label{menu__utilities_8h_a2313600342d821e8af28af3e2a1d3847}} 
+\index{menu\_utilities.h@{menu\_utilities.h}!run\_init\_game\_menu@{run\_init\_game\_menu}}
+\index{run\_init\_game\_menu@{run\_init\_game\_menu}!menu\_utilities.h@{menu\_utilities.h}}
+\doxysubsubsection{\texorpdfstring{run\_init\_game\_menu()}{run\_init\_game\_menu()}}
+{\footnotesize\ttfamily void run\+\_\+init\+\_\+game\+\_\+menu (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structfb__data}{fb\+\_\+data}} $\ast$}]{frame\+\_\+buff,  }\item[{unsigned char $\ast$}]{lcd\+\_\+mem\+\_\+base,  }\item[{\mbox{\hyperlink{structfont__descriptor__t}{font\+\_\+descriptor\+\_\+t}} $\ast$}]{font,  }\item[{\mbox{\hyperlink{structperipherals__data__t}{peripherals\+\_\+data\+\_\+t}}}]{peripherals }\end{DoxyParamCaption})}
+
+function run menu for setting game paramaters \mbox{\Hypertarget{menu__utilities_8h_ac5815522d9b36c8dd08cbd65fb944d0c}\label{menu__utilities_8h_ac5815522d9b36c8dd08cbd65fb944d0c}} 
+\index{menu\_utilities.h@{menu\_utilities.h}!sub\_menu\_ghosts@{sub\_menu\_ghosts}}
+\index{sub\_menu\_ghosts@{sub\_menu\_ghosts}!menu\_utilities.h@{menu\_utilities.h}}
+\doxysubsubsection{\texorpdfstring{sub\_menu\_ghosts()}{sub\_menu\_ghosts()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structgame__init__data__t}{game\+\_\+init\+\_\+data\+\_\+t}} sub\+\_\+menu\+\_\+ghosts (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structfb__data}{fb\+\_\+data}} $\ast$}]{frame\+\_\+buff,  }\item[{unsigned char $\ast$}]{lcd\+\_\+mem\+\_\+base,  }\item[{\mbox{\hyperlink{structfont__descriptor__t}{font\+\_\+descriptor\+\_\+t}} $\ast$}]{font,  }\item[{\mbox{\hyperlink{structgame__init__data__t}{game\+\_\+init\+\_\+data\+\_\+t}}}]{game\+\_\+data }\end{DoxyParamCaption})}
+
+function draw sub menu and update count of ghosts \mbox{\Hypertarget{menu__utilities_8h_a01d0cde60304117e2bff9acf5d65eb3b}\label{menu__utilities_8h_a01d0cde60304117e2bff9acf5d65eb3b}} 
+\index{menu\_utilities.h@{menu\_utilities.h}!sub\_menu\_lives@{sub\_menu\_lives}}
+\index{sub\_menu\_lives@{sub\_menu\_lives}!menu\_utilities.h@{menu\_utilities.h}}
+\doxysubsubsection{\texorpdfstring{sub\_menu\_lives()}{sub\_menu\_lives()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structgame__init__data__t}{game\+\_\+init\+\_\+data\+\_\+t}} sub\+\_\+menu\+\_\+lives (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structfb__data}{fb\+\_\+data}} $\ast$}]{frame\+\_\+buff,  }\item[{unsigned char $\ast$}]{lcd\+\_\+mem\+\_\+base,  }\item[{\mbox{\hyperlink{structfont__descriptor__t}{font\+\_\+descriptor\+\_\+t}} $\ast$}]{font,  }\item[{\mbox{\hyperlink{structgame__init__data__t}{game\+\_\+init\+\_\+data\+\_\+t}}}]{game\+\_\+data }\end{DoxyParamCaption})}
+
+function draw sub menu and update count of lives \mbox{\Hypertarget{menu__utilities_8h_a7f17020b07cb4aa737c81d44893047ae}\label{menu__utilities_8h_a7f17020b07cb4aa737c81d44893047ae}} 
+\index{menu\_utilities.h@{menu\_utilities.h}!sub\_menu\_map@{sub\_menu\_map}}
+\index{sub\_menu\_map@{sub\_menu\_map}!menu\_utilities.h@{menu\_utilities.h}}
+\doxysubsubsection{\texorpdfstring{sub\_menu\_map()}{sub\_menu\_map()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structgame__init__data__t}{game\+\_\+init\+\_\+data\+\_\+t}} sub\+\_\+menu\+\_\+map (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structfb__data}{fb\+\_\+data}} $\ast$}]{frame\+\_\+buff,  }\item[{unsigned char $\ast$}]{lcd\+\_\+mem\+\_\+base,  }\item[{\mbox{\hyperlink{structfont__descriptor__t}{font\+\_\+descriptor\+\_\+t}} $\ast$}]{font,  }\item[{\mbox{\hyperlink{structgame__init__data__t}{game\+\_\+init\+\_\+data\+\_\+t}}}]{game\+\_\+data }\end{DoxyParamCaption})}
+
+function draw sub menu and update name of game map 

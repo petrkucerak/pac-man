@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="md__c___users__petr__documents_apo_semestralka__r_e_a_d_m_e" kind="page">
+    <compoundname>md_C__Users_Petr_Documents_apo_semestralka_README</compoundname>
+    <title>Semestrální práce na APO</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<sect1 id="md__c___users__petr__documents_apo_semestralka__r_e_a_d_m_e_1autotoc_md1">
+<title>Introdukce</title>
+<para>Cílem této semstrální práce je vytvořit hru Pac-Man, kterou bude možné hrát na desce MzAPO a ovládat pomocí okolních periferií.</para>
+<para>Průběh naší práce je možné sledovat v repozitáři: <ulink url="https://gitlab.fel.cvut.cz/kucerp28/apo_semestralka">https://gitlab.fel.cvut.cz/kucerp28/apo_semestralka</ulink></para>
+</sect1>
+<sect1 id="md__c___users__petr__documents_apo_semestralka__r_e_a_d_m_e_1autotoc_md2">
+<title>Použité periferie a jejich funkce</title>
+<para><itemizedlist>
+<listitem><para>Výstupní řádka led bude při spuštěné hře indikovat počet životů pacmana</para>
+</listitem><listitem><para>RGB led budou svítit zeleně jasem vypočítaným z počtu snězených kostiček, v případě režimu, kdy jsou duchové zranitelní bude blikat modře.</para>
+</listitem><listitem><para>Vstupem hry bude terminál v raw režimu, který bude ovládat směr pacmana, respektive navigaci v textovém menu.</para>
+</listitem><listitem><para>Po sklonční hry přípravek vypíše finální skóre a statistiky na terminál </para>
+</listitem></itemizedlist>
+</para>
+</sect1>
+<sect1 id="md__c___users__petr__documents_apo_semestralka__r_e_a_d_m_e_1autotoc_md3">
+<title>Stavy</title>
+<sect2 id="md__c___users__petr__documents_apo_semestralka__r_e_a_d_m_e_1autotoc_md4">
+<title>Inicializace hry</title>
+<para>Po spuštění hry se objeví textové menu, které bude možné ovládat pomocí kláves wsad ze sériového portu. Bude zde možnost vybrat mapu z nabídky, nastavit počet duchů a počet životů, se kterými pacman začíná.</para>
+</sect2>
+<sect2 id="md__c___users__petr__documents_apo_semestralka__r_e_a_d_m_e_1autotoc_md5">
+<title>Průběh hry</title>
+<para>Samotná hra se bude ovládat pomocí znaků wsad, stejně jako textové menu. Pacman pobíhá po desce s cílem sníst co nejvíce &quot;penízků&quot; a zároveň se nenechat sežrat duchy. Pokud sní speciální peníz, spustí se na určitou dobu mód, v kterém bude moci požírat duchy, za což získá další body.</para>
+<para>V průběhu hry je možno sledovat mód, ve kterém se hra nachází na tvaru duchů a stavu RGB LED. Počet zbývajících životů je indikován na výstupní led řádce jako počet shluků svítících led.</para>
+</sect2>
+<sect2 id="md__c___users__petr__documents_apo_semestralka__r_e_a_d_m_e_1autotoc_md6">
+<title>Závěr hry</title>
+<para>Hra může být ukončena 3 způsoby:<itemizedlist>
+<listitem><para>Výhrou Pacmana. V takovém případě se vypíše skóre hry na terminál a otevře se menu nastavení</para>
+</listitem><listitem><para>Prohrou Pacmana. Ta vyvolá stejný proces jako výhra.</para>
+</listitem><listitem><para>Přerušením hry pomocí stisknutí klávesy q. To hráče odkáže do spouštěcího menu.</para>
+</listitem></itemizedlist>
+</para>
+</sect2>
+</sect1>
+<sect1 id="md__c___users__petr__documents_apo_semestralka__r_e_a_d_m_e_1autotoc_md7">
+<title>Kompilace</title>
+<para><programlisting><codeline><highlight class="normal">make<sp/>TARGET_IP=192.168.202.xx<sp/>run</highlight></codeline>
+</programlisting> </para>
+</sect1>
+    </detaileddescription>
+    <location file="C:/Users/Petr/Documents/apo_semestralka/README.md"/>
+  </compounddef>
+</doxygen>

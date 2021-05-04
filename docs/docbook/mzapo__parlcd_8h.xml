@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_mzapo__parlcd_8h" xml:lang="en-US">
+<title>C:/Users/Petr/Documents/apo_semestralka/mzapo_parlcd.h File Reference</title>
+<indexterm><primary>C:/Users/Petr/Documents/apo_semestralka/mzapo_parlcd.h</primary></indexterm>
+<programlisting>#include &lt;stdint.h&gt;
+</programlisting><simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para>void <link linkend="_mzapo__parlcd_8h_1add303eeaf9fa3e336750f4ba39a69932">parlcd_write_cr</link> (unsigned char *parlcd_mem_base, uint16_t data)</para>
+</listitem>
+            <listitem><para>void <link linkend="_mzapo__parlcd_8h_1ab30b1b616caf5991cd8e1a6a52ba23e7">parlcd_write_cmd</link> (unsigned char *parlcd_mem_base, uint16_t cmd)</para>
+</listitem>
+            <listitem><para>void <link linkend="_mzapo__parlcd_8h_1ab9125a7610ba0302c004802fb908590d">parlcd_write_data</link> (unsigned char *parlcd_mem_base, uint16_t data)</para>
+</listitem>
+            <listitem><para>void <link linkend="_mzapo__parlcd_8h_1a688f82186392823303897ee3f270718a">parlcd_write_data2x</link> (unsigned char *parlcd_mem_base, uint32_t data)</para>
+</listitem>
+            <listitem><para>void <link linkend="_mzapo__parlcd_8h_1afef12925f598e36664d1d3b6de27c881">parlcd_delay</link> (int msec)</para>
+</listitem>
+            <listitem><para>void <link linkend="_mzapo__parlcd_8h_1a37a4ee10b3cd7f3b1282d944f70c591b">parlcd_hx8357_init</link> (unsigned char *parlcd_mem_base)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Function Documentation</title>
+<anchor xml:id="_mzapo__parlcd_8h_1afef12925f598e36664d1d3b6de27c881"/>    <section>
+    <title>parlcd_delay()</title>
+<indexterm><primary>parlcd_delay</primary><secondary>mzapo_parlcd.h</secondary></indexterm>
+<indexterm><primary>mzapo_parlcd.h</primary><secondary>parlcd_delay</secondary></indexterm>
+<para><computeroutput>void parlcd_delay (int msec)</computeroutput></para>    </section><anchor xml:id="_mzapo__parlcd_8h_1a37a4ee10b3cd7f3b1282d944f70c591b"/>    <section>
+    <title>parlcd_hx8357_init()</title>
+<indexterm><primary>parlcd_hx8357_init</primary><secondary>mzapo_parlcd.h</secondary></indexterm>
+<indexterm><primary>mzapo_parlcd.h</primary><secondary>parlcd_hx8357_init</secondary></indexterm>
+<para><computeroutput>void parlcd_hx8357_init (unsigned char * parlcd_mem_base)</computeroutput></para>    </section><anchor xml:id="_mzapo__parlcd_8h_1ab30b1b616caf5991cd8e1a6a52ba23e7"/>    <section>
+    <title>parlcd_write_cmd()</title>
+<indexterm><primary>parlcd_write_cmd</primary><secondary>mzapo_parlcd.h</secondary></indexterm>
+<indexterm><primary>mzapo_parlcd.h</primary><secondary>parlcd_write_cmd</secondary></indexterm>
+<para><computeroutput>void parlcd_write_cmd (unsigned char * parlcd_mem_base, uint16_t cmd)</computeroutput></para>    </section><anchor xml:id="_mzapo__parlcd_8h_1add303eeaf9fa3e336750f4ba39a69932"/>    <section>
+    <title>parlcd_write_cr()</title>
+<indexterm><primary>parlcd_write_cr</primary><secondary>mzapo_parlcd.h</secondary></indexterm>
+<indexterm><primary>mzapo_parlcd.h</primary><secondary>parlcd_write_cr</secondary></indexterm>
+<para><computeroutput>void parlcd_write_cr (unsigned char * parlcd_mem_base, uint16_t data)</computeroutput></para>    </section><anchor xml:id="_mzapo__parlcd_8h_1ab9125a7610ba0302c004802fb908590d"/>    <section>
+    <title>parlcd_write_data()</title>
+<indexterm><primary>parlcd_write_data</primary><secondary>mzapo_parlcd.h</secondary></indexterm>
+<indexterm><primary>mzapo_parlcd.h</primary><secondary>parlcd_write_data</secondary></indexterm>
+<para><computeroutput>void parlcd_write_data (unsigned char * parlcd_mem_base, uint16_t data)</computeroutput></para>    </section><anchor xml:id="_mzapo__parlcd_8h_1a688f82186392823303897ee3f270718a"/>    <section>
+    <title>parlcd_write_data2x()</title>
+<indexterm><primary>parlcd_write_data2x</primary><secondary>mzapo_parlcd.h</secondary></indexterm>
+<indexterm><primary>mzapo_parlcd.h</primary><secondary>parlcd_write_data2x</secondary></indexterm>
+<para><computeroutput>void parlcd_write_data2x (unsigned char * parlcd_mem_base, uint32_t data)</computeroutput></para></section>
+</section>
+</section>

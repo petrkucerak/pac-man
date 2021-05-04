@@ -1,0 +1,141 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="final__score_8h" kind="file" language="C++">
+    <compoundname>final_score.h</compoundname>
+    <includes local="no">stdbool.h</includes>
+    <includes refid="data__structures_8h" local="yes">data_structures.h</includes>
+    <includes refid="font__types_8h" local="yes">font_types.h</includes>
+    <includedby refid="apoman_8c" local="yes">C:/Users/Petr/Documents/apo_semestralka/apoman.c</includedby>
+    <includedby refid="final__score_8c" local="yes">C:/Users/Petr/Documents/apo_semestralka/final_score.c</includedby>
+    <includedby refid="menu__utilities_8c" local="yes">C:/Users/Petr/Documents/apo_semestralka/menu_utilities.c</includedby>
+    <incdepgraph>
+      <node id="2">
+        <label>stdbool.h</label>
+      </node>
+      <node id="6">
+        <label>map_template.h</label>
+        <link refid="map__template_8h"/>
+      </node>
+      <node id="4">
+        <label>stdint.h</label>
+      </node>
+      <node id="7">
+        <label>font_types.h</label>
+        <link refid="font__types_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>pthread.h</label>
+      </node>
+      <node id="1">
+        <label>C:/Users/Petr/Documents/apo_semestralka/final_score.h</label>
+        <link refid="final__score_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>data_structures.h</label>
+        <link refid="data__structures_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="3">
+        <label>C:/Users/Petr/Documents/apo_semestralka/final_score.c</label>
+        <link refid="final__score_8c"/>
+      </node>
+      <node id="1">
+        <label>C:/Users/Petr/Documents/apo_semestralka/final_score.h</label>
+        <link refid="final__score_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>C:/Users/Petr/Documents/apo_semestralka/menu_utilities.c</label>
+        <link refid="menu__utilities_8c"/>
+      </node>
+      <node id="2">
+        <label>C:/Users/Petr/Documents/apo_semestralka/apoman.c</label>
+        <link refid="apoman_8c"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="final__score_8h_1a781cab829dad372f9f55089f57a85df0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool draw_final_score</definition>
+        <argsstring>(int score, fb_data *frame_buff, unsigned char *lcd_mem_base, font_descriptor_t *font)</argsstring>
+        <name>draw_final_score</name>
+        <param>
+          <type>int</type>
+          <declname>score</declname>
+        </param>
+        <param>
+          <type><ref refid="structfb__data" kindref="compound">fb_data</ref> *</type>
+          <declname>frame_buff</declname>
+        </param>
+        <param>
+          <type>unsigned char *</type>
+          <declname>lcd_mem_base</declname>
+        </param>
+        <param>
+          <type><ref refid="structfont__descriptor__t" kindref="compound">font_descriptor_t</ref> *</type>
+          <declname>font</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>function draw final score <simplesect kind="return"><para>false - quit game; true - play game again </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/final_score.h" line="23" column="6" bodyfile="C:/Users/Petr/Documents/apo_semestralka/final_score.c" bodystart="21" bodyend="42" declfile="C:/Users/Petr/Documents/apo_semestralka/final_score.h" declline="23" declcolumn="6"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*******************************************************************</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/><sp/>Program<sp/>to<sp/>draw<sp/>text<sp/>to<sp/>frame<sp/>buffer<sp/>on<sp/>MicroZed</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/><sp/>based<sp/>MZ_APO<sp/>board<sp/>designed<sp/>by<sp/>Petr<sp/>Porazil<sp/>at<sp/>PiKRON</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"></highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/><sp/>final_score.h<sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>functions<sp/>for<sp/>draw<sp/>final<sp/>score</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"></highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/><sp/>(C)<sp/>Copyright<sp/>2021<sp/>by<sp/>Petr<sp/>Kucera</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>e-mail:<sp/><sp/><sp/>kucerp28@fel.cvut.cz</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>license:<sp/><sp/>any<sp/>combination<sp/>of<sp/>GPL,<sp/>LGPL,<sp/>MPL<sp/>or<sp/>BSD<sp/>licenses</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"></highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*******************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdbool.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="data__structures_8h" kindref="compound">data_structures.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="font__types_8h" kindref="compound">font_types.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>FINAL_SCORE_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FINAL_SCORE_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="final__score_8h_1a781cab829dad372f9f55089f57a85df0" kindref="member">draw_final_score</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>score,<sp/><ref refid="structfb__data" kindref="compound">fb_data</ref><sp/>*frame_buff,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*lcd_mem_base,<sp/><ref refid="structfont__descriptor__t" kindref="compound">font_descriptor_t</ref><sp/>*font);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/Petr/Documents/apo_semestralka/final_score.h"/>
+  </compounddef>
+</doxygen>

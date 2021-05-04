@@ -1,0 +1,249 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="update__peripherals_8h" kind="file" language="C++">
+    <compoundname>update_peripherals.h</compoundname>
+    <includes local="no">stdint.h</includes>
+    <includes refid="data__structures_8h" local="yes">data_structures.h</includes>
+    <includedby refid="apoman_8c" local="yes">C:/Users/Petr/Documents/apo_semestralka/apoman.c</includedby>
+    <includedby refid="final__score_8c" local="yes">C:/Users/Petr/Documents/apo_semestralka/final_score.c</includedby>
+    <includedby refid="game_8c" local="yes">C:/Users/Petr/Documents/apo_semestralka/game.c</includedby>
+    <includedby refid="menu__utilities_8c" local="yes">C:/Users/Petr/Documents/apo_semestralka/menu_utilities.c</includedby>
+    <includedby refid="update__peripherals_8c" local="yes">C:/Users/Petr/Documents/apo_semestralka/update_peripherals.c</includedby>
+    <incdepgraph>
+      <node id="4">
+        <label>stdbool.h</label>
+      </node>
+      <node id="6">
+        <label>map_template.h</label>
+        <link refid="map__template_8h"/>
+      </node>
+      <node id="2">
+        <label>stdint.h</label>
+      </node>
+      <node id="1">
+        <label>C:/Users/Petr/Documents/apo_semestralka/update_peripherals.h</label>
+        <link refid="update__peripherals_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>pthread.h</label>
+      </node>
+      <node id="3">
+        <label>data_structures.h</label>
+        <link refid="data__structures_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="4">
+        <label>C:/Users/Petr/Documents/apo_semestralka/game.c</label>
+        <link refid="game_8c"/>
+      </node>
+      <node id="6">
+        <label>C:/Users/Petr/Documents/apo_semestralka/update_peripherals.c</label>
+        <link refid="update__peripherals_8c"/>
+      </node>
+      <node id="1">
+        <label>C:/Users/Petr/Documents/apo_semestralka/update_peripherals.h</label>
+        <link refid="update__peripherals_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>C:/Users/Petr/Documents/apo_semestralka/final_score.c</label>
+        <link refid="final__score_8c"/>
+      </node>
+      <node id="5">
+        <label>C:/Users/Petr/Documents/apo_semestralka/menu_utilities.c</label>
+        <link refid="menu__utilities_8c"/>
+      </node>
+      <node id="2">
+        <label>C:/Users/Petr/Documents/apo_semestralka/apoman.c</label>
+        <link refid="apoman_8c"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="update__peripherals_8h_1aa30de0dfddc51283d5b5e429fdb6f030" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void lcd_from_fb</definition>
+        <argsstring>(const fb_data *frame_buff, unsigned char *parlcd_mem_base)</argsstring>
+        <name>lcd_from_fb</name>
+        <param>
+          <type>const <ref refid="structfb__data" kindref="compound">fb_data</ref> *</type>
+          <declname>frame_buff</declname>
+        </param>
+        <param>
+          <type>unsigned char *</type>
+          <declname>parlcd_mem_base</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>function that updates the LCD from frame buffer. LCD has to be initialised </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/update_peripherals.h" line="21" column="6" bodyfile="C:/Users/Petr/Documents/apo_semestralka/update_peripherals.c" bodystart="19" bodyend="29" declfile="C:/Users/Petr/Documents/apo_semestralka/update_peripherals.h" declline="21" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="update__peripherals_8h_1a27f1db817fb1375b46affe1dc4d0dc9b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void led_strip_number</definition>
+        <argsstring>(unsigned char *led_mem_base, int max_nr, int nr)</argsstring>
+        <name>led_strip_number</name>
+        <param>
+          <type>unsigned char *</type>
+          <declname>led_mem_base</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>max_nr</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>function that shows nr on the ledstrip </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/update_peripherals.h" line="26" column="6" bodyfile="C:/Users/Petr/Documents/apo_semestralka/update_peripherals.c" bodystart="31" bodyend="67" declfile="C:/Users/Petr/Documents/apo_semestralka/update_peripherals.h" declline="26" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="update__peripherals_8h_1af830207334d68a6414d80117e98e7a84" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void set_left_RGB</definition>
+        <argsstring>(unsigned char *led_mem_base, uint8_t r, uint8_t g, uint8_t b)</argsstring>
+        <name>set_left_RGB</name>
+        <param>
+          <type>unsigned char *</type>
+          <declname>led_mem_base</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>r</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>g</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>sets left RGB to particular color </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/update_peripherals.h" line="31" column="6" bodyfile="C:/Users/Petr/Documents/apo_semestralka/update_peripherals.c" bodystart="69" bodyend="76" declfile="C:/Users/Petr/Documents/apo_semestralka/update_peripherals.h" declline="31" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="update__peripherals_8h_1a55ba16e218e56e6112bea4cb48dd7017" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void set_right_RGB</definition>
+        <argsstring>(unsigned char *led_mem_base, uint8_t r, uint8_t g, uint8_t b)</argsstring>
+        <name>set_right_RGB</name>
+        <param>
+          <type>unsigned char *</type>
+          <declname>led_mem_base</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>r</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>g</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>sets right RGB to particular color </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/update_peripherals.h" line="36" column="6" bodyfile="C:/Users/Petr/Documents/apo_semestralka/update_peripherals.c" bodystart="78" bodyend="85" declfile="C:/Users/Petr/Documents/apo_semestralka/update_peripherals.h" declline="36" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="update__peripherals_8h_1afdba9f1f14e9a81789f87d33a36bda35" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void sel_leds_color</definition>
+        <argsstring>(unsigned char *led_mem_base, uint32_t color)</argsstring>
+        <name>sel_leds_color</name>
+        <param>
+          <type>unsigned char *</type>
+          <declname>led_mem_base</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>sets both leds to color </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/update_peripherals.h" line="40" column="6" bodyfile="C:/Users/Petr/Documents/apo_semestralka/update_peripherals.c" bodystart="87" bodyend="93" declfile="C:/Users/Petr/Documents/apo_semestralka/update_peripherals.h" declline="40" declcolumn="6"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*******************************************************************</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/><sp/>Simple<sp/>program<sp/>to<sp/>update<sp/>peripherals<sp/>on<sp/>MicroZed</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/><sp/>based<sp/>MZ_APO<sp/>board<sp/>designed<sp/>by<sp/>Petr<sp/>Porazil<sp/>at<sp/>PiKRON</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"></highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/><sp/>update_peripherals.c<sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>simple<sp/>program<sp/>to<sp/>update<sp/>peripherals</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"></highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/><sp/>(C)<sp/>Copyright<sp/>2021<sp/>by<sp/>Lukas<sp/>Nejezchleb</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>e-mail:<sp/><sp/><sp/>nejezluk@fel.cvut.cz</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>license:<sp/><sp/>any<sp/>combination<sp/>of<sp/>GPL,<sp/>LGPL,<sp/>MPL<sp/>or<sp/>BSD<sp/>licenses</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"></highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*******************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>UPDATE_LCD_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>UPDATE_LCD_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdint.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="data__structures_8h" kindref="compound">data_structures.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="update__peripherals_8h_1aa30de0dfddc51283d5b5e429fdb6f030" kindref="member">lcd_from_fb</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structfb__data" kindref="compound">fb_data</ref><sp/>*frame_buff,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*parlcd_mem_base);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="update__peripherals_8h_1a27f1db817fb1375b46affe1dc4d0dc9b" kindref="member">led_strip_number</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*led_mem_base,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>max_nr,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nr);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="update__peripherals_8h_1af830207334d68a6414d80117e98e7a84" kindref="member">set_left_RGB</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*led_mem_base,<sp/>uint8_t<sp/>r,<sp/>uint8_t<sp/>g,<sp/>uint8_t<sp/>b);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="update__peripherals_8h_1a55ba16e218e56e6112bea4cb48dd7017" kindref="member">set_right_RGB</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*led_mem_base,<sp/>uint8_t<sp/>r,<sp/>uint8_t<sp/>g,<sp/>uint8_t<sp/>b);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="update__peripherals_8h_1afdba9f1f14e9a81789f87d33a36bda35" kindref="member">sel_leds_color</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*led_mem_base,<sp/>uint32_t<sp/>color);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/Petr/Documents/apo_semestralka/update_peripherals.h"/>
+  </compounddef>
+</doxygen>

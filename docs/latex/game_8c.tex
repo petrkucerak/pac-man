@@ -1,0 +1,53 @@
+\hypertarget{game_8c}{}\doxysection{C\+:/\+Users/\+Petr/\+Documents/apo\+\_\+semestralka/game.c File Reference}
+\label{game_8c}\index{C:/Users/Petr/Documents/apo\_semestralka/game.c@{C:/Users/Petr/Documents/apo\_semestralka/game.c}}
+{\ttfamily \#include \char`\"{}game.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}update\+\_\+peripherals.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}draw\+\_\+shapes.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}map\+\_\+to\+\_\+fb.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}map\+\_\+from\+\_\+template.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}config.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}text\+\_\+fb.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}font\+\_\+types.\+h\char`\"{}}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{game_8c_af84e8ae88873f09731321e62e77a1d18}{led\+\_\+blink}} (unsigned char $\ast$led\+\_\+mem\+\_\+base, int scare\+\_\+countdown, int pacman\+\_\+score)
+\item 
+void \mbox{\hyperlink{game_8c_ac1ff0112ff0bb8c1a4d67cd18dc3eb3c}{pause}} (\mbox{\hyperlink{structfb__data}{fb\+\_\+data}} $\ast$fb, \mbox{\hyperlink{structperipherals__data__t}{peripherals\+\_\+data\+\_\+t}} $\ast$peripherals)
+\item 
+bool \mbox{\hyperlink{game_8c_ac055e6ae3ef32e12a7c56e62bae12db3}{game\+\_\+tick}} (\mbox{\hyperlink{structmap__data}{map\+\_\+data}} $\ast$map, \mbox{\hyperlink{structpacman__type}{pacman\+\_\+type}} $\ast$pacman, \mbox{\hyperlink{structghost__type}{ghost\+\_\+type}} $\ast$ghost\+\_\+arr, int num\+\_\+ghosts, int $\ast$scare)
+\item 
+int \mbox{\hyperlink{game_8c_a72619e4d9b2b733c33327a53154c126b}{run\+\_\+game}} (\mbox{\hyperlink{structgame__init__data__t}{game\+\_\+init\+\_\+data\+\_\+t}} $\ast$game\+\_\+data, \mbox{\hyperlink{structperipherals__data__t}{peripherals\+\_\+data\+\_\+t}} $\ast$peripherals)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{game_8c_ac055e6ae3ef32e12a7c56e62bae12db3}\label{game_8c_ac055e6ae3ef32e12a7c56e62bae12db3}} 
+\index{game.c@{game.c}!game\_tick@{game\_tick}}
+\index{game\_tick@{game\_tick}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{game\_tick()}{game\_tick()}}
+{\footnotesize\ttfamily bool game\+\_\+tick (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structmap__data}{map\+\_\+data}} $\ast$}]{map,  }\item[{\mbox{\hyperlink{structpacman__type}{pacman\+\_\+type}} $\ast$}]{pacman,  }\item[{\mbox{\hyperlink{structghost__type}{ghost\+\_\+type}} $\ast$}]{ghost\+\_\+arr,  }\item[{int}]{num\+\_\+ghosts,  }\item[{int $\ast$}]{scare }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{game_8c_af84e8ae88873f09731321e62e77a1d18}\label{game_8c_af84e8ae88873f09731321e62e77a1d18}} 
+\index{game.c@{game.c}!led\_blink@{led\_blink}}
+\index{led\_blink@{led\_blink}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{led\_blink()}{led\_blink()}}
+{\footnotesize\ttfamily void led\+\_\+blink (\begin{DoxyParamCaption}\item[{unsigned char $\ast$}]{led\+\_\+mem\+\_\+base,  }\item[{int}]{scare\+\_\+countdown,  }\item[{int}]{pacman\+\_\+score }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{game_8c_ac1ff0112ff0bb8c1a4d67cd18dc3eb3c}\label{game_8c_ac1ff0112ff0bb8c1a4d67cd18dc3eb3c}} 
+\index{game.c@{game.c}!pause@{pause}}
+\index{pause@{pause}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{pause()}{pause()}}
+{\footnotesize\ttfamily void pause (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structfb__data}{fb\+\_\+data}} $\ast$}]{fb,  }\item[{\mbox{\hyperlink{structperipherals__data__t}{peripherals\+\_\+data\+\_\+t}} $\ast$}]{peripherals }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{game_8c_a72619e4d9b2b733c33327a53154c126b}\label{game_8c_a72619e4d9b2b733c33327a53154c126b}} 
+\index{game.c@{game.c}!run\_game@{run\_game}}
+\index{run\_game@{run\_game}!game.c@{game.c}}
+\doxysubsubsection{\texorpdfstring{run\_game()}{run\_game()}}
+{\footnotesize\ttfamily int run\+\_\+game (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structgame__init__data__t}{game\+\_\+init\+\_\+data\+\_\+t}} $\ast$}]{game\+\_\+data,  }\item[{\mbox{\hyperlink{structperipherals__data__t}{peripherals\+\_\+data\+\_\+t}} $\ast$}]{peripherals }\end{DoxyParamCaption})}
+
+\begin{DoxyReturn}{Returns}
+packman score 
+\end{DoxyReturn}

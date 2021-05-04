@@ -1,0 +1,574 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="config_8h" kind="file" language="C++">
+    <compoundname>config.h</compoundname>
+    <includedby refid="draw__shapes_8c" local="yes">C:/Users/Petr/Documents/apo_semestralka/draw_shapes.c</includedby>
+    <includedby refid="game_8c" local="yes">C:/Users/Petr/Documents/apo_semestralka/game.c</includedby>
+    <includedby refid="ghost_8c" local="yes">C:/Users/Petr/Documents/apo_semestralka/ghost.c</includedby>
+    <includedby refid="map__to__fb_8c" local="yes">C:/Users/Petr/Documents/apo_semestralka/map_to_fb.c</includedby>
+    <includedby refid="menu__utilities_8c" local="yes">C:/Users/Petr/Documents/apo_semestralka/menu_utilities.c</includedby>
+    <includedby refid="pacman_8c" local="yes">C:/Users/Petr/Documents/apo_semestralka/pacman.c</includedby>
+    <invincdepgraph>
+      <node id="3">
+        <label>C:/Users/Petr/Documents/apo_semestralka/game.c</label>
+        <link refid="game_8c"/>
+      </node>
+      <node id="1">
+        <label>C:/Users/Petr/Documents/apo_semestralka/config.h</label>
+        <link refid="config_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>C:/Users/Petr/Documents/apo_semestralka/pacman.c</label>
+        <link refid="pacman_8c"/>
+      </node>
+      <node id="2">
+        <label>C:/Users/Petr/Documents/apo_semestralka/draw_shapes.c</label>
+        <link refid="draw__shapes_8c"/>
+      </node>
+      <node id="4">
+        <label>C:/Users/Petr/Documents/apo_semestralka/ghost.c</label>
+        <link refid="ghost_8c"/>
+      </node>
+      <node id="5">
+        <label>C:/Users/Petr/Documents/apo_semestralka/map_to_fb.c</label>
+        <link refid="map__to__fb_8c"/>
+      </node>
+      <node id="6">
+        <label>C:/Users/Petr/Documents/apo_semestralka/menu_utilities.c</label>
+        <link refid="menu__utilities_8c"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="config_8h_1afa086fc916a81e7fd348ec00cf786916" prot="public" static="no">
+        <name>KEY_UP</name>
+        <initializer>&apos;w&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/config.h" line="14" column="9" bodyfile="C:/Users/Petr/Documents/apo_semestralka/config.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a0ed3c136fbc69d8a30e0006bd4f3d6db" prot="public" static="no">
+        <name>KEY_DWN</name>
+        <initializer>&apos;s&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/config.h" line="15" column="9" bodyfile="C:/Users/Petr/Documents/apo_semestralka/config.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1af4d1b8a2912354646c74cf36c69f8223" prot="public" static="no">
+        <name>KEY_LEFT</name>
+        <initializer>&apos;a&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/config.h" line="16" column="9" bodyfile="C:/Users/Petr/Documents/apo_semestralka/config.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a004194639b9ad76cea01d9e93716d4d6" prot="public" static="no">
+        <name>KEY_RIGHT</name>
+        <initializer>&apos;d&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/config.h" line="17" column="9" bodyfile="C:/Users/Petr/Documents/apo_semestralka/config.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a539879aced8aba3e5b8acebca1d473b5" prot="public" static="no">
+        <name>KEY_QUIT</name>
+        <initializer>&apos;q&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/config.h" line="18" column="9" bodyfile="C:/Users/Petr/Documents/apo_semestralka/config.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a37ac765069375d3727139ca59cb8557c" prot="public" static="no">
+        <name>PAUSE_KEY</name>
+        <initializer>&apos;p&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/config.h" line="19" column="9" bodyfile="C:/Users/Petr/Documents/apo_semestralka/config.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a9e873fa6547841f8143e810e80210ae6" prot="public" static="no">
+        <name>PAUSE_TEXT</name>
+        <initializer>&quot;GAME IS PAUSED&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/config.h" line="20" column="9" bodyfile="C:/Users/Petr/Documents/apo_semestralka/config.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a5c05df71fac138e03ad0be6724903c11" prot="public" static="no">
+        <name>PAUSE_TEXT_SIZE</name>
+        <initializer>4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/config.h" line="21" column="9" bodyfile="C:/Users/Petr/Documents/apo_semestralka/config.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1ac7bf42afbbee631d4c25c95fe4893f9e" prot="public" static="no">
+        <name>PAUSE_SUBTEXT</name>
+        <initializer>&quot;press %c to resume or %c to quit&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/config.h" line="22" column="9" bodyfile="C:/Users/Petr/Documents/apo_semestralka/config.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1ac21dee9ed11d63c0c641a3379f98df44" prot="public" static="no">
+        <name>PAUSE_SUBTEXT_SIZE</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/config.h" line="23" column="9" bodyfile="C:/Users/Petr/Documents/apo_semestralka/config.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a66c11ca42311ea28f929f3d1cd3a6d10" prot="public" static="no">
+        <name>PAUSE_SUBTEXT_OFFSET</name>
+        <initializer>50</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/config.h" line="24" column="9" bodyfile="C:/Users/Petr/Documents/apo_semestralka/config.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a5e903e9378d7c7004f51673ed0141fd7" prot="public" static="no">
+        <name>PAUSE_FONT</name>
+        <initializer><ref refid="font__types_8h_1a4b3e2b838f5b62937b97e1562e34793b" kindref="member">font_winFreeSystem14x16</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/config.h" line="25" column="9" bodyfile="C:/Users/Petr/Documents/apo_semestralka/config.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a7bc224f294717d13a0a9e72a90d26727" prot="public" static="no">
+        <name>PAUSE_COLOR</name>
+        <initializer>0xffff</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/config.h" line="26" column="9" bodyfile="C:/Users/Petr/Documents/apo_semestralka/config.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1af4c1cef02adf693d8d3761f8b906ad3a" prot="public" static="no">
+        <name>COIN_SCORE_INCECREASE</name>
+        <initializer>100</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/config.h" line="28" column="9" bodyfile="C:/Users/Petr/Documents/apo_semestralka/config.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1ae812134d65aa84762a15f5d570014daa" prot="public" static="no">
+        <name>GHOST_SCORE_INCECREASE</name>
+        <initializer>200</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/config.h" line="29" column="9" bodyfile="C:/Users/Petr/Documents/apo_semestralka/config.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a8fafbbe182b133765c10fc2d5bb0a939" prot="public" static="no">
+        <name>SCORE_DEATH_PENALTY</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/config.h" line="30" column="9" bodyfile="C:/Users/Petr/Documents/apo_semestralka/config.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1aa27bf8c0d78735062b3cf41d2a618b30" prot="public" static="no">
+        <name>MAX_SCORE</name>
+        <initializer>20000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/config.h" line="31" column="9" bodyfile="C:/Users/Petr/Documents/apo_semestralka/config.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a4be87860feca9f0ecb77b0b717d9343b" prot="public" static="no">
+        <name>MAX_GHOSTS</name>
+        <initializer>&apos;4&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/config.h" line="33" column="9" bodyfile="C:/Users/Petr/Documents/apo_semestralka/config.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a3652158e56c9d1423bfa5d1c5bd3d243" prot="public" static="no">
+        <name>MAX_LIVES</name>
+        <initializer>&apos;4&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/config.h" line="34" column="9" bodyfile="C:/Users/Petr/Documents/apo_semestralka/config.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a5cba511e2fe7a2d66d90d3e3d810db3c" prot="public" static="no">
+        <name>SCARE_REGIME_DURATION</name>
+        <initializer>300</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/config.h" line="36" column="9" bodyfile="C:/Users/Petr/Documents/apo_semestralka/config.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a7645a891a19088e6fc698d38435dd4c9" prot="public" static="no">
+        <name>GAME_SPEED</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/config.h" line="37" column="9" bodyfile="C:/Users/Petr/Documents/apo_semestralka/config.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1adbb52fc3b2ec0fea2f350a39d8c3bd28" prot="public" static="no">
+        <name>GAME_END_TERMINAL</name>
+        <initializer>&quot;Game has ended with pacman getting score %d and having %d lives\n&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/config.h" line="39" column="9" bodyfile="C:/Users/Petr/Documents/apo_semestralka/config.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1aadb76337df4b0a055a30de34b0e3dbcc" prot="public" static="no">
+        <name>LED_SCARE_COLOR1</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/config.h" line="42" column="9" bodyfile="C:/Users/Petr/Documents/apo_semestralka/config.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a49cfb1c1270ff147a44d8dd7166b5473" prot="public" static="no">
+        <name>LED_SCARE_COLOR2</name>
+        <initializer>0xf</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/config.h" line="43" column="9" bodyfile="C:/Users/Petr/Documents/apo_semestralka/config.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1af6a54e35c04441964ee74f63733659e9" prot="public" static="no">
+        <name>LED_NORMAL_COLOR</name>
+        <initializer>0xf00</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/config.h" line="44" column="9" bodyfile="C:/Users/Petr/Documents/apo_semestralka/config.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a47eb681b9f2c5a8f4f63891a58ab8e2d" prot="public" static="no">
+        <name>WALL_COLOR</name>
+        <initializer>0x9</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/config.h" line="47" column="9" bodyfile="C:/Users/Petr/Documents/apo_semestralka/config.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a3aac54ffa4781528709d17a683e54fb5" prot="public" static="no">
+        <name>PATH_COLOR</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/config.h" line="48" column="9" bodyfile="C:/Users/Petr/Documents/apo_semestralka/config.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1ada59e179a724bbf5b53baa541072df9a" prot="public" static="no">
+        <name>COIN_COLOR</name>
+        <initializer>0xd000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/config.h" line="49" column="9" bodyfile="C:/Users/Petr/Documents/apo_semestralka/config.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1ab0c3bd5b77bc43a57f44c50fb05e7201" prot="public" static="no">
+        <name>COIN_RADIUS</name>
+        <initializer>5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/config.h" line="50" column="9" bodyfile="C:/Users/Petr/Documents/apo_semestralka/config.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1aa24d0a8eebc152d8cc985828a1e8dd3c" prot="public" static="no">
+        <name>SUPERCOIN_COLOR</name>
+        <initializer>0xf91f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/config.h" line="51" column="9" bodyfile="C:/Users/Petr/Documents/apo_semestralka/config.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a2c119bca6ce382c9467070223973441f" prot="public" static="no">
+        <name>SUPERCOIN_RADIUS</name>
+        <initializer>5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/config.h" line="52" column="9" bodyfile="C:/Users/Petr/Documents/apo_semestralka/config.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a023956375f6b5b17c1dffbf9c672f31f" prot="public" static="no">
+        <name>GHOST_COLORS</name>
+        <initializer>0x07C0, 0xF01F, 0x07DC, 0xF800</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/config.h" line="56" column="9" bodyfile="C:/Users/Petr/Documents/apo_semestralka/config.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1ac447386d85ded6e889579c2c08ff1adf" prot="public" static="no">
+        <name>GHOST_COLORS_AMMOUNT</name>
+        <initializer>4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/config.h" line="57" column="9" bodyfile="C:/Users/Petr/Documents/apo_semestralka/config.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1aeb40fd013a03d54f103aa9feef0f35ac" prot="public" static="no">
+        <name>PACMAN_COLOR</name>
+        <initializer>0xffe0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/config.h" line="59" column="9" bodyfile="C:/Users/Petr/Documents/apo_semestralka/config.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1ab1cc753b0e4445ab194c1d2b7f693054" prot="public" static="no">
+        <name>GHOST_SWITCH_TO_RANDOM</name>
+        <initializer>2000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/config.h" line="62" column="9" bodyfile="C:/Users/Petr/Documents/apo_semestralka/config.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1aa7e67f5126c304dba2e7d85d1baea902" prot="public" static="no">
+        <name>GHOST_SWITCH_TO_TARGET</name>
+        <initializer>900</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/config.h" line="63" column="9" bodyfile="C:/Users/Petr/Documents/apo_semestralka/config.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a1965eaca47dbf3f87acdafc2208f04eb" prot="public" static="no">
+        <name>UP</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/config.h" line="66" column="9" bodyfile="C:/Users/Petr/Documents/apo_semestralka/config.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a80fb826a684cf3f0d306b22aa100ddac" prot="public" static="no">
+        <name>RIGHT</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/config.h" line="67" column="9" bodyfile="C:/Users/Petr/Documents/apo_semestralka/config.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a74eac3295cbd6c353b8e0db8c37c8c6b" prot="public" static="no">
+        <name>DWN</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/config.h" line="68" column="9" bodyfile="C:/Users/Petr/Documents/apo_semestralka/config.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="config_8h_1a437ef08681e7210d6678427030446a54" prot="public" static="no">
+        <name>LEFT</name>
+        <initializer>4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/config.h" line="69" column="9" bodyfile="C:/Users/Petr/Documents/apo_semestralka/config.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*******************************************************************</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/><sp/>Config<sp/>file<sp/>for<sp/>project<sp/>apoman<sp/>for<sp/>MicroZed<sp/>based<sp/>MZ_APO<sp/>board</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/><sp/>designed<sp/>by<sp/>Petr<sp/>Porazil<sp/>at<sp/>PiKRON</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"></highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/><sp/>config.h<sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>config<sp/>file</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"></highlight></codeline>
+<codeline lineno="7"><highlight class="comment">(C)<sp/>Copyright<sp/>2021<sp/>by<sp/>Petr<sp/>Kucera<sp/>and<sp/>Lukas<sp/>Nejezchleb</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>e-mails:<sp/><sp/><sp/>kucerp28@fel.cvut.cz<sp/>,<sp/>nejezluk@fel.cvut.cz</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>license:<sp/><sp/>any<sp/>combination<sp/>of<sp/>GPL,<sp/>LGPL,<sp/>MPL<sp/>or<sp/>BSD<sp/>licenses</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*******************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>CONFIG_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CONFIG_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14" refid="config_8h_1afa086fc916a81e7fd348ec00cf786916" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>KEY_UP<sp/>&apos;w&apos;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="config_8h_1a0ed3c136fbc69d8a30e0006bd4f3d6db" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>KEY_DWN<sp/>&apos;s&apos;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="config_8h_1af4d1b8a2912354646c74cf36c69f8223" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>KEY_LEFT<sp/>&apos;a&apos;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="config_8h_1a004194639b9ad76cea01d9e93716d4d6" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>KEY_RIGHT<sp/>&apos;d&apos;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18" refid="config_8h_1a539879aced8aba3e5b8acebca1d473b5" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>KEY_QUIT<sp/>&apos;q&apos;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="config_8h_1a37ac765069375d3727139ca59cb8557c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PAUSE_KEY<sp/>&apos;p&apos;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="config_8h_1a9e873fa6547841f8143e810e80210ae6" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PAUSE_TEXT<sp/>&quot;GAME<sp/>IS<sp/>PAUSED&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21" refid="config_8h_1a5c05df71fac138e03ad0be6724903c11" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PAUSE_TEXT_SIZE<sp/>4</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22" refid="config_8h_1ac7bf42afbbee631d4c25c95fe4893f9e" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PAUSE_SUBTEXT<sp/>&quot;press<sp/>%c<sp/>to<sp/>resume<sp/>or<sp/>%c<sp/>to<sp/>quit&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23" refid="config_8h_1ac21dee9ed11d63c0c641a3379f98df44" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PAUSE_SUBTEXT_SIZE<sp/>2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24" refid="config_8h_1a66c11ca42311ea28f929f3d1cd3a6d10" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PAUSE_SUBTEXT_OFFSET<sp/>50</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25" refid="config_8h_1a5e903e9378d7c7004f51673ed0141fd7" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PAUSE_FONT<sp/>font_winFreeSystem14x16</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26" refid="config_8h_1a7bc224f294717d13a0a9e72a90d26727" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PAUSE_COLOR<sp/>0xffff</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28" refid="config_8h_1af4c1cef02adf693d8d3761f8b906ad3a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>COIN_SCORE_INCECREASE<sp/>100</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29" refid="config_8h_1ae812134d65aa84762a15f5d570014daa" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GHOST_SCORE_INCECREASE<sp/>200</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30" refid="config_8h_1a8fafbbe182b133765c10fc2d5bb0a939" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SCORE_DEATH_PENALTY<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31" refid="config_8h_1aa27bf8c0d78735062b3cf41d2a618b30" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MAX_SCORE<sp/>20000<sp/></highlight><highlight class="comment">//percentage<sp/>of<sp/>this<sp/>will<sp/>affect<sp/>RGB<sp/>led<sp/>intensity</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33" refid="config_8h_1a4be87860feca9f0ecb77b0b717d9343b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MAX_GHOSTS<sp/>&apos;4&apos;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34" refid="config_8h_1a3652158e56c9d1423bfa5d1c5bd3d243" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MAX_LIVES<sp/>&apos;4&apos;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36" refid="config_8h_1a5cba511e2fe7a2d66d90d3e3d810db3c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SCARE_REGIME_DURATION<sp/>300<sp/></highlight><highlight class="comment">//in<sp/>game<sp/>ticks</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37" refid="config_8h_1a7645a891a19088e6fc698d38435dd4c9" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GAME_SPEED<sp/>2<sp/></highlight><highlight class="comment">//ammount<sp/>of<sp/>ticks<sp/>in<sp/>one<sp/>frame</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39" refid="config_8h_1adbb52fc3b2ec0fea2f350a39d8c3bd28" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GAME_END_TERMINAL<sp/>&quot;Game<sp/>has<sp/>ended<sp/>with<sp/>pacman<sp/>getting<sp/>score<sp/>%d<sp/>and<sp/>having<sp/>%d<sp/>lives\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="comment">//led<sp/>colors</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42" refid="config_8h_1aadb76337df4b0a055a30de34b0e3dbcc" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LED_SCARE_COLOR1<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43" refid="config_8h_1a49cfb1c1270ff147a44d8dd7166b5473" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LED_SCARE_COLOR2<sp/>0xf</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44" refid="config_8h_1af6a54e35c04441964ee74f63733659e9" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LED_NORMAL_COLOR<sp/>0xf00</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="comment">//map<sp/>colors</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47" refid="config_8h_1a47eb681b9f2c5a8f4f63891a58ab8e2d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WALL_COLOR<sp/>0x9</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48" refid="config_8h_1a3aac54ffa4781528709d17a683e54fb5" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PATH_COLOR<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49" refid="config_8h_1ada59e179a724bbf5b53baa541072df9a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>COIN_COLOR<sp/>0xd000</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50" refid="config_8h_1ab0c3bd5b77bc43a57f44c50fb05e7201" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>COIN_RADIUS<sp/>5</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51" refid="config_8h_1aa24d0a8eebc152d8cc985828a1e8dd3c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SUPERCOIN_COLOR<sp/>0xf91f</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52" refid="config_8h_1a2c119bca6ce382c9467070223973441f" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SUPERCOIN_RADIUS<sp/>5</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="comment">//ghost<sp/>colors</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="comment">//<sp/>green<sp/>pink<sp/><sp/>azure<sp/>red</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56" refid="config_8h_1a023956375f6b5b17c1dffbf9c672f31f" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GHOST_COLORS<sp/>0x07C0,<sp/>0xF01F,<sp/>0x07DC,<sp/>0xF800</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57" refid="config_8h_1ac447386d85ded6e889579c2c08ff1adf" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GHOST_COLORS_AMMOUNT<sp/>4</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59" refid="config_8h_1aeb40fd013a03d54f103aa9feef0f35ac" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PACMAN_COLOR<sp/>0xffe0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="comment">//chance<sp/>for<sp/>ghosts<sp/>to<sp/>switch<sp/>modes<sp/>(higher<sp/>means<sp/>more<sp/>unlikely)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62" refid="config_8h_1ab1cc753b0e4445ab194c1d2b7f693054" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GHOST_SWITCH_TO_RANDOM<sp/>2000</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63" refid="config_8h_1aa7e67f5126c304dba2e7d85d1baea902" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GHOST_SWITCH_TO_TARGET<sp/>900</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66" refid="config_8h_1a1965eaca47dbf3f87acdafc2208f04eb" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>UP<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67" refid="config_8h_1a80fb826a684cf3f0d306b22aa100ddac" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>RIGHT<sp/>2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68" refid="config_8h_1a74eac3295cbd6c353b8e0db8c37c8c6b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DWN<sp/>3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69" refid="config_8h_1a437ef08681e7210d6678427030446a54" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LEFT<sp/>4</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/Petr/Documents/apo_semestralka/config.h"/>
+  </compounddef>
+</doxygen>

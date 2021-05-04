@@ -1,0 +1,213 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="mzapo__parlcd_8h" kind="file" language="C++">
+    <compoundname>mzapo_parlcd.h</compoundname>
+    <includes local="no">stdint.h</includes>
+    <includedby refid="apoman_8c" local="yes">C:/Users/Petr/Documents/apo_semestralka/apoman.c</includedby>
+    <includedby refid="mzapo__parlcd_8c" local="yes">C:/Users/Petr/Documents/apo_semestralka/mzapo_parlcd.c</includedby>
+    <includedby refid="update__peripherals_8c" local="yes">C:/Users/Petr/Documents/apo_semestralka/update_peripherals.c</includedby>
+    <incdepgraph>
+      <node id="2">
+        <label>stdint.h</label>
+      </node>
+      <node id="1">
+        <label>C:/Users/Petr/Documents/apo_semestralka/mzapo_parlcd.h</label>
+        <link refid="mzapo__parlcd_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="4">
+        <label>C:/Users/Petr/Documents/apo_semestralka/update_peripherals.c</label>
+        <link refid="update__peripherals_8c"/>
+      </node>
+      <node id="3">
+        <label>C:/Users/Petr/Documents/apo_semestralka/mzapo_parlcd.c</label>
+        <link refid="mzapo__parlcd_8c"/>
+      </node>
+      <node id="1">
+        <label>C:/Users/Petr/Documents/apo_semestralka/mzapo_parlcd.h</label>
+        <link refid="mzapo__parlcd_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>C:/Users/Petr/Documents/apo_semestralka/apoman.c</label>
+        <link refid="apoman_8c"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="mzapo__parlcd_8h_1add303eeaf9fa3e336750f4ba39a69932" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void parlcd_write_cr</definition>
+        <argsstring>(unsigned char *parlcd_mem_base, uint16_t data)</argsstring>
+        <name>parlcd_write_cr</name>
+        <param>
+          <type>unsigned char *</type>
+          <declname>parlcd_mem_base</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/mzapo_parlcd.h" line="24" column="6" bodyfile="C:/Users/Petr/Documents/apo_semestralka/mzapo_parlcd.c" bodystart="26" bodyend="29" declfile="C:/Users/Petr/Documents/apo_semestralka/mzapo_parlcd.h" declline="24" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="mzapo__parlcd_8h_1ab30b1b616caf5991cd8e1a6a52ba23e7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void parlcd_write_cmd</definition>
+        <argsstring>(unsigned char *parlcd_mem_base, uint16_t cmd)</argsstring>
+        <name>parlcd_write_cmd</name>
+        <param>
+          <type>unsigned char *</type>
+          <declname>parlcd_mem_base</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>cmd</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/mzapo_parlcd.h" line="26" column="6" bodyfile="C:/Users/Petr/Documents/apo_semestralka/mzapo_parlcd.c" bodystart="31" bodyend="34" declfile="C:/Users/Petr/Documents/apo_semestralka/mzapo_parlcd.h" declline="26" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="mzapo__parlcd_8h_1ab9125a7610ba0302c004802fb908590d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void parlcd_write_data</definition>
+        <argsstring>(unsigned char *parlcd_mem_base, uint16_t data)</argsstring>
+        <name>parlcd_write_data</name>
+        <param>
+          <type>unsigned char *</type>
+          <declname>parlcd_mem_base</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/mzapo_parlcd.h" line="28" column="6" bodyfile="C:/Users/Petr/Documents/apo_semestralka/mzapo_parlcd.c" bodystart="36" bodyend="39" declfile="C:/Users/Petr/Documents/apo_semestralka/mzapo_parlcd.h" declline="28" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="mzapo__parlcd_8h_1a688f82186392823303897ee3f270718a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void parlcd_write_data2x</definition>
+        <argsstring>(unsigned char *parlcd_mem_base, uint32_t data)</argsstring>
+        <name>parlcd_write_data2x</name>
+        <param>
+          <type>unsigned char *</type>
+          <declname>parlcd_mem_base</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/mzapo_parlcd.h" line="30" column="6" bodyfile="C:/Users/Petr/Documents/apo_semestralka/mzapo_parlcd.c" bodystart="41" bodyend="44" declfile="C:/Users/Petr/Documents/apo_semestralka/mzapo_parlcd.h" declline="30" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="mzapo__parlcd_8h_1afef12925f598e36664d1d3b6de27c881" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void parlcd_delay</definition>
+        <argsstring>(int msec)</argsstring>
+        <name>parlcd_delay</name>
+        <param>
+          <type>int</type>
+          <declname>msec</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/mzapo_parlcd.h" line="32" column="6" bodyfile="C:/Users/Petr/Documents/apo_semestralka/mzapo_parlcd.c" bodystart="46" bodyend="51" declfile="C:/Users/Petr/Documents/apo_semestralka/mzapo_parlcd.h" declline="32" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="mzapo__parlcd_8h_1a37a4ee10b3cd7f3b1282d944f70c591b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void parlcd_hx8357_init</definition>
+        <argsstring>(unsigned char *parlcd_mem_base)</argsstring>
+        <name>parlcd_hx8357_init</name>
+        <param>
+          <type>unsigned char *</type>
+          <declname>parlcd_mem_base</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/mzapo_parlcd.h" line="34" column="6" bodyfile="C:/Users/Petr/Documents/apo_semestralka/mzapo_parlcd.c" bodystart="53" bodyend="308" declfile="C:/Users/Petr/Documents/apo_semestralka/mzapo_parlcd.h" declline="34" declcolumn="6"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*******************************************************************</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/><sp/>Simple<sp/>program<sp/>to<sp/>check<sp/>LCD<sp/>functionality<sp/>on<sp/>MicroZed</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/><sp/>based<sp/>MZ_APO<sp/>board<sp/>designed<sp/>by<sp/>Petr<sp/>Porazil<sp/>at<sp/>PiKRON</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"></highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/><sp/>mzapo_parlcd.h<sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>parallel<sp/>connected<sp/>LCD<sp/>low<sp/>level<sp/>access</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"></highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/><sp/>(C)<sp/>Copyright<sp/>2017<sp/>by<sp/>Pavel<sp/>Pisa</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>e-mail:<sp/><sp/><sp/>pisa@cmp.felk.cvut.cz</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>homepage:<sp/>http://cmp.felk.cvut.cz/~pisa</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>company:<sp/><sp/>http://www.pikron.com/</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>license:<sp/><sp/>any<sp/>combination<sp/>of<sp/>GPL,<sp/>LGPL,<sp/>MPL<sp/>or<sp/>BSD<sp/>licenses</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"></highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*******************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>MZAPO_PARLCD_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MZAPO_PARLCD_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdint.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;C&quot;</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="mzapo__parlcd_8h_1add303eeaf9fa3e336750f4ba39a69932" kindref="member">parlcd_write_cr</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*parlcd_mem_base,<sp/>uint16_t<sp/>data);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="mzapo__parlcd_8h_1ab30b1b616caf5991cd8e1a6a52ba23e7" kindref="member">parlcd_write_cmd</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*parlcd_mem_base,<sp/>uint16_t<sp/>cmd);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="mzapo__parlcd_8h_1ab9125a7610ba0302c004802fb908590d" kindref="member">parlcd_write_data</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*parlcd_mem_base,<sp/>uint16_t<sp/>data);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="mzapo__parlcd_8h_1a688f82186392823303897ee3f270718a" kindref="member">parlcd_write_data2x</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*parlcd_mem_base,<sp/>uint32_t<sp/>data);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="mzapo__parlcd_8h_1afef12925f598e36664d1d3b6de27c881" kindref="member">parlcd_delay</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>msec);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="mzapo__parlcd_8h_1a37a4ee10b3cd7f3b1282d944f70c591b" kindref="member">parlcd_hx8357_init</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*parlcd_mem_base);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__cplusplus</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal">}<sp/></highlight><highlight class="comment">/*<sp/>extern<sp/>&quot;C&quot;*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/><sp/></highlight><highlight class="comment">/*MZAPO_PARLCD_H*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/Petr/Documents/apo_semestralka/mzapo_parlcd.h"/>
+  </compounddef>
+</doxygen>

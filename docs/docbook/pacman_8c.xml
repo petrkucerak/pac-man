@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_pacman_8c" xml:lang="en-US">
+<title>C:/Users/Petr/Documents/apo_semestralka/pacman.c File Reference</title>
+<indexterm><primary>C:/Users/Petr/Documents/apo_semestralka/pacman.c</primary></indexterm>
+<programlisting>#include &quot;pacman.h&quot;
+#include &quot;draw_shapes.h&quot;
+#include &quot;map_from_template.h&quot;
+#include &quot;config.h&quot;
+#include &lt;stdbool.h&gt;
+</programlisting><simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para>bool <link linkend="_pacman_8c_1a3c07103dca2f3a04c80872d8603b5d45">pacman_can_move</link> (<link linkend="_structpacman__type">pacman_type</link> *pacman, int dirx, int diry, <link linkend="_structmap__data">map_data</link> *map)</para>
+</listitem>
+            <listitem><para><link linkend="_structpacman__type">pacman_type</link> <link linkend="_pacman_8c_1a6049d528917cb950659f2972d92cb432">create_pacman</link> (<link linkend="_structmap__data">map_data</link> *map, int lives, int score)</para>
+</listitem>
+            <listitem><para>bool <link linkend="_pacman_8c_1ae1b36e370a9b73a0eed9ad43e53db1f0">pacman_move</link> (<link linkend="_structpacman__type">pacman_type</link> *pacman, <link linkend="_structmap__data">map_data</link> *map)</para>
+</listitem>
+            <listitem><para>void <link linkend="_pacman_8c_1a9b14d2c075ef0768af01d694a839cd38">draw_pacman</link> (<link linkend="_structpacman__type">pacman_type</link> *pacman, <link linkend="_structfb__data">fb_data</link> *fb, <link linkend="_structmap__data">map_data</link> *map)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Function Documentation</title>
+<anchor xml:id="_pacman_8c_1a6049d528917cb950659f2972d92cb432"/>    <section>
+    <title>create_pacman()</title>
+<indexterm><primary>create_pacman</primary><secondary>pacman.c</secondary></indexterm>
+<indexterm><primary>pacman.c</primary><secondary>create_pacman</secondary></indexterm>
+<para><computeroutput><link linkend="_structpacman__type">pacman_type</link> create_pacman (<link linkend="_structmap__data">map_data</link> * map, int lives, int score)</computeroutput></para>    </section><anchor xml:id="_pacman_8c_1a9b14d2c075ef0768af01d694a839cd38"/>    <section>
+    <title>draw_pacman()</title>
+<indexterm><primary>draw_pacman</primary><secondary>pacman.c</secondary></indexterm>
+<indexterm><primary>pacman.c</primary><secondary>draw_pacman</secondary></indexterm>
+<para><computeroutput>void draw_pacman (<link linkend="_structpacman__type">pacman_type</link> * pacman, <link linkend="_structfb__data">fb_data</link> * fb, <link linkend="_structmap__data">map_data</link> * map)</computeroutput></para>    </section><anchor xml:id="_pacman_8c_1a3c07103dca2f3a04c80872d8603b5d45"/>    <section>
+    <title>pacman_can_move()</title>
+<indexterm><primary>pacman_can_move</primary><secondary>pacman.c</secondary></indexterm>
+<indexterm><primary>pacman.c</primary><secondary>pacman_can_move</secondary></indexterm>
+<para><computeroutput>bool pacman_can_move (<link linkend="_structpacman__type">pacman_type</link> * pacman, int dirx, int diry, <link linkend="_structmap__data">map_data</link> * map)</computeroutput></para>    </section><anchor xml:id="_pacman_8c_1ae1b36e370a9b73a0eed9ad43e53db1f0"/>    <section>
+    <title>pacman_move()</title>
+<indexterm><primary>pacman_move</primary><secondary>pacman.c</secondary></indexterm>
+<indexterm><primary>pacman.c</primary><secondary>pacman_move</secondary></indexterm>
+<para><computeroutput>bool pacman_move (<link linkend="_structpacman__type">pacman_type</link> * pacman, <link linkend="_structmap__data">map_data</link> * map)</computeroutput></para></section>
+</section>
+</section>

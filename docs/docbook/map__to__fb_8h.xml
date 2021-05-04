@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_map__to__fb_8h" xml:lang="en-US">
+<title>C:/Users/Petr/Documents/apo_semestralka/map_to_fb.h File Reference</title>
+<indexterm><primary>C:/Users/Petr/Documents/apo_semestralka/map_to_fb.h</primary></indexterm>
+<programlisting>#include &quot;data_structures.h&quot;
+#include &lt;stdbool.h&gt;
+</programlisting><simplesect>
+    <title>Macros    </title>
+        <itemizedlist>
+            <listitem><para>#define <link linkend="_map__to__fb_8h_1aa206b8fa618be527eef26ea4504ce7f8">MAT_TO_FB_H</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para>bool <link linkend="_map__to__fb_8h_1a8c10c75361a49b8883775fc900adced6">render_map</link> (<link linkend="_structmap__data">map_data</link> *data, <link linkend="_structfb__data">fb_data</link> *frame_buff)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Macro Definition Documentation</title>
+<anchor xml:id="_map__to__fb_8h_1aa206b8fa618be527eef26ea4504ce7f8"/>    <section>
+    <title>MAT_TO_FB_H</title>
+<indexterm><primary>MAT_TO_FB_H</primary><secondary>map_to_fb.h</secondary></indexterm>
+<indexterm><primary>map_to_fb.h</primary><secondary>MAT_TO_FB_H</secondary></indexterm>
+<para><computeroutput>#define MAT_TO_FB_H</computeroutput></para></section>
+</section>
+<section>
+<title>Function Documentation</title>
+<anchor xml:id="_map__to__fb_8h_1a8c10c75361a49b8883775fc900adced6"/>    <section>
+    <title>render_map()</title>
+<indexterm><primary>render_map</primary><secondary>map_to_fb.h</secondary></indexterm>
+<indexterm><primary>map_to_fb.h</primary><secondary>render_map</secondary></indexterm>
+<para><computeroutput>bool render_map (<link linkend="_structmap__data">map_data</link> * data, <link linkend="_structfb__data">fb_data</link> * frame_buff)</computeroutput></para>
+<para>given <link linkend="_structmap__data">map_data</link> draws the map to frame buffer, <formalpara><title>Returns</title>
+
+<para>true if there are any coins to be eaten </para>
+</formalpara>
+</para>
+</section>
+</section>
+</section>

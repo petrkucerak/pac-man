@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_structfb__data" xml:lang="en-US">
+<title>fb_data Struct Reference</title>
+<indexterm><primary>fb_data</primary></indexterm>
+<para>
+<computeroutput>#include &lt;data_structures.h&gt;</computeroutput>
+</para>
+<simplesect>
+    <title>Data Fields    </title>
+        <itemizedlist>
+            <listitem><para>int <link linkend="_structfb__data_1a2474a5474cbff19523a51eb1de01cda4">width</link></para>
+</listitem>
+            <listitem><para>int <link linkend="_structfb__data_1ad12fc34ce789bce6c8a05d8a17138534">height</link></para>
+</listitem>
+            <listitem><para>uint16_t * <link linkend="_structfb__data_1a377cdea530281d6fa239a9e14c1a7286">fb</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Field Documentation</title>
+<anchor xml:id="_structfb__data_1a377cdea530281d6fa239a9e14c1a7286"/>    <section>
+    <title>fb</title>
+<indexterm><primary>fb</primary><secondary>fb_data</secondary></indexterm>
+<indexterm><primary>fb_data</primary><secondary>fb</secondary></indexterm>
+<para><computeroutput>uint16_t* fb</computeroutput></para>    </section><anchor xml:id="_structfb__data_1ad12fc34ce789bce6c8a05d8a17138534"/>    <section>
+    <title>height</title>
+<indexterm><primary>height</primary><secondary>fb_data</secondary></indexterm>
+<indexterm><primary>fb_data</primary><secondary>height</secondary></indexterm>
+<para><computeroutput>int height</computeroutput></para>    </section><anchor xml:id="_structfb__data_1a2474a5474cbff19523a51eb1de01cda4"/>    <section>
+    <title>width</title>
+<indexterm><primary>width</primary><secondary>fb_data</secondary></indexterm>
+<indexterm><primary>fb_data</primary><secondary>width</secondary></indexterm>
+<para><computeroutput>int width</computeroutput></para></section>
+<para>
+The documentation for this struct was generated from the following file:</para>
+C:/Users/Petr/Documents/apo_semestralka/<link linkend="_data__structures_8h">data_structures.h</link></section>
+</section>

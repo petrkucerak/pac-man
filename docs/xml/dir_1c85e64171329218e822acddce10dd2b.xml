@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dir_1c85e64171329218e822acddce10dd2b" kind="dir">
+    <compoundname>C:/Users/Petr/Documents/apo_semestralka</compoundname>
+    <innerfile refid="apoman_8c">apoman.c</innerfile>
+    <innerfile refid="config_8h">config.h</innerfile>
+    <innerfile refid="data__structures_8h">data_structures.h</innerfile>
+    <innerfile refid="draw__shapes_8c">draw_shapes.c</innerfile>
+    <innerfile refid="draw__shapes_8h">draw_shapes.h</innerfile>
+    <innerfile refid="final__score_8c">final_score.c</innerfile>
+    <innerfile refid="final__score_8h">final_score.h</innerfile>
+    <innerfile refid="font__prop14x16_8c">font_prop14x16.c</innerfile>
+    <innerfile refid="font__rom8x16_8c">font_rom8x16.c</innerfile>
+    <innerfile refid="font__types_8h">font_types.h</innerfile>
+    <innerfile refid="game_8c">game.c</innerfile>
+    <innerfile refid="game_8h">game.h</innerfile>
+    <innerfile refid="ghost_8c">ghost.c</innerfile>
+    <innerfile refid="ghost_8h">ghost.h</innerfile>
+    <innerfile refid="map__circles_8c">map_circles.c</innerfile>
+    <innerfile refid="map__conch_8c">map_conch.c</innerfile>
+    <innerfile refid="map__from__template_8c">map_from_template.c</innerfile>
+    <innerfile refid="map__from__template_8h">map_from_template.h</innerfile>
+    <innerfile refid="map__star_8c">map_star.c</innerfile>
+    <innerfile refid="map__template_8h">map_template.h</innerfile>
+    <innerfile refid="map__to__fb_8c">map_to_fb.c</innerfile>
+    <innerfile refid="map__to__fb_8h">map_to_fb.h</innerfile>
+    <innerfile refid="menu__utilities_8c">menu_utilities.c</innerfile>
+    <innerfile refid="menu__utilities_8h">menu_utilities.h</innerfile>
+    <innerfile refid="mzapo__parlcd_8c">mzapo_parlcd.c</innerfile>
+    <innerfile refid="mzapo__parlcd_8h">mzapo_parlcd.h</innerfile>
+    <innerfile refid="mzapo__phys_8c">mzapo_phys.c</innerfile>
+    <innerfile refid="mzapo__phys_8h">mzapo_phys.h</innerfile>
+    <innerfile refid="mzapo__regs_8h">mzapo_regs.h</innerfile>
+    <innerfile refid="pacman_8c">pacman.c</innerfile>
+    <innerfile refid="pacman_8h">pacman.h</innerfile>
+    <innerfile refid="terminal__read_8c">terminal_read.c</innerfile>
+    <innerfile refid="terminal__read_8h">terminal_read.h</innerfile>
+    <innerfile refid="text__fb_8c">text_fb.c</innerfile>
+    <innerfile refid="text__fb_8h">text_fb.h</innerfile>
+    <innerfile refid="update__peripherals_8c">update_peripherals.c</innerfile>
+    <innerfile refid="update__peripherals_8h">update_peripherals.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="C:/Users/Petr/Documents/apo_semestralka/"/>
+  </compounddef>
+</doxygen>

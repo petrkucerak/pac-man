@@ -1,0 +1,55 @@
+.TH "C:/Users/Petr/Documents/apo_semestralka/terminal_read.c" 3 "Tue May 4 2021" "Version 1.0.0" "Pac-Man" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+C:/Users/Petr/Documents/apo_semestralka/terminal_read.c
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'terminal_read\&.h'\fP
+.br
+\fC#include 'data_structures\&.h'\fP
+.br
+\fC#include <stdbool\&.h>\fP
+.br
+\fC#include <termios\&.h>\fP
+.br
+\fC#include <unistd\&.h>\fP
+.br
+\fC#include <stdio\&.h>\fP
+.br
+\fC#include <poll\&.h>\fP
+.br
+\fC#include <fcntl\&.h>\fP
+.br
+
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBTERMINAL_TIMEOUT_MS\fP   100"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "int \fBserial_getc_timeout\fP (int fd, int timeout_ms, unsigned char *c)"
+.br
+.ti -1c
+.RI "void * \fBinput_thread\fP (void *d)"
+.br
+.in -1c
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define TERMINAL_TIMEOUT_MS   100"
+
+.SH "Function Documentation"
+.PP 
+.SS "void* input_thread (void * d)"
+
+.SS "int serial_getc_timeout (int fd, int timeout_ms, unsigned char * c)"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Pac-Man from the source code\&.

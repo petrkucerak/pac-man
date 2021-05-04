@@ -1,0 +1,388 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="draw__shapes_8c" kind="file" language="C++">
+    <compoundname>draw_shapes.c</compoundname>
+    <includes refid="draw__shapes_8h" local="yes">draw_shapes.h</includes>
+    <includes local="no">stdlib.h</includes>
+    <includes refid="config_8h" local="yes">config.h</includes>
+    <incdepgraph>
+      <node id="5">
+        <label>stdbool.h</label>
+      </node>
+      <node id="7">
+        <label>map_template.h</label>
+        <link refid="map__template_8h"/>
+      </node>
+      <node id="4">
+        <label>stdint.h</label>
+      </node>
+      <node id="8">
+        <label>stdlib.h</label>
+      </node>
+      <node id="9">
+        <label>config.h</label>
+        <link refid="config_8h"/>
+      </node>
+      <node id="1">
+        <label>C:/Users/Petr/Documents/apo_semestralka/draw_shapes.c</label>
+        <link refid="draw__shapes_8c"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>draw_shapes.h</label>
+        <link refid="draw__shapes_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>pthread.h</label>
+      </node>
+      <node id="3">
+        <label>data_structures.h</label>
+        <link refid="data__structures_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="draw__shapes_8c_1a95063eff22c8c70f5493dce624616d35" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int pixel_dist_squared</definition>
+        <argsstring>(int x1, int y1, int x2, int y2)</argsstring>
+        <name>pixel_dist_squared</name>
+        <param>
+          <type>int</type>
+          <declname>x1</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y1</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>x2</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y2</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/draw_shapes.c" line="17" column="5" bodyfile="C:/Users/Petr/Documents/apo_semestralka/draw_shapes.c" bodystart="17" bodyend="20"/>
+      </memberdef>
+      <memberdef kind="function" id="draw__shapes_8c_1a44ae4e3d2c0aa9c951284b6414ae6527" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void draw_circle</definition>
+        <argsstring>(fb_data *frame, int x, int y, int radius, uint16_t color)</argsstring>
+        <name>draw_circle</name>
+        <param>
+          <type><ref refid="structfb__data" kindref="compound">fb_data</ref> *</type>
+          <declname>frame</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>radius</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>function to draw circle to <ref refid="structfb__data" kindref="compound">fb_data</ref> frame at x,y with radius and color </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/draw_shapes.c" line="22" column="6" bodyfile="C:/Users/Petr/Documents/apo_semestralka/draw_shapes.c" bodystart="22" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="draw__shapes_8c_1a559a33154244f0ee1523958f44421c48" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void draw_rectangle</definition>
+        <argsstring>(fb_data *frame, int x, int y, int width, int height, uint16_t color)</argsstring>
+        <name>draw_rectangle</name>
+        <param>
+          <type><ref refid="structfb__data" kindref="compound">fb_data</ref> *</type>
+          <declname>frame</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>width</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>height</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>function to draw rectangle to <ref refid="structfb__data" kindref="compound">fb_data</ref> frame at x,y with width and height and color </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/draw_shapes.c" line="39" column="6" bodyfile="C:/Users/Petr/Documents/apo_semestralka/draw_shapes.c" bodystart="39" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="draw__shapes_8c_1a6d5b7bfa9cee0ff7724230c622354531" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void set_background</definition>
+        <argsstring>(fb_data *frame, uint16_t color)</argsstring>
+        <name>set_background</name>
+        <param>
+          <type><ref refid="structfb__data" kindref="compound">fb_data</ref> *</type>
+          <declname>frame</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>sets background to certain color </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/draw_shapes.c" line="57" column="6" bodyfile="C:/Users/Petr/Documents/apo_semestralka/draw_shapes.c" bodystart="57" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="function" id="draw__shapes_8c_1a93686d02b452d0aa3a5b050bf1f92c82" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void draw_ghost_shape</definition>
+        <argsstring>(fb_data *frame, int x, int y, int scale, uint16_t color)</argsstring>
+        <name>draw_ghost_shape</name>
+        <param>
+          <type><ref refid="structfb__data" kindref="compound">fb_data</ref> *</type>
+          <declname>frame</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>scale</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>draws the ghost shape to fb </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/draw_shapes.c" line="65" column="6" bodyfile="C:/Users/Petr/Documents/apo_semestralka/draw_shapes.c" bodystart="65" bodyend="93"/>
+      </memberdef>
+      <memberdef kind="function" id="draw__shapes_8c_1a530d11a612c21d12b57752d57d91a3ff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void draw_pacman_dir</definition>
+        <argsstring>(fb_data *frame, int x, int y, int radius, uint16_t color, int direction)</argsstring>
+        <name>draw_pacman_dir</name>
+        <param>
+          <type><ref refid="structfb__data" kindref="compound">fb_data</ref> *</type>
+          <declname>frame</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>radius</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>color</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>direction</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/draw_shapes.c" line="95" column="6" bodyfile="C:/Users/Petr/Documents/apo_semestralka/draw_shapes.c" bodystart="95" bodyend="126"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*******************************************************************</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/><sp/>Program<sp/>to<sp/>draw<sp/>simple<sp/>shapes<sp/>to<sp/>frame<sp/>buffer<sp/>on<sp/>MicroZed</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/><sp/>based<sp/>MZ_APO<sp/>board<sp/>designed<sp/>by<sp/>Petr<sp/>Porazil<sp/>at<sp/>PiKRON</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"></highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/><sp/>draw_shapes.c<sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>simple<sp/>program<sp/>to<sp/>draw<sp/>shapes</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"></highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/><sp/>(C)<sp/>Copyright<sp/>2021<sp/>by<sp/>Lukas<sp/>Nejezchleb</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>e-mail:<sp/><sp/><sp/>nejezluk@fel.cvut.cz</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>license:<sp/><sp/>any<sp/>combination<sp/>of<sp/>GPL,<sp/>LGPL,<sp/>MPL<sp/>or<sp/>BSD<sp/>licenses</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"></highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*******************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="draw__shapes_8h" kindref="compound">draw_shapes.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdlib.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="config_8h" kindref="compound">config.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="draw__shapes_8c_1a95063eff22c8c70f5493dce624616d35" kindref="member">pixel_dist_squared</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x1,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y1,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x2,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y2)</highlight></codeline>
+<codeline lineno="18"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>((x1<sp/>-<sp/>x2)<sp/>*<sp/>(x1<sp/>-<sp/>x2)<sp/>+<sp/>(y1<sp/>-<sp/>y2)<sp/>*<sp/>(y1<sp/>-<sp/>y2));</highlight></codeline>
+<codeline lineno="20"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="draw__shapes_8c_1a44ae4e3d2c0aa9c951284b6414ae6527" kindref="member">draw_circle</ref>(<ref refid="structfb__data" kindref="compound">fb_data</ref><sp/>*frame,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>radius,<sp/>uint16_t<sp/>color)</highlight></codeline>
+<codeline lineno="23"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>row<sp/>=<sp/>y<sp/>-<sp/>radius;<sp/>row<sp/>&lt;<sp/>y<sp/>+<sp/>radius;<sp/>row++)</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>col<sp/>=<sp/>x<sp/>-<sp/>radius;<sp/>col<sp/>&lt;<sp/>x<sp/>+<sp/>radius;<sp/>col++)</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(row<sp/>&gt;<sp/>0<sp/>&amp;&amp;<sp/>col<sp/>&gt;<sp/>0<sp/>&amp;&amp;<sp/>row<sp/>&lt;<sp/>frame-&gt;height<sp/>&amp;&amp;<sp/>col<sp/>&lt;<sp/>frame-&gt;width)</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="draw__shapes_8c_1a95063eff22c8c70f5493dce624616d35" kindref="member">pixel_dist_squared</ref>(col,<sp/>row,<sp/>x,<sp/>y)<sp/>&lt;=<sp/>(radius<sp/>*<sp/>radius))</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>frame-&gt;<ref refid="structfb__data_1a377cdea530281d6fa239a9e14c1a7286" kindref="member">fb</ref>[row<sp/>*<sp/>frame-&gt;<ref refid="structfb__data_1a2474a5474cbff19523a51eb1de01cda4" kindref="member">width</ref><sp/>+<sp/>col]<sp/>=<sp/>color;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="37"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="draw__shapes_8c_1a559a33154244f0ee1523958f44421c48" kindref="member">draw_rectangle</ref>(<ref refid="structfb__data" kindref="compound">fb_data</ref><sp/>*frame,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>width,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>height,<sp/>uint16_t<sp/>color)</highlight></codeline>
+<codeline lineno="40"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>width;<sp/>++i)</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((x<sp/>+<sp/>i<sp/>&gt;=<sp/>0)<sp/>&amp;&amp;<sp/>(x<sp/>+<sp/>i<sp/>&lt;<sp/>frame-&gt;width))</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>j<sp/>=<sp/>0;<sp/>j<sp/>&lt;<sp/>height;<sp/>++j)</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((y<sp/>+<sp/>j<sp/>&gt;=<sp/>0)<sp/>&amp;&amp;<sp/>(y<sp/>+<sp/>j<sp/>&lt;<sp/>frame-&gt;height))</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>place<sp/>on<sp/>the<sp/>screen</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>frame-&gt;<ref refid="structfb__data_1a377cdea530281d6fa239a9e14c1a7286" kindref="member">fb</ref>[(y<sp/>+<sp/>j)<sp/>*<sp/>frame-&gt;<ref refid="structfb__data_1a2474a5474cbff19523a51eb1de01cda4" kindref="member">width</ref><sp/>+<sp/>x<sp/>+<sp/>i]<sp/>=<sp/>color;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="55"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="draw__shapes_8c_1a6d5b7bfa9cee0ff7724230c622354531" kindref="member">set_background</ref>(<ref refid="structfb__data" kindref="compound">fb_data</ref><sp/>*frame,<sp/>uint16_t<sp/>color)</highlight></codeline>
+<codeline lineno="58"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>frame-&gt;<ref refid="structfb__data_1a2474a5474cbff19523a51eb1de01cda4" kindref="member">width</ref><sp/>*<sp/>frame-&gt;<ref refid="structfb__data_1ad12fc34ce789bce6c8a05d8a17138534" kindref="member">height</ref>;<sp/>++i)</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>frame-&gt;<ref refid="structfb__data_1a377cdea530281d6fa239a9e14c1a7286" kindref="member">fb</ref>[i]<sp/>=<sp/>color;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="63"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="draw__shapes_8c_1a93686d02b452d0aa3a5b050bf1f92c82" kindref="member">draw_ghost_shape</ref>(<ref refid="structfb__data" kindref="compound">fb_data</ref><sp/>*frame,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>scale,<sp/>uint16_t<sp/>color)</highlight></codeline>
+<codeline lineno="66"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//offset<sp/>x<sp/>and<sp/>y<sp/>so<sp/>the<sp/>ghost<sp/>would<sp/>be<sp/>centered<sp/>around</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/>x<sp/>=<sp/>x<sp/>-<sp/>scale<sp/>*<sp/>4;<sp/></highlight><highlight class="comment">//4<sp/>is<sp/>half<sp/>of<sp/>bitsize<sp/>of<sp/>uint8_t</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>y<sp/>=<sp/>y<sp/>-<sp/>scale<sp/>*<sp/>4;<sp/></highlight><highlight class="comment">//4<sp/>is<sp/>half<sp/>of<sp/>height<sp/>of<sp/>ghost<sp/>bitmap</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>ghost_bitmap[]<sp/>=<sp/>{0x3c,<sp/>0x7e,<sp/>0x7e,<sp/>0xdb,<sp/>0xff,<sp/>0xff,<sp/>0xff,<sp/>0xdb};</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="72"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>xxxx<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="73"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>xxxxxx<sp/></highlight></codeline>
+<codeline lineno="74"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>xxxxxx</highlight></codeline>
+<codeline lineno="75"><highlight class="comment"><sp/><sp/><sp/><sp/>xx<sp/>xx<sp/>xx</highlight></codeline>
+<codeline lineno="76"><highlight class="comment"><sp/><sp/><sp/><sp/>xxxxxxxx</highlight></codeline>
+<codeline lineno="77"><highlight class="comment"><sp/><sp/><sp/><sp/>xxxxxxxx</highlight></codeline>
+<codeline lineno="78"><highlight class="comment"><sp/><sp/><sp/><sp/>xxxxxxxx</highlight></codeline>
+<codeline lineno="79"><highlight class="comment"><sp/><sp/><sp/><sp/>xx<sp/>xx<sp/>xx</highlight></codeline>
+<codeline lineno="80"><highlight class="comment"><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>8;<sp/>++i)</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/></highlight><highlight class="comment">//for<sp/>every<sp/>row<sp/>int<sp/>ghost<sp/>bitmap</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>j<sp/>=<sp/>0;<sp/>j<sp/>&lt;<sp/>8;<sp/>++j)</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/></highlight><highlight class="comment">//for<sp/>every<sp/>bit<sp/>in<sp/>uint8_t<sp/>ghost<sp/>bitmap</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((ghost_bitmap[i]<sp/>&amp;<sp/>(1<sp/>&lt;&lt;<sp/>(8<sp/>-<sp/>j<sp/>-<sp/>1)))<sp/>!=<sp/>0)</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="draw__shapes_8c_1a559a33154244f0ee1523958f44421c48" kindref="member">draw_rectangle</ref>(frame,<sp/>x<sp/>+<sp/>j<sp/>*<sp/>scale,<sp/>y<sp/>+<sp/>i<sp/>*<sp/>scale,<sp/>scale,<sp/>scale,<sp/>color);</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="93"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="draw__shapes_8c_1a530d11a612c21d12b57752d57d91a3ff" kindref="member">draw_pacman_dir</ref>(<ref refid="structfb__data" kindref="compound">fb_data</ref><sp/>*frame,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>x,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>y,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>radius,<sp/>uint16_t<sp/>color,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>direction)</highlight></codeline>
+<codeline lineno="96"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>row<sp/>=<sp/>y<sp/>-<sp/>radius;<sp/>row<sp/>&lt;<sp/>y<sp/>+<sp/>radius;<sp/>row++)</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>col<sp/>=<sp/>x<sp/>-<sp/>radius;<sp/>col<sp/>&lt;<sp/>x<sp/>+<sp/>radius;<sp/>col++)</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(row<sp/>&gt;<sp/>0<sp/>&amp;&amp;<sp/>col<sp/>&gt;<sp/>0<sp/>&amp;&amp;<sp/>row<sp/>&lt;<sp/>frame-&gt;height<sp/>&amp;&amp;<sp/>col<sp/>&lt;<sp/>frame-&gt;width)</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((<ref refid="draw__shapes_8c_1a95063eff22c8c70f5493dce624616d35" kindref="member">pixel_dist_squared</ref>(col,<sp/>row,<sp/>x,<sp/>y)<sp/>&lt;=<sp/>(radius<sp/>*<sp/>radius))<sp/>&amp;&amp;<sp/></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(abs(x<sp/>-<sp/>col)<sp/>&gt;<sp/>(y<sp/>-<sp/>row))<sp/>&amp;&amp;<sp/>direction<sp/>==<sp/><ref refid="config_8h_1a1965eaca47dbf3f87acdafc2208f04eb" kindref="member">UP</ref>)</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>frame-&gt;<ref refid="structfb__data_1a377cdea530281d6fa239a9e14c1a7286" kindref="member">fb</ref>[row<sp/>*<sp/>frame-&gt;<ref refid="structfb__data_1a2474a5474cbff19523a51eb1de01cda4" kindref="member">width</ref><sp/>+<sp/>col]<sp/>=<sp/>color;<sp/></highlight><highlight class="comment">//drawing<sp/>pacman<sp/>facing<sp/>up</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((<ref refid="draw__shapes_8c_1a95063eff22c8c70f5493dce624616d35" kindref="member">pixel_dist_squared</ref>(col,<sp/>row,<sp/>x,<sp/>y)<sp/>&lt;=<sp/>(radius<sp/>*<sp/>radius))<sp/>&amp;&amp;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(abs(x<sp/>-<sp/>col)<sp/>&gt;<sp/>(row<sp/>-<sp/>y))<sp/>&amp;&amp;<sp/>direction<sp/>==<sp/><ref refid="config_8h_1a74eac3295cbd6c353b8e0db8c37c8c6b" kindref="member">DWN</ref>)</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>frame-&gt;<ref refid="structfb__data_1a377cdea530281d6fa239a9e14c1a7286" kindref="member">fb</ref>[row<sp/>*<sp/>frame-&gt;<ref refid="structfb__data_1a2474a5474cbff19523a51eb1de01cda4" kindref="member">width</ref><sp/>+<sp/>col]<sp/>=<sp/>color;<sp/></highlight><highlight class="comment">//drawing<sp/>pacman<sp/>facing<sp/>down</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((<ref refid="draw__shapes_8c_1a95063eff22c8c70f5493dce624616d35" kindref="member">pixel_dist_squared</ref>(col,<sp/>row,<sp/>x,<sp/>y)<sp/>&lt;=<sp/>(radius<sp/>*<sp/>radius))<sp/>&amp;&amp;</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(abs(row<sp/>-<sp/>y)<sp/>&gt;<sp/>(col-x))<sp/>&amp;&amp;<sp/>direction<sp/>==<sp/><ref refid="config_8h_1a80fb826a684cf3f0d306b22aa100ddac" kindref="member">RIGHT</ref>)</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>frame-&gt;<ref refid="structfb__data_1a377cdea530281d6fa239a9e14c1a7286" kindref="member">fb</ref>[row<sp/>*<sp/>frame-&gt;<ref refid="structfb__data_1a2474a5474cbff19523a51eb1de01cda4" kindref="member">width</ref><sp/>+<sp/>col]<sp/>=<sp/>color;<sp/></highlight><highlight class="comment">//drawing<sp/>pacman<sp/>facing<sp/>right</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((<ref refid="draw__shapes_8c_1a95063eff22c8c70f5493dce624616d35" kindref="member">pixel_dist_squared</ref>(col,<sp/>row,<sp/>x,<sp/>y)<sp/>&lt;=<sp/>(radius<sp/>*<sp/>radius))<sp/>&amp;&amp;</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(abs(row<sp/>-<sp/>y)<sp/>&gt;<sp/>(x-col))<sp/>&amp;&amp;<sp/>direction<sp/>==<sp/><ref refid="config_8h_1a437ef08681e7210d6678427030446a54" kindref="member">LEFT</ref>)</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>frame-&gt;<ref refid="structfb__data_1a377cdea530281d6fa239a9e14c1a7286" kindref="member">fb</ref>[row<sp/>*<sp/>frame-&gt;<ref refid="structfb__data_1a2474a5474cbff19523a51eb1de01cda4" kindref="member">width</ref><sp/>+<sp/>col]<sp/>=<sp/>color;<sp/></highlight><highlight class="comment">//drawing<sp/>pacman<sp/>facing<sp/>left</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="126"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/Petr/Documents/apo_semestralka/draw_shapes.c"/>
+  </compounddef>
+</doxygen>

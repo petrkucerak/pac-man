@@ -1,0 +1,32 @@
+.TH "C:/Users/Petr/Documents/apo_semestralka/map_from_template.h" 3 "Tue May 4 2021" "Version 1.0.0" "Pac-Man" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+C:/Users/Petr/Documents/apo_semestralka/map_from_template.h
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'data_structures\&.h'\fP
+.br
+\fC#include 'map_template\&.h'\fP
+.br
+
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "\fBmap_data\fP * \fBcreate_map_data\fP (int screen_w, int screen_h, \fBmap_template\fP *template)"
+.br
+.ti -1c
+.RI "\fBcoords\fP \fBget_coords_from_template\fP (int row, int col, \fBmap_template\fP *template, int screen_w, int screen_h)"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "\fBmap_data\fP* create_map_data (int screen_w, int screen_h, \fBmap_template\fP * template)"
+given map template returns dynamically allocated map for the whole screen 
+.SS "\fBcoords\fP get_coords_from_template (int row, int col, \fBmap_template\fP * template, int screen_w, int screen_h)"
+fiven coords in template returns coords on the actual map 
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Pac-Man from the source code\&.

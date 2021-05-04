@@ -1,0 +1,65 @@
+.TH "C:/Users/Petr/Documents/apo_semestralka/game.c" 3 "Tue May 4 2021" "Version 1.0.0" "Pac-Man" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+C:/Users/Petr/Documents/apo_semestralka/game.c
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'game\&.h'\fP
+.br
+\fC#include 'update_peripherals\&.h'\fP
+.br
+\fC#include <stdlib\&.h>\fP
+.br
+\fC#include <stdio\&.h>\fP
+.br
+\fC#include 'draw_shapes\&.h'\fP
+.br
+\fC#include 'map_to_fb\&.h'\fP
+.br
+\fC#include 'map_from_template\&.h'\fP
+.br
+\fC#include 'config\&.h'\fP
+.br
+\fC#include 'text_fb\&.h'\fP
+.br
+\fC#include 'font_types\&.h'\fP
+.br
+
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBled_blink\fP (unsigned char *led_mem_base, int scare_countdown, int pacman_score)"
+.br
+.ti -1c
+.RI "void \fBpause\fP (\fBfb_data\fP *fb, \fBperipherals_data_t\fP *peripherals)"
+.br
+.ti -1c
+.RI "bool \fBgame_tick\fP (\fBmap_data\fP *map, \fBpacman_type\fP *pacman, \fBghost_type\fP *ghost_arr, int num_ghosts, int *scare)"
+.br
+.ti -1c
+.RI "int \fBrun_game\fP (\fBgame_init_data_t\fP *game_data, \fBperipherals_data_t\fP *peripherals)"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "bool game_tick (\fBmap_data\fP * map, \fBpacman_type\fP * pacman, \fBghost_type\fP * ghost_arr, int num_ghosts, int * scare)"
+
+.SS "void led_blink (unsigned char * led_mem_base, int scare_countdown, int pacman_score)"
+
+.SS "void pause (\fBfb_data\fP * fb, \fBperipherals_data_t\fP * peripherals)"
+
+.SS "int run_game (\fBgame_init_data_t\fP * game_data, \fBperipherals_data_t\fP * peripherals)"
+
+.PP
+\fBReturns\fP
+.RS 4
+packman score 
+.RE
+.PP
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Pac-Man from the source code\&.

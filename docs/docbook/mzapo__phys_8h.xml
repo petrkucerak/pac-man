@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_mzapo__phys_8h" xml:lang="en-US">
+<title>C:/Users/Petr/Documents/apo_semestralka/mzapo_phys.h File Reference</title>
+<indexterm><primary>C:/Users/Petr/Documents/apo_semestralka/mzapo_phys.h</primary></indexterm>
+<programlisting>#include &lt;sys/types.h&gt;
+</programlisting><simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para>void * <link linkend="_mzapo__phys_8h_1a3925c5fab561521513a23e5f7ede0c9e">map_phys_address</link> (off_t region_base, size_t region_size, int opt_cached)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Function Documentation</title>
+<anchor xml:id="_mzapo__phys_8h_1a3925c5fab561521513a23e5f7ede0c9e"/>    <section>
+    <title>map_phys_address()</title>
+<indexterm><primary>map_phys_address</primary><secondary>mzapo_phys.h</secondary></indexterm>
+<indexterm><primary>mzapo_phys.h</primary><secondary>map_phys_address</secondary></indexterm>
+<para><computeroutput>void* map_phys_address (off_t region_base, size_t region_size, int opt_cached)</computeroutput></para></section>
+</section>
+</section>

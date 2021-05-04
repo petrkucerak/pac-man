@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_structread__thread__data__type" xml:lang="en-US">
+<title>read_thread_data_type Struct Reference</title>
+<indexterm><primary>read_thread_data_type</primary></indexterm>
+<para>
+<computeroutput>#include &lt;data_structures.h&gt;</computeroutput>
+</para>
+<simplesect>
+    <title>Data Fields    </title>
+        <itemizedlist>
+            <listitem><para>bool <link linkend="_structread__thread__data__type_1ac746fa6ad48d19984a159f14bec028a3">quit</link></para>
+</listitem>
+            <listitem><para>char <link linkend="_structread__thread__data__type_1a41eafad1f226f50088de23256b17f4c7">last_read</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Field Documentation</title>
+<anchor xml:id="_structread__thread__data__type_1a41eafad1f226f50088de23256b17f4c7"/>    <section>
+    <title>last_read</title>
+<indexterm><primary>last_read</primary><secondary>read_thread_data_type</secondary></indexterm>
+<indexterm><primary>read_thread_data_type</primary><secondary>last_read</secondary></indexterm>
+<para><computeroutput>char last_read</computeroutput></para>    </section><anchor xml:id="_structread__thread__data__type_1ac746fa6ad48d19984a159f14bec028a3"/>    <section>
+    <title>quit</title>
+<indexterm><primary>quit</primary><secondary>read_thread_data_type</secondary></indexterm>
+<indexterm><primary>read_thread_data_type</primary><secondary>quit</secondary></indexterm>
+<para><computeroutput>bool quit</computeroutput></para></section>
+<para>
+The documentation for this struct was generated from the following file:</para>
+C:/Users/Petr/Documents/apo_semestralka/<link linkend="_data__structures_8h">data_structures.h</link></section>
+</section>

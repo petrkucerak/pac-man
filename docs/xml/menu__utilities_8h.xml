@@ -1,0 +1,256 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="menu__utilities_8h" kind="file" language="C++">
+    <compoundname>menu_utilities.h</compoundname>
+    <includes local="no">stdbool.h</includes>
+    <includes refid="data__structures_8h" local="yes">data_structures.h</includes>
+    <includes refid="font__types_8h" local="yes">font_types.h</includes>
+    <includedby refid="apoman_8c" local="yes">C:/Users/Petr/Documents/apo_semestralka/apoman.c</includedby>
+    <includedby refid="menu__utilities_8c" local="yes">C:/Users/Petr/Documents/apo_semestralka/menu_utilities.c</includedby>
+    <incdepgraph>
+      <node id="2">
+        <label>stdbool.h</label>
+      </node>
+      <node id="6">
+        <label>map_template.h</label>
+        <link refid="map__template_8h"/>
+      </node>
+      <node id="4">
+        <label>stdint.h</label>
+      </node>
+      <node id="7">
+        <label>font_types.h</label>
+        <link refid="font__types_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>pthread.h</label>
+      </node>
+      <node id="1">
+        <label>C:/Users/Petr/Documents/apo_semestralka/menu_utilities.h</label>
+        <link refid="menu__utilities_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>data_structures.h</label>
+        <link refid="data__structures_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="3">
+        <label>C:/Users/Petr/Documents/apo_semestralka/menu_utilities.c</label>
+        <link refid="menu__utilities_8c"/>
+      </node>
+      <node id="1">
+        <label>C:/Users/Petr/Documents/apo_semestralka/menu_utilities.h</label>
+        <link refid="menu__utilities_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>C:/Users/Petr/Documents/apo_semestralka/apoman.c</label>
+        <link refid="apoman_8c"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="menu__utilities_8h_1a2313600342d821e8af28af3e2a1d3847" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void run_init_game_menu</definition>
+        <argsstring>(fb_data *frame_buff, unsigned char *lcd_mem_base, font_descriptor_t *font, peripherals_data_t peripherals)</argsstring>
+        <name>run_init_game_menu</name>
+        <param>
+          <type><ref refid="structfb__data" kindref="compound">fb_data</ref> *</type>
+          <declname>frame_buff</declname>
+        </param>
+        <param>
+          <type>unsigned char *</type>
+          <declname>lcd_mem_base</declname>
+        </param>
+        <param>
+          <type><ref refid="structfont__descriptor__t" kindref="compound">font_descriptor_t</ref> *</type>
+          <declname>font</declname>
+        </param>
+        <param>
+          <type><ref refid="structperipherals__data__t" kindref="compound">peripherals_data_t</ref></type>
+          <declname>peripherals</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>function run menu for setting game paramaters </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/menu_utilities.h" line="22" column="6" bodyfile="C:/Users/Petr/Documents/apo_semestralka/menu_utilities.c" bodystart="27" bodyend="77" declfile="C:/Users/Petr/Documents/apo_semestralka/menu_utilities.h" declline="22" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="menu__utilities_8h_1adfcc20271b3b85b0dd0bdc09d93f564d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void draw_menu</definition>
+        <argsstring>(fb_data *frame_buff, font_descriptor_t *font, game_init_data_t game_data)</argsstring>
+        <name>draw_menu</name>
+        <param>
+          <type><ref refid="structfb__data" kindref="compound">fb_data</ref> *</type>
+          <declname>frame_buff</declname>
+        </param>
+        <param>
+          <type><ref refid="structfont__descriptor__t" kindref="compound">font_descriptor_t</ref> *</type>
+          <declname>font</declname>
+        </param>
+        <param>
+          <type><ref refid="structgame__init__data__t" kindref="compound">game_init_data_t</ref></type>
+          <declname>game_data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>function to drow menu with settings to <ref refid="structfb__data" kindref="compound">fb_data</ref> (for propagate changes need to render data from buffer) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/menu_utilities.h" line="28" column="6" bodyfile="C:/Users/Petr/Documents/apo_semestralka/menu_utilities.c" bodystart="79" bodyend="92" declfile="C:/Users/Petr/Documents/apo_semestralka/menu_utilities.h" declline="28" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="menu__utilities_8h_1a01d0cde60304117e2bff9acf5d65eb3b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structgame__init__data__t" kindref="compound">game_init_data_t</ref></type>
+        <definition>game_init_data_t sub_menu_lives</definition>
+        <argsstring>(fb_data *frame_buff, unsigned char *lcd_mem_base, font_descriptor_t *font, game_init_data_t game_data)</argsstring>
+        <name>sub_menu_lives</name>
+        <param>
+          <type><ref refid="structfb__data" kindref="compound">fb_data</ref> *</type>
+          <declname>frame_buff</declname>
+        </param>
+        <param>
+          <type>unsigned char *</type>
+          <declname>lcd_mem_base</declname>
+        </param>
+        <param>
+          <type><ref refid="structfont__descriptor__t" kindref="compound">font_descriptor_t</ref> *</type>
+          <declname>font</declname>
+        </param>
+        <param>
+          <type><ref refid="structgame__init__data__t" kindref="compound">game_init_data_t</ref></type>
+          <declname>game_data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>function draw sub menu and update count of lives </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/menu_utilities.h" line="33" column="18" bodyfile="C:/Users/Petr/Documents/apo_semestralka/menu_utilities.c" bodystart="94" bodyend="122" declfile="C:/Users/Petr/Documents/apo_semestralka/menu_utilities.h" declline="33" declcolumn="18"/>
+      </memberdef>
+      <memberdef kind="function" id="menu__utilities_8h_1a7f17020b07cb4aa737c81d44893047ae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structgame__init__data__t" kindref="compound">game_init_data_t</ref></type>
+        <definition>game_init_data_t sub_menu_map</definition>
+        <argsstring>(fb_data *frame_buff, unsigned char *lcd_mem_base, font_descriptor_t *font, game_init_data_t game_data)</argsstring>
+        <name>sub_menu_map</name>
+        <param>
+          <type><ref refid="structfb__data" kindref="compound">fb_data</ref> *</type>
+          <declname>frame_buff</declname>
+        </param>
+        <param>
+          <type>unsigned char *</type>
+          <declname>lcd_mem_base</declname>
+        </param>
+        <param>
+          <type><ref refid="structfont__descriptor__t" kindref="compound">font_descriptor_t</ref> *</type>
+          <declname>font</declname>
+        </param>
+        <param>
+          <type><ref refid="structgame__init__data__t" kindref="compound">game_init_data_t</ref></type>
+          <declname>game_data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>function draw sub menu and update name of game map </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/menu_utilities.h" line="38" column="18" bodyfile="C:/Users/Petr/Documents/apo_semestralka/menu_utilities.c" bodystart="124" bodyend="163" declfile="C:/Users/Petr/Documents/apo_semestralka/menu_utilities.h" declline="38" declcolumn="18"/>
+      </memberdef>
+      <memberdef kind="function" id="menu__utilities_8h_1ac5815522d9b36c8dd08cbd65fb944d0c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structgame__init__data__t" kindref="compound">game_init_data_t</ref></type>
+        <definition>game_init_data_t sub_menu_ghosts</definition>
+        <argsstring>(fb_data *frame_buff, unsigned char *lcd_mem_base, font_descriptor_t *font, game_init_data_t game_data)</argsstring>
+        <name>sub_menu_ghosts</name>
+        <param>
+          <type><ref refid="structfb__data" kindref="compound">fb_data</ref> *</type>
+          <declname>frame_buff</declname>
+        </param>
+        <param>
+          <type>unsigned char *</type>
+          <declname>lcd_mem_base</declname>
+        </param>
+        <param>
+          <type><ref refid="structfont__descriptor__t" kindref="compound">font_descriptor_t</ref> *</type>
+          <declname>font</declname>
+        </param>
+        <param>
+          <type><ref refid="structgame__init__data__t" kindref="compound">game_init_data_t</ref></type>
+          <declname>game_data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>function draw sub menu and update count of ghosts </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/menu_utilities.h" line="43" column="18" bodyfile="C:/Users/Petr/Documents/apo_semestralka/menu_utilities.c" bodystart="165" bodyend="194" declfile="C:/Users/Petr/Documents/apo_semestralka/menu_utilities.h" declline="43" declcolumn="18"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*******************************************************************</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/><sp/>Program<sp/>to<sp/>draw<sp/>text<sp/>to<sp/>frame<sp/>buffer<sp/>on<sp/>MicroZed</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/><sp/>based<sp/>MZ_APO<sp/>board<sp/>designed<sp/>by<sp/>Petr<sp/>Porazil<sp/>at<sp/>PiKRON</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"></highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/><sp/>menu_utilites.h<sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>functions<sp/>for<sp/>settings<sp/>game</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"></highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/><sp/>(C)<sp/>Copyright<sp/>2021<sp/>by<sp/>Petr<sp/>Kucera</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>e-mail:<sp/><sp/><sp/>kucerp28@fel.cvut.cz</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>license:<sp/><sp/>any<sp/>combination<sp/>of<sp/>GPL,<sp/>LGPL,<sp/>MPL<sp/>or<sp/>BSD<sp/>licenses</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"></highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*******************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdbool.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="data__structures_8h" kindref="compound">data_structures.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="font__types_8h" kindref="compound">font_types.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>MENU_UTILITIES_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MENU_UTILITIES_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="menu__utilities_8h_1a2313600342d821e8af28af3e2a1d3847" kindref="member">run_init_game_menu</ref>(<ref refid="structfb__data" kindref="compound">fb_data</ref><sp/>*frame_buff,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*lcd_mem_base,<sp/><ref refid="structfont__descriptor__t" kindref="compound">font_descriptor_t</ref><sp/>*font,<sp/><ref refid="structperipherals__data__t" kindref="compound">peripherals_data_t</ref><sp/>peripherals);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="menu__utilities_8h_1adfcc20271b3b85b0dd0bdc09d93f564d" kindref="member">draw_menu</ref>(<ref refid="structfb__data" kindref="compound">fb_data</ref><sp/>*frame_buff,<sp/><ref refid="structfont__descriptor__t" kindref="compound">font_descriptor_t</ref><sp/>*font,<sp/><ref refid="structgame__init__data__t" kindref="compound">game_init_data_t</ref><sp/>game_data);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><ref refid="structgame__init__data__t" kindref="compound">game_init_data_t</ref><sp/><ref refid="menu__utilities_8h_1a01d0cde60304117e2bff9acf5d65eb3b" kindref="member">sub_menu_lives</ref>(<ref refid="structfb__data" kindref="compound">fb_data</ref><sp/>*frame_buff,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*lcd_mem_base,<sp/><ref refid="structfont__descriptor__t" kindref="compound">font_descriptor_t</ref><sp/>*font,<sp/><ref refid="structgame__init__data__t" kindref="compound">game_init_data_t</ref><sp/>game_data);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><ref refid="structgame__init__data__t" kindref="compound">game_init_data_t</ref><sp/><ref refid="menu__utilities_8h_1a7f17020b07cb4aa737c81d44893047ae" kindref="member">sub_menu_map</ref>(<ref refid="structfb__data" kindref="compound">fb_data</ref><sp/>*frame_buff,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*lcd_mem_base,<sp/><ref refid="structfont__descriptor__t" kindref="compound">font_descriptor_t</ref><sp/>*font,<sp/><ref refid="structgame__init__data__t" kindref="compound">game_init_data_t</ref><sp/>game_data);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><ref refid="structgame__init__data__t" kindref="compound">game_init_data_t</ref><sp/><ref refid="menu__utilities_8h_1ac5815522d9b36c8dd08cbd65fb944d0c" kindref="member">sub_menu_ghosts</ref>(<ref refid="structfb__data" kindref="compound">fb_data</ref><sp/>*frame_buff,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*lcd_mem_base,<sp/><ref refid="structfont__descriptor__t" kindref="compound">font_descriptor_t</ref><sp/>*font,<sp/><ref refid="structgame__init__data__t" kindref="compound">game_init_data_t</ref><sp/>game_data);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/Petr/Documents/apo_semestralka/menu_utilities.h"/>
+  </compounddef>
+</doxygen>

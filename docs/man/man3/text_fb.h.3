@@ -1,0 +1,47 @@
+.TH "C:/Users/Petr/Documents/apo_semestralka/text_fb.h" 3 "Tue May 4 2021" "Version 1.0.0" "Pac-Man" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+C:/Users/Petr/Documents/apo_semestralka/text_fb.h
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'data_structures\&.h'\fP
+.br
+\fC#include 'font_types\&.h'\fP
+.br
+
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBdraw_char\fP (\fBfb_data\fP *frame, char letter, int x, int y, int scale, \fBfont_descriptor_t\fP *font, uint16_t color)"
+.br
+.ti -1c
+.RI "int \fBchar_width\fP (\fBfont_descriptor_t\fP *fdes, int letter)"
+.br
+.ti -1c
+.RI "uint32_t \fBchar_offset\fP (\fBfont_descriptor_t\fP *fdes, char letter)"
+.br
+.ti -1c
+.RI "void \fBdraw_text\fP (\fBfb_data\fP *frame, char *text, int x, int y, int scale, \fBfont_descriptor_t\fP *font, uint16_t color)"
+.br
+.ti -1c
+.RI "void \fBdraw_text_center\fP (\fBfb_data\fP *frame, char *text, int x, int y, int scale, \fBfont_descriptor_t\fP *font, uint16_t color)"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "uint32_t char_offset (\fBfont_descriptor_t\fP * fdes, char letter)"
+returns offset in font bitmap data 
+.SS "int char_width (\fBfont_descriptor_t\fP * fdes, int letter)"
+returns width of character 
+.SS "void draw_char (\fBfb_data\fP * frame, char letter, int x, int y, int scale, \fBfont_descriptor_t\fP * font, uint16_t color)"
+function to draw char, left upper edge is at x, y 
+.SS "void draw_text (\fBfb_data\fP * frame, char * text, int x, int y, int scale, \fBfont_descriptor_t\fP * font, uint16_t color)"
+draws text to frame buffer, left upper edge is at x, y 
+.SS "void draw_text_center (\fBfb_data\fP * frame, char * text, int x, int y, int scale, \fBfont_descriptor_t\fP * font, uint16_t color)"
+draws text to frame buffer, centre of text is at x, y 
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Pac-Man from the source code\&.

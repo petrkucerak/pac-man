@@ -1,0 +1,196 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="ghost_8h" kind="file" language="C++">
+    <compoundname>ghost.h</compoundname>
+    <includes refid="data__structures_8h" local="yes">data_structures.h</includes>
+    <includedby refid="game_8h" local="yes">C:/Users/Petr/Documents/apo_semestralka/game.h</includedby>
+    <includedby refid="ghost_8c" local="yes">C:/Users/Petr/Documents/apo_semestralka/ghost.c</includedby>
+    <incdepgraph>
+      <node id="4">
+        <label>stdbool.h</label>
+      </node>
+      <node id="6">
+        <label>map_template.h</label>
+        <link refid="map__template_8h"/>
+      </node>
+      <node id="3">
+        <label>stdint.h</label>
+      </node>
+      <node id="1">
+        <label>C:/Users/Petr/Documents/apo_semestralka/ghost.h</label>
+        <link refid="ghost_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>pthread.h</label>
+      </node>
+      <node id="2">
+        <label>data_structures.h</label>
+        <link refid="data__structures_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="4">
+        <label>C:/Users/Petr/Documents/apo_semestralka/game.c</label>
+        <link refid="game_8c"/>
+      </node>
+      <node id="2">
+        <label>C:/Users/Petr/Documents/apo_semestralka/game.h</label>
+        <link refid="game_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>C:/Users/Petr/Documents/apo_semestralka/ghost.c</label>
+        <link refid="ghost_8c"/>
+      </node>
+      <node id="1">
+        <label>C:/Users/Petr/Documents/apo_semestralka/ghost.h</label>
+        <link refid="ghost_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>C:/Users/Petr/Documents/apo_semestralka/menu_utilities.c</label>
+        <link refid="menu__utilities_8c"/>
+      </node>
+      <node id="3">
+        <label>C:/Users/Petr/Documents/apo_semestralka/apoman.c</label>
+        <link refid="apoman_8c"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structmoves__costs__t" prot="public">moves_costs_t</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="ghost_8h_1a14b4ae2c797e212ae5255036c699676a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="structghost__type" kindref="compound">ghost_type</ref></type>
+        <definition>ghost_type create_ghost</definition>
+        <argsstring>(map_data *map, int ghost_nr)</argsstring>
+        <name>create_ghost</name>
+        <param>
+          <type><ref refid="structmap__data" kindref="compound">map_data</ref> *</type>
+          <declname>map</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>ghost_nr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/ghost.h" line="25" column="12" bodyfile="C:/Users/Petr/Documents/apo_semestralka/ghost.c" bodystart="123" bodyend="134" declfile="C:/Users/Petr/Documents/apo_semestralka/ghost.h" declline="25" declcolumn="12"/>
+      </memberdef>
+      <memberdef kind="function" id="ghost_8h_1a5a6a4ea7a54730dd11640485ca265353" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void draw_ghost</definition>
+        <argsstring>(fb_data *fb, ghost_type *ghost, map_data *map)</argsstring>
+        <name>draw_ghost</name>
+        <param>
+          <type><ref refid="structfb__data" kindref="compound">fb_data</ref> *</type>
+          <declname>fb</declname>
+        </param>
+        <param>
+          <type><ref refid="structghost__type" kindref="compound">ghost_type</ref> *</type>
+          <declname>ghost</declname>
+        </param>
+        <param>
+          <type><ref refid="structmap__data" kindref="compound">map_data</ref> *</type>
+          <declname>map</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/ghost.h" line="30" column="6" bodyfile="C:/Users/Petr/Documents/apo_semestralka/ghost.c" bodystart="111" bodyend="121" declfile="C:/Users/Petr/Documents/apo_semestralka/ghost.h" declline="30" declcolumn="6"/>
+      </memberdef>
+      <memberdef kind="function" id="ghost_8h_1ae10703308badbc547da248d1dddcd699" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool ghost_move</definition>
+        <argsstring>(ghost_type *ghost, map_data *map, pacman_type *pacman)</argsstring>
+        <name>ghost_move</name>
+        <param>
+          <type><ref refid="structghost__type" kindref="compound">ghost_type</ref> *</type>
+          <declname>ghost</declname>
+        </param>
+        <param>
+          <type><ref refid="structmap__data" kindref="compound">map_data</ref> *</type>
+          <declname>map</declname>
+        </param>
+        <param>
+          <type><ref refid="structpacman__type" kindref="compound">pacman_type</ref> *</type>
+          <declname>pacman</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/ghost.h" line="35" column="6" bodyfile="C:/Users/Petr/Documents/apo_semestralka/ghost.c" bodystart="32" bodyend="78" declfile="C:/Users/Petr/Documents/apo_semestralka/ghost.h" declline="35" declcolumn="6"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*******************************************************************</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/><sp/>All<sp/>inportant<sp/>functions<sp/>for<sp/>ghost<sp/>on<sp/>MicroZed</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/><sp/>based<sp/>MZ_APO<sp/>board<sp/>designed<sp/>by<sp/>Petr<sp/>Porazil<sp/>at<sp/>PiKRON</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"></highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/><sp/>ghost.h<sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>all<sp/>important<sp/>functions<sp/>for<sp/>ghost</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"></highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/><sp/>(C)<sp/>Copyright<sp/>2021<sp/>by<sp/>Lukas<sp/>Nejezchleb</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>e-mail:<sp/><sp/><sp/>nejezluk@fel.cvut.cz</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>license:<sp/><sp/>any<sp/>combination<sp/>of<sp/>GPL,<sp/>LGPL,<sp/>MPL<sp/>or<sp/>BSD<sp/>licenses</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"></highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*******************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>GHOST_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GHOST_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="data__structures_8h" kindref="compound">data_structures.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="comment">//internal<sp/>data<sp/>structure</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="structmoves__costs__t" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="19" refid="structmoves__costs__t_1a6f3eaf7f9f7ef92ed9e838cf68763444" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="structcoords" kindref="compound">coords</ref><sp/><ref refid="structmoves__costs__t_1a6f3eaf7f9f7ef92ed9e838cf68763444" kindref="member">dir</ref>;</highlight></codeline>
+<codeline lineno="20" refid="structmoves__costs__t_1a66700f11d42fee2413e58dbf49c43ee1" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structmoves__costs__t_1a66700f11d42fee2413e58dbf49c43ee1" kindref="member">cost</ref>;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal">}<sp/><ref refid="structmoves__costs__t" kindref="compound">moves_costs_t</ref>;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="23"><highlight class="comment">returns<sp/>ghost<sp/>structure</highlight></codeline>
+<codeline lineno="24"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><ref refid="structghost__type" kindref="compound">ghost_type</ref><sp/><ref refid="ghost_8h_1a14b4ae2c797e212ae5255036c699676a" kindref="member">create_ghost</ref>(<ref refid="structmap__data" kindref="compound">map_data</ref><sp/>*map,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ghost_nr);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="28"><highlight class="comment">draws<sp/>the<sp/>ghost</highlight></codeline>
+<codeline lineno="29"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="ghost_8h_1a5a6a4ea7a54730dd11640485ca265353" kindref="member">draw_ghost</ref>(<ref refid="structfb__data" kindref="compound">fb_data</ref><sp/>*fb,<sp/><ref refid="structghost__type" kindref="compound">ghost_type</ref><sp/>*ghost,<sp/><ref refid="structmap__data" kindref="compound">map_data</ref><sp/>*map);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="33"><highlight class="comment">moves<sp/>the<sp/>ghost,<sp/>returns<sp/>true<sp/>if<sp/>pacman<sp/>was<sp/>eaten<sp/>by<sp/>the<sp/>ghost</highlight></codeline>
+<codeline lineno="34"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="ghost_8h_1ae10703308badbc547da248d1dddcd699" kindref="member">ghost_move</ref>(<ref refid="structghost__type" kindref="compound">ghost_type</ref><sp/>*ghost,<sp/><ref refid="structmap__data" kindref="compound">map_data</ref><sp/>*map,<sp/><ref refid="structpacman__type" kindref="compound">pacman_type</ref><sp/>*pacman);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/Petr/Documents/apo_semestralka/ghost.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,64 @@
+\hypertarget{ghost_8c}{}\doxysection{C\+:/\+Users/\+Petr/\+Documents/apo\+\_\+semestralka/ghost.c File Reference}
+\label{ghost_8c}\index{C:/Users/Petr/Documents/apo\_semestralka/ghost.c@{C:/Users/Petr/Documents/apo\_semestralka/ghost.c}}
+{\ttfamily \#include \char`\"{}ghost.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}data\+\_\+structures.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}draw\+\_\+shapes.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}map\+\_\+from\+\_\+template.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}config.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$stdbool.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{ghost_8c_a25d891c687c3f7006638701ab4856d35}{ghost\+\_\+can\+\_\+move}} (\mbox{\hyperlink{structghost__type}{ghost\+\_\+type}} $\ast$ghost, int dirx, int diry, \mbox{\hyperlink{structmap__data}{map\+\_\+data}} $\ast$map)
+\item 
+int \mbox{\hyperlink{ghost_8c_aea3ea3ec6383019544b3e889015fc6d0}{create\+\_\+moves}} (\mbox{\hyperlink{structmoves__costs__t}{moves\+\_\+costs\+\_\+t}} $\ast$moves\+\_\+arr, \mbox{\hyperlink{structghost__type}{ghost\+\_\+type}} $\ast$ghost, \mbox{\hyperlink{structmap__data}{map\+\_\+data}} $\ast$map, \mbox{\hyperlink{structpacman__type}{pacman\+\_\+type}} $\ast$pacman)
+\item 
+void \mbox{\hyperlink{ghost_8c_a5384f018ac62b15c7f5e61d662a0e51c}{change\+\_\+direction}} (\mbox{\hyperlink{structghost__type}{ghost\+\_\+type}} $\ast$ghost, int possibilities, \mbox{\hyperlink{structmoves__costs__t}{moves\+\_\+costs\+\_\+t}} $\ast$moves\+\_\+options)
+\item 
+bool \mbox{\hyperlink{ghost_8c_ae10703308badbc547da248d1dddcd699}{ghost\+\_\+move}} (\mbox{\hyperlink{structghost__type}{ghost\+\_\+type}} $\ast$ghost, \mbox{\hyperlink{structmap__data}{map\+\_\+data}} $\ast$map, \mbox{\hyperlink{structpacman__type}{pacman\+\_\+type}} $\ast$pacman)
+\item 
+void \mbox{\hyperlink{ghost_8c_a5a6a4ea7a54730dd11640485ca265353}{draw\+\_\+ghost}} (\mbox{\hyperlink{structfb__data}{fb\+\_\+data}} $\ast$fb, \mbox{\hyperlink{structghost__type}{ghost\+\_\+type}} $\ast$ghost, \mbox{\hyperlink{structmap__data}{map\+\_\+data}} $\ast$map)
+\item 
+\mbox{\hyperlink{structghost__type}{ghost\+\_\+type}} \mbox{\hyperlink{ghost_8c_a14b4ae2c797e212ae5255036c699676a}{create\+\_\+ghost}} (\mbox{\hyperlink{structmap__data}{map\+\_\+data}} $\ast$map, int ghost\+\_\+nr)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{ghost_8c_a5384f018ac62b15c7f5e61d662a0e51c}\label{ghost_8c_a5384f018ac62b15c7f5e61d662a0e51c}} 
+\index{ghost.c@{ghost.c}!change\_direction@{change\_direction}}
+\index{change\_direction@{change\_direction}!ghost.c@{ghost.c}}
+\doxysubsubsection{\texorpdfstring{change\_direction()}{change\_direction()}}
+{\footnotesize\ttfamily void change\+\_\+direction (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structghost__type}{ghost\+\_\+type}} $\ast$}]{ghost,  }\item[{int}]{possibilities,  }\item[{\mbox{\hyperlink{structmoves__costs__t}{moves\+\_\+costs\+\_\+t}} $\ast$}]{moves\+\_\+options }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{ghost_8c_a14b4ae2c797e212ae5255036c699676a}\label{ghost_8c_a14b4ae2c797e212ae5255036c699676a}} 
+\index{ghost.c@{ghost.c}!create\_ghost@{create\_ghost}}
+\index{create\_ghost@{create\_ghost}!ghost.c@{ghost.c}}
+\doxysubsubsection{\texorpdfstring{create\_ghost()}{create\_ghost()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structghost__type}{ghost\+\_\+type}} create\+\_\+ghost (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structmap__data}{map\+\_\+data}} $\ast$}]{map,  }\item[{int}]{ghost\+\_\+nr }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{ghost_8c_aea3ea3ec6383019544b3e889015fc6d0}\label{ghost_8c_aea3ea3ec6383019544b3e889015fc6d0}} 
+\index{ghost.c@{ghost.c}!create\_moves@{create\_moves}}
+\index{create\_moves@{create\_moves}!ghost.c@{ghost.c}}
+\doxysubsubsection{\texorpdfstring{create\_moves()}{create\_moves()}}
+{\footnotesize\ttfamily int create\+\_\+moves (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structmoves__costs__t}{moves\+\_\+costs\+\_\+t}} $\ast$}]{moves\+\_\+arr,  }\item[{\mbox{\hyperlink{structghost__type}{ghost\+\_\+type}} $\ast$}]{ghost,  }\item[{\mbox{\hyperlink{structmap__data}{map\+\_\+data}} $\ast$}]{map,  }\item[{\mbox{\hyperlink{structpacman__type}{pacman\+\_\+type}} $\ast$}]{pacman }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{ghost_8c_a5a6a4ea7a54730dd11640485ca265353}\label{ghost_8c_a5a6a4ea7a54730dd11640485ca265353}} 
+\index{ghost.c@{ghost.c}!draw\_ghost@{draw\_ghost}}
+\index{draw\_ghost@{draw\_ghost}!ghost.c@{ghost.c}}
+\doxysubsubsection{\texorpdfstring{draw\_ghost()}{draw\_ghost()}}
+{\footnotesize\ttfamily void draw\+\_\+ghost (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structfb__data}{fb\+\_\+data}} $\ast$}]{fb,  }\item[{\mbox{\hyperlink{structghost__type}{ghost\+\_\+type}} $\ast$}]{ghost,  }\item[{\mbox{\hyperlink{structmap__data}{map\+\_\+data}} $\ast$}]{map }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{ghost_8c_a25d891c687c3f7006638701ab4856d35}\label{ghost_8c_a25d891c687c3f7006638701ab4856d35}} 
+\index{ghost.c@{ghost.c}!ghost\_can\_move@{ghost\_can\_move}}
+\index{ghost\_can\_move@{ghost\_can\_move}!ghost.c@{ghost.c}}
+\doxysubsubsection{\texorpdfstring{ghost\_can\_move()}{ghost\_can\_move()}}
+{\footnotesize\ttfamily bool ghost\+\_\+can\+\_\+move (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structghost__type}{ghost\+\_\+type}} $\ast$}]{ghost,  }\item[{int}]{dirx,  }\item[{int}]{diry,  }\item[{\mbox{\hyperlink{structmap__data}{map\+\_\+data}} $\ast$}]{map }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{ghost_8c_ae10703308badbc547da248d1dddcd699}\label{ghost_8c_ae10703308badbc547da248d1dddcd699}} 
+\index{ghost.c@{ghost.c}!ghost\_move@{ghost\_move}}
+\index{ghost\_move@{ghost\_move}!ghost.c@{ghost.c}}
+\doxysubsubsection{\texorpdfstring{ghost\_move()}{ghost\_move()}}
+{\footnotesize\ttfamily bool ghost\+\_\+move (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structghost__type}{ghost\+\_\+type}} $\ast$}]{ghost,  }\item[{\mbox{\hyperlink{structmap__data}{map\+\_\+data}} $\ast$}]{map,  }\item[{\mbox{\hyperlink{structpacman__type}{pacman\+\_\+type}} $\ast$}]{pacman }\end{DoxyParamCaption})}
+

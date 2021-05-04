@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_final__score_8c" xml:lang="en-US">
+<title>C:/Users/Petr/Documents/apo_semestralka/final_score.c File Reference</title>
+<indexterm><primary>C:/Users/Petr/Documents/apo_semestralka/final_score.c</primary></indexterm>
+<programlisting>#include &lt;stdio.h&gt;
+#include &quot;final_score.h&quot;
+#include &quot;data_structures.h&quot;
+#include &quot;draw_shapes.h&quot;
+#include &quot;update_peripherals.h&quot;
+#include &quot;text_fb.h&quot;
+#include &lt;unistd.h&gt;
+</programlisting><simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para>bool <link linkend="_final__score_8c_1a781cab829dad372f9f55089f57a85df0">draw_final_score</link> (int score, <link linkend="_structfb__data">fb_data</link> *frame_buff, unsigned char *lcd_mem_base, <link linkend="_structfont__descriptor__t">font_descriptor_t</link> *font)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Function Documentation</title>
+<anchor xml:id="_final__score_8c_1a781cab829dad372f9f55089f57a85df0"/>    <section>
+    <title>draw_final_score()</title>
+<indexterm><primary>draw_final_score</primary><secondary>final_score.c</secondary></indexterm>
+<indexterm><primary>final_score.c</primary><secondary>draw_final_score</secondary></indexterm>
+<para><computeroutput>bool draw_final_score (int score, <link linkend="_structfb__data">fb_data</link> * frame_buff, unsigned char * lcd_mem_base, <link linkend="_structfont__descriptor__t">font_descriptor_t</link> * font)</computeroutput></para>
+<para>function draw final score <formalpara><title>Returns</title>
+
+<para>false - quit game; true - play game again </para>
+</formalpara>
+</para>
+</section>
+</section>
+</section>

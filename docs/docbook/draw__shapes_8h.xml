@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_draw__shapes_8h" xml:lang="en-US">
+<title>C:/Users/Petr/Documents/apo_semestralka/draw_shapes.h File Reference</title>
+<indexterm><primary>C:/Users/Petr/Documents/apo_semestralka/draw_shapes.h</primary></indexterm>
+<programlisting>#include &quot;data_structures.h&quot;
+</programlisting><simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para>void <link linkend="_draw__shapes_8h_1a44ae4e3d2c0aa9c951284b6414ae6527">draw_circle</link> (<link linkend="_structfb__data">fb_data</link> *frame, int x, int y, int radius, uint16_t color)</para>
+</listitem>
+            <listitem><para>void <link linkend="_draw__shapes_8h_1a559a33154244f0ee1523958f44421c48">draw_rectangle</link> (<link linkend="_structfb__data">fb_data</link> *frame, int x, int y, int width, int height, uint16_t color)</para>
+</listitem>
+            <listitem><para>void <link linkend="_draw__shapes_8h_1a6d5b7bfa9cee0ff7724230c622354531">set_background</link> (<link linkend="_structfb__data">fb_data</link> *frame, uint16_t color)</para>
+</listitem>
+            <listitem><para>void <link linkend="_draw__shapes_8h_1a93686d02b452d0aa3a5b050bf1f92c82">draw_ghost_shape</link> (<link linkend="_structfb__data">fb_data</link> *frame, int x, int y, int scale, uint16_t color)</para>
+</listitem>
+            <listitem><para>void <link linkend="_draw__shapes_8h_1a530d11a612c21d12b57752d57d91a3ff">draw_pacman_dir</link> (<link linkend="_structfb__data">fb_data</link> *frame, int x, int y, int radius, uint16_t color, int direction)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Function Documentation</title>
+<anchor xml:id="_draw__shapes_8h_1a44ae4e3d2c0aa9c951284b6414ae6527"/>    <section>
+    <title>draw_circle()</title>
+<indexterm><primary>draw_circle</primary><secondary>draw_shapes.h</secondary></indexterm>
+<indexterm><primary>draw_shapes.h</primary><secondary>draw_circle</secondary></indexterm>
+<para><computeroutput>void draw_circle (<link linkend="_structfb__data">fb_data</link> * frame, int x, int y, int radius, uint16_t color)</computeroutput></para>
+<para>function to draw circle to <link linkend="_structfb__data">fb_data</link> frame at x,y with radius and color </para>
+    </section><anchor xml:id="_draw__shapes_8h_1a93686d02b452d0aa3a5b050bf1f92c82"/>    <section>
+    <title>draw_ghost_shape()</title>
+<indexterm><primary>draw_ghost_shape</primary><secondary>draw_shapes.h</secondary></indexterm>
+<indexterm><primary>draw_shapes.h</primary><secondary>draw_ghost_shape</secondary></indexterm>
+<para><computeroutput>void draw_ghost_shape (<link linkend="_structfb__data">fb_data</link> * frame, int x, int y, int scale, uint16_t color)</computeroutput></para>
+<para>draws the ghost shape to fb </para>
+    </section><anchor xml:id="_draw__shapes_8h_1a530d11a612c21d12b57752d57d91a3ff"/>    <section>
+    <title>draw_pacman_dir()</title>
+<indexterm><primary>draw_pacman_dir</primary><secondary>draw_shapes.h</secondary></indexterm>
+<indexterm><primary>draw_shapes.h</primary><secondary>draw_pacman_dir</secondary></indexterm>
+<para><computeroutput>void draw_pacman_dir (<link linkend="_structfb__data">fb_data</link> * frame, int x, int y, int radius, uint16_t color, int direction)</computeroutput></para>    </section><anchor xml:id="_draw__shapes_8h_1a559a33154244f0ee1523958f44421c48"/>    <section>
+    <title>draw_rectangle()</title>
+<indexterm><primary>draw_rectangle</primary><secondary>draw_shapes.h</secondary></indexterm>
+<indexterm><primary>draw_shapes.h</primary><secondary>draw_rectangle</secondary></indexterm>
+<para><computeroutput>void draw_rectangle (<link linkend="_structfb__data">fb_data</link> * frame, int x, int y, int width, int height, uint16_t color)</computeroutput></para>
+<para>function to draw rectangle to <link linkend="_structfb__data">fb_data</link> frame at x,y with width and height and color </para>
+    </section><anchor xml:id="_draw__shapes_8h_1a6d5b7bfa9cee0ff7724230c622354531"/>    <section>
+    <title>set_background()</title>
+<indexterm><primary>set_background</primary><secondary>draw_shapes.h</secondary></indexterm>
+<indexterm><primary>draw_shapes.h</primary><secondary>set_background</secondary></indexterm>
+<para><computeroutput>void set_background (<link linkend="_structfb__data">fb_data</link> * frame, uint16_t color)</computeroutput></para>
+<para>sets background to certain color </para>
+</section>
+</section>
+</section>

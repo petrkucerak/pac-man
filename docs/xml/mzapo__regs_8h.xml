@@ -1,0 +1,649 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="mzapo__regs_8h" kind="file" language="C++">
+    <compoundname>mzapo_regs.h</compoundname>
+    <includedby refid="apoman_8c" local="yes">C:/Users/Petr/Documents/apo_semestralka/apoman.c</includedby>
+    <includedby refid="mzapo__parlcd_8c" local="yes">C:/Users/Petr/Documents/apo_semestralka/mzapo_parlcd.c</includedby>
+    <includedby refid="update__peripherals_8c" local="yes">C:/Users/Petr/Documents/apo_semestralka/update_peripherals.c</includedby>
+    <invincdepgraph>
+      <node id="4">
+        <label>C:/Users/Petr/Documents/apo_semestralka/update_peripherals.c</label>
+        <link refid="update__peripherals_8c"/>
+      </node>
+      <node id="3">
+        <label>C:/Users/Petr/Documents/apo_semestralka/mzapo_parlcd.c</label>
+        <link refid="mzapo__parlcd_8c"/>
+      </node>
+      <node id="2">
+        <label>C:/Users/Petr/Documents/apo_semestralka/apoman.c</label>
+        <link refid="apoman_8c"/>
+      </node>
+      <node id="1">
+        <label>C:/Users/Petr/Documents/apo_semestralka/mzapo_regs.h</label>
+        <link refid="mzapo__regs_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="mzapo__regs_8h_1afcfd8685e0ac231c4a5930526e9b311f" prot="public" static="no">
+        <name>SPILED_REG_BASE_PHYS</name>
+        <initializer>0x43c40000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/mzapo_regs.h" line="32" column="9" bodyfile="C:/Users/Petr/Documents/apo_semestralka/mzapo_regs.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mzapo__regs_8h_1a7bdc4010481bbecbb542c2df9a61a17b" prot="public" static="no">
+        <name>SPILED_REG_SIZE</name>
+        <initializer>0x00004000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/mzapo_regs.h" line="33" column="9" bodyfile="C:/Users/Petr/Documents/apo_semestralka/mzapo_regs.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mzapo__regs_8h_1aa421b3b6aad9fdc70be0f2f75ef0383e" prot="public" static="no">
+        <name>SPILED_REG_LED_LINE_o</name>
+        <initializer>0x004</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/mzapo_regs.h" line="35" column="9" bodyfile="C:/Users/Petr/Documents/apo_semestralka/mzapo_regs.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mzapo__regs_8h_1a471398ab797101dfd7a1a2d96e9a518a" prot="public" static="no">
+        <name>SPILED_REG_LED_RGB1_o</name>
+        <initializer>0x010</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/mzapo_regs.h" line="36" column="9" bodyfile="C:/Users/Petr/Documents/apo_semestralka/mzapo_regs.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mzapo__regs_8h_1a7b24a79dbfff0cab06021c259e967d6e" prot="public" static="no">
+        <name>SPILED_REG_LED_RGB2_o</name>
+        <initializer>0x014</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/mzapo_regs.h" line="37" column="9" bodyfile="C:/Users/Petr/Documents/apo_semestralka/mzapo_regs.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mzapo__regs_8h_1a61459fb4918e393901b563480ed3e488" prot="public" static="no">
+        <name>SPILED_REG_LED_KBDWR_DIRECT_o</name>
+        <initializer>0x018</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/mzapo_regs.h" line="38" column="9" bodyfile="C:/Users/Petr/Documents/apo_semestralka/mzapo_regs.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mzapo__regs_8h_1af6d1d4ce0d517dc471395671faae19c1" prot="public" static="no">
+        <name>SPILED_REG_KBDRD_KNOBS_DIRECT_o</name>
+        <initializer>0x020</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/mzapo_regs.h" line="40" column="9" bodyfile="C:/Users/Petr/Documents/apo_semestralka/mzapo_regs.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mzapo__regs_8h_1a9659b6d0a4356a769b9e8f025ab4f361" prot="public" static="no">
+        <name>SPILED_REG_KNOBS_8BIT_o</name>
+        <initializer>0x024</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/mzapo_regs.h" line="41" column="9" bodyfile="C:/Users/Petr/Documents/apo_semestralka/mzapo_regs.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mzapo__regs_8h_1ae34ff3f28093ee8dce3048aeecddeb37" prot="public" static="no">
+        <name>PARLCD_REG_BASE_PHYS</name>
+        <initializer>0x43c00000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/mzapo_regs.h" line="45" column="9" bodyfile="C:/Users/Petr/Documents/apo_semestralka/mzapo_regs.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mzapo__regs_8h_1a86f33c44ef575912f459a11807e0e06d" prot="public" static="no">
+        <name>PARLCD_REG_SIZE</name>
+        <initializer>0x00004000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/mzapo_regs.h" line="46" column="9" bodyfile="C:/Users/Petr/Documents/apo_semestralka/mzapo_regs.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mzapo__regs_8h_1a8347b977e4f5a5a6b22327e398e09df8" prot="public" static="no">
+        <name>PARLCD_REG_CR_o</name>
+        <initializer>0x0000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/mzapo_regs.h" line="48" column="9" bodyfile="C:/Users/Petr/Documents/apo_semestralka/mzapo_regs.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mzapo__regs_8h_1aefc26fdda7c66aac73e6fcb7610cdc5d" prot="public" static="no">
+        <name>PARLCD_REG_CR_RESET_m</name>
+        <initializer>0x00000002</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/mzapo_regs.h" line="49" column="9" bodyfile="C:/Users/Petr/Documents/apo_semestralka/mzapo_regs.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mzapo__regs_8h_1aaec731d1269f911eebe67a27d4fd2e70" prot="public" static="no">
+        <name>PARLCD_REG_CMD_o</name>
+        <initializer>0x0008</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/mzapo_regs.h" line="50" column="9" bodyfile="C:/Users/Petr/Documents/apo_semestralka/mzapo_regs.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mzapo__regs_8h_1ad110747a1220ac55aadc403efc501b8f" prot="public" static="no">
+        <name>PARLCD_REG_DATA_o</name>
+        <initializer>0x000C</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/mzapo_regs.h" line="51" column="9" bodyfile="C:/Users/Petr/Documents/apo_semestralka/mzapo_regs.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mzapo__regs_8h_1ae67577b74c64969ccc7fa22d53e8cb39" prot="public" static="no">
+        <name>SERVOPS2_REG_BASE_PHYS</name>
+        <initializer>0x43c50000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/mzapo_regs.h" line="55" column="9" bodyfile="C:/Users/Petr/Documents/apo_semestralka/mzapo_regs.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mzapo__regs_8h_1a853db0a52f5fd5670afa705751609413" prot="public" static="no">
+        <name>SERVOPS2_REG_SIZE</name>
+        <initializer>0x4000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/mzapo_regs.h" line="56" column="9" bodyfile="C:/Users/Petr/Documents/apo_semestralka/mzapo_regs.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mzapo__regs_8h_1afb8c1282ebc34ccbe316b1119f07581a" prot="public" static="no">
+        <name>SERVOPS2_REG_CR_o</name>
+        <initializer>0x0000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/mzapo_regs.h" line="58" column="9" bodyfile="C:/Users/Petr/Documents/apo_semestralka/mzapo_regs.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mzapo__regs_8h_1a16737347121cb524ae6ca45225c094c9" prot="public" static="no">
+        <name>SERVOPS2_REG_PWMPER_o</name>
+        <initializer>0x000C</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/mzapo_regs.h" line="59" column="9" bodyfile="C:/Users/Petr/Documents/apo_semestralka/mzapo_regs.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mzapo__regs_8h_1a4b6eb6d360055d5f91e1cef44ebb3942" prot="public" static="no">
+        <name>SERVOPS2_REG_PWM1_o</name>
+        <initializer>0x0010</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/mzapo_regs.h" line="60" column="9" bodyfile="C:/Users/Petr/Documents/apo_semestralka/mzapo_regs.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mzapo__regs_8h_1a26656019c3471913ac49cb87e71c75f8" prot="public" static="no">
+        <name>SERVOPS2_REG_PWM2_o</name>
+        <initializer>0x0014</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/mzapo_regs.h" line="61" column="9" bodyfile="C:/Users/Petr/Documents/apo_semestralka/mzapo_regs.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mzapo__regs_8h_1aa077e6d381f95ca143b52dc71df86eac" prot="public" static="no">
+        <name>SERVOPS2_REG_PWM3_o</name>
+        <initializer>0x0018</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/mzapo_regs.h" line="62" column="9" bodyfile="C:/Users/Petr/Documents/apo_semestralka/mzapo_regs.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mzapo__regs_8h_1aaba7c02dcc7939f280bb24d39d5264a5" prot="public" static="no">
+        <name>SERVOPS2_REG_PWM4_o</name>
+        <initializer>0x001C</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/mzapo_regs.h" line="63" column="9" bodyfile="C:/Users/Petr/Documents/apo_semestralka/mzapo_regs.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mzapo__regs_8h_1a462edfe9365bcbd8b6f710c97fdd0c7d" prot="public" static="no">
+        <name>AUDIOPWM_REG_BASE_PHYS</name>
+        <initializer>0x43c60000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/mzapo_regs.h" line="67" column="9" bodyfile="C:/Users/Petr/Documents/apo_semestralka/mzapo_regs.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mzapo__regs_8h_1a67d99aee0dc41d9958883536a1e66616" prot="public" static="no">
+        <name>AUDIOPWM_REG_SIZE</name>
+        <initializer>0x4000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/mzapo_regs.h" line="68" column="9" bodyfile="C:/Users/Petr/Documents/apo_semestralka/mzapo_regs.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mzapo__regs_8h_1a357ae4e6cec3b00dfa3a22b6ccce2193" prot="public" static="no">
+        <name>AUDIOPWM_REG_CR_o</name>
+        <initializer>0x0000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/mzapo_regs.h" line="70" column="9" bodyfile="C:/Users/Petr/Documents/apo_semestralka/mzapo_regs.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mzapo__regs_8h_1a3288e58da4ac16e1a0190ec4c58ec603" prot="public" static="no">
+        <name>AUDIOPWM_REG_PWMPER_o</name>
+        <initializer>0x0008</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/mzapo_regs.h" line="71" column="9" bodyfile="C:/Users/Petr/Documents/apo_semestralka/mzapo_regs.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mzapo__regs_8h_1a55aaf317fda71b895301468cc3fdcabc" prot="public" static="no">
+        <name>AUDIOPWM_REG_PWM_o</name>
+        <initializer>0x000C</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/mzapo_regs.h" line="72" column="9" bodyfile="C:/Users/Petr/Documents/apo_semestralka/mzapo_regs.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mzapo__regs_8h_1a30b5b32f5a164ef983824258f6ff54a5" prot="public" static="no">
+        <name>DCSPDRV_REG_BASE_PHYS_0</name>
+        <initializer>0x43c20000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/mzapo_regs.h" line="76" column="9" bodyfile="C:/Users/Petr/Documents/apo_semestralka/mzapo_regs.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mzapo__regs_8h_1afb2df136a613961d32d49dbc12395e97" prot="public" static="no">
+        <name>DCSPDRV_REG_BASE_PHYS_1</name>
+        <initializer>0x43c30000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/mzapo_regs.h" line="77" column="9" bodyfile="C:/Users/Petr/Documents/apo_semestralka/mzapo_regs.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mzapo__regs_8h_1a16a62057779c8749bece38f452e2736a" prot="public" static="no">
+        <name>DCSPDRV_REG_SIZE</name>
+        <initializer>0x4000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/mzapo_regs.h" line="78" column="9" bodyfile="C:/Users/Petr/Documents/apo_semestralka/mzapo_regs.h" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mzapo__regs_8h_1a0c9c4a643f93b7bc0c19f767bc780825" prot="public" static="no">
+        <name>DCSPDRV_REG_CR_o</name>
+        <initializer>0x0000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/mzapo_regs.h" line="80" column="9" bodyfile="C:/Users/Petr/Documents/apo_semestralka/mzapo_regs.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mzapo__regs_8h_1a76789821005536c1ca5115be12b9760e" prot="public" static="no">
+        <name>DCSPDRV_REG_CR_PWM_A_DIRECT_m</name>
+        <initializer>0x00000010</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/mzapo_regs.h" line="81" column="9" bodyfile="C:/Users/Petr/Documents/apo_semestralka/mzapo_regs.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mzapo__regs_8h_1a6a6d4765c9d620fb373fef5fab3ba1a6" prot="public" static="no">
+        <name>DCSPDRV_REG_CR_PWM_B_DIRECT_m</name>
+        <initializer>0x00000020</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/mzapo_regs.h" line="82" column="9" bodyfile="C:/Users/Petr/Documents/apo_semestralka/mzapo_regs.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mzapo__regs_8h_1a413a886ce2f83c7e4137345d097d6ae9" prot="public" static="no">
+        <name>DCSPDRV_REG_CR_PWM_ENABLE_m</name>
+        <initializer>0x00000040</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/mzapo_regs.h" line="83" column="9" bodyfile="C:/Users/Petr/Documents/apo_semestralka/mzapo_regs.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mzapo__regs_8h_1a44bbb9f429f37184c64f305424b919f6" prot="public" static="no">
+        <name>DCSPDRV_REG_CR_IRC_RESET_m</name>
+        <initializer>0x00000100</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/mzapo_regs.h" line="84" column="9" bodyfile="C:/Users/Petr/Documents/apo_semestralka/mzapo_regs.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mzapo__regs_8h_1a74757ed70861fe51393171de904687c4" prot="public" static="no">
+        <name>DCSPDRV_REG_SR_o</name>
+        <initializer>0x0004</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/mzapo_regs.h" line="86" column="9" bodyfile="C:/Users/Petr/Documents/apo_semestralka/mzapo_regs.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mzapo__regs_8h_1a38a2e2f853f31c4a5e7cd39c7448731b" prot="public" static="no">
+        <name>DCSPDRV_REG_SR_IRC_A_MON_m</name>
+        <initializer>0x00000100</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/mzapo_regs.h" line="87" column="9" bodyfile="C:/Users/Petr/Documents/apo_semestralka/mzapo_regs.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mzapo__regs_8h_1ad601d95955ed66ca7f7b61afe6a05828" prot="public" static="no">
+        <name>DCSPDRV_REG_SR_IRC_B_MON_m</name>
+        <initializer>0x00000200</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/mzapo_regs.h" line="88" column="9" bodyfile="C:/Users/Petr/Documents/apo_semestralka/mzapo_regs.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mzapo__regs_8h_1aa5d2fff4f0b2c19acb565c69306fc886" prot="public" static="no">
+        <name>DCSPDRV_REG_SR_IRC_IRQ_MON_m</name>
+        <initializer>0x00000400</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/mzapo_regs.h" line="89" column="9" bodyfile="C:/Users/Petr/Documents/apo_semestralka/mzapo_regs.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mzapo__regs_8h_1a5e7a4fe1c996372e6ea017d0293d22ae" prot="public" static="no">
+        <name>DCSPDRV_REG_PERIOD_o</name>
+        <initializer>0x0008</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/mzapo_regs.h" line="91" column="9" bodyfile="C:/Users/Petr/Documents/apo_semestralka/mzapo_regs.h" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mzapo__regs_8h_1a5e961bf7ba8f50a9d5442e2cb60ac653" prot="public" static="no">
+        <name>DCSPDRV_REG_PERIOD_MASK_m</name>
+        <initializer>0x3fffffff</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/mzapo_regs.h" line="92" column="9" bodyfile="C:/Users/Petr/Documents/apo_semestralka/mzapo_regs.h" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mzapo__regs_8h_1acad773e0cf379b9059574a6486ffb1d8" prot="public" static="no">
+        <name>DCSPDRV_REG_DUTY_o</name>
+        <initializer>0x000C</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/mzapo_regs.h" line="94" column="9" bodyfile="C:/Users/Petr/Documents/apo_semestralka/mzapo_regs.h" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mzapo__regs_8h_1a257f7fec84bad958452d0368610fec9a" prot="public" static="no">
+        <name>DCSPDRV_REG_DUTY_MASK_m</name>
+        <initializer>0x3fffffff</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/mzapo_regs.h" line="95" column="9" bodyfile="C:/Users/Petr/Documents/apo_semestralka/mzapo_regs.h" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mzapo__regs_8h_1a41fd95d8c5e78b61f91bd8083037e978" prot="public" static="no">
+        <name>DCSPDRV_REG_DUTY_DIR_A_m</name>
+        <initializer>0x40000000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/mzapo_regs.h" line="96" column="9" bodyfile="C:/Users/Petr/Documents/apo_semestralka/mzapo_regs.h" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mzapo__regs_8h_1a1305e3c3f49c00485ace889f0961b3b2" prot="public" static="no">
+        <name>DCSPDRV_REG_DUTY_DIR_B_m</name>
+        <initializer>0x80000000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/mzapo_regs.h" line="97" column="9" bodyfile="C:/Users/Petr/Documents/apo_semestralka/mzapo_regs.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="mzapo__regs_8h_1a0639b06e1fb1de7f9ee5755b1d01939c" prot="public" static="no">
+        <name>DCSPDRV_REG_IRC_o</name>
+        <initializer>0x0010</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/mzapo_regs.h" line="99" column="9" bodyfile="C:/Users/Petr/Documents/apo_semestralka/mzapo_regs.h" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*******************************************************************</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/><sp/>Simple<sp/>program<sp/>to<sp/>check<sp/>LCD<sp/>functionality<sp/>on<sp/>MicroZed</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/><sp/>based<sp/>MZ_APO<sp/>board<sp/>designed<sp/>by<sp/>Petr<sp/>Porazil<sp/>at<sp/>PiKRON</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"></highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/><sp/>mzapo_regs.h<sp/><sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>definition<sp/>of<sp/>the<sp/>MZ_APO<sp/>design<sp/>registers</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"></highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/><sp/>(C)<sp/>Copyright<sp/>2017<sp/>by<sp/>Pavel<sp/>Pisa</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>e-mail:<sp/><sp/><sp/>pisa@cmp.felk.cvut.cz</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>homepage:<sp/>http://cmp.felk.cvut.cz/~pisa</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>company:<sp/><sp/>http://www.pikron.com/</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>license:<sp/><sp/>any<sp/>combination<sp/>of<sp/>GPL,<sp/>LGPL,<sp/>MPL<sp/>or<sp/>BSD<sp/>licenses</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"></highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*******************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>MZAPO_REGS_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MZAPO_REGS_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/><sp/>Complete<sp/>description<sp/>of<sp/>the<sp/>educational<sp/>MZ_APO<sp/>design<sp/>registers</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/><sp/>can<sp/>be<sp/>found<sp/>at</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"></highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/><sp/><sp/><sp/>https://cw.fel.cvut.cz/wiki/courses/b35apo/documentation/mz_apo/start</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"></highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/><sp/>The<sp/>peripherals<sp/>VHDL<sp/>sources<sp/>can<sp/>be<sp/>found<sp/>in<sp/>the<sp/>repository</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"></highlight></codeline>
+<codeline lineno="26"><highlight class="comment"><sp/><sp/><sp/><sp/>http://rtime.felk.cvut.cz/gitweb/fpga/zynq/canbench-sw.git/tree/refs/heads/microzed_apo:/system/ip</highlight></codeline>
+<codeline lineno="27"><highlight class="comment"></highlight></codeline>
+<codeline lineno="28"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>SPI<sp/>connected<sp/>knobs<sp/>and<sp/>LEDs<sp/>registers<sp/>and<sp/>keyboard<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32" refid="mzapo__regs_8h_1afcfd8685e0ac231c4a5930526e9b311f" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SPILED_REG_BASE_PHYS<sp/><sp/>0x43c40000</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33" refid="mzapo__regs_8h_1a7bdc4010481bbecbb542c2df9a61a17b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SPILED_REG_SIZE<sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00004000</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35" refid="mzapo__regs_8h_1aa421b3b6aad9fdc70be0f2f75ef0383e" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SPILED_REG_LED_LINE_o<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x004</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36" refid="mzapo__regs_8h_1a471398ab797101dfd7a1a2d96e9a518a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SPILED_REG_LED_RGB1_o<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x010</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37" refid="mzapo__regs_8h_1a7b24a79dbfff0cab06021c259e967d6e" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SPILED_REG_LED_RGB2_o<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x014</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38" refid="mzapo__regs_8h_1a61459fb4918e393901b563480ed3e488" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SPILED_REG_LED_KBDWR_DIRECT_o<sp/><sp/><sp/>0x018</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40" refid="mzapo__regs_8h_1af6d1d4ce0d517dc471395671faae19c1" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SPILED_REG_KBDRD_KNOBS_DIRECT_o<sp/>0x020</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41" refid="mzapo__regs_8h_1a9659b6d0a4356a769b9e8f025ab4f361" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SPILED_REG_KNOBS_8BIT_o<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x024</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Parallel<sp/>LCD<sp/>registers<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45" refid="mzapo__regs_8h_1ae34ff3f28093ee8dce3048aeecddeb37" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PARLCD_REG_BASE_PHYS<sp/><sp/>0x43c00000</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46" refid="mzapo__regs_8h_1a86f33c44ef575912f459a11807e0e06d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PARLCD_REG_SIZE<sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00004000</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48" refid="mzapo__regs_8h_1a8347b977e4f5a5a6b22327e398e09df8" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PARLCD_REG_CR_o<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x0000</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49" refid="mzapo__regs_8h_1aefc26fdda7c66aac73e6fcb7610cdc5d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PARLCD_REG_CR_RESET_m<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00000002</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50" refid="mzapo__regs_8h_1aaec731d1269f911eebe67a27d4fd2e70" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PARLCD_REG_CMD_o<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x0008</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51" refid="mzapo__regs_8h_1ad110747a1220ac55aadc403efc501b8f" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PARLCD_REG_DATA_o<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x000C</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>RC<sp/>model<sp/>servos<sp/>and<sp/>optional<sp/>PS2<sp/>peripheral<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55" refid="mzapo__regs_8h_1ae67577b74c64969ccc7fa22d53e8cb39" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SERVOPS2_REG_BASE_PHYS<sp/>0x43c50000</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56" refid="mzapo__regs_8h_1a853db0a52f5fd5670afa705751609413" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SERVOPS2_REG_SIZE<sp/><sp/><sp/><sp/><sp/><sp/>0x4000</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58" refid="mzapo__regs_8h_1afb8c1282ebc34ccbe316b1119f07581a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SERVOPS2_REG_CR_o<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x0000</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59" refid="mzapo__regs_8h_1a16737347121cb524ae6ca45225c094c9" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SERVOPS2_REG_PWMPER_o<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x000C</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60" refid="mzapo__regs_8h_1a4b6eb6d360055d5f91e1cef44ebb3942" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SERVOPS2_REG_PWM1_o<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x0010</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61" refid="mzapo__regs_8h_1a26656019c3471913ac49cb87e71c75f8" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SERVOPS2_REG_PWM2_o<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x0014</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62" refid="mzapo__regs_8h_1aa077e6d381f95ca143b52dc71df86eac" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SERVOPS2_REG_PWM3_o<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x0018</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63" refid="mzapo__regs_8h_1aaba7c02dcc7939f280bb24d39d5264a5" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SERVOPS2_REG_PWM4_o<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x001C</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Simple<sp/>audio<sp/>PWM<sp/>output<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67" refid="mzapo__regs_8h_1a462edfe9365bcbd8b6f710c97fdd0c7d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AUDIOPWM_REG_BASE_PHYS<sp/>0x43c60000</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68" refid="mzapo__regs_8h_1a67d99aee0dc41d9958883536a1e66616" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AUDIOPWM_REG_SIZE<sp/><sp/><sp/><sp/><sp/><sp/>0x4000</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70" refid="mzapo__regs_8h_1a357ae4e6cec3b00dfa3a22b6ccce2193" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AUDIOPWM_REG_CR_o<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x0000</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71" refid="mzapo__regs_8h_1a3288e58da4ac16e1a0190ec4c58ec603" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AUDIOPWM_REG_PWMPER_o<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x0008</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72" refid="mzapo__regs_8h_1a55aaf317fda71b895301468cc3fdcabc" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AUDIOPWM_REG_PWM_o<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x000C</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Optional<sp/>DC<sp/>Motor<sp/>Simple<sp/>Driver<sp/>Peripherals<sp/>for<sp/>PSR<sp/>Subject<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76" refid="mzapo__regs_8h_1a30b5b32f5a164ef983824258f6ff54a5" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DCSPDRV_REG_BASE_PHYS_0<sp/>0x43c20000</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77" refid="mzapo__regs_8h_1afb2df136a613961d32d49dbc12395e97" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DCSPDRV_REG_BASE_PHYS_1<sp/>0x43c30000</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78" refid="mzapo__regs_8h_1a16a62057779c8749bece38f452e2736a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DCSPDRV_REG_SIZE<sp/><sp/><sp/><sp/><sp/><sp/>0x4000</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80" refid="mzapo__regs_8h_1a0c9c4a643f93b7bc0c19f767bc780825" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DCSPDRV_REG_CR_o<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x0000</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81" refid="mzapo__regs_8h_1a76789821005536c1ca5115be12b9760e" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DCSPDRV_REG_CR_PWM_A_DIRECT_m<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00000010</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82" refid="mzapo__regs_8h_1a6a6d4765c9d620fb373fef5fab3ba1a6" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DCSPDRV_REG_CR_PWM_B_DIRECT_m<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00000020</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83" refid="mzapo__regs_8h_1a413a886ce2f83c7e4137345d097d6ae9" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DCSPDRV_REG_CR_PWM_ENABLE_m<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00000040</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84" refid="mzapo__regs_8h_1a44bbb9f429f37184c64f305424b919f6" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DCSPDRV_REG_CR_IRC_RESET_m<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00000100</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86" refid="mzapo__regs_8h_1a74757ed70861fe51393171de904687c4" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DCSPDRV_REG_SR_o<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x0004</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87" refid="mzapo__regs_8h_1a38a2e2f853f31c4a5e7cd39c7448731b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DCSPDRV_REG_SR_IRC_A_MON_m<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00000100</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88" refid="mzapo__regs_8h_1ad601d95955ed66ca7f7b61afe6a05828" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DCSPDRV_REG_SR_IRC_B_MON_m<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00000200</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89" refid="mzapo__regs_8h_1aa5d2fff4f0b2c19acb565c69306fc886" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DCSPDRV_REG_SR_IRC_IRQ_MON_m<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00000400</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91" refid="mzapo__regs_8h_1a5e7a4fe1c996372e6ea017d0293d22ae" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DCSPDRV_REG_PERIOD_o<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x0008</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92" refid="mzapo__regs_8h_1a5e961bf7ba8f50a9d5442e2cb60ac653" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DCSPDRV_REG_PERIOD_MASK_m<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x3fffffff</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94" refid="mzapo__regs_8h_1acad773e0cf379b9059574a6486ffb1d8" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DCSPDRV_REG_DUTY_o<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x000C</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95" refid="mzapo__regs_8h_1a257f7fec84bad958452d0368610fec9a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DCSPDRV_REG_DUTY_MASK_m<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x3fffffff</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96" refid="mzapo__regs_8h_1a41fd95d8c5e78b61f91bd8083037e978" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DCSPDRV_REG_DUTY_DIR_A_m<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x40000000</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97" refid="mzapo__regs_8h_1a1305e3c3f49c00485ace889f0961b3b2" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DCSPDRV_REG_DUTY_DIR_B_m<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x80000000</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99" refid="mzapo__regs_8h_1a0639b06e1fb1de7f9ee5755b1d01939c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DCSPDRV_REG_IRC_o<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x0010</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*MZAPO_REGS_H*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/Petr/Documents/apo_semestralka/mzapo_regs.h"/>
+  </compounddef>
+</doxygen>

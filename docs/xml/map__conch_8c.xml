@@ -1,0 +1,125 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="map__conch_8c" kind="file" language="C++">
+    <compoundname>map_conch.c</compoundname>
+    <includes refid="map__template_8h" local="yes">map_template.h</includes>
+    <incdepgraph>
+      <node id="2">
+        <label>map_template.h</label>
+        <link refid="map__template_8h"/>
+      </node>
+      <node id="1">
+        <label>C:/Users/Petr/Documents/apo_semestralka/map_conch.c</label>
+        <link refid="map__conch_8c"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="map__conch_8c_1aae9e89672f2f8a603930b944a68577eb" prot="public" static="yes" mutable="no">
+        <type>char</type>
+        <definition>char board_data_c[]</definition>
+        <argsstring>[]</argsstring>
+        <name>board_data_c</name>
+        <initializer>= {
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+1,2,3,2,2,2,2,2,2,2,2,2,2,3,1,
+1,2,1,2,1,1,3,1,1,1,1,1,2,1,1,
+1,2,1,2,1,2,2,2,2,2,2,3,2,1,1,
+1,2,1,2,1,2,1,1,1,1,2,1,2,1,1,
+1,2,1,2,1,2,2,2,2,3,2,1,2,0,1,
+1,2,1,2,1,1,1,1,1,1,2,1,2,1,1,
+1,2,1,2,2,2,2,2,2,2,2,1,2,1,1,
+1,2,1,3,1,1,1,1,1,1,1,1,2,1,1,
+1,2,2,2,2,2,2,2,2,2,2,2,2,3,1,
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/map_conch.c" line="16" column="13" bodyfile="C:/Users/Petr/Documents/apo_semestralka/map_conch.c" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="map__conch_8c_1ac8e34a11ace5eef5ece1898c25d42884" prot="public" static="no" mutable="no">
+        <type><ref refid="structmap__template" kindref="compound">map_template</ref></type>
+        <definition>map_template map_conch</definition>
+        <argsstring></argsstring>
+        <name>map_conch</name>
+        <initializer>= {
+    .name = &quot;Connch_snail&quot;,
+    .pacman_spawn_x = 1, 
+    .pacman_spawn_y = 9, 
+    .ghost_spawn_x = 13,  
+    .ghost_spawn_y = 5,  
+    .width = 15,         
+    .height = 11,        
+    .board = board_data_c, 
+    .coin = 2,           
+    .wall = 1,           
+    .special = 3,        
+    .blank = 0,          
+}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/map_conch.c" line="31" column="14" bodyfile="C:/Users/Petr/Documents/apo_semestralka/map_conch.c" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*******************************************************************</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/><sp/>Map<sp/>circles<sp/>for<sp/>apoman<sp/>on<sp/>MicroZed</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/><sp/>based<sp/>MZ_APO<sp/>board<sp/>designed<sp/>by<sp/>Petr<sp/>Porazil<sp/>at<sp/>PiKRON</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"></highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/><sp/>map_conch.c<sp/><sp/><sp/><sp/><sp/><sp/>-<sp/>conch<sp/>map</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"></highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/><sp/>(C)<sp/>Copyright<sp/>2021<sp/>by<sp/>Petr<sp/>Kucera</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>e-mail:<sp/><sp/><sp/>kucerp28@fel.cvut.cz</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>license:<sp/><sp/>any<sp/>combination<sp/>of<sp/>GPL,<sp/>LGPL,<sp/>MPL<sp/>or<sp/>BSD<sp/>licenses</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"></highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*******************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="map__template_8h" kindref="compound">map_template.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">//<sp/>the<sp/>meaning<sp/>of<sp/>numbers<sp/>in<sp/>array<sp/>is<sp/>defined<sp/>in<sp/>&apos;data_strcuture.h&apos;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>board_data_c[]<sp/>=<sp/>{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal">1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,</highlight></codeline>
+<codeline lineno="18"><highlight class="normal">1,2,3,2,2,2,2,2,2,2,2,2,2,3,1,</highlight></codeline>
+<codeline lineno="19"><highlight class="normal">1,2,1,2,1,1,3,1,1,1,1,1,2,1,1,</highlight></codeline>
+<codeline lineno="20"><highlight class="normal">1,2,1,2,1,2,2,2,2,2,2,3,2,1,1,</highlight></codeline>
+<codeline lineno="21"><highlight class="normal">1,2,1,2,1,2,1,1,1,1,2,1,2,1,1,</highlight></codeline>
+<codeline lineno="22"><highlight class="normal">1,2,1,2,1,2,2,2,2,3,2,1,2,0,1,</highlight></codeline>
+<codeline lineno="23"><highlight class="normal">1,2,1,2,1,1,1,1,1,1,2,1,2,1,1,</highlight></codeline>
+<codeline lineno="24"><highlight class="normal">1,2,1,2,2,2,2,2,2,2,2,1,2,1,1,</highlight></codeline>
+<codeline lineno="25"><highlight class="normal">1,2,1,3,1,1,1,1,1,1,1,1,2,1,1,</highlight></codeline>
+<codeline lineno="26"><highlight class="normal">1,2,2,2,2,2,2,2,2,2,2,2,2,3,1,</highlight></codeline>
+<codeline lineno="27"><highlight class="normal">1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,</highlight></codeline>
+<codeline lineno="28"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><ref refid="structmap__template" kindref="compound">map_template</ref><sp/><ref refid="map__conch_8c_1ac8e34a11ace5eef5ece1898c25d42884" kindref="member">map_conch</ref><sp/>=<sp/>{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>.<ref refid="structmap__template_1a5ac083a645d964373f022d03df4849c8" kindref="member">name</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Connch_snail&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>.pacman_spawn_x<sp/>=<sp/>1,<sp/></highlight><highlight class="comment">/*<sp/>spawning<sp/>location<sp/>of<sp/>pacman<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>.pacman_spawn_y<sp/>=<sp/>9,<sp/></highlight><highlight class="comment">/*<sp/>spawning<sp/>location<sp/>of<sp/>pacman<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>.ghost_spawn_x<sp/>=<sp/>13,<sp/><sp/></highlight><highlight class="comment">/*<sp/>spawning<sp/>location<sp/>of<sp/>ghost<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>.ghost_spawn_y<sp/>=<sp/>5,<sp/><sp/></highlight><highlight class="comment">/*<sp/>spawning<sp/>location<sp/>of<sp/>ghost<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>.width<sp/>=<sp/>15,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>width<sp/>of<sp/>the<sp/>map<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>.height<sp/>=<sp/>11,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>height<sp/>of<sp/>the<sp/>map<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>.board<sp/>=<sp/>board_data_c,<sp/></highlight><highlight class="comment">/*<sp/>actual<sp/>data<sp/>about<sp/>the<sp/>content<sp/>of<sp/>map<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>.coin<sp/>=<sp/>2,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>value<sp/>used<sp/>to<sp/>describe<sp/>coin<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>.wall<sp/>=<sp/>1,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>value<sp/>used<sp/>to<sp/>describe<sp/>wall<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>.special<sp/>=<sp/>3,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>value<sp/>used<sp/>to<sp/>describe<sp/>special<sp/>coin<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>.blank<sp/>=<sp/>0,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*<sp/>value<sp/>used<sp/>to<sp/>describe<sp/>place<sp/>without<sp/>coin<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal">};</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/Petr/Documents/apo_semestralka/map_conch.c"/>
+  </compounddef>
+</doxygen>

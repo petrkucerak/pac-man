@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_text__fb_8h" xml:lang="en-US">
+<title>C:/Users/Petr/Documents/apo_semestralka/text_fb.h File Reference</title>
+<indexterm><primary>C:/Users/Petr/Documents/apo_semestralka/text_fb.h</primary></indexterm>
+<programlisting>#include &quot;data_structures.h&quot;
+#include &quot;font_types.h&quot;
+</programlisting><simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para>void <link linkend="_text__fb_8h_1a21645f17c98617a8bd7342f9fdb78899">draw_char</link> (<link linkend="_structfb__data">fb_data</link> *frame, char letter, int x, int y, int scale, <link linkend="_structfont__descriptor__t">font_descriptor_t</link> *font, uint16_t color)</para>
+</listitem>
+            <listitem><para>int <link linkend="_text__fb_8h_1ad3a4c863813fb8a6d93380bc7e1826ff">char_width</link> (<link linkend="_structfont__descriptor__t">font_descriptor_t</link> *fdes, int letter)</para>
+</listitem>
+            <listitem><para>uint32_t <link linkend="_text__fb_8h_1a7873327914ec2b5b79833f8aa0ffd5ac">char_offset</link> (<link linkend="_structfont__descriptor__t">font_descriptor_t</link> *fdes, char letter)</para>
+</listitem>
+            <listitem><para>void <link linkend="_text__fb_8h_1a273e67041b3e82dbfdd989f64e876732">draw_text</link> (<link linkend="_structfb__data">fb_data</link> *frame, char *text, int x, int y, int scale, <link linkend="_structfont__descriptor__t">font_descriptor_t</link> *font, uint16_t color)</para>
+</listitem>
+            <listitem><para>void <link linkend="_text__fb_8h_1a6c9c3fce44e83e9b6076cdc74ba11464">draw_text_center</link> (<link linkend="_structfb__data">fb_data</link> *frame, char *text, int x, int y, int scale, <link linkend="_structfont__descriptor__t">font_descriptor_t</link> *font, uint16_t color)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Function Documentation</title>
+<anchor xml:id="_text__fb_8h_1a7873327914ec2b5b79833f8aa0ffd5ac"/>    <section>
+    <title>char_offset()</title>
+<indexterm><primary>char_offset</primary><secondary>text_fb.h</secondary></indexterm>
+<indexterm><primary>text_fb.h</primary><secondary>char_offset</secondary></indexterm>
+<para><computeroutput>uint32_t char_offset (<link linkend="_structfont__descriptor__t">font_descriptor_t</link> * fdes, char letter)</computeroutput></para>
+<para>returns offset in font bitmap data </para>
+    </section><anchor xml:id="_text__fb_8h_1ad3a4c863813fb8a6d93380bc7e1826ff"/>    <section>
+    <title>char_width()</title>
+<indexterm><primary>char_width</primary><secondary>text_fb.h</secondary></indexterm>
+<indexterm><primary>text_fb.h</primary><secondary>char_width</secondary></indexterm>
+<para><computeroutput>int char_width (<link linkend="_structfont__descriptor__t">font_descriptor_t</link> * fdes, int letter)</computeroutput></para>
+<para>returns width of character </para>
+    </section><anchor xml:id="_text__fb_8h_1a21645f17c98617a8bd7342f9fdb78899"/>    <section>
+    <title>draw_char()</title>
+<indexterm><primary>draw_char</primary><secondary>text_fb.h</secondary></indexterm>
+<indexterm><primary>text_fb.h</primary><secondary>draw_char</secondary></indexterm>
+<para><computeroutput>void draw_char (<link linkend="_structfb__data">fb_data</link> * frame, char letter, int x, int y, int scale, <link linkend="_structfont__descriptor__t">font_descriptor_t</link> * font, uint16_t color)</computeroutput></para>
+<para>function to draw char, left upper edge is at x, y </para>
+    </section><anchor xml:id="_text__fb_8h_1a273e67041b3e82dbfdd989f64e876732"/>    <section>
+    <title>draw_text()</title>
+<indexterm><primary>draw_text</primary><secondary>text_fb.h</secondary></indexterm>
+<indexterm><primary>text_fb.h</primary><secondary>draw_text</secondary></indexterm>
+<para><computeroutput>void draw_text (<link linkend="_structfb__data">fb_data</link> * frame, char * text, int x, int y, int scale, <link linkend="_structfont__descriptor__t">font_descriptor_t</link> * font, uint16_t color)</computeroutput></para>
+<para>draws text to frame buffer, left upper edge is at x, y </para>
+    </section><anchor xml:id="_text__fb_8h_1a6c9c3fce44e83e9b6076cdc74ba11464"/>    <section>
+    <title>draw_text_center()</title>
+<indexterm><primary>draw_text_center</primary><secondary>text_fb.h</secondary></indexterm>
+<indexterm><primary>text_fb.h</primary><secondary>draw_text_center</secondary></indexterm>
+<para><computeroutput>void draw_text_center (<link linkend="_structfb__data">fb_data</link> * frame, char * text, int x, int y, int scale, <link linkend="_structfont__descriptor__t">font_descriptor_t</link> * font, uint16_t color)</computeroutput></para>
+<para>draws text to frame buffer, centre of text is at x, y </para>
+</section>
+</section>
+</section>

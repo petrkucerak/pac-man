@@ -1,0 +1,141 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_apoman_8c" xml:lang="en-US">
+<title>C:/Users/Petr/Documents/apo_semestralka/apoman.c File Reference</title>
+<indexterm><primary>C:/Users/Petr/Documents/apo_semestralka/apoman.c</primary></indexterm>
+<programlisting>#include &lt;stdlib.h&gt;
+#include &lt;stdio.h&gt;
+#include &lt;stdint.h&gt;
+#include &lt;time.h&gt;
+#include &lt;unistd.h&gt;
+#include &lt;pthread.h&gt;
+#include &quot;mzapo_parlcd.h&quot;
+#include &quot;mzapo_phys.h&quot;
+#include &quot;mzapo_regs.h&quot;
+#include &quot;data_structures.h&quot;
+#include &quot;font_types.h&quot;
+#include &quot;map_template.h&quot;
+#include &quot;map_from_template.h&quot;
+#include &quot;map_to_fb.h&quot;
+#include &quot;update_peripherals.h&quot;
+#include &quot;text_fb.h&quot;
+#include &quot;draw_shapes.h&quot;
+#include &quot;game.h&quot;
+#include &quot;menu_utilities.h&quot;
+#include &quot;terminal_read.h&quot;
+#include &quot;pacman.h&quot;
+#include &quot;final_score.h&quot;
+</programlisting><simplesect>
+    <title>Macros    </title>
+        <itemizedlist>
+            <listitem><para>#define <link linkend="_apoman_8c_1a3024ccd4a9af5109d24e6c57565d74a1">_POSIX_C_SOURCE</link>   200112L</para>
+</listitem>
+            <listitem><para>#define <link linkend="_apoman_8c_1a4b53d3b2b31b863f63cc5582629ca8e3">LED_MAX_VAL</link>   6</para>
+</listitem>
+            <listitem><para>#define <link linkend="_apoman_8c_1a2cd109632a6dcccaa80b43561b1ab700">SCREEN_WIDTH</link>   480</para>
+</listitem>
+            <listitem><para>#define <link linkend="_apoman_8c_1a6974d08a74da681b3957b2fead2608b8">SCREEN_HEIGHT</link>   320</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para>int <link linkend="_apoman_8c_1a0ddf1224851353fc92bfbff6f499fa97">main</link> (int argc, char *argv[])</para>
+
+<para>The main program fucntion. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Variables    </title>
+        <itemizedlist>
+            <listitem><para>pthread_mutex_t <link linkend="_apoman_8c_1a2680f9fe5653a596c7e779b838180fdc">mtx</link></para>
+</listitem>
+            <listitem><para>pthread_cond_t <link linkend="_apoman_8c_1a2d89e66b161e77ef3ba860e0bcd80da1">character_has_been_read</link></para>
+</listitem>
+            <listitem><para><link linkend="_structread__thread__data__type">read_thread_data_type</link> <link linkend="_apoman_8c_1a6cf0bd745eade6d2d8304b9b72930ab4">read_thread_data</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Macro Definition Documentation</title>
+<anchor xml:id="_apoman_8c_1a3024ccd4a9af5109d24e6c57565d74a1"/>    <section>
+    <title>_POSIX_C_SOURCE</title>
+<indexterm><primary>_POSIX_C_SOURCE</primary><secondary>apoman.c</secondary></indexterm>
+<indexterm><primary>apoman.c</primary><secondary>_POSIX_C_SOURCE</secondary></indexterm>
+<para><computeroutput>#define _POSIX_C_SOURCE   200112L</computeroutput></para>    </section><anchor xml:id="_apoman_8c_1a4b53d3b2b31b863f63cc5582629ca8e3"/>    <section>
+    <title>LED_MAX_VAL</title>
+<indexterm><primary>LED_MAX_VAL</primary><secondary>apoman.c</secondary></indexterm>
+<indexterm><primary>apoman.c</primary><secondary>LED_MAX_VAL</secondary></indexterm>
+<para><computeroutput>#define LED_MAX_VAL   6</computeroutput></para>    </section><anchor xml:id="_apoman_8c_1a6974d08a74da681b3957b2fead2608b8"/>    <section>
+    <title>SCREEN_HEIGHT</title>
+<indexterm><primary>SCREEN_HEIGHT</primary><secondary>apoman.c</secondary></indexterm>
+<indexterm><primary>apoman.c</primary><secondary>SCREEN_HEIGHT</secondary></indexterm>
+<para><computeroutput>#define SCREEN_HEIGHT   320</computeroutput></para>    </section><anchor xml:id="_apoman_8c_1a2cd109632a6dcccaa80b43561b1ab700"/>    <section>
+    <title>SCREEN_WIDTH</title>
+<indexterm><primary>SCREEN_WIDTH</primary><secondary>apoman.c</secondary></indexterm>
+<indexterm><primary>apoman.c</primary><secondary>SCREEN_WIDTH</secondary></indexterm>
+<para><computeroutput>#define SCREEN_WIDTH   480</computeroutput></para></section>
+</section>
+<section>
+<title>Function Documentation</title>
+<anchor xml:id="_apoman_8c_1a0ddf1224851353fc92bfbff6f499fa97"/>    <section>
+    <title>main()</title>
+<indexterm><primary>main</primary><secondary>apoman.c</secondary></indexterm>
+<indexterm><primary>apoman.c</primary><secondary>main</secondary></indexterm>
+<para><computeroutput>int main (int argc, char * argv[])</computeroutput></para><para>
+
+<para>The main program fucntion. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>argc</entry>
+                                <entry>
+<para>the count of arguments </para>
+</entry>
+                            </row>
+                            <row>
+                                <entry>argv</entry>
+                                <entry>
+<para>program arguments </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>int program status </para>
+</formalpara>
+</para>
+</section>
+</section>
+<section>
+<title>Variable Documentation</title>
+<anchor xml:id="_apoman_8c_1a2d89e66b161e77ef3ba860e0bcd80da1"/>    <section>
+    <title>character_has_been_read</title>
+<indexterm><primary>character_has_been_read</primary><secondary>apoman.c</secondary></indexterm>
+<indexterm><primary>apoman.c</primary><secondary>character_has_been_read</secondary></indexterm>
+<para><computeroutput>pthread_cond_t character_has_been_read</computeroutput></para>    </section><anchor xml:id="_apoman_8c_1a2680f9fe5653a596c7e779b838180fdc"/>    <section>
+    <title>mtx</title>
+<indexterm><primary>mtx</primary><secondary>apoman.c</secondary></indexterm>
+<indexterm><primary>apoman.c</primary><secondary>mtx</secondary></indexterm>
+<para><computeroutput>pthread_mutex_t mtx</computeroutput></para>    </section><anchor xml:id="_apoman_8c_1a6cf0bd745eade6d2d8304b9b72930ab4"/>    <section>
+    <title>read_thread_data</title>
+<indexterm><primary>read_thread_data</primary><secondary>apoman.c</secondary></indexterm>
+<indexterm><primary>apoman.c</primary><secondary>read_thread_data</secondary></indexterm>
+<para><computeroutput><link linkend="_structread__thread__data__type">read_thread_data_type</link> read_thread_data</computeroutput></para></section>
+</section>
+</section>

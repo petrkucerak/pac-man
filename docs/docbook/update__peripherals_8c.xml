@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_update__peripherals_8c" xml:lang="en-US">
+<title>C:/Users/Petr/Documents/apo_semestralka/update_peripherals.c File Reference</title>
+<indexterm><primary>C:/Users/Petr/Documents/apo_semestralka/update_peripherals.c</primary></indexterm>
+<programlisting>#include &quot;update_peripherals.h&quot;
+#include &quot;mzapo_parlcd.h&quot;
+#include &quot;mzapo_regs.h&quot;
+#include &lt;stdio.h&gt;
+#include &lt;stdbool.h&gt;
+</programlisting><simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para>void <link linkend="_update__peripherals_8c_1aa30de0dfddc51283d5b5e429fdb6f030">lcd_from_fb</link> (const <link linkend="_structfb__data">fb_data</link> *frame_buff, unsigned char *parlcd_mem_base)</para>
+</listitem>
+            <listitem><para>void <link linkend="_update__peripherals_8c_1a27f1db817fb1375b46affe1dc4d0dc9b">led_strip_number</link> (unsigned char *led_mem_base, int max_nr, int nr)</para>
+</listitem>
+            <listitem><para>void <link linkend="_update__peripherals_8c_1af830207334d68a6414d80117e98e7a84">set_left_RGB</link> (unsigned char *led_mem_base, uint8_t r, uint8_t g, uint8_t b)</para>
+</listitem>
+            <listitem><para>void <link linkend="_update__peripherals_8c_1a55ba16e218e56e6112bea4cb48dd7017">set_right_RGB</link> (unsigned char *led_mem_base, uint8_t r, uint8_t g, uint8_t b)</para>
+</listitem>
+            <listitem><para>void <link linkend="_update__peripherals_8c_1afdba9f1f14e9a81789f87d33a36bda35">sel_leds_color</link> (unsigned char *led_mem_base, uint32_t color)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Function Documentation</title>
+<anchor xml:id="_update__peripherals_8c_1aa30de0dfddc51283d5b5e429fdb6f030"/>    <section>
+    <title>lcd_from_fb()</title>
+<indexterm><primary>lcd_from_fb</primary><secondary>update_peripherals.c</secondary></indexterm>
+<indexterm><primary>update_peripherals.c</primary><secondary>lcd_from_fb</secondary></indexterm>
+<para><computeroutput>void lcd_from_fb (const <link linkend="_structfb__data">fb_data</link> * frame_buff, unsigned char * parlcd_mem_base)</computeroutput></para>
+<para>function that updates the LCD from frame buffer. LCD has to be initialised </para>
+    </section><anchor xml:id="_update__peripherals_8c_1a27f1db817fb1375b46affe1dc4d0dc9b"/>    <section>
+    <title>led_strip_number()</title>
+<indexterm><primary>led_strip_number</primary><secondary>update_peripherals.c</secondary></indexterm>
+<indexterm><primary>update_peripherals.c</primary><secondary>led_strip_number</secondary></indexterm>
+<para><computeroutput>void led_strip_number (unsigned char * led_mem_base, int max_nr, int nr)</computeroutput></para>
+<para>function that shows nr on the ledstrip </para>
+    </section><anchor xml:id="_update__peripherals_8c_1afdba9f1f14e9a81789f87d33a36bda35"/>    <section>
+    <title>sel_leds_color()</title>
+<indexterm><primary>sel_leds_color</primary><secondary>update_peripherals.c</secondary></indexterm>
+<indexterm><primary>update_peripherals.c</primary><secondary>sel_leds_color</secondary></indexterm>
+<para><computeroutput>void sel_leds_color (unsigned char * led_mem_base, uint32_t color)</computeroutput></para>
+<para>sets both leds to color </para>
+    </section><anchor xml:id="_update__peripherals_8c_1af830207334d68a6414d80117e98e7a84"/>    <section>
+    <title>set_left_RGB()</title>
+<indexterm><primary>set_left_RGB</primary><secondary>update_peripherals.c</secondary></indexterm>
+<indexterm><primary>update_peripherals.c</primary><secondary>set_left_RGB</secondary></indexterm>
+<para><computeroutput>void set_left_RGB (unsigned char * led_mem_base, uint8_t r, uint8_t g, uint8_t b)</computeroutput></para>
+<para>sets left RGB to particular color </para>
+    </section><anchor xml:id="_update__peripherals_8c_1a55ba16e218e56e6112bea4cb48dd7017"/>    <section>
+    <title>set_right_RGB()</title>
+<indexterm><primary>set_right_RGB</primary><secondary>update_peripherals.c</secondary></indexterm>
+<indexterm><primary>update_peripherals.c</primary><secondary>set_right_RGB</secondary></indexterm>
+<para><computeroutput>void set_right_RGB (unsigned char * led_mem_base, uint8_t r, uint8_t g, uint8_t b)</computeroutput></para>
+<para>sets right RGB to particular color </para>
+</section>
+</section>
+</section>

@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_map__template_8h" xml:lang="en-US">
+<title>C:/Users/Petr/Documents/apo_semestralka/map_template.h File Reference</title>
+<indexterm><primary>C:/Users/Petr/Documents/apo_semestralka/map_template.h</primary></indexterm>
+<simplesect>
+    <title>Data Structures    </title>
+        <itemizedlist>
+            <listitem><para>struct <link linkend="_structmap__template">map_template</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Variables    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_structmap__template">map_template</link> <link linkend="_map__template_8h_1a06480e547424d1036ee29aa373cd6590">map_circles</link></para>
+</listitem>
+            <listitem><para><link linkend="_structmap__template">map_template</link> <link linkend="_map__template_8h_1a4b0287ce8146288f9ee7ad5ec5cb8746">map_star</link></para>
+</listitem>
+            <listitem><para><link linkend="_structmap__template">map_template</link> <link linkend="_map__template_8h_1ac8e34a11ace5eef5ece1898c25d42884">map_conch</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Variable Documentation</title>
+<anchor xml:id="_map__template_8h_1a06480e547424d1036ee29aa373cd6590"/>    <section>
+    <title>map_circles</title>
+<indexterm><primary>map_circles</primary><secondary>map_template.h</secondary></indexterm>
+<indexterm><primary>map_template.h</primary><secondary>map_circles</secondary></indexterm>
+<para><computeroutput><link linkend="_structmap__template">map_template</link> map_circles<computeroutput>[extern]</computeroutput></computeroutput></para>    </section><anchor xml:id="_map__template_8h_1ac8e34a11ace5eef5ece1898c25d42884"/>    <section>
+    <title>map_conch</title>
+<indexterm><primary>map_conch</primary><secondary>map_template.h</secondary></indexterm>
+<indexterm><primary>map_template.h</primary><secondary>map_conch</secondary></indexterm>
+<para><computeroutput><link linkend="_structmap__template">map_template</link> map_conch<computeroutput>[extern]</computeroutput></computeroutput></para>    </section><anchor xml:id="_map__template_8h_1a4b0287ce8146288f9ee7ad5ec5cb8746"/>    <section>
+    <title>map_star</title>
+<indexterm><primary>map_star</primary><secondary>map_template.h</secondary></indexterm>
+<indexterm><primary>map_template.h</primary><secondary>map_star</secondary></indexterm>
+<para><computeroutput><link linkend="_structmap__template">map_template</link> map_star<computeroutput>[extern]</computeroutput></computeroutput></para></section>
+</section>
+</section>

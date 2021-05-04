@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="structmoves__costs__t" kind="struct" language="C++" prot="public">
+    <compoundname>moves_costs_t</compoundname>
+    <includes refid="ghost_8h" local="no">ghost.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structmoves__costs__t_1a6f3eaf7f9f7ef92ed9e838cf68763444" prot="public" static="no" mutable="no">
+        <type><ref refid="structcoords" kindref="compound">coords</ref></type>
+        <definition>coords dir</definition>
+        <argsstring></argsstring>
+        <name>dir</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/ghost.h" line="19" column="10" bodyfile="C:/Users/Petr/Documents/apo_semestralka/ghost.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structmoves__costs__t_1a66700f11d42fee2413e58dbf49c43ee1" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int cost</definition>
+        <argsstring></argsstring>
+        <name>cost</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/ghost.h" line="20" column="7" bodyfile="C:/Users/Petr/Documents/apo_semestralka/ghost.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>moves_costs_t</label>
+        <link refid="structmoves__costs__t"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>dir</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>coords</label>
+        <link refid="structcoords"/>
+      </node>
+    </collaborationgraph>
+    <location file="C:/Users/Petr/Documents/apo_semestralka/ghost.h" line="17" column="1" bodyfile="C:/Users/Petr/Documents/apo_semestralka/ghost.h" bodystart="18" bodyend="21"/>
+    <listofallmembers>
+      <member refid="structmoves__costs__t_1a66700f11d42fee2413e58dbf49c43ee1" prot="public" virt="non-virtual"><scope>moves_costs_t</scope><name>cost</name></member>
+      <member refid="structmoves__costs__t_1a6f3eaf7f9f7ef92ed9e838cf68763444" prot="public" virt="non-virtual"><scope>moves_costs_t</scope><name>dir</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

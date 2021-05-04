@@ -1,0 +1,76 @@
+.TH "C:/Users/Petr/Documents/apo_semestralka/menu_utilities.c" 3 "Tue May 4 2021" "Version 1.0.0" "Pac-Man" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+C:/Users/Petr/Documents/apo_semestralka/menu_utilities.c
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <stdio\&.h>\fP
+.br
+\fC#include 'menu_utilities\&.h'\fP
+.br
+\fC#include 'map_template\&.h'\fP
+.br
+\fC#include 'data_structures\&.h'\fP
+.br
+\fC#include 'draw_shapes\&.h'\fP
+.br
+\fC#include 'update_peripherals\&.h'\fP
+.br
+\fC#include 'text_fb\&.h'\fP
+.br
+\fC#include 'game\&.h'\fP
+.br
+\fC#include 'final_score\&.h'\fP
+.br
+\fC#include 'config\&.h'\fP
+.br
+\fC#include <unistd\&.h>\fP
+.br
+
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBHEIGHT_M\fP   frame_buff\->height"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBrun_init_game_menu\fP (\fBfb_data\fP *frame_buff, unsigned char *lcd_mem_base, \fBfont_descriptor_t\fP *font, \fBperipherals_data_t\fP peripherals)"
+.br
+.ti -1c
+.RI "void \fBdraw_menu\fP (\fBfb_data\fP *frame_buff, \fBfont_descriptor_t\fP *font, \fBgame_init_data_t\fP game_data)"
+.br
+.ti -1c
+.RI "\fBgame_init_data_t\fP \fBsub_menu_lives\fP (\fBfb_data\fP *frame_buff, unsigned char *lcd_mem_base, \fBfont_descriptor_t\fP *font, \fBgame_init_data_t\fP game_data)"
+.br
+.ti -1c
+.RI "\fBgame_init_data_t\fP \fBsub_menu_map\fP (\fBfb_data\fP *frame_buff, unsigned char *lcd_mem_base, \fBfont_descriptor_t\fP *font, \fBgame_init_data_t\fP game_data)"
+.br
+.ti -1c
+.RI "\fBgame_init_data_t\fP \fBsub_menu_ghosts\fP (\fBfb_data\fP *frame_buff, unsigned char *lcd_mem_base, \fBfont_descriptor_t\fP *font, \fBgame_init_data_t\fP game_data)"
+.br
+.in -1c
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define HEIGHT_M   frame_buff\->height"
+
+.SH "Function Documentation"
+.PP 
+.SS "void draw_menu (\fBfb_data\fP * frame_buff, \fBfont_descriptor_t\fP * font, \fBgame_init_data_t\fP game_data)"
+function to drow menu with settings to \fBfb_data\fP (for propagate changes need to render data from buffer) 
+.SS "void run_init_game_menu (\fBfb_data\fP * frame_buff, unsigned char * lcd_mem_base, \fBfont_descriptor_t\fP * font, \fBperipherals_data_t\fP peripherals)"
+function run menu for setting game paramaters 
+.SS "\fBgame_init_data_t\fP sub_menu_ghosts (\fBfb_data\fP * frame_buff, unsigned char * lcd_mem_base, \fBfont_descriptor_t\fP * font, \fBgame_init_data_t\fP game_data)"
+function draw sub menu and update count of ghosts 
+.SS "\fBgame_init_data_t\fP sub_menu_lives (\fBfb_data\fP * frame_buff, unsigned char * lcd_mem_base, \fBfont_descriptor_t\fP * font, \fBgame_init_data_t\fP game_data)"
+function draw sub menu and update count of lives 
+.SS "\fBgame_init_data_t\fP sub_menu_map (\fBfb_data\fP * frame_buff, unsigned char * lcd_mem_base, \fBfont_descriptor_t\fP * font, \fBgame_init_data_t\fP game_data)"
+function draw sub menu and update name of game map 
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Pac-Man from the source code\&.

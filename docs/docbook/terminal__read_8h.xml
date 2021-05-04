@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_terminal__read_8h" xml:lang="en-US">
+<title>C:/Users/Petr/Documents/apo_semestralka/terminal_read.h File Reference</title>
+<indexterm><primary>C:/Users/Petr/Documents/apo_semestralka/terminal_read.h</primary></indexterm>
+<simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para>void * <link linkend="_terminal__read_8h_1a6e5f9cf7005e2874fa80bac20e2452b6">input_thread</link> (void *)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Function Documentation</title>
+<anchor xml:id="_terminal__read_8h_1a6e5f9cf7005e2874fa80bac20e2452b6"/>    <section>
+    <title>input_thread()</title>
+<indexterm><primary>input_thread</primary><secondary>terminal_read.h</secondary></indexterm>
+<indexterm><primary>terminal_read.h</primary><secondary>input_thread</secondary></indexterm>
+<para><computeroutput>void* input_thread (void * d)</computeroutput></para></section>
+</section>
+</section>

@@ -1,0 +1,67 @@
+.TH "C:/Users/Petr/Documents/apo_semestralka/mzapo_parlcd.c" 3 "Tue May 4 2021" "Version 1.0.0" "Pac-Man" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+C:/Users/Petr/Documents/apo_semestralka/mzapo_parlcd.c
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <stdint\&.h>\fP
+.br
+\fC#include <time\&.h>\fP
+.br
+\fC#include 'mzapo_parlcd\&.h'\fP
+.br
+\fC#include 'mzapo_regs\&.h'\fP
+.br
+
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fB_POSIX_C_SOURCE\fP   200112L"
+.br
+.in -1c
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBparlcd_write_cr\fP (unsigned char *parlcd_mem_base, uint16_t data)"
+.br
+.ti -1c
+.RI "void \fBparlcd_write_cmd\fP (unsigned char *parlcd_mem_base, uint16_t cmd)"
+.br
+.ti -1c
+.RI "void \fBparlcd_write_data\fP (unsigned char *parlcd_mem_base, uint16_t data)"
+.br
+.ti -1c
+.RI "void \fBparlcd_write_data2x\fP (unsigned char *parlcd_mem_base, uint32_t data)"
+.br
+.ti -1c
+.RI "void \fBparlcd_delay\fP (int msec)"
+.br
+.ti -1c
+.RI "void \fBparlcd_hx8357_init\fP (unsigned char *parlcd_mem_base)"
+.br
+.in -1c
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define _POSIX_C_SOURCE   200112L"
+
+.SH "Function Documentation"
+.PP 
+.SS "void parlcd_delay (int msec)"
+
+.SS "void parlcd_hx8357_init (unsigned char * parlcd_mem_base)"
+
+.SS "void parlcd_write_cmd (unsigned char * parlcd_mem_base, uint16_t cmd)"
+
+.SS "void parlcd_write_cr (unsigned char * parlcd_mem_base, uint16_t data)"
+
+.SS "void parlcd_write_data (unsigned char * parlcd_mem_base, uint16_t data)"
+
+.SS "void parlcd_write_data2x (unsigned char * parlcd_mem_base, uint32_t data)"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Pac-Man from the source code\&.

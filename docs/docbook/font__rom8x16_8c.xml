@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_font__rom8x16_8c" xml:lang="en-US">
+<title>C:/Users/Petr/Documents/apo_semestralka/font_rom8x16.c File Reference</title>
+<indexterm><primary>C:/Users/Petr/Documents/apo_semestralka/font_rom8x16.c</primary></indexterm>
+<programlisting>#include &quot;font_types.h&quot;
+</programlisting><simplesect>
+    <title>Variables    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_structfont__descriptor__t">font_descriptor_t</link> <link linkend="_font__rom8x16_8c_1adc4e431c2709d14befcfe5b60bb47a19">font_rom8x16</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Variable Documentation</title>
+<anchor xml:id="_font__rom8x16_8c_1adc4e431c2709d14befcfe5b60bb47a19"/>    <section>
+    <title>font_rom8x16</title>
+<indexterm><primary>font_rom8x16</primary><secondary>font_rom8x16.c</secondary></indexterm>
+<indexterm><primary>font_rom8x16.c</primary><secondary>font_rom8x16</secondary></indexterm>
+<para><computeroutput><link linkend="_structfont__descriptor__t">font_descriptor_t</link> font_rom8x16</computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting>=&#32;{
+&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;rom8x16&quot;</emphasis>,
+&#32;&#32;&#32;&#32;8,
+&#32;&#32;&#32;&#32;16,
+&#32;&#32;&#32;&#32;12,
+&#32;&#32;&#32;&#32;0,
+&#32;&#32;&#32;&#32;256,
+&#32;&#32;&#32;&#32;rom8x16_bits,
+&#32;&#32;&#32;&#32;0,
+&#32;&#32;&#32;&#32;0
+}
+</programlisting></section>
+</section>
+</section>

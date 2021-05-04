@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_mzapo__phys_8c" xml:lang="en-US">
+<title>C:/Users/Petr/Documents/apo_semestralka/mzapo_phys.c File Reference</title>
+<indexterm><primary>C:/Users/Petr/Documents/apo_semestralka/mzapo_phys.c</primary></indexterm>
+<programlisting>#include &lt;sys/types.h&gt;
+#include &lt;sys/stat.h&gt;
+#include &lt;sys/mman.h&gt;
+#include &lt;fcntl.h&gt;
+#include &lt;stdio.h&gt;
+#include &lt;unistd.h&gt;
+#include &quot;mzapo_phys.h&quot;
+</programlisting><simplesect>
+    <title>Macros    </title>
+        <itemizedlist>
+            <listitem><para>#define <link linkend="_mzapo__phys_8c_1a3024ccd4a9af5109d24e6c57565d74a1">_POSIX_C_SOURCE</link>   200112L</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para>void * <link linkend="_mzapo__phys_8c_1a3925c5fab561521513a23e5f7ede0c9e">map_phys_address</link> (off_t region_base, size_t region_size, int opt_cached)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Variables    </title>
+        <itemizedlist>
+            <listitem><para>const char * <link linkend="_mzapo__phys_8c_1a817f2c47e0b9290c9d64751b49354c83">map_phys_memdev</link> =&quot;/dev/mem&quot;</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Macro Definition Documentation</title>
+<anchor xml:id="_mzapo__phys_8c_1a3024ccd4a9af5109d24e6c57565d74a1"/>    <section>
+    <title>_POSIX_C_SOURCE</title>
+<indexterm><primary>_POSIX_C_SOURCE</primary><secondary>mzapo_phys.c</secondary></indexterm>
+<indexterm><primary>mzapo_phys.c</primary><secondary>_POSIX_C_SOURCE</secondary></indexterm>
+<para><computeroutput>#define _POSIX_C_SOURCE   200112L</computeroutput></para></section>
+</section>
+<section>
+<title>Function Documentation</title>
+<anchor xml:id="_mzapo__phys_8c_1a3925c5fab561521513a23e5f7ede0c9e"/>    <section>
+    <title>map_phys_address()</title>
+<indexterm><primary>map_phys_address</primary><secondary>mzapo_phys.c</secondary></indexterm>
+<indexterm><primary>mzapo_phys.c</primary><secondary>map_phys_address</secondary></indexterm>
+<para><computeroutput>void* map_phys_address (off_t region_base, size_t region_size, int opt_cached)</computeroutput></para></section>
+</section>
+<section>
+<title>Variable Documentation</title>
+<anchor xml:id="_mzapo__phys_8c_1a817f2c47e0b9290c9d64751b49354c83"/>    <section>
+    <title>map_phys_memdev</title>
+<indexterm><primary>map_phys_memdev</primary><secondary>mzapo_phys.c</secondary></indexterm>
+<indexterm><primary>mzapo_phys.c</primary><secondary>map_phys_memdev</secondary></indexterm>
+<para><computeroutput>const char* map_phys_memdev =&quot;/dev/mem&quot;</computeroutput></para></section>
+</section>
+</section>

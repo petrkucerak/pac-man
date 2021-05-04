@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_structpacman__type" xml:lang="en-US">
+<title>pacman_type Struct Reference</title>
+<indexterm><primary>pacman_type</primary></indexterm>
+<para>
+<computeroutput>#include &lt;data_structures.h&gt;</computeroutput>
+</para>
+<simplesect>
+    <title>Data Fields    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_structcoords">coords</link> <link linkend="_structpacman__type_1a7db8b62e64ae0eb828ef80d8708d7243">location</link></para>
+</listitem>
+            <listitem><para><link linkend="_structcoords">coords</link> <link linkend="_structpacman__type_1a1020ed5ecf8ec6fb9721615347ecd8a0">direction</link></para>
+</listitem>
+            <listitem><para>int <link linkend="_structpacman__type_1aef160b7437d94056f1dc59646cd5b87d">score</link></para>
+</listitem>
+            <listitem><para>int <link linkend="_structpacman__type_1ac1d68ef9a5dd304c5015e07af7f2bb19">lives</link></para>
+</listitem>
+            <listitem><para>int <link linkend="_structpacman__type_1a3563efe256b8edd9b91e0d3d5dc58f7a">maxlives</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Field Documentation</title>
+<anchor xml:id="_structpacman__type_1a1020ed5ecf8ec6fb9721615347ecd8a0"/>    <section>
+    <title>direction</title>
+<indexterm><primary>direction</primary><secondary>pacman_type</secondary></indexterm>
+<indexterm><primary>pacman_type</primary><secondary>direction</secondary></indexterm>
+<para><computeroutput><link linkend="_structcoords">coords</link> direction</computeroutput></para>    </section><anchor xml:id="_structpacman__type_1ac1d68ef9a5dd304c5015e07af7f2bb19"/>    <section>
+    <title>lives</title>
+<indexterm><primary>lives</primary><secondary>pacman_type</secondary></indexterm>
+<indexterm><primary>pacman_type</primary><secondary>lives</secondary></indexterm>
+<para><computeroutput>int lives</computeroutput></para>    </section><anchor xml:id="_structpacman__type_1a7db8b62e64ae0eb828ef80d8708d7243"/>    <section>
+    <title>location</title>
+<indexterm><primary>location</primary><secondary>pacman_type</secondary></indexterm>
+<indexterm><primary>pacman_type</primary><secondary>location</secondary></indexterm>
+<para><computeroutput><link linkend="_structcoords">coords</link> location</computeroutput></para>    </section><anchor xml:id="_structpacman__type_1a3563efe256b8edd9b91e0d3d5dc58f7a"/>    <section>
+    <title>maxlives</title>
+<indexterm><primary>maxlives</primary><secondary>pacman_type</secondary></indexterm>
+<indexterm><primary>pacman_type</primary><secondary>maxlives</secondary></indexterm>
+<para><computeroutput>int maxlives</computeroutput></para>    </section><anchor xml:id="_structpacman__type_1aef160b7437d94056f1dc59646cd5b87d"/>    <section>
+    <title>score</title>
+<indexterm><primary>score</primary><secondary>pacman_type</secondary></indexterm>
+<indexterm><primary>pacman_type</primary><secondary>score</secondary></indexterm>
+<para><computeroutput>int score</computeroutput></para></section>
+<para>
+The documentation for this struct was generated from the following file:</para>
+C:/Users/Petr/Documents/apo_semestralka/<link linkend="_data__structures_8h">data_structures.h</link></section>
+</section>

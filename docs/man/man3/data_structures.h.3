@@ -1,0 +1,100 @@
+.TH "C:/Users/Petr/Documents/apo_semestralka/data_structures.h" 3 "Tue May 4 2021" "Version 1.0.0" "Pac-Man" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+C:/Users/Petr/Documents/apo_semestralka/data_structures.h
+.SH SYNOPSIS
+.br
+.PP
+\fC#include <stdint\&.h>\fP
+.br
+\fC#include <stdbool\&.h>\fP
+.br
+\fC#include <pthread\&.h>\fP
+.br
+\fC#include 'map_template\&.h'\fP
+.br
+
+.SS "Data Structures"
+
+.in +1c
+.ti -1c
+.RI "struct \fBfb_data\fP"
+.br
+.ti -1c
+.RI "struct \fBcoords\fP"
+.br
+.ti -1c
+.RI "struct \fBmap_data\fP"
+.br
+.ti -1c
+.RI "struct \fBread_thread_data_type\fP"
+.br
+.ti -1c
+.RI "struct \fBpacman_type\fP"
+.br
+.ti -1c
+.RI "struct \fBperipherals_data_t\fP"
+.br
+.ti -1c
+.RI "struct \fBgame_init_data_t\fP"
+.br
+.ti -1c
+.RI "struct \fBghost_type\fP"
+.br
+.in -1c
+.SS "Macros"
+
+.in +1c
+.ti -1c
+.RI "#define \fBCOIN\fP   3"
+.br
+.ti -1c
+.RI "#define \fBPASSAGE\fP   1"
+.br
+.ti -1c
+.RI "#define \fBWALL\fP   2"
+.br
+.ti -1c
+.RI "#define \fBBLOCKED\fP   0"
+.br
+.ti -1c
+.RI "#define \fBSUPERCOIN\fP   4"
+.br
+.in -1c
+.SS "Variables"
+
+.in +1c
+.ti -1c
+.RI "\fBread_thread_data_type\fP \fBread_thread_data\fP"
+.br
+.ti -1c
+.RI "pthread_mutex_t \fBmtx\fP"
+.br
+.ti -1c
+.RI "pthread_cond_t \fBcharacter_has_been_read\fP"
+.br
+.in -1c
+.SH "Macro Definition Documentation"
+.PP 
+.SS "#define BLOCKED   0"
+black place on the map, pacman is not allowed there 
+.SS "#define COIN   3"
+place where is the coin drawn, pacman can walk accross it 
+.SS "#define PASSAGE   1"
+black place on the map, pacman is allowed to walk there 
+.SS "#define SUPERCOIN   4"
+place where is the supercoin drawn, pacman can walk accross it 
+.SS "#define WALL   2"
+place that will be drawn in color to show where the wall is 
+.SH "Variable Documentation"
+.PP 
+.SS "pthread_cond_t character_has_been_read\fC [extern]\fP"
+
+.SS "pthread_mutex_t mtx\fC [extern]\fP"
+
+.SS "\fBread_thread_data_type\fP read_thread_data\fC [extern]\fP"
+
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Pac-Man from the source code\&.

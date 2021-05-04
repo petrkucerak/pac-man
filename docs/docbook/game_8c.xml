@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_game_8c" xml:lang="en-US">
+<title>C:/Users/Petr/Documents/apo_semestralka/game.c File Reference</title>
+<indexterm><primary>C:/Users/Petr/Documents/apo_semestralka/game.c</primary></indexterm>
+<programlisting>#include &quot;game.h&quot;
+#include &quot;update_peripherals.h&quot;
+#include &lt;stdlib.h&gt;
+#include &lt;stdio.h&gt;
+#include &quot;draw_shapes.h&quot;
+#include &quot;map_to_fb.h&quot;
+#include &quot;map_from_template.h&quot;
+#include &quot;config.h&quot;
+#include &quot;text_fb.h&quot;
+#include &quot;font_types.h&quot;
+</programlisting><simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para>void <link linkend="_game_8c_1af84e8ae88873f09731321e62e77a1d18">led_blink</link> (unsigned char *led_mem_base, int scare_countdown, int pacman_score)</para>
+</listitem>
+            <listitem><para>void <link linkend="_game_8c_1ac1ff0112ff0bb8c1a4d67cd18dc3eb3c">pause</link> (<link linkend="_structfb__data">fb_data</link> *fb, <link linkend="_structperipherals__data__t">peripherals_data_t</link> *peripherals)</para>
+</listitem>
+            <listitem><para>bool <link linkend="_game_8c_1ac055e6ae3ef32e12a7c56e62bae12db3">game_tick</link> (<link linkend="_structmap__data">map_data</link> *map, <link linkend="_structpacman__type">pacman_type</link> *pacman, <link linkend="_structghost__type">ghost_type</link> *ghost_arr, int num_ghosts, int *scare)</para>
+</listitem>
+            <listitem><para>int <link linkend="_game_8c_1a72619e4d9b2b733c33327a53154c126b">run_game</link> (<link linkend="_structgame__init__data__t">game_init_data_t</link> *game_data, <link linkend="_structperipherals__data__t">peripherals_data_t</link> *peripherals)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Function Documentation</title>
+<anchor xml:id="_game_8c_1ac055e6ae3ef32e12a7c56e62bae12db3"/>    <section>
+    <title>game_tick()</title>
+<indexterm><primary>game_tick</primary><secondary>game.c</secondary></indexterm>
+<indexterm><primary>game.c</primary><secondary>game_tick</secondary></indexterm>
+<para><computeroutput>bool game_tick (<link linkend="_structmap__data">map_data</link> * map, <link linkend="_structpacman__type">pacman_type</link> * pacman, <link linkend="_structghost__type">ghost_type</link> * ghost_arr, int num_ghosts, int * scare)</computeroutput></para>    </section><anchor xml:id="_game_8c_1af84e8ae88873f09731321e62e77a1d18"/>    <section>
+    <title>led_blink()</title>
+<indexterm><primary>led_blink</primary><secondary>game.c</secondary></indexterm>
+<indexterm><primary>game.c</primary><secondary>led_blink</secondary></indexterm>
+<para><computeroutput>void led_blink (unsigned char * led_mem_base, int scare_countdown, int pacman_score)</computeroutput></para>    </section><anchor xml:id="_game_8c_1ac1ff0112ff0bb8c1a4d67cd18dc3eb3c"/>    <section>
+    <title>pause()</title>
+<indexterm><primary>pause</primary><secondary>game.c</secondary></indexterm>
+<indexterm><primary>game.c</primary><secondary>pause</secondary></indexterm>
+<para><computeroutput>void pause (<link linkend="_structfb__data">fb_data</link> * fb, <link linkend="_structperipherals__data__t">peripherals_data_t</link> * peripherals)</computeroutput></para>    </section><anchor xml:id="_game_8c_1a72619e4d9b2b733c33327a53154c126b"/>    <section>
+    <title>run_game()</title>
+<indexterm><primary>run_game</primary><secondary>game.c</secondary></indexterm>
+<indexterm><primary>game.c</primary><secondary>run_game</secondary></indexterm>
+<para><computeroutput>int run_game (<link linkend="_structgame__init__data__t">game_init_data_t</link> * game_data, <link linkend="_structperipherals__data__t">peripherals_data_t</link> * peripherals)</computeroutput></para>
+<para><formalpara><title>Returns</title>
+
+<para>packman score </para>
+</formalpara>
+</para>
+</section>
+</section>
+</section>

@@ -1,0 +1,53 @@
+.TH "C:/Users/Petr/Documents/apo_semestralka/update_peripherals.c" 3 "Tue May 4 2021" "Version 1.0.0" "Pac-Man" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+C:/Users/Petr/Documents/apo_semestralka/update_peripherals.c
+.SH SYNOPSIS
+.br
+.PP
+\fC#include 'update_peripherals\&.h'\fP
+.br
+\fC#include 'mzapo_parlcd\&.h'\fP
+.br
+\fC#include 'mzapo_regs\&.h'\fP
+.br
+\fC#include <stdio\&.h>\fP
+.br
+\fC#include <stdbool\&.h>\fP
+.br
+
+.SS "Functions"
+
+.in +1c
+.ti -1c
+.RI "void \fBlcd_from_fb\fP (const \fBfb_data\fP *frame_buff, unsigned char *parlcd_mem_base)"
+.br
+.ti -1c
+.RI "void \fBled_strip_number\fP (unsigned char *led_mem_base, int max_nr, int nr)"
+.br
+.ti -1c
+.RI "void \fBset_left_RGB\fP (unsigned char *led_mem_base, uint8_t r, uint8_t g, uint8_t b)"
+.br
+.ti -1c
+.RI "void \fBset_right_RGB\fP (unsigned char *led_mem_base, uint8_t r, uint8_t g, uint8_t b)"
+.br
+.ti -1c
+.RI "void \fBsel_leds_color\fP (unsigned char *led_mem_base, uint32_t color)"
+.br
+.in -1c
+.SH "Function Documentation"
+.PP 
+.SS "void lcd_from_fb (const \fBfb_data\fP * frame_buff, unsigned char * parlcd_mem_base)"
+function that updates the LCD from frame buffer\&. LCD has to be initialised 
+.SS "void led_strip_number (unsigned char * led_mem_base, int max_nr, int nr)"
+function that shows nr on the ledstrip 
+.SS "void sel_leds_color (unsigned char * led_mem_base, uint32_t color)"
+sets both leds to color 
+.SS "void set_left_RGB (unsigned char * led_mem_base, uint8_t r, uint8_t g, uint8_t b)"
+sets left RGB to particular color 
+.SS "void set_right_RGB (unsigned char * led_mem_base, uint8_t r, uint8_t g, uint8_t b)"
+sets right RGB to particular color 
+.SH "Author"
+.PP 
+Generated automatically by Doxygen for Pac-Man from the source code\&.

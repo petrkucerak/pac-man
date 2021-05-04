@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_menu__utilities_8c" xml:lang="en-US">
+<title>C:/Users/Petr/Documents/apo_semestralka/menu_utilities.c File Reference</title>
+<indexterm><primary>C:/Users/Petr/Documents/apo_semestralka/menu_utilities.c</primary></indexterm>
+<programlisting>#include &lt;stdio.h&gt;
+#include &quot;menu_utilities.h&quot;
+#include &quot;map_template.h&quot;
+#include &quot;data_structures.h&quot;
+#include &quot;draw_shapes.h&quot;
+#include &quot;update_peripherals.h&quot;
+#include &quot;text_fb.h&quot;
+#include &quot;game.h&quot;
+#include &quot;final_score.h&quot;
+#include &quot;config.h&quot;
+#include &lt;unistd.h&gt;
+</programlisting><simplesect>
+    <title>Macros    </title>
+        <itemizedlist>
+            <listitem><para>#define <link linkend="_menu__utilities_8c_1a908b57de04a02af8c59c18814a13123c">HEIGHT_M</link>   frame_buff-&gt;height</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para>void <link linkend="_menu__utilities_8c_1a2313600342d821e8af28af3e2a1d3847">run_init_game_menu</link> (<link linkend="_structfb__data">fb_data</link> *frame_buff, unsigned char *lcd_mem_base, <link linkend="_structfont__descriptor__t">font_descriptor_t</link> *font, <link linkend="_structperipherals__data__t">peripherals_data_t</link> peripherals)</para>
+</listitem>
+            <listitem><para>void <link linkend="_menu__utilities_8c_1adfcc20271b3b85b0dd0bdc09d93f564d">draw_menu</link> (<link linkend="_structfb__data">fb_data</link> *frame_buff, <link linkend="_structfont__descriptor__t">font_descriptor_t</link> *font, <link linkend="_structgame__init__data__t">game_init_data_t</link> game_data)</para>
+</listitem>
+            <listitem><para><link linkend="_structgame__init__data__t">game_init_data_t</link> <link linkend="_menu__utilities_8c_1a01d0cde60304117e2bff9acf5d65eb3b">sub_menu_lives</link> (<link linkend="_structfb__data">fb_data</link> *frame_buff, unsigned char *lcd_mem_base, <link linkend="_structfont__descriptor__t">font_descriptor_t</link> *font, <link linkend="_structgame__init__data__t">game_init_data_t</link> game_data)</para>
+</listitem>
+            <listitem><para><link linkend="_structgame__init__data__t">game_init_data_t</link> <link linkend="_menu__utilities_8c_1a7f17020b07cb4aa737c81d44893047ae">sub_menu_map</link> (<link linkend="_structfb__data">fb_data</link> *frame_buff, unsigned char *lcd_mem_base, <link linkend="_structfont__descriptor__t">font_descriptor_t</link> *font, <link linkend="_structgame__init__data__t">game_init_data_t</link> game_data)</para>
+</listitem>
+            <listitem><para><link linkend="_structgame__init__data__t">game_init_data_t</link> <link linkend="_menu__utilities_8c_1ac5815522d9b36c8dd08cbd65fb944d0c">sub_menu_ghosts</link> (<link linkend="_structfb__data">fb_data</link> *frame_buff, unsigned char *lcd_mem_base, <link linkend="_structfont__descriptor__t">font_descriptor_t</link> *font, <link linkend="_structgame__init__data__t">game_init_data_t</link> game_data)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Macro Definition Documentation</title>
+<anchor xml:id="_menu__utilities_8c_1a908b57de04a02af8c59c18814a13123c"/>    <section>
+    <title>HEIGHT_M</title>
+<indexterm><primary>HEIGHT_M</primary><secondary>menu_utilities.c</secondary></indexterm>
+<indexterm><primary>menu_utilities.c</primary><secondary>HEIGHT_M</secondary></indexterm>
+<para><computeroutput>#define HEIGHT_M   frame_buff-&gt;height</computeroutput></para></section>
+</section>
+<section>
+<title>Function Documentation</title>
+<anchor xml:id="_menu__utilities_8c_1adfcc20271b3b85b0dd0bdc09d93f564d"/>    <section>
+    <title>draw_menu()</title>
+<indexterm><primary>draw_menu</primary><secondary>menu_utilities.c</secondary></indexterm>
+<indexterm><primary>menu_utilities.c</primary><secondary>draw_menu</secondary></indexterm>
+<para><computeroutput>void draw_menu (<link linkend="_structfb__data">fb_data</link> * frame_buff, <link linkend="_structfont__descriptor__t">font_descriptor_t</link> * font, <link linkend="_structgame__init__data__t">game_init_data_t</link> game_data)</computeroutput></para>
+<para>function to drow menu with settings to <link linkend="_structfb__data">fb_data</link> (for propagate changes need to render data from buffer) </para>
+    </section><anchor xml:id="_menu__utilities_8c_1a2313600342d821e8af28af3e2a1d3847"/>    <section>
+    <title>run_init_game_menu()</title>
+<indexterm><primary>run_init_game_menu</primary><secondary>menu_utilities.c</secondary></indexterm>
+<indexterm><primary>menu_utilities.c</primary><secondary>run_init_game_menu</secondary></indexterm>
+<para><computeroutput>void run_init_game_menu (<link linkend="_structfb__data">fb_data</link> * frame_buff, unsigned char * lcd_mem_base, <link linkend="_structfont__descriptor__t">font_descriptor_t</link> * font, <link linkend="_structperipherals__data__t">peripherals_data_t</link> peripherals)</computeroutput></para>
+<para>function run menu for setting game paramaters </para>
+    </section><anchor xml:id="_menu__utilities_8c_1ac5815522d9b36c8dd08cbd65fb944d0c"/>    <section>
+    <title>sub_menu_ghosts()</title>
+<indexterm><primary>sub_menu_ghosts</primary><secondary>menu_utilities.c</secondary></indexterm>
+<indexterm><primary>menu_utilities.c</primary><secondary>sub_menu_ghosts</secondary></indexterm>
+<para><computeroutput><link linkend="_structgame__init__data__t">game_init_data_t</link> sub_menu_ghosts (<link linkend="_structfb__data">fb_data</link> * frame_buff, unsigned char * lcd_mem_base, <link linkend="_structfont__descriptor__t">font_descriptor_t</link> * font, <link linkend="_structgame__init__data__t">game_init_data_t</link> game_data)</computeroutput></para>
+<para>function draw sub menu and update count of ghosts </para>
+    </section><anchor xml:id="_menu__utilities_8c_1a01d0cde60304117e2bff9acf5d65eb3b"/>    <section>
+    <title>sub_menu_lives()</title>
+<indexterm><primary>sub_menu_lives</primary><secondary>menu_utilities.c</secondary></indexterm>
+<indexterm><primary>menu_utilities.c</primary><secondary>sub_menu_lives</secondary></indexterm>
+<para><computeroutput><link linkend="_structgame__init__data__t">game_init_data_t</link> sub_menu_lives (<link linkend="_structfb__data">fb_data</link> * frame_buff, unsigned char * lcd_mem_base, <link linkend="_structfont__descriptor__t">font_descriptor_t</link> * font, <link linkend="_structgame__init__data__t">game_init_data_t</link> game_data)</computeroutput></para>
+<para>function draw sub menu and update count of lives </para>
+    </section><anchor xml:id="_menu__utilities_8c_1a7f17020b07cb4aa737c81d44893047ae"/>    <section>
+    <title>sub_menu_map()</title>
+<indexterm><primary>sub_menu_map</primary><secondary>menu_utilities.c</secondary></indexterm>
+<indexterm><primary>menu_utilities.c</primary><secondary>sub_menu_map</secondary></indexterm>
+<para><computeroutput><link linkend="_structgame__init__data__t">game_init_data_t</link> sub_menu_map (<link linkend="_structfb__data">fb_data</link> * frame_buff, unsigned char * lcd_mem_base, <link linkend="_structfont__descriptor__t">font_descriptor_t</link> * font, <link linkend="_structgame__init__data__t">game_init_data_t</link> game_data)</computeroutput></para>
+<para>function draw sub menu and update name of game map </para>
+</section>
+</section>
+</section>

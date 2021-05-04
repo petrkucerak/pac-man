@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_font__prop14x16_8c" xml:lang="en-US">
+<title>C:/Users/Petr/Documents/apo_semestralka/font_prop14x16.c File Reference</title>
+<indexterm><primary>C:/Users/Petr/Documents/apo_semestralka/font_prop14x16.c</primary></indexterm>
+<programlisting>#include &quot;font_types.h&quot;
+</programlisting><simplesect>
+    <title>Variables    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_structfont__descriptor__t">font_descriptor_t</link> <link linkend="_font__prop14x16_8c_1a4b3e2b838f5b62937b97e1562e34793b">font_winFreeSystem14x16</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Variable Documentation</title>
+<anchor xml:id="_font__prop14x16_8c_1a4b3e2b838f5b62937b97e1562e34793b"/>    <section>
+    <title>font_winFreeSystem14x16</title>
+<indexterm><primary>font_winFreeSystem14x16</primary><secondary>font_prop14x16.c</secondary></indexterm>
+<indexterm><primary>font_prop14x16.c</primary><secondary>font_winFreeSystem14x16</secondary></indexterm>
+<para><computeroutput><link linkend="_structfont__descriptor__t">font_descriptor_t</link> font_winFreeSystem14x16</computeroutput></para><emphasis role="strong">Initial value:</emphasis><programlisting>=&#32;{
+&#32;&#32;&#32;&#32;<emphasis role="stringliteral">&quot;winFreeSystem14x16&quot;</emphasis>,
+&#32;&#32;&#32;&#32;14,
+&#32;&#32;&#32;&#32;16,
+&#32;&#32;&#32;&#32;13,
+&#32;&#32;&#32;&#32;32,
+&#32;&#32;&#32;&#32;224,
+&#32;&#32;&#32;&#32;winFreeSystem14x16_bits,
+&#32;&#32;&#32;&#32;0&#32;,
+&#32;&#32;&#32;&#32;winFreeSystem14x16_width,
+}
+</programlisting></section>
+</section>
+</section>

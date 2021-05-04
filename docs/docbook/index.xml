@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<book xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_index" xml:lang="en-US">
+    <info>
+    <title>Pac-Man</title>
+    </info>
+<chapter>
+    <title>Data Structure Documentation</title>
+    <xi:include href="structcoords.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="structfb__data.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="structfont__descriptor__t.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="structgame__init__data__t.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="structghost__type.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="structmap__data.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="structmap__template.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="structmoves__costs__t.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="structpacman__type.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="structperipherals__data__t.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="structread__thread__data__type.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+</chapter>
+<chapter>
+    <title>File Documentation</title>
+    <xi:include href="apoman_8c.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="config_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="data__structures_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="draw__shapes_8c.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="draw__shapes_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="final__score_8c.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="final__score_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="font__prop14x16_8c.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="font__rom8x16_8c.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="font__types_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="game_8c.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="game_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="ghost_8c.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="ghost_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="map__circles_8c.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="map__conch_8c.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="map__from__template_8c.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="map__from__template_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="map__star_8c.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="map__template_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="map__to__fb_8c.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="map__to__fb_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="menu__utilities_8c.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="menu__utilities_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="mzapo__parlcd_8c.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="mzapo__parlcd_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="mzapo__phys_8c.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="mzapo__phys_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="mzapo__regs_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="pacman_8c.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="pacman_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="_r_e_a_d_m_e_8md.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="terminal__read_8c.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="terminal__read_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="text__fb_8c.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="text__fb_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="update__peripherals_8c.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="update__peripherals_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+</chapter>
+<index/>
+</book>
