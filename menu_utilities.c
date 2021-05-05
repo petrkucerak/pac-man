@@ -40,7 +40,7 @@ void run_init_game_menu(fb_data *frame_buff, unsigned char *lcd_mem_base,
     lcd_from_fb(frame_buff, lcd_mem_base);
     // listen symbol
     char read = ' ';
-    while (read != 's' && read != 'q')
+    while (read != 's' && read != 't')
     {
       // scan input
       pthread_mutex_lock(&mtx);
@@ -63,7 +63,7 @@ void run_init_game_menu(fb_data *frame_buff, unsigned char *lcd_mem_base,
       draw_menu(frame_buff, font, game);
       lcd_from_fb(frame_buff, lcd_mem_base);
     }
-    if (read != 'q')
+    if (read != 't')
     {
       // run game
       int game_score = run_game(&game, &peripherals);
@@ -89,7 +89,7 @@ void draw_menu(fb_data *frame_buff, font_descriptor_t *font, game_init_data_t ga
   draw_text_center(frame_buff, string_tmp, frame_buff->width / 2, HEIGHT_M / 2, 2, font, 0xffff);
   snprintf(string_tmp, 40, "pocet duchu: %d [g]", game_data.ghost_nr);
   draw_text_center(frame_buff, string_tmp, frame_buff->width / 2, HEIGHT_M / 2 + HEIGHT_M / 7, 2, font, 0xffff);
-  draw_text_center(frame_buff, "SPUSIT HRU: [s]", frame_buff->width / 2, HEIGHT_M - HEIGHT_M / 10, 2, font, 0xffff);
+  draw_text_center(frame_buff, "SPUSIT HRU: [s] KONEC HRY: [t]", frame_buff->width / 2, HEIGHT_M - HEIGHT_M / 10, 2, font, 0xffff);
 }
 
 game_init_data_t sub_menu_lives(fb_data *frame_buff, unsigned char *lcd_mem_base, font_descriptor_t *font, game_init_data_t game_data)
