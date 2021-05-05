@@ -43,7 +43,7 @@ var NAVTREE =
           [ "Zdrojové soubory", "md__c___users__petr__documents_apo_semestralka__tech_documentation.html#autotoc_md6", null ],
           [ "Cílový binární soubor", "md__c___users__petr__documents_apo_semestralka__tech_documentation.html#autotoc_md7", null ],
           [ "Propojení se zařízením při kompilaci", "md__c___users__petr__documents_apo_semestralka__tech_documentation.html#autotoc_md8", [
-            [ "1. Propojení pomocí <em>ProxyJump</em>", "md__c___users__petr__documents_apo_semestralka__tech_documentation.html#autotoc_md9", null ],
+            [ "1. Propojení pomocí ProxyJump", "md__c___users__petr__documents_apo_semestralka__tech_documentation.html#autotoc_md9", null ],
             [ "2. Využití SSH tunelu do lokální sítě laboratoře", "md__c___users__petr__documents_apo_semestralka__tech_documentation.html#autotoc_md10", null ],
             [ "3. Připojení se přes PC v laboratoři", "md__c___users__petr__documents_apo_semestralka__tech_documentation.html#autotoc_md11", null ]
           ] ]

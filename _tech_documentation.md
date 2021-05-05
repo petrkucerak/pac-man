@@ -76,7 +76,7 @@ Způsobů, jak pracovat se zařízením, je mnoho. My doporučujeme využít tzv
 
 Rád bych upozornil, že tato část je rychlým srhnutí poskytnuté dokumentace dostupné na stránkách předmětu (https://cw.fel.cvut.cz/wiki/courses/b35apo/documentation/mz_apo-howto/start).
 
-##### 1. Propojení pomocí *ProxyJump*
+##### 1. Propojení pomocí ProxyJump
 
 Prvním způsobem je propojit se přes tzv. *ProxyJump*. Je vhodné rovnou do Makefilu vyplnit cílovou IP adresu zařízení
 ```Makefile

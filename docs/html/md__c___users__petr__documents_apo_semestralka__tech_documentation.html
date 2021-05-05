@@ -139,7 +139,7 @@ Propojení se zařízením při kompilaci</h3>
 <p>Způsobů, jak pracovat se zařízením, je mnoho. My doporučujeme využít tzv. <em>ProxyJumpu</em>, který jsme během vývoje používali. Pojďme si představit jednotlivé doporučené přístupy.</p>
 <p>Rád bych upozornil, že tato část je rychlým srhnutí poskytnuté dokumentace dostupné na stránkách předmětu (<a href="https://cw.fel.cvut.cz/wiki/courses/b35apo/documentation/mz_apo-howto/start">https://cw.fel.cvut.cz/wiki/courses/b35apo/documentation/mz_apo-howto/start</a>).</p>
 <h4><a class="anchor" id="autotoc_md9"></a>
-1. Propojení pomocí &lt;em&gt;ProxyJump&lt;/em&gt;</h4>
+1. Propojení pomocí ProxyJump</h4>
 <p>Prvním způsobem je propojit se přes tzv. <em>ProxyJump</em>. Je vhodné rovnou do Makefilu vyplnit cílovou IP adresu zařízení </p><div class="fragment"><div class="line">TARGET_IP ?= 192.168.202.xxx</div>
 </div><!-- fragment --><p> a vyplnit své uživatelské jméno s přístupem k ssh klíči (k školnímu serveru). </p><div class="fragment"><div class="line">SSH_OPTIONS= -i ~/.ssh/mzapo-root-key -o &#39;ProxyJump=username@postel.felk.cvut.cz&#39;</div>
 </div><!-- fragment --><p> Předejte tak zbytečnému zablokování ze strany školního serveru při opakovaném a častém připojování. Přístup pro vás bude snazší.</p>
