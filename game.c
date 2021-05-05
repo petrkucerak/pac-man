@@ -44,6 +44,7 @@ int run_game(game_init_data_t *game_data, peripherals_data_t *peripherals)
   {
     ghost[i] = create_ghost(map, i);
   }
+  printf(GAME_START_TERMINAL, KEY_UP, KEY_DWN, KEY_LEFT, KEY_RIGHT, PAUSE_KEY, KEY_QUIT);
   // actual game
   char read = ' ';
   bool coins_to_eat = true;
@@ -155,6 +156,9 @@ bool game_tick(map_data *map, pacman_type *pacman, ghost_type *ghost_arr, int nu
       {
         ghost_arr[j] = create_ghost(map, j);
       }
+      pthread_mutex_lock(&mtx);
+      read_thread_data.last_read = ' ';
+      pthread_mutex_unlock(&mtx);
       ret = true;
       break;
     }

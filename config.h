@@ -37,6 +37,7 @@
 #define SCARE_REGIME_DURATION 300 //in game ticks
 #define GAME_SPEED 2 //ammount of ticks in one frame
 
+#define GAME_START_TERMINAL "Move pacman with %c%c%c%c keys, to pause press %c, to quit game press %c.\n"
 #define GAME_END_TERMINAL "Game has ended with pacman getting score %d and having %d lives\n"
 
 //led colors
