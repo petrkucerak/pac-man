@@ -5,6 +5,11 @@ Cílem této semstrální práce je vytvořit hru Pac-Man, kterou bude možné h
 
 Průběh naší práce je možné sledovat v repozitáři: https://gitlab.fel.cvut.cz/kucerp28/apo\_semestralka
 
+Autoři této semestrální práce jsou:
+
+- Lukáš Nejezchleb (nejezluk@fel.cvut.cz)
+- Petr Kučera (kucerp28@fel.cvut.cz)
+
 ## Použité periferie a jejich funkce
 
 - Výstupní řádka led bude při spuštěné hře indikovat počet životů pacmana.
@@ -30,8 +35,3 @@ Hra může být ukončena 3 způsoby:
 - Výhrou Pacmana. V takovém případě se vypíše skóre hry na terminál a otevře se menu nastavení
 - Prohrou Pacmana. Ta vyvolá stejný proces jako výhra.
 - Přerušením hry pomocí stisknutí klávesy q. To hráče odkáže do spouštěcího menu.
-
-## Kompilace
-``` bash
-make TARGET_IP=192.168.202.xx run
-```
