@@ -48,7 +48,7 @@
 </sect3>
 <sect3 id="md__c___users__petr__documents_apo_semestralka__tech_documentation_1autotoc_md6">
 <title>Zdrojové soubory</title>
-<para>Pokud budete upravovat nejaky ze souboru nebo prodavat vlastni, je třeba mít přidané všechny soubory ke kompilaci.</para>
+<para>Pokud budete upravovat nějaký ze souborů nebo přidávat vlastní, je třeba mít přidané všechny soubory ke kompilaci.</para>
 <para><programlisting filename=".Makefile"><codeline><highlight class="normal">SOURCES<sp/>=<sp/>apoman.c<sp/>mzapo_phys.c<sp/>mzapo_parlcd.c<sp/>update_peripherals.c<sp/>text_fb.c<sp/>map_from_template.c<sp/>map_to_fb.c<sp/>draw_shapes.c</highlight></codeline>
 <codeline><highlight class="normal">SOURCES<sp/>+=<sp/>terminal_read.c<sp/>pacman.c<sp/>ghost.c</highlight></codeline>
 <codeline><highlight class="normal">SOURCES<sp/>+=<sp/>font_prop14x16.c<sp/>font_rom8x16.c</highlight></codeline>
@@ -60,22 +60,22 @@
 </sect3>
 <sect3 id="md__c___users__petr__documents_apo_semestralka__tech_documentation_1autotoc_md7">
 <title>Cílový binární soubor</title>
-<para>Název výsledného binárního osuboru je udáván tímot řádkem: <programlisting filename=".Makefile"><codeline><highlight class="normal">TARGET_EXE<sp/>=<sp/>apoman</highlight></codeline>
+<para>Název výsledného binárního souboru je definován tímto příkazem: <programlisting filename=".Makefile"><codeline><highlight class="normal">TARGET_EXE<sp/>=<sp/>apoman</highlight></codeline>
 </programlisting></para>
 </sect3>
 <sect3 id="md__c___users__petr__documents_apo_semestralka__tech_documentation_1autotoc_md8">
 <title>Propojení se zařízením při kompilaci</title>
-<para>Způsobů, jak pracovat se zařízeními je mnoho. My doporučujeme využít tzv. Prozyjumpu, který jsme během vývoje používali. Pojďme si představit jednotlivé doporučené přítupy.</para>
+<para>Způsobů, jak pracovat se zařízením, je mnoho. My doporučujeme využít tzv. <emphasis>ProxyJumpu</emphasis>, který jsme během vývoje používali. Pojďme si představit jednotlivé doporučené přístupy.</para>
 <para>Rád bych upozornil, že tato část je rychlým srhnutí poskytnuté dokumentace dostupné na stránkách předmětu (<ulink url="https://cw.fel.cvut.cz/wiki/courses/b35apo/documentation/mz_apo-howto/start">https://cw.fel.cvut.cz/wiki/courses/b35apo/documentation/mz_apo-howto/start</ulink>).</para>
 <sect4 id="md__c___users__petr__documents_apo_semestralka__tech_documentation_1autotoc_md9">
 <title>1. Propojení pomocí &lt;em&gt;ProxyJump&lt;/em&gt;</title>
 <para>Prvním způsobem je propojit se přes tzv. <emphasis>ProxyJump</emphasis>. Je vhodné rovnou do Makefilu vyplnit cílovou IP adresu zařízení <programlisting filename=".Makefile"><codeline><highlight class="normal">TARGET_IP<sp/>?=<sp/>192.168.202.xxx</highlight></codeline>
 </programlisting> a vyplnit své uživatelské jméno s přístupem k ssh klíči (k školnímu serveru). <programlisting filename=".Makefile"><codeline><highlight class="normal">SSH_OPTIONS=<sp/>-i<sp/>~/.ssh/mzapo-root-key<sp/>-o<sp/>&apos;ProxyJump=username@postel.felk.cvut.cz&apos;</highlight></codeline>
-</programlisting> Předejte tak zbytečnému zablokování ze strany školního serveru při opakovaném a častém připojování a přístup pro vás bude snazší.</para>
+</programlisting> Předejte tak zbytečnému zablokování ze strany školního serveru při opakovaném a častém připojování. Přístup pro vás bude snazší.</para>
 </sect4>
 <sect4 id="md__c___users__petr__documents_apo_semestralka__tech_documentation_1autotoc_md10">
 <title>2. Využití SSH tunelu do lokální sítě laboratoře</title>
-<para>Další možností připojení je využít trvalé SSH spojení na server <computeroutput>postel.felk.cvut.cz</computeroutput>. Tento způsob zaručí, že je menší riziko, aby naše připojení bylo vyhodnoceno ochranou serveru jako útok. Opětovaná připojovaání jsou tak tedy mnohem rychlejší.</para>
+<para>Další možností připojení je využít trvalé SSH spojení na server <computeroutput>postel.felk.cvut.cz</computeroutput>. Tento způsob zaručí, že je menší riziko, aby naše připojení bylo vyhodnoceno ochranou serveru jako útok. Opětovaná připojování jsou tak tedy mnohem rychlejší.</para>
 <para>Tunel vytvoříme příkazem <programlisting filename=".bash"><codeline><highlight class="normal">ssh<sp/>-nNT<sp/>ctu_login@postel.felk.cvut.cz<sp/>-L<sp/>2222:192.168.202.xxx:22</highlight></codeline>
 </programlisting></para>
 <para>A v Makefilu je třeba povolit řádku s následujícími příkazy: <programlisting filename=".Makefile"><codeline><highlight class="normal">TARGET_IP<sp/>=<sp/>127.0.0.1</highlight></codeline>
@@ -85,7 +85,7 @@
 </sect4>
 <sect4 id="md__c___users__petr__documents_apo_semestralka__tech_documentation_1autotoc_md11">
 <title>3. Připojení se přes PC v laboratoři</title>
-<para>Třetím možným způsobem je se připojit na školní PC, který je ve stejné sítit jako používaný přípavek.</para>
+<para>Třetím možným způsobem je se připojit na školní PC, který je ve stejné síti jako používaný přípravek.</para>
 <para>Zde stačí pouze zavolat příkaz, který nám kód zkompiluje a rovnou spustí na zařízení s danou IP adresou: <programlisting filename=".bash"><codeline><highlight class="normal">make<sp/>TARGET_IP=192.168.202.xx<sp/>run</highlight></codeline>
 </programlisting></para>
 </sect4>
@@ -93,7 +93,7 @@
 </sect2>
 <sect2 id="md__c___users__petr__documents_apo_semestralka__tech_documentation_1autotoc_md12">
 <title>Důležité příkazy</title>
-<para>Další částí Makefilu jsou příkazy, které lze při práci s aplikací využít. Pojďme si představit ty nejvíce zajímavé.</para>
+<para>Další částí Makefilu jsou příkazy, které lze při práci s aplikací využít. Pojďme si představit ty nejvíce elementární.</para>
 <sect3 id="md__c___users__petr__documents_apo_semestralka__tech_documentation_1autotoc_md13">
 <title>Kompilace</title>
 <para><programlisting filename=".bash"><codeline><highlight class="normal">make</highlight></codeline>

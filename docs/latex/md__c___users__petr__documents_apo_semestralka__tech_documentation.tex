@@ -41,7 +41,7 @@ Ke kompilaci na Ubuntu/\+Debina systému je třeba mít naistalovaný křížov�
 
 \end{DoxyCode}
 \doxysubsubsection{Zdrojové soubory}\label{md__c___users__petr__documents_apo_semestralka__tech_documentation_autotoc_md6}
-Pokud budete upravovat nejaky ze souboru nebo prodavat vlastni, je třeba mít přidané všechny soubory ke kompilaci.
+Pokud budete upravovat nějaký ze souborů nebo přidávat vlastní, je třeba mít přidané všechny soubory ke kompilaci.
 
 
 \begin{DoxyCode}{0}
@@ -55,13 +55,13 @@ Pokud budete upravovat nejaky ze souboru nebo prodavat vlastni, je třeba mít p
 
 \end{DoxyCode}
 \doxysubsubsection{Cílový binární soubor}\label{md__c___users__petr__documents_apo_semestralka__tech_documentation_autotoc_md7}
-Název výsledného binárního osuboru je udáván tímot řádkem\+: 
+Název výsledného binárního souboru je definován tímto příkazem\+: 
 \begin{DoxyCode}{0}
 \DoxyCodeLine{TARGET\_EXE = apoman}
 
 \end{DoxyCode}
 \doxysubsubsection{Propojení se zařízením při kompilaci}\label{md__c___users__petr__documents_apo_semestralka__tech_documentation_autotoc_md8}
-Způsobů, jak pracovat se zařízeními je mnoho. My doporučujeme využít tzv. Prozyjumpu, který jsme během vývoje používali. Pojďme si představit jednotlivé doporučené přítupy.
+Způsobů, jak pracovat se zařízením, je mnoho. My doporučujeme využít tzv. {\itshape Proxy\+Jumpu}, který jsme během vývoje používali. Pojďme si představit jednotlivé doporučené přístupy.
 
 Rád bych upozornil, že tato část je rychlým srhnutí poskytnuté dokumentace dostupné na stránkách předmětu ({\texttt{ https\+://cw.\+fel.\+cvut.\+cz/wiki/courses/b35apo/documentation/mz\+\_\+apo-\/howto/start}}).\doxyparagraph{1. Propojení pomocí $<$em$>$\+Proxy\+Jump$<$/em$>$}\label{md__c___users__petr__documents_apo_semestralka__tech_documentation_autotoc_md9}
 Prvním způsobem je propojit se přes tzv. {\itshape Proxy\+Jump}. Je vhodné rovnou do Makefilu vyplnit cílovou IP adresu zařízení 
@@ -74,8 +74,8 @@ Prvním způsobem je propojit se přes tzv. {\itshape Proxy\+Jump}. Je vhodné r
 \DoxyCodeLine{SSH\_OPTIONS= -\/i \string~/.ssh/mzapo-\/root-\/key -\/o 'ProxyJump=username@postel.felk.cvut.cz'}
 
 \end{DoxyCode}
- Předejte tak zbytečnému zablokování ze strany školního serveru při opakovaném a častém připojování a přístup pro vás bude snazší.\doxyparagraph{2. Využití SSH tunelu do lokální sítě laboratoře}\label{md__c___users__petr__documents_apo_semestralka__tech_documentation_autotoc_md10}
-Další možností připojení je využít trvalé SSH spojení na server {\ttfamily postel.\+felk.\+cvut.\+cz}. Tento způsob zaručí, že je menší riziko, aby naše připojení bylo vyhodnoceno ochranou serveru jako útok. Opětovaná připojovaání jsou tak tedy mnohem rychlejší.
+ Předejte tak zbytečnému zablokování ze strany školního serveru při opakovaném a častém připojování. Přístup pro vás bude snazší.\doxyparagraph{2. Využití SSH tunelu do lokální sítě laboratoře}\label{md__c___users__petr__documents_apo_semestralka__tech_documentation_autotoc_md10}
+Další možností připojení je využít trvalé SSH spojení na server {\ttfamily postel.\+felk.\+cvut.\+cz}. Tento způsob zaručí, že je menší riziko, aby naše připojení bylo vyhodnoceno ochranou serveru jako útok. Opětovaná připojování jsou tak tedy mnohem rychlejší.
 
 Tunel vytvoříme příkazem 
 \begin{DoxyCode}{0}
@@ -92,7 +92,7 @@ A v Makefilu je třeba povolit řádku s následujícími příkazy\+:
 
 \end{DoxyCode}
 \doxyparagraph{3. Připojení se přes PC v laboratoři}\label{md__c___users__petr__documents_apo_semestralka__tech_documentation_autotoc_md11}
-Třetím možným způsobem je se připojit na školní PC, který je ve stejné sítit jako používaný přípavek.
+Třetím možným způsobem je se připojit na školní PC, který je ve stejné síti jako používaný přípravek.
 
 Zde stačí pouze zavolat příkaz, který nám kód zkompiluje a rovnou spustí na zařízení s danou IP adresou\+: 
 \begin{DoxyCode}{0}
@@ -100,7 +100,7 @@ Zde stačí pouze zavolat příkaz, který nám kód zkompiluje a rovnou spustí
 
 \end{DoxyCode}
 \doxysubsection{Důležité příkazy}\label{md__c___users__petr__documents_apo_semestralka__tech_documentation_autotoc_md12}
-Další částí Makefilu jsou příkazy, které lze při práci s aplikací využít. Pojďme si představit ty nejvíce zajímavé.\doxysubsubsection{Kompilace}\label{md__c___users__petr__documents_apo_semestralka__tech_documentation_autotoc_md13}
+Další částí Makefilu jsou příkazy, které lze při práci s aplikací využít. Pojďme si představit ty nejvíce elementární.\doxysubsubsection{Kompilace}\label{md__c___users__petr__documents_apo_semestralka__tech_documentation_autotoc_md13}
 
 \begin{DoxyCode}{0}
 \DoxyCodeLine{make}

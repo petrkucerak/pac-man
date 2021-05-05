@@ -51,7 +51,7 @@ sudo apt install crossbuild-essential-armhf
 
 #### Zdrojové soubory
 
-Pokud budete upravovat nejaky ze souboru nebo prodavat vlastni, je třeba mít přidané všechny soubory ke kompilaci.
+Pokud budete upravovat nějaký ze souborů nebo přidávat vlastní, je třeba mít přidané všechny soubory ke kompilaci.
 
 ```Makefile
 SOURCES = apoman.c mzapo_phys.c mzapo_parlcd.c update_peripherals.c text_fb.c map_from_template.c map_to_fb.c draw_shapes.c
@@ -65,14 +65,14 @@ SOURCES += game.c
 
 #### Cílový binární soubor
 
-Název výsledného binárního osuboru je udáván tímot řádkem:
+Název výsledného binárního souboru je definován tímto příkazem:
 ```Makefile
 TARGET_EXE = apoman
 ```
 
 #### Propojení se zařízením při kompilaci
 
-Způsobů, jak pracovat se zařízeními je mnoho. My doporučujeme využít tzv. Prozyjumpu, který jsme během vývoje používali. Pojďme si představit jednotlivé doporučené přítupy.
+Způsobů, jak pracovat se zařízením, je mnoho. My doporučujeme využít tzv. *ProxyJumpu*, který jsme během vývoje používali. Pojďme si představit jednotlivé doporučené přístupy.
 
 Rád bych upozornil, že tato část je rychlým srhnutí poskytnuté dokumentace dostupné na stránkách předmětu (https://cw.fel.cvut.cz/wiki/courses/b35apo/documentation/mz_apo-howto/start).
 
@@ -86,11 +86,11 @@ TARGET_IP ?= 192.168.202.xxx
 ```Makefile
 SSH_OPTIONS= -i ~/.ssh/mzapo-root-key -o 'ProxyJump=username@postel.felk.cvut.cz'
 ```
-Předejte tak zbytečnému zablokování ze strany školního serveru při opakovaném a častém připojování a přístup pro vás bude snazší.
+Předejte tak zbytečnému zablokování ze strany školního serveru při opakovaném a častém připojování. Přístup pro vás bude snazší.
 
 ##### 2. Využití SSH tunelu do lokální sítě laboratoře
 
-Další možností připojení je využít trvalé SSH spojení na server `postel.felk.cvut.cz`. Tento způsob zaručí, že je menší riziko, aby naše připojení bylo vyhodnoceno ochranou serveru jako útok. Opětovaná připojovaání jsou tak tedy mnohem rychlejší.
+Další možností připojení je využít trvalé SSH spojení na server `postel.felk.cvut.cz`. Tento způsob zaručí, že je menší riziko, aby naše připojení bylo vyhodnoceno ochranou serveru jako útok. Opětovaná připojování jsou tak tedy mnohem rychlejší.
 
 Tunel vytvoříme příkazem
 ```bash
@@ -106,7 +106,7 @@ SSH_GDB_TUNNEL_REQUIRED=y
 
 ##### 3. Připojení se přes PC v laboratoři
 
-Třetím možným způsobem je se připojit na školní PC, který je ve stejné sítit jako používaný přípavek.
+Třetím možným způsobem je se připojit na školní PC, který je ve stejné síti jako používaný přípravek.
 
 Zde stačí pouze zavolat příkaz, který nám kód zkompiluje a rovnou spustí na zařízení s danou IP adresou:
 ```bash
@@ -115,7 +115,7 @@ make TARGET_IP=192.168.202.xx run
 
 ### Důležité příkazy
 
-Další částí Makefilu jsou příkazy, které lze při práci s aplikací využít. Pojďme si představit ty nejvíce zajímavé.
+Další částí Makefilu jsou příkazy, které lze při práci s aplikací využít. Pojďme si představit ty nejvíce elementární.
 
 #### Kompilace
 
