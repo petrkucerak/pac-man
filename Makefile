@@ -14,7 +14,7 @@ SOURCES += menu_utilities.c
 SOURCES += final_score.c
 SOURCES += game.c
 TARGET_EXE = apoman
-TARGET_IP ?= 192.168.202.207
+TARGET_IP ?= 192.168.202.203
 ifeq ($(TARGET_IP),)
 ifneq ($(filter debug run,$(MAKECMDGOALS)),)
 $(warning The target IP address is not set)
