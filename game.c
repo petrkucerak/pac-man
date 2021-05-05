@@ -48,7 +48,7 @@ int run_game(game_init_data_t *game_data, peripherals_data_t *peripherals)
   char read = ' ';
   bool coins_to_eat = true;
   int scare_countdown = -1;
-  while ((read != 'q') && (pacman.lives > 0) && (coins_to_eat))
+  while ((read != KEY_QUIT) && (read != KEY_QUIT + 'A' - 'a') && (pacman.lives > 0) && (coins_to_eat))
   {
     for (int i = 0; i < GAME_SPEED; ++i)
     {
@@ -71,7 +71,7 @@ int run_game(game_init_data_t *game_data, peripherals_data_t *peripherals)
     pthread_mutex_lock(&mtx);
     read = read_thread_data.last_read;
     pthread_mutex_unlock(&mtx);
-    if (read == PAUSE_KEY)
+    if (read == PAUSE_KEY || read == PAUSE_KEY + 'A' - 'a')
     {
       pause_game(&fb, peripherals);
     }
@@ -178,14 +178,14 @@ void pause_game(fb_data *fb, peripherals_data_t *peripherals)
                    PAUSE_SUBTEXT_SIZE, &PAUSE_FONT, PAUSE_COLOR);
   lcd_from_fb(fb, peripherals->lcd_mem_base);
 
-  while (read != PAUSE_KEY && read != KEY_QUIT)
+  while ((read != PAUSE_KEY && read != PAUSE_KEY + 'A' - 'a') && (read != KEY_QUIT && read != KEY_QUIT + 'A' - 'a'))
   {
     pthread_mutex_lock(&mtx);
     pthread_cond_wait(&character_has_been_read, &mtx);
     read = read_thread_data.last_read;
     pthread_mutex_unlock(&mtx);
   }
-  if (read == PAUSE_KEY)
+  if (read == PAUSE_KEY || read == PAUSE_KEY + 'A' - 'a')
   {
     read = ' ';
     pthread_mutex_lock(&mtx);
