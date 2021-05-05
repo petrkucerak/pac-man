@@ -25,16 +25,22 @@
 var NAVTREE =
 [
   [ "Pac-Man", "index.html", [
-    [ "Semestrální práce na APO", "md__c___users__petr__documents_apo_semestralka__r_e_a_d_m_e.html", [
-      [ "Introdukce", "md__c___users__petr__documents_apo_semestralka__r_e_a_d_m_e.html#autotoc_md1", null ],
-      [ "Použité periferie a jejich funkce", "md__c___users__petr__documents_apo_semestralka__r_e_a_d_m_e.html#autotoc_md2", null ],
-      [ "Stavy", "md__c___users__petr__documents_apo_semestralka__r_e_a_d_m_e.html#autotoc_md3", [
-        [ "Inicializace hry", "md__c___users__petr__documents_apo_semestralka__r_e_a_d_m_e.html#autotoc_md4", null ],
-        [ "Průběh hry", "md__c___users__petr__documents_apo_semestralka__r_e_a_d_m_e.html#autotoc_md5", null ],
-        [ "Závěr hry", "md__c___users__petr__documents_apo_semestralka__r_e_a_d_m_e.html#autotoc_md6", null ]
+    [ "Specifikace semestrální práce", "index.html", [
+      [ "Introdukce", "index.html#autotoc_md6", null ],
+      [ "Použité periferie a jejich funkce", "index.html#autotoc_md7", null ],
+      [ "Stavy", "index.html#autotoc_md8", [
+        [ "Inicializace hry", "index.html#autotoc_md9", null ],
+        [ "Průběh hry", "index.html#autotoc_md10", null ],
+        [ "Závěr hry", "index.html#autotoc_md11", null ]
       ] ],
-      [ "Kompilace", "md__c___users__petr__documents_apo_semestralka__r_e_a_d_m_e.html#autotoc_md7", null ]
+      [ "Kompilace", "index.html#autotoc_md12", null ]
     ] ],
+    [ "Technická dokumnetace", "md__c___users__petr__documents_apo_semestralka__tech_documentation.html", [
+      [ "Architektura aplikace", "md__c___users__petr__documents_apo_semestralka__tech_documentation.html#autotoc_md1", null ],
+      [ "Blokové schéma algoritmu", "md__c___users__petr__documents_apo_semestralka__tech_documentation.html#autotoc_md2", null ],
+      [ "Popis kompilace a spuštění programu", "md__c___users__petr__documents_apo_semestralka__tech_documentation.html#autotoc_md3", null ]
+    ] ],
+    [ "Uživatelský manuál", "md__c___users__petr__documents_apo_semestralka__user_manual.html", null ],
     [ "Data Structures", "annotated.html", [
       [ "Data Structures", "annotated.html", "annotated_dup" ],
       [ "Data Structure Index", "classes.html", null ],
@@ -59,7 +65,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"mzapo__regs_8h.html#aa077e6d381f95ca143b52dc71df86eac"
+"mzapo__regs_8h.html#a8347b977e4f5a5a6b22327e398e09df8"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

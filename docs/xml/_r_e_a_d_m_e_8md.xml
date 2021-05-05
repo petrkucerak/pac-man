@@ -7,7 +7,7 @@
     <detaileddescription>
     </detaileddescription>
     <programlisting>
-<codeline><highlight class="normal">#<sp/>Semestrální<sp/>práce<sp/>na<sp/>APO</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>Specifikace<sp/>semestrální<sp/>práce</highlight></codeline>
 <codeline></codeline>
 <codeline><highlight class="normal">##<sp/>Introdukce</highlight></codeline>
 <codeline><highlight class="normal">Cílem<sp/>této<sp/>semstrální<sp/>práce<sp/>je<sp/>vytvořit<sp/>hru<sp/>Pac-Man,<sp/>kterou<sp/>bude<sp/>možné<sp/>hrát<sp/>na<sp/>desce<sp/>MzAPO<sp/>a<sp/>ovládat<sp/>pomocí<sp/>okolních<sp/>periferií.</highlight></codeline>

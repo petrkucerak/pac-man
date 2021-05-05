@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_md__c___users__petr__documents_apo_semestralka__tech_documentation" xml:lang="en-US">
+<section xml:id="_md__c___users__petr__documents_apo_semestralka__tech_documentation_1autotoc_md1">
+<title>Architektura aplikace</title>
+
+<para>Soubory programu jsou děleny dle funkčnosti. Podrobnjěí informace s popisem jednotlivých souborů, metod, funkcí, struktur, proměných a maker je možné dohledat v dokumentaci v sekci: <link xlink:href="files.html">Files</link>.</para>
+
+<para>Aplikace je vytvořena pro MicroZed based MZ_APO board designed by Petr Porazil at <link xlink:href="http://www.pikron.com/">PiKRON</link>.</para>
+
+<para>Aplikace vychází z šablony <link xlink:href="https://gitlab.fel.cvut.cz/b35apo/mzapo_template">mzapo_template</link>.</para>
+</section>
+<section xml:id="_md__c___users__petr__documents_apo_semestralka__tech_documentation_1autotoc_md2">
+<title>Blokové schéma algoritmu</title>
+
+<para>Blokové schéma popisuje fungování algoritmu hry Pac-Man.</para>
+
+<para></para>
+
+<para>Obecně si ho můžeme rozdělit do třech částí:</para>
+
+<para><orderedlist>
+<listitem>
+<para>konfigurace dané hry (Main menu)</para>
+</listitem><listitem>
+<para>hra samotná (Game)</para>
+</listitem><listitem>
+<para>výpis skóre a pauza (Dispaly score, Pause)</para>
+</listitem></orderedlist>
+</para>
+</section>
+<section xml:id="_md__c___users__petr__documents_apo_semestralka__tech_documentation_1autotoc_md3">
+<title>Popis kompilace a spuštění programu</title>
+</section>
+</section>

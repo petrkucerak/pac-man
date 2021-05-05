@@ -1,4 +1,4 @@
-\hypertarget{ghost_8c}{}\doxysection{C\+:/\+Users/\+Petr/\+Documents/apo\+\_\+semestralka/ghost.c File Reference}
+\doxysection{C\+:/\+Users/\+Petr/\+Documents/apo\+\_\+semestralka/ghost.c File Reference}
 \label{ghost_8c}\index{C:/Users/Petr/Documents/apo\_semestralka/ghost.c@{C:/Users/Petr/Documents/apo\_semestralka/ghost.c}}
 
 
@@ -16,17 +16,17 @@ Module where all the logic and movement of ghost is placed.
 \doxysubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-bool \mbox{\hyperlink{ghost_8c_ae10703308badbc547da248d1dddcd699}{ghost\+\_\+move}} (\mbox{\hyperlink{structghost__type}{ghost\+\_\+type}} $\ast$ghost, \mbox{\hyperlink{structmap__data}{map\+\_\+data}} $\ast$map, \mbox{\hyperlink{structpacman__type}{pacman\+\_\+type}} $\ast$pacman)
+bool \textbf{ ghost\+\_\+move} (\textbf{ ghost\+\_\+type} $\ast$ghost, \textbf{ map\+\_\+data} $\ast$map, \textbf{ pacman\+\_\+type} $\ast$pacman)
 \begin{DoxyCompactList}\small\item\em Has small chance to change the ghost movement from random to targeting and vice versa. Changes the ghosts direction if there are more possibilities, moves the ghost in the resulting direction. \end{DoxyCompactList}\item 
-bool \mbox{\hyperlink{ghost_8c_a25d891c687c3f7006638701ab4856d35}{ghost\+\_\+can\+\_\+move}} (\mbox{\hyperlink{structghost__type}{ghost\+\_\+type}} $\ast$ghost, int dirx, int diry, \mbox{\hyperlink{structmap__data}{map\+\_\+data}} $\ast$map)
+bool \textbf{ ghost\+\_\+can\+\_\+move} (\textbf{ ghost\+\_\+type} $\ast$ghost, int dirx, int diry, \textbf{ map\+\_\+data} $\ast$map)
 \begin{DoxyCompactList}\small\item\em Returns true if ghost can move in given direction. \end{DoxyCompactList}\item 
-int \mbox{\hyperlink{ghost_8c_aea3ea3ec6383019544b3e889015fc6d0}{create\+\_\+moves}} (\mbox{\hyperlink{structmoves__costs__t}{moves\+\_\+costs\+\_\+t}} $\ast$moves\+\_\+arr, \mbox{\hyperlink{structghost__type}{ghost\+\_\+type}} $\ast$ghost, \mbox{\hyperlink{structmap__data}{map\+\_\+data}} $\ast$map, \mbox{\hyperlink{structpacman__type}{pacman\+\_\+type}} $\ast$pacman)
+int \textbf{ create\+\_\+moves} (\textbf{ moves\+\_\+costs\+\_\+t} $\ast$moves\+\_\+arr, \textbf{ ghost\+\_\+type} $\ast$ghost, \textbf{ map\+\_\+data} $\ast$map, \textbf{ pacman\+\_\+type} $\ast$pacman)
 \begin{DoxyCompactList}\small\item\em Returns number of possible moves, which it has put into the array along with their cost. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{ghost_8c_a5a6a4ea7a54730dd11640485ca265353}{draw\+\_\+ghost}} (\mbox{\hyperlink{structfb__data}{fb\+\_\+data}} $\ast$fb, \mbox{\hyperlink{structghost__type}{ghost\+\_\+type}} $\ast$ghost, \mbox{\hyperlink{structmap__data}{map\+\_\+data}} $\ast$map)
+void \textbf{ draw\+\_\+ghost} (\textbf{ fb\+\_\+data} $\ast$fb, \textbf{ ghost\+\_\+type} $\ast$ghost, \textbf{ map\+\_\+data} $\ast$map)
 \begin{DoxyCompactList}\small\item\em Draws the ghost to frame buffer with color indicating its state. \end{DoxyCompactList}\item 
-\mbox{\hyperlink{structghost__type}{ghost\+\_\+type}} \mbox{\hyperlink{ghost_8c_a14b4ae2c797e212ae5255036c699676a}{create\+\_\+ghost}} (\mbox{\hyperlink{structmap__data}{map\+\_\+data}} $\ast$map, int ghost\+\_\+nr)
+\textbf{ ghost\+\_\+type} \textbf{ create\+\_\+ghost} (\textbf{ map\+\_\+data} $\ast$map, int ghost\+\_\+nr)
 \begin{DoxyCompactList}\small\item\em Creates the ghost at spawning point at map. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{ghost_8c_a5384f018ac62b15c7f5e61d662a0e51c}{change\+\_\+direction}} (\mbox{\hyperlink{structghost__type}{ghost\+\_\+type}} $\ast$ghost, int possibilities, \mbox{\hyperlink{structmoves__costs__t}{moves\+\_\+costs\+\_\+t}} $\ast$moves\+\_\+options)
+void \textbf{ change\+\_\+direction} (\textbf{ ghost\+\_\+type} $\ast$ghost, int possibilities, \textbf{ moves\+\_\+costs\+\_\+t} $\ast$moves\+\_\+options)
 \begin{DoxyCompactList}\small\item\em Changes the direction of ghost to the path that would lead the closest to pacman or random if ghost is moving randomly. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
@@ -34,7 +34,7 @@ void \mbox{\hyperlink{ghost_8c_a5384f018ac62b15c7f5e61d662a0e51c}{change\+\_\+di
 Module where all the logic and movement of ghost is placed. 
 
 \begin{DoxyAuthor}{Author}
-Lukas Nejezchleb (\href{mailto:nejezluk@fel.cvut.cz}{\texttt{ nejezluk@fel.\+cvut.\+cz}}) 
+Lukas Nejezchleb ({\texttt{ nejezluk@fel.\+cvut.\+cz}}) 
 \end{DoxyAuthor}
 \begin{DoxyVersion}{Version}
 0.\+1 
@@ -48,11 +48,11 @@ Copyright (c) 2021
 
 
 \doxysubsection{Function Documentation}
-\mbox{\Hypertarget{ghost_8c_a5384f018ac62b15c7f5e61d662a0e51c}\label{ghost_8c_a5384f018ac62b15c7f5e61d662a0e51c}} 
+\mbox{\label{ghost_8c_a5384f018ac62b15c7f5e61d662a0e51c}} 
 \index{ghost.c@{ghost.c}!change\_direction@{change\_direction}}
 \index{change\_direction@{change\_direction}!ghost.c@{ghost.c}}
-\doxysubsubsection{\texorpdfstring{change\_direction()}{change\_direction()}}
-{\footnotesize\ttfamily void change\+\_\+direction (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structghost__type}{ghost\+\_\+type}} $\ast$}]{ghost,  }\item[{int}]{possibilities,  }\item[{\mbox{\hyperlink{structmoves__costs__t}{moves\+\_\+costs\+\_\+t}} $\ast$}]{moves\+\_\+options }\end{DoxyParamCaption})}
+\doxysubsubsection{change\_direction()}
+{\footnotesize\ttfamily void change\+\_\+direction (\begin{DoxyParamCaption}\item[{\textbf{ ghost\+\_\+type} $\ast$}]{ghost,  }\item[{int}]{possibilities,  }\item[{\textbf{ moves\+\_\+costs\+\_\+t} $\ast$}]{moves\+\_\+options }\end{DoxyParamCaption})}
 
 
 
@@ -67,11 +67,11 @@ Changes the direction of ghost to the path that would lead the closest to pacman
 {\em moves\+\_\+options} & \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{ghost_8c_a14b4ae2c797e212ae5255036c699676a}\label{ghost_8c_a14b4ae2c797e212ae5255036c699676a}} 
+\mbox{\label{ghost_8c_a14b4ae2c797e212ae5255036c699676a}} 
 \index{ghost.c@{ghost.c}!create\_ghost@{create\_ghost}}
 \index{create\_ghost@{create\_ghost}!ghost.c@{ghost.c}}
-\doxysubsubsection{\texorpdfstring{create\_ghost()}{create\_ghost()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{structghost__type}{ghost\+\_\+type}} create\+\_\+ghost (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structmap__data}{map\+\_\+data}} $\ast$}]{map,  }\item[{int}]{ghost\+\_\+nr }\end{DoxyParamCaption})}
+\doxysubsubsection{create\_ghost()}
+{\footnotesize\ttfamily \textbf{ ghost\+\_\+type} create\+\_\+ghost (\begin{DoxyParamCaption}\item[{\textbf{ map\+\_\+data} $\ast$}]{map,  }\item[{int}]{ghost\+\_\+nr }\end{DoxyParamCaption})}
 
 
 
@@ -85,13 +85,13 @@ Creates the ghost at spawning point at map.
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-\mbox{\hyperlink{structghost__type}{ghost\+\_\+type}} 
+\doxyref{ghost\+\_\+type}{p.}{structghost__type} 
 \end{DoxyReturn}
-\mbox{\Hypertarget{ghost_8c_aea3ea3ec6383019544b3e889015fc6d0}\label{ghost_8c_aea3ea3ec6383019544b3e889015fc6d0}} 
+\mbox{\label{ghost_8c_aea3ea3ec6383019544b3e889015fc6d0}} 
 \index{ghost.c@{ghost.c}!create\_moves@{create\_moves}}
 \index{create\_moves@{create\_moves}!ghost.c@{ghost.c}}
-\doxysubsubsection{\texorpdfstring{create\_moves()}{create\_moves()}}
-{\footnotesize\ttfamily int create\+\_\+moves (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structmoves__costs__t}{moves\+\_\+costs\+\_\+t}} $\ast$}]{moves\+\_\+arr,  }\item[{\mbox{\hyperlink{structghost__type}{ghost\+\_\+type}} $\ast$}]{ghost,  }\item[{\mbox{\hyperlink{structmap__data}{map\+\_\+data}} $\ast$}]{map,  }\item[{\mbox{\hyperlink{structpacman__type}{pacman\+\_\+type}} $\ast$}]{pacman }\end{DoxyParamCaption})}
+\doxysubsubsection{create\_moves()}
+{\footnotesize\ttfamily int create\+\_\+moves (\begin{DoxyParamCaption}\item[{\textbf{ moves\+\_\+costs\+\_\+t} $\ast$}]{moves\+\_\+arr,  }\item[{\textbf{ ghost\+\_\+type} $\ast$}]{ghost,  }\item[{\textbf{ map\+\_\+data} $\ast$}]{map,  }\item[{\textbf{ pacman\+\_\+type} $\ast$}]{pacman }\end{DoxyParamCaption})}
 
 
 
@@ -111,11 +111,11 @@ Returns number of possible moves, which it has put into the array along with the
 \begin{DoxyReturn}{Returns}
 returns number of possible moves, which it has put into the array along with their cost 
 \end{DoxyReturn}
-\mbox{\Hypertarget{ghost_8c_a5a6a4ea7a54730dd11640485ca265353}\label{ghost_8c_a5a6a4ea7a54730dd11640485ca265353}} 
+\mbox{\label{ghost_8c_a5a6a4ea7a54730dd11640485ca265353}} 
 \index{ghost.c@{ghost.c}!draw\_ghost@{draw\_ghost}}
 \index{draw\_ghost@{draw\_ghost}!ghost.c@{ghost.c}}
-\doxysubsubsection{\texorpdfstring{draw\_ghost()}{draw\_ghost()}}
-{\footnotesize\ttfamily void draw\+\_\+ghost (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structfb__data}{fb\+\_\+data}} $\ast$}]{fb,  }\item[{\mbox{\hyperlink{structghost__type}{ghost\+\_\+type}} $\ast$}]{ghost,  }\item[{\mbox{\hyperlink{structmap__data}{map\+\_\+data}} $\ast$}]{map }\end{DoxyParamCaption})}
+\doxysubsubsection{draw\_ghost()}
+{\footnotesize\ttfamily void draw\+\_\+ghost (\begin{DoxyParamCaption}\item[{\textbf{ fb\+\_\+data} $\ast$}]{fb,  }\item[{\textbf{ ghost\+\_\+type} $\ast$}]{ghost,  }\item[{\textbf{ map\+\_\+data} $\ast$}]{map }\end{DoxyParamCaption})}
 
 
 
@@ -130,11 +130,11 @@ Draws the ghost to frame buffer with color indicating its state.
 {\em map} & \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{ghost_8c_a25d891c687c3f7006638701ab4856d35}\label{ghost_8c_a25d891c687c3f7006638701ab4856d35}} 
+\mbox{\label{ghost_8c_a25d891c687c3f7006638701ab4856d35}} 
 \index{ghost.c@{ghost.c}!ghost\_can\_move@{ghost\_can\_move}}
 \index{ghost\_can\_move@{ghost\_can\_move}!ghost.c@{ghost.c}}
-\doxysubsubsection{\texorpdfstring{ghost\_can\_move()}{ghost\_can\_move()}}
-{\footnotesize\ttfamily bool ghost\+\_\+can\+\_\+move (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structghost__type}{ghost\+\_\+type}} $\ast$}]{ghost,  }\item[{int}]{dirx,  }\item[{int}]{diry,  }\item[{\mbox{\hyperlink{structmap__data}{map\+\_\+data}} $\ast$}]{map }\end{DoxyParamCaption})}
+\doxysubsubsection{ghost\_can\_move()}
+{\footnotesize\ttfamily bool ghost\+\_\+can\+\_\+move (\begin{DoxyParamCaption}\item[{\textbf{ ghost\+\_\+type} $\ast$}]{ghost,  }\item[{int}]{dirx,  }\item[{int}]{diry,  }\item[{\textbf{ map\+\_\+data} $\ast$}]{map }\end{DoxyParamCaption})}
 
 
 
@@ -156,11 +156,11 @@ true
 
 false 
 \end{DoxyReturn}
-\mbox{\Hypertarget{ghost_8c_ae10703308badbc547da248d1dddcd699}\label{ghost_8c_ae10703308badbc547da248d1dddcd699}} 
+\mbox{\label{ghost_8c_ae10703308badbc547da248d1dddcd699}} 
 \index{ghost.c@{ghost.c}!ghost\_move@{ghost\_move}}
 \index{ghost\_move@{ghost\_move}!ghost.c@{ghost.c}}
-\doxysubsubsection{\texorpdfstring{ghost\_move()}{ghost\_move()}}
-{\footnotesize\ttfamily bool ghost\+\_\+move (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structghost__type}{ghost\+\_\+type}} $\ast$}]{ghost,  }\item[{\mbox{\hyperlink{structmap__data}{map\+\_\+data}} $\ast$}]{map,  }\item[{\mbox{\hyperlink{structpacman__type}{pacman\+\_\+type}} $\ast$}]{pacman }\end{DoxyParamCaption})}
+\doxysubsubsection{ghost\_move()}
+{\footnotesize\ttfamily bool ghost\+\_\+move (\begin{DoxyParamCaption}\item[{\textbf{ ghost\+\_\+type} $\ast$}]{ghost,  }\item[{\textbf{ map\+\_\+data} $\ast$}]{map,  }\item[{\textbf{ pacman\+\_\+type} $\ast$}]{pacman }\end{DoxyParamCaption})}
 
 
 

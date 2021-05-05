@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="__user__manual_8md" kind="file" language="Markdown">
+    <compoundname>_user_manual.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">#<sp/>Uživatelský<sp/>manuál</highlight></codeline>
+<codeline></codeline>
+    </programlisting>
+    <location file="C:/Users/Petr/Documents/apo_semestralka/_user_manual.md"/>
+  </compounddef>
+</doxygen>

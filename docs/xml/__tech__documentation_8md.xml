@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="__tech__documentation_8md" kind="file" language="Markdown">
+    <compoundname>_tech_documentation.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">#<sp/>Technická<sp/>dokumnetace</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Architektura<sp/>aplikace</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Soubory<sp/>programu<sp/>jsou<sp/>děleny<sp/>dle<sp/>funkčnosti.<sp/>Podrobnjěí<sp/>informace<sp/>s<sp/>popisem<sp/>jednotlivých<sp/>souborů,<sp/>metod,<sp/>funkcí,<sp/>struktur,<sp/>proměných<sp/>a<sp/>maker<sp/>je<sp/>možné<sp/>dohledat<sp/>v<sp/>dokumentaci<sp/>v<sp/>sekci:<sp/>[Files](files.html).</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Aplikace<sp/>je<sp/>vytvořena<sp/>pro<sp/>MicroZed<sp/>based<sp/>MZ_APO<sp/>board<sp/>designed<sp/>by<sp/>Petr<sp/>Porazil<sp/>at<sp/>[PiKRON](http://www.pikron.com/).</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Aplikace<sp/>vychází<sp/>z<sp/>šablony<sp/>[mzapo_template](https://gitlab.fel.cvut.cz/b35apo/mzapo_template).</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Blokové<sp/>schéma<sp/>algoritmu</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Blokové<sp/>schéma<sp/>popisuje<sp/>fungování<sp/>algoritmu<sp/>hry<sp/>Pac-Man.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">![block-schema](docs/blok-schema.png)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Obecně<sp/>si<sp/>ho<sp/>můžeme<sp/>rozdělit<sp/>do<sp/>třech<sp/>částí:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">1.<sp/>konfigurace<sp/>dané<sp/>hry<sp/>(Main<sp/>menu)</highlight></codeline>
+<codeline><highlight class="normal">2.<sp/>hra<sp/>samotná<sp/>(Game)</highlight></codeline>
+<codeline><highlight class="normal">3.<sp/>výpis<sp/>skóre<sp/>a<sp/>pauza<sp/>(Dispaly<sp/>score,<sp/>Pause)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Popis<sp/>kompilace<sp/>a<sp/>spuštění<sp/>programu</highlight></codeline>
+    </programlisting>
+    <location file="C:/Users/Petr/Documents/apo_semestralka/_tech_documentation.md"/>
+  </compounddef>
+</doxygen>

@@ -1,4 +1,4 @@
-\hypertarget{update__peripherals_8h}{}\doxysection{C\+:/\+Users/\+Petr/\+Documents/apo\+\_\+semestralka/update\+\_\+peripherals.h File Reference}
+\doxysection{C\+:/\+Users/\+Petr/\+Documents/apo\+\_\+semestralka/update\+\_\+peripherals.h File Reference}
 \label{update__peripherals_8h}\index{C:/Users/Petr/Documents/apo\_semestralka/update\_peripherals.h@{C:/Users/Petr/Documents/apo\_semestralka/update\_peripherals.h}}
 
 
@@ -10,15 +10,15 @@ Module for setting the peripherals.
 \doxysubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-void \mbox{\hyperlink{update__peripherals_8h_aa30de0dfddc51283d5b5e429fdb6f030}{lcd\+\_\+from\+\_\+fb}} (const \mbox{\hyperlink{structfb__data}{fb\+\_\+data}} $\ast$frame\+\_\+buff, unsigned char $\ast$parlcd\+\_\+mem\+\_\+base)
+void \textbf{ lcd\+\_\+from\+\_\+fb} (const \textbf{ fb\+\_\+data} $\ast$frame\+\_\+buff, unsigned char $\ast$parlcd\+\_\+mem\+\_\+base)
 \begin{DoxyCompactList}\small\item\em Sets the lcd pixels to colors described in frame buffer. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{update__peripherals_8h_a27f1db817fb1375b46affe1dc4d0dc9b}{led\+\_\+strip\+\_\+number}} (unsigned char $\ast$led\+\_\+mem\+\_\+base, int max\+\_\+nr, int nr)
+void \textbf{ led\+\_\+strip\+\_\+number} (unsigned char $\ast$led\+\_\+mem\+\_\+base, int max\+\_\+nr, int nr)
 \begin{DoxyCompactList}\small\item\em Shows number as number of clusters on the led strip. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{update__peripherals_8h_af830207334d68a6414d80117e98e7a84}{set\+\_\+left\+\_\+\+RGB}} (unsigned char $\ast$led\+\_\+mem\+\_\+base, uint8\+\_\+t r, uint8\+\_\+t g, uint8\+\_\+t b)
+void \textbf{ set\+\_\+left\+\_\+\+RGB} (unsigned char $\ast$led\+\_\+mem\+\_\+base, uint8\+\_\+t r, uint8\+\_\+t g, uint8\+\_\+t b)
 \begin{DoxyCompactList}\small\item\em Sets the left RGB led to particular rgb color. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{update__peripherals_8h_a55ba16e218e56e6112bea4cb48dd7017}{set\+\_\+right\+\_\+\+RGB}} (unsigned char $\ast$led\+\_\+mem\+\_\+base, uint8\+\_\+t r, uint8\+\_\+t g, uint8\+\_\+t b)
+void \textbf{ set\+\_\+right\+\_\+\+RGB} (unsigned char $\ast$led\+\_\+mem\+\_\+base, uint8\+\_\+t r, uint8\+\_\+t g, uint8\+\_\+t b)
 \begin{DoxyCompactList}\small\item\em Sets the right RGB led to particular rgb color. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{update__peripherals_8h_afdba9f1f14e9a81789f87d33a36bda35}{sel\+\_\+leds\+\_\+color}} (unsigned char $\ast$led\+\_\+mem\+\_\+base, uint32\+\_\+t color)
+void \textbf{ sel\+\_\+leds\+\_\+color} (unsigned char $\ast$led\+\_\+mem\+\_\+base, uint32\+\_\+t color)
 \begin{DoxyCompactList}\small\item\em Sets both to color. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
@@ -26,7 +26,7 @@ void \mbox{\hyperlink{update__peripherals_8h_afdba9f1f14e9a81789f87d33a36bda35}{
 Module for setting the peripherals. 
 
 \begin{DoxyAuthor}{Author}
-Lukas Nejezchleb (\href{mailto:nejezluk@fel.cvut.cz}{\texttt{ nejezluk@fel.\+cvut.\+cz}}) 
+Lukas Nejezchleb ({\texttt{ nejezluk@fel.\+cvut.\+cz}}) 
 \end{DoxyAuthor}
 \begin{DoxyVersion}{Version}
 0.\+1 
@@ -40,11 +40,11 @@ Copyright (c) 2021
 
 
 \doxysubsection{Function Documentation}
-\mbox{\Hypertarget{update__peripherals_8h_aa30de0dfddc51283d5b5e429fdb6f030}\label{update__peripherals_8h_aa30de0dfddc51283d5b5e429fdb6f030}} 
+\mbox{\label{update__peripherals_8h_aa30de0dfddc51283d5b5e429fdb6f030}} 
 \index{update\_peripherals.h@{update\_peripherals.h}!lcd\_from\_fb@{lcd\_from\_fb}}
 \index{lcd\_from\_fb@{lcd\_from\_fb}!update\_peripherals.h@{update\_peripherals.h}}
-\doxysubsubsection{\texorpdfstring{lcd\_from\_fb()}{lcd\_from\_fb()}}
-{\footnotesize\ttfamily void lcd\+\_\+from\+\_\+fb (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structfb__data}{fb\+\_\+data}} $\ast$}]{frame\+\_\+buff,  }\item[{unsigned char $\ast$}]{parlcd\+\_\+mem\+\_\+base }\end{DoxyParamCaption})}
+\doxysubsubsection{lcd\_from\_fb()}
+{\footnotesize\ttfamily void lcd\+\_\+from\+\_\+fb (\begin{DoxyParamCaption}\item[{const \textbf{ fb\+\_\+data} $\ast$}]{frame\+\_\+buff,  }\item[{unsigned char $\ast$}]{parlcd\+\_\+mem\+\_\+base }\end{DoxyParamCaption})}
 
 
 
@@ -57,10 +57,10 @@ Sets the lcd pixels to colors described in frame buffer.
 {\em parlcd\+\_\+mem\+\_\+base} & \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{update__peripherals_8h_a27f1db817fb1375b46affe1dc4d0dc9b}\label{update__peripherals_8h_a27f1db817fb1375b46affe1dc4d0dc9b}} 
+\mbox{\label{update__peripherals_8h_a27f1db817fb1375b46affe1dc4d0dc9b}} 
 \index{update\_peripherals.h@{update\_peripherals.h}!led\_strip\_number@{led\_strip\_number}}
 \index{led\_strip\_number@{led\_strip\_number}!update\_peripherals.h@{update\_peripherals.h}}
-\doxysubsubsection{\texorpdfstring{led\_strip\_number()}{led\_strip\_number()}}
+\doxysubsubsection{led\_strip\_number()}
 {\footnotesize\ttfamily void led\+\_\+strip\+\_\+number (\begin{DoxyParamCaption}\item[{unsigned char $\ast$}]{led\+\_\+mem\+\_\+base,  }\item[{int}]{max\+\_\+nr,  }\item[{int}]{nr }\end{DoxyParamCaption})}
 
 
@@ -76,10 +76,10 @@ Shows number as number of clusters on the led strip.
 {\em nr} & \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{update__peripherals_8h_afdba9f1f14e9a81789f87d33a36bda35}\label{update__peripherals_8h_afdba9f1f14e9a81789f87d33a36bda35}} 
+\mbox{\label{update__peripherals_8h_afdba9f1f14e9a81789f87d33a36bda35}} 
 \index{update\_peripherals.h@{update\_peripherals.h}!sel\_leds\_color@{sel\_leds\_color}}
 \index{sel\_leds\_color@{sel\_leds\_color}!update\_peripherals.h@{update\_peripherals.h}}
-\doxysubsubsection{\texorpdfstring{sel\_leds\_color()}{sel\_leds\_color()}}
+\doxysubsubsection{sel\_leds\_color()}
 {\footnotesize\ttfamily void sel\+\_\+leds\+\_\+color (\begin{DoxyParamCaption}\item[{unsigned char $\ast$}]{led\+\_\+mem\+\_\+base,  }\item[{uint32\+\_\+t}]{color }\end{DoxyParamCaption})}
 
 
@@ -93,10 +93,10 @@ Sets both to color.
 {\em color} & \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{update__peripherals_8h_af830207334d68a6414d80117e98e7a84}\label{update__peripherals_8h_af830207334d68a6414d80117e98e7a84}} 
+\mbox{\label{update__peripherals_8h_af830207334d68a6414d80117e98e7a84}} 
 \index{update\_peripherals.h@{update\_peripherals.h}!set\_left\_RGB@{set\_left\_RGB}}
 \index{set\_left\_RGB@{set\_left\_RGB}!update\_peripherals.h@{update\_peripherals.h}}
-\doxysubsubsection{\texorpdfstring{set\_left\_RGB()}{set\_left\_RGB()}}
+\doxysubsubsection{set\_left\_RGB()}
 {\footnotesize\ttfamily void set\+\_\+left\+\_\+\+RGB (\begin{DoxyParamCaption}\item[{unsigned char $\ast$}]{led\+\_\+mem\+\_\+base,  }\item[{uint8\+\_\+t}]{r,  }\item[{uint8\+\_\+t}]{g,  }\item[{uint8\+\_\+t}]{b }\end{DoxyParamCaption})}
 
 
@@ -114,10 +114,10 @@ Sets the left RGB led to particular rgb color.
 {\em b} & \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{update__peripherals_8h_a55ba16e218e56e6112bea4cb48dd7017}\label{update__peripherals_8h_a55ba16e218e56e6112bea4cb48dd7017}} 
+\mbox{\label{update__peripherals_8h_a55ba16e218e56e6112bea4cb48dd7017}} 
 \index{update\_peripherals.h@{update\_peripherals.h}!set\_right\_RGB@{set\_right\_RGB}}
 \index{set\_right\_RGB@{set\_right\_RGB}!update\_peripherals.h@{update\_peripherals.h}}
-\doxysubsubsection{\texorpdfstring{set\_right\_RGB()}{set\_right\_RGB()}}
+\doxysubsubsection{set\_right\_RGB()}
 {\footnotesize\ttfamily void set\+\_\+right\+\_\+\+RGB (\begin{DoxyParamCaption}\item[{unsigned char $\ast$}]{led\+\_\+mem\+\_\+base,  }\item[{uint8\+\_\+t}]{r,  }\item[{uint8\+\_\+t}]{g,  }\item[{uint8\+\_\+t}]{b }\end{DoxyParamCaption})}
 
 

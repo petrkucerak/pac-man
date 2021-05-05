@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="md__c___users__petr__documents_apo_semestralka__tech_documentation" kind="page">
+    <compoundname>md_C__Users_Petr_Documents_apo_semestralka__tech_documentation</compoundname>
+    <title>Technická dokumnetace</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<sect1 id="md__c___users__petr__documents_apo_semestralka__tech_documentation_1autotoc_md1">
+<title>Architektura aplikace</title>
+<para>Soubory programu jsou děleny dle funkčnosti. Podrobnjěí informace s popisem jednotlivých souborů, metod, funkcí, struktur, proměných a maker je možné dohledat v dokumentaci v sekci: <ulink url="files.html">Files</ulink>.</para>
+<para>Aplikace je vytvořena pro MicroZed based MZ_APO board designed by Petr Porazil at <ulink url="http://www.pikron.com/">PiKRON</ulink>.</para>
+<para>Aplikace vychází z šablony <ulink url="https://gitlab.fel.cvut.cz/b35apo/mzapo_template">mzapo_template</ulink>.</para>
+</sect1>
+<sect1 id="md__c___users__petr__documents_apo_semestralka__tech_documentation_1autotoc_md2">
+<title>Blokové schéma algoritmu</title>
+<para>Blokové schéma popisuje fungování algoritmu hry Pac-Man.</para>
+<para><image type="html" name="docs/blok-schema.png" alt="block-schema" inline="yes"></image>
+</para>
+<para>Obecně si ho můžeme rozdělit do třech částí:</para>
+<para><orderedlist>
+<listitem><para>konfigurace dané hry (Main menu)</para>
+</listitem><listitem><para>hra samotná (Game)</para>
+</listitem><listitem><para>výpis skóre a pauza (Dispaly score, Pause)</para>
+</listitem></orderedlist>
+</para>
+</sect1>
+<sect1 id="md__c___users__petr__documents_apo_semestralka__tech_documentation_1autotoc_md3">
+<title>Popis kompilace a spuštění programu</title>
+</sect1>
+    </detaileddescription>
+    <location file="C:/Users/Petr/Documents/apo_semestralka/_tech_documentation.md"/>
+  </compounddef>
+</doxygen>

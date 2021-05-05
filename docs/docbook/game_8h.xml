@@ -21,7 +21,7 @@
 
 <para>Internal functions for setting the color of RGB leds according to the game state. </para>
 </listitem>
-            <listitem><para>void <link linkend="_game_8h_1ac1ff0112ff0bb8c1a4d67cd18dc3eb3c">pause</link> (<link linkend="_structfb__data">fb_data</link> *fb, <link linkend="_structperipherals__data__t">peripherals_data_t</link> *peripherals)</para>
+            <listitem><para>void <link linkend="_game_8h_1a0e947670754754c65011a151d82e2c36">pause_game</link> (<link linkend="_structfb__data">fb_data</link> *fb, <link linkend="_structperipherals__data__t">peripherals_data_t</link> *peripherals)</para>
 
 <para>displays the pause message and waits for user to press the pause of quit key </para>
 </listitem>
@@ -160,11 +160,11 @@ Parameters                    </title>
                     </para>
                 </formalpara>
                 </para>
-    </section><anchor xml:id="_game_8h_1ac1ff0112ff0bb8c1a4d67cd18dc3eb3c"/>    <section>
-    <title>pause()</title>
-<indexterm><primary>pause</primary><secondary>game.h</secondary></indexterm>
-<indexterm><primary>game.h</primary><secondary>pause</secondary></indexterm>
-<para><computeroutput>void pause (<link linkend="_structfb__data">fb_data</link> * fb, <link linkend="_structperipherals__data__t">peripherals_data_t</link> * peripherals)</computeroutput></para><para>
+    </section><anchor xml:id="_game_8h_1a0e947670754754c65011a151d82e2c36"/>    <section>
+    <title>pause_game()</title>
+<indexterm><primary>pause_game</primary><secondary>game.h</secondary></indexterm>
+<indexterm><primary>game.h</primary><secondary>pause_game</secondary></indexterm>
+<para><computeroutput>void pause_game (<link linkend="_structfb__data">fb_data</link> * fb, <link linkend="_structperipherals__data__t">peripherals_data_t</link> * peripherals)</computeroutput></para><para>
 
 <para>displays the pause message and waits for user to press the pause of quit key </para>
 </para>

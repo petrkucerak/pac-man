@@ -115,24 +115,6 @@
   \newunicodechar{²}{${}^{2}$}% Superscript two
   \newunicodechar{³}{${}^{3}$}% Superscript three
 
-% Hyperlinks (required, but should be loaded last)
-\ifpdf
-  \usepackage[pdftex,pagebackref=true]{hyperref}
-\else
-  \ifxetex
-    \usepackage[pagebackref=true]{hyperref}
-  \else
-    \usepackage[ps2pdf,pagebackref=true]{hyperref}
-  \fi
-\fi
-
-\hypersetup{%
-  colorlinks=true,%
-  linkcolor=blue,%
-  citecolor=blue,%
-  unicode%
-}
-
 % Custom commands
 \newcommand{\clearemptydoublepage}{%
   \newpage{\pagestyle{empty}\cleardoublepage}%
@@ -150,10 +132,6 @@
 \raggedbottom
 
 % Titlepage & ToC
-\hypersetup{pageanchor=false,
-             bookmarksnumbered=true,
-             pdfencoding=unicode
-            }
 \pagenumbering{alph}
 \begin{titlepage}
 \vspace*{7cm}
@@ -168,13 +146,16 @@
 \tableofcontents
 \clearemptydoublepage
 \pagenumbering{arabic}
-\hypersetup{pageanchor=true}
 
 %--- Begin generated contents ---
-\chapter{Semestrální práce na APO}
-\label{md__c___users__petr__documents_apo_semestralka__r_e_a_d_m_e}
-\Hypertarget{md__c___users__petr__documents_apo_semestralka__r_e_a_d_m_e}
-\input{md__c___users__petr__documents_apo_semestralka__r_e_a_d_m_e}
+\chapter{Specifikace semestrální práce}
+\label{index}\input{index}
+\chapter{Technická dokumnetace}
+\label{md__c___users__petr__documents_apo_semestralka__tech_documentation}
+\input{md__c___users__petr__documents_apo_semestralka__tech_documentation}
+\chapter{Uživatelský manuál}
+\label{md__c___users__petr__documents_apo_semestralka__user_manual}
+\input{md__c___users__petr__documents_apo_semestralka__user_manual}
 \chapter{Data Structure Index}
 \input{annotated}
 \chapter{File Index}
@@ -192,6 +173,8 @@
 \input{structperipherals__data__t}
 \input{structread__thread__data__type}
 \chapter{File Documentation}
+\input{__tech__documentation_8md}
+\input{__user__manual_8md}
 \input{apoman_8c}
 \input{config_8h}
 \input{data__structures_8h}

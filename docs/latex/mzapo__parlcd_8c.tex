@@ -1,4 +1,4 @@
-\hypertarget{mzapo__parlcd_8c}{}\doxysection{C\+:/\+Users/\+Petr/\+Documents/apo\+\_\+semestralka/mzapo\+\_\+parlcd.c File Reference}
+\doxysection{C\+:/\+Users/\+Petr/\+Documents/apo\+\_\+semestralka/mzapo\+\_\+parlcd.c File Reference}
 \label{mzapo__parlcd_8c}\index{C:/Users/Petr/Documents/apo\_semestralka/mzapo\_parlcd.c@{C:/Users/Petr/Documents/apo\_semestralka/mzapo\_parlcd.c}}
 
 
@@ -12,22 +12,22 @@ Module for setting the LCD screen and writing data to it.
 \doxysubsection*{Macros}
 \begin{DoxyCompactItemize}
 \item 
-\#define \mbox{\hyperlink{mzapo__parlcd_8c_a3024ccd4a9af5109d24e6c57565d74a1}{\+\_\+\+POSIX\+\_\+\+C\+\_\+\+SOURCE}}~200112L
+\#define \textbf{ \+\_\+\+POSIX\+\_\+\+C\+\_\+\+SOURCE}~200112L
 \end{DoxyCompactItemize}
 \doxysubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-void \mbox{\hyperlink{mzapo__parlcd_8c_add303eeaf9fa3e336750f4ba39a69932}{parlcd\+\_\+write\+\_\+cr}} (unsigned char $\ast$parlcd\+\_\+mem\+\_\+base, uint16\+\_\+t data)
+void \textbf{ parlcd\+\_\+write\+\_\+cr} (unsigned char $\ast$parlcd\+\_\+mem\+\_\+base, uint16\+\_\+t data)
 \item 
-void \mbox{\hyperlink{mzapo__parlcd_8c_ab30b1b616caf5991cd8e1a6a52ba23e7}{parlcd\+\_\+write\+\_\+cmd}} (unsigned char $\ast$parlcd\+\_\+mem\+\_\+base, uint16\+\_\+t cmd)
+void \textbf{ parlcd\+\_\+write\+\_\+cmd} (unsigned char $\ast$parlcd\+\_\+mem\+\_\+base, uint16\+\_\+t cmd)
 \item 
-void \mbox{\hyperlink{mzapo__parlcd_8c_ab9125a7610ba0302c004802fb908590d}{parlcd\+\_\+write\+\_\+data}} (unsigned char $\ast$parlcd\+\_\+mem\+\_\+base, uint16\+\_\+t data)
+void \textbf{ parlcd\+\_\+write\+\_\+data} (unsigned char $\ast$parlcd\+\_\+mem\+\_\+base, uint16\+\_\+t data)
 \item 
-void \mbox{\hyperlink{mzapo__parlcd_8c_a688f82186392823303897ee3f270718a}{parlcd\+\_\+write\+\_\+data2x}} (unsigned char $\ast$parlcd\+\_\+mem\+\_\+base, uint32\+\_\+t data)
+void \textbf{ parlcd\+\_\+write\+\_\+data2x} (unsigned char $\ast$parlcd\+\_\+mem\+\_\+base, uint32\+\_\+t data)
 \item 
-void \mbox{\hyperlink{mzapo__parlcd_8c_afef12925f598e36664d1d3b6de27c881}{parlcd\+\_\+delay}} (int msec)
+void \textbf{ parlcd\+\_\+delay} (int msec)
 \item 
-void \mbox{\hyperlink{mzapo__parlcd_8c_a37a4ee10b3cd7f3b1282d944f70c591b}{parlcd\+\_\+hx8357\+\_\+init}} (unsigned char $\ast$parlcd\+\_\+mem\+\_\+base)
+void \textbf{ parlcd\+\_\+hx8357\+\_\+init} (unsigned char $\ast$parlcd\+\_\+mem\+\_\+base)
 \end{DoxyCompactItemize}
 
 
@@ -35,7 +35,7 @@ void \mbox{\hyperlink{mzapo__parlcd_8c_a37a4ee10b3cd7f3b1282d944f70c591b}{parlcd
 Module for setting the LCD screen and writing data to it. 
 
 \begin{DoxyAuthor}{Author}
-Pavel Pisa (\href{mailto:pisa@cmp.felk.cvut.cz}{\texttt{ pisa@cmp.\+felk.\+cvut.\+cz}}) 
+Pavel Pisa ({\texttt{ pisa@cmp.\+felk.\+cvut.\+cz}}) 
 \end{DoxyAuthor}
 \begin{DoxyVersion}{Version}
 0.\+1 
@@ -49,48 +49,48 @@ Copyright (c) 2021
 
 
 \doxysubsection{Macro Definition Documentation}
-\mbox{\Hypertarget{mzapo__parlcd_8c_a3024ccd4a9af5109d24e6c57565d74a1}\label{mzapo__parlcd_8c_a3024ccd4a9af5109d24e6c57565d74a1}} 
+\mbox{\label{mzapo__parlcd_8c_a3024ccd4a9af5109d24e6c57565d74a1}} 
 \index{mzapo\_parlcd.c@{mzapo\_parlcd.c}!\_POSIX\_C\_SOURCE@{\_POSIX\_C\_SOURCE}}
 \index{\_POSIX\_C\_SOURCE@{\_POSIX\_C\_SOURCE}!mzapo\_parlcd.c@{mzapo\_parlcd.c}}
-\doxysubsubsection{\texorpdfstring{\_POSIX\_C\_SOURCE}{\_POSIX\_C\_SOURCE}}
+\doxysubsubsection{\_POSIX\_C\_SOURCE}
 {\footnotesize\ttfamily \#define \+\_\+\+POSIX\+\_\+\+C\+\_\+\+SOURCE~200112L}
 
 
 
 \doxysubsection{Function Documentation}
-\mbox{\Hypertarget{mzapo__parlcd_8c_afef12925f598e36664d1d3b6de27c881}\label{mzapo__parlcd_8c_afef12925f598e36664d1d3b6de27c881}} 
+\mbox{\label{mzapo__parlcd_8c_afef12925f598e36664d1d3b6de27c881}} 
 \index{mzapo\_parlcd.c@{mzapo\_parlcd.c}!parlcd\_delay@{parlcd\_delay}}
 \index{parlcd\_delay@{parlcd\_delay}!mzapo\_parlcd.c@{mzapo\_parlcd.c}}
-\doxysubsubsection{\texorpdfstring{parlcd\_delay()}{parlcd\_delay()}}
+\doxysubsubsection{parlcd\_delay()}
 {\footnotesize\ttfamily void parlcd\+\_\+delay (\begin{DoxyParamCaption}\item[{int}]{msec }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{mzapo__parlcd_8c_a37a4ee10b3cd7f3b1282d944f70c591b}\label{mzapo__parlcd_8c_a37a4ee10b3cd7f3b1282d944f70c591b}} 
+\mbox{\label{mzapo__parlcd_8c_a37a4ee10b3cd7f3b1282d944f70c591b}} 
 \index{mzapo\_parlcd.c@{mzapo\_parlcd.c}!parlcd\_hx8357\_init@{parlcd\_hx8357\_init}}
 \index{parlcd\_hx8357\_init@{parlcd\_hx8357\_init}!mzapo\_parlcd.c@{mzapo\_parlcd.c}}
-\doxysubsubsection{\texorpdfstring{parlcd\_hx8357\_init()}{parlcd\_hx8357\_init()}}
+\doxysubsubsection{parlcd\_hx8357\_init()}
 {\footnotesize\ttfamily void parlcd\+\_\+hx8357\+\_\+init (\begin{DoxyParamCaption}\item[{unsigned char $\ast$}]{parlcd\+\_\+mem\+\_\+base }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{mzapo__parlcd_8c_ab30b1b616caf5991cd8e1a6a52ba23e7}\label{mzapo__parlcd_8c_ab30b1b616caf5991cd8e1a6a52ba23e7}} 
+\mbox{\label{mzapo__parlcd_8c_ab30b1b616caf5991cd8e1a6a52ba23e7}} 
 \index{mzapo\_parlcd.c@{mzapo\_parlcd.c}!parlcd\_write\_cmd@{parlcd\_write\_cmd}}
 \index{parlcd\_write\_cmd@{parlcd\_write\_cmd}!mzapo\_parlcd.c@{mzapo\_parlcd.c}}
-\doxysubsubsection{\texorpdfstring{parlcd\_write\_cmd()}{parlcd\_write\_cmd()}}
+\doxysubsubsection{parlcd\_write\_cmd()}
 {\footnotesize\ttfamily void parlcd\+\_\+write\+\_\+cmd (\begin{DoxyParamCaption}\item[{unsigned char $\ast$}]{parlcd\+\_\+mem\+\_\+base,  }\item[{uint16\+\_\+t}]{cmd }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{mzapo__parlcd_8c_add303eeaf9fa3e336750f4ba39a69932}\label{mzapo__parlcd_8c_add303eeaf9fa3e336750f4ba39a69932}} 
+\mbox{\label{mzapo__parlcd_8c_add303eeaf9fa3e336750f4ba39a69932}} 
 \index{mzapo\_parlcd.c@{mzapo\_parlcd.c}!parlcd\_write\_cr@{parlcd\_write\_cr}}
 \index{parlcd\_write\_cr@{parlcd\_write\_cr}!mzapo\_parlcd.c@{mzapo\_parlcd.c}}
-\doxysubsubsection{\texorpdfstring{parlcd\_write\_cr()}{parlcd\_write\_cr()}}
+\doxysubsubsection{parlcd\_write\_cr()}
 {\footnotesize\ttfamily void parlcd\+\_\+write\+\_\+cr (\begin{DoxyParamCaption}\item[{unsigned char $\ast$}]{parlcd\+\_\+mem\+\_\+base,  }\item[{uint16\+\_\+t}]{data }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{mzapo__parlcd_8c_ab9125a7610ba0302c004802fb908590d}\label{mzapo__parlcd_8c_ab9125a7610ba0302c004802fb908590d}} 
+\mbox{\label{mzapo__parlcd_8c_ab9125a7610ba0302c004802fb908590d}} 
 \index{mzapo\_parlcd.c@{mzapo\_parlcd.c}!parlcd\_write\_data@{parlcd\_write\_data}}
 \index{parlcd\_write\_data@{parlcd\_write\_data}!mzapo\_parlcd.c@{mzapo\_parlcd.c}}
-\doxysubsubsection{\texorpdfstring{parlcd\_write\_data()}{parlcd\_write\_data()}}
+\doxysubsubsection{parlcd\_write\_data()}
 {\footnotesize\ttfamily void parlcd\+\_\+write\+\_\+data (\begin{DoxyParamCaption}\item[{unsigned char $\ast$}]{parlcd\+\_\+mem\+\_\+base,  }\item[{uint16\+\_\+t}]{data }\end{DoxyParamCaption})}
 
-\mbox{\Hypertarget{mzapo__parlcd_8c_a688f82186392823303897ee3f270718a}\label{mzapo__parlcd_8c_a688f82186392823303897ee3f270718a}} 
+\mbox{\label{mzapo__parlcd_8c_a688f82186392823303897ee3f270718a}} 
 \index{mzapo\_parlcd.c@{mzapo\_parlcd.c}!parlcd\_write\_data2x@{parlcd\_write\_data2x}}
 \index{parlcd\_write\_data2x@{parlcd\_write\_data2x}!mzapo\_parlcd.c@{mzapo\_parlcd.c}}
-\doxysubsubsection{\texorpdfstring{parlcd\_write\_data2x()}{parlcd\_write\_data2x()}}
+\doxysubsubsection{parlcd\_write\_data2x()}
 {\footnotesize\ttfamily void parlcd\+\_\+write\+\_\+data2x (\begin{DoxyParamCaption}\item[{unsigned char $\ast$}]{parlcd\+\_\+mem\+\_\+base,  }\item[{uint32\+\_\+t}]{data }\end{DoxyParamCaption})}
 

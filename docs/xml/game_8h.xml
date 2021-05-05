@@ -178,11 +178,11 @@
         </inbodydescription>
         <location file="C:/Users/Petr/Documents/apo_semestralka/game.h" line="34" column="6" bodyfile="C:/Users/Petr/Documents/apo_semestralka/game.c" bodystart="90" bodyend="118" declfile="C:/Users/Petr/Documents/apo_semestralka/game.h" declline="34" declcolumn="6"/>
       </memberdef>
-      <memberdef kind="function" id="game_8h_1ac1ff0112ff0bb8c1a4d67cd18dc3eb3c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="game_8h_1a0e947670754754c65011a151d82e2c36" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
-        <definition>void pause</definition>
+        <definition>void pause_game</definition>
         <argsstring>(fb_data *fb, peripherals_data_t *peripherals)</argsstring>
-        <name>pause</name>
+        <name>pause_game</name>
         <param>
           <type><ref refid="structfb__data" kindref="compound">fb_data</ref> *</type>
           <declname>fb</declname>
@@ -325,7 +325,7 @@
 <codeline lineno="26"><highlight class="normal"></highlight></codeline>
 <codeline lineno="34"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="game_8h_1af84e8ae88873f09731321e62e77a1d18" kindref="member">led_blink</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*led_mem_base,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>scare_countdown,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>pacman_score);</highlight></codeline>
 <codeline lineno="35"><highlight class="normal"></highlight></codeline>
-<codeline lineno="42"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="game_8h_1ac1ff0112ff0bb8c1a4d67cd18dc3eb3c" kindref="member">pause</ref>(<ref refid="structfb__data" kindref="compound">fb_data</ref><sp/>*fb,<sp/><ref refid="structperipherals__data__t" kindref="compound">peripherals_data_t</ref><sp/>*peripherals);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="game_8h_1a0e947670754754c65011a151d82e2c36" kindref="member">pause_game</ref>(<ref refid="structfb__data" kindref="compound">fb_data</ref><sp/>*fb,<sp/><ref refid="structperipherals__data__t" kindref="compound">peripherals_data_t</ref><sp/>*peripherals);</highlight></codeline>
 <codeline lineno="43"><highlight class="normal"></highlight></codeline>
 <codeline lineno="55"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="game_8h_1ac055e6ae3ef32e12a7c56e62bae12db3" kindref="member">game_tick</ref>(<ref refid="structmap__data" kindref="compound">map_data</ref><sp/>*map,<sp/><ref refid="structpacman__type" kindref="compound">pacman_type</ref><sp/>*pacman,<sp/><ref refid="structghost__type" kindref="compound">ghost_type</ref><sp/>*ghost_arr,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>num_ghosts,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>*scare);</highlight></codeline>
 <codeline lineno="56"><highlight class="normal"></highlight></codeline>

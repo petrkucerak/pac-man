@@ -316,11 +316,11 @@
         </inbodydescription>
         <location file="C:/Users/Petr/Documents/apo_semestralka/game.c" line="120" column="6" bodyfile="C:/Users/Petr/Documents/apo_semestralka/game.c" bodystart="120" bodyend="168"/>
       </memberdef>
-      <memberdef kind="function" id="game_8c_1ac1ff0112ff0bb8c1a4d67cd18dc3eb3c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="game_8c_1a0e947670754754c65011a151d82e2c36" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
-        <definition>void pause</definition>
+        <definition>void pause_game</definition>
         <argsstring>(fb_data *fb, peripherals_data_t *peripherals)</argsstring>
-        <name>pause</name>
+        <name>pause_game</name>
         <param>
           <type><ref refid="structfb__data" kindref="compound">fb_data</ref> *</type>
           <declname>fb</declname>
@@ -437,7 +437,7 @@
 <codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/>pthread_mutex_unlock(&amp;<ref refid="apoman_8c_1a2680f9fe5653a596c7e779b838180fdc" kindref="member">mtx</ref>);</highlight></codeline>
 <codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(read<sp/>==<sp/><ref refid="config_8h_1a37ac765069375d3727139ca59cb8557c" kindref="member">PAUSE_KEY</ref>)</highlight></codeline>
 <codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="game_8c_1ac1ff0112ff0bb8c1a4d67cd18dc3eb3c" kindref="member">pause</ref>(&amp;fb,<sp/>peripherals);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="game_8c_1a0e947670754754c65011a151d82e2c36" kindref="member">pause_game</ref>(&amp;fb,<sp/>peripherals);</highlight></codeline>
 <codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="78"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
 <codeline lineno="79"><highlight class="normal"><sp/><sp/>pthread_mutex_lock(&amp;<ref refid="apoman_8c_1a2680f9fe5653a596c7e779b838180fdc" kindref="member">mtx</ref>);</highlight></codeline>
@@ -531,7 +531,7 @@
 <codeline lineno="167"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ret;</highlight></codeline>
 <codeline lineno="168"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="169"><highlight class="normal"></highlight></codeline>
-<codeline lineno="170"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="game_8c_1ac1ff0112ff0bb8c1a4d67cd18dc3eb3c" kindref="member">pause</ref>(<ref refid="structfb__data" kindref="compound">fb_data</ref><sp/>*fb,<sp/><ref refid="structperipherals__data__t" kindref="compound">peripherals_data_t</ref><sp/>*peripherals)</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="game_8c_1a0e947670754754c65011a151d82e2c36" kindref="member">pause_game</ref>(<ref refid="structfb__data" kindref="compound">fb_data</ref><sp/>*fb,<sp/><ref refid="structperipherals__data__t" kindref="compound">peripherals_data_t</ref><sp/>*peripherals)</highlight></codeline>
 <codeline lineno="171"><highlight class="normal">{</highlight></codeline>
 <codeline lineno="172"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>read<sp/>=<sp/></highlight><highlight class="charliteral">&apos;<sp/>&apos;</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="173"><highlight class="normal"><sp/><sp/><ref refid="text__fb_8c_1a6c9c3fce44e83e9b6076cdc74ba11464" kindref="member">draw_text_center</ref>(fb,<sp/><ref refid="config_8h_1a9e873fa6547841f8143e810e80210ae6" kindref="member">PAUSE_TEXT</ref>,<sp/>peripherals-&gt;<ref refid="structperipherals__data__t_1ab09267ea5cf5fa173a23a69dd5f1bb26" kindref="member">lcd_w</ref><sp/>/<sp/>2,<sp/>peripherals-&gt;<ref refid="structperipherals__data__t_1a5680649ae248685c18e72927444139ee" kindref="member">lcd_h</ref><sp/>/<sp/>2,</highlight></codeline>

@@ -1,4 +1,4 @@
-\hypertarget{text__fb_8h}{}\doxysection{C\+:/\+Users/\+Petr/\+Documents/apo\+\_\+semestralka/text\+\_\+fb.h File Reference}
+\doxysection{C\+:/\+Users/\+Petr/\+Documents/apo\+\_\+semestralka/text\+\_\+fb.h File Reference}
 \label{text__fb_8h}\index{C:/Users/Petr/Documents/apo\_semestralka/text\_fb.h@{C:/Users/Petr/Documents/apo\_semestralka/text\_fb.h}}
 
 
@@ -10,15 +10,15 @@ Module for drawing text to frame buffer.
 \doxysubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-void \mbox{\hyperlink{text__fb_8h_a21645f17c98617a8bd7342f9fdb78899}{draw\+\_\+char}} (\mbox{\hyperlink{structfb__data}{fb\+\_\+data}} $\ast$frame, char letter, int x, int y, int scale, \mbox{\hyperlink{structfont__descriptor__t}{font\+\_\+descriptor\+\_\+t}} $\ast$font, uint16\+\_\+t color)
+void \textbf{ draw\+\_\+char} (\textbf{ fb\+\_\+data} $\ast$frame, char letter, int x, int y, int scale, \textbf{ font\+\_\+descriptor\+\_\+t} $\ast$font, uint16\+\_\+t color)
 \begin{DoxyCompactList}\small\item\em Draws the character to the frame buffer. Left upper corner is at x,y and the char is scale times bigger than the bitmap in font. \end{DoxyCompactList}\item 
-int \mbox{\hyperlink{text__fb_8h_ad3a4c863813fb8a6d93380bc7e1826ff}{char\+\_\+width}} (\mbox{\hyperlink{structfont__descriptor__t}{font\+\_\+descriptor\+\_\+t}} $\ast$fdes, int letter)
+int \textbf{ char\+\_\+width} (\textbf{ font\+\_\+descriptor\+\_\+t} $\ast$fdes, int letter)
 \begin{DoxyCompactList}\small\item\em Returns the lenght of given char. \end{DoxyCompactList}\item 
-uint32\+\_\+t \mbox{\hyperlink{text__fb_8h_a7873327914ec2b5b79833f8aa0ffd5ac}{char\+\_\+offset}} (\mbox{\hyperlink{structfont__descriptor__t}{font\+\_\+descriptor\+\_\+t}} $\ast$fdes, char letter)
+uint32\+\_\+t \textbf{ char\+\_\+offset} (\textbf{ font\+\_\+descriptor\+\_\+t} $\ast$fdes, char letter)
 \begin{DoxyCompactList}\small\item\em Returns offset of given char in bitmap data. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{text__fb_8h_a273e67041b3e82dbfdd989f64e876732}{draw\+\_\+text}} (\mbox{\hyperlink{structfb__data}{fb\+\_\+data}} $\ast$frame, char $\ast$text, int x, int y, int scale, \mbox{\hyperlink{structfont__descriptor__t}{font\+\_\+descriptor\+\_\+t}} $\ast$font, uint16\+\_\+t color)
+void \textbf{ draw\+\_\+text} (\textbf{ fb\+\_\+data} $\ast$frame, char $\ast$text, int x, int y, int scale, \textbf{ font\+\_\+descriptor\+\_\+t} $\ast$font, uint16\+\_\+t color)
 \begin{DoxyCompactList}\small\item\em Draws text to the frame buffer, x,y are the coordinates of the left upper edge. \end{DoxyCompactList}\item 
-void \mbox{\hyperlink{text__fb_8h_a6c9c3fce44e83e9b6076cdc74ba11464}{draw\+\_\+text\+\_\+center}} (\mbox{\hyperlink{structfb__data}{fb\+\_\+data}} $\ast$frame, char $\ast$text, int x, int y, int scale, \mbox{\hyperlink{structfont__descriptor__t}{font\+\_\+descriptor\+\_\+t}} $\ast$font, uint16\+\_\+t color)
+void \textbf{ draw\+\_\+text\+\_\+center} (\textbf{ fb\+\_\+data} $\ast$frame, char $\ast$text, int x, int y, int scale, \textbf{ font\+\_\+descriptor\+\_\+t} $\ast$font, uint16\+\_\+t color)
 \begin{DoxyCompactList}\small\item\em Draws the text centered around x,y. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
@@ -26,7 +26,7 @@ void \mbox{\hyperlink{text__fb_8h_a6c9c3fce44e83e9b6076cdc74ba11464}{draw\+\_\+t
 Module for drawing text to frame buffer. 
 
 \begin{DoxyAuthor}{Author}
-Lukas Nejezchleb (\href{mailto:nejezluk@fel.cvut.cz}{\texttt{ nejezluk@fel.\+cvut.\+cz}}) 
+Lukas Nejezchleb ({\texttt{ nejezluk@fel.\+cvut.\+cz}}) 
 \end{DoxyAuthor}
 \begin{DoxyVersion}{Version}
 0.\+1 
@@ -40,11 +40,11 @@ Copyright (c) 2021
 
 
 \doxysubsection{Function Documentation}
-\mbox{\Hypertarget{text__fb_8h_a7873327914ec2b5b79833f8aa0ffd5ac}\label{text__fb_8h_a7873327914ec2b5b79833f8aa0ffd5ac}} 
+\mbox{\label{text__fb_8h_a7873327914ec2b5b79833f8aa0ffd5ac}} 
 \index{text\_fb.h@{text\_fb.h}!char\_offset@{char\_offset}}
 \index{char\_offset@{char\_offset}!text\_fb.h@{text\_fb.h}}
-\doxysubsubsection{\texorpdfstring{char\_offset()}{char\_offset()}}
-{\footnotesize\ttfamily uint32\+\_\+t char\+\_\+offset (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structfont__descriptor__t}{font\+\_\+descriptor\+\_\+t}} $\ast$}]{fdes,  }\item[{char}]{letter }\end{DoxyParamCaption})}
+\doxysubsubsection{char\_offset()}
+{\footnotesize\ttfamily uint32\+\_\+t char\+\_\+offset (\begin{DoxyParamCaption}\item[{\textbf{ font\+\_\+descriptor\+\_\+t} $\ast$}]{fdes,  }\item[{char}]{letter }\end{DoxyParamCaption})}
 
 
 
@@ -60,11 +60,11 @@ Returns offset of given char in bitmap data.
 \begin{DoxyReturn}{Returns}
 uint32\+\_\+t 
 \end{DoxyReturn}
-\mbox{\Hypertarget{text__fb_8h_ad3a4c863813fb8a6d93380bc7e1826ff}\label{text__fb_8h_ad3a4c863813fb8a6d93380bc7e1826ff}} 
+\mbox{\label{text__fb_8h_ad3a4c863813fb8a6d93380bc7e1826ff}} 
 \index{text\_fb.h@{text\_fb.h}!char\_width@{char\_width}}
 \index{char\_width@{char\_width}!text\_fb.h@{text\_fb.h}}
-\doxysubsubsection{\texorpdfstring{char\_width()}{char\_width()}}
-{\footnotesize\ttfamily int char\+\_\+width (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structfont__descriptor__t}{font\+\_\+descriptor\+\_\+t}} $\ast$}]{fdes,  }\item[{int}]{letter }\end{DoxyParamCaption})}
+\doxysubsubsection{char\_width()}
+{\footnotesize\ttfamily int char\+\_\+width (\begin{DoxyParamCaption}\item[{\textbf{ font\+\_\+descriptor\+\_\+t} $\ast$}]{fdes,  }\item[{int}]{letter }\end{DoxyParamCaption})}
 
 
 
@@ -80,11 +80,11 @@ Returns the lenght of given char.
 \begin{DoxyReturn}{Returns}
 int 
 \end{DoxyReturn}
-\mbox{\Hypertarget{text__fb_8h_a21645f17c98617a8bd7342f9fdb78899}\label{text__fb_8h_a21645f17c98617a8bd7342f9fdb78899}} 
+\mbox{\label{text__fb_8h_a21645f17c98617a8bd7342f9fdb78899}} 
 \index{text\_fb.h@{text\_fb.h}!draw\_char@{draw\_char}}
 \index{draw\_char@{draw\_char}!text\_fb.h@{text\_fb.h}}
-\doxysubsubsection{\texorpdfstring{draw\_char()}{draw\_char()}}
-{\footnotesize\ttfamily void draw\+\_\+char (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structfb__data}{fb\+\_\+data}} $\ast$}]{frame,  }\item[{char}]{letter,  }\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{scale,  }\item[{\mbox{\hyperlink{structfont__descriptor__t}{font\+\_\+descriptor\+\_\+t}} $\ast$}]{font,  }\item[{uint16\+\_\+t}]{color }\end{DoxyParamCaption})}
+\doxysubsubsection{draw\_char()}
+{\footnotesize\ttfamily void draw\+\_\+char (\begin{DoxyParamCaption}\item[{\textbf{ fb\+\_\+data} $\ast$}]{frame,  }\item[{char}]{letter,  }\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{scale,  }\item[{\textbf{ font\+\_\+descriptor\+\_\+t} $\ast$}]{font,  }\item[{uint16\+\_\+t}]{color }\end{DoxyParamCaption})}
 
 
 
@@ -107,11 +107,11 @@ Draws the character to the frame buffer. Left upper corner is at x,y and the cha
 {\em color} & \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{text__fb_8h_a273e67041b3e82dbfdd989f64e876732}\label{text__fb_8h_a273e67041b3e82dbfdd989f64e876732}} 
+\mbox{\label{text__fb_8h_a273e67041b3e82dbfdd989f64e876732}} 
 \index{text\_fb.h@{text\_fb.h}!draw\_text@{draw\_text}}
 \index{draw\_text@{draw\_text}!text\_fb.h@{text\_fb.h}}
-\doxysubsubsection{\texorpdfstring{draw\_text()}{draw\_text()}}
-{\footnotesize\ttfamily void draw\+\_\+text (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structfb__data}{fb\+\_\+data}} $\ast$}]{frame,  }\item[{char $\ast$}]{text,  }\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{scale,  }\item[{\mbox{\hyperlink{structfont__descriptor__t}{font\+\_\+descriptor\+\_\+t}} $\ast$}]{font,  }\item[{uint16\+\_\+t}]{color }\end{DoxyParamCaption})}
+\doxysubsubsection{draw\_text()}
+{\footnotesize\ttfamily void draw\+\_\+text (\begin{DoxyParamCaption}\item[{\textbf{ fb\+\_\+data} $\ast$}]{frame,  }\item[{char $\ast$}]{text,  }\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{scale,  }\item[{\textbf{ font\+\_\+descriptor\+\_\+t} $\ast$}]{font,  }\item[{uint16\+\_\+t}]{color }\end{DoxyParamCaption})}
 
 
 
@@ -134,11 +134,11 @@ Draws text to the frame buffer, x,y are the coordinates of the left upper edge.
 {\em color} & \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{text__fb_8h_a6c9c3fce44e83e9b6076cdc74ba11464}\label{text__fb_8h_a6c9c3fce44e83e9b6076cdc74ba11464}} 
+\mbox{\label{text__fb_8h_a6c9c3fce44e83e9b6076cdc74ba11464}} 
 \index{text\_fb.h@{text\_fb.h}!draw\_text\_center@{draw\_text\_center}}
 \index{draw\_text\_center@{draw\_text\_center}!text\_fb.h@{text\_fb.h}}
-\doxysubsubsection{\texorpdfstring{draw\_text\_center()}{draw\_text\_center()}}
-{\footnotesize\ttfamily void draw\+\_\+text\+\_\+center (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structfb__data}{fb\+\_\+data}} $\ast$}]{frame,  }\item[{char $\ast$}]{text,  }\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{scale,  }\item[{\mbox{\hyperlink{structfont__descriptor__t}{font\+\_\+descriptor\+\_\+t}} $\ast$}]{font,  }\item[{uint16\+\_\+t}]{color }\end{DoxyParamCaption})}
+\doxysubsubsection{draw\_text\_center()}
+{\footnotesize\ttfamily void draw\+\_\+text\+\_\+center (\begin{DoxyParamCaption}\item[{\textbf{ fb\+\_\+data} $\ast$}]{frame,  }\item[{char $\ast$}]{text,  }\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{scale,  }\item[{\textbf{ font\+\_\+descriptor\+\_\+t} $\ast$}]{font,  }\item[{uint16\+\_\+t}]{color }\end{DoxyParamCaption})}
 
 
 

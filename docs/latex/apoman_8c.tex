@@ -1,4 +1,4 @@
-\hypertarget{apoman_8c}{}\doxysection{C\+:/\+Users/\+Petr/\+Documents/apo\+\_\+semestralka/apoman.c File Reference}
+\doxysection{C\+:/\+Users/\+Petr/\+Documents/apo\+\_\+semestralka/apoman.c File Reference}
 \label{apoman_8c}\index{C:/Users/Petr/Documents/apo\_semestralka/apoman.c@{C:/Users/Petr/Documents/apo\_semestralka/apoman.c}}
 
 
@@ -30,27 +30,27 @@ Module housing peripherals initialisation, necessary dynamic allocation of memor
 \doxysubsection*{Macros}
 \begin{DoxyCompactItemize}
 \item 
-\#define \mbox{\hyperlink{apoman_8c_a3024ccd4a9af5109d24e6c57565d74a1}{\+\_\+\+POSIX\+\_\+\+C\+\_\+\+SOURCE}}~200112L
+\#define \textbf{ \+\_\+\+POSIX\+\_\+\+C\+\_\+\+SOURCE}~200112L
 \item 
-\#define \mbox{\hyperlink{apoman_8c_a4b53d3b2b31b863f63cc5582629ca8e3}{LED\+\_\+\+MAX\+\_\+\+VAL}}~6
+\#define \textbf{ LED\+\_\+\+MAX\+\_\+\+VAL}~6
 \item 
-\#define \mbox{\hyperlink{apoman_8c_a2cd109632a6dcccaa80b43561b1ab700}{SCREEN\+\_\+\+WIDTH}}~480
+\#define \textbf{ SCREEN\+\_\+\+WIDTH}~480
 \item 
-\#define \mbox{\hyperlink{apoman_8c_a6974d08a74da681b3957b2fead2608b8}{SCREEN\+\_\+\+HEIGHT}}~320
+\#define \textbf{ SCREEN\+\_\+\+HEIGHT}~320
 \end{DoxyCompactItemize}
 \doxysubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-int \mbox{\hyperlink{apoman_8c_a0ddf1224851353fc92bfbff6f499fa97}{main}} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]})
+int \textbf{ main} (int argc, char $\ast$argv[$\,$])
 \begin{DoxyCompactList}\small\item\em The main program function. \end{DoxyCompactList}\end{DoxyCompactItemize}
 \doxysubsection*{Variables}
 \begin{DoxyCompactItemize}
 \item 
-pthread\+\_\+mutex\+\_\+t \mbox{\hyperlink{apoman_8c_a2680f9fe5653a596c7e779b838180fdc}{mtx}}
+pthread\+\_\+mutex\+\_\+t \textbf{ mtx}
 \item 
-pthread\+\_\+cond\+\_\+t \mbox{\hyperlink{apoman_8c_a2d89e66b161e77ef3ba860e0bcd80da1}{character\+\_\+has\+\_\+been\+\_\+read}}
+pthread\+\_\+cond\+\_\+t \textbf{ character\+\_\+has\+\_\+been\+\_\+read}
 \item 
-\mbox{\hyperlink{structread__thread__data__type}{read\+\_\+thread\+\_\+data\+\_\+type}} \mbox{\hyperlink{apoman_8c_a6cf0bd745eade6d2d8304b9b72930ab4}{read\+\_\+thread\+\_\+data}}
+\textbf{ read\+\_\+thread\+\_\+data\+\_\+type} \textbf{ read\+\_\+thread\+\_\+data}
 \end{DoxyCompactItemize}
 
 
@@ -58,7 +58,7 @@ pthread\+\_\+cond\+\_\+t \mbox{\hyperlink{apoman_8c_a2d89e66b161e77ef3ba860e0bcd
 Module housing peripherals initialisation, necessary dynamic allocation of memory. Creates thread listening to the terminal input. Calls run init game menu(). 
 
 \begin{DoxyAuthor}{Author}
-Lukas Nejezchleb (\href{mailto:nejezluk@fel.cvut.cz}{\texttt{ nejezluk@fel.\+cvut.\+cz}}), Petr Kucera (\href{mailto:kucerp28@fel.cvut.cz}{\texttt{ kucerp28@fel.\+cvut.\+cz}}) 
+Lukas Nejezchleb ({\texttt{ nejezluk@fel.\+cvut.\+cz}}), Petr Kucera ({\texttt{ kucerp28@fel.\+cvut.\+cz}}) 
 \end{DoxyAuthor}
 \begin{DoxyVersion}{Version}
 0.\+1 
@@ -72,38 +72,38 @@ Copyright (c) 2021
 
 
 \doxysubsection{Macro Definition Documentation}
-\mbox{\Hypertarget{apoman_8c_a3024ccd4a9af5109d24e6c57565d74a1}\label{apoman_8c_a3024ccd4a9af5109d24e6c57565d74a1}} 
+\mbox{\label{apoman_8c_a3024ccd4a9af5109d24e6c57565d74a1}} 
 \index{apoman.c@{apoman.c}!\_POSIX\_C\_SOURCE@{\_POSIX\_C\_SOURCE}}
 \index{\_POSIX\_C\_SOURCE@{\_POSIX\_C\_SOURCE}!apoman.c@{apoman.c}}
-\doxysubsubsection{\texorpdfstring{\_POSIX\_C\_SOURCE}{\_POSIX\_C\_SOURCE}}
+\doxysubsubsection{\_POSIX\_C\_SOURCE}
 {\footnotesize\ttfamily \#define \+\_\+\+POSIX\+\_\+\+C\+\_\+\+SOURCE~200112L}
 
-\mbox{\Hypertarget{apoman_8c_a4b53d3b2b31b863f63cc5582629ca8e3}\label{apoman_8c_a4b53d3b2b31b863f63cc5582629ca8e3}} 
+\mbox{\label{apoman_8c_a4b53d3b2b31b863f63cc5582629ca8e3}} 
 \index{apoman.c@{apoman.c}!LED\_MAX\_VAL@{LED\_MAX\_VAL}}
 \index{LED\_MAX\_VAL@{LED\_MAX\_VAL}!apoman.c@{apoman.c}}
-\doxysubsubsection{\texorpdfstring{LED\_MAX\_VAL}{LED\_MAX\_VAL}}
+\doxysubsubsection{LED\_MAX\_VAL}
 {\footnotesize\ttfamily \#define LED\+\_\+\+MAX\+\_\+\+VAL~6}
 
-\mbox{\Hypertarget{apoman_8c_a6974d08a74da681b3957b2fead2608b8}\label{apoman_8c_a6974d08a74da681b3957b2fead2608b8}} 
+\mbox{\label{apoman_8c_a6974d08a74da681b3957b2fead2608b8}} 
 \index{apoman.c@{apoman.c}!SCREEN\_HEIGHT@{SCREEN\_HEIGHT}}
 \index{SCREEN\_HEIGHT@{SCREEN\_HEIGHT}!apoman.c@{apoman.c}}
-\doxysubsubsection{\texorpdfstring{SCREEN\_HEIGHT}{SCREEN\_HEIGHT}}
+\doxysubsubsection{SCREEN\_HEIGHT}
 {\footnotesize\ttfamily \#define SCREEN\+\_\+\+HEIGHT~320}
 
-\mbox{\Hypertarget{apoman_8c_a2cd109632a6dcccaa80b43561b1ab700}\label{apoman_8c_a2cd109632a6dcccaa80b43561b1ab700}} 
+\mbox{\label{apoman_8c_a2cd109632a6dcccaa80b43561b1ab700}} 
 \index{apoman.c@{apoman.c}!SCREEN\_WIDTH@{SCREEN\_WIDTH}}
 \index{SCREEN\_WIDTH@{SCREEN\_WIDTH}!apoman.c@{apoman.c}}
-\doxysubsubsection{\texorpdfstring{SCREEN\_WIDTH}{SCREEN\_WIDTH}}
+\doxysubsubsection{SCREEN\_WIDTH}
 {\footnotesize\ttfamily \#define SCREEN\+\_\+\+WIDTH~480}
 
 
 
 \doxysubsection{Function Documentation}
-\mbox{\Hypertarget{apoman_8c_a0ddf1224851353fc92bfbff6f499fa97}\label{apoman_8c_a0ddf1224851353fc92bfbff6f499fa97}} 
+\mbox{\label{apoman_8c_a0ddf1224851353fc92bfbff6f499fa97}} 
 \index{apoman.c@{apoman.c}!main@{main}}
 \index{main@{main}!apoman.c@{apoman.c}}
-\doxysubsubsection{\texorpdfstring{main()}{main()}}
-{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]} }\end{DoxyParamCaption})}
+\doxysubsubsection{main()}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$}]{argv[$\,$] }\end{DoxyParamCaption})}
 
 
 
@@ -122,21 +122,21 @@ int program status
 
 
 \doxysubsection{Variable Documentation}
-\mbox{\Hypertarget{apoman_8c_a2d89e66b161e77ef3ba860e0bcd80da1}\label{apoman_8c_a2d89e66b161e77ef3ba860e0bcd80da1}} 
+\mbox{\label{apoman_8c_a2d89e66b161e77ef3ba860e0bcd80da1}} 
 \index{apoman.c@{apoman.c}!character\_has\_been\_read@{character\_has\_been\_read}}
 \index{character\_has\_been\_read@{character\_has\_been\_read}!apoman.c@{apoman.c}}
-\doxysubsubsection{\texorpdfstring{character\_has\_been\_read}{character\_has\_been\_read}}
+\doxysubsubsection{character\_has\_been\_read}
 {\footnotesize\ttfamily pthread\+\_\+cond\+\_\+t character\+\_\+has\+\_\+been\+\_\+read}
 
-\mbox{\Hypertarget{apoman_8c_a2680f9fe5653a596c7e779b838180fdc}\label{apoman_8c_a2680f9fe5653a596c7e779b838180fdc}} 
+\mbox{\label{apoman_8c_a2680f9fe5653a596c7e779b838180fdc}} 
 \index{apoman.c@{apoman.c}!mtx@{mtx}}
 \index{mtx@{mtx}!apoman.c@{apoman.c}}
-\doxysubsubsection{\texorpdfstring{mtx}{mtx}}
+\doxysubsubsection{mtx}
 {\footnotesize\ttfamily pthread\+\_\+mutex\+\_\+t mtx}
 
-\mbox{\Hypertarget{apoman_8c_a6cf0bd745eade6d2d8304b9b72930ab4}\label{apoman_8c_a6cf0bd745eade6d2d8304b9b72930ab4}} 
+\mbox{\label{apoman_8c_a6cf0bd745eade6d2d8304b9b72930ab4}} 
 \index{apoman.c@{apoman.c}!read\_thread\_data@{read\_thread\_data}}
 \index{read\_thread\_data@{read\_thread\_data}!apoman.c@{apoman.c}}
-\doxysubsubsection{\texorpdfstring{read\_thread\_data}{read\_thread\_data}}
-{\footnotesize\ttfamily \mbox{\hyperlink{structread__thread__data__type}{read\+\_\+thread\+\_\+data\+\_\+type}} read\+\_\+thread\+\_\+data}
+\doxysubsubsection{read\_thread\_data}
+{\footnotesize\ttfamily \textbf{ read\+\_\+thread\+\_\+data\+\_\+type} read\+\_\+thread\+\_\+data}
 

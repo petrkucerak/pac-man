@@ -4,6 +4,10 @@
     <title>Pac-Man</title>
     </info>
 <chapter>
+    <title>Specifikace semestrální práce</title>
+    <xi:include href="mainpage.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+</chapter>
+<chapter>
     <title>Data Structure Documentation</title>
     <xi:include href="structcoords.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="structfb__data.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
@@ -19,6 +23,8 @@
 </chapter>
 <chapter>
     <title>File Documentation</title>
+    <xi:include href="__tech__documentation_8md.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="__user__manual_8md.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="apoman_8c.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="config_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="data__structures_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>

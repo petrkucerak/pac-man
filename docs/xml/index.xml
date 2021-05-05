@@ -77,6 +77,10 @@
     <member refid="structread__thread__data__type_1ac746fa6ad48d19984a159f14bec028a3" kind="variable"><name>quit</name></member>
     <member refid="structread__thread__data__type_1a41eafad1f226f50088de23256b17f4c7" kind="variable"><name>last_read</name></member>
   </compound>
+  <compound refid="__tech__documentation_8md" kind="file"><name>_tech_documentation.md</name>
+  </compound>
+  <compound refid="__user__manual_8md" kind="file"><name>_user_manual.md</name>
+  </compound>
   <compound refid="apoman_8c" kind="file"><name>apoman.c</name>
     <member refid="apoman_8c_1a3024ccd4a9af5109d24e6c57565d74a1" kind="define"><name>_POSIX_C_SOURCE</name></member>
     <member refid="apoman_8c_1a4b53d3b2b31b863f63cc5582629ca8e3" kind="define"><name>LED_MAX_VAL</name></member>
@@ -178,12 +182,12 @@
     <member refid="game_8c_1a72619e4d9b2b733c33327a53154c126b" kind="function"><name>run_game</name></member>
     <member refid="game_8c_1af84e8ae88873f09731321e62e77a1d18" kind="function"><name>led_blink</name></member>
     <member refid="game_8c_1ac055e6ae3ef32e12a7c56e62bae12db3" kind="function"><name>game_tick</name></member>
-    <member refid="game_8c_1ac1ff0112ff0bb8c1a4d67cd18dc3eb3c" kind="function"><name>pause</name></member>
+    <member refid="game_8c_1a0e947670754754c65011a151d82e2c36" kind="function"><name>pause_game</name></member>
   </compound>
   <compound refid="game_8h" kind="file"><name>game.h</name>
     <member refid="game_8h_1a72619e4d9b2b733c33327a53154c126b" kind="function"><name>run_game</name></member>
     <member refid="game_8h_1af84e8ae88873f09731321e62e77a1d18" kind="function"><name>led_blink</name></member>
-    <member refid="game_8h_1ac1ff0112ff0bb8c1a4d67cd18dc3eb3c" kind="function"><name>pause</name></member>
+    <member refid="game_8h_1a0e947670754754c65011a151d82e2c36" kind="function"><name>pause_game</name></member>
     <member refid="game_8h_1ac055e6ae3ef32e12a7c56e62bae12db3" kind="function"><name>game_tick</name></member>
   </compound>
   <compound refid="ghost_8c" kind="file"><name>ghost.c</name>
@@ -377,8 +381,10 @@
     <member refid="update__peripherals_8h_1a55ba16e218e56e6112bea4cb48dd7017" kind="function"><name>set_right_RGB</name></member>
     <member refid="update__peripherals_8h_1afdba9f1f14e9a81789f87d33a36bda35" kind="function"><name>sel_leds_color</name></member>
   </compound>
-  <compound refid="md__c___users__petr__documents_apo_semestralka__r_e_a_d_m_e" kind="page"><name>md_C__Users_Petr_Documents_apo_semestralka_README</name>
+  <compound refid="md__c___users__petr__documents_apo_semestralka__tech_documentation" kind="page"><name>md_C__Users_Petr_Documents_apo_semestralka__tech_documentation</name>
   </compound>
-  <compound refid="dir_1c85e64171329218e822acddce10dd2b" kind="dir"><name>C:/Users/Petr/Documents/apo_semestralka</name>
+  <compound refid="md__c___users__petr__documents_apo_semestralka__user_manual" kind="page"><name>md_C__Users_Petr_Documents_apo_semestralka__user_manual</name>
+  </compound>
+  <compound refid="indexpage" kind="page"><name>index</name>
   </compound>
 </doxygenindex>
