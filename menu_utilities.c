@@ -40,22 +40,22 @@ void run_init_game_menu(fb_data *frame_buff, unsigned char *lcd_mem_base,
     lcd_from_fb(frame_buff, lcd_mem_base);
     // listen symbol
     char read = ' ';
-    while (read != 's' && read != 't')
+    while (read != 's' && read != 't' && read != 'S' && read != 'T')
     {
       // scan input
       pthread_mutex_lock(&mtx);
       pthread_cond_wait(&character_has_been_read, &mtx);
       read = read_thread_data.last_read;
       pthread_mutex_unlock(&mtx);
-      if (read == 'l')
+      if (read == 'l' || read == 'L')
       {
         game = sub_menu_lives(frame_buff, lcd_mem_base, font, game);
       }
-      if (read == 'm')
+      if (read == 'm' || read == 'M')
       {
         game = sub_menu_map(frame_buff, lcd_mem_base, font, game);
       }
-      if (read == 'g')
+      if (read == 'g' || read == 'G')
       {
         game = sub_menu_ghosts(frame_buff, lcd_mem_base, font, game);
       }
@@ -63,7 +63,7 @@ void run_init_game_menu(fb_data *frame_buff, unsigned char *lcd_mem_base,
       draw_menu(frame_buff, font, game);
       lcd_from_fb(frame_buff, lcd_mem_base);
     }
-    if (read != 't')
+    if (read != 't' || read != 'T')
     {
       // run game
       int game_score = run_game(&game, &peripherals);
@@ -83,19 +83,19 @@ void draw_menu(fb_data *frame_buff, font_descriptor_t *font, game_init_data_t ga
   set_background(frame_buff, 0);
   draw_text_center(frame_buff, "HLAVNI MENU", frame_buff->width / 2, HEIGHT_M / 10, 3, font, 0xffff);
   char string_tmp[40];
-  snprintf(string_tmp, 40, "pocet zivotu: %d [l]", game_data.pacman_lives);
+  snprintf(string_tmp, 40, "pocet zivotu: %d [L]", game_data.pacman_lives);
   draw_text_center(frame_buff, string_tmp, frame_buff->width / 2, HEIGHT_M / 2 - HEIGHT_M / 7, 2, font, 0xffff);
-  snprintf(string_tmp, 40, "mapa: %s [m]", game_data.map->name);
+  snprintf(string_tmp, 40, "mapa: %s [M]", game_data.map->name);
   draw_text_center(frame_buff, string_tmp, frame_buff->width / 2, HEIGHT_M / 2, 2, font, 0xffff);
-  snprintf(string_tmp, 40, "pocet duchu: %d [g]", game_data.ghost_nr);
+  snprintf(string_tmp, 40, "pocet duchu: %d [G]", game_data.ghost_nr);
   draw_text_center(frame_buff, string_tmp, frame_buff->width / 2, HEIGHT_M / 2 + HEIGHT_M / 7, 2, font, 0xffff);
-  draw_text_center(frame_buff, "SPUSIT HRU: [s] KONEC HRY: [t]", frame_buff->width / 2, HEIGHT_M - HEIGHT_M / 10, 2, font, 0xffff);
+  draw_text_center(frame_buff, "SPUSIT HRU: [S] KONEC HRY: [T]", frame_buff->width / 2, HEIGHT_M - HEIGHT_M / 10, 2, font, 0xffff);
 }
 
 game_init_data_t sub_menu_lives(fb_data *frame_buff, unsigned char *lcd_mem_base, font_descriptor_t *font, game_init_data_t game_data)
 {
   char c = ' ';
-  while (c != 'c')
+  while (c != 'c' && c != 'C')
   {
     set_background(frame_buff, 0);
     draw_text_center(frame_buff, "NASTAVENI ZIVOTU", frame_buff->width / 2, HEIGHT_M / 10, 3, font, 0xffff);
@@ -105,7 +105,7 @@ game_init_data_t sub_menu_lives(fb_data *frame_buff, unsigned char *lcd_mem_base
     draw_text_center(frame_buff, string_tmp, frame_buff->width / 2, HEIGHT_M / 2, 3, font, 0xffff);
     snprintf(string_tmp, 40, "zmackni cislo (max %c)", MAX_LIVES);
     draw_text_center(frame_buff, string_tmp, frame_buff->width / 2, HEIGHT_M / 2 + HEIGHT_M / 7, 2, font, 0xffff);
-    draw_text_center(frame_buff, "POTVRDIT: [c]", frame_buff->width / 2, HEIGHT_M - HEIGHT_M / 10, 2, font, 0xffff);
+    draw_text_center(frame_buff, "POTVRDIT: [C]", frame_buff->width / 2, HEIGHT_M - HEIGHT_M / 10, 2, font, 0xffff);
     // update display
     lcd_from_fb(frame_buff, lcd_mem_base);
     // scan input
@@ -132,7 +132,7 @@ game_init_data_t sub_menu_map(fb_data *frame_buff, unsigned char *lcd_mem_base, 
     ++i;
   }
   char c = ' ';
-  while (c != 'c')
+  while (c != 'c' && c != 'C')
   {
     set_background(frame_buff, 0);
     draw_text_center(frame_buff, "VOLBA MAPY", frame_buff->width / 2, HEIGHT_M / 10, 3, font, 0xffff);
@@ -140,8 +140,8 @@ game_init_data_t sub_menu_map(fb_data *frame_buff, unsigned char *lcd_mem_base, 
     char string_tmp[40];
     snprintf(string_tmp, 40, "<  %s  >", game_data.map->name);
     draw_text_center(frame_buff, string_tmp, frame_buff->width / 2, HEIGHT_M / 2, 3, font, 0xffff);
-    draw_text_center(frame_buff, "vybirej klavesami [a] [d]", frame_buff->width / 2, HEIGHT_M / 2 + HEIGHT_M / 7, 2, font, 0xffff);
-    draw_text_center(frame_buff, "POTVRDIT: [c]", frame_buff->width / 2, HEIGHT_M - HEIGHT_M / 10, 2, font, 0xffff);
+    draw_text_center(frame_buff, "vybirej klavesami [A] [D]", frame_buff->width / 2, HEIGHT_M / 2 + HEIGHT_M / 7, 2, font, 0xffff);
+    draw_text_center(frame_buff, "POTVRDIT: [C]", frame_buff->width / 2, HEIGHT_M - HEIGHT_M / 10, 2, font, 0xffff);
     // update display
     lcd_from_fb(frame_buff, lcd_mem_base);
     // scan input
@@ -150,11 +150,11 @@ game_init_data_t sub_menu_map(fb_data *frame_buff, unsigned char *lcd_mem_base, 
     c = read_thread_data.last_read;
     pthread_mutex_unlock(&mtx);
     // listen orders
-    if (c == 'a')
+    if (c == 'a' || c == 'A')
     {
       i = (i - 1 + map_templates_len) % map_templates_len;
     }
-    if (c == 'd')
+    if (c == 'd' || c == 'D')
     {
       i = (i + 1 + map_templates_len) % map_templates_len;
     }
@@ -166,7 +166,7 @@ game_init_data_t sub_menu_map(fb_data *frame_buff, unsigned char *lcd_mem_base, 
 game_init_data_t sub_menu_ghosts(fb_data *frame_buff, unsigned char *lcd_mem_base, font_descriptor_t *font, game_init_data_t game_data)
 {
   char c = ' ';
-  while (c != 'c')
+  while (c != 'c' && c != 'C')
   {
     // set buffer
     set_background(frame_buff, 0);
@@ -177,7 +177,7 @@ game_init_data_t sub_menu_ghosts(fb_data *frame_buff, unsigned char *lcd_mem_bas
     draw_text_center(frame_buff, string_tmp, frame_buff->width / 2, HEIGHT_M / 2, 3, font, 0xffff);
     snprintf(string_tmp, 40, "zmackni cislo (max %c)", MAX_GHOSTS);
     draw_text_center(frame_buff, string_tmp, frame_buff->width / 2, HEIGHT_M / 2 + HEIGHT_M / 7, 2, font, 0xffff);
-    draw_text_center(frame_buff, "POTVRDIT: [c]", frame_buff->width / 2, HEIGHT_M - HEIGHT_M / 10, 2, font, 0xffff);
+    draw_text_center(frame_buff, "POTVRDIT: [C]", frame_buff->width / 2, HEIGHT_M - HEIGHT_M / 10, 2, font, 0xffff);
     // update display
     lcd_from_fb(frame_buff, lcd_mem_base);
     // scan input
