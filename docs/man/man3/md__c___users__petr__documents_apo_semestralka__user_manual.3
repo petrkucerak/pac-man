@@ -4,9 +4,9 @@
 .SH NAME
 md__c___users__petr__documents_apo_semestralka__user_manual \- Uživatelský manuál 
 
-.SH "Natavení hry"
+.SH "Nastavení hry"
 .PP
-V první části hry si je možnost nakongihurovat hru na míru\&. Je možné zvolit z následujcích parametrů\&.
+V první části hry si je možnost nakonfigurovat hru na míru\&. Je možné zvolit z následujcích parametrů\&.
 .PP
 .IP "\(bu" 2
 počet životů (možnost zvolit od 1 po 4)
@@ -28,12 +28,12 @@ Poslení mapka připomíná tvar ulity\&. Je v ní několik tajných chodem, kte
 .SH "Průběh hry"
 .PP
 .SS "Ovládání hry"
-Hra se ovládá pomocí klávesnic \fCwasd\fP\&. Hru je možné pauznout pomocí stiknutí klávesy \fCp\fP\&.
+Hra se ovládá pomocí klávesnic \fCwasd\fP\&. Hru je možné pauznout pomocí stiknutí klávesy \fCp\fP a ukončit stiskem klávesy \fCq\fP\&.
 .SS "Popis hrací plochy"
 Na ploše je vidět několik typů předmětů:
 .PP
 .IP "\(bu" 2
-packman (pokud se pohybuje, máotevřenou pusu)
+packman (pokud se pohybuje, má otevřenou pusu)
 .IP "\(bu" 2
 duchové (mají různé barvy a pozor, občas jich může být více na sobě)
 .IP "\(bu" 2
@@ -42,14 +42,14 @@ normální coiny (barva červená)
 super coiny (barva fialová)
 .PP
 .SS "Mód pojídání duchů"
-Pokud Pac-Man sní super coin, aktivuje se režim pojídání duchů\&. V něm může Pac-Man pojídat a oni mu neuberou život\&.
+Pokud Pac-Man sní super coin, aktivuje se režim pojídání duchů\&. V něm může Pac-Man pojídat duchy a oni mu neuberou život\&.
 .SS "Signály během hry"
 Stav hry je signalizován okolními periferiemi:
 .PP
 .IP "\(bu" 2
 výstupní řádka led indikuje počet životů pacmana
 .IP "\(bu" 2
-RGB led svítí zeleně jasem vypočítaným z počtu snězených kostiček, v případě režimu, kdy jsou duchové zranitelní bliká modře
+RGB led svítí zeleně jasem vypočítaným z packmanova skóre, v případě režimu, kdy jsou duchové zranitelní bliká modře
 .PP
 .SH "Konec hry"
 .PP
@@ -63,4 +63,4 @@ ubráním všech Pac-Manových životů
 sežráním všech dostupných penízků
 .PP
 .PP
-Po sklonční hry přípravek vypíše finální skóre a statistiky na terminál a uživatel má možnot buďto program celkově ukončit nebo spusti hru znovu\&. 
+Po sklončení hry přípravek vypíše finální skóre a zbývající životy na terminál a uživatel má možnot buďto program celkově ukončit nebo spusti hru znovu\&. 

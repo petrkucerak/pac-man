@@ -9,22 +9,23 @@
     <programlisting>
 <codeline><highlight class="normal">#<sp/>Specifikace<sp/>semestrální<sp/>práce</highlight></codeline>
 <codeline></codeline>
-<codeline><highlight class="normal">##<sp/>Introdukce</highlight></codeline>
+<codeline><highlight class="normal">##<sp/>Úvod</highlight></codeline>
 <codeline><highlight class="normal">Cílem<sp/>této<sp/>semstrální<sp/>práce<sp/>je<sp/>vytvořit<sp/>hru<sp/>Pac-Man,<sp/>kterou<sp/>bude<sp/>možné<sp/>hrát<sp/>na<sp/>desce<sp/>MzAPO<sp/>a<sp/>ovládat<sp/>pomocí<sp/>okolních<sp/>periferií.</highlight></codeline>
 <codeline></codeline>
 <codeline><highlight class="normal">Průběh<sp/>naší<sp/>práce<sp/>je<sp/>možné<sp/>sledovat<sp/>v<sp/>repozitáři:<sp/>https://gitlab.fel.cvut.cz/kucerp28/apo\_semestralka</highlight></codeline>
 <codeline></codeline>
 <codeline><highlight class="normal">##<sp/>Použité<sp/>periferie<sp/>a<sp/>jejich<sp/>funkce</highlight></codeline>
 <codeline></codeline>
-<codeline><highlight class="normal">-<sp/>Výstupní<sp/>řádka<sp/>led<sp/>bude<sp/>při<sp/>spuštěné<sp/>hře<sp/>indikovat<sp/>počet<sp/>životů<sp/>pacmana</highlight></codeline>
-<codeline><highlight class="normal">-<sp/>RGB<sp/>led<sp/>budou<sp/>svítit<sp/>zeleně<sp/>jasem<sp/>vypočítaným<sp/>z<sp/>počtu<sp/>snězených<sp/>kostiček,<sp/>v<sp/>případě<sp/>režimu,<sp/>kdy<sp/>jsou<sp/>duchové<sp/>zranitelní<sp/>bude<sp/>blikat<sp/>modře.</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>Výstupní<sp/>řádka<sp/>led<sp/>bude<sp/>při<sp/>spuštěné<sp/>hře<sp/>indikovat<sp/>počet<sp/>životů<sp/>pacmana.</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>RGB<sp/>led<sp/>budou<sp/>svítit<sp/>zeleně<sp/>jasem<sp/>vypočítaným<sp/>z<sp/>počtu<sp/>snězených<sp/>kostiček<sp/>z<sp/>pacmanova<sp/>skóre,<sp/>v<sp/>případě<sp/>režimu,<sp/>kdy<sp/>jsou<sp/>duchové<sp/>zranitelní<sp/>bude<sp/>blikat<sp/>modře.</highlight></codeline>
 <codeline><highlight class="normal">-<sp/>Vstupem<sp/>hry<sp/>bude<sp/>terminál<sp/>v<sp/>raw<sp/>režimu,<sp/><sp/>který<sp/>bude<sp/>ovládat<sp/>směr<sp/>pacmana,<sp/>respektive<sp/>navigaci<sp/>v<sp/>textovém<sp/>menu.</highlight></codeline>
-<codeline><highlight class="normal">-<sp/>Po<sp/>sklonční<sp/>hry<sp/>přípravek<sp/>vypíše<sp/>finální<sp/>skóre<sp/>a<sp/>statistiky<sp/>na<sp/>terminál</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>Po<sp/>sklonční<sp/>skončení<sp/>hry<sp/>přípravek<sp/>vypíše<sp/>finální<sp/>skóre<sp/>a<sp/>statistiky<sp/>na<sp/>terminál.</highlight></codeline>
+<codeline></codeline>
 <codeline><highlight class="normal">##<sp/>Stavy</highlight></codeline>
 <codeline></codeline>
 <codeline><highlight class="normal">###<sp/>Inicializace<sp/>hry</highlight></codeline>
 <codeline></codeline>
-<codeline><highlight class="normal">Po<sp/>spuštění<sp/>hry<sp/>se<sp/>objeví<sp/>textové<sp/>menu,<sp/>které<sp/>bude<sp/>možné<sp/>ovládat<sp/>pomocí<sp/>kláves<sp/>wsad<sp/>ze<sp/>sériového<sp/>portu.<sp/>Bude<sp/>zde<sp/>možnost<sp/>vybrat<sp/>mapu<sp/>z<sp/>nabídky,<sp/>nastavit<sp/>počet<sp/>duchů<sp/>a<sp/>počet<sp/>životů,<sp/>se<sp/>kterými<sp/>pacman<sp/>začíná.</highlight></codeline>
+<codeline><highlight class="normal">Po<sp/>spuštění<sp/>hry<sp/>se<sp/>objeví<sp/>textové<sp/>menu,<sp/>které<sp/>bude<sp/>možné<sp/>ovládat<sp/>pomocí<sp/>kláves<sp/>`wsad`<sp/>ze<sp/>sériového<sp/>portu.<sp/>Bude<sp/>zde<sp/>možnost<sp/>vybrat<sp/>mapu<sp/>z<sp/>nabídky,<sp/>nastavit<sp/>počet<sp/>duchů<sp/>a<sp/>počet<sp/>životů,<sp/>se<sp/>kterými<sp/>pacman<sp/>začíná.</highlight></codeline>
 <codeline></codeline>
 <codeline><highlight class="normal">###<sp/>Průběh<sp/>hry</highlight></codeline>
 <codeline></codeline>

@@ -9,9 +9,9 @@
     <programlisting>
 <codeline><highlight class="normal">#<sp/>Uživatelský<sp/>manuál</highlight></codeline>
 <codeline></codeline>
-<codeline><highlight class="normal">##<sp/>Natavení<sp/>hry</highlight></codeline>
+<codeline><highlight class="normal">##<sp/>Nastavení<sp/>hry</highlight></codeline>
 <codeline></codeline>
-<codeline><highlight class="normal">V<sp/>první<sp/>části<sp/>hry<sp/>si<sp/>je<sp/>možnost<sp/>nakongihurovat<sp/>hru<sp/>na<sp/>míru.<sp/>Je<sp/>možné<sp/>zvolit<sp/>z<sp/>následujcích<sp/>parametrů.</highlight></codeline>
+<codeline><highlight class="normal">V<sp/>první<sp/>části<sp/>hry<sp/>si<sp/>je<sp/>možnost<sp/>nakonfigurovat<sp/>hru<sp/>na<sp/>míru.<sp/>Je<sp/>možné<sp/>zvolit<sp/>z<sp/>následujcích<sp/>parametrů.</highlight></codeline>
 <codeline></codeline>
 <codeline><highlight class="normal">-<sp/>počet<sp/>životů<sp/>(možnost<sp/>zvolit<sp/>od<sp/>1<sp/>po<sp/>4)</highlight></codeline>
 <codeline><highlight class="normal">-<sp/>typ<sp/>mapy<sp/>(v<sp/>tuto<sp/>chvíli<sp/>je<sp/>na<sp/>výběr<sp/>ze<sp/>3<sp/>možností)</highlight></codeline>
@@ -41,27 +41,27 @@
 <codeline></codeline>
 <codeline><highlight class="normal">###<sp/>Ovládání<sp/>hry</highlight></codeline>
 <codeline></codeline>
-<codeline><highlight class="normal">Hra<sp/>se<sp/>ovládá<sp/>pomocí<sp/>klávesnic<sp/>`wasd`.<sp/>Hru<sp/>je<sp/>možné<sp/>pauznout<sp/>pomocí<sp/>stiknutí<sp/>klávesy<sp/>`p`.</highlight></codeline>
+<codeline><highlight class="normal">Hra<sp/>se<sp/>ovládá<sp/>pomocí<sp/>klávesnic<sp/>`wasd`.<sp/>Hru<sp/>je<sp/>možné<sp/>pauznout<sp/>pomocí<sp/>stiknutí<sp/>klávesy<sp/>`p`<sp/>a<sp/>ukončit<sp/>stiskem<sp/>klávesy<sp/>`q`.</highlight></codeline>
 <codeline></codeline>
 <codeline><highlight class="normal">###<sp/>Popis<sp/>hrací<sp/>plochy</highlight></codeline>
 <codeline></codeline>
 <codeline><highlight class="normal">Na<sp/>ploše<sp/>je<sp/>vidět<sp/>několik<sp/>typů<sp/>předmětů:</highlight></codeline>
 <codeline></codeline>
-<codeline><highlight class="normal">-<sp/>packman<sp/>(pokud<sp/>se<sp/>pohybuje,<sp/>máotevřenou<sp/>pusu)</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>packman<sp/>(pokud<sp/>se<sp/>pohybuje,<sp/>má<sp/>otevřenou<sp/>pusu)</highlight></codeline>
 <codeline><highlight class="normal">-<sp/>duchové<sp/>(mají<sp/>různé<sp/>barvy<sp/>a<sp/>pozor,<sp/>občas<sp/>jich<sp/>může<sp/>být<sp/>více<sp/>na<sp/>sobě)</highlight></codeline>
 <codeline><highlight class="normal">-<sp/>normální<sp/>coiny<sp/>(barva<sp/>červená)</highlight></codeline>
 <codeline><highlight class="normal">-<sp/>super<sp/>coiny<sp/>(barva<sp/>fialová)</highlight></codeline>
 <codeline></codeline>
 <codeline><highlight class="normal">###<sp/>Mód<sp/>pojídání<sp/>duchů</highlight></codeline>
 <codeline></codeline>
-<codeline><highlight class="normal">Pokud<sp/>Pac-Man<sp/>sní<sp/>super<sp/>coin,<sp/>aktivuje<sp/>se<sp/>režim<sp/>pojídání<sp/>duchů.<sp/>V<sp/>něm<sp/>může<sp/>Pac-Man<sp/>pojídat<sp/>a<sp/>oni<sp/>mu<sp/>neuberou<sp/>život.</highlight></codeline>
+<codeline><highlight class="normal">Pokud<sp/>Pac-Man<sp/>sní<sp/>super<sp/>coin,<sp/>aktivuje<sp/>se<sp/>režim<sp/>pojídání<sp/>duchů.<sp/>V<sp/>něm<sp/>může<sp/>Pac-Man<sp/>pojídat<sp/>duchy<sp/>a<sp/>oni<sp/>mu<sp/>neuberou<sp/>život.</highlight></codeline>
 <codeline></codeline>
 <codeline><highlight class="normal">###<sp/>Signály<sp/>během<sp/>hry</highlight></codeline>
 <codeline></codeline>
 <codeline><highlight class="normal">Stav<sp/>hry<sp/>je<sp/>signalizován<sp/>okolními<sp/>periferiemi:</highlight></codeline>
 <codeline></codeline>
 <codeline><highlight class="normal">-<sp/>výstupní<sp/>řádka<sp/>led<sp/>indikuje<sp/>počet<sp/>životů<sp/>pacmana</highlight></codeline>
-<codeline><highlight class="normal">-<sp/>RGB<sp/>led<sp/>svítí<sp/>zeleně<sp/>jasem<sp/>vypočítaným<sp/>z<sp/>počtu<sp/>snězených<sp/>kostiček,<sp/>v<sp/>případě<sp/>režimu,<sp/>kdy<sp/>jsou<sp/>duchové<sp/>zranitelní<sp/>bliká<sp/>modře</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>RGB<sp/>led<sp/>svítí<sp/>zeleně<sp/>jasem<sp/>vypočítaným<sp/>z<sp/>packmanova<sp/>skóre,<sp/>v<sp/>případě<sp/>režimu,<sp/>kdy<sp/>jsou<sp/>duchové<sp/>zranitelní<sp/>bliká<sp/>modře</highlight></codeline>
 <codeline></codeline>
 <codeline></codeline>
 <codeline><highlight class="normal">##<sp/>Konec<sp/>hry</highlight></codeline>
@@ -72,7 +72,7 @@
 <codeline><highlight class="normal">-<sp/>ubráním<sp/>všech<sp/>Pac-Manových<sp/>životů</highlight></codeline>
 <codeline><highlight class="normal">-<sp/>sežráním<sp/>všech<sp/>dostupných<sp/>penízků</highlight></codeline>
 <codeline></codeline>
-<codeline><highlight class="normal">Po<sp/>sklonční<sp/>hry<sp/>přípravek<sp/>vypíše<sp/>finální<sp/>skóre<sp/>a<sp/>statistiky<sp/>na<sp/>terminál<sp/>a<sp/>uživatel<sp/>má<sp/>možnot<sp/>buďto<sp/>program<sp/>celkově<sp/>ukončit<sp/>nebo<sp/>spusti<sp/>hru<sp/>znovu.</highlight></codeline>
+<codeline><highlight class="normal">Po<sp/>sklončení<sp/>hry<sp/>přípravek<sp/>vypíše<sp/>finální<sp/>skóre<sp/>a<sp/>zbývající<sp/>životy<sp/>na<sp/>terminál<sp/>a<sp/>uživatel<sp/>má<sp/>možnot<sp/>buďto<sp/>program<sp/>celkově<sp/>ukončit<sp/>nebo<sp/>spusti<sp/>hru<sp/>znovu.</highlight></codeline>
     </programlisting>
     <location file="C:/Users/Petr/Documents/apo_semestralka/_user_manual.md"/>
   </compounddef>

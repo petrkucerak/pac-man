@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_md__c___users__petr__documents_apo_semestralka__user_manual" xml:lang="en-US">
 <section xml:id="_md__c___users__petr__documents_apo_semestralka__user_manual_1autotoc_md13">
-<title>Natavení hry</title>
+<title>Nastavení hry</title>
 
-<para>V první části hry si je možnost nakongihurovat hru na míru. Je možné zvolit z následujcích parametrů.</para>
+<para>V první části hry si je možnost nakonfigurovat hru na míru. Je možné zvolit z následujcích parametrů.</para>
 
 <para><itemizedlist>
 <listitem>
@@ -44,7 +44,7 @@
 <section xml:id="_md__c___users__petr__documents_apo_semestralka__user_manual_1autotoc_md19">
 <title>Ovládání hry</title>
 
-<para>Hra se ovládá pomocí klávesnic <computeroutput>wasd</computeroutput>. Hru je možné pauznout pomocí stiknutí klávesy <computeroutput>p</computeroutput>.</para>
+<para>Hra se ovládá pomocí klávesnic <computeroutput>wasd</computeroutput>. Hru je možné pauznout pomocí stiknutí klávesy <computeroutput>p</computeroutput> a ukončit stiskem klávesy <computeroutput>q</computeroutput>.</para>
 </section>
 <section xml:id="_md__c___users__petr__documents_apo_semestralka__user_manual_1autotoc_md20">
 <title>Popis hrací plochy</title>
@@ -53,7 +53,7 @@
 
 <para><itemizedlist>
 <listitem>
-<para>packman (pokud se pohybuje, máotevřenou pusu)</para>
+<para>packman (pokud se pohybuje, má otevřenou pusu)</para>
 </listitem><listitem>
 <para>duchové (mají různé barvy a pozor, občas jich může být více na sobě)</para>
 </listitem><listitem>
@@ -66,7 +66,7 @@
 <section xml:id="_md__c___users__petr__documents_apo_semestralka__user_manual_1autotoc_md21">
 <title>Mód pojídání duchů</title>
 
-<para>Pokud Pac-Man sní super coin, aktivuje se režim pojídání duchů. V něm může Pac-Man pojídat a oni mu neuberou život.</para>
+<para>Pokud Pac-Man sní super coin, aktivuje se režim pojídání duchů. V něm může Pac-Man pojídat duchy a oni mu neuberou život.</para>
 </section>
 <section xml:id="_md__c___users__petr__documents_apo_semestralka__user_manual_1autotoc_md22">
 <title>Signály během hry</title>
@@ -77,7 +77,7 @@
 <listitem>
 <para>výstupní řádka led indikuje počet životů pacmana</para>
 </listitem><listitem>
-<para>RGB led svítí zeleně jasem vypočítaným z počtu snězených kostiček, v případě režimu, kdy jsou duchové zranitelní bliká modře</para>
+<para>RGB led svítí zeleně jasem vypočítaným z packmanova skóre, v případě režimu, kdy jsou duchové zranitelní bliká modře</para>
 </listitem></itemizedlist>
 </para>
 </section>
@@ -97,6 +97,6 @@
 </listitem></itemizedlist>
 </para>
 
-<para>Po sklonční hry přípravek vypíše finální skóre a statistiky na terminál a uživatel má možnot buďto program celkově ukončit nebo spusti hru znovu. </para>
+<para>Po sklončení hry přípravek vypíše finální skóre a zbývající životy na terminál a uživatel má možnot buďto program celkově ukončit nebo spusti hru znovu. </para>
 </section>
 </section>

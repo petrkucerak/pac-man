@@ -3,7 +3,7 @@
 
 <para><anchor xml:id="_index_1md_C__Users_Petr_Documents_apo_semestralka_README"/> </para>
 <section xml:id="_index_1autotoc_md25">
-<title>Introdukce</title>
+<title>Úvod</title>
 
 <para>Cílem této semstrální práce je vytvořit hru Pac-Man, kterou bude možné hrát na desce MzAPO a ovládat pomocí okolních periferií.</para>
 
@@ -14,13 +14,13 @@
 
 <para><itemizedlist>
 <listitem>
-<para>Výstupní řádka led bude při spuštěné hře indikovat počet životů pacmana</para>
+<para>Výstupní řádka led bude při spuštěné hře indikovat počet životů pacmana.</para>
 </listitem><listitem>
-<para>RGB led budou svítit zeleně jasem vypočítaným z počtu snězených kostiček, v případě režimu, kdy jsou duchové zranitelní bude blikat modře.</para>
+<para>RGB led budou svítit zeleně jasem vypočítaným z počtu snězených kostiček z pacmanova skóre, v případě režimu, kdy jsou duchové zranitelní bude blikat modře.</para>
 </listitem><listitem>
 <para>Vstupem hry bude terminál v raw režimu, který bude ovládat směr pacmana, respektive navigaci v textovém menu.</para>
 </listitem><listitem>
-<para>Po sklonční hry přípravek vypíše finální skóre a statistiky na terminál </para>
+<para>Po sklonční skončení hry přípravek vypíše finální skóre a statistiky na terminál.</para>
 </listitem></itemizedlist>
 </para>
 </section>
@@ -29,7 +29,7 @@
 <section xml:id="_index_1autotoc_md28">
 <title>Inicializace hry</title>
 
-<para>Po spuštění hry se objeví textové menu, které bude možné ovládat pomocí kláves wsad ze sériového portu. Bude zde možnost vybrat mapu z nabídky, nastavit počet duchů a počet životů, se kterými pacman začíná.</para>
+<para>Po spuštění hry se objeví textové menu, které bude možné ovládat pomocí kláves <computeroutput>wsad</computeroutput> ze sériového portu. Bude zde možnost vybrat mapu z nabídky, nastavit počet duchů a počet životů, se kterými pacman začíná.</para>
 </section>
 <section xml:id="_index_1autotoc_md29">
 <title>Průběh hry</title>

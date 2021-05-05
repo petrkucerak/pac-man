@@ -90,22 +90,22 @@ $(document).ready(function(){initNavTree('index.html',''); initResizable(); });
 <div class="contents">
 <div class="textblock"><p><a class="anchor" id="md_C__Users_Petr_Documents_apo_semestralka_README"></a> </p>
 <h1><a class="anchor" id="autotoc_md25"></a>
-Introdukce</h1>
+Úvod</h1>
 <p>Cílem této semstrální práce je vytvořit hru Pac-Man, kterou bude možné hrát na desce MzAPO a ovládat pomocí okolních periferií.</p>
 <p>Průběh naší práce je možné sledovat v repozitáři: <a href="https://gitlab.fel.cvut.cz/kucerp28/apo_semestralka">https://gitlab.fel.cvut.cz/kucerp28/apo_semestralka</a></p>
 <h1><a class="anchor" id="autotoc_md26"></a>
 Použité periferie a jejich funkce</h1>
 <ul>
-<li>Výstupní řádka led bude při spuštěné hře indikovat počet životů pacmana</li>
-<li>RGB led budou svítit zeleně jasem vypočítaným z počtu snězených kostiček, v případě režimu, kdy jsou duchové zranitelní bude blikat modře.</li>
+<li>Výstupní řádka led bude při spuštěné hře indikovat počet životů pacmana.</li>
+<li>RGB led budou svítit zeleně jasem vypočítaným z počtu snězených kostiček z pacmanova skóre, v případě režimu, kdy jsou duchové zranitelní bude blikat modře.</li>
 <li>Vstupem hry bude terminál v raw režimu, který bude ovládat směr pacmana, respektive navigaci v textovém menu.</li>
-<li>Po sklonční hry přípravek vypíše finální skóre a statistiky na terminál </li>
+<li>Po sklonční skončení hry přípravek vypíše finální skóre a statistiky na terminál.</li>
 </ul>
 <h1><a class="anchor" id="autotoc_md27"></a>
 Stavy</h1>
 <h2><a class="anchor" id="autotoc_md28"></a>
 Inicializace hry</h2>
-<p>Po spuštění hry se objeví textové menu, které bude možné ovládat pomocí kláves wsad ze sériového portu. Bude zde možnost vybrat mapu z nabídky, nastavit počet duchů a počet životů, se kterými pacman začíná.</p>
+<p>Po spuštění hry se objeví textové menu, které bude možné ovládat pomocí kláves <code>wsad</code> ze sériového portu. Bude zde možnost vybrat mapu z nabídky, nastavit počet duchů a počet životů, se kterými pacman začíná.</p>
 <h2><a class="anchor" id="autotoc_md29"></a>
 Průběh hry</h2>
 <p>Samotná hra se bude ovládat pomocí znaků wsad, stejně jako textové menu. Pacman pobíhá po desce s cílem sníst co nejvíce "penízků" a zároveň se nenechat sežrat duchy. Pokud sní speciální peníz, spustí se na určitou dobu mód, v kterém bude moci požírat duchy, za což získá další body.</p>

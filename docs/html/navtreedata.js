@@ -26,7 +26,7 @@ var NAVTREE =
 [
   [ "Pac-Man", "index.html", [
     [ "Specifikace semestrální práce", "index.html", [
-      [ "Introdukce", "index.html#autotoc_md25", null ],
+      [ "Úvod", "index.html#autotoc_md25", null ],
       [ "Použité periferie a jejich funkce", "index.html#autotoc_md26", null ],
       [ "Stavy", "index.html#autotoc_md27", [
         [ "Inicializace hry", "index.html#autotoc_md28", null ],
@@ -52,7 +52,7 @@ var NAVTREE =
       ] ]
     ] ],
     [ "Uživatelský manuál", "md__c___users__petr__documents_apo_semestralka__user_manual.html", [
-      [ "Natavení hry", "md__c___users__petr__documents_apo_semestralka__user_manual.html#autotoc_md13", [
+      [ "Nastavení hry", "md__c___users__petr__documents_apo_semestralka__user_manual.html#autotoc_md13", [
         [ "Herní mapy", "md__c___users__petr__documents_apo_semestralka__user_manual.html#autotoc_md14", [
           [ "Concentric_circles", "md__c___users__petr__documents_apo_semestralka__user_manual.html#autotoc_md15", null ],
           [ "Star_map", "md__c___users__petr__documents_apo_semestralka__user_manual.html#autotoc_md16", null ],
