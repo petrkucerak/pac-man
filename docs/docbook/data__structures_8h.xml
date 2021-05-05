@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_data__structures_8h" xml:lang="en-US">
-<title>C:/Users/Petr/Documents/apo_semestralka/data_structures.h File Reference</title>
-<indexterm><primary>C:/Users/Petr/Documents/apo_semestralka/data_structures.h</primary></indexterm>
+<title>data_structures.h File Reference</title>
+<indexterm><primary>data_structures.h</primary></indexterm>
 <para>
 
 <para>File with definitions of data structures used across modules like fb data (data about next frame on the screeen), map data (data about currently played map) </para>

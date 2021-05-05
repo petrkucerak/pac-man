@@ -141,7 +141,7 @@
         </childnode>
       </node>
       <node id="1">
-        <label>C:/Users/Petr/Documents/apo_semestralka/apoman.c</label>
+        <label>apoman.c</label>
         <link refid="apoman_8c"/>
         <childnode refid="2" relation="include">
         </childnode>

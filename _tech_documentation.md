@@ -30,6 +30,25 @@ Makefile vychází z šablony [mzapo_template](https://gitlab.fel.cvut.cz/b35apo
 
 Podrobné informace o způsobech připojení a detailního využití připraveného Makefilu je možné dohledat v dokumnetaci předmětu: https://cw.fel.cvut.cz/wiki/courses/b35apo/documentation/mz_apo-howto/start.
 
+#### Flagy a podrobnosti kompilace
+
+Program je kompilován gcc kompilátorem s následujícími flagy.
+
+```Makefile
+CC = arm-linux-gnueabihf-gcc
+CXX = arm-linux-gnueabihf-g++
+
+CPPFLAGS = -I .
+CFLAGS =-g -std=gnu99 -O1 -Wall
+CXXFLAGS = -g -std=gnu++11 -O1 -Wall
+LDFLAGS = -lrt -lpthread -pthread
+```
+
+Ke kompilaci na Ubuntu/Debina systému je třeba mít naistalovaný křížový kompilátor.
+```bash
+sudo apt install crossbuild-essential-armhf
+```
+
 #### Zdrojové soubory
 
 Pokud budete upravovat nejaky ze souboru nebo prodavat vlastni, je třeba mít přidané všechny soubory ke kompilaci.
@@ -46,24 +65,57 @@ SOURCES += game.c
 
 #### Cílový binární soubor
 
-Nezapomenout název cílového binárního souboru.
+Název výsledného binárního osuboru je udáván tímot řádkem:
 ```Makefile
 TARGET_EXE = apoman
 ```
 
-#### Propojení se pomocí *ProxyJump*
+#### Propojení se zařízením při kompilaci
 
-Pokud se budete chtít rovnou připojit na zařízení pomocí technologie *ProxyJump*, je vhodné rovnou do Makefilu vyplnit cílovou IP adresu zařízení
+Způsobů, jak pracovat se zařízeními je mnoho. My doporučujeme využít tzv. Prozyjumpu, který jsme během vývoje používali. Pojďme si představit jednotlivé doporučené přítupy.
+
+Rád bych upozornil, že tato část je rychlým srhnutí poskytnuté dokumentace dostupné na stránkách předmětu (https://cw.fel.cvut.cz/wiki/courses/b35apo/documentation/mz_apo-howto/start).
+
+##### 1. Propojení pomocí *ProxyJump*
+
+Prvním způsobem je propojit se přes tzv. *ProxyJump*. Je vhodné rovnou do Makefilu vyplnit cílovou IP adresu zařízení
 ```Makefile
-TARGET_IP ?= 192.168.202.203
+TARGET_IP ?= 192.168.202.xxx
 ```
- a vyplnit své uživatelské jméno s přístupem k ssh klíči.
+ a vyplnit své uživatelské jméno s přístupem k ssh klíči (k školnímu serveru).
 ```Makefile
 SSH_OPTIONS= -i ~/.ssh/mzapo-root-key -o 'ProxyJump=username@postel.felk.cvut.cz'
 ```
 Předejte tak zbytečnému zablokování ze strany školního serveru při opakovaném a častém připojování a přístup pro vás bude snazší.
 
+##### 2. Využití SSH tunelu do lokální sítě laboratoře
+
+Další možností připojení je využít trvalé SSH spojení na server `postel.felk.cvut.cz`. Tento způsob zaručí, že je menší riziko, aby naše připojení bylo vyhodnoceno ochranou serveru jako útok. Opětovaná připojovaání jsou tak tedy mnohem rychlejší.
+
+Tunel vytvoříme příkazem
+```bash
+ssh -nNT ctu_login@postel.felk.cvut.cz -L 2222:192.168.202.xxx:22
+```
+
+A v Makefilu je třeba povolit řádku s následujícími příkazy:
+```Makefile
+TARGET_IP = 127.0.0.1
+SSH_OPTIONS=-o "UserKnownHostsFile=/dev/null" -o "StrictHostKeyChecking=no" -o "Port=2222"
+SSH_GDB_TUNNEL_REQUIRED=y
+```
+
+##### 3. Připojení se přes PC v laboratoři
+
+Třetím možným způsobem je se připojit na školní PC, který je ve stejné sítit jako používaný přípavek.
+
+Zde stačí pouze zavolat příkaz, který nám kód zkompiluje a rovnou spustí na zařízení s danou IP adresou:
+```bash
+make TARGET_IP=192.168.202.xx run
+```
+
 ### Důležité příkazy
+
+Další částí Makefilu jsou příkazy, které lze při práci s aplikací využít. Pojďme si představit ty nejvíce zajímavé.
 
 #### Kompilace
 
@@ -71,13 +123,13 @@ Předejte tak zbytečnému zablokování ze strany školního serveru při opako
 make
 ```
 
-#### Vymazání zkompilovaných souborů
+#### Vymazání objektových a zkompilovaných souborů
 
 ```bash
 make clean
 ```
 
-#### Kompilace a zároveň spuštění přes *ProxyJump*
+#### Kompilace a zároveň spuštění dle konfigurace Makefilu
 
 ```bash
 make run

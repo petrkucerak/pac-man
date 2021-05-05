@@ -29,7 +29,7 @@
         <label>stdio.h</label>
       </node>
       <node id="1">
-        <label>C:/Users/Petr/Documents/apo_semestralka/mzapo_phys.c</label>
+        <label>mzapo_phys.c</label>
         <link refid="mzapo__phys_8c"/>
         <childnode refid="2" relation="include">
         </childnode>

@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_update__peripherals_8h" xml:lang="en-US">
-<title>C:/Users/Petr/Documents/apo_semestralka/update_peripherals.h File Reference</title>
-<indexterm><primary>C:/Users/Petr/Documents/apo_semestralka/update_peripherals.h</primary></indexterm>
+<title>update_peripherals.h File Reference</title>
+<indexterm><primary>update_peripherals.h</primary></indexterm>
 <para>
 
 <para>Module for setting the peripherals. </para>

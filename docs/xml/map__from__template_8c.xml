@@ -22,7 +22,7 @@
         <label>pthread.h</label>
       </node>
       <node id="1">
-        <label>C:/Users/Petr/Documents/apo_semestralka/map_from_template.c</label>
+        <label>map_from_template.c</label>
         <link refid="map__from__template_8c"/>
         <childnode refid="2" relation="include">
         </childnode>

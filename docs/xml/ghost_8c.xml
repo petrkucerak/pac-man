@@ -35,7 +35,7 @@
         </childnode>
       </node>
       <node id="1">
-        <label>C:/Users/Petr/Documents/apo_semestralka/ghost.c</label>
+        <label>ghost.c</label>
         <link refid="ghost_8c"/>
         <childnode refid="2" relation="include">
         </childnode>

@@ -3,14 +3,14 @@
   <compounddef id="mzapo__phys_8h" kind="file" language="C++">
     <compoundname>mzapo_phys.h</compoundname>
     <includes local="no">sys/types.h</includes>
-    <includedby refid="apoman_8c" local="yes">C:/Users/Petr/Documents/apo_semestralka/apoman.c</includedby>
-    <includedby refid="mzapo__phys_8c" local="yes">C:/Users/Petr/Documents/apo_semestralka/mzapo_phys.c</includedby>
+    <includedby refid="apoman_8c" local="yes">apoman.c</includedby>
+    <includedby refid="mzapo__phys_8c" local="yes">mzapo_phys.c</includedby>
     <incdepgraph>
       <node id="2">
         <label>sys/types.h</label>
       </node>
       <node id="1">
-        <label>C:/Users/Petr/Documents/apo_semestralka/mzapo_phys.h</label>
+        <label>mzapo_phys.h</label>
         <link refid="mzapo__phys_8h"/>
         <childnode refid="2" relation="include">
         </childnode>
@@ -18,15 +18,15 @@
     </incdepgraph>
     <invincdepgraph>
       <node id="2">
-        <label>C:/Users/Petr/Documents/apo_semestralka/apoman.c</label>
+        <label>apoman.c</label>
         <link refid="apoman_8c"/>
       </node>
       <node id="3">
-        <label>C:/Users/Petr/Documents/apo_semestralka/mzapo_phys.c</label>
+        <label>mzapo_phys.c</label>
         <link refid="mzapo__phys_8c"/>
       </node>
       <node id="1">
-        <label>C:/Users/Petr/Documents/apo_semestralka/mzapo_phys.h</label>
+        <label>mzapo_phys.h</label>
         <link refid="mzapo__phys_8h"/>
         <childnode refid="2" relation="include">
         </childnode>

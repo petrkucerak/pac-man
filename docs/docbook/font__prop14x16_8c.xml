@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_font__prop14x16_8c" xml:lang="en-US">
-<title>C:/Users/Petr/Documents/apo_semestralka/font_prop14x16.c File Reference</title>
-<indexterm><primary>C:/Users/Petr/Documents/apo_semestralka/font_prop14x16.c</primary></indexterm>
+<title>font_prop14x16.c File Reference</title>
+<indexterm><primary>font_prop14x16.c</primary></indexterm>
 <programlisting>#include &quot;font_types.h&quot;
 </programlisting><simplesect>
     <title>Variables    </title>

@@ -27,7 +27,7 @@
         <label>stdlib.h</label>
       </node>
       <node id="1">
-        <label>C:/Users/Petr/Documents/apo_semestralka/game.c</label>
+        <label>game.c</label>
         <link refid="game_8c"/>
         <childnode refid="2" relation="include">
         </childnode>

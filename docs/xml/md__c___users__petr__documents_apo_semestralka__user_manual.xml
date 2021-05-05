@@ -6,7 +6,7 @@
     <briefdescription>
     </briefdescription>
     <detaileddescription>
-<sect1 id="md__c___users__petr__documents_apo_semestralka__user_manual_1autotoc_md13">
+<sect1 id="md__c___users__petr__documents_apo_semestralka__user_manual_1autotoc_md17">
 <title>Nastavení hry</title>
 <para>V první části hry si je možnost nakonfigurovat hru na míru. Je možné zvolit z následujcích parametrů.</para>
 <para><itemizedlist>
@@ -15,21 +15,21 @@
 </listitem><listitem><para>počet duchů (možnost zvolit od 1 po 4)</para>
 </listitem></itemizedlist>
 </para>
-<sect2 id="md__c___users__petr__documents_apo_semestralka__user_manual_1autotoc_md14">
+<sect2 id="md__c___users__petr__documents_apo_semestralka__user_manual_1autotoc_md18">
 <title>Herní mapy</title>
-<sect3 id="md__c___users__petr__documents_apo_semestralka__user_manual_1autotoc_md15">
+<sect3 id="md__c___users__petr__documents_apo_semestralka__user_manual_1autotoc_md19">
 <title>Concentric_circles</title>
 <para>Zcela první mapa, jenž je charakteristická dlouhými chodbami, kde se dá zažít divoká honička s duchem.</para>
 <para><image type="html" name="https://raw.githubusercontent.com/petrkucerak/library/main/asstes/share/apo_man/game_04.png" alt="Concentric_circles" inline="yes"></image>
 </para>
 </sect3>
-<sect3 id="md__c___users__petr__documents_apo_semestralka__user_manual_1autotoc_md16">
+<sect3 id="md__c___users__petr__documents_apo_semestralka__user_manual_1autotoc_md20">
 <title>Star_map</title>
 <para>Původně se mělo jednat o mapu připomínající tvar hvězdy, nakonec z této mapku ale vzniklo takové bludiště, kde je třeba počítat s každým zákrutem, protože tam může čekat nebezpečný duch.</para>
 <para><image type="html" name="https://raw.githubusercontent.com/petrkucerak/library/main/asstes/share/apo_man/game_02.png" alt="Star_map" inline="yes"></image>
 </para>
 </sect3>
-<sect3 id="md__c___users__petr__documents_apo_semestralka__user_manual_1autotoc_md17">
+<sect3 id="md__c___users__petr__documents_apo_semestralka__user_manual_1autotoc_md21">
 <title>Connch_snail</title>
 <para>Poslení mapka připomíná tvar ulity. Je v ní několik tajných chodem, která zdánlivě narušují její pravidelný tvar zlatého řezu.</para>
 <para><image type="html" name="https://raw.githubusercontent.com/petrkucerak/library/main/asstes/share/apo_man/game_03.png" alt="connch_snail" inline="yes"></image>
@@ -37,13 +37,13 @@
 </sect3>
 </sect2>
 </sect1>
-<sect1 id="md__c___users__petr__documents_apo_semestralka__user_manual_1autotoc_md18">
+<sect1 id="md__c___users__petr__documents_apo_semestralka__user_manual_1autotoc_md22">
 <title>Průběh hry</title>
-<sect2 id="md__c___users__petr__documents_apo_semestralka__user_manual_1autotoc_md19">
+<sect2 id="md__c___users__petr__documents_apo_semestralka__user_manual_1autotoc_md23">
 <title>Ovládání hry</title>
 <para>Hra se ovládá pomocí klávesnic <computeroutput>wasd</computeroutput>. Hru je možné pauznout pomocí stiknutí klávesy <computeroutput>p</computeroutput> a ukončit stiskem klávesy <computeroutput>q</computeroutput>.</para>
 </sect2>
-<sect2 id="md__c___users__petr__documents_apo_semestralka__user_manual_1autotoc_md20">
+<sect2 id="md__c___users__petr__documents_apo_semestralka__user_manual_1autotoc_md24">
 <title>Popis hrací plochy</title>
 <para>Na ploše je vidět několik typů předmětů:</para>
 <para><itemizedlist>
@@ -54,11 +54,11 @@
 </listitem></itemizedlist>
 </para>
 </sect2>
-<sect2 id="md__c___users__petr__documents_apo_semestralka__user_manual_1autotoc_md21">
+<sect2 id="md__c___users__petr__documents_apo_semestralka__user_manual_1autotoc_md25">
 <title>Mód pojídání duchů</title>
 <para>Pokud Pac-Man sní super coin, aktivuje se režim pojídání duchů. V něm může Pac-Man pojídat duchy a oni mu neuberou život.</para>
 </sect2>
-<sect2 id="md__c___users__petr__documents_apo_semestralka__user_manual_1autotoc_md22">
+<sect2 id="md__c___users__petr__documents_apo_semestralka__user_manual_1autotoc_md26">
 <title>Signály během hry</title>
 <para>Stav hry je signalizován okolními periferiemi:</para>
 <para><itemizedlist>
@@ -68,7 +68,7 @@
 </para>
 </sect2>
 </sect1>
-<sect1 id="md__c___users__petr__documents_apo_semestralka__user_manual_1autotoc_md23">
+<sect1 id="md__c___users__petr__documents_apo_semestralka__user_manual_1autotoc_md27">
 <title>Konec hry</title>
 <para>Hra končí několika způsoby:</para>
 <para><itemizedlist>

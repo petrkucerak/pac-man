@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_final__score_8h" xml:lang="en-US">
-<title>C:/Users/Petr/Documents/apo_semestralka/final_score.h File Reference</title>
-<indexterm><primary>C:/Users/Petr/Documents/apo_semestralka/final_score.h</primary></indexterm>
+<title>final_score.h File Reference</title>
+<indexterm><primary>final_score.h</primary></indexterm>
 <para>
 
 <para>Module with function draw final score that draws the final score to the screen and waits for user input. Returns true if the user pressed the s key and therefor wants to continue playing or the q key indicating he wants to end the program. </para>

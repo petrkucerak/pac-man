@@ -2,14 +2,14 @@
 <chapter xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_mainpage" xml:lang="en-US">
 
 <para><anchor xml:id="_index_1md_C__Users_Petr_Documents_apo_semestralka_README"/> </para>
-<section xml:id="_index_1autotoc_md25">
+<section xml:id="_index_1autotoc_md29">
 <title>Úvod</title>
 
 <para>Cílem této semstrální práce je vytvořit hru Pac-Man, kterou bude možné hrát na desce MzAPO a ovládat pomocí okolních periferií.</para>
 
 <para>Průběh naší práce je možné sledovat v repozitáři: <link xlink:href="https://gitlab.fel.cvut.cz/kucerp28/apo_semestralka">https://gitlab.fel.cvut.cz/kucerp28/apo_semestralka</link></para>
 </section>
-<section xml:id="_index_1autotoc_md26">
+<section xml:id="_index_1autotoc_md30">
 <title>Použité periferie a jejich funkce</title>
 
 <para><itemizedlist>
@@ -24,21 +24,21 @@
 </listitem></itemizedlist>
 </para>
 </section>
-<section xml:id="_index_1autotoc_md27">
+<section xml:id="_index_1autotoc_md31">
 <title>Stavy</title>
-<section xml:id="_index_1autotoc_md28">
+<section xml:id="_index_1autotoc_md32">
 <title>Inicializace hry</title>
 
 <para>Po spuštění hry se objeví textové menu, které bude možné ovládat pomocí kláves <computeroutput>wsad</computeroutput> ze sériového portu. Bude zde možnost vybrat mapu z nabídky, nastavit počet duchů a počet životů, se kterými pacman začíná.</para>
 </section>
-<section xml:id="_index_1autotoc_md29">
+<section xml:id="_index_1autotoc_md33">
 <title>Průběh hry</title>
 
 <para>Samotná hra se bude ovládat pomocí znaků wsad, stejně jako textové menu. Pacman pobíhá po desce s cílem sníst co nejvíce &quot;penízků&quot; a zároveň se nenechat sežrat duchy. Pokud sní speciální peníz, spustí se na určitou dobu mód, v kterém bude moci požírat duchy, za což získá další body.</para>
 
 <para>V průběhu hry je možno sledovat mód, ve kterém se hra nachází na tvaru duchů a stavu RGB LED. Počet zbývajících životů je indikován na výstupní led řádce jako počet shluků svítících led.</para>
 </section>
-<section xml:id="_index_1autotoc_md30">
+<section xml:id="_index_1autotoc_md34">
 <title>Závěr hry</title>
 
 <para>Hra může být ukončena 3 způsoby:<itemizedlist>
@@ -52,7 +52,7 @@
 </para>
 </section>
 </section>
-<section xml:id="_index_1autotoc_md31">
+<section xml:id="_index_1autotoc_md35">
 <title>Kompilace</title>
 
 <para><literallayout><computeroutput>make&#32;TARGET_IP=192.168.202.xx&#32;run

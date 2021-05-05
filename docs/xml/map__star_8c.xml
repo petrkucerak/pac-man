@@ -9,7 +9,7 @@
         <link refid="map__template_8h"/>
       </node>
       <node id="1">
-        <label>C:/Users/Petr/Documents/apo_semestralka/map_star.c</label>
+        <label>map_star.c</label>
         <link refid="map__star_8c"/>
         <childnode refid="2" relation="include">
         </childnode>

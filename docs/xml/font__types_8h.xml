@@ -3,19 +3,19 @@
   <compounddef id="font__types_8h" kind="file" language="C++">
     <compoundname>font_types.h</compoundname>
     <includes local="no">stdint.h</includes>
-    <includedby refid="apoman_8c" local="yes">C:/Users/Petr/Documents/apo_semestralka/apoman.c</includedby>
-    <includedby refid="final__score_8h" local="yes">C:/Users/Petr/Documents/apo_semestralka/final_score.h</includedby>
-    <includedby refid="font__prop14x16_8c" local="yes">C:/Users/Petr/Documents/apo_semestralka/font_prop14x16.c</includedby>
-    <includedby refid="font__rom8x16_8c" local="yes">C:/Users/Petr/Documents/apo_semestralka/font_rom8x16.c</includedby>
-    <includedby refid="game_8c" local="yes">C:/Users/Petr/Documents/apo_semestralka/game.c</includedby>
-    <includedby refid="menu__utilities_8h" local="yes">C:/Users/Petr/Documents/apo_semestralka/menu_utilities.h</includedby>
-    <includedby refid="text__fb_8h" local="yes">C:/Users/Petr/Documents/apo_semestralka/text_fb.h</includedby>
+    <includedby refid="apoman_8c" local="yes">apoman.c</includedby>
+    <includedby refid="final__score_8h" local="yes">final_score.h</includedby>
+    <includedby refid="font__prop14x16_8c" local="yes">font_prop14x16.c</includedby>
+    <includedby refid="font__rom8x16_8c" local="yes">font_rom8x16.c</includedby>
+    <includedby refid="game_8c" local="yes">game.c</includedby>
+    <includedby refid="menu__utilities_8h" local="yes">menu_utilities.h</includedby>
+    <includedby refid="text__fb_8h" local="yes">text_fb.h</includedby>
     <incdepgraph>
       <node id="2">
         <label>stdint.h</label>
       </node>
       <node id="1">
-        <label>C:/Users/Petr/Documents/apo_semestralka/font_types.h</label>
+        <label>font_types.h</label>
         <link refid="font__types_8h"/>
         <childnode refid="2" relation="include">
         </childnode>
@@ -23,15 +23,15 @@
     </incdepgraph>
     <invincdepgraph>
       <node id="8">
-        <label>C:/Users/Petr/Documents/apo_semestralka/game.c</label>
+        <label>game.c</label>
         <link refid="game_8c"/>
       </node>
       <node id="6">
-        <label>C:/Users/Petr/Documents/apo_semestralka/font_prop14x16.c</label>
+        <label>font_prop14x16.c</label>
         <link refid="font__prop14x16_8c"/>
       </node>
       <node id="1">
-        <label>C:/Users/Petr/Documents/apo_semestralka/font_types.h</label>
+        <label>font_types.h</label>
         <link refid="font__types_8h"/>
         <childnode refid="2" relation="include">
         </childnode>
@@ -49,11 +49,11 @@
         </childnode>
       </node>
       <node id="12">
-        <label>C:/Users/Petr/Documents/apo_semestralka/text_fb.c</label>
+        <label>text_fb.c</label>
         <link refid="text__fb_8c"/>
       </node>
       <node id="10">
-        <label>C:/Users/Petr/Documents/apo_semestralka/text_fb.h</label>
+        <label>text_fb.h</label>
         <link refid="text__fb_8h"/>
         <childnode refid="2" relation="include">
         </childnode>
@@ -69,15 +69,15 @@
         </childnode>
       </node>
       <node id="7">
-        <label>C:/Users/Petr/Documents/apo_semestralka/font_rom8x16.c</label>
+        <label>font_rom8x16.c</label>
         <link refid="font__rom8x16_8c"/>
       </node>
       <node id="4">
-        <label>C:/Users/Petr/Documents/apo_semestralka/final_score.c</label>
+        <label>final_score.c</label>
         <link refid="final__score_8c"/>
       </node>
       <node id="3">
-        <label>C:/Users/Petr/Documents/apo_semestralka/final_score.h</label>
+        <label>final_score.h</label>
         <link refid="final__score_8h"/>
         <childnode refid="2" relation="include">
         </childnode>
@@ -87,15 +87,15 @@
         </childnode>
       </node>
       <node id="11">
-        <label>C:/Users/Petr/Documents/apo_semestralka/map_to_fb.c</label>
+        <label>map_to_fb.c</label>
         <link refid="map__to__fb_8c"/>
       </node>
       <node id="5">
-        <label>C:/Users/Petr/Documents/apo_semestralka/menu_utilities.c</label>
+        <label>menu_utilities.c</label>
         <link refid="menu__utilities_8c"/>
       </node>
       <node id="9">
-        <label>C:/Users/Petr/Documents/apo_semestralka/menu_utilities.h</label>
+        <label>menu_utilities.h</label>
         <link refid="menu__utilities_8h"/>
         <childnode refid="2" relation="include">
         </childnode>
@@ -103,7 +103,7 @@
         </childnode>
       </node>
       <node id="2">
-        <label>C:/Users/Petr/Documents/apo_semestralka/apoman.c</label>
+        <label>apoman.c</label>
         <link refid="apoman_8c"/>
       </node>
     </invincdepgraph>

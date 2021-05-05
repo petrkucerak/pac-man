@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_ghost_8c" xml:lang="en-US">
-<title>C:/Users/Petr/Documents/apo_semestralka/ghost.c File Reference</title>
-<indexterm><primary>C:/Users/Petr/Documents/apo_semestralka/ghost.c</primary></indexterm>
+<title>ghost.c File Reference</title>
+<indexterm><primary>ghost.c</primary></indexterm>
 <para>
 
 <para>Module where all the logic and movement of ghost is placed. </para>

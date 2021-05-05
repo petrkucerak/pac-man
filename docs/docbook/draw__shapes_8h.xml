@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_draw__shapes_8h" xml:lang="en-US">
-<title>C:/Users/Petr/Documents/apo_semestralka/draw_shapes.h File Reference</title>
-<indexterm><primary>C:/Users/Petr/Documents/apo_semestralka/draw_shapes.h</primary></indexterm>
+<title>draw_shapes.h File Reference</title>
+<indexterm><primary>draw_shapes.h</primary></indexterm>
 <para>
 
 <para>Module with functions to draw shapes to the frame buffer. </para>

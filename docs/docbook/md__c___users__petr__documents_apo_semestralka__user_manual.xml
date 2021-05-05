@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_md__c___users__petr__documents_apo_semestralka__user_manual" xml:lang="en-US">
-<section xml:id="_md__c___users__petr__documents_apo_semestralka__user_manual_1autotoc_md13">
+<section xml:id="_md__c___users__petr__documents_apo_semestralka__user_manual_1autotoc_md17">
 <title>Nastavení hry</title>
 
 <para>V první části hry si je možnost nakonfigurovat hru na míru. Je možné zvolit z následujcích parametrů.</para>
@@ -14,23 +14,23 @@
 <para>počet duchů (možnost zvolit od 1 po 4)</para>
 </listitem></itemizedlist>
 </para>
-<section xml:id="_md__c___users__petr__documents_apo_semestralka__user_manual_1autotoc_md14">
+<section xml:id="_md__c___users__petr__documents_apo_semestralka__user_manual_1autotoc_md18">
 <title>Herní mapy</title>
-<section xml:id="_md__c___users__petr__documents_apo_semestralka__user_manual_1autotoc_md15">
+<section xml:id="_md__c___users__petr__documents_apo_semestralka__user_manual_1autotoc_md19">
 <title>Concentric_circles</title>
 
 <para>Zcela první mapa, jenž je charakteristická dlouhými chodbami, kde se dá zažít divoká honička s duchem.</para>
 
 <para></para>
 </section>
-<section xml:id="_md__c___users__petr__documents_apo_semestralka__user_manual_1autotoc_md16">
+<section xml:id="_md__c___users__petr__documents_apo_semestralka__user_manual_1autotoc_md20">
 <title>Star_map</title>
 
 <para>Původně se mělo jednat o mapu připomínající tvar hvězdy, nakonec z této mapku ale vzniklo takové bludiště, kde je třeba počítat s každým zákrutem, protože tam může čekat nebezpečný duch.</para>
 
 <para></para>
 </section>
-<section xml:id="_md__c___users__petr__documents_apo_semestralka__user_manual_1autotoc_md17">
+<section xml:id="_md__c___users__petr__documents_apo_semestralka__user_manual_1autotoc_md21">
 <title>Connch_snail</title>
 
 <para>Poslení mapka připomíná tvar ulity. Je v ní několik tajných chodem, která zdánlivě narušují její pravidelný tvar zlatého řezu.</para>
@@ -39,14 +39,14 @@
 </section>
 </section>
 </section>
-<section xml:id="_md__c___users__petr__documents_apo_semestralka__user_manual_1autotoc_md18">
+<section xml:id="_md__c___users__petr__documents_apo_semestralka__user_manual_1autotoc_md22">
 <title>Průběh hry</title>
-<section xml:id="_md__c___users__petr__documents_apo_semestralka__user_manual_1autotoc_md19">
+<section xml:id="_md__c___users__petr__documents_apo_semestralka__user_manual_1autotoc_md23">
 <title>Ovládání hry</title>
 
 <para>Hra se ovládá pomocí klávesnic <computeroutput>wasd</computeroutput>. Hru je možné pauznout pomocí stiknutí klávesy <computeroutput>p</computeroutput> a ukončit stiskem klávesy <computeroutput>q</computeroutput>.</para>
 </section>
-<section xml:id="_md__c___users__petr__documents_apo_semestralka__user_manual_1autotoc_md20">
+<section xml:id="_md__c___users__petr__documents_apo_semestralka__user_manual_1autotoc_md24">
 <title>Popis hrací plochy</title>
 
 <para>Na ploše je vidět několik typů předmětů:</para>
@@ -63,12 +63,12 @@
 </listitem></itemizedlist>
 </para>
 </section>
-<section xml:id="_md__c___users__petr__documents_apo_semestralka__user_manual_1autotoc_md21">
+<section xml:id="_md__c___users__petr__documents_apo_semestralka__user_manual_1autotoc_md25">
 <title>Mód pojídání duchů</title>
 
 <para>Pokud Pac-Man sní super coin, aktivuje se režim pojídání duchů. V něm může Pac-Man pojídat duchy a oni mu neuberou život.</para>
 </section>
-<section xml:id="_md__c___users__petr__documents_apo_semestralka__user_manual_1autotoc_md22">
+<section xml:id="_md__c___users__petr__documents_apo_semestralka__user_manual_1autotoc_md26">
 <title>Signály během hry</title>
 
 <para>Stav hry je signalizován okolními periferiemi:</para>
@@ -82,7 +82,7 @@
 </para>
 </section>
 </section>
-<section xml:id="_md__c___users__petr__documents_apo_semestralka__user_manual_1autotoc_md23">
+<section xml:id="_md__c___users__petr__documents_apo_semestralka__user_manual_1autotoc_md27">
 <title>Konec hry</title>
 
 <para>Hra končí několika způsoby:</para>

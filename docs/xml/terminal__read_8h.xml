@@ -2,15 +2,15 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
   <compounddef id="terminal__read_8h" kind="file" language="C++">
     <compoundname>terminal_read.h</compoundname>
-    <includedby refid="apoman_8c" local="yes">C:/Users/Petr/Documents/apo_semestralka/apoman.c</includedby>
-    <includedby refid="terminal__read_8c" local="yes">C:/Users/Petr/Documents/apo_semestralka/terminal_read.c</includedby>
+    <includedby refid="apoman_8c" local="yes">apoman.c</includedby>
+    <includedby refid="terminal__read_8c" local="yes">terminal_read.c</includedby>
     <invincdepgraph>
       <node id="3">
-        <label>C:/Users/Petr/Documents/apo_semestralka/terminal_read.c</label>
+        <label>terminal_read.c</label>
         <link refid="terminal__read_8c"/>
       </node>
       <node id="1">
-        <label>C:/Users/Petr/Documents/apo_semestralka/terminal_read.h</label>
+        <label>terminal_read.h</label>
         <link refid="terminal__read_8h"/>
         <childnode refid="2" relation="include">
         </childnode>
@@ -18,7 +18,7 @@
         </childnode>
       </node>
       <node id="2">
-        <label>C:/Users/Petr/Documents/apo_semestralka/apoman.c</label>
+        <label>apoman.c</label>
         <link refid="apoman_8c"/>
       </node>
     </invincdepgraph>

@@ -19,7 +19,7 @@
         <link refid="map__template_8h"/>
       </node>
       <node id="1">
-        <label>C:/Users/Petr/Documents/apo_semestralka/terminal_read.c</label>
+        <label>terminal_read.c</label>
         <link refid="terminal__read_8c"/>
         <childnode refid="2" relation="include">
         </childnode>

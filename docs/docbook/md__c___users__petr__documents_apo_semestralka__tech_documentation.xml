@@ -39,6 +39,23 @@
 
 <para>Podrobné informace o způsobech připojení a detailního využití připraveného Makefilu je možné dohledat v dokumnetaci předmětu: <link xlink:href="https://cw.fel.cvut.cz/wiki/courses/b35apo/documentation/mz_apo-howto/start">https://cw.fel.cvut.cz/wiki/courses/b35apo/documentation/mz_apo-howto/start</link>.</para>
 <section xml:id="_md__c___users__petr__documents_apo_semestralka__tech_documentation_1autotoc_md5">
+<title>Flagy a podrobnosti kompilace</title>
+
+<para>Program je kompilován gcc kompilátorem s následujícími flagy.</para>
+
+<para><literallayout><computeroutput>CC&#32;=&#32;arm-linux-gnueabihf-gcc
+CXX&#32;=&#32;arm-linux-gnueabihf-g++
+
+CPPFLAGS&#32;=&#32;-I&#32;.
+CFLAGS&#32;=-g&#32;-std=gnu99&#32;-O1&#32;-Wall
+CXXFLAGS&#32;=&#32;-g&#32;-std=gnu++11&#32;-O1&#32;-Wall
+LDFLAGS&#32;=&#32;-lrt&#32;-lpthread&#32;-pthread
+</computeroutput></literallayout></para>
+
+<para>Ke kompilaci na Ubuntu/Debina systému je třeba mít naistalovaný křížový kompilátor. <literallayout><computeroutput>sudo&#32;apt&#32;install&#32;crossbuild-essential-armhf
+</computeroutput></literallayout></para>
+</section>
+<section xml:id="_md__c___users__petr__documents_apo_semestralka__tech_documentation_1autotoc_md6">
 <title>Zdrojové soubory</title>
 
 <para>Pokud budete upravovat nejaky ze souboru nebo prodavat vlastni, je třeba mít přidané všechny soubory ke kompilaci.</para>
@@ -52,36 +69,66 @@ SOURCES&#32;+=&#32;final_score.c
 SOURCES&#32;+=&#32;game.c
 </computeroutput></literallayout></para>
 </section>
-<section xml:id="_md__c___users__petr__documents_apo_semestralka__tech_documentation_1autotoc_md6">
+<section xml:id="_md__c___users__petr__documents_apo_semestralka__tech_documentation_1autotoc_md7">
 <title>Cílový binární soubor</title>
 
-<para>Nezapomenout název cílového binárního souboru. <literallayout><computeroutput>TARGET_EXE&#32;=&#32;apoman
+<para>Název výsledného binárního osuboru je udáván tímot řádkem: <literallayout><computeroutput>TARGET_EXE&#32;=&#32;apoman
 </computeroutput></literallayout></para>
 </section>
-<section xml:id="_md__c___users__petr__documents_apo_semestralka__tech_documentation_1autotoc_md7">
-<title>Propojení se pomocí &lt;em&gt;ProxyJump&lt;/em&gt;</title>
+<section xml:id="_md__c___users__petr__documents_apo_semestralka__tech_documentation_1autotoc_md8">
+<title>Propojení se zařízením při kompilaci</title>
 
-<para>Pokud se budete chtít rovnou připojit na zařízení pomocí technologie <emphasis>ProxyJump</emphasis>, je vhodné rovnou do Makefilu vyplnit cílovou IP adresu zařízení <literallayout><computeroutput>TARGET_IP&#32;?=&#32;192.168.202.203
-</computeroutput></literallayout> a vyplnit své uživatelské jméno s přístupem k ssh klíči. <literallayout><computeroutput>SSH_OPTIONS=&#32;-i&#32;~/.ssh/mzapo-root-key&#32;-o&#32;&apos;ProxyJump=username@postel.felk.cvut.cz&apos;
+<para>Způsobů, jak pracovat se zařízeními je mnoho. My doporučujeme využít tzv. Prozyjumpu, který jsme během vývoje používali. Pojďme si představit jednotlivé doporučené přítupy.</para>
+
+<para>Rád bych upozornil, že tato část je rychlým srhnutí poskytnuté dokumentace dostupné na stránkách předmětu (<link xlink:href="https://cw.fel.cvut.cz/wiki/courses/b35apo/documentation/mz_apo-howto/start">https://cw.fel.cvut.cz/wiki/courses/b35apo/documentation/mz_apo-howto/start</link>).</para>
+<section xml:id="_md__c___users__petr__documents_apo_semestralka__tech_documentation_1autotoc_md9">
+<title>1. Propojení pomocí &lt;em&gt;ProxyJump&lt;/em&gt;</title>
+
+<para>Prvním způsobem je propojit se přes tzv. <emphasis>ProxyJump</emphasis>. Je vhodné rovnou do Makefilu vyplnit cílovou IP adresu zařízení <literallayout><computeroutput>TARGET_IP&#32;?=&#32;192.168.202.xxx
+</computeroutput></literallayout> a vyplnit své uživatelské jméno s přístupem k ssh klíči (k školnímu serveru). <literallayout><computeroutput>SSH_OPTIONS=&#32;-i&#32;~/.ssh/mzapo-root-key&#32;-o&#32;&apos;ProxyJump=username@postel.felk.cvut.cz&apos;
 </computeroutput></literallayout> Předejte tak zbytečnému zablokování ze strany školního serveru při opakovaném a častém připojování a přístup pro vás bude snazší.</para>
 </section>
+<section xml:id="_md__c___users__petr__documents_apo_semestralka__tech_documentation_1autotoc_md10">
+<title>2. Využití SSH tunelu do lokální sítě laboratoře</title>
+
+<para>Další možností připojení je využít trvalé SSH spojení na server <computeroutput>postel.felk.cvut.cz</computeroutput>. Tento způsob zaručí, že je menší riziko, aby naše připojení bylo vyhodnoceno ochranou serveru jako útok. Opětovaná připojovaání jsou tak tedy mnohem rychlejší.</para>
+
+<para>Tunel vytvoříme příkazem <literallayout><computeroutput>ssh&#32;-nNT&#32;ctu_login@postel.felk.cvut.cz&#32;-L&#32;2222:192.168.202.xxx:22
+</computeroutput></literallayout></para>
+
+<para>A v Makefilu je třeba povolit řádku s následujícími příkazy: <literallayout><computeroutput>TARGET_IP&#32;=&#32;127.0.0.1
+SSH_OPTIONS=-o&#32;&quot;UserKnownHostsFile=/dev/null&quot;&#32;-o&#32;&quot;StrictHostKeyChecking=no&quot;&#32;-o&#32;&quot;Port=2222&quot;
+SSH_GDB_TUNNEL_REQUIRED=y
+</computeroutput></literallayout></para>
 </section>
-<section xml:id="_md__c___users__petr__documents_apo_semestralka__tech_documentation_1autotoc_md8">
+<section xml:id="_md__c___users__petr__documents_apo_semestralka__tech_documentation_1autotoc_md11">
+<title>3. Připojení se přes PC v laboratoři</title>
+
+<para>Třetím možným způsobem je se připojit na školní PC, který je ve stejné sítit jako používaný přípavek.</para>
+
+<para>Zde stačí pouze zavolat příkaz, který nám kód zkompiluje a rovnou spustí na zařízení s danou IP adresou: <literallayout><computeroutput>make&#32;TARGET_IP=192.168.202.xx&#32;run
+</computeroutput></literallayout></para>
+</section>
+</section>
+</section>
+<section xml:id="_md__c___users__petr__documents_apo_semestralka__tech_documentation_1autotoc_md12">
 <title>Důležité příkazy</title>
-<section xml:id="_md__c___users__petr__documents_apo_semestralka__tech_documentation_1autotoc_md9">
+
+<para>Další částí Makefilu jsou příkazy, které lze při práci s aplikací využít. Pojďme si představit ty nejvíce zajímavé.</para>
+<section xml:id="_md__c___users__petr__documents_apo_semestralka__tech_documentation_1autotoc_md13">
 <title>Kompilace</title>
 
 <para><literallayout><computeroutput>make
 </computeroutput></literallayout></para>
 </section>
-<section xml:id="_md__c___users__petr__documents_apo_semestralka__tech_documentation_1autotoc_md10">
-<title>Vymazání zkompilovaných souborů</title>
+<section xml:id="_md__c___users__petr__documents_apo_semestralka__tech_documentation_1autotoc_md14">
+<title>Vymazání objektových a zkompilovaných souborů</title>
 
 <para><literallayout><computeroutput>make&#32;clean
 </computeroutput></literallayout></para>
 </section>
-<section xml:id="_md__c___users__petr__documents_apo_semestralka__tech_documentation_1autotoc_md11">
-<title>Kompilace a zároveň spuštění přes &lt;em&gt;ProxyJump&lt;/em&gt;</title>
+<section xml:id="_md__c___users__petr__documents_apo_semestralka__tech_documentation_1autotoc_md15">
+<title>Kompilace a zároveň spuštění dle konfigurace Makefilu</title>
 
 <para><literallayout><computeroutput>make&#32;run
 </computeroutput></literallayout> </para>

@@ -2,7 +2,7 @@
 .ad l
 .nh
 .SH NAME
-md__c___users__petr__documents_apo_semestralka__tech_documentation \- Technická dokumnetace 
+md__c___users__petr__documents_apo_semestralka__tech_documentation \- Technická dokumentace 
 
 .SH "Architektura aplikace"
 .PP
@@ -32,6 +32,28 @@ Pro kompliaci programu je připravený Makefile i s předpřipraveným připojen
 Makefile vychází z šablony \fCmzapo_template\fP\&.
 .SS "Nastavení Makefilu"
 Podrobné informace o způsobech připojení a detailního využití připraveného Makefilu je možné dohledat v dokumnetaci předmětu: https://cw.fel.cvut.cz/wiki/courses/b35apo/documentation/mz_apo-howto/start\&.
+.SS "Flagy a podrobnosti kompilace"
+Program je kompilován gcc kompilátorem s následujícími flagy\&.
+.PP
+.PP
+.nf
+CC = arm-linux-gnueabihf-gcc
+CXX = arm-linux-gnueabihf-g++
+
+CPPFLAGS = -I \&.
+CFLAGS =-g -std=gnu99 -O1 -Wall
+CXXFLAGS = -g -std=gnu++11 -O1 -Wall
+LDFLAGS = -lrt -lpthread -pthread
+.fi
+.PP
+.PP
+Ke kompilaci na Ubuntu/Debina systému je třeba mít naistalovaný křížový kompilátor\&. 
+.PP
+.nf
+sudo apt install crossbuild-essential-armhf
+
+.fi
+.PP
 .SS "Zdrojové soubory"
 Pokud budete upravovat nejaky ze souboru nebo prodavat vlastni, je třeba mít přidané všechny soubory ke kompilaci\&.
 .PP
@@ -47,22 +69,26 @@ SOURCES += game\&.c
 .fi
 .PP
 .SS "Cílový binární soubor"
-Nezapomenout název cílového binárního souboru\&. 
+Název výsledného binárního osuboru je udáván tímot řádkem: 
 .PP
 .nf
 TARGET_EXE = apoman
 
 .fi
 .PP
-.SS "Propojení se pomocí <em>ProxyJump</em>"
-Pokud se budete chtít rovnou připojit na zařízení pomocí technologie \fIProxyJump\fP, je vhodné rovnou do Makefilu vyplnit cílovou IP adresu zařízení 
+.SS "Propojení se zařízením při kompilaci"
+Způsobů, jak pracovat se zařízeními je mnoho\&. My doporučujeme využít tzv\&. Prozyjumpu, který jsme během vývoje používali\&. Pojďme si představit jednotlivé doporučené přítupy\&.
+.PP
+Rád bych upozornil, že tato část je rychlým srhnutí poskytnuté dokumentace dostupné na stránkách předmětu (https://cw.fel.cvut.cz/wiki/courses/b35apo/documentation/mz_apo-howto/start)\&.
+.SS "1\&. Propojení pomocí <em>ProxyJump</em>"
+Prvním způsobem je propojit se přes tzv\&. \fIProxyJump\fP\&. Je vhodné rovnou do Makefilu vyplnit cílovou IP adresu zařízení 
 .PP
 .nf
-TARGET_IP ?= 192\&.168\&.202\&.203
+TARGET_IP ?= 192\&.168\&.202\&.xxx
 
 .fi
 .PP
- a vyplnit své uživatelské jméno s přístupem k ssh klíči\&. 
+ a vyplnit své uživatelské jméno s přístupem k ssh klíči (k školnímu serveru)\&. 
 .PP
 .nf
 SSH_OPTIONS= -i ~/\&.ssh/mzapo-root-key -o 'ProxyJump=username@postel\&.felk\&.cvut\&.cz'
@@ -70,20 +96,51 @@ SSH_OPTIONS= -i ~/\&.ssh/mzapo-root-key -o 'ProxyJump=username@postel\&.felk\&.c
 .fi
 .PP
  Předejte tak zbytečnému zablokování ze strany školního serveru při opakovaném a častém připojování a přístup pro vás bude snazší\&.
+.SS "2\&. Využití SSH tunelu do lokální sítě laboratoře"
+Další možností připojení je využít trvalé SSH spojení na server \fCpostel\&.felk\&.cvut\&.cz\fP\&. Tento způsob zaručí, že je menší riziko, aby naše připojení bylo vyhodnoceno ochranou serveru jako útok\&. Opětovaná připojovaání jsou tak tedy mnohem rychlejší\&.
+.PP
+Tunel vytvoříme příkazem 
+.PP
+.nf
+ssh -nNT ctu_login@postel\&.felk\&.cvut\&.cz -L 2222:192\&.168\&.202\&.xxx:22
+
+.fi
+.PP
+.PP
+A v Makefilu je třeba povolit řádku s následujícími příkazy: 
+.PP
+.nf
+TARGET_IP = 127\&.0\&.0\&.1
+SSH_OPTIONS=-o "UserKnownHostsFile=/dev/null" -o "StrictHostKeyChecking=no" -o "Port=2222"
+SSH_GDB_TUNNEL_REQUIRED=y
+
+.fi
+.PP
+.SS "3\&. Připojení se přes PC v laboratoři"
+Třetím možným způsobem je se připojit na školní PC, který je ve stejné sítit jako používaný přípavek\&.
+.PP
+Zde stačí pouze zavolat příkaz, který nám kód zkompiluje a rovnou spustí na zařízení s danou IP adresou: 
+.PP
+.nf
+make TARGET_IP=192\&.168\&.202\&.xx run
+
+.fi
+.PP
 .SS "Důležité příkazy"
+Další částí Makefilu jsou příkazy, které lze při práci s aplikací využít\&. Pojďme si představit ty nejvíce zajímavé\&.
 .SS "Kompilace"
 .PP
 .nf
 make
 .fi
 .PP
-.SS "Vymazání zkompilovaných souborů"
+.SS "Vymazání objektových a zkompilovaných souborů"
 .PP
 .nf
 make clean
 .fi
 .PP
-.SS "Kompilace a zároveň spuštění přes <em>ProxyJump</em>"
+.SS "Kompilace a zároveň spuštění dle konfigurace Makefilu"
 .PP
 .nf
 make run

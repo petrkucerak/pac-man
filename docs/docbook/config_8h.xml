@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_config_8h" xml:lang="en-US">
-<title>C:/Users/Petr/Documents/apo_semestralka/config.h File Reference</title>
-<indexterm><primary>C:/Users/Petr/Documents/apo_semestralka/config.h</primary></indexterm>
+<title>config.h File Reference</title>
+<indexterm><primary>config.h</primary></indexterm>
 <para>
 
 <para>File, where user preferences can be set. For example maximum cap for lives, score gained by eating ghosts/coins can be set here. </para>

@@ -97,7 +97,7 @@
         </childnode>
       </node>
       <node id="1">
-        <label>C:/Users/Petr/Documents/apo_semestralka/menu_utilities.c</label>
+        <label>menu_utilities.c</label>
         <link refid="menu__utilities_8c"/>
         <childnode refid="2" relation="include">
         </childnode>

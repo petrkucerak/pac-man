@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_apoman_8c" xml:lang="en-US">
-<title>C:/Users/Petr/Documents/apo_semestralka/apoman.c File Reference</title>
-<indexterm><primary>C:/Users/Petr/Documents/apo_semestralka/apoman.c</primary></indexterm>
+<title>apoman.c File Reference</title>
+<indexterm><primary>apoman.c</primary></indexterm>
 <para>
 
 <para>Module housing peripherals initialisation, necessary dynamic allocation of memory. Creates thread listening to the terminal input. Calls run init game menu(). </para>

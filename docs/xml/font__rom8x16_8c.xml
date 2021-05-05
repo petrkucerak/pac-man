@@ -14,7 +14,7 @@
         </childnode>
       </node>
       <node id="1">
-        <label>C:/Users/Petr/Documents/apo_semestralka/font_rom8x16.c</label>
+        <label>font_rom8x16.c</label>
         <link refid="font__rom8x16_8c"/>
         <childnode refid="2" relation="include">
         </childnode>

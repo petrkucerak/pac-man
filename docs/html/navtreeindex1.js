@@ -1,5 +1,9 @@
 var NAVTREEINDEX1 =
 {
+"mzapo__regs_8h.html#a16737347121cb524ae6ca45225c094c9":[4,0,28,36],
+"mzapo__regs_8h.html#a16a62057779c8749bece38f452e2736a":[4,0,28,19],
+"mzapo__regs_8h.html#a257f7fec84bad958452d0368610fec9a":[4,0,28,14],
+"mzapo__regs_8h.html#a26656019c3471913ac49cb87e71c75f8":[4,0,28,33],
 "mzapo__regs_8h.html#a30b5b32f5a164ef983824258f6ff54a5":[4,0,28,5],
 "mzapo__regs_8h.html#a3288e58da4ac16e1a0190ec4c58ec603":[4,0,28,3],
 "mzapo__regs_8h.html#a357ae4e6cec3b00dfa3a22b6ccce2193":[4,0,28,1],

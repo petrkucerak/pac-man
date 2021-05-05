@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_map__star_8c" xml:lang="en-US">
-<title>C:/Users/Petr/Documents/apo_semestralka/map_star.c File Reference</title>
-<indexterm><primary>C:/Users/Petr/Documents/apo_semestralka/map_star.c</primary></indexterm>
+<title>map_star.c File Reference</title>
+<indexterm><primary>map_star.c</primary></indexterm>
 <programlisting>#include &quot;map_template.h&quot;
 </programlisting><simplesect>
     <title>Variables    </title>

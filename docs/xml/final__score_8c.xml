@@ -55,7 +55,7 @@
         <label>unistd.h</label>
       </node>
       <node id="1">
-        <label>C:/Users/Petr/Documents/apo_semestralka/final_score.c</label>
+        <label>final_score.c</label>
         <link refid="final__score_8c"/>
         <childnode refid="2" relation="include">
         </childnode>

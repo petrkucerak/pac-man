@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Pac-Man: Technická dokumnetace</title>
+<title>Pac-Man: Technická dokumentace</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -85,7 +85,7 @@ $(document).ready(function(){initNavTree('md__c___users__petr__documents_apo_sem
 
 <div class="PageDoc"><div class="header">
   <div class="headertitle">
-<div class="title">Technická dokumnetace </div>  </div>
+<div class="title">Technická dokumentace </div>  </div>
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><h1><a class="anchor" id="autotoc_md1"></a>
@@ -111,6 +111,17 @@ Popis kompilace a spuštění programu</h1>
 Nastavení Makefilu</h2>
 <p>Podrobné informace o způsobech připojení a detailního využití připraveného Makefilu je možné dohledat v dokumnetaci předmětu: <a href="https://cw.fel.cvut.cz/wiki/courses/b35apo/documentation/mz_apo-howto/start">https://cw.fel.cvut.cz/wiki/courses/b35apo/documentation/mz_apo-howto/start</a>.</p>
 <h3><a class="anchor" id="autotoc_md5"></a>
+Flagy a podrobnosti kompilace</h3>
+<p>Program je kompilován gcc kompilátorem s následujícími flagy.</p>
+<div class="fragment"><div class="line">CC = arm-linux-gnueabihf-gcc</div>
+<div class="line">CXX = arm-linux-gnueabihf-g++</div>
+<div class="line"> </div>
+<div class="line">CPPFLAGS = -I .</div>
+<div class="line">CFLAGS =-g -std=gnu99 -O1 -Wall</div>
+<div class="line">CXXFLAGS = -g -std=gnu++11 -O1 -Wall</div>
+<div class="line">LDFLAGS = -lrt -lpthread -pthread</div>
+</div><!-- fragment --><p>Ke kompilaci na Ubuntu/Debina systému je třeba mít naistalovaný křížový kompilátor. </p><div class="fragment"><div class="line">sudo apt install crossbuild-essential-armhf</div>
+</div><!-- fragment --><h3><a class="anchor" id="autotoc_md6"></a>
 Zdrojové soubory</h3>
 <p>Pokud budete upravovat nejaky ze souboru nebo prodavat vlastni, je třeba mít přidané všechny soubory ke kompilaci.</p>
 <div class="fragment"><div class="line">SOURCES = apoman.c mzapo_phys.c mzapo_parlcd.c update_peripherals.c text_fb.c map_from_template.c map_to_fb.c draw_shapes.c</div>
@@ -120,24 +131,40 @@ Zdrojové soubory</h3>
 <div class="line">SOURCES += menu_utilities.c</div>
 <div class="line">SOURCES += final_score.c</div>
 <div class="line">SOURCES += game.c</div>
-</div><!-- fragment --><h3><a class="anchor" id="autotoc_md6"></a>
-Cílový binární soubor</h3>
-<p>Nezapomenout název cílového binárního souboru. </p><div class="fragment"><div class="line">TARGET_EXE = apoman</div>
 </div><!-- fragment --><h3><a class="anchor" id="autotoc_md7"></a>
-Propojení se pomocí &lt;em&gt;ProxyJump&lt;/em&gt;</h3>
-<p>Pokud se budete chtít rovnou připojit na zařízení pomocí technologie <em>ProxyJump</em>, je vhodné rovnou do Makefilu vyplnit cílovou IP adresu zařízení </p><div class="fragment"><div class="line">TARGET_IP ?= 192.168.202.203</div>
-</div><!-- fragment --><p> a vyplnit své uživatelské jméno s přístupem k ssh klíči. </p><div class="fragment"><div class="line">SSH_OPTIONS= -i ~/.ssh/mzapo-root-key -o &#39;ProxyJump=username@postel.felk.cvut.cz&#39;</div>
+Cílový binární soubor</h3>
+<p>Název výsledného binárního osuboru je udáván tímot řádkem: </p><div class="fragment"><div class="line">TARGET_EXE = apoman</div>
+</div><!-- fragment --><h3><a class="anchor" id="autotoc_md8"></a>
+Propojení se zařízením při kompilaci</h3>
+<p>Způsobů, jak pracovat se zařízeními je mnoho. My doporučujeme využít tzv. Prozyjumpu, který jsme během vývoje používali. Pojďme si představit jednotlivé doporučené přítupy.</p>
+<p>Rád bych upozornil, že tato část je rychlým srhnutí poskytnuté dokumentace dostupné na stránkách předmětu (<a href="https://cw.fel.cvut.cz/wiki/courses/b35apo/documentation/mz_apo-howto/start">https://cw.fel.cvut.cz/wiki/courses/b35apo/documentation/mz_apo-howto/start</a>).</p>
+<h4><a class="anchor" id="autotoc_md9"></a>
+1. Propojení pomocí &lt;em&gt;ProxyJump&lt;/em&gt;</h4>
+<p>Prvním způsobem je propojit se přes tzv. <em>ProxyJump</em>. Je vhodné rovnou do Makefilu vyplnit cílovou IP adresu zařízení </p><div class="fragment"><div class="line">TARGET_IP ?= 192.168.202.xxx</div>
+</div><!-- fragment --><p> a vyplnit své uživatelské jméno s přístupem k ssh klíči (k školnímu serveru). </p><div class="fragment"><div class="line">SSH_OPTIONS= -i ~/.ssh/mzapo-root-key -o &#39;ProxyJump=username@postel.felk.cvut.cz&#39;</div>
 </div><!-- fragment --><p> Předejte tak zbytečnému zablokování ze strany školního serveru při opakovaném a častém připojování a přístup pro vás bude snazší.</p>
-<h2><a class="anchor" id="autotoc_md8"></a>
+<h4><a class="anchor" id="autotoc_md10"></a>
+2. Využití SSH tunelu do lokální sítě laboratoře</h4>
+<p>Další možností připojení je využít trvalé SSH spojení na server <code>postel.felk.cvut.cz</code>. Tento způsob zaručí, že je menší riziko, aby naše připojení bylo vyhodnoceno ochranou serveru jako útok. Opětovaná připojovaání jsou tak tedy mnohem rychlejší.</p>
+<p>Tunel vytvoříme příkazem </p><div class="fragment"><div class="line">ssh -nNT ctu_login@postel.felk.cvut.cz -L 2222:192.168.202.xxx:22</div>
+</div><!-- fragment --><p>A v Makefilu je třeba povolit řádku s následujícími příkazy: </p><div class="fragment"><div class="line">TARGET_IP = 127.0.0.1</div>
+<div class="line">SSH_OPTIONS=-o &quot;UserKnownHostsFile=/dev/null&quot; -o &quot;StrictHostKeyChecking=no&quot; -o &quot;Port=2222&quot;</div>
+<div class="line">SSH_GDB_TUNNEL_REQUIRED=y</div>
+</div><!-- fragment --><h4><a class="anchor" id="autotoc_md11"></a>
+3. Připojení se přes PC v laboratoři</h4>
+<p>Třetím možným způsobem je se připojit na školní PC, který je ve stejné sítit jako používaný přípavek.</p>
+<p>Zde stačí pouze zavolat příkaz, který nám kód zkompiluje a rovnou spustí na zařízení s danou IP adresou: </p><div class="fragment"><div class="line">make TARGET_IP=192.168.202.xx run</div>
+</div><!-- fragment --><h2><a class="anchor" id="autotoc_md12"></a>
 Důležité příkazy</h2>
-<h3><a class="anchor" id="autotoc_md9"></a>
+<p>Další částí Makefilu jsou příkazy, které lze při práci s aplikací využít. Pojďme si představit ty nejvíce zajímavé.</p>
+<h3><a class="anchor" id="autotoc_md13"></a>
 Kompilace</h3>
 <div class="fragment"><div class="line">make</div>
-</div><!-- fragment --><h3><a class="anchor" id="autotoc_md10"></a>
-Vymazání zkompilovaných souborů</h3>
+</div><!-- fragment --><h3><a class="anchor" id="autotoc_md14"></a>
+Vymazání objektových a zkompilovaných souborů</h3>
 <div class="fragment"><div class="line">make clean</div>
-</div><!-- fragment --><h3><a class="anchor" id="autotoc_md11"></a>
-Kompilace a zároveň spuštění přes &lt;em&gt;ProxyJump&lt;/em&gt;</h3>
+</div><!-- fragment --><h3><a class="anchor" id="autotoc_md15"></a>
+Kompilace a zároveň spuštění dle konfigurace Makefilu</h3>
 <div class="fragment"><div class="line">make run</div>
 </div><!-- fragment --> </div></div><!-- contents -->
 </div><!-- PageDoc -->

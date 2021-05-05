@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_text__fb_8c" xml:lang="en-US">
-<title>C:/Users/Petr/Documents/apo_semestralka/text_fb.c File Reference</title>
-<indexterm><primary>C:/Users/Petr/Documents/apo_semestralka/text_fb.c</primary></indexterm>
+<title>text_fb.c File Reference</title>
+<indexterm><primary>text_fb.c</primary></indexterm>
 <para>
 
 <para>Module for drawing text to frame buffer. </para>

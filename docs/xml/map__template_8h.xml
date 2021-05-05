@@ -2,17 +2,17 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
   <compounddef id="map__template_8h" kind="file" language="C++">
     <compoundname>map_template.h</compoundname>
-    <includedby refid="apoman_8c" local="yes">C:/Users/Petr/Documents/apo_semestralka/apoman.c</includedby>
-    <includedby refid="data__structures_8h" local="yes">C:/Users/Petr/Documents/apo_semestralka/data_structures.h</includedby>
-    <includedby refid="map__circles_8c" local="yes">C:/Users/Petr/Documents/apo_semestralka/map_circles.c</includedby>
-    <includedby refid="map__conch_8c" local="yes">C:/Users/Petr/Documents/apo_semestralka/map_conch.c</includedby>
-    <includedby refid="map__from__template_8h" local="yes">C:/Users/Petr/Documents/apo_semestralka/map_from_template.h</includedby>
-    <includedby refid="map__star_8c" local="yes">C:/Users/Petr/Documents/apo_semestralka/map_star.c</includedby>
-    <includedby refid="menu__utilities_8c" local="yes">C:/Users/Petr/Documents/apo_semestralka/menu_utilities.c</includedby>
-    <includedby refid="pacman_8h" local="yes">C:/Users/Petr/Documents/apo_semestralka/pacman.h</includedby>
+    <includedby refid="apoman_8c" local="yes">apoman.c</includedby>
+    <includedby refid="data__structures_8h" local="yes">data_structures.h</includedby>
+    <includedby refid="map__circles_8c" local="yes">map_circles.c</includedby>
+    <includedby refid="map__conch_8c" local="yes">map_conch.c</includedby>
+    <includedby refid="map__from__template_8h" local="yes">map_from_template.h</includedby>
+    <includedby refid="map__star_8c" local="yes">map_star.c</includedby>
+    <includedby refid="menu__utilities_8c" local="yes">menu_utilities.c</includedby>
+    <includedby refid="pacman_8h" local="yes">pacman.h</includedby>
     <invincdepgraph>
       <node id="1">
-        <label>C:/Users/Petr/Documents/apo_semestralka/map_template.h</label>
+        <label>map_template.h</label>
         <link refid="map__template_8h"/>
         <childnode refid="2" relation="include">
         </childnode>
@@ -32,19 +32,19 @@
         </childnode>
       </node>
       <node id="27">
-        <label>C:/Users/Petr/Documents/apo_semestralka/map_star.c</label>
+        <label>map_star.c</label>
         <link refid="map__star_8c"/>
       </node>
       <node id="21">
-        <label>C:/Users/Petr/Documents/apo_semestralka/terminal_read.c</label>
+        <label>terminal_read.c</label>
         <link refid="terminal__read_8c"/>
       </node>
       <node id="7">
-        <label>C:/Users/Petr/Documents/apo_semestralka/game.c</label>
+        <label>game.c</label>
         <link refid="game_8c"/>
       </node>
       <node id="14">
-        <label>C:/Users/Petr/Documents/apo_semestralka/game.h</label>
+        <label>game.h</label>
         <link refid="game_8h"/>
         <childnode refid="2" relation="include">
         </childnode>
@@ -54,11 +54,11 @@
         </childnode>
       </node>
       <node id="11">
-        <label>C:/Users/Petr/Documents/apo_semestralka/pacman.c</label>
+        <label>pacman.c</label>
         <link refid="pacman_8c"/>
       </node>
       <node id="20">
-        <label>C:/Users/Petr/Documents/apo_semestralka/pacman.h</label>
+        <label>pacman.h</label>
         <link refid="pacman_8h"/>
         <childnode refid="2" relation="include">
         </childnode>
@@ -68,11 +68,11 @@
         </childnode>
       </node>
       <node id="5">
-        <label>C:/Users/Petr/Documents/apo_semestralka/draw_shapes.c</label>
+        <label>draw_shapes.c</label>
         <link refid="draw__shapes_8c"/>
       </node>
       <node id="4">
-        <label>C:/Users/Petr/Documents/apo_semestralka/draw_shapes.h</label>
+        <label>draw_shapes.h</label>
         <link refid="draw__shapes_8h"/>
         <childnode refid="2" relation="include">
         </childnode>
@@ -94,11 +94,11 @@
         </childnode>
       </node>
       <node id="24">
-        <label>C:/Users/Petr/Documents/apo_semestralka/update_peripherals.c</label>
+        <label>update_peripherals.c</label>
         <link refid="update__peripherals_8c"/>
       </node>
       <node id="23">
-        <label>C:/Users/Petr/Documents/apo_semestralka/update_peripherals.h</label>
+        <label>update_peripherals.h</label>
         <link refid="update__peripherals_8h"/>
         <childnode refid="2" relation="include">
         </childnode>
@@ -112,19 +112,19 @@
         </childnode>
       </node>
       <node id="25">
-        <label>C:/Users/Petr/Documents/apo_semestralka/map_circles.c</label>
+        <label>map_circles.c</label>
         <link refid="map__circles_8c"/>
       </node>
       <node id="26">
-        <label>C:/Users/Petr/Documents/apo_semestralka/map_conch.c</label>
+        <label>map_conch.c</label>
         <link refid="map__conch_8c"/>
       </node>
       <node id="8">
-        <label>C:/Users/Petr/Documents/apo_semestralka/ghost.c</label>
+        <label>ghost.c</label>
         <link refid="ghost_8c"/>
       </node>
       <node id="15">
-        <label>C:/Users/Petr/Documents/apo_semestralka/ghost.h</label>
+        <label>ghost.h</label>
         <link refid="ghost_8h"/>
         <childnode refid="14" relation="include">
         </childnode>
@@ -132,11 +132,11 @@
         </childnode>
       </node>
       <node id="12">
-        <label>C:/Users/Petr/Documents/apo_semestralka/text_fb.c</label>
+        <label>text_fb.c</label>
         <link refid="text__fb_8c"/>
       </node>
       <node id="22">
-        <label>C:/Users/Petr/Documents/apo_semestralka/text_fb.h</label>
+        <label>text_fb.h</label>
         <link refid="text__fb_8h"/>
         <childnode refid="2" relation="include">
         </childnode>
@@ -152,11 +152,11 @@
         </childnode>
       </node>
       <node id="6">
-        <label>C:/Users/Petr/Documents/apo_semestralka/final_score.c</label>
+        <label>final_score.c</label>
         <link refid="final__score_8c"/>
       </node>
       <node id="13">
-        <label>C:/Users/Petr/Documents/apo_semestralka/final_score.h</label>
+        <label>final_score.h</label>
         <link refid="final__score_8h"/>
         <childnode refid="2" relation="include">
         </childnode>
@@ -166,11 +166,11 @@
         </childnode>
       </node>
       <node id="9">
-        <label>C:/Users/Petr/Documents/apo_semestralka/map_to_fb.c</label>
+        <label>map_to_fb.c</label>
         <link refid="map__to__fb_8c"/>
       </node>
       <node id="18">
-        <label>C:/Users/Petr/Documents/apo_semestralka/map_to_fb.h</label>
+        <label>map_to_fb.h</label>
         <link refid="map__to__fb_8h"/>
         <childnode refid="2" relation="include">
         </childnode>
@@ -180,11 +180,11 @@
         </childnode>
       </node>
       <node id="10">
-        <label>C:/Users/Petr/Documents/apo_semestralka/menu_utilities.c</label>
+        <label>menu_utilities.c</label>
         <link refid="menu__utilities_8c"/>
       </node>
       <node id="19">
-        <label>C:/Users/Petr/Documents/apo_semestralka/menu_utilities.h</label>
+        <label>menu_utilities.h</label>
         <link refid="menu__utilities_8h"/>
         <childnode refid="2" relation="include">
         </childnode>
@@ -192,15 +192,15 @@
         </childnode>
       </node>
       <node id="2">
-        <label>C:/Users/Petr/Documents/apo_semestralka/apoman.c</label>
+        <label>apoman.c</label>
         <link refid="apoman_8c"/>
       </node>
       <node id="17">
-        <label>C:/Users/Petr/Documents/apo_semestralka/map_from_template.c</label>
+        <label>map_from_template.c</label>
         <link refid="map__from__template_8c"/>
       </node>
       <node id="16">
-        <label>C:/Users/Petr/Documents/apo_semestralka/map_from_template.h</label>
+        <label>map_from_template.h</label>
         <link refid="map__from__template_8h"/>
         <childnode refid="2" relation="include">
         </childnode>
@@ -216,7 +216,7 @@
         </childnode>
       </node>
       <node id="3">
-        <label>C:/Users/Petr/Documents/apo_semestralka/data_structures.h</label>
+        <label>data_structures.h</label>
         <link refid="data__structures_8h"/>
         <childnode refid="2" relation="include">
         </childnode>

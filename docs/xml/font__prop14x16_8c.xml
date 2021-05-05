@@ -8,7 +8,7 @@
         <label>stdint.h</label>
       </node>
       <node id="1">
-        <label>C:/Users/Petr/Documents/apo_semestralka/font_prop14x16.c</label>
+        <label>font_prop14x16.c</label>
         <link refid="font__prop14x16_8c"/>
         <childnode refid="2" relation="include">
         </childnode>

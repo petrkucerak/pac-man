@@ -19,7 +19,7 @@
         <label>stdint.h</label>
       </node>
       <node id="1">
-        <label>C:/Users/Petr/Documents/apo_semestralka/update_peripherals.c</label>
+        <label>update_peripherals.c</label>
         <link refid="update__peripherals_8c"/>
         <childnode refid="2" relation="include">
         </childnode>

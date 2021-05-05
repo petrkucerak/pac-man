@@ -5,9 +5,9 @@
     <includes local="no">stdbool.h</includes>
     <includes refid="data__structures_8h" local="yes">data_structures.h</includes>
     <includes refid="font__types_8h" local="yes">font_types.h</includes>
-    <includedby refid="apoman_8c" local="yes">C:/Users/Petr/Documents/apo_semestralka/apoman.c</includedby>
-    <includedby refid="final__score_8c" local="yes">C:/Users/Petr/Documents/apo_semestralka/final_score.c</includedby>
-    <includedby refid="menu__utilities_8c" local="yes">C:/Users/Petr/Documents/apo_semestralka/menu_utilities.c</includedby>
+    <includedby refid="apoman_8c" local="yes">apoman.c</includedby>
+    <includedby refid="final__score_8c" local="yes">final_score.c</includedby>
+    <includedby refid="menu__utilities_8c" local="yes">menu_utilities.c</includedby>
     <incdepgraph>
       <node id="2">
         <label>stdbool.h</label>
@@ -29,7 +29,7 @@
         <label>pthread.h</label>
       </node>
       <node id="1">
-        <label>C:/Users/Petr/Documents/apo_semestralka/final_score.h</label>
+        <label>final_score.h</label>
         <link refid="final__score_8h"/>
         <childnode refid="2" relation="include">
         </childnode>
@@ -53,11 +53,11 @@
     </incdepgraph>
     <invincdepgraph>
       <node id="3">
-        <label>C:/Users/Petr/Documents/apo_semestralka/final_score.c</label>
+        <label>final_score.c</label>
         <link refid="final__score_8c"/>
       </node>
       <node id="1">
-        <label>C:/Users/Petr/Documents/apo_semestralka/final_score.h</label>
+        <label>final_score.h</label>
         <link refid="final__score_8h"/>
         <childnode refid="2" relation="include">
         </childnode>
@@ -67,11 +67,11 @@
         </childnode>
       </node>
       <node id="4">
-        <label>C:/Users/Petr/Documents/apo_semestralka/menu_utilities.c</label>
+        <label>menu_utilities.c</label>
         <link refid="menu__utilities_8c"/>
       </node>
       <node id="2">
-        <label>C:/Users/Petr/Documents/apo_semestralka/apoman.c</label>
+        <label>apoman.c</label>
         <link refid="apoman_8c"/>
       </node>
     </invincdepgraph>

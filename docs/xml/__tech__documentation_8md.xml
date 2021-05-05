@@ -7,7 +7,7 @@
     <detaileddescription>
     </detaileddescription>
     <programlisting>
-<codeline><highlight class="normal">#<sp/>Technická<sp/>dokumnetace</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>Technická<sp/>dokumentace</highlight></codeline>
 <codeline></codeline>
 <codeline><highlight class="normal">##<sp/>Architektura<sp/>aplikace</highlight></codeline>
 <codeline></codeline>
@@ -39,6 +39,25 @@
 <codeline></codeline>
 <codeline><highlight class="normal">Podrobné<sp/>informace<sp/>o<sp/>způsobech<sp/>připojení<sp/>a<sp/>detailního<sp/>využití<sp/>připraveného<sp/>Makefilu<sp/>je<sp/>možné<sp/>dohledat<sp/>v<sp/>dokumnetaci<sp/>předmětu:<sp/>https://cw.fel.cvut.cz/wiki/courses/b35apo/documentation/mz_apo-howto/start.</highlight></codeline>
 <codeline></codeline>
+<codeline><highlight class="normal">####<sp/>Flagy<sp/>a<sp/>podrobnosti<sp/>kompilace</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Program<sp/>je<sp/>kompilován<sp/>gcc<sp/>kompilátorem<sp/>s<sp/>následujícími<sp/>flagy.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```Makefile</highlight></codeline>
+<codeline><highlight class="normal">CC<sp/>=<sp/>arm-linux-gnueabihf-gcc</highlight></codeline>
+<codeline><highlight class="normal">CXX<sp/>=<sp/>arm-linux-gnueabihf-g++</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">CPPFLAGS<sp/>=<sp/>-I<sp/>.</highlight></codeline>
+<codeline><highlight class="normal">CFLAGS<sp/>=-g<sp/>-std=gnu99<sp/>-O1<sp/>-Wall</highlight></codeline>
+<codeline><highlight class="normal">CXXFLAGS<sp/>=<sp/>-g<sp/>-std=gnu++11<sp/>-O1<sp/>-Wall</highlight></codeline>
+<codeline><highlight class="normal">LDFLAGS<sp/>=<sp/>-lrt<sp/>-lpthread<sp/>-pthread</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Ke<sp/>kompilaci<sp/>na<sp/>Ubuntu/Debina<sp/>systému<sp/>je<sp/>třeba<sp/>mít<sp/>naistalovaný<sp/>křížový<sp/>kompilátor.</highlight></codeline>
+<codeline><highlight class="normal">```bash</highlight></codeline>
+<codeline><highlight class="normal">sudo<sp/>apt<sp/>install<sp/>crossbuild-essential-armhf</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
 <codeline><highlight class="normal">####<sp/>Zdrojové<sp/>soubory</highlight></codeline>
 <codeline></codeline>
 <codeline><highlight class="normal">Pokud<sp/>budete<sp/>upravovat<sp/>nejaky<sp/>ze<sp/>souboru<sp/>nebo<sp/>prodavat<sp/>vlastni,<sp/>je<sp/>třeba<sp/>mít<sp/>přidané<sp/>všechny<sp/>soubory<sp/>ke<sp/>kompilaci.</highlight></codeline>
@@ -55,24 +74,57 @@
 <codeline></codeline>
 <codeline><highlight class="normal">####<sp/>Cílový<sp/>binární<sp/>soubor</highlight></codeline>
 <codeline></codeline>
-<codeline><highlight class="normal">Nezapomenout<sp/>název<sp/>cílového<sp/>binárního<sp/>souboru.</highlight></codeline>
+<codeline><highlight class="normal">Název<sp/>výsledného<sp/>binárního<sp/>osuboru<sp/>je<sp/>udáván<sp/>tímot<sp/>řádkem:</highlight></codeline>
 <codeline><highlight class="normal">```Makefile</highlight></codeline>
 <codeline><highlight class="normal">TARGET_EXE<sp/>=<sp/>apoman</highlight></codeline>
 <codeline><highlight class="normal">```</highlight></codeline>
 <codeline></codeline>
-<codeline><highlight class="normal">####<sp/>Propojení<sp/>se<sp/>pomocí<sp/>*ProxyJump*</highlight></codeline>
+<codeline><highlight class="normal">####<sp/>Propojení<sp/>se<sp/>zařízením<sp/>při<sp/>kompilaci</highlight></codeline>
 <codeline></codeline>
-<codeline><highlight class="normal">Pokud<sp/>se<sp/>budete<sp/>chtít<sp/>rovnou<sp/>připojit<sp/>na<sp/>zařízení<sp/>pomocí<sp/>technologie<sp/>*ProxyJump*,<sp/>je<sp/>vhodné<sp/>rovnou<sp/>do<sp/>Makefilu<sp/>vyplnit<sp/>cílovou<sp/>IP<sp/>adresu<sp/>zařízení</highlight></codeline>
+<codeline><highlight class="normal">Způsobů,<sp/>jak<sp/>pracovat<sp/>se<sp/>zařízeními<sp/>je<sp/>mnoho.<sp/>My<sp/>doporučujeme<sp/>využít<sp/>tzv.<sp/>Prozyjumpu,<sp/>který<sp/>jsme<sp/>během<sp/>vývoje<sp/>používali.<sp/>Pojďme<sp/>si<sp/>představit<sp/>jednotlivé<sp/>doporučené<sp/>přítupy.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Rád<sp/>bych<sp/>upozornil,<sp/>že<sp/>tato<sp/>část<sp/>je<sp/>rychlým<sp/>srhnutí<sp/>poskytnuté<sp/>dokumentace<sp/>dostupné<sp/>na<sp/>stránkách<sp/>předmětu<sp/>(https://cw.fel.cvut.cz/wiki/courses/b35apo/documentation/mz_apo-howto/start).</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#####<sp/>1.<sp/>Propojení<sp/>pomocí<sp/>*ProxyJump*</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Prvním<sp/>způsobem<sp/>je<sp/>propojit<sp/>se<sp/>přes<sp/>tzv.<sp/>*ProxyJump*.<sp/>Je<sp/>vhodné<sp/>rovnou<sp/>do<sp/>Makefilu<sp/>vyplnit<sp/>cílovou<sp/>IP<sp/>adresu<sp/>zařízení</highlight></codeline>
 <codeline><highlight class="normal">```Makefile</highlight></codeline>
-<codeline><highlight class="normal">TARGET_IP<sp/>?=<sp/>192.168.202.203</highlight></codeline>
+<codeline><highlight class="normal">TARGET_IP<sp/>?=<sp/>192.168.202.xxx</highlight></codeline>
 <codeline><highlight class="normal">```</highlight></codeline>
-<codeline><highlight class="normal"><sp/>a<sp/>vyplnit<sp/>své<sp/>uživatelské<sp/>jméno<sp/>s<sp/>přístupem<sp/>k<sp/>ssh<sp/>klíči.</highlight></codeline>
+<codeline><highlight class="normal"><sp/>a<sp/>vyplnit<sp/>své<sp/>uživatelské<sp/>jméno<sp/>s<sp/>přístupem<sp/>k<sp/>ssh<sp/>klíči<sp/>(k<sp/>školnímu<sp/>serveru).</highlight></codeline>
 <codeline><highlight class="normal">```Makefile</highlight></codeline>
 <codeline><highlight class="normal">SSH_OPTIONS=<sp/>-i<sp/>~/.ssh/mzapo-root-key<sp/>-o<sp/>&apos;ProxyJump=username@postel.felk.cvut.cz&apos;</highlight></codeline>
 <codeline><highlight class="normal">```</highlight></codeline>
 <codeline><highlight class="normal">Předejte<sp/>tak<sp/>zbytečnému<sp/>zablokování<sp/>ze<sp/>strany<sp/>školního<sp/>serveru<sp/>při<sp/>opakovaném<sp/>a<sp/>častém<sp/>připojování<sp/>a<sp/>přístup<sp/>pro<sp/>vás<sp/>bude<sp/>snazší.</highlight></codeline>
 <codeline></codeline>
+<codeline><highlight class="normal">#####<sp/>2.<sp/>Využití<sp/>SSH<sp/>tunelu<sp/>do<sp/>lokální<sp/>sítě<sp/>laboratoře</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Další<sp/>možností<sp/>připojení<sp/>je<sp/>využít<sp/>trvalé<sp/>SSH<sp/>spojení<sp/>na<sp/>server<sp/>`postel.felk.cvut.cz`.<sp/>Tento<sp/>způsob<sp/>zaručí,<sp/>že<sp/>je<sp/>menší<sp/>riziko,<sp/>aby<sp/>naše<sp/>připojení<sp/>bylo<sp/>vyhodnoceno<sp/>ochranou<sp/>serveru<sp/>jako<sp/>útok.<sp/>Opětovaná<sp/>připojovaání<sp/>jsou<sp/>tak<sp/>tedy<sp/>mnohem<sp/>rychlejší.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Tunel<sp/>vytvoříme<sp/>příkazem</highlight></codeline>
+<codeline><highlight class="normal">```bash</highlight></codeline>
+<codeline><highlight class="normal">ssh<sp/>-nNT<sp/>ctu_login@postel.felk.cvut.cz<sp/>-L<sp/>2222:192.168.202.xxx:22</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">A<sp/>v<sp/>Makefilu<sp/>je<sp/>třeba<sp/>povolit<sp/>řádku<sp/>s<sp/>následujícími<sp/>příkazy:</highlight></codeline>
+<codeline><highlight class="normal">```Makefile</highlight></codeline>
+<codeline><highlight class="normal">TARGET_IP<sp/>=<sp/>127.0.0.1</highlight></codeline>
+<codeline><highlight class="normal">SSH_OPTIONS=-o<sp/>&quot;UserKnownHostsFile=/dev/null&quot;<sp/>-o<sp/>&quot;StrictHostKeyChecking=no&quot;<sp/>-o<sp/>&quot;Port=2222&quot;</highlight></codeline>
+<codeline><highlight class="normal">SSH_GDB_TUNNEL_REQUIRED=y</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#####<sp/>3.<sp/>Připojení<sp/>se<sp/>přes<sp/>PC<sp/>v<sp/>laboratoři</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Třetím<sp/>možným<sp/>způsobem<sp/>je<sp/>se<sp/>připojit<sp/>na<sp/>školní<sp/>PC,<sp/>který<sp/>je<sp/>ve<sp/>stejné<sp/>sítit<sp/>jako<sp/>používaný<sp/>přípavek.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Zde<sp/>stačí<sp/>pouze<sp/>zavolat<sp/>příkaz,<sp/>který<sp/>nám<sp/>kód<sp/>zkompiluje<sp/>a<sp/>rovnou<sp/>spustí<sp/>na<sp/>zařízení<sp/>s<sp/>danou<sp/>IP<sp/>adresou:</highlight></codeline>
+<codeline><highlight class="normal">```bash</highlight></codeline>
+<codeline><highlight class="normal">make<sp/>TARGET_IP=192.168.202.xx<sp/>run</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
 <codeline><highlight class="normal">###<sp/>Důležité<sp/>příkazy</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Další<sp/>částí<sp/>Makefilu<sp/>jsou<sp/>příkazy,<sp/>které<sp/>lze<sp/>při<sp/>práci<sp/>s<sp/>aplikací<sp/>využít.<sp/>Pojďme<sp/>si<sp/>představit<sp/>ty<sp/>nejvíce<sp/>zajímavé.</highlight></codeline>
 <codeline></codeline>
 <codeline><highlight class="normal">####<sp/>Kompilace</highlight></codeline>
 <codeline></codeline>
@@ -80,13 +132,13 @@
 <codeline><highlight class="normal">make</highlight></codeline>
 <codeline><highlight class="normal">```</highlight></codeline>
 <codeline></codeline>
-<codeline><highlight class="normal">####<sp/>Vymazání<sp/>zkompilovaných<sp/>souborů</highlight></codeline>
+<codeline><highlight class="normal">####<sp/>Vymazání<sp/>objektových<sp/>a<sp/>zkompilovaných<sp/>souborů</highlight></codeline>
 <codeline></codeline>
 <codeline><highlight class="normal">```bash</highlight></codeline>
 <codeline><highlight class="normal">make<sp/>clean</highlight></codeline>
 <codeline><highlight class="normal">```</highlight></codeline>
 <codeline></codeline>
-<codeline><highlight class="normal">####<sp/>Kompilace<sp/>a<sp/>zároveň<sp/>spuštění<sp/>přes<sp/>*ProxyJump*</highlight></codeline>
+<codeline><highlight class="normal">####<sp/>Kompilace<sp/>a<sp/>zároveň<sp/>spuštění<sp/>dle<sp/>konfigurace<sp/>Makefilu</highlight></codeline>
 <codeline></codeline>
 <codeline><highlight class="normal">```bash</highlight></codeline>
 <codeline><highlight class="normal">make<sp/>run</highlight></codeline>

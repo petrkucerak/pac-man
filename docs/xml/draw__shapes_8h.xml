@@ -3,15 +3,15 @@
   <compounddef id="draw__shapes_8h" kind="file" language="C++">
     <compoundname>draw_shapes.h</compoundname>
     <includes refid="data__structures_8h" local="yes">data_structures.h</includes>
-    <includedby refid="apoman_8c" local="yes">C:/Users/Petr/Documents/apo_semestralka/apoman.c</includedby>
-    <includedby refid="draw__shapes_8c" local="yes">C:/Users/Petr/Documents/apo_semestralka/draw_shapes.c</includedby>
-    <includedby refid="final__score_8c" local="yes">C:/Users/Petr/Documents/apo_semestralka/final_score.c</includedby>
-    <includedby refid="game_8c" local="yes">C:/Users/Petr/Documents/apo_semestralka/game.c</includedby>
-    <includedby refid="ghost_8c" local="yes">C:/Users/Petr/Documents/apo_semestralka/ghost.c</includedby>
-    <includedby refid="map__to__fb_8c" local="yes">C:/Users/Petr/Documents/apo_semestralka/map_to_fb.c</includedby>
-    <includedby refid="menu__utilities_8c" local="yes">C:/Users/Petr/Documents/apo_semestralka/menu_utilities.c</includedby>
-    <includedby refid="pacman_8c" local="yes">C:/Users/Petr/Documents/apo_semestralka/pacman.c</includedby>
-    <includedby refid="text__fb_8c" local="yes">C:/Users/Petr/Documents/apo_semestralka/text_fb.c</includedby>
+    <includedby refid="apoman_8c" local="yes">apoman.c</includedby>
+    <includedby refid="draw__shapes_8c" local="yes">draw_shapes.c</includedby>
+    <includedby refid="final__score_8c" local="yes">final_score.c</includedby>
+    <includedby refid="game_8c" local="yes">game.c</includedby>
+    <includedby refid="ghost_8c" local="yes">ghost.c</includedby>
+    <includedby refid="map__to__fb_8c" local="yes">map_to_fb.c</includedby>
+    <includedby refid="menu__utilities_8c" local="yes">menu_utilities.c</includedby>
+    <includedby refid="pacman_8c" local="yes">pacman.c</includedby>
+    <includedby refid="text__fb_8c" local="yes">text_fb.c</includedby>
     <incdepgraph>
       <node id="4">
         <label>stdbool.h</label>
@@ -24,7 +24,7 @@
         <label>stdint.h</label>
       </node>
       <node id="1">
-        <label>C:/Users/Petr/Documents/apo_semestralka/draw_shapes.h</label>
+        <label>draw_shapes.h</label>
         <link refid="draw__shapes_8h"/>
         <childnode refid="2" relation="include">
         </childnode>
@@ -47,19 +47,19 @@
     </incdepgraph>
     <invincdepgraph>
       <node id="5">
-        <label>C:/Users/Petr/Documents/apo_semestralka/game.c</label>
+        <label>game.c</label>
         <link refid="game_8c"/>
       </node>
       <node id="9">
-        <label>C:/Users/Petr/Documents/apo_semestralka/pacman.c</label>
+        <label>pacman.c</label>
         <link refid="pacman_8c"/>
       </node>
       <node id="3">
-        <label>C:/Users/Petr/Documents/apo_semestralka/draw_shapes.c</label>
+        <label>draw_shapes.c</label>
         <link refid="draw__shapes_8c"/>
       </node>
       <node id="1">
-        <label>C:/Users/Petr/Documents/apo_semestralka/draw_shapes.h</label>
+        <label>draw_shapes.h</label>
         <link refid="draw__shapes_8h"/>
         <childnode refid="2" relation="include">
         </childnode>
@@ -81,27 +81,27 @@
         </childnode>
       </node>
       <node id="6">
-        <label>C:/Users/Petr/Documents/apo_semestralka/ghost.c</label>
+        <label>ghost.c</label>
         <link refid="ghost_8c"/>
       </node>
       <node id="10">
-        <label>C:/Users/Petr/Documents/apo_semestralka/text_fb.c</label>
+        <label>text_fb.c</label>
         <link refid="text__fb_8c"/>
       </node>
       <node id="4">
-        <label>C:/Users/Petr/Documents/apo_semestralka/final_score.c</label>
+        <label>final_score.c</label>
         <link refid="final__score_8c"/>
       </node>
       <node id="7">
-        <label>C:/Users/Petr/Documents/apo_semestralka/map_to_fb.c</label>
+        <label>map_to_fb.c</label>
         <link refid="map__to__fb_8c"/>
       </node>
       <node id="8">
-        <label>C:/Users/Petr/Documents/apo_semestralka/menu_utilities.c</label>
+        <label>menu_utilities.c</label>
         <link refid="menu__utilities_8c"/>
       </node>
       <node id="2">
-        <label>C:/Users/Petr/Documents/apo_semestralka/apoman.c</label>
+        <label>apoman.c</label>
         <link refid="apoman_8c"/>
       </node>
     </invincdepgraph>

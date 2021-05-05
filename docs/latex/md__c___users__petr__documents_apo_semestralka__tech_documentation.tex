@@ -19,7 +19,28 @@ Obecně si ho můžeme rozdělit do třech částí\+:
 Pro kompliaci programu je připravený Makefile i s předpřipraveným připojením přes {\itshape Proxy\+Jump} do školní sítě a s možností se připojit rovnou na zařízení.
 
 Makefile vychází z šablony {\texttt{ mzapo\+\_\+template}}.\doxysubsection{Nastavení Makefilu}\label{md__c___users__petr__documents_apo_semestralka__tech_documentation_autotoc_md4}
-Podrobné informace o způsobech připojení a detailního využití připraveného Makefilu je možné dohledat v dokumnetaci předmětu\+: {\texttt{ https\+://cw.\+fel.\+cvut.\+cz/wiki/courses/b35apo/documentation/mz\+\_\+apo-\/howto/start}}.\doxysubsubsection{Zdrojové soubory}\label{md__c___users__petr__documents_apo_semestralka__tech_documentation_autotoc_md5}
+Podrobné informace o způsobech připojení a detailního využití připraveného Makefilu je možné dohledat v dokumnetaci předmětu\+: {\texttt{ https\+://cw.\+fel.\+cvut.\+cz/wiki/courses/b35apo/documentation/mz\+\_\+apo-\/howto/start}}.\doxysubsubsection{Flagy a podrobnosti kompilace}\label{md__c___users__petr__documents_apo_semestralka__tech_documentation_autotoc_md5}
+Program je kompilován gcc kompilátorem s následujícími flagy.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{CC = arm-\/linux-\/gnueabihf-\/gcc}
+\DoxyCodeLine{CXX = arm-\/linux-\/gnueabihf-\/g++}
+\DoxyCodeLine{}
+\DoxyCodeLine{CPPFLAGS = -\/I .}
+\DoxyCodeLine{CFLAGS =-\/g -\/std=gnu99 -\/O1 -\/Wall}
+\DoxyCodeLine{CXXFLAGS = -\/g -\/std=gnu++11 -\/O1 -\/Wall}
+\DoxyCodeLine{LDFLAGS = -\/lrt -\/lpthread -\/pthread}
+
+\end{DoxyCode}
+
+
+Ke kompilaci na Ubuntu/\+Debina systému je třeba mít naistalovaný křížový kompilátor. 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{sudo apt install crossbuild-\/essential-\/armhf}
+
+\end{DoxyCode}
+\doxysubsubsection{Zdrojové soubory}\label{md__c___users__petr__documents_apo_semestralka__tech_documentation_autotoc_md6}
 Pokud budete upravovat nejaky ze souboru nebo prodavat vlastni, je třeba mít přidané všechny soubory ke kompilaci.
 
 
@@ -33,37 +54,65 @@ Pokud budete upravovat nejaky ze souboru nebo prodavat vlastni, je třeba mít p
 \DoxyCodeLine{SOURCES += game.c}
 
 \end{DoxyCode}
-\doxysubsubsection{Cílový binární soubor}\label{md__c___users__petr__documents_apo_semestralka__tech_documentation_autotoc_md6}
-Nezapomenout název cílového binárního souboru. 
+\doxysubsubsection{Cílový binární soubor}\label{md__c___users__petr__documents_apo_semestralka__tech_documentation_autotoc_md7}
+Název výsledného binárního osuboru je udáván tímot řádkem\+: 
 \begin{DoxyCode}{0}
 \DoxyCodeLine{TARGET\_EXE = apoman}
 
 \end{DoxyCode}
-\doxysubsubsection{Propojení se pomocí $<$em$>$\+Proxy\+Jump$<$/em$>$}\label{md__c___users__petr__documents_apo_semestralka__tech_documentation_autotoc_md7}
-Pokud se budete chtít rovnou připojit na zařízení pomocí technologie {\itshape Proxy\+Jump}, je vhodné rovnou do Makefilu vyplnit cílovou IP adresu zařízení 
+\doxysubsubsection{Propojení se zařízením při kompilaci}\label{md__c___users__petr__documents_apo_semestralka__tech_documentation_autotoc_md8}
+Způsobů, jak pracovat se zařízeními je mnoho. My doporučujeme využít tzv. Prozyjumpu, který jsme během vývoje používali. Pojďme si představit jednotlivé doporučené přítupy.
+
+Rád bych upozornil, že tato část je rychlým srhnutí poskytnuté dokumentace dostupné na stránkách předmětu ({\texttt{ https\+://cw.\+fel.\+cvut.\+cz/wiki/courses/b35apo/documentation/mz\+\_\+apo-\/howto/start}}).\doxyparagraph{1. Propojení pomocí $<$em$>$\+Proxy\+Jump$<$/em$>$}\label{md__c___users__petr__documents_apo_semestralka__tech_documentation_autotoc_md9}
+Prvním způsobem je propojit se přes tzv. {\itshape Proxy\+Jump}. Je vhodné rovnou do Makefilu vyplnit cílovou IP adresu zařízení 
 \begin{DoxyCode}{0}
-\DoxyCodeLine{TARGET\_IP ?= 192.168.202.203}
+\DoxyCodeLine{TARGET\_IP ?= 192.168.202.xxx}
 
 \end{DoxyCode}
- a vyplnit své uživatelské jméno s přístupem k ssh klíči. 
+ a vyplnit své uživatelské jméno s přístupem k ssh klíči (k školnímu serveru). 
 \begin{DoxyCode}{0}
 \DoxyCodeLine{SSH\_OPTIONS= -\/i \string~/.ssh/mzapo-\/root-\/key -\/o 'ProxyJump=username@postel.felk.cvut.cz'}
 
 \end{DoxyCode}
- Předejte tak zbytečnému zablokování ze strany školního serveru při opakovaném a častém připojování a přístup pro vás bude snazší.\doxysubsection{Důležité příkazy}\label{md__c___users__petr__documents_apo_semestralka__tech_documentation_autotoc_md8}
-\doxysubsubsection{Kompilace}\label{md__c___users__petr__documents_apo_semestralka__tech_documentation_autotoc_md9}
+ Předejte tak zbytečnému zablokování ze strany školního serveru při opakovaném a častém připojování a přístup pro vás bude snazší.\doxyparagraph{2. Využití SSH tunelu do lokální sítě laboratoře}\label{md__c___users__petr__documents_apo_semestralka__tech_documentation_autotoc_md10}
+Další možností připojení je využít trvalé SSH spojení na server {\ttfamily postel.\+felk.\+cvut.\+cz}. Tento způsob zaručí, že je menší riziko, aby naše připojení bylo vyhodnoceno ochranou serveru jako útok. Opětovaná připojovaání jsou tak tedy mnohem rychlejší.
+
+Tunel vytvoříme příkazem 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{ssh -\/nNT ctu\_login@postel.felk.cvut.cz -\/L 2222:192.168.202.xxx:22}
+
+\end{DoxyCode}
+
+
+A v Makefilu je třeba povolit řádku s následujícími příkazy\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{TARGET\_IP = 127.0.0.1}
+\DoxyCodeLine{SSH\_OPTIONS=-\/o "{}UserKnownHostsFile=/dev/null"{} -\/o "{}StrictHostKeyChecking=no"{} -\/o "{}Port=2222"{}}
+\DoxyCodeLine{SSH\_GDB\_TUNNEL\_REQUIRED=y}
+
+\end{DoxyCode}
+\doxyparagraph{3. Připojení se přes PC v laboratoři}\label{md__c___users__petr__documents_apo_semestralka__tech_documentation_autotoc_md11}
+Třetím možným způsobem je se připojit na školní PC, který je ve stejné sítit jako používaný přípavek.
+
+Zde stačí pouze zavolat příkaz, který nám kód zkompiluje a rovnou spustí na zařízení s danou IP adresou\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{make TARGET\_IP=192.168.202.xx run}
+
+\end{DoxyCode}
+\doxysubsection{Důležité příkazy}\label{md__c___users__petr__documents_apo_semestralka__tech_documentation_autotoc_md12}
+Další částí Makefilu jsou příkazy, které lze při práci s aplikací využít. Pojďme si představit ty nejvíce zajímavé.\doxysubsubsection{Kompilace}\label{md__c___users__petr__documents_apo_semestralka__tech_documentation_autotoc_md13}
 
 \begin{DoxyCode}{0}
 \DoxyCodeLine{make}
 
 \end{DoxyCode}
-\doxysubsubsection{Vymazání zkompilovaných souborů}\label{md__c___users__petr__documents_apo_semestralka__tech_documentation_autotoc_md10}
+\doxysubsubsection{Vymazání objektových a zkompilovaných souborů}\label{md__c___users__petr__documents_apo_semestralka__tech_documentation_autotoc_md14}
 
 \begin{DoxyCode}{0}
 \DoxyCodeLine{make clean}
 
 \end{DoxyCode}
-\doxysubsubsection{Kompilace a zároveň spuštění přes $<$em$>$\+Proxy\+Jump$<$/em$>$}\label{md__c___users__petr__documents_apo_semestralka__tech_documentation_autotoc_md11}
+\doxysubsubsection{Kompilace a zároveň spuštění dle konfigurace Makefilu}\label{md__c___users__petr__documents_apo_semestralka__tech_documentation_autotoc_md15}
 
 \begin{DoxyCode}{0}
 \DoxyCodeLine{make run}

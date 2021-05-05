@@ -23,7 +23,7 @@
         <link refid="config_8h"/>
       </node>
       <node id="1">
-        <label>C:/Users/Petr/Documents/apo_semestralka/pacman.c</label>
+        <label>pacman.c</label>
         <link refid="pacman_8c"/>
         <childnode refid="2" relation="include">
         </childnode>
