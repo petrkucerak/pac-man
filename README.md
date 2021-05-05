@@ -1,21 +1,22 @@
 # Specifikace semestrální práce
 
-## Introdukce
+## Úvod
 Cílem této semstrální práce je vytvořit hru Pac-Man, kterou bude možné hrát na desce MzAPO a ovládat pomocí okolních periferií.
 
 Průběh naší práce je možné sledovat v repozitáři: https://gitlab.fel.cvut.cz/kucerp28/apo\_semestralka
 
 ## Použité periferie a jejich funkce
 
-- Výstupní řádka led bude při spuštěné hře indikovat počet životů pacmana
-- RGB led budou svítit zeleně jasem vypočítaným z počtu snězených kostiček, v případě režimu, kdy jsou duchové zranitelní bude blikat modře.
+- Výstupní řádka led bude při spuštěné hře indikovat počet životů pacmana.
+- RGB led budou svítit zeleně jasem vypočítaným z počtu snězených kostiček z pacmanova skóre, v případě režimu, kdy jsou duchové zranitelní bude blikat modře.
 - Vstupem hry bude terminál v raw režimu,  který bude ovládat směr pacmana, respektive navigaci v textovém menu.
-- Po sklonční hry přípravek vypíše finální skóre a statistiky na terminál
+- Po sklonční skončení hry přípravek vypíše finální skóre a statistiky na terminál.
+
 ## Stavy
 
 ### Inicializace hry
 
-Po spuštění hry se objeví textové menu, které bude možné ovládat pomocí kláves wsad ze sériového portu. Bude zde možnost vybrat mapu z nabídky, nastavit počet duchů a počet životů, se kterými pacman začíná.
+Po spuštění hry se objeví textové menu, které bude možné ovládat pomocí kláves `wsad` ze sériového portu. Bude zde možnost vybrat mapu z nabídky, nastavit počet duchů a počet životů, se kterými pacman začíná.
 
 ### Průběh hry
 

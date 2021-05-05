@@ -1,8 +1,8 @@
 # Uživatelský manuál
 
-## Natavení hry
+## Nastavení hry
 
-V první části hry si je možnost nakongihurovat hru na míru. Je možné zvolit z následujcích parametrů.
+V první části hry si je možnost nakonfigurovat hru na míru. Je možné zvolit z následujcích parametrů.
 
 - počet životů (možnost zvolit od 1 po 4)
 - typ mapy (v tuto chvíli je na výběr ze 3 možností)
@@ -32,27 +32,27 @@ Poslení mapka připomíná tvar ulity. Je v ní několik tajných chodem, kter�
 
 ### Ovládání hry
 
-Hra se ovládá pomocí klávesnic `wasd`. Hru je možné pauznout pomocí stiknutí klávesy `p`.
+Hra se ovládá pomocí klávesnic `wasd`. Hru je možné pauznout pomocí stiknutí klávesy `p` a ukončit stiskem klávesy `q`.
 
 ### Popis hrací plochy
 
 Na ploše je vidět několik typů předmětů:
 
-- packman (pokud se pohybuje, máotevřenou pusu)
+- packman (pokud se pohybuje, má otevřenou pusu)
 - duchové (mají různé barvy a pozor, občas jich může být více na sobě)
 - normální coiny (barva červená)
 - super coiny (barva fialová)
 
 ### Mód pojídání duchů
 
-Pokud Pac-Man sní super coin, aktivuje se režim pojídání duchů. V něm může Pac-Man pojídat a oni mu neuberou život.
+Pokud Pac-Man sní super coin, aktivuje se režim pojídání duchů. V něm může Pac-Man pojídat duchy a oni mu neuberou život.
 
 ### Signály během hry
 
 Stav hry je signalizován okolními periferiemi:
 
 - výstupní řádka led indikuje počet životů pacmana
-- RGB led svítí zeleně jasem vypočítaným z počtu snězených kostiček, v případě režimu, kdy jsou duchové zranitelní bliká modře
+- RGB led svítí zeleně jasem vypočítaným z packmanova skóre, v případě režimu, kdy jsou duchové zranitelní bliká modře
 
 
 ## Konec hry
@@ -63,4 +63,4 @@ Hra končí několika způsoby:
 - ubráním všech Pac-Manových životů
 - sežráním všech dostupných penízků
 
-Po sklonční hry přípravek vypíše finální skóre a statistiky na terminál a uživatel má možnot buďto program celkově ukončit nebo spusti hru znovu.
+Po sklončení hry přípravek vypíše finální skóre a zbývající životy na terminál a uživatel má možnot buďto program celkově ukončit nebo spusti hru znovu.
