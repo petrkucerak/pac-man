@@ -63,7 +63,7 @@ void run_init_game_menu(fb_data *frame_buff, unsigned char *lcd_mem_base,
       draw_menu(frame_buff, font, game);
       lcd_from_fb(frame_buff, lcd_mem_base);
     }
-    if (read != 't' || read != 'T')
+    if (read != 't' && read != 'T')
     {
       // run game
       int game_score = run_game(&game, &peripherals);
