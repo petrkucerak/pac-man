@@ -117,39 +117,40 @@ $(document).ready(function(){initNavTree('config_8h_source.html',''); initResiza
 <div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="config_8h.html#a5cba511e2fe7a2d66d90d3e3d810db3c">   37</a></span>&#160;<span class="preprocessor">#define SCARE_REGIME_DURATION 300 </span><span class="comment">//in game ticks</span></div>
 <div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="config_8h.html#a7645a891a19088e6fc698d38435dd4c9">   38</a></span>&#160;<span class="preprocessor">#define GAME_SPEED 2 </span><span class="comment">//ammount of ticks in one frame</span></div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
-<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="config_8h.html#adbb52fc3b2ec0fea2f350a39d8c3bd28">   40</a></span>&#160;<span class="preprocessor">#define GAME_END_TERMINAL &quot;Game has ended with pacman getting score %d and having %d lives\n&quot;</span></div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="comment">//led colors</span></div>
-<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="config_8h.html#aadb76337df4b0a055a30de34b0e3dbcc">   43</a></span>&#160;<span class="preprocessor">#define LED_SCARE_COLOR1 0</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="config_8h.html#a49cfb1c1270ff147a44d8dd7166b5473">   44</a></span>&#160;<span class="preprocessor">#define LED_SCARE_COLOR2 0xf</span></div>
-<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="config_8h.html#af6a54e35c04441964ee74f63733659e9">   45</a></span>&#160;<span class="preprocessor">#define LED_NORMAL_COLOR 0xf00</span></div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;<span class="comment">//map colors</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="config_8h.html#a47eb681b9f2c5a8f4f63891a58ab8e2d">   48</a></span>&#160;<span class="preprocessor">#define WALL_COLOR 0x9</span></div>
-<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="config_8h.html#a3aac54ffa4781528709d17a683e54fb5">   49</a></span>&#160;<span class="preprocessor">#define PATH_COLOR 0</span></div>
-<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="config_8h.html#ada59e179a724bbf5b53baa541072df9a">   50</a></span>&#160;<span class="preprocessor">#define COIN_COLOR 0xd000</span></div>
-<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="config_8h.html#ab0c3bd5b77bc43a57f44c50fb05e7201">   51</a></span>&#160;<span class="preprocessor">#define COIN_RADIUS 5</span></div>
-<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="config_8h.html#aa24d0a8eebc152d8cc985828a1e8dd3c">   52</a></span>&#160;<span class="preprocessor">#define SUPERCOIN_COLOR 0xf91f</span></div>
-<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="config_8h.html#a2c119bca6ce382c9467070223973441f">   53</a></span>&#160;<span class="preprocessor">#define SUPERCOIN_RADIUS 5</span></div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;<span class="comment">//ghost colors</span></div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="comment">// green pink  azure red</span></div>
-<div class="line"><a name="l00057"></a><span class="lineno"><a class="line" href="config_8h.html#a023956375f6b5b17c1dffbf9c672f31f">   57</a></span>&#160;<span class="preprocessor">#define GHOST_COLORS 0x07C0, 0xF01F, 0x07DC, 0xF800</span></div>
-<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="config_8h.html#ac447386d85ded6e889579c2c08ff1adf">   58</a></span>&#160;<span class="preprocessor">#define GHOST_COLORS_AMMOUNT 4</span></div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
-<div class="line"><a name="l00060"></a><span class="lineno"><a class="line" href="config_8h.html#aeb40fd013a03d54f103aa9feef0f35ac">   60</a></span>&#160;<span class="preprocessor">#define PACMAN_COLOR 0xffe0</span></div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160; </div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;<span class="comment">//chance for ghosts to switch modes (higher means more unlikely)</span></div>
-<div class="line"><a name="l00063"></a><span class="lineno"><a class="line" href="config_8h.html#ab1cc753b0e4445ab194c1d2b7f693054">   63</a></span>&#160;<span class="preprocessor">#define GHOST_SWITCH_TO_RANDOM 2000</span></div>
-<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="config_8h.html#aa7e67f5126c304dba2e7d85d1baea902">   64</a></span>&#160;<span class="preprocessor">#define GHOST_SWITCH_TO_TARGET 900</span></div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="config_8h.html#a487ac7bb4bfd7ace3d2933310e95fd17">   40</a></span>&#160;<span class="preprocessor">#define GAME_START_TERMINAL &quot;Move pacman with %c%c%c%c keys, to pause press %c, to quit game press %c.\n&quot;</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="config_8h.html#adbb52fc3b2ec0fea2f350a39d8c3bd28">   41</a></span>&#160;<span class="preprocessor">#define GAME_END_TERMINAL &quot;Game has ended with pacman getting score %d and having %d lives\n&quot;</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="comment">//led colors</span></div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="config_8h.html#aadb76337df4b0a055a30de34b0e3dbcc">   44</a></span>&#160;<span class="preprocessor">#define LED_SCARE_COLOR1 0</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="config_8h.html#a49cfb1c1270ff147a44d8dd7166b5473">   45</a></span>&#160;<span class="preprocessor">#define LED_SCARE_COLOR2 0xf</span></div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="config_8h.html#af6a54e35c04441964ee74f63733659e9">   46</a></span>&#160;<span class="preprocessor">#define LED_NORMAL_COLOR 0xf00</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="comment">//map colors</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="config_8h.html#a47eb681b9f2c5a8f4f63891a58ab8e2d">   49</a></span>&#160;<span class="preprocessor">#define WALL_COLOR 0x9</span></div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="config_8h.html#a3aac54ffa4781528709d17a683e54fb5">   50</a></span>&#160;<span class="preprocessor">#define PATH_COLOR 0</span></div>
+<div class="line"><a name="l00051"></a><span class="lineno"><a class="line" href="config_8h.html#ada59e179a724bbf5b53baa541072df9a">   51</a></span>&#160;<span class="preprocessor">#define COIN_COLOR 0xd000</span></div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="config_8h.html#ab0c3bd5b77bc43a57f44c50fb05e7201">   52</a></span>&#160;<span class="preprocessor">#define COIN_RADIUS 5</span></div>
+<div class="line"><a name="l00053"></a><span class="lineno"><a class="line" href="config_8h.html#aa24d0a8eebc152d8cc985828a1e8dd3c">   53</a></span>&#160;<span class="preprocessor">#define SUPERCOIN_COLOR 0xf91f</span></div>
+<div class="line"><a name="l00054"></a><span class="lineno"><a class="line" href="config_8h.html#a2c119bca6ce382c9467070223973441f">   54</a></span>&#160;<span class="preprocessor">#define SUPERCOIN_RADIUS 5</span></div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;<span class="comment">//ghost colors</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="comment">// green pink  azure red</span></div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="config_8h.html#a023956375f6b5b17c1dffbf9c672f31f">   58</a></span>&#160;<span class="preprocessor">#define GHOST_COLORS 0x07C0, 0xF01F, 0x07DC, 0xF800</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno"><a class="line" href="config_8h.html#ac447386d85ded6e889579c2c08ff1adf">   59</a></span>&#160;<span class="preprocessor">#define GHOST_COLORS_AMMOUNT 4</span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
+<div class="line"><a name="l00061"></a><span class="lineno"><a class="line" href="config_8h.html#aeb40fd013a03d54f103aa9feef0f35ac">   61</a></span>&#160;<span class="preprocessor">#define PACMAN_COLOR 0xffe0</span></div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;<span class="comment">//chance for ghosts to switch modes (higher means more unlikely)</span></div>
+<div class="line"><a name="l00064"></a><span class="lineno"><a class="line" href="config_8h.html#ab1cc753b0e4445ab194c1d2b7f693054">   64</a></span>&#160;<span class="preprocessor">#define GHOST_SWITCH_TO_RANDOM 2000</span></div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="config_8h.html#aa7e67f5126c304dba2e7d85d1baea902">   65</a></span>&#160;<span class="preprocessor">#define GHOST_SWITCH_TO_TARGET 900</span></div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
-<div class="line"><a name="l00067"></a><span class="lineno"><a class="line" href="config_8h.html#a1965eaca47dbf3f87acdafc2208f04eb">   67</a></span>&#160;<span class="preprocessor">#define UP 1</span></div>
-<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="config_8h.html#a80fb826a684cf3f0d306b22aa100ddac">   68</a></span>&#160;<span class="preprocessor">#define RIGHT 2</span></div>
-<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="config_8h.html#a74eac3295cbd6c353b8e0db8c37c8c6b">   69</a></span>&#160;<span class="preprocessor">#define DWN 3</span></div>
-<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="config_8h.html#a437ef08681e7210d6678427030446a54">   70</a></span>&#160;<span class="preprocessor">#define LEFT 4</span></div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
+<div class="line"><a name="l00068"></a><span class="lineno"><a class="line" href="config_8h.html#a1965eaca47dbf3f87acdafc2208f04eb">   68</a></span>&#160;<span class="preprocessor">#define UP 1</span></div>
+<div class="line"><a name="l00069"></a><span class="lineno"><a class="line" href="config_8h.html#a80fb826a684cf3f0d306b22aa100ddac">   69</a></span>&#160;<span class="preprocessor">#define RIGHT 2</span></div>
+<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="config_8h.html#a74eac3295cbd6c353b8e0db8c37c8c6b">   70</a></span>&#160;<span class="preprocessor">#define DWN 3</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno"><a class="line" href="config_8h.html#a437ef08681e7210d6678427030446a54">   71</a></span>&#160;<span class="preprocessor">#define LEFT 4</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160; </div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

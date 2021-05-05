@@ -6,6 +6,79 @@
     <briefdescription>
     </briefdescription>
     <detaileddescription>
+<sect1 id="md__c___users__petr__documents_apo_semestralka__user_manual_1autotoc_md13">
+<title>Natavení hry</title>
+<para>V první části hry si je možnost nakongihurovat hru na míru. Je možné zvolit z následujcích parametrů.</para>
+<para><itemizedlist>
+<listitem><para>počet životů (možnost zvolit od 1 po 4)</para>
+</listitem><listitem><para>typ mapy (v tuto chvíli je na výběr ze 3 možností)</para>
+</listitem><listitem><para>počet duchů (možnost zvolit od 1 po 4)</para>
+</listitem></itemizedlist>
+</para>
+<sect2 id="md__c___users__petr__documents_apo_semestralka__user_manual_1autotoc_md14">
+<title>Herní mapy</title>
+<sect3 id="md__c___users__petr__documents_apo_semestralka__user_manual_1autotoc_md15">
+<title>Concentric_circles</title>
+<para>Zcela první mapa, jenž je charakteristická dlouhými chodbami, kde se dá zažít divoká honička s duchem.</para>
+<para><image type="html" name="https://raw.githubusercontent.com/petrkucerak/library/main/asstes/share/apo_man/game_04.png" alt="Concentric_circles" inline="yes"></image>
+</para>
+</sect3>
+<sect3 id="md__c___users__petr__documents_apo_semestralka__user_manual_1autotoc_md16">
+<title>Star_map</title>
+<para>Původně se mělo jednat o mapu připomínající tvar hvězdy, nakonec z této mapku ale vzniklo takové bludiště, kde je třeba počítat s každým zákrutem, protože tam může čekat nebezpečný duch.</para>
+<para><image type="html" name="https://raw.githubusercontent.com/petrkucerak/library/main/asstes/share/apo_man/game_02.png" alt="Star_map" inline="yes"></image>
+</para>
+</sect3>
+<sect3 id="md__c___users__petr__documents_apo_semestralka__user_manual_1autotoc_md17">
+<title>Connch_snail</title>
+<para>Poslení mapka připomíná tvar ulity. Je v ní několik tajných chodem, která zdánlivě narušují její pravidelný tvar zlatého řezu.</para>
+<para><image type="html" name="https://raw.githubusercontent.com/petrkucerak/library/main/asstes/share/apo_man/game_03.png" alt="connch_snail" inline="yes"></image>
+</para>
+</sect3>
+</sect2>
+</sect1>
+<sect1 id="md__c___users__petr__documents_apo_semestralka__user_manual_1autotoc_md18">
+<title>Průběh hry</title>
+<sect2 id="md__c___users__petr__documents_apo_semestralka__user_manual_1autotoc_md19">
+<title>Ovládání hry</title>
+<para>Hra se ovládá pomocí klávesnic <computeroutput>wasd</computeroutput>. Hru je možné pauznout pomocí stiknutí klávesy <computeroutput>p</computeroutput>.</para>
+</sect2>
+<sect2 id="md__c___users__petr__documents_apo_semestralka__user_manual_1autotoc_md20">
+<title>Popis hrací plochy</title>
+<para>Na ploše je vidět několik typů předmětů:</para>
+<para><itemizedlist>
+<listitem><para>packman (pokud se pohybuje, máotevřenou pusu)</para>
+</listitem><listitem><para>duchové (mají různé barvy a pozor, občas jich může být více na sobě)</para>
+</listitem><listitem><para>normální coiny (barva červená)</para>
+</listitem><listitem><para>super coiny (barva fialová)</para>
+</listitem></itemizedlist>
+</para>
+</sect2>
+<sect2 id="md__c___users__petr__documents_apo_semestralka__user_manual_1autotoc_md21">
+<title>Mód pojídání duchů</title>
+<para>Pokud Pac-Man sní super coin, aktivuje se režim pojídání duchů. V něm může Pac-Man pojídat a oni mu neuberou život.</para>
+</sect2>
+<sect2 id="md__c___users__petr__documents_apo_semestralka__user_manual_1autotoc_md22">
+<title>Signály během hry</title>
+<para>Stav hry je signalizován okolními periferiemi:</para>
+<para><itemizedlist>
+<listitem><para>výstupní řádka led indikuje počet životů pacmana</para>
+</listitem><listitem><para>RGB led svítí zeleně jasem vypočítaným z počtu snězených kostiček, v případě režimu, kdy jsou duchové zranitelní bliká modře</para>
+</listitem></itemizedlist>
+</para>
+</sect2>
+</sect1>
+<sect1 id="md__c___users__petr__documents_apo_semestralka__user_manual_1autotoc_md23">
+<title>Konec hry</title>
+<para>Hra končí několika způsoby:</para>
+<para><itemizedlist>
+<listitem><para>spuštěním pauzy (talčítko <computeroutput>p</computeroutput>) a následného vypnutí hry</para>
+</listitem><listitem><para>ubráním všech Pac-Manových životů</para>
+</listitem><listitem><para>sežráním všech dostupných penízků</para>
+</listitem></itemizedlist>
+</para>
+<para>Po sklonční hry přípravek vypíše finální skóre a statistiky na terminál a uživatel má možnot buďto program celkově ukončit nebo spusti hru znovu. </para>
+</sect1>
     </detaileddescription>
     <location file="C:/Users/Petr/Documents/apo_semestralka/_user_manual.md"/>
   </compounddef>

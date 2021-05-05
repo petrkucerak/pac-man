@@ -21,7 +21,7 @@
 <codeline></codeline>
 <codeline><highlight class="normal">Blokové<sp/>schéma<sp/>popisuje<sp/>fungování<sp/>algoritmu<sp/>hry<sp/>Pac-Man.</highlight></codeline>
 <codeline></codeline>
-<codeline><highlight class="normal">![block-schema](docs/blok-schema.png)</highlight></codeline>
+<codeline><highlight class="normal">![block-schema](https://raw.githubusercontent.com/petrkucerak/library/main/asstes/share/blok-schema.png)</highlight></codeline>
 <codeline></codeline>
 <codeline><highlight class="normal">Obecně<sp/>si<sp/>ho<sp/>můžeme<sp/>rozdělit<sp/>do<sp/>třech<sp/>částí:</highlight></codeline>
 <codeline></codeline>
@@ -30,6 +30,65 @@
 <codeline><highlight class="normal">3.<sp/>výpis<sp/>skóre<sp/>a<sp/>pauza<sp/>(Dispaly<sp/>score,<sp/>Pause)</highlight></codeline>
 <codeline></codeline>
 <codeline><highlight class="normal">##<sp/>Popis<sp/>kompilace<sp/>a<sp/>spuštění<sp/>programu</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Pro<sp/>kompliaci<sp/>programu<sp/>je<sp/>připravený<sp/>Makefile<sp/>i<sp/>s<sp/>předpřipraveným<sp/>připojením<sp/>přes<sp/>*ProxyJump*<sp/>do<sp/>školní<sp/>sítě<sp/>a<sp/>s<sp/>možností<sp/>se<sp/>připojit<sp/>rovnou<sp/>na<sp/>zařízení.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Makefile<sp/>vychází<sp/>z<sp/>šablony<sp/>[mzapo_template](https://gitlab.fel.cvut.cz/b35apo/mzapo_template).</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Nastavení<sp/>Makefilu</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">####<sp/>Zdrojové<sp/>soubory</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">V<sp/>první<sp/>části<sp/>je<sp/>třeba<sp/>mít<sp/>přidané<sp/>všechny<sp/>kompilované<sp/>soubory.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```Makefile</highlight></codeline>
+<codeline><highlight class="normal">SOURCES<sp/>=<sp/>apoman.c<sp/>mzapo_phys.c<sp/>mzapo_parlcd.c<sp/>update_peripherals.c<sp/>text_fb.c<sp/>map_from_template.c<sp/>map_to_fb.c<sp/>draw_shapes.c</highlight></codeline>
+<codeline><highlight class="normal">SOURCES<sp/>+=<sp/>terminal_read.c<sp/>pacman.c<sp/>ghost.c</highlight></codeline>
+<codeline><highlight class="normal">SOURCES<sp/>+=<sp/>font_prop14x16.c<sp/>font_rom8x16.c</highlight></codeline>
+<codeline><highlight class="normal">SOURCES<sp/>+=<sp/>map_circles.c<sp/>map_conch.c<sp/>map_star.c</highlight></codeline>
+<codeline><highlight class="normal">SOURCES<sp/>+=<sp/>menu_utilities.c</highlight></codeline>
+<codeline><highlight class="normal">SOURCES<sp/>+=<sp/>final_score.c</highlight></codeline>
+<codeline><highlight class="normal">SOURCES<sp/>+=<sp/>game.c</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">####<sp/>Cílový<sp/>binární<sp/>soubor</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Nezapomenout<sp/>název<sp/>cílového<sp/>binárního<sp/>souboru.</highlight></codeline>
+<codeline><highlight class="normal">```Makefile</highlight></codeline>
+<codeline><highlight class="normal">TARGET_EXE<sp/>=<sp/>apoman</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">####<sp/>Propojení<sp/>se<sp/>pomocí<sp/>*ProxyJump*</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Pokud<sp/>se<sp/>budete<sp/>chtít<sp/>rovnou<sp/>připojit<sp/>na<sp/>zařízení<sp/>pomocí<sp/>technologie<sp/>*ProxyJump*,<sp/>je<sp/>vhodné<sp/>rovnou<sp/>do<sp/>Makefilu<sp/>vyplnit<sp/>cílovou<sp/>IP<sp/>adresu<sp/>zařízení</highlight></codeline>
+<codeline><highlight class="normal">```Makefile</highlight></codeline>
+<codeline><highlight class="normal">TARGET_IP<sp/>?=<sp/>192.168.202.203</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal"><sp/>a<sp/>vyplnit<sp/>své<sp/>uživatelské<sp/>jméno<sp/>s<sp/>přístupem<sp/>k<sp/>ssh<sp/>klíči.</highlight></codeline>
+<codeline><highlight class="normal">```Makefile</highlight></codeline>
+<codeline><highlight class="normal">SSH_OPTIONS=<sp/>-i<sp/>~/.ssh/mzapo-root-key<sp/>-o<sp/>&apos;ProxyJump=username@postel.felk.cvut.cz&apos;</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">Předejte<sp/>tak<sp/>zbytečnému<sp/>zablokování<sp/>ze<sp/>strany<sp/>školního<sp/>serveru<sp/>při<sp/>opakovaném<sp/>a<sp/>častém<sp/>připojování<sp/>a<sp/>přístup<sp/>pro<sp/>vás<sp/>bude<sp/>snazší.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Důležité<sp/>příkazy</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">####<sp/>Kompilace</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```bash</highlight></codeline>
+<codeline><highlight class="normal">make</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">####<sp/>Vymazání<sp/>zkompilovaných<sp/>souborů</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```bash</highlight></codeline>
+<codeline><highlight class="normal">make<sp/>clean</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">####<sp/>Kompilace<sp/>a<sp/>zároveň<sp/>spuštění<sp/>přes<sp/>*ProxyJump*</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```bash</highlight></codeline>
+<codeline><highlight class="normal">make<sp/>run</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
     </programlisting>
     <location file="C:/Users/Petr/Documents/apo_semestralka/_tech_documentation.md"/>
   </compounddef>

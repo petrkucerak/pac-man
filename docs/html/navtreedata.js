@@ -26,21 +26,47 @@ var NAVTREE =
 [
   [ "Pac-Man", "index.html", [
     [ "Specifikace semestrální práce", "index.html", [
-      [ "Introdukce", "index.html#autotoc_md6", null ],
-      [ "Použité periferie a jejich funkce", "index.html#autotoc_md7", null ],
-      [ "Stavy", "index.html#autotoc_md8", [
-        [ "Inicializace hry", "index.html#autotoc_md9", null ],
-        [ "Průběh hry", "index.html#autotoc_md10", null ],
-        [ "Závěr hry", "index.html#autotoc_md11", null ]
+      [ "Introdukce", "index.html#autotoc_md25", null ],
+      [ "Použité periferie a jejich funkce", "index.html#autotoc_md26", null ],
+      [ "Stavy", "index.html#autotoc_md27", [
+        [ "Inicializace hry", "index.html#autotoc_md28", null ],
+        [ "Průběh hry", "index.html#autotoc_md29", null ],
+        [ "Závěr hry", "index.html#autotoc_md30", null ]
       ] ],
-      [ "Kompilace", "index.html#autotoc_md12", null ]
+      [ "Kompilace", "index.html#autotoc_md31", null ]
     ] ],
     [ "Technická dokumnetace", "md__c___users__petr__documents_apo_semestralka__tech_documentation.html", [
       [ "Architektura aplikace", "md__c___users__petr__documents_apo_semestralka__tech_documentation.html#autotoc_md1", null ],
       [ "Blokové schéma algoritmu", "md__c___users__petr__documents_apo_semestralka__tech_documentation.html#autotoc_md2", null ],
-      [ "Popis kompilace a spuštění programu", "md__c___users__petr__documents_apo_semestralka__tech_documentation.html#autotoc_md3", null ]
+      [ "Popis kompilace a spuštění programu", "md__c___users__petr__documents_apo_semestralka__tech_documentation.html#autotoc_md3", [
+        [ "Nastavení Makefilu", "md__c___users__petr__documents_apo_semestralka__tech_documentation.html#autotoc_md4", [
+          [ "Zdrojové soubory", "md__c___users__petr__documents_apo_semestralka__tech_documentation.html#autotoc_md5", null ],
+          [ "Cílový binární soubor", "md__c___users__petr__documents_apo_semestralka__tech_documentation.html#autotoc_md6", null ],
+          [ "Propojení se pomocí <em>ProxyJump</em>", "md__c___users__petr__documents_apo_semestralka__tech_documentation.html#autotoc_md7", null ]
+        ] ],
+        [ "Důležité příkazy", "md__c___users__petr__documents_apo_semestralka__tech_documentation.html#autotoc_md8", [
+          [ "Kompilace", "md__c___users__petr__documents_apo_semestralka__tech_documentation.html#autotoc_md9", null ],
+          [ "Vymazání zkompilovaných souborů", "md__c___users__petr__documents_apo_semestralka__tech_documentation.html#autotoc_md10", null ],
+          [ "Kompilace a zároveň spuštění přes <em>ProxyJump</em>", "md__c___users__petr__documents_apo_semestralka__tech_documentation.html#autotoc_md11", null ]
+        ] ]
+      ] ]
     ] ],
-    [ "Uživatelský manuál", "md__c___users__petr__documents_apo_semestralka__user_manual.html", null ],
+    [ "Uživatelský manuál", "md__c___users__petr__documents_apo_semestralka__user_manual.html", [
+      [ "Natavení hry", "md__c___users__petr__documents_apo_semestralka__user_manual.html#autotoc_md13", [
+        [ "Herní mapy", "md__c___users__petr__documents_apo_semestralka__user_manual.html#autotoc_md14", [
+          [ "Concentric_circles", "md__c___users__petr__documents_apo_semestralka__user_manual.html#autotoc_md15", null ],
+          [ "Star_map", "md__c___users__petr__documents_apo_semestralka__user_manual.html#autotoc_md16", null ],
+          [ "Connch_snail", "md__c___users__petr__documents_apo_semestralka__user_manual.html#autotoc_md17", null ]
+        ] ]
+      ] ],
+      [ "Průběh hry", "md__c___users__petr__documents_apo_semestralka__user_manual.html#autotoc_md18", [
+        [ "Ovládání hry", "md__c___users__petr__documents_apo_semestralka__user_manual.html#autotoc_md19", null ],
+        [ "Popis hrací plochy", "md__c___users__petr__documents_apo_semestralka__user_manual.html#autotoc_md20", null ],
+        [ "Mód pojídání duchů", "md__c___users__petr__documents_apo_semestralka__user_manual.html#autotoc_md21", null ],
+        [ "Signály během hry", "md__c___users__petr__documents_apo_semestralka__user_manual.html#autotoc_md22", null ]
+      ] ],
+      [ "Konec hry", "md__c___users__petr__documents_apo_semestralka__user_manual.html#autotoc_md23", null ]
+    ] ],
     [ "Data Structures", "annotated.html", [
       [ "Data Structures", "annotated.html", "annotated_dup" ],
       [ "Data Structure Index", "classes.html", null ],
@@ -65,7 +91,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"mzapo__regs_8h.html#a8347b977e4f5a5a6b22327e398e09df8"
+"mzapo__regs_8h.html#a30b5b32f5a164ef983824258f6ff54a5"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

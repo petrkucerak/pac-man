@@ -124,7 +124,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Petr/Documents/apo_semestralka/game.h" line="25" column="5" bodyfile="C:/Users/Petr/Documents/apo_semestralka/game.c" bodystart="23" bodyend="88" declfile="C:/Users/Petr/Documents/apo_semestralka/game.h" declline="25" declcolumn="5"/>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/game.h" line="25" column="5" bodyfile="C:/Users/Petr/Documents/apo_semestralka/game.c" bodystart="23" bodyend="89" declfile="C:/Users/Petr/Documents/apo_semestralka/game.h" declline="25" declcolumn="5"/>
       </memberdef>
       <memberdef kind="function" id="game_8h_1af84e8ae88873f09731321e62e77a1d18" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -176,7 +176,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Petr/Documents/apo_semestralka/game.h" line="34" column="6" bodyfile="C:/Users/Petr/Documents/apo_semestralka/game.c" bodystart="90" bodyend="118" declfile="C:/Users/Petr/Documents/apo_semestralka/game.h" declline="34" declcolumn="6"/>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/game.h" line="34" column="6" bodyfile="C:/Users/Petr/Documents/apo_semestralka/game.c" bodystart="91" bodyend="119" declfile="C:/Users/Petr/Documents/apo_semestralka/game.h" declline="34" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="game_8h_1a0e947670754754c65011a151d82e2c36" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -216,7 +216,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Petr/Documents/apo_semestralka/game.h" line="42" column="6" bodyfile="C:/Users/Petr/Documents/apo_semestralka/game.c" bodystart="170" bodyend="195" declfile="C:/Users/Petr/Documents/apo_semestralka/game.h" declline="42" declcolumn="6"/>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/game.h" line="42" column="6" bodyfile="C:/Users/Petr/Documents/apo_semestralka/game.c" bodystart="174" bodyend="199" declfile="C:/Users/Petr/Documents/apo_semestralka/game.h" declline="42" declcolumn="6"/>
       </memberdef>
       <memberdef kind="function" id="game_8h_1ac055e6ae3ef32e12a7c56e62bae12db3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -296,7 +296,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Petr/Documents/apo_semestralka/game.h" line="55" column="6" bodyfile="C:/Users/Petr/Documents/apo_semestralka/game.c" bodystart="120" bodyend="168" declfile="C:/Users/Petr/Documents/apo_semestralka/game.h" declline="55" declcolumn="6"/>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/game.h" line="55" column="6" bodyfile="C:/Users/Petr/Documents/apo_semestralka/game.c" bodystart="121" bodyend="172" declfile="C:/Users/Petr/Documents/apo_semestralka/game.h" declline="55" declcolumn="6"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

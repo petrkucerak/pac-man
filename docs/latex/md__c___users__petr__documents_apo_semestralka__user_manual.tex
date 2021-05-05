@@ -1,0 +1,48 @@
+\doxysection{Natavení hry}\label{md__c___users__petr__documents_apo_semestralka__user_manual_autotoc_md13}
+V první části hry si je možnost nakongihurovat hru na míru. Je možné zvolit z následujcích parametrů.
+
+
+\begin{DoxyItemize}
+\item počet životů (možnost zvolit od 1 po 4)
+\item typ mapy (v tuto chvíli je na výběr ze 3 možností)
+\item počet duchů (možnost zvolit od 1 po 4)
+\end{DoxyItemize}\doxysubsection{Herní mapy}\label{md__c___users__petr__documents_apo_semestralka__user_manual_autotoc_md14}
+\doxysubsubsection{Concentric\+\_\+circles}\label{md__c___users__petr__documents_apo_semestralka__user_manual_autotoc_md15}
+Zcela první mapa, jenž je charakteristická dlouhými chodbami, kde se dá zažít divoká honička s duchem.
+
+\doxysubsubsection{Star\+\_\+map}\label{md__c___users__petr__documents_apo_semestralka__user_manual_autotoc_md16}
+Původně se mělo jednat o mapu připomínající tvar hvězdy, nakonec z této mapku ale vzniklo takové bludiště, kde je třeba počítat s každým zákrutem, protože tam může čekat nebezpečný duch.
+
+\doxysubsubsection{Connch\+\_\+snail}\label{md__c___users__petr__documents_apo_semestralka__user_manual_autotoc_md17}
+Poslení mapka připomíná tvar ulity. Je v ní několik tajných chodem, která zdánlivě narušují její pravidelný tvar zlatého řezu.
+
+\doxysection{Průběh hry}\label{md__c___users__petr__documents_apo_semestralka__user_manual_autotoc_md18}
+\doxysubsection{Ovládání hry}\label{md__c___users__petr__documents_apo_semestralka__user_manual_autotoc_md19}
+Hra se ovládá pomocí klávesnic {\ttfamily wasd}. Hru je možné pauznout pomocí stiknutí klávesy {\ttfamily p}.\doxysubsection{Popis hrací plochy}\label{md__c___users__petr__documents_apo_semestralka__user_manual_autotoc_md20}
+Na ploše je vidět několik typů předmětů\+:
+
+
+\begin{DoxyItemize}
+\item packman (pokud se pohybuje, máotevřenou pusu)
+\item duchové (mají různé barvy a pozor, občas jich může být více na sobě)
+\item normální coiny (barva červená)
+\item super coiny (barva fialová)
+\end{DoxyItemize}\doxysubsection{Mód pojídání duchů}\label{md__c___users__petr__documents_apo_semestralka__user_manual_autotoc_md21}
+Pokud Pac-\/\+Man sní super coin, aktivuje se režim pojídání duchů. V něm může Pac-\/\+Man pojídat a oni mu neuberou život.\doxysubsection{Signály během hry}\label{md__c___users__petr__documents_apo_semestralka__user_manual_autotoc_md22}
+Stav hry je signalizován okolními periferiemi\+:
+
+
+\begin{DoxyItemize}
+\item výstupní řádka led indikuje počet životů pacmana
+\item RGB led svítí zeleně jasem vypočítaným z počtu snězených kostiček, v případě režimu, kdy jsou duchové zranitelní bliká modře
+\end{DoxyItemize}\doxysection{Konec hry}\label{md__c___users__petr__documents_apo_semestralka__user_manual_autotoc_md23}
+Hra končí několika způsoby\+:
+
+
+\begin{DoxyItemize}
+\item spuštěním pauzy (talčítko {\ttfamily p}) a následného vypnutí hry
+\item ubráním všech Pac-\/\+Manových životů
+\item sežráním všech dostupných penízků
+\end{DoxyItemize}
+
+Po sklonční hry přípravek vypíše finální skóre a statistiky na terminál a uživatel má možnot buďto program celkově ukončit nebo spusti hru znovu. 

@@ -4,3 +4,63 @@
 .SH NAME
 md__c___users__petr__documents_apo_semestralka__user_manual \- Uživatelský manuál 
 
+.SH "Natavení hry"
+.PP
+V první části hry si je možnost nakongihurovat hru na míru\&. Je možné zvolit z následujcích parametrů\&.
+.PP
+.IP "\(bu" 2
+počet životů (možnost zvolit od 1 po 4)
+.IP "\(bu" 2
+typ mapy (v tuto chvíli je na výběr ze 3 možností)
+.IP "\(bu" 2
+počet duchů (možnost zvolit od 1 po 4)
+.PP
+.SS "Herní mapy"
+.SS "Concentric_circles"
+Zcela první mapa, jenž je charakteristická dlouhými chodbami, kde se dá zažít divoká honička s duchem\&.
+.PP
+.SS "Star_map"
+Původně se mělo jednat o mapu připomínající tvar hvězdy, nakonec z této mapku ale vzniklo takové bludiště, kde je třeba počítat s každým zákrutem, protože tam může čekat nebezpečný duch\&.
+.PP
+.SS "Connch_snail"
+Poslení mapka připomíná tvar ulity\&. Je v ní několik tajných chodem, která zdánlivě narušují její pravidelný tvar zlatého řezu\&.
+.PP
+.SH "Průběh hry"
+.PP
+.SS "Ovládání hry"
+Hra se ovládá pomocí klávesnic \fCwasd\fP\&. Hru je možné pauznout pomocí stiknutí klávesy \fCp\fP\&.
+.SS "Popis hrací plochy"
+Na ploše je vidět několik typů předmětů:
+.PP
+.IP "\(bu" 2
+packman (pokud se pohybuje, máotevřenou pusu)
+.IP "\(bu" 2
+duchové (mají různé barvy a pozor, občas jich může být více na sobě)
+.IP "\(bu" 2
+normální coiny (barva červená)
+.IP "\(bu" 2
+super coiny (barva fialová)
+.PP
+.SS "Mód pojídání duchů"
+Pokud Pac-Man sní super coin, aktivuje se režim pojídání duchů\&. V něm může Pac-Man pojídat a oni mu neuberou život\&.
+.SS "Signály během hry"
+Stav hry je signalizován okolními periferiemi:
+.PP
+.IP "\(bu" 2
+výstupní řádka led indikuje počet životů pacmana
+.IP "\(bu" 2
+RGB led svítí zeleně jasem vypočítaným z počtu snězených kostiček, v případě režimu, kdy jsou duchové zranitelní bliká modře
+.PP
+.SH "Konec hry"
+.PP
+Hra končí několika způsoby:
+.PP
+.IP "\(bu" 2
+spuštěním pauzy (talčítko \fCp\fP) a následného vypnutí hry
+.IP "\(bu" 2
+ubráním všech Pac-Manových životů
+.IP "\(bu" 2
+sežráním všech dostupných penízků
+.PP
+.PP
+Po sklonční hry přípravek vypíše finální skóre a statistiky na terminál a uživatel má možnot buďto program celkově ukončit nebo spusti hru znovu\&. 

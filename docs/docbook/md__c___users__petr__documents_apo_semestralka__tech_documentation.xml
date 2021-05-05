@@ -30,5 +30,60 @@
 </section>
 <section xml:id="_md__c___users__petr__documents_apo_semestralka__tech_documentation_1autotoc_md3">
 <title>Popis kompilace a spuštění programu</title>
+
+<para>Pro kompliaci programu je připravený Makefile i s předpřipraveným připojením přes <emphasis>ProxyJump</emphasis> do školní sítě a s možností se připojit rovnou na zařízení.</para>
+
+<para>Makefile vychází z šablony <link xlink:href="https://gitlab.fel.cvut.cz/b35apo/mzapo_template">mzapo_template</link>.</para>
+<section xml:id="_md__c___users__petr__documents_apo_semestralka__tech_documentation_1autotoc_md4">
+<title>Nastavení Makefilu</title>
+<section xml:id="_md__c___users__petr__documents_apo_semestralka__tech_documentation_1autotoc_md5">
+<title>Zdrojové soubory</title>
+
+<para>V první části je třeba mít přidané všechny kompilované soubory.</para>
+
+<para><literallayout><computeroutput>SOURCES&#32;=&#32;apoman.c&#32;mzapo_phys.c&#32;mzapo_parlcd.c&#32;update_peripherals.c&#32;text_fb.c&#32;map_from_template.c&#32;map_to_fb.c&#32;draw_shapes.c
+SOURCES&#32;+=&#32;terminal_read.c&#32;pacman.c&#32;ghost.c
+SOURCES&#32;+=&#32;font_prop14x16.c&#32;font_rom8x16.c
+SOURCES&#32;+=&#32;map_circles.c&#32;map_conch.c&#32;map_star.c
+SOURCES&#32;+=&#32;menu_utilities.c
+SOURCES&#32;+=&#32;final_score.c
+SOURCES&#32;+=&#32;game.c
+</computeroutput></literallayout></para>
+</section>
+<section xml:id="_md__c___users__petr__documents_apo_semestralka__tech_documentation_1autotoc_md6">
+<title>Cílový binární soubor</title>
+
+<para>Nezapomenout název cílového binárního souboru. <literallayout><computeroutput>TARGET_EXE&#32;=&#32;apoman
+</computeroutput></literallayout></para>
+</section>
+<section xml:id="_md__c___users__petr__documents_apo_semestralka__tech_documentation_1autotoc_md7">
+<title>Propojení se pomocí &lt;em&gt;ProxyJump&lt;/em&gt;</title>
+
+<para>Pokud se budete chtít rovnou připojit na zařízení pomocí technologie <emphasis>ProxyJump</emphasis>, je vhodné rovnou do Makefilu vyplnit cílovou IP adresu zařízení <literallayout><computeroutput>TARGET_IP&#32;?=&#32;192.168.202.203
+</computeroutput></literallayout> a vyplnit své uživatelské jméno s přístupem k ssh klíči. <literallayout><computeroutput>SSH_OPTIONS=&#32;-i&#32;~/.ssh/mzapo-root-key&#32;-o&#32;&apos;ProxyJump=username@postel.felk.cvut.cz&apos;
+</computeroutput></literallayout> Předejte tak zbytečnému zablokování ze strany školního serveru při opakovaném a častém připojování a přístup pro vás bude snazší.</para>
+</section>
+</section>
+<section xml:id="_md__c___users__petr__documents_apo_semestralka__tech_documentation_1autotoc_md8">
+<title>Důležité příkazy</title>
+<section xml:id="_md__c___users__petr__documents_apo_semestralka__tech_documentation_1autotoc_md9">
+<title>Kompilace</title>
+
+<para><literallayout><computeroutput>make
+</computeroutput></literallayout></para>
+</section>
+<section xml:id="_md__c___users__petr__documents_apo_semestralka__tech_documentation_1autotoc_md10">
+<title>Vymazání zkompilovaných souborů</title>
+
+<para><literallayout><computeroutput>make&#32;clean
+</computeroutput></literallayout></para>
+</section>
+<section xml:id="_md__c___users__petr__documents_apo_semestralka__tech_documentation_1autotoc_md11">
+<title>Kompilace a zároveň spuštění přes &lt;em&gt;ProxyJump&lt;/em&gt;</title>
+
+<para><literallayout><computeroutput>make&#32;run
+</computeroutput></literallayout> </para>
+</section>
+</section>
 </section>
 </section>

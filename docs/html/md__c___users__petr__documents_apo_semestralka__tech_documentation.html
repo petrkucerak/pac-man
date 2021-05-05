@@ -96,7 +96,7 @@ Architektura aplikace</h1>
 <h1><a class="anchor" id="autotoc_md2"></a>
 Blokové schéma algoritmu</h1>
 <p>Blokové schéma popisuje fungování algoritmu hry Pac-Man.</p>
-<p><img src="docs/blok-schema.png" alt="block-schema" class="inline"/></p>
+<p><img src="https://raw.githubusercontent.com/petrkucerak/library/main/asstes/share/blok-schema.png" alt="block-schema" class="inline"/></p>
 <p>Obecně si ho můžeme rozdělit do třech částí:</p>
 <ol type="1">
 <li>konfigurace dané hry (Main menu)</li>
@@ -105,7 +105,40 @@ Blokové schéma algoritmu</h1>
 </ol>
 <h1><a class="anchor" id="autotoc_md3"></a>
 Popis kompilace a spuštění programu</h1>
-</div></div><!-- contents -->
+<p>Pro kompliaci programu je připravený Makefile i s předpřipraveným připojením přes <em>ProxyJump</em> do školní sítě a s možností se připojit rovnou na zařízení.</p>
+<p>Makefile vychází z šablony <a href="https://gitlab.fel.cvut.cz/b35apo/mzapo_template">mzapo_template</a>.</p>
+<h2><a class="anchor" id="autotoc_md4"></a>
+Nastavení Makefilu</h2>
+<h3><a class="anchor" id="autotoc_md5"></a>
+Zdrojové soubory</h3>
+<p>V první části je třeba mít přidané všechny kompilované soubory.</p>
+<div class="fragment"><div class="line">SOURCES = apoman.c mzapo_phys.c mzapo_parlcd.c update_peripherals.c text_fb.c map_from_template.c map_to_fb.c draw_shapes.c</div>
+<div class="line">SOURCES += terminal_read.c pacman.c ghost.c</div>
+<div class="line">SOURCES += font_prop14x16.c font_rom8x16.c</div>
+<div class="line">SOURCES += map_circles.c map_conch.c map_star.c</div>
+<div class="line">SOURCES += menu_utilities.c</div>
+<div class="line">SOURCES += final_score.c</div>
+<div class="line">SOURCES += game.c</div>
+</div><!-- fragment --><h3><a class="anchor" id="autotoc_md6"></a>
+Cílový binární soubor</h3>
+<p>Nezapomenout název cílového binárního souboru. </p><div class="fragment"><div class="line">TARGET_EXE = apoman</div>
+</div><!-- fragment --><h3><a class="anchor" id="autotoc_md7"></a>
+Propojení se pomocí &lt;em&gt;ProxyJump&lt;/em&gt;</h3>
+<p>Pokud se budete chtít rovnou připojit na zařízení pomocí technologie <em>ProxyJump</em>, je vhodné rovnou do Makefilu vyplnit cílovou IP adresu zařízení </p><div class="fragment"><div class="line">TARGET_IP ?= 192.168.202.203</div>
+</div><!-- fragment --><p> a vyplnit své uživatelské jméno s přístupem k ssh klíči. </p><div class="fragment"><div class="line">SSH_OPTIONS= -i ~/.ssh/mzapo-root-key -o &#39;ProxyJump=username@postel.felk.cvut.cz&#39;</div>
+</div><!-- fragment --><p> Předejte tak zbytečnému zablokování ze strany školního serveru při opakovaném a častém připojování a přístup pro vás bude snazší.</p>
+<h2><a class="anchor" id="autotoc_md8"></a>
+Důležité příkazy</h2>
+<h3><a class="anchor" id="autotoc_md9"></a>
+Kompilace</h3>
+<div class="fragment"><div class="line">make</div>
+</div><!-- fragment --><h3><a class="anchor" id="autotoc_md10"></a>
+Vymazání zkompilovaných souborů</h3>
+<div class="fragment"><div class="line">make clean</div>
+</div><!-- fragment --><h3><a class="anchor" id="autotoc_md11"></a>
+Kompilace a zároveň spuštění přes &lt;em&gt;ProxyJump&lt;/em&gt;</h3>
+<div class="fragment"><div class="line">make run</div>
+</div><!-- fragment --> </div></div><!-- contents -->
 </div><!-- PageDoc -->
 </div><!-- doc-content -->
 <!-- start footer part -->

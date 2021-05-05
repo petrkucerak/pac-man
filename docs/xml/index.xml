@@ -113,6 +113,7 @@
     <member refid="config_8h_1a3652158e56c9d1423bfa5d1c5bd3d243" kind="define"><name>MAX_LIVES</name></member>
     <member refid="config_8h_1a5cba511e2fe7a2d66d90d3e3d810db3c" kind="define"><name>SCARE_REGIME_DURATION</name></member>
     <member refid="config_8h_1a7645a891a19088e6fc698d38435dd4c9" kind="define"><name>GAME_SPEED</name></member>
+    <member refid="config_8h_1a487ac7bb4bfd7ace3d2933310e95fd17" kind="define"><name>GAME_START_TERMINAL</name></member>
     <member refid="config_8h_1adbb52fc3b2ec0fea2f350a39d8c3bd28" kind="define"><name>GAME_END_TERMINAL</name></member>
     <member refid="config_8h_1aadb76337df4b0a055a30de34b0e3dbcc" kind="define"><name>LED_SCARE_COLOR1</name></member>
     <member refid="config_8h_1a49cfb1c1270ff147a44d8dd7166b5473" kind="define"><name>LED_SCARE_COLOR2</name></member>

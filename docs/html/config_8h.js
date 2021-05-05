@@ -6,6 +6,7 @@ var config_8h =
     [ "DWN", "config_8h.html#a74eac3295cbd6c353b8e0db8c37c8c6b", null ],
     [ "GAME_END_TERMINAL", "config_8h.html#adbb52fc3b2ec0fea2f350a39d8c3bd28", null ],
     [ "GAME_SPEED", "config_8h.html#a7645a891a19088e6fc698d38435dd4c9", null ],
+    [ "GAME_START_TERMINAL", "config_8h.html#a487ac7bb4bfd7ace3d2933310e95fd17", null ],
     [ "GHOST_COLORS", "config_8h.html#a023956375f6b5b17c1dffbf9c672f31f", null ],
     [ "GHOST_COLORS_AMMOUNT", "config_8h.html#ac447386d85ded6e889579c2c08ff1adf", null ],
     [ "GHOST_SCORE_INCECREASE", "config_8h.html#ae812134d65aa84762a15f5d570014daa", null ],

@@ -16,3 +16,57 @@ Obecně si ho můžeme rozdělit do třech částí\+:
 \item hra samotná (Game)
 \item výpis skóre a pauza (Dispaly score, Pause)
 \end{DoxyEnumerate}\doxysection{Popis kompilace a spuštění programu}\label{md__c___users__petr__documents_apo_semestralka__tech_documentation_autotoc_md3}
+Pro kompliaci programu je připravený Makefile i s předpřipraveným připojením přes {\itshape Proxy\+Jump} do školní sítě a s možností se připojit rovnou na zařízení.
+
+Makefile vychází z šablony {\texttt{ mzapo\+\_\+template}}.\doxysubsection{Nastavení Makefilu}\label{md__c___users__petr__documents_apo_semestralka__tech_documentation_autotoc_md4}
+\doxysubsubsection{Zdrojové soubory}\label{md__c___users__petr__documents_apo_semestralka__tech_documentation_autotoc_md5}
+V první části je třeba mít přidané všechny kompilované soubory.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{SOURCES = apoman.c mzapo\_phys.c mzapo\_parlcd.c update\_peripherals.c text\_fb.c map\_from\_template.c map\_to\_fb.c draw\_shapes.c}
+\DoxyCodeLine{SOURCES += terminal\_read.c pacman.c ghost.c}
+\DoxyCodeLine{SOURCES += font\_prop14x16.c font\_rom8x16.c}
+\DoxyCodeLine{SOURCES += map\_circles.c map\_conch.c map\_star.c}
+\DoxyCodeLine{SOURCES += menu\_utilities.c}
+\DoxyCodeLine{SOURCES += final\_score.c}
+\DoxyCodeLine{SOURCES += game.c}
+
+\end{DoxyCode}
+\doxysubsubsection{Cílový binární soubor}\label{md__c___users__petr__documents_apo_semestralka__tech_documentation_autotoc_md6}
+Nezapomenout název cílového binárního souboru. 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{TARGET\_EXE = apoman}
+
+\end{DoxyCode}
+\doxysubsubsection{Propojení se pomocí $<$em$>$\+Proxy\+Jump$<$/em$>$}\label{md__c___users__petr__documents_apo_semestralka__tech_documentation_autotoc_md7}
+Pokud se budete chtít rovnou připojit na zařízení pomocí technologie {\itshape Proxy\+Jump}, je vhodné rovnou do Makefilu vyplnit cílovou IP adresu zařízení 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{TARGET\_IP ?= 192.168.202.203}
+
+\end{DoxyCode}
+ a vyplnit své uživatelské jméno s přístupem k ssh klíči. 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{SSH\_OPTIONS= -\/i \string~/.ssh/mzapo-\/root-\/key -\/o 'ProxyJump=username@postel.felk.cvut.cz'}
+
+\end{DoxyCode}
+ Předejte tak zbytečnému zablokování ze strany školního serveru při opakovaném a častém připojování a přístup pro vás bude snazší.\doxysubsection{Důležité příkazy}\label{md__c___users__petr__documents_apo_semestralka__tech_documentation_autotoc_md8}
+\doxysubsubsection{Kompilace}\label{md__c___users__petr__documents_apo_semestralka__tech_documentation_autotoc_md9}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{make}
+
+\end{DoxyCode}
+\doxysubsubsection{Vymazání zkompilovaných souborů}\label{md__c___users__petr__documents_apo_semestralka__tech_documentation_autotoc_md10}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{make clean}
+
+\end{DoxyCode}
+\doxysubsubsection{Kompilace a zároveň spuštění přes $<$em$>$\+Proxy\+Jump$<$/em$>$}\label{md__c___users__petr__documents_apo_semestralka__tech_documentation_autotoc_md11}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{make run}
+
+\end{DoxyCode}
+ 

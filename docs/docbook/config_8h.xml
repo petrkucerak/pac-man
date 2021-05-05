@@ -52,6 +52,8 @@
 </listitem>
             <listitem><para>#define <link linkend="_config_8h_1a7645a891a19088e6fc698d38435dd4c9">GAME_SPEED</link>   2</para>
 </listitem>
+            <listitem><para>#define <link linkend="_config_8h_1a487ac7bb4bfd7ace3d2933310e95fd17">GAME_START_TERMINAL</link>   &quot;Move pacman with %c%c%c%c keys, to pause press %c, to quit game press %c.\n&quot;</para>
+</listitem>
             <listitem><para>#define <link linkend="_config_8h_1adbb52fc3b2ec0fea2f350a39d8c3bd28">GAME_END_TERMINAL</link>   &quot;Game has ended with pacman getting score %d and having %d lives\n&quot;</para>
 </listitem>
             <listitem><para>#define <link linkend="_config_8h_1aadb76337df4b0a055a30de34b0e3dbcc">LED_SCARE_COLOR1</link>   0</para>
@@ -141,7 +143,11 @@
     <title>GAME_SPEED</title>
 <indexterm><primary>GAME_SPEED</primary><secondary>config.h</secondary></indexterm>
 <indexterm><primary>config.h</primary><secondary>GAME_SPEED</secondary></indexterm>
-<para><computeroutput>#define GAME_SPEED   2</computeroutput></para>    </section><anchor xml:id="_config_8h_1a023956375f6b5b17c1dffbf9c672f31f"/>    <section>
+<para><computeroutput>#define GAME_SPEED   2</computeroutput></para>    </section><anchor xml:id="_config_8h_1a487ac7bb4bfd7ace3d2933310e95fd17"/>    <section>
+    <title>GAME_START_TERMINAL</title>
+<indexterm><primary>GAME_START_TERMINAL</primary><secondary>config.h</secondary></indexterm>
+<indexterm><primary>config.h</primary><secondary>GAME_START_TERMINAL</secondary></indexterm>
+<para><computeroutput>#define GAME_START_TERMINAL   &quot;Move pacman with %c%c%c%c keys, to pause press %c, to quit game press %c.\n&quot;</computeroutput></para>    </section><anchor xml:id="_config_8h_1a023956375f6b5b17c1dffbf9c672f31f"/>    <section>
     <title>GHOST_COLORS</title>
 <indexterm><primary>GHOST_COLORS</primary><secondary>config.h</secondary></indexterm>
 <indexterm><primary>config.h</primary><secondary>GHOST_COLORS</secondary></indexterm>

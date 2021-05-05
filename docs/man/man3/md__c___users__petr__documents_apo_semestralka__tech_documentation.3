@@ -27,4 +27,65 @@ výpis skóre a pauza (Dispaly score, Pause)
 .PP
 .SH "Popis kompilace a spuštění programu"
 .PP
+Pro kompliaci programu je připravený Makefile i s předpřipraveným připojením přes \fIProxyJump\fP do školní sítě a s možností se připojit rovnou na zařízení\&.
+.PP
+Makefile vychází z šablony \fCmzapo_template\fP\&.
+.SS "Nastavení Makefilu"
+.SS "Zdrojové soubory"
+V první části je třeba mít přidané všechny kompilované soubory\&.
+.PP
+.PP
+.nf
+SOURCES = apoman\&.c mzapo_phys\&.c mzapo_parlcd\&.c update_peripherals\&.c text_fb\&.c map_from_template\&.c map_to_fb\&.c draw_shapes\&.c
+SOURCES += terminal_read\&.c pacman\&.c ghost\&.c
+SOURCES += font_prop14x16\&.c font_rom8x16\&.c
+SOURCES += map_circles\&.c map_conch\&.c map_star\&.c
+SOURCES += menu_utilities\&.c
+SOURCES += final_score\&.c
+SOURCES += game\&.c
+.fi
+.PP
+.SS "Cílový binární soubor"
+Nezapomenout název cílového binárního souboru\&. 
+.PP
+.nf
+TARGET_EXE = apoman
 
+.fi
+.PP
+.SS "Propojení se pomocí <em>ProxyJump</em>"
+Pokud se budete chtít rovnou připojit na zařízení pomocí technologie \fIProxyJump\fP, je vhodné rovnou do Makefilu vyplnit cílovou IP adresu zařízení 
+.PP
+.nf
+TARGET_IP ?= 192\&.168\&.202\&.203
+
+.fi
+.PP
+ a vyplnit své uživatelské jméno s přístupem k ssh klíči\&. 
+.PP
+.nf
+SSH_OPTIONS= -i ~/\&.ssh/mzapo-root-key -o 'ProxyJump=username@postel\&.felk\&.cvut\&.cz'
+
+.fi
+.PP
+ Předejte tak zbytečnému zablokování ze strany školního serveru při opakovaném a častém připojování a přístup pro vás bude snazší\&.
+.SS "Důležité příkazy"
+.SS "Kompilace"
+.PP
+.nf
+make
+.fi
+.PP
+.SS "Vymazání zkompilovaných souborů"
+.PP
+.nf
+make clean
+.fi
+.PP
+.SS "Kompilace a zároveň spuštění přes <em>ProxyJump</em>"
+.PP
+.nf
+make run
+.fi
+.PP
+ 

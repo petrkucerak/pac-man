@@ -282,6 +282,17 @@
         </inbodydescription>
         <location file="C:/Users/Petr/Documents/apo_semestralka/config.h" line="38" column="9" bodyfile="C:/Users/Petr/Documents/apo_semestralka/config.h" bodystart="38" bodyend="-1"/>
       </memberdef>
+      <memberdef kind="define" id="config_8h_1a487ac7bb4bfd7ace3d2933310e95fd17" prot="public" static="no">
+        <name>GAME_START_TERMINAL</name>
+        <initializer>&quot;Move pacman with %c%c%c%c keys, to pause press %c, to quit game press %c.\n&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/config.h" line="40" column="9" bodyfile="C:/Users/Petr/Documents/apo_semestralka/config.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
       <memberdef kind="define" id="config_8h_1adbb52fc3b2ec0fea2f350a39d8c3bd28" prot="public" static="no">
         <name>GAME_END_TERMINAL</name>
         <initializer>&quot;Game has ended with pacman getting score %d and having %d lives\n&quot;</initializer>
@@ -291,7 +302,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Petr/Documents/apo_semestralka/config.h" line="40" column="9" bodyfile="C:/Users/Petr/Documents/apo_semestralka/config.h" bodystart="40" bodyend="-1"/>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/config.h" line="41" column="9" bodyfile="C:/Users/Petr/Documents/apo_semestralka/config.h" bodystart="41" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="config_8h_1aadb76337df4b0a055a30de34b0e3dbcc" prot="public" static="no">
         <name>LED_SCARE_COLOR1</name>
@@ -302,7 +313,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Petr/Documents/apo_semestralka/config.h" line="43" column="9" bodyfile="C:/Users/Petr/Documents/apo_semestralka/config.h" bodystart="43" bodyend="-1"/>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/config.h" line="44" column="9" bodyfile="C:/Users/Petr/Documents/apo_semestralka/config.h" bodystart="44" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="config_8h_1a49cfb1c1270ff147a44d8dd7166b5473" prot="public" static="no">
         <name>LED_SCARE_COLOR2</name>
@@ -313,7 +324,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Petr/Documents/apo_semestralka/config.h" line="44" column="9" bodyfile="C:/Users/Petr/Documents/apo_semestralka/config.h" bodystart="44" bodyend="-1"/>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/config.h" line="45" column="9" bodyfile="C:/Users/Petr/Documents/apo_semestralka/config.h" bodystart="45" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="config_8h_1af6a54e35c04441964ee74f63733659e9" prot="public" static="no">
         <name>LED_NORMAL_COLOR</name>
@@ -324,7 +335,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Petr/Documents/apo_semestralka/config.h" line="45" column="9" bodyfile="C:/Users/Petr/Documents/apo_semestralka/config.h" bodystart="45" bodyend="-1"/>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/config.h" line="46" column="9" bodyfile="C:/Users/Petr/Documents/apo_semestralka/config.h" bodystart="46" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="config_8h_1a47eb681b9f2c5a8f4f63891a58ab8e2d" prot="public" static="no">
         <name>WALL_COLOR</name>
@@ -335,7 +346,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Petr/Documents/apo_semestralka/config.h" line="48" column="9" bodyfile="C:/Users/Petr/Documents/apo_semestralka/config.h" bodystart="48" bodyend="-1"/>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/config.h" line="49" column="9" bodyfile="C:/Users/Petr/Documents/apo_semestralka/config.h" bodystart="49" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="config_8h_1a3aac54ffa4781528709d17a683e54fb5" prot="public" static="no">
         <name>PATH_COLOR</name>
@@ -346,7 +357,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Petr/Documents/apo_semestralka/config.h" line="49" column="9" bodyfile="C:/Users/Petr/Documents/apo_semestralka/config.h" bodystart="49" bodyend="-1"/>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/config.h" line="50" column="9" bodyfile="C:/Users/Petr/Documents/apo_semestralka/config.h" bodystart="50" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="config_8h_1ada59e179a724bbf5b53baa541072df9a" prot="public" static="no">
         <name>COIN_COLOR</name>
@@ -357,7 +368,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Petr/Documents/apo_semestralka/config.h" line="50" column="9" bodyfile="C:/Users/Petr/Documents/apo_semestralka/config.h" bodystart="50" bodyend="-1"/>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/config.h" line="51" column="9" bodyfile="C:/Users/Petr/Documents/apo_semestralka/config.h" bodystart="51" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="config_8h_1ab0c3bd5b77bc43a57f44c50fb05e7201" prot="public" static="no">
         <name>COIN_RADIUS</name>
@@ -368,7 +379,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Petr/Documents/apo_semestralka/config.h" line="51" column="9" bodyfile="C:/Users/Petr/Documents/apo_semestralka/config.h" bodystart="51" bodyend="-1"/>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/config.h" line="52" column="9" bodyfile="C:/Users/Petr/Documents/apo_semestralka/config.h" bodystart="52" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="config_8h_1aa24d0a8eebc152d8cc985828a1e8dd3c" prot="public" static="no">
         <name>SUPERCOIN_COLOR</name>
@@ -379,7 +390,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Petr/Documents/apo_semestralka/config.h" line="52" column="9" bodyfile="C:/Users/Petr/Documents/apo_semestralka/config.h" bodystart="52" bodyend="-1"/>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/config.h" line="53" column="9" bodyfile="C:/Users/Petr/Documents/apo_semestralka/config.h" bodystart="53" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="config_8h_1a2c119bca6ce382c9467070223973441f" prot="public" static="no">
         <name>SUPERCOIN_RADIUS</name>
@@ -390,7 +401,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Petr/Documents/apo_semestralka/config.h" line="53" column="9" bodyfile="C:/Users/Petr/Documents/apo_semestralka/config.h" bodystart="53" bodyend="-1"/>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/config.h" line="54" column="9" bodyfile="C:/Users/Petr/Documents/apo_semestralka/config.h" bodystart="54" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="config_8h_1a023956375f6b5b17c1dffbf9c672f31f" prot="public" static="no">
         <name>GHOST_COLORS</name>
@@ -401,7 +412,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Petr/Documents/apo_semestralka/config.h" line="57" column="9" bodyfile="C:/Users/Petr/Documents/apo_semestralka/config.h" bodystart="57" bodyend="-1"/>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/config.h" line="58" column="9" bodyfile="C:/Users/Petr/Documents/apo_semestralka/config.h" bodystart="58" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="config_8h_1ac447386d85ded6e889579c2c08ff1adf" prot="public" static="no">
         <name>GHOST_COLORS_AMMOUNT</name>
@@ -412,7 +423,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Petr/Documents/apo_semestralka/config.h" line="58" column="9" bodyfile="C:/Users/Petr/Documents/apo_semestralka/config.h" bodystart="58" bodyend="-1"/>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/config.h" line="59" column="9" bodyfile="C:/Users/Petr/Documents/apo_semestralka/config.h" bodystart="59" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="config_8h_1aeb40fd013a03d54f103aa9feef0f35ac" prot="public" static="no">
         <name>PACMAN_COLOR</name>
@@ -423,7 +434,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Petr/Documents/apo_semestralka/config.h" line="60" column="9" bodyfile="C:/Users/Petr/Documents/apo_semestralka/config.h" bodystart="60" bodyend="-1"/>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/config.h" line="61" column="9" bodyfile="C:/Users/Petr/Documents/apo_semestralka/config.h" bodystart="61" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="config_8h_1ab1cc753b0e4445ab194c1d2b7f693054" prot="public" static="no">
         <name>GHOST_SWITCH_TO_RANDOM</name>
@@ -434,7 +445,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Petr/Documents/apo_semestralka/config.h" line="63" column="9" bodyfile="C:/Users/Petr/Documents/apo_semestralka/config.h" bodystart="63" bodyend="-1"/>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/config.h" line="64" column="9" bodyfile="C:/Users/Petr/Documents/apo_semestralka/config.h" bodystart="64" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="config_8h_1aa7e67f5126c304dba2e7d85d1baea902" prot="public" static="no">
         <name>GHOST_SWITCH_TO_TARGET</name>
@@ -445,7 +456,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Petr/Documents/apo_semestralka/config.h" line="64" column="9" bodyfile="C:/Users/Petr/Documents/apo_semestralka/config.h" bodystart="64" bodyend="-1"/>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/config.h" line="65" column="9" bodyfile="C:/Users/Petr/Documents/apo_semestralka/config.h" bodystart="65" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="config_8h_1a1965eaca47dbf3f87acdafc2208f04eb" prot="public" static="no">
         <name>UP</name>
@@ -456,7 +467,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Petr/Documents/apo_semestralka/config.h" line="67" column="9" bodyfile="C:/Users/Petr/Documents/apo_semestralka/config.h" bodystart="67" bodyend="-1"/>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/config.h" line="68" column="9" bodyfile="C:/Users/Petr/Documents/apo_semestralka/config.h" bodystart="68" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="config_8h_1a80fb826a684cf3f0d306b22aa100ddac" prot="public" static="no">
         <name>RIGHT</name>
@@ -467,7 +478,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Petr/Documents/apo_semestralka/config.h" line="68" column="9" bodyfile="C:/Users/Petr/Documents/apo_semestralka/config.h" bodystart="68" bodyend="-1"/>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/config.h" line="69" column="9" bodyfile="C:/Users/Petr/Documents/apo_semestralka/config.h" bodystart="69" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="config_8h_1a74eac3295cbd6c353b8e0db8c37c8c6b" prot="public" static="no">
         <name>DWN</name>
@@ -478,7 +489,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Petr/Documents/apo_semestralka/config.h" line="69" column="9" bodyfile="C:/Users/Petr/Documents/apo_semestralka/config.h" bodystart="69" bodyend="-1"/>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/config.h" line="70" column="9" bodyfile="C:/Users/Petr/Documents/apo_semestralka/config.h" bodystart="70" bodyend="-1"/>
       </memberdef>
       <memberdef kind="define" id="config_8h_1a437ef08681e7210d6678427030446a54" prot="public" static="no">
         <name>LEFT</name>
@@ -489,7 +500,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="C:/Users/Petr/Documents/apo_semestralka/config.h" line="70" column="9" bodyfile="C:/Users/Petr/Documents/apo_semestralka/config.h" bodystart="70" bodyend="-1"/>
+        <location file="C:/Users/Petr/Documents/apo_semestralka/config.h" line="71" column="9" bodyfile="C:/Users/Petr/Documents/apo_semestralka/config.h" bodystart="71" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -536,39 +547,40 @@
 <codeline lineno="37" refid="config_8h_1a5cba511e2fe7a2d66d90d3e3d810db3c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SCARE_REGIME_DURATION<sp/>300<sp/></highlight><highlight class="comment">//in<sp/>game<sp/>ticks</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="38" refid="config_8h_1a7645a891a19088e6fc698d38435dd4c9" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GAME_SPEED<sp/>2<sp/></highlight><highlight class="comment">//ammount<sp/>of<sp/>ticks<sp/>in<sp/>one<sp/>frame</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="39"><highlight class="normal"></highlight></codeline>
-<codeline lineno="40" refid="config_8h_1adbb52fc3b2ec0fea2f350a39d8c3bd28" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GAME_END_TERMINAL<sp/>&quot;Game<sp/>has<sp/>ended<sp/>with<sp/>pacman<sp/>getting<sp/>score<sp/>%d<sp/>and<sp/>having<sp/>%d<sp/>lives\n&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="41"><highlight class="normal"></highlight></codeline>
-<codeline lineno="42"><highlight class="normal"></highlight><highlight class="comment">//led<sp/>colors</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="43" refid="config_8h_1aadb76337df4b0a055a30de34b0e3dbcc" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LED_SCARE_COLOR1<sp/>0</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="44" refid="config_8h_1a49cfb1c1270ff147a44d8dd7166b5473" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LED_SCARE_COLOR2<sp/>0xf</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="45" refid="config_8h_1af6a54e35c04441964ee74f63733659e9" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LED_NORMAL_COLOR<sp/>0xf00</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="46"><highlight class="normal"></highlight></codeline>
-<codeline lineno="47"><highlight class="normal"></highlight><highlight class="comment">//map<sp/>colors</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="48" refid="config_8h_1a47eb681b9f2c5a8f4f63891a58ab8e2d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WALL_COLOR<sp/>0x9</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="49" refid="config_8h_1a3aac54ffa4781528709d17a683e54fb5" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PATH_COLOR<sp/>0</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="50" refid="config_8h_1ada59e179a724bbf5b53baa541072df9a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>COIN_COLOR<sp/>0xd000</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="51" refid="config_8h_1ab0c3bd5b77bc43a57f44c50fb05e7201" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>COIN_RADIUS<sp/>5</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="52" refid="config_8h_1aa24d0a8eebc152d8cc985828a1e8dd3c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SUPERCOIN_COLOR<sp/>0xf91f</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="53" refid="config_8h_1a2c119bca6ce382c9467070223973441f" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SUPERCOIN_RADIUS<sp/>5</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="54"><highlight class="normal"></highlight></codeline>
-<codeline lineno="55"><highlight class="normal"></highlight><highlight class="comment">//ghost<sp/>colors</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="56"><highlight class="normal"></highlight><highlight class="comment">//<sp/>green<sp/>pink<sp/><sp/>azure<sp/>red</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="57" refid="config_8h_1a023956375f6b5b17c1dffbf9c672f31f" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GHOST_COLORS<sp/>0x07C0,<sp/>0xF01F,<sp/>0x07DC,<sp/>0xF800</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="58" refid="config_8h_1ac447386d85ded6e889579c2c08ff1adf" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GHOST_COLORS_AMMOUNT<sp/>4</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="59"><highlight class="normal"></highlight></codeline>
-<codeline lineno="60" refid="config_8h_1aeb40fd013a03d54f103aa9feef0f35ac" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PACMAN_COLOR<sp/>0xffe0</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="61"><highlight class="normal"></highlight></codeline>
-<codeline lineno="62"><highlight class="normal"></highlight><highlight class="comment">//chance<sp/>for<sp/>ghosts<sp/>to<sp/>switch<sp/>modes<sp/>(higher<sp/>means<sp/>more<sp/>unlikely)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="63" refid="config_8h_1ab1cc753b0e4445ab194c1d2b7f693054" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GHOST_SWITCH_TO_RANDOM<sp/>2000</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="64" refid="config_8h_1aa7e67f5126c304dba2e7d85d1baea902" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GHOST_SWITCH_TO_TARGET<sp/>900</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40" refid="config_8h_1a487ac7bb4bfd7ace3d2933310e95fd17" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GAME_START_TERMINAL<sp/>&quot;Move<sp/>pacman<sp/>with<sp/>%c%c%c%c<sp/>keys,<sp/>to<sp/>pause<sp/>press<sp/>%c,<sp/>to<sp/>quit<sp/>game<sp/>press<sp/>%c.\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41" refid="config_8h_1adbb52fc3b2ec0fea2f350a39d8c3bd28" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GAME_END_TERMINAL<sp/>&quot;Game<sp/>has<sp/>ended<sp/>with<sp/>pacman<sp/>getting<sp/>score<sp/>%d<sp/>and<sp/>having<sp/>%d<sp/>lives\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="comment">//led<sp/>colors</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44" refid="config_8h_1aadb76337df4b0a055a30de34b0e3dbcc" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LED_SCARE_COLOR1<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45" refid="config_8h_1a49cfb1c1270ff147a44d8dd7166b5473" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LED_SCARE_COLOR2<sp/>0xf</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46" refid="config_8h_1af6a54e35c04441964ee74f63733659e9" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LED_NORMAL_COLOR<sp/>0xf00</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="comment">//map<sp/>colors</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49" refid="config_8h_1a47eb681b9f2c5a8f4f63891a58ab8e2d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WALL_COLOR<sp/>0x9</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50" refid="config_8h_1a3aac54ffa4781528709d17a683e54fb5" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PATH_COLOR<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51" refid="config_8h_1ada59e179a724bbf5b53baa541072df9a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>COIN_COLOR<sp/>0xd000</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52" refid="config_8h_1ab0c3bd5b77bc43a57f44c50fb05e7201" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>COIN_RADIUS<sp/>5</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53" refid="config_8h_1aa24d0a8eebc152d8cc985828a1e8dd3c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SUPERCOIN_COLOR<sp/>0xf91f</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54" refid="config_8h_1a2c119bca6ce382c9467070223973441f" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SUPERCOIN_RADIUS<sp/>5</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="comment">//ghost<sp/>colors</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="comment">//<sp/>green<sp/>pink<sp/><sp/>azure<sp/>red</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58" refid="config_8h_1a023956375f6b5b17c1dffbf9c672f31f" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GHOST_COLORS<sp/>0x07C0,<sp/>0xF01F,<sp/>0x07DC,<sp/>0xF800</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59" refid="config_8h_1ac447386d85ded6e889579c2c08ff1adf" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GHOST_COLORS_AMMOUNT<sp/>4</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61" refid="config_8h_1aeb40fd013a03d54f103aa9feef0f35ac" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PACMAN_COLOR<sp/>0xffe0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="comment">//chance<sp/>for<sp/>ghosts<sp/>to<sp/>switch<sp/>modes<sp/>(higher<sp/>means<sp/>more<sp/>unlikely)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64" refid="config_8h_1ab1cc753b0e4445ab194c1d2b7f693054" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GHOST_SWITCH_TO_RANDOM<sp/>2000</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65" refid="config_8h_1aa7e67f5126c304dba2e7d85d1baea902" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>GHOST_SWITCH_TO_TARGET<sp/>900</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="66"><highlight class="normal"></highlight></codeline>
-<codeline lineno="67" refid="config_8h_1a1965eaca47dbf3f87acdafc2208f04eb" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>UP<sp/>1</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="68" refid="config_8h_1a80fb826a684cf3f0d306b22aa100ddac" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>RIGHT<sp/>2</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="69" refid="config_8h_1a74eac3295cbd6c353b8e0db8c37c8c6b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DWN<sp/>3</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="70" refid="config_8h_1a437ef08681e7210d6678427030446a54" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LEFT<sp/>4</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="71"><highlight class="normal"></highlight></codeline>
-<codeline lineno="72"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68" refid="config_8h_1a1965eaca47dbf3f87acdafc2208f04eb" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>UP<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69" refid="config_8h_1a80fb826a684cf3f0d306b22aa100ddac" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>RIGHT<sp/>2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70" refid="config_8h_1a74eac3295cbd6c353b8e0db8c37c8c6b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DWN<sp/>3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71" refid="config_8h_1a437ef08681e7210d6678427030446a54" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LEFT<sp/>4</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
     </programlisting>
     <location file="C:/Users/Petr/Documents/apo_semestralka/config.h"/>
   </compounddef>
