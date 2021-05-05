@@ -35,22 +35,22 @@ bool pacman_move(pacman_type *pacman, map_data *map)
     pthread_mutex_lock(&mtx);
     pressed = read_thread_data.last_read;
     pthread_mutex_unlock(&mtx);
-    if ((pressed == KEY_UP) && (pacman_can_move(pacman, 0, -1, map)))
+    if ((pressed == KEY_UP||pressed == KEY_UP+'A'-'a') && (pacman_can_move(pacman, 0, -1, map)))
     {
         pacman->direction.x = 0;
         pacman->direction.y = -1;
     }
-    if ((pressed == KEY_DWN) && (pacman_can_move(pacman, 0, 1, map)))
+    if ((pressed == KEY_DWN||pressed == KEY_DWN+'A'-'a') && (pacman_can_move(pacman, 0, 1, map)))
     {
         pacman->direction.x = 0;
         pacman->direction.y = 1;
     }
-    if ((pressed == KEY_LEFT) && (pacman_can_move(pacman, -1, 0, map)))
+    if ((pressed == KEY_LEFT||pressed == KEY_LEFT+'A'-'a') && (pacman_can_move(pacman, -1, 0, map)))
     {
         pacman->direction.x = -1;
         pacman->direction.y = 0;
     }
-    if ((pressed == KEY_RIGHT) && (pacman_can_move(pacman, 1, 0, map)))
+    if ((pressed == KEY_RIGHT||pressed == KEY_RIGHT+'A'-'a') && (pacman_can_move(pacman, 1, 0, map)))
     {
         pacman->direction.x = 1;
         pacman->direction.y = 0;
