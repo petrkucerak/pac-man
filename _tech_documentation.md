@@ -1,4 +1,4 @@
-# Technická dokumnetace
+# Technická dokumentace
 
 ## Architektura aplikace
 
