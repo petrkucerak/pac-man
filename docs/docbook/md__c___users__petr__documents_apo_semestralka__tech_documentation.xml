@@ -36,10 +36,12 @@
 <para>Makefile vychází z šablony <link xlink:href="https://gitlab.fel.cvut.cz/b35apo/mzapo_template">mzapo_template</link>.</para>
 <section xml:id="_md__c___users__petr__documents_apo_semestralka__tech_documentation_1autotoc_md4">
 <title>Nastavení Makefilu</title>
+
+<para>Podrobné informace o způsobech připojení a detailního využití připraveného Makefilu je možné dohledat v dokumnetaci předmětu: <link xlink:href="https://cw.fel.cvut.cz/wiki/courses/b35apo/documentation/mz_apo-howto/start">https://cw.fel.cvut.cz/wiki/courses/b35apo/documentation/mz_apo-howto/start</link>.</para>
 <section xml:id="_md__c___users__petr__documents_apo_semestralka__tech_documentation_1autotoc_md5">
 <title>Zdrojové soubory</title>
 
-<para>V první části je třeba mít přidané všechny kompilované soubory.</para>
+<para>Pokud budete upravovat nejaky ze souboru nebo prodavat vlastni, je třeba mít přidané všechny soubory ke kompilaci.</para>
 
 <para><literallayout><computeroutput>SOURCES&#32;=&#32;apoman.c&#32;mzapo_phys.c&#32;mzapo_parlcd.c&#32;update_peripherals.c&#32;text_fb.c&#32;map_from_template.c&#32;map_to_fb.c&#32;draw_shapes.c
 SOURCES&#32;+=&#32;terminal_read.c&#32;pacman.c&#32;ghost.c

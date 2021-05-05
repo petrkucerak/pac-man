@@ -28,9 +28,11 @@ Makefile vychází z šablony [mzapo_template](https://gitlab.fel.cvut.cz/b35apo
 
 ### Nastavení Makefilu
 
+Podrobné informace o způsobech připojení a detailního využití připraveného Makefilu je možné dohledat v dokumnetaci předmětu: https://cw.fel.cvut.cz/wiki/courses/b35apo/documentation/mz_apo-howto/start.
+
 #### Zdrojové soubory
 
-V první části je třeba mít přidané všechny kompilované soubory.
+Pokud budete upravovat nejaky ze souboru nebo prodavat vlastni, je třeba mít přidané všechny soubory ke kompilaci.
 
 ```Makefile
 SOURCES = apoman.c mzapo_phys.c mzapo_parlcd.c update_peripherals.c text_fb.c map_from_template.c map_to_fb.c draw_shapes.c

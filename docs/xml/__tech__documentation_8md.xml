@@ -37,9 +37,11 @@
 <codeline></codeline>
 <codeline><highlight class="normal">###<sp/>Nastavení<sp/>Makefilu</highlight></codeline>
 <codeline></codeline>
+<codeline><highlight class="normal">Podrobné<sp/>informace<sp/>o<sp/>způsobech<sp/>připojení<sp/>a<sp/>detailního<sp/>využití<sp/>připraveného<sp/>Makefilu<sp/>je<sp/>možné<sp/>dohledat<sp/>v<sp/>dokumnetaci<sp/>předmětu:<sp/>https://cw.fel.cvut.cz/wiki/courses/b35apo/documentation/mz_apo-howto/start.</highlight></codeline>
+<codeline></codeline>
 <codeline><highlight class="normal">####<sp/>Zdrojové<sp/>soubory</highlight></codeline>
 <codeline></codeline>
-<codeline><highlight class="normal">V<sp/>první<sp/>části<sp/>je<sp/>třeba<sp/>mít<sp/>přidané<sp/>všechny<sp/>kompilované<sp/>soubory.</highlight></codeline>
+<codeline><highlight class="normal">Pokud<sp/>budete<sp/>upravovat<sp/>nejaky<sp/>ze<sp/>souboru<sp/>nebo<sp/>prodavat<sp/>vlastni,<sp/>je<sp/>třeba<sp/>mít<sp/>přidané<sp/>všechny<sp/>soubory<sp/>ke<sp/>kompilaci.</highlight></codeline>
 <codeline></codeline>
 <codeline><highlight class="normal">```Makefile</highlight></codeline>
 <codeline><highlight class="normal">SOURCES<sp/>=<sp/>apoman.c<sp/>mzapo_phys.c<sp/>mzapo_parlcd.c<sp/>update_peripherals.c<sp/>text_fb.c<sp/>map_from_template.c<sp/>map_to_fb.c<sp/>draw_shapes.c</highlight></codeline>

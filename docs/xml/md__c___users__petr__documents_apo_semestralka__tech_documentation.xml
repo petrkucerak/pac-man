@@ -31,9 +31,10 @@
 <para>Makefile vychází z šablony <ulink url="https://gitlab.fel.cvut.cz/b35apo/mzapo_template">mzapo_template</ulink>.</para>
 <sect2 id="md__c___users__petr__documents_apo_semestralka__tech_documentation_1autotoc_md4">
 <title>Nastavení Makefilu</title>
+<para>Podrobné informace o způsobech připojení a detailního využití připraveného Makefilu je možné dohledat v dokumnetaci předmětu: <ulink url="https://cw.fel.cvut.cz/wiki/courses/b35apo/documentation/mz_apo-howto/start">https://cw.fel.cvut.cz/wiki/courses/b35apo/documentation/mz_apo-howto/start</ulink>.</para>
 <sect3 id="md__c___users__petr__documents_apo_semestralka__tech_documentation_1autotoc_md5">
 <title>Zdrojové soubory</title>
-<para>V první části je třeba mít přidané všechny kompilované soubory.</para>
+<para>Pokud budete upravovat nejaky ze souboru nebo prodavat vlastni, je třeba mít přidané všechny soubory ke kompilaci.</para>
 <para><programlisting filename=".Makefile"><codeline><highlight class="normal">SOURCES<sp/>=<sp/>apoman.c<sp/>mzapo_phys.c<sp/>mzapo_parlcd.c<sp/>update_peripherals.c<sp/>text_fb.c<sp/>map_from_template.c<sp/>map_to_fb.c<sp/>draw_shapes.c</highlight></codeline>
 <codeline><highlight class="normal">SOURCES<sp/>+=<sp/>terminal_read.c<sp/>pacman.c<sp/>ghost.c</highlight></codeline>
 <codeline><highlight class="normal">SOURCES<sp/>+=<sp/>font_prop14x16.c<sp/>font_rom8x16.c</highlight></codeline>
