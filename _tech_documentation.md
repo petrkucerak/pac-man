@@ -12,7 +12,7 @@ Aplikace vychází z šablony [mzapo_template](https://gitlab.fel.cvut.cz/b35apo
 
 Blokové schéma popisuje fungování algoritmu hry Pac-Man.
 
-![block-schema](docs/blok-schema.png)
+![block-schema](https://raw.githubusercontent.com/petrkucerak/library/main/asstes/share/blok-schema.png)
 
 Obecně si ho můžeme rozdělit do třech částí:
 
