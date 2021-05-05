@@ -1,4 +1,4 @@
-# Semestrální práce na APO
+# Semestrální práce na APO - specifikace
 
 ## Introdukce
 Cílem této semstrální práce je vytvořit hru Pac-Man, kterou bude možné hrát na desce MzAPO a ovládat pomocí okolních periferií.
