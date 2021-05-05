@@ -21,11 +21,11 @@ Autoři této semestrální práce jsou:
 
 ### Inicializace hry
 
-Po spuštění hry se objeví textové menu, které bude možné ovládat pomocí kláves `wsad` ze sériového portu. Bude zde možnost vybrat mapu z nabídky, nastavit počet duchů a počet životů, se kterými pacman začíná.
+Po spuštění hry se objeví textové menu, které bude možné ovládat pomocí kláves ze sériového portu. Bude zde možnost vybrat mapu z nabídky, nastavit počet duchů a počet životů, se kterými pacman začíná.
 
 ### Průběh hry
 
-Samotná hra se bude ovládat pomocí znaků wsad, stejně jako textové menu. Pacman pobíhá po desce s cílem sníst co nejvíce "penízků" a zároveň se nenechat sežrat duchy. Pokud sní speciální peníz, spustí se na určitou dobu mód, v kterém bude moci požírat duchy, za což získá další body.
+Samotná hra se bude ovládat pomocí znaků wsad. Pacman pobíhá po desce s cílem sníst co nejvíce "penízků" a zároveň se nenechat sežrat duchy. Pokud sní speciální peníz, spustí se na určitou dobu mód, v kterém bude moci požírat duchy, za což získá další body.
 
 V průběhu hry je možno sledovat mód, ve kterém se hra nachází na tvaru duchů a stavu RGB LED. Počet zbývajících životů je indikován na výstupní led řádce jako počet shluků svítících led.
 
