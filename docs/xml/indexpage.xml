@@ -11,6 +11,12 @@
 <title>Úvod</title>
 <para>Cílem této semstrální práce je vytvořit hru Pac-Man, kterou bude možné hrát na desce MzAPO a ovládat pomocí okolních periferií.</para>
 <para>Průběh naší práce je možné sledovat v repozitáři: <ulink url="https://gitlab.fel.cvut.cz/kucerp28/apo_semestralka">https://gitlab.fel.cvut.cz/kucerp28/apo_semestralka</ulink></para>
+<para>Autoři této semestrální práce jsou:</para>
+<para><itemizedlist>
+<listitem><para>Lukáš Nejezchleb (<ulink url="mailto:nejezluk@fel.cvut.cz">nejezluk@fel.cvut.cz</ulink>)</para>
+</listitem><listitem><para>Petr Kučera (<ulink url="mailto:kucerp28@fel.cvut.cz">kucerp28@fel.cvut.cz</ulink>)</para>
+</listitem></itemizedlist>
+</para>
 </sect1>
 <sect1 id="index_1autotoc_md30">
 <title>Použité periferie a jejich funkce</title>
@@ -38,15 +44,10 @@
 <para>Hra může být ukončena 3 způsoby:<itemizedlist>
 <listitem><para>Výhrou Pacmana. V takovém případě se vypíše skóre hry na terminál a otevře se menu nastavení</para>
 </listitem><listitem><para>Prohrou Pacmana. Ta vyvolá stejný proces jako výhra.</para>
-</listitem><listitem><para>Přerušením hry pomocí stisknutí klávesy q. To hráče odkáže do spouštěcího menu.</para>
+</listitem><listitem><para>Přerušením hry pomocí stisknutí klávesy q. To hráče odkáže do spouštěcího menu. </para>
 </listitem></itemizedlist>
 </para>
 </sect2>
-</sect1>
-<sect1 id="index_1autotoc_md35">
-<title>Kompilace</title>
-<para><programlisting><codeline><highlight class="normal">make<sp/>TARGET_IP=192.168.202.xx<sp/>run</highlight></codeline>
-</programlisting> </para>
 </sect1>
     </detaileddescription>
     <location file="C:/Users/Petr/Documents/apo_semestralka/README.md"/>

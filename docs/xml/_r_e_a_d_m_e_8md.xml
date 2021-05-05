@@ -14,6 +14,11 @@
 <codeline></codeline>
 <codeline><highlight class="normal">Průběh<sp/>naší<sp/>práce<sp/>je<sp/>možné<sp/>sledovat<sp/>v<sp/>repozitáři:<sp/>https://gitlab.fel.cvut.cz/kucerp28/apo\_semestralka</highlight></codeline>
 <codeline></codeline>
+<codeline><highlight class="normal">Autoři<sp/>této<sp/>semestrální<sp/>práce<sp/>jsou:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">-<sp/>Lukáš<sp/>Nejezchleb<sp/>(nejezluk@fel.cvut.cz)</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>Petr<sp/>Kučera<sp/>(kucerp28@fel.cvut.cz)</highlight></codeline>
+<codeline></codeline>
 <codeline><highlight class="normal">##<sp/>Použité<sp/>periferie<sp/>a<sp/>jejich<sp/>funkce</highlight></codeline>
 <codeline></codeline>
 <codeline><highlight class="normal">-<sp/>Výstupní<sp/>řádka<sp/>led<sp/>bude<sp/>při<sp/>spuštěné<sp/>hře<sp/>indikovat<sp/>počet<sp/>životů<sp/>pacmana.</highlight></codeline>
@@ -39,11 +44,6 @@
 <codeline><highlight class="normal">-<sp/>Výhrou<sp/>Pacmana.<sp/>V<sp/>takovém<sp/>případě<sp/>se<sp/>vypíše<sp/>skóre<sp/>hry<sp/>na<sp/>terminál<sp/>a<sp/>otevře<sp/>se<sp/>menu<sp/>nastavení</highlight></codeline>
 <codeline><highlight class="normal">-<sp/>Prohrou<sp/>Pacmana.<sp/>Ta<sp/>vyvolá<sp/>stejný<sp/>proces<sp/>jako<sp/>výhra.</highlight></codeline>
 <codeline><highlight class="normal">-<sp/>Přerušením<sp/>hry<sp/>pomocí<sp/>stisknutí<sp/>klávesy<sp/>q.<sp/>To<sp/>hráče<sp/>odkáže<sp/>do<sp/>spouštěcího<sp/>menu.</highlight></codeline>
-<codeline></codeline>
-<codeline><highlight class="normal">##<sp/>Kompilace</highlight></codeline>
-<codeline><highlight class="normal">```<sp/>bash</highlight></codeline>
-<codeline><highlight class="normal">make<sp/>TARGET_IP=192.168.202.xx<sp/>run</highlight></codeline>
-<codeline><highlight class="normal">```</highlight></codeline>
     </programlisting>
     <location file="C:/Users/Petr/Documents/apo_semestralka/README.md"/>
   </compounddef>

@@ -32,8 +32,7 @@ var NAVTREE =
         [ "Inicializace hry", "index.html#autotoc_md32", null ],
         [ "Průběh hry", "index.html#autotoc_md33", null ],
         [ "Závěr hry", "index.html#autotoc_md34", null ]
-      ] ],
-      [ "Kompilace", "index.html#autotoc_md35", null ]
+      ] ]
     ] ],
     [ "Technická dokumentace", "md__c___users__petr__documents_apo_semestralka__tech_documentation.html", [
       [ "Architektura aplikace", "md__c___users__petr__documents_apo_semestralka__tech_documentation.html#autotoc_md1", null ],
@@ -96,7 +95,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"mzapo__regs_8h.html#a16737347121cb524ae6ca45225c094c9"
+"mzapo__regs_8h.html#a16a62057779c8749bece38f452e2736a"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
