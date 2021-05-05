@@ -1,0 +1,26 @@
+var searchData=
+[
+  ['scare_5fregime_5fduration_490',['SCARE_REGIME_DURATION',['../config_8h.html#a5cba511e2fe7a2d66d90d3e3d810db3c',1,'config.h']]],
+  ['score_5fdeath_5fpenalty_491',['SCORE_DEATH_PENALTY',['../config_8h.html#a8fafbbe182b133765c10fc2d5bb0a939',1,'config.h']]],
+  ['screen_5fheight_492',['SCREEN_HEIGHT',['../apoman_8c.html#a6974d08a74da681b3957b2fead2608b8',1,'apoman.c']]],
+  ['screen_5fwidth_493',['SCREEN_WIDTH',['../apoman_8c.html#a2cd109632a6dcccaa80b43561b1ab700',1,'apoman.c']]],
+  ['servops2_5freg_5fbase_5fphys_494',['SERVOPS2_REG_BASE_PHYS',['../mzapo__regs_8h.html#ae67577b74c64969ccc7fa22d53e8cb39',1,'mzapo_regs.h']]],
+  ['servops2_5freg_5fcr_5fo_495',['SERVOPS2_REG_CR_o',['../mzapo__regs_8h.html#afb8c1282ebc34ccbe316b1119f07581a',1,'mzapo_regs.h']]],
+  ['servops2_5freg_5fpwm1_5fo_496',['SERVOPS2_REG_PWM1_o',['../mzapo__regs_8h.html#a4b6eb6d360055d5f91e1cef44ebb3942',1,'mzapo_regs.h']]],
+  ['servops2_5freg_5fpwm2_5fo_497',['SERVOPS2_REG_PWM2_o',['../mzapo__regs_8h.html#a26656019c3471913ac49cb87e71c75f8',1,'mzapo_regs.h']]],
+  ['servops2_5freg_5fpwm3_5fo_498',['SERVOPS2_REG_PWM3_o',['../mzapo__regs_8h.html#aa077e6d381f95ca143b52dc71df86eac',1,'mzapo_regs.h']]],
+  ['servops2_5freg_5fpwm4_5fo_499',['SERVOPS2_REG_PWM4_o',['../mzapo__regs_8h.html#aaba7c02dcc7939f280bb24d39d5264a5',1,'mzapo_regs.h']]],
+  ['servops2_5freg_5fpwmper_5fo_500',['SERVOPS2_REG_PWMPER_o',['../mzapo__regs_8h.html#a16737347121cb524ae6ca45225c094c9',1,'mzapo_regs.h']]],
+  ['servops2_5freg_5fsize_501',['SERVOPS2_REG_SIZE',['../mzapo__regs_8h.html#a853db0a52f5fd5670afa705751609413',1,'mzapo_regs.h']]],
+  ['spiled_5freg_5fbase_5fphys_502',['SPILED_REG_BASE_PHYS',['../mzapo__regs_8h.html#afcfd8685e0ac231c4a5930526e9b311f',1,'mzapo_regs.h']]],
+  ['spiled_5freg_5fkbdrd_5fknobs_5fdirect_5fo_503',['SPILED_REG_KBDRD_KNOBS_DIRECT_o',['../mzapo__regs_8h.html#af6d1d4ce0d517dc471395671faae19c1',1,'mzapo_regs.h']]],
+  ['spiled_5freg_5fknobs_5f8bit_5fo_504',['SPILED_REG_KNOBS_8BIT_o',['../mzapo__regs_8h.html#a9659b6d0a4356a769b9e8f025ab4f361',1,'mzapo_regs.h']]],
+  ['spiled_5freg_5fled_5fkbdwr_5fdirect_5fo_505',['SPILED_REG_LED_KBDWR_DIRECT_o',['../mzapo__regs_8h.html#a61459fb4918e393901b563480ed3e488',1,'mzapo_regs.h']]],
+  ['spiled_5freg_5fled_5fline_5fo_506',['SPILED_REG_LED_LINE_o',['../mzapo__regs_8h.html#aa421b3b6aad9fdc70be0f2f75ef0383e',1,'mzapo_regs.h']]],
+  ['spiled_5freg_5fled_5frgb1_5fo_507',['SPILED_REG_LED_RGB1_o',['../mzapo__regs_8h.html#a471398ab797101dfd7a1a2d96e9a518a',1,'mzapo_regs.h']]],
+  ['spiled_5freg_5fled_5frgb2_5fo_508',['SPILED_REG_LED_RGB2_o',['../mzapo__regs_8h.html#a7b24a79dbfff0cab06021c259e967d6e',1,'mzapo_regs.h']]],
+  ['spiled_5freg_5fsize_509',['SPILED_REG_SIZE',['../mzapo__regs_8h.html#a7bdc4010481bbecbb542c2df9a61a17b',1,'mzapo_regs.h']]],
+  ['supercoin_510',['SUPERCOIN',['../data__structures_8h.html#a7082fba706496a93330c168643a1ef30',1,'data_structures.h']]],
+  ['supercoin_5fcolor_511',['SUPERCOIN_COLOR',['../config_8h.html#aa24d0a8eebc152d8cc985828a1e8dd3c',1,'config.h']]],
+  ['supercoin_5fradius_512',['SUPERCOIN_RADIUS',['../config_8h.html#a2c119bca6ce382c9467070223973441f',1,'config.h']]]
+];
