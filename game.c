@@ -73,7 +73,7 @@ int run_game(game_init_data_t *game_data, peripherals_data_t *peripherals)
     pthread_mutex_unlock(&mtx);
     if (read == PAUSE_KEY)
     {
-      pause(&fb, peripherals);
+      pause_game(&fb, peripherals);
     }
   }
   pthread_mutex_lock(&mtx);
@@ -167,7 +167,7 @@ bool game_tick(map_data *map, pacman_type *pacman, ghost_type *ghost_arr, int nu
   return ret;
 }
 
-void pause(fb_data *fb, peripherals_data_t *peripherals)
+void pause_game(fb_data *fb, peripherals_data_t *peripherals)
 {
   char read = ' ';
   draw_text_center(fb, PAUSE_TEXT, peripherals->lcd_w / 2, peripherals->lcd_h / 2,

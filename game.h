@@ -39,7 +39,7 @@ void led_blink(unsigned char *led_mem_base, int scare_countdown, int pacman_scor
  * @param fb 
  * @param peripherals 
  */
-void pause(fb_data *fb, peripherals_data_t *peripherals);
+void pause_game(fb_data *fb, peripherals_data_t *peripherals);
 
 /**
  * @brief moves pacman and each ghost one step, checking for collisions and user input
