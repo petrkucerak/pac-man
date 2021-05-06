@@ -1,6 +1,6 @@
 # Specifikace semestrální práce
 
-Projektová dokumnetace: https://apo-packman-docs.pages.dev/
+Projektová dokumnetace projektu: https://apo-packman-docs.pages.dev/
 
 ## Úvod
 Cílem této semstrální práce je vytvořit hru Pac-Man, kterou bude možné hrát na desce MzAPO a ovládat pomocí okolních periferií.
