@@ -17,9 +17,9 @@
 /**
  * @brief Returns pacman with initial score and lives at the spawning coords of the map
  * 
- * @param map 
- * @param lives 
- * @param score 
+ * @param map
+ * @param lives
+ * @param score
  * @return pacman_type 
  */
 pacman_type create_pacman(map_data *map, int lives, int score);
@@ -27,8 +27,8 @@ pacman_type create_pacman(map_data *map, int lives, int score);
 /**
  * @brief Returns pacman with initial score and lives at the spawning coords of the map
  * 
- * @param pacman 
- * @param map 
+ * @param pacman
+ * @param map
  * @return true 
  * @return false 
  */
@@ -37,19 +37,19 @@ bool pacman_move(pacman_type *pacman, map_data *map);
 /**
  * @brief draws circle if pacman is not facing any direction or the ”pie” shape to symbolise the heading
  * 
- * @param pacman 
- * @param fb 
- * @param map 
+ * @param pacman
+ * @param fb
+ * @param map
  */
 void draw_pacman(pacman_type *pacman, fb_data *fb, map_data *map);
 
 /**
  * @brief  returns true if pacman can move in given direction
  * 
- * @param pacman 
- * @param dirx 
- * @param diry 
- * @param map 
+ * @param pacman
+ * @param dirx
+ * @param diry
+ * @param map
  * @return true 
  * @return false 
  */

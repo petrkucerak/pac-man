@@ -22,9 +22,9 @@
  */
 typedef struct
 {
-    int width;
-    int height;
-    uint16_t *fb;
+   int width;
+   int height;
+   uint16_t *fb;
 } fb_data;
 
 /**
@@ -33,8 +33,8 @@ typedef struct
  */
 typedef struct
 {
-    int x;
-    int y;
+   int x;
+   int y;
 } coords;
 
 /**
@@ -43,12 +43,12 @@ typedef struct
  */
 typedef struct
 {
-    int width;
-    int height;
-    char *board_arr;
-    int max_object_diameter; // maximum dimensions of ghosts, pacman and coins
-    coords ghost_spawn;
-    coords pacman_spawn;
+   int width;
+   int height;
+   char *board_arr;
+   int max_object_diameter; // maximum dimensions of ghosts, pacman and coins
+   coords ghost_spawn;
+   coords pacman_spawn;
 } map_data;
 
 /**
@@ -57,8 +57,8 @@ typedef struct
  */
 typedef struct
 {
-    bool quit;
-    char last_read;
+   bool quit;
+   char last_read;
 } read_thread_data_type;
 
 /**
@@ -67,11 +67,11 @@ typedef struct
  */
 typedef struct
 {
-    coords location;
-    coords direction;
-    int score;
-    int lives;
-    int maxlives;
+   coords location;
+   coords direction;
+   int score;
+   int lives;
+   int maxlives;
 } pacman_type;
 
 extern read_thread_data_type read_thread_data;
@@ -84,21 +84,21 @@ extern pthread_cond_t character_has_been_read;
  */
 typedef struct
 {
-    unsigned char *lcd_mem_base;
-    unsigned char *led_mem_base;
-    int lcd_w;
-    int lcd_h;
+   unsigned char *lcd_mem_base;
+   unsigned char *led_mem_base;
+   int lcd_w;
+   int lcd_h;
 } peripherals_data_t;
 
 /**
  * @brief data necessary for game initialization
  * 
  */
-typedef struct 
+typedef struct
 {
-    int pacman_lives;
-    int ghost_nr;
-    map_template *map;
+   int pacman_lives;
+   int ghost_nr;
+   map_template *map;
 } game_init_data_t;
 
 /**
@@ -107,11 +107,11 @@ typedef struct
  */
 typedef struct
 {
-    bool moving_randomly;
-    bool scared;
-    coords location;
-    coords direction;
-    uint16_t color;
+   bool moving_randomly;
+   bool scared;
+   coords location;
+   coords direction;
+   uint16_t color;
 } ghost_type;
 
 /**

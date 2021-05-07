@@ -18,37 +18,37 @@
 /**
  * @brief Initialises all necessary data structures and loops the game tick and refreshing screen while the player has not won, lost or pressed the q key
  * 
- * @param game_data 
- * @param peripherals 
+ * @param game_data
+ * @param peripherals
  * @return int pac-man game score
  */
-int run_game(game_init_data_t* game_data, peripherals_data_t* peripherals);
+int run_game(game_init_data_t *game_data, peripherals_data_t *peripherals);
 
 /**
  * @brief Internal functions for setting the color of RGB leds according to the game state
  * 
- * @param led_mem_base 
- * @param scare_countdown 
- * @param pacman_score 
+ * @param led_mem_base
+ * @param scare_countdown
+ * @param pacman_score
  */
 void led_blink(unsigned char *led_mem_base, int scare_countdown, int pacman_score);
 
 /**
  * @brief  displays the pause message and waits for user to press the pause of quit key
  * 
- * @param fb 
- * @param peripherals 
+ * @param fb
+ * @param peripherals
  */
 void pause_game(fb_data *fb, peripherals_data_t *peripherals);
 
 /**
  * @brief moves pacman and each ghost one step, checking for collisions and user input
  * 
- * @param map 
- * @param pacman 
- * @param ghost_arr 
- * @param num_ghosts 
- * @param scare 
+ * @param map
+ * @param pacman
+ * @param ghost_arr
+ * @param num_ghosts
+ * @param scare
  * @return true 
  * @return false 
  */

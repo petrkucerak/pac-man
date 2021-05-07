@@ -18,29 +18,29 @@
 /**
  * @brief Calls other menu functions which set the game parameters or runs the game if user pressed the s key. Quits program if user pressed the q key.
  * 
- * @param frame_buff 
- * @param lcd_mem_base 
- * @param font 
- * @param peripherals 
+ * @param frame_buff
+ * @param lcd_mem_base
+ * @param font
+ * @param peripherals
  */
 void run_init_game_menu(fb_data *frame_buff, unsigned char *lcd_mem_base, font_descriptor_t *font, peripherals_data_t peripherals);
 
 /**
  * @brief Function to drow menu with settings to fb_data
  * 
- * @param frame_buff 
- * @param font 
- * @param game_data 
+ * @param frame_buff
+ * @param font
+ * @param game_data
  */
 void draw_menu(fb_data *frame_buff, font_descriptor_t *font, game_init_data_t game_data);
 
 /**
  * @brief Displays current amount of lives and lets the user change
  * 
- * @param frame_buff 
- * @param lcd_mem_base 
- * @param font 
- * @param game_data 
+ * @param frame_buff
+ * @param lcd_mem_base
+ * @param font
+ * @param game_data
  * @return game_init_data_t 
  */
 game_init_data_t sub_menu_lives(fb_data *frame_buff, unsigned char *lcd_mem_base, font_descriptor_t *font, game_init_data_t game_data);
@@ -48,10 +48,10 @@ game_init_data_t sub_menu_lives(fb_data *frame_buff, unsigned char *lcd_mem_base
 /**
  * @brief Displays current map and lets the user change it
  * 
- * @param frame_buff 
- * @param lcd_mem_base 
- * @param font 
- * @param game_data 
+ * @param frame_buff
+ * @param lcd_mem_base
+ * @param font
+ * @param game_data
  * @return game_init_data_t 
  */
 game_init_data_t sub_menu_map(fb_data *frame_buff, unsigned char *lcd_mem_base, font_descriptor_t *font, game_init_data_t game_data);
@@ -59,10 +59,10 @@ game_init_data_t sub_menu_map(fb_data *frame_buff, unsigned char *lcd_mem_base, 
 /**
  * @brief Displays current amount of ghosts and lets the user change
  * 
- * @param frame_buff 
- * @param lcd_mem_base 
- * @param font 
- * @param game_data 
+ * @param frame_buff
+ * @param lcd_mem_base
+ * @param font
+ * @param game_data
  * @return game_init_data_t 
  */
 game_init_data_t sub_menu_ghosts(fb_data *frame_buff, unsigned char *lcd_mem_base, font_descriptor_t *font, game_init_data_t game_data);

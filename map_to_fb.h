@@ -17,8 +17,8 @@
 /**
  * @brief given map_data draws the map to frame buffer
  * 
- * @param data 
- * @param frame_buff 
+ * @param data
+ * @param frame_buff
  * @return true if there are any coins to be eaten
  * @return false 
  */

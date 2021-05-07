@@ -51,57 +51,57 @@ read_thread_data_type read_thread_data;
  */
 int main(int argc, char *argv[])
 {
-  unsigned char *led_mem_base;
-  led_mem_base = map_phys_address(SPILED_REG_BASE_PHYS, SPILED_REG_SIZE, 0);
-  if (led_mem_base == NULL)
-  {
-    exit(1);
-  }
-  unsigned char *lcd_mem_base;
-  lcd_mem_base = map_phys_address(PARLCD_REG_BASE_PHYS, PARLCD_REG_SIZE, 0);
-  if (lcd_mem_base == NULL)
-  {
-    exit(1);
-  }
-  // terminal read
-  pthread_mutex_init(&mtx, NULL); // initialize mutex with default attributes
-  pthread_cond_init(&character_has_been_read, NULL);
-  read_thread_data.quit = false;
-  read_thread_data.last_read = ' ';
-  pthread_t threads[1];
-  pthread_create(&threads[0], NULL, input_thread, &read_thread_data);
+   unsigned char *led_mem_base;
+   led_mem_base = map_phys_address(SPILED_REG_BASE_PHYS, SPILED_REG_SIZE, 0);
+   if (led_mem_base == NULL)
+   {
+      exit(1);
+   }
+   unsigned char *lcd_mem_base;
+   lcd_mem_base = map_phys_address(PARLCD_REG_BASE_PHYS, PARLCD_REG_SIZE, 0);
+   if (lcd_mem_base == NULL)
+   {
+      exit(1);
+   }
+   // terminal read
+   pthread_mutex_init(&mtx, NULL); // initialize mutex with default attributes
+   pthread_cond_init(&character_has_been_read, NULL);
+   read_thread_data.quit = false;
+   read_thread_data.last_read = ' ';
+   pthread_t threads[1];
+   pthread_create(&threads[0], NULL, input_thread, &read_thread_data);
 
-  // frame buffer
-  fb_data fb;
-  fb.fb = malloc(sizeof(uint16_t) * SCREEN_WIDTH * SCREEN_HEIGHT);
-  fb.width = SCREEN_WIDTH;
-  fb.height = SCREEN_HEIGHT;
-  if (fb.fb == NULL)
-  {
-    exit(1);
-  }
+   // frame buffer
+   fb_data fb;
+   fb.fb = malloc(sizeof(uint16_t) * SCREEN_WIDTH * SCREEN_HEIGHT);
+   fb.width = SCREEN_WIDTH;
+   fb.height = SCREEN_HEIGHT;
+   if (fb.fb == NULL)
+   {
+      exit(1);
+   }
 
-  // init display
-  parlcd_hx8357_init(lcd_mem_base);
-  font_descriptor_t *font = &font_winFreeSystem14x16;
+   // init display
+   parlcd_hx8357_init(lcd_mem_base);
+   font_descriptor_t *font = &font_winFreeSystem14x16;
 
-  peripherals_data_t peripherals = {.led_mem_base = led_mem_base, .lcd_mem_base = lcd_mem_base, .lcd_h = SCREEN_HEIGHT, .lcd_w = SCREEN_WIDTH};
+   peripherals_data_t peripherals = {.led_mem_base = led_mem_base, .lcd_mem_base = lcd_mem_base, .lcd_h = SCREEN_HEIGHT, .lcd_w = SCREEN_WIDTH};
 
-  // call game method
-  run_init_game_menu(&fb, lcd_mem_base, font, peripherals);
+   // call game method
+   run_init_game_menu(&fb, lcd_mem_base, font, peripherals);
 
-  // program termination
-  set_background(&fb, 0);
-  draw_text_center(&fb, "KONEC", SCREEN_WIDTH / 2, SCREEN_HEIGHT / 2, 10, font, 0xffff);
-  lcd_from_fb(&fb, lcd_mem_base);
+   // program termination
+   set_background(&fb, 0);
+   draw_text_center(&fb, "KONEC", SCREEN_WIDTH / 2, SCREEN_HEIGHT / 2, 10, font, 0xffff);
+   lcd_from_fb(&fb, lcd_mem_base);
 
-  // free allocated memory
-  free(fb.fb);
-  fb.fb = NULL;
-  pthread_mutex_lock(&mtx);
-  read_thread_data.quit = true;
-  pthread_mutex_unlock(&mtx);
-  pthread_join(threads[0], NULL); //wait for thread to join
-  pthread_mutex_destroy(&mtx);
-  return 0;
+   // free allocated memory
+   free(fb.fb);
+   fb.fb = NULL;
+   pthread_mutex_lock(&mtx);
+   read_thread_data.quit = true;
+   pthread_mutex_unlock(&mtx);
+   pthread_join(threads[0], NULL); //wait for thread to join
+   pthread_mutex_destroy(&mtx);
+   return 0;
 }

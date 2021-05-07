@@ -18,10 +18,10 @@
 /**
  * @brief Draws the final score to the screen and waits for user input
  * 
- * @param score 
- * @param frame_buff 
- * @param lcd_mem_base 
- * @param font 
+ * @param score
+ * @param frame_buff
+ * @param lcd_mem_base
+ * @param font
  * @return true if the user pressed the s key and therefor wants to continue playing
  * @return false if the user pressed the q key indicating he wants to end the program
  */

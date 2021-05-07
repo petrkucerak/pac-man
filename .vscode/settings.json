@@ -5,6 +5,11 @@
       "map_template.h": "c",
       "text_fb.h": "c",
       "font_types.h": "c",
-      "menu_utilities.h": "c"
+      "menu_utilities.h": "c",
+      "mzapo_parlcd.h": "c",
+      "stdlib.h": "c",
+      "stdint.h": "c",
+      "unistd.h": "c",
+      "final_score.h": "c"
    }
 }
